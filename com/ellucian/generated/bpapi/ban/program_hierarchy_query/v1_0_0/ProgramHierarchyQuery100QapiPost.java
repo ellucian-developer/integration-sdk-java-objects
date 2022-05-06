@@ -1,0 +1,119 @@
+
+package com.ellucian.generated.bpapi.ban.program_hierarchy_query.v1_0_0;
+
+import java.util.HashMap;
+import java.util.Map;
+import javax.annotation.processing.Generated;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+    "ftxprghCoasCode",
+    "ftxprghProgCode"
+})
+@Generated("jsonschema2pojo")
+public class ProgramHierarchyQuery100QapiPost {
+
+    @JsonProperty("ftxprghCoasCode")
+    private String ftxprghCoasCode;
+    @JsonProperty("ftxprghProgCode")
+    private String ftxprghProgCode;
+    @JsonIgnore
+    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+    @JsonProperty("ftxprghCoasCode")
+    public String getFtxprghCoasCode() {
+        return ftxprghCoasCode;
+    }
+
+    @JsonProperty("ftxprghCoasCode")
+    public void setFtxprghCoasCode(String ftxprghCoasCode) {
+        this.ftxprghCoasCode = ftxprghCoasCode;
+    }
+
+    public ProgramHierarchyQuery100QapiPost withFtxprghCoasCode(String ftxprghCoasCode) {
+        this.ftxprghCoasCode = ftxprghCoasCode;
+        return this;
+    }
+
+    @JsonProperty("ftxprghProgCode")
+    public String getFtxprghProgCode() {
+        return ftxprghProgCode;
+    }
+
+    @JsonProperty("ftxprghProgCode")
+    public void setFtxprghProgCode(String ftxprghProgCode) {
+        this.ftxprghProgCode = ftxprghProgCode;
+    }
+
+    public ProgramHierarchyQuery100QapiPost withFtxprghProgCode(String ftxprghProgCode) {
+        this.ftxprghProgCode = ftxprghProgCode;
+        return this;
+    }
+
+    @JsonAnyGetter
+    public Map<String, Object> getAdditionalProperties() {
+        return this.additionalProperties;
+    }
+
+    @JsonAnySetter
+    public void setAdditionalProperty(String name, Object value) {
+        this.additionalProperties.put(name, value);
+    }
+
+    public ProgramHierarchyQuery100QapiPost withAdditionalProperty(String name, Object value) {
+        this.additionalProperties.put(name, value);
+        return this;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(ProgramHierarchyQuery100QapiPost.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
+        sb.append("ftxprghCoasCode");
+        sb.append('=');
+        sb.append(((this.ftxprghCoasCode == null)?"<null>":this.ftxprghCoasCode));
+        sb.append(',');
+        sb.append("ftxprghProgCode");
+        sb.append('=');
+        sb.append(((this.ftxprghProgCode == null)?"<null>":this.ftxprghProgCode));
+        sb.append(',');
+        sb.append("additionalProperties");
+        sb.append('=');
+        sb.append(((this.additionalProperties == null)?"<null>":this.additionalProperties));
+        sb.append(',');
+        if (sb.charAt((sb.length()- 1)) == ',') {
+            sb.setCharAt((sb.length()- 1), ']');
+        } else {
+            sb.append(']');
+        }
+        return sb.toString();
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 1;
+        result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
+        result = ((result* 31)+((this.ftxprghCoasCode == null)? 0 :this.ftxprghCoasCode.hashCode()));
+        result = ((result* 31)+((this.ftxprghProgCode == null)? 0 :this.ftxprghProgCode.hashCode()));
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if (other == this) {
+            return true;
+        }
+        if ((other instanceof ProgramHierarchyQuery100QapiPost) == false) {
+            return false;
+        }
+        ProgramHierarchyQuery100QapiPost rhs = ((ProgramHierarchyQuery100QapiPost) other);
+        return ((((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties)))&&((this.ftxprghCoasCode == rhs.ftxprghCoasCode)||((this.ftxprghCoasCode!= null)&&this.ftxprghCoasCode.equals(rhs.ftxprghCoasCode))))&&((this.ftxprghProgCode == rhs.ftxprghProgCode)||((this.ftxprghProgCode!= null)&&this.ftxprghProgCode.equals(rhs.ftxprghProgCode))));
+    }
+
+}

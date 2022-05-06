@@ -1,0 +1,471 @@
+
+package com.ellucian.generated.bpapi.ban.committee_service_members.v1_0_0;
+
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+import javax.annotation.processing.Generated;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyDescription;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+    "shacomiComtCode",
+    "id",
+    "memberId",
+    "fromDate",
+    "toDate",
+    "comfCode",
+    "comsCode",
+    "dicdCode",
+    "collCode",
+    "deptCode"
+})
+@Generated("jsonschema2pojo")
+public class CommitteeServiceMembers100QapiPost {
+
+    /**
+     * 
+     * (Required)
+     * 
+     */
+    @JsonProperty("shacomiComtCode")
+    private String shacomiComtCode;
+    @JsonProperty("id")
+    private String id;
+    /**
+     * Member
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("memberId")
+    private String memberId;
+    /**
+     * Participation From
+     * <p>
+     * Lineage reference object : SHRCOMM_FROM_DATE
+     * 
+     */
+    @JsonProperty("fromDate")
+    @JsonPropertyDescription("Lineage reference object : SHRCOMM_FROM_DATE")
+    private Date fromDate;
+    /**
+     * Participation To
+     * <p>
+     * Lineage reference object : SHRCOMM_TO_DATE
+     * 
+     */
+    @JsonProperty("toDate")
+    @JsonPropertyDescription("Lineage reference object : SHRCOMM_TO_DATE")
+    private Date toDate;
+    /**
+     * Role
+     * <p>
+     * Lineage reference object : SHRCOMM_COMF_CODE, Lookup lineage reference object : stvcomf
+     * 
+     */
+    @JsonProperty("comfCode")
+    @JsonPropertyDescription("Lineage reference object : SHRCOMM_COMF_CODE, Lookup lineage reference object : stvcomf")
+    private String comfCode;
+    /**
+     * Status
+     * <p>
+     * Lineage reference object : SHRCOMM_COMS_CODE, Lookup lineage reference object : stvcoms
+     * 
+     */
+    @JsonProperty("comsCode")
+    @JsonPropertyDescription("Lineage reference object : SHRCOMM_COMS_CODE, Lookup lineage reference object : stvcoms")
+    private String comsCode;
+    /**
+     * District/Division
+     * <p>
+     * Lineage reference object : SHRCOMM_DICD_CODE, Lookup lineage reference object : gtvdicd
+     * 
+     */
+    @JsonProperty("dicdCode")
+    @JsonPropertyDescription("Lineage reference object : SHRCOMM_DICD_CODE, Lookup lineage reference object : gtvdicd")
+    private String dicdCode;
+    /**
+     * Home College
+     * <p>
+     * Lineage reference object : SHRCOMM_COLL_CODE, Lookup lineage reference object : stvcoll
+     * 
+     */
+    @JsonProperty("collCode")
+    @JsonPropertyDescription("Lineage reference object : SHRCOMM_COLL_CODE, Lookup lineage reference object : stvcoll")
+    private String collCode;
+    /**
+     * Home Department
+     * <p>
+     * Lineage reference object : SHRCOMM_DEPT_CODE, Lookup lineage reference object : stvdept
+     * 
+     */
+    @JsonProperty("deptCode")
+    @JsonPropertyDescription("Lineage reference object : SHRCOMM_DEPT_CODE, Lookup lineage reference object : stvdept")
+    private String deptCode;
+    @JsonIgnore
+    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+    /**
+     * 
+     * (Required)
+     * 
+     */
+    @JsonProperty("shacomiComtCode")
+    public String getShacomiComtCode() {
+        return shacomiComtCode;
+    }
+
+    /**
+     * 
+     * (Required)
+     * 
+     */
+    @JsonProperty("shacomiComtCode")
+    public void setShacomiComtCode(String shacomiComtCode) {
+        this.shacomiComtCode = shacomiComtCode;
+    }
+
+    public CommitteeServiceMembers100QapiPost withShacomiComtCode(String shacomiComtCode) {
+        this.shacomiComtCode = shacomiComtCode;
+        return this;
+    }
+
+    @JsonProperty("id")
+    public String getId() {
+        return id;
+    }
+
+    @JsonProperty("id")
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public CommitteeServiceMembers100QapiPost withId(String id) {
+        this.id = id;
+        return this;
+    }
+
+    /**
+     * Member
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("memberId")
+    public String getMemberId() {
+        return memberId;
+    }
+
+    /**
+     * Member
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("memberId")
+    public void setMemberId(String memberId) {
+        this.memberId = memberId;
+    }
+
+    public CommitteeServiceMembers100QapiPost withMemberId(String memberId) {
+        this.memberId = memberId;
+        return this;
+    }
+
+    /**
+     * Participation From
+     * <p>
+     * Lineage reference object : SHRCOMM_FROM_DATE
+     * 
+     */
+    @JsonProperty("fromDate")
+    public Date getFromDate() {
+        return fromDate;
+    }
+
+    /**
+     * Participation From
+     * <p>
+     * Lineage reference object : SHRCOMM_FROM_DATE
+     * 
+     */
+    @JsonProperty("fromDate")
+    public void setFromDate(Date fromDate) {
+        this.fromDate = fromDate;
+    }
+
+    public CommitteeServiceMembers100QapiPost withFromDate(Date fromDate) {
+        this.fromDate = fromDate;
+        return this;
+    }
+
+    /**
+     * Participation To
+     * <p>
+     * Lineage reference object : SHRCOMM_TO_DATE
+     * 
+     */
+    @JsonProperty("toDate")
+    public Date getToDate() {
+        return toDate;
+    }
+
+    /**
+     * Participation To
+     * <p>
+     * Lineage reference object : SHRCOMM_TO_DATE
+     * 
+     */
+    @JsonProperty("toDate")
+    public void setToDate(Date toDate) {
+        this.toDate = toDate;
+    }
+
+    public CommitteeServiceMembers100QapiPost withToDate(Date toDate) {
+        this.toDate = toDate;
+        return this;
+    }
+
+    /**
+     * Role
+     * <p>
+     * Lineage reference object : SHRCOMM_COMF_CODE, Lookup lineage reference object : stvcomf
+     * 
+     */
+    @JsonProperty("comfCode")
+    public String getComfCode() {
+        return comfCode;
+    }
+
+    /**
+     * Role
+     * <p>
+     * Lineage reference object : SHRCOMM_COMF_CODE, Lookup lineage reference object : stvcomf
+     * 
+     */
+    @JsonProperty("comfCode")
+    public void setComfCode(String comfCode) {
+        this.comfCode = comfCode;
+    }
+
+    public CommitteeServiceMembers100QapiPost withComfCode(String comfCode) {
+        this.comfCode = comfCode;
+        return this;
+    }
+
+    /**
+     * Status
+     * <p>
+     * Lineage reference object : SHRCOMM_COMS_CODE, Lookup lineage reference object : stvcoms
+     * 
+     */
+    @JsonProperty("comsCode")
+    public String getComsCode() {
+        return comsCode;
+    }
+
+    /**
+     * Status
+     * <p>
+     * Lineage reference object : SHRCOMM_COMS_CODE, Lookup lineage reference object : stvcoms
+     * 
+     */
+    @JsonProperty("comsCode")
+    public void setComsCode(String comsCode) {
+        this.comsCode = comsCode;
+    }
+
+    public CommitteeServiceMembers100QapiPost withComsCode(String comsCode) {
+        this.comsCode = comsCode;
+        return this;
+    }
+
+    /**
+     * District/Division
+     * <p>
+     * Lineage reference object : SHRCOMM_DICD_CODE, Lookup lineage reference object : gtvdicd
+     * 
+     */
+    @JsonProperty("dicdCode")
+    public String getDicdCode() {
+        return dicdCode;
+    }
+
+    /**
+     * District/Division
+     * <p>
+     * Lineage reference object : SHRCOMM_DICD_CODE, Lookup lineage reference object : gtvdicd
+     * 
+     */
+    @JsonProperty("dicdCode")
+    public void setDicdCode(String dicdCode) {
+        this.dicdCode = dicdCode;
+    }
+
+    public CommitteeServiceMembers100QapiPost withDicdCode(String dicdCode) {
+        this.dicdCode = dicdCode;
+        return this;
+    }
+
+    /**
+     * Home College
+     * <p>
+     * Lineage reference object : SHRCOMM_COLL_CODE, Lookup lineage reference object : stvcoll
+     * 
+     */
+    @JsonProperty("collCode")
+    public String getCollCode() {
+        return collCode;
+    }
+
+    /**
+     * Home College
+     * <p>
+     * Lineage reference object : SHRCOMM_COLL_CODE, Lookup lineage reference object : stvcoll
+     * 
+     */
+    @JsonProperty("collCode")
+    public void setCollCode(String collCode) {
+        this.collCode = collCode;
+    }
+
+    public CommitteeServiceMembers100QapiPost withCollCode(String collCode) {
+        this.collCode = collCode;
+        return this;
+    }
+
+    /**
+     * Home Department
+     * <p>
+     * Lineage reference object : SHRCOMM_DEPT_CODE, Lookup lineage reference object : stvdept
+     * 
+     */
+    @JsonProperty("deptCode")
+    public String getDeptCode() {
+        return deptCode;
+    }
+
+    /**
+     * Home Department
+     * <p>
+     * Lineage reference object : SHRCOMM_DEPT_CODE, Lookup lineage reference object : stvdept
+     * 
+     */
+    @JsonProperty("deptCode")
+    public void setDeptCode(String deptCode) {
+        this.deptCode = deptCode;
+    }
+
+    public CommitteeServiceMembers100QapiPost withDeptCode(String deptCode) {
+        this.deptCode = deptCode;
+        return this;
+    }
+
+    @JsonAnyGetter
+    public Map<String, Object> getAdditionalProperties() {
+        return this.additionalProperties;
+    }
+
+    @JsonAnySetter
+    public void setAdditionalProperty(String name, Object value) {
+        this.additionalProperties.put(name, value);
+    }
+
+    public CommitteeServiceMembers100QapiPost withAdditionalProperty(String name, Object value) {
+        this.additionalProperties.put(name, value);
+        return this;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(CommitteeServiceMembers100QapiPost.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
+        sb.append("shacomiComtCode");
+        sb.append('=');
+        sb.append(((this.shacomiComtCode == null)?"<null>":this.shacomiComtCode));
+        sb.append(',');
+        sb.append("id");
+        sb.append('=');
+        sb.append(((this.id == null)?"<null>":this.id));
+        sb.append(',');
+        sb.append("memberId");
+        sb.append('=');
+        sb.append(((this.memberId == null)?"<null>":this.memberId));
+        sb.append(',');
+        sb.append("fromDate");
+        sb.append('=');
+        sb.append(((this.fromDate == null)?"<null>":this.fromDate));
+        sb.append(',');
+        sb.append("toDate");
+        sb.append('=');
+        sb.append(((this.toDate == null)?"<null>":this.toDate));
+        sb.append(',');
+        sb.append("comfCode");
+        sb.append('=');
+        sb.append(((this.comfCode == null)?"<null>":this.comfCode));
+        sb.append(',');
+        sb.append("comsCode");
+        sb.append('=');
+        sb.append(((this.comsCode == null)?"<null>":this.comsCode));
+        sb.append(',');
+        sb.append("dicdCode");
+        sb.append('=');
+        sb.append(((this.dicdCode == null)?"<null>":this.dicdCode));
+        sb.append(',');
+        sb.append("collCode");
+        sb.append('=');
+        sb.append(((this.collCode == null)?"<null>":this.collCode));
+        sb.append(',');
+        sb.append("deptCode");
+        sb.append('=');
+        sb.append(((this.deptCode == null)?"<null>":this.deptCode));
+        sb.append(',');
+        sb.append("additionalProperties");
+        sb.append('=');
+        sb.append(((this.additionalProperties == null)?"<null>":this.additionalProperties));
+        sb.append(',');
+        if (sb.charAt((sb.length()- 1)) == ',') {
+            sb.setCharAt((sb.length()- 1), ']');
+        } else {
+            sb.append(']');
+        }
+        return sb.toString();
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 1;
+        result = ((result* 31)+((this.fromDate == null)? 0 :this.fromDate.hashCode()));
+        result = ((result* 31)+((this.comsCode == null)? 0 :this.comsCode.hashCode()));
+        result = ((result* 31)+((this.toDate == null)? 0 :this.toDate.hashCode()));
+        result = ((result* 31)+((this.comfCode == null)? 0 :this.comfCode.hashCode()));
+        result = ((result* 31)+((this.dicdCode == null)? 0 :this.dicdCode.hashCode()));
+        result = ((result* 31)+((this.id == null)? 0 :this.id.hashCode()));
+        result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
+        result = ((result* 31)+((this.shacomiComtCode == null)? 0 :this.shacomiComtCode.hashCode()));
+        result = ((result* 31)+((this.collCode == null)? 0 :this.collCode.hashCode()));
+        result = ((result* 31)+((this.deptCode == null)? 0 :this.deptCode.hashCode()));
+        result = ((result* 31)+((this.memberId == null)? 0 :this.memberId.hashCode()));
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if (other == this) {
+            return true;
+        }
+        if ((other instanceof CommitteeServiceMembers100QapiPost) == false) {
+            return false;
+        }
+        CommitteeServiceMembers100QapiPost rhs = ((CommitteeServiceMembers100QapiPost) other);
+        return ((((((((((((this.fromDate == rhs.fromDate)||((this.fromDate!= null)&&this.fromDate.equals(rhs.fromDate)))&&((this.comsCode == rhs.comsCode)||((this.comsCode!= null)&&this.comsCode.equals(rhs.comsCode))))&&((this.toDate == rhs.toDate)||((this.toDate!= null)&&this.toDate.equals(rhs.toDate))))&&((this.comfCode == rhs.comfCode)||((this.comfCode!= null)&&this.comfCode.equals(rhs.comfCode))))&&((this.dicdCode == rhs.dicdCode)||((this.dicdCode!= null)&&this.dicdCode.equals(rhs.dicdCode))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.shacomiComtCode == rhs.shacomiComtCode)||((this.shacomiComtCode!= null)&&this.shacomiComtCode.equals(rhs.shacomiComtCode))))&&((this.collCode == rhs.collCode)||((this.collCode!= null)&&this.collCode.equals(rhs.collCode))))&&((this.deptCode == rhs.deptCode)||((this.deptCode!= null)&&this.deptCode.equals(rhs.deptCode))))&&((this.memberId == rhs.memberId)||((this.memberId!= null)&&this.memberId.equals(rhs.memberId))));
+    }
+
+}
