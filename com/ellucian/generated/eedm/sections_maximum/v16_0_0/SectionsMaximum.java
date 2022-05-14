@@ -4,6 +4,7 @@ package com.ellucian.generated.eedm.sections_maximum.v16_0_0;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.processing.Generated;
+import com.ellucian.generated.eedm.academic_catalogs.v6_0.Metadata;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -46,7 +47,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "owningInstitutionUnits",
     "gradeTypes",
     "chargeAssessmentMethod",
-    "alternateIds"
+    "alternateIds",
+    "metadata"
 })
 @Generated("jsonschema2pojo")
 public class SectionsMaximum {
@@ -317,6 +319,15 @@ public class SectionsMaximum {
     @JsonProperty("alternateIds")
     @JsonPropertyDescription("Additional unique identifiers assigned to sections to support non-Ethos integrations.")
     private List<AlternateId> alternateIds = new ArrayList<AlternateId>();
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    @JsonPropertyDescription("Metadata about the JSON payload")
+    private Metadata metadata;
 
     /**
      * ID
@@ -1111,6 +1122,33 @@ public class SectionsMaximum {
         return this;
     }
 
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    public Metadata getMetadata() {
+        return metadata;
+    }
+
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    public void setMetadata(Metadata metadata) {
+        this.metadata = metadata;
+    }
+
+    public SectionsMaximum withMetadata(Metadata metadata) {
+        this.metadata = metadata;
+        return this;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -1231,6 +1269,10 @@ public class SectionsMaximum {
         sb.append('=');
         sb.append(((this.alternateIds == null)?"<null>":this.alternateIds));
         sb.append(',');
+        sb.append("metadata");
+        sb.append('=');
+        sb.append(((this.metadata == null)?"<null>":this.metadata));
+        sb.append(',');
         if (sb.charAt((sb.length()- 1)) == ',') {
             sb.setCharAt((sb.length()- 1), ']');
         } else {
@@ -1244,6 +1286,7 @@ public class SectionsMaximum {
         int result = 1;
         result = ((result* 31)+((this.reportingAcademicPeriod == null)? 0 :this.reportingAcademicPeriod.hashCode()));
         result = ((result* 31)+((this.maxEnrollment == null)? 0 :this.maxEnrollment.hashCode()));
+        result = ((result* 31)+((this.metadata == null)? 0 :this.metadata.hashCode()));
         result = ((result* 31)+((this.code == null)? 0 :this.code.hashCode()));
         result = ((result* 31)+((this.alternateIds == null)? 0 :this.alternateIds.hashCode()));
         result = ((result* 31)+((this.academicLevels == null)? 0 :this.academicLevels.hashCode()));
@@ -1283,7 +1326,7 @@ public class SectionsMaximum {
             return false;
         }
         SectionsMaximum rhs = ((SectionsMaximum) other);
-        return ((((((((((((((((((((((((((((((this.reportingAcademicPeriod == rhs.reportingAcademicPeriod)||((this.reportingAcademicPeriod!= null)&&this.reportingAcademicPeriod.equals(rhs.reportingAcademicPeriod)))&&((this.maxEnrollment == rhs.maxEnrollment)||((this.maxEnrollment!= null)&&this.maxEnrollment.equals(rhs.maxEnrollment))))&&((this.code == rhs.code)||((this.code!= null)&&this.code.equals(rhs.code))))&&((this.alternateIds == rhs.alternateIds)||((this.alternateIds!= null)&&this.alternateIds.equals(rhs.alternateIds))))&&((this.academicLevels == rhs.academicLevels)||((this.academicLevels!= null)&&this.academicLevels.equals(rhs.academicLevels))))&&((this.description == rhs.description)||((this.description!= null)&&this.description.equals(rhs.description))))&&((this.startOn == rhs.startOn)||((this.startOn!= null)&&this.startOn.equals(rhs.startOn))))&&((this.scheduleAcademicPeriod == rhs.scheduleAcademicPeriod)||((this.scheduleAcademicPeriod!= null)&&this.scheduleAcademicPeriod.equals(rhs.scheduleAcademicPeriod))))&&((this.academicPeriod == rhs.academicPeriod)||((this.academicPeriod!= null)&&this.academicPeriod.equals(rhs.academicPeriod))))&&((this.title == rhs.title)||((this.title!= null)&&this.title.equals(rhs.title))))&&((this.duration == rhs.duration)||((this.duration!= null)&&this.duration.equals(rhs.duration))))&&((this.instructionalEvents == rhs.instructionalEvents)||((this.instructionalEvents!= null)&&this.instructionalEvents.equals(rhs.instructionalEvents))))&&((this.number == rhs.number)||((this.number!= null)&&this.number.equals(rhs.number))))&&((this.owningInstitutionUnits == rhs.owningInstitutionUnits)||((this.owningInstitutionUnits!= null)&&this.owningInstitutionUnits.equals(rhs.owningInstitutionUnits))))&&((this.credits == rhs.credits)||((this.credits!= null)&&this.credits.equals(rhs.credits))))&&((this.endOn == rhs.endOn)||((this.endOn!= null)&&this.endOn.equals(rhs.endOn))))&&((this.course == rhs.course)||((this.course!= null)&&this.course.equals(rhs.course))))&&((this.gradeTypes == rhs.gradeTypes)||((this.gradeTypes!= null)&&this.gradeTypes.equals(rhs.gradeTypes))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.censusDates == rhs.censusDates)||((this.censusDates!= null)&&this.censusDates.equals(rhs.censusDates))))&&((this.gradeSchemes == rhs.gradeSchemes)||((this.gradeSchemes!= null)&&this.gradeSchemes.equals(rhs.gradeSchemes))))&&((this.hours == rhs.hours)||((this.hours!= null)&&this.hours.equals(rhs.hours))))&&((this.chargeAssessmentMethod == rhs.chargeAssessmentMethod)||((this.chargeAssessmentMethod!= null)&&this.chargeAssessmentMethod.equals(rhs.chargeAssessmentMethod))))&&((this.instructionalPlatform == rhs.instructionalPlatform)||((this.instructionalPlatform!= null)&&this.instructionalPlatform.equals(rhs.instructionalPlatform))))&&((this.instructionalMethodDetails == rhs.instructionalMethodDetails)||((this.instructionalMethodDetails!= null)&&this.instructionalMethodDetails.equals(rhs.instructionalMethodDetails))))&&((this.site == rhs.site)||((this.site!= null)&&this.site.equals(rhs.site))))&&((this.courseLevels == rhs.courseLevels)||((this.courseLevels!= null)&&this.courseLevels.equals(rhs.courseLevels))))&&((this.instructorRosterDetails == rhs.instructorRosterDetails)||((this.instructorRosterDetails!= null)&&this.instructorRosterDetails.equals(rhs.instructorRosterDetails))))&&((this.status == rhs.status)||((this.status!= null)&&this.status.equals(rhs.status))));
+        return (((((((((((((((((((((((((((((((this.reportingAcademicPeriod == rhs.reportingAcademicPeriod)||((this.reportingAcademicPeriod!= null)&&this.reportingAcademicPeriod.equals(rhs.reportingAcademicPeriod)))&&((this.maxEnrollment == rhs.maxEnrollment)||((this.maxEnrollment!= null)&&this.maxEnrollment.equals(rhs.maxEnrollment))))&&((this.metadata == rhs.metadata)||((this.metadata!= null)&&this.metadata.equals(rhs.metadata))))&&((this.code == rhs.code)||((this.code!= null)&&this.code.equals(rhs.code))))&&((this.alternateIds == rhs.alternateIds)||((this.alternateIds!= null)&&this.alternateIds.equals(rhs.alternateIds))))&&((this.academicLevels == rhs.academicLevels)||((this.academicLevels!= null)&&this.academicLevels.equals(rhs.academicLevels))))&&((this.description == rhs.description)||((this.description!= null)&&this.description.equals(rhs.description))))&&((this.startOn == rhs.startOn)||((this.startOn!= null)&&this.startOn.equals(rhs.startOn))))&&((this.scheduleAcademicPeriod == rhs.scheduleAcademicPeriod)||((this.scheduleAcademicPeriod!= null)&&this.scheduleAcademicPeriod.equals(rhs.scheduleAcademicPeriod))))&&((this.academicPeriod == rhs.academicPeriod)||((this.academicPeriod!= null)&&this.academicPeriod.equals(rhs.academicPeriod))))&&((this.title == rhs.title)||((this.title!= null)&&this.title.equals(rhs.title))))&&((this.duration == rhs.duration)||((this.duration!= null)&&this.duration.equals(rhs.duration))))&&((this.instructionalEvents == rhs.instructionalEvents)||((this.instructionalEvents!= null)&&this.instructionalEvents.equals(rhs.instructionalEvents))))&&((this.number == rhs.number)||((this.number!= null)&&this.number.equals(rhs.number))))&&((this.owningInstitutionUnits == rhs.owningInstitutionUnits)||((this.owningInstitutionUnits!= null)&&this.owningInstitutionUnits.equals(rhs.owningInstitutionUnits))))&&((this.credits == rhs.credits)||((this.credits!= null)&&this.credits.equals(rhs.credits))))&&((this.endOn == rhs.endOn)||((this.endOn!= null)&&this.endOn.equals(rhs.endOn))))&&((this.course == rhs.course)||((this.course!= null)&&this.course.equals(rhs.course))))&&((this.gradeTypes == rhs.gradeTypes)||((this.gradeTypes!= null)&&this.gradeTypes.equals(rhs.gradeTypes))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.censusDates == rhs.censusDates)||((this.censusDates!= null)&&this.censusDates.equals(rhs.censusDates))))&&((this.gradeSchemes == rhs.gradeSchemes)||((this.gradeSchemes!= null)&&this.gradeSchemes.equals(rhs.gradeSchemes))))&&((this.hours == rhs.hours)||((this.hours!= null)&&this.hours.equals(rhs.hours))))&&((this.chargeAssessmentMethod == rhs.chargeAssessmentMethod)||((this.chargeAssessmentMethod!= null)&&this.chargeAssessmentMethod.equals(rhs.chargeAssessmentMethod))))&&((this.instructionalPlatform == rhs.instructionalPlatform)||((this.instructionalPlatform!= null)&&this.instructionalPlatform.equals(rhs.instructionalPlatform))))&&((this.instructionalMethodDetails == rhs.instructionalMethodDetails)||((this.instructionalMethodDetails!= null)&&this.instructionalMethodDetails.equals(rhs.instructionalMethodDetails))))&&((this.site == rhs.site)||((this.site!= null)&&this.site.equals(rhs.site))))&&((this.courseLevels == rhs.courseLevels)||((this.courseLevels!= null)&&this.courseLevels.equals(rhs.courseLevels))))&&((this.instructorRosterDetails == rhs.instructorRosterDetails)||((this.instructorRosterDetails!= null)&&this.instructorRosterDetails.equals(rhs.instructorRosterDetails))))&&((this.status == rhs.status)||((this.status!= null)&&this.status.equals(rhs.status))));
     }
 
 }

@@ -4,6 +4,7 @@ package com.ellucian.generated.eedm.account_funds_available.v8_0;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
+import com.ellucian.generated.eedm.academic_catalogs.v6_0.Metadata;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import com.fasterxml.jackson.annotation.JsonValue;
 @JsonPropertyOrder({
     "accountingString",
     "fundsAvailable",
-    "balanceOn"
+    "balanceOn",
+    "metadata"
 })
 @Generated("jsonschema2pojo")
 public class AccountFundsAvailable {
@@ -56,6 +58,15 @@ public class AccountFundsAvailable {
     @JsonProperty("balanceOn")
     @JsonPropertyDescription("The date for which the availability of funds was evaluated.")
     private Object balanceOn;
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    @JsonPropertyDescription("Metadata about the JSON payload")
+    private Metadata metadata;
 
     /**
      * Accounting String
@@ -142,6 +153,33 @@ public class AccountFundsAvailable {
         return this;
     }
 
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    public Metadata getMetadata() {
+        return metadata;
+    }
+
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    public void setMetadata(Metadata metadata) {
+        this.metadata = metadata;
+    }
+
+    public AccountFundsAvailable withMetadata(Metadata metadata) {
+        this.metadata = metadata;
+        return this;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -158,6 +196,10 @@ public class AccountFundsAvailable {
         sb.append('=');
         sb.append(((this.balanceOn == null)?"<null>":this.balanceOn));
         sb.append(',');
+        sb.append("metadata");
+        sb.append('=');
+        sb.append(((this.metadata == null)?"<null>":this.metadata));
+        sb.append(',');
         if (sb.charAt((sb.length()- 1)) == ',') {
             sb.setCharAt((sb.length()- 1), ']');
         } else {
@@ -170,6 +212,7 @@ public class AccountFundsAvailable {
     public int hashCode() {
         int result = 1;
         result = ((result* 31)+((this.accountingString == null)? 0 :this.accountingString.hashCode()));
+        result = ((result* 31)+((this.metadata == null)? 0 :this.metadata.hashCode()));
         result = ((result* 31)+((this.balanceOn == null)? 0 :this.balanceOn.hashCode()));
         result = ((result* 31)+((this.fundsAvailable == null)? 0 :this.fundsAvailable.hashCode()));
         return result;
@@ -184,7 +227,7 @@ public class AccountFundsAvailable {
             return false;
         }
         AccountFundsAvailable rhs = ((AccountFundsAvailable) other);
-        return ((((this.accountingString == rhs.accountingString)||((this.accountingString!= null)&&this.accountingString.equals(rhs.accountingString)))&&((this.balanceOn == rhs.balanceOn)||((this.balanceOn!= null)&&this.balanceOn.equals(rhs.balanceOn))))&&((this.fundsAvailable == rhs.fundsAvailable)||((this.fundsAvailable!= null)&&this.fundsAvailable.equals(rhs.fundsAvailable))));
+        return (((((this.accountingString == rhs.accountingString)||((this.accountingString!= null)&&this.accountingString.equals(rhs.accountingString)))&&((this.metadata == rhs.metadata)||((this.metadata!= null)&&this.metadata.equals(rhs.metadata))))&&((this.balanceOn == rhs.balanceOn)||((this.balanceOn!= null)&&this.balanceOn.equals(rhs.balanceOn))))&&((this.fundsAvailable == rhs.fundsAvailable)||((this.fundsAvailable!= null)&&this.fundsAvailable.equals(rhs.fundsAvailable))));
     }
 
 

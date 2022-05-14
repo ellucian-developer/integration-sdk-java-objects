@@ -4,6 +4,7 @@ package com.ellucian.generated.eedm.budget_phases.v12_0;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
+import com.ellucian.generated.eedm.academic_catalogs.v6_0.Metadata;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;

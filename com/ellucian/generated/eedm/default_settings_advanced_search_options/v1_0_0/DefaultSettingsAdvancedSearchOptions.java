@@ -2,6 +2,7 @@
 package com.ellucian.generated.eedm.default_settings_advanced_search_options.v1_0_0;
 
 import javax.annotation.processing.Generated;
+import com.ellucian.generated.eedm.academic_catalogs.v6_0.Metadata;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -18,7 +19,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
     "title",
     "value",
-    "origin"
+    "origin",
+    "metadata"
 })
 @Generated("jsonschema2pojo")
 public class DefaultSettingsAdvancedSearchOptions {
@@ -51,6 +53,15 @@ public class DefaultSettingsAdvancedSearchOptions {
     @JsonProperty("origin")
     @JsonPropertyDescription("The origin of the default settings advanced search option.")
     private String origin;
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    @JsonPropertyDescription("Metadata about the JSON payload")
+    private Metadata metadata;
 
     /**
      * Title
@@ -135,6 +146,33 @@ public class DefaultSettingsAdvancedSearchOptions {
         return this;
     }
 
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    public Metadata getMetadata() {
+        return metadata;
+    }
+
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    public void setMetadata(Metadata metadata) {
+        this.metadata = metadata;
+    }
+
+    public DefaultSettingsAdvancedSearchOptions withMetadata(Metadata metadata) {
+        this.metadata = metadata;
+        return this;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -151,6 +189,10 @@ public class DefaultSettingsAdvancedSearchOptions {
         sb.append('=');
         sb.append(((this.origin == null)?"<null>":this.origin));
         sb.append(',');
+        sb.append("metadata");
+        sb.append('=');
+        sb.append(((this.metadata == null)?"<null>":this.metadata));
+        sb.append(',');
         if (sb.charAt((sb.length()- 1)) == ',') {
             sb.setCharAt((sb.length()- 1), ']');
         } else {
@@ -162,6 +204,7 @@ public class DefaultSettingsAdvancedSearchOptions {
     @Override
     public int hashCode() {
         int result = 1;
+        result = ((result* 31)+((this.metadata == null)? 0 :this.metadata.hashCode()));
         result = ((result* 31)+((this.title == null)? 0 :this.title.hashCode()));
         result = ((result* 31)+((this.value == null)? 0 :this.value.hashCode()));
         result = ((result* 31)+((this.origin == null)? 0 :this.origin.hashCode()));
@@ -177,7 +220,7 @@ public class DefaultSettingsAdvancedSearchOptions {
             return false;
         }
         DefaultSettingsAdvancedSearchOptions rhs = ((DefaultSettingsAdvancedSearchOptions) other);
-        return ((((this.title == rhs.title)||((this.title!= null)&&this.title.equals(rhs.title)))&&((this.value == rhs.value)||((this.value!= null)&&this.value.equals(rhs.value))))&&((this.origin == rhs.origin)||((this.origin!= null)&&this.origin.equals(rhs.origin))));
+        return (((((this.metadata == rhs.metadata)||((this.metadata!= null)&&this.metadata.equals(rhs.metadata)))&&((this.title == rhs.title)||((this.title!= null)&&this.title.equals(rhs.title))))&&((this.value == rhs.value)||((this.value!= null)&&this.value.equals(rhs.value))))&&((this.origin == rhs.origin)||((this.origin!= null)&&this.origin.equals(rhs.origin))));
     }
 
 }

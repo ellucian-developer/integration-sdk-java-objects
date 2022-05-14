@@ -1,5 +1,5 @@
 
-package com.ellucian.generated.eedm.subregions.v1_0_0;
+package com.ellucian.generated.eedm;
 
 import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;

@@ -2,6 +2,7 @@
 package com.ellucian.generated.eedm.student_academic_programs_replacements.v1_0_0;
 
 import javax.annotation.processing.Generated;
+import com.ellucian.generated.eedm.academic_catalogs.v6_0.Metadata;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -19,7 +20,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "id",
     "student",
     "programToReplace",
-    "newProgram"
+    "newProgram",
+    "metadata"
 })
 @Generated("jsonschema2pojo")
 public class StudentAcademicProgramsReplacements {
@@ -64,6 +66,15 @@ public class StudentAcademicProgramsReplacements {
     @JsonProperty("newProgram")
     @JsonPropertyDescription("The student's new academic program.")
     private NewProgram newProgram;
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    @JsonPropertyDescription("Metadata about the JSON payload")
+    private Metadata metadata;
 
     /**
      * ID
@@ -181,6 +192,33 @@ public class StudentAcademicProgramsReplacements {
         return this;
     }
 
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    public Metadata getMetadata() {
+        return metadata;
+    }
+
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    public void setMetadata(Metadata metadata) {
+        this.metadata = metadata;
+    }
+
+    public StudentAcademicProgramsReplacements withMetadata(Metadata metadata) {
+        this.metadata = metadata;
+        return this;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -201,6 +239,10 @@ public class StudentAcademicProgramsReplacements {
         sb.append('=');
         sb.append(((this.newProgram == null)?"<null>":this.newProgram));
         sb.append(',');
+        sb.append("metadata");
+        sb.append('=');
+        sb.append(((this.metadata == null)?"<null>":this.metadata));
+        sb.append(',');
         if (sb.charAt((sb.length()- 1)) == ',') {
             sb.setCharAt((sb.length()- 1), ']');
         } else {
@@ -213,6 +255,7 @@ public class StudentAcademicProgramsReplacements {
     public int hashCode() {
         int result = 1;
         result = ((result* 31)+((this.programToReplace == null)? 0 :this.programToReplace.hashCode()));
+        result = ((result* 31)+((this.metadata == null)? 0 :this.metadata.hashCode()));
         result = ((result* 31)+((this.id == null)? 0 :this.id.hashCode()));
         result = ((result* 31)+((this.student == null)? 0 :this.student.hashCode()));
         result = ((result* 31)+((this.newProgram == null)? 0 :this.newProgram.hashCode()));
@@ -228,7 +271,7 @@ public class StudentAcademicProgramsReplacements {
             return false;
         }
         StudentAcademicProgramsReplacements rhs = ((StudentAcademicProgramsReplacements) other);
-        return (((((this.programToReplace == rhs.programToReplace)||((this.programToReplace!= null)&&this.programToReplace.equals(rhs.programToReplace)))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.student == rhs.student)||((this.student!= null)&&this.student.equals(rhs.student))))&&((this.newProgram == rhs.newProgram)||((this.newProgram!= null)&&this.newProgram.equals(rhs.newProgram))));
+        return ((((((this.programToReplace == rhs.programToReplace)||((this.programToReplace!= null)&&this.programToReplace.equals(rhs.programToReplace)))&&((this.metadata == rhs.metadata)||((this.metadata!= null)&&this.metadata.equals(rhs.metadata))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.student == rhs.student)||((this.student!= null)&&this.student.equals(rhs.student))))&&((this.newProgram == rhs.newProgram)||((this.newProgram!= null)&&this.newProgram.equals(rhs.newProgram))));
     }
 
 }

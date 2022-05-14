@@ -4,6 +4,7 @@ package com.ellucian.generated.eedm.rooms_room_availability.v6_0;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.processing.Generated;
+import com.ellucian.generated.eedm.academic_catalogs.v6_0.Metadata;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -22,7 +23,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "site",
     "building",
     "occupancies",
-    "roomTypes"
+    "roomTypes",
+    "metadata"
 })
 @Generated("jsonschema2pojo")
 public class RoomsRoomAvailability {
@@ -73,6 +75,15 @@ public class RoomsRoomAvailability {
     @JsonProperty("roomTypes")
     @JsonPropertyDescription("The type or style of a of room's layout. For example, \"Classroom\" or \"Lecture Hall\" style. A room may support multiple types of layouts.")
     private List<RoomType> roomTypes = new ArrayList<RoomType>();
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    @JsonPropertyDescription("Metadata about the JSON payload")
+    private Metadata metadata;
 
     /**
      * Recurrence
@@ -211,6 +222,33 @@ public class RoomsRoomAvailability {
         return this;
     }
 
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    public Metadata getMetadata() {
+        return metadata;
+    }
+
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    public void setMetadata(Metadata metadata) {
+        this.metadata = metadata;
+    }
+
+    public RoomsRoomAvailability withMetadata(Metadata metadata) {
+        this.metadata = metadata;
+        return this;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -235,6 +273,10 @@ public class RoomsRoomAvailability {
         sb.append('=');
         sb.append(((this.roomTypes == null)?"<null>":this.roomTypes));
         sb.append(',');
+        sb.append("metadata");
+        sb.append('=');
+        sb.append(((this.metadata == null)?"<null>":this.metadata));
+        sb.append(',');
         if (sb.charAt((sb.length()- 1)) == ',') {
             sb.setCharAt((sb.length()- 1), ']');
         } else {
@@ -248,9 +290,10 @@ public class RoomsRoomAvailability {
         int result = 1;
         result = ((result* 31)+((this.recurrence == null)? 0 :this.recurrence.hashCode()));
         result = ((result* 31)+((this.site == null)? 0 :this.site.hashCode()));
-        result = ((result* 31)+((this.building == null)? 0 :this.building.hashCode()));
+        result = ((result* 31)+((this.metadata == null)? 0 :this.metadata.hashCode()));
         result = ((result* 31)+((this.occupancies == null)? 0 :this.occupancies.hashCode()));
         result = ((result* 31)+((this.roomTypes == null)? 0 :this.roomTypes.hashCode()));
+        result = ((result* 31)+((this.building == null)? 0 :this.building.hashCode()));
         return result;
     }
 
@@ -263,7 +306,7 @@ public class RoomsRoomAvailability {
             return false;
         }
         RoomsRoomAvailability rhs = ((RoomsRoomAvailability) other);
-        return ((((((this.recurrence == rhs.recurrence)||((this.recurrence!= null)&&this.recurrence.equals(rhs.recurrence)))&&((this.site == rhs.site)||((this.site!= null)&&this.site.equals(rhs.site))))&&((this.building == rhs.building)||((this.building!= null)&&this.building.equals(rhs.building))))&&((this.occupancies == rhs.occupancies)||((this.occupancies!= null)&&this.occupancies.equals(rhs.occupancies))))&&((this.roomTypes == rhs.roomTypes)||((this.roomTypes!= null)&&this.roomTypes.equals(rhs.roomTypes))));
+        return (((((((this.recurrence == rhs.recurrence)||((this.recurrence!= null)&&this.recurrence.equals(rhs.recurrence)))&&((this.site == rhs.site)||((this.site!= null)&&this.site.equals(rhs.site))))&&((this.metadata == rhs.metadata)||((this.metadata!= null)&&this.metadata.equals(rhs.metadata))))&&((this.occupancies == rhs.occupancies)||((this.occupancies!= null)&&this.occupancies.equals(rhs.occupancies))))&&((this.roomTypes == rhs.roomTypes)||((this.roomTypes!= null)&&this.roomTypes.equals(rhs.roomTypes))))&&((this.building == rhs.building)||((this.building!= null)&&this.building.equals(rhs.building))));
     }
 
 }

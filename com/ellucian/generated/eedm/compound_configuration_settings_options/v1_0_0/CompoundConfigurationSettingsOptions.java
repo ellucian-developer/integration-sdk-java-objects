@@ -4,6 +4,7 @@ package com.ellucian.generated.eedm.compound_configuration_settings_options.v1_0
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.processing.Generated;
+import com.ellucian.generated.eedm.academic_catalogs.v6_0.Metadata;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -20,7 +21,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
     "id",
     "ethos",
-    "source"
+    "source",
+    "metadata"
 })
 @Generated("jsonschema2pojo")
 public class CompoundConfigurationSettingsOptions {
@@ -54,6 +56,15 @@ public class CompoundConfigurationSettingsOptions {
     @JsonProperty("source")
     @JsonPropertyDescription("The source values for the compound configuration setting.")
     private Object source;
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    @JsonPropertyDescription("Metadata about the JSON payload")
+    private Metadata metadata;
 
     /**
      * ID
@@ -140,6 +151,33 @@ public class CompoundConfigurationSettingsOptions {
         return this;
     }
 
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    public Metadata getMetadata() {
+        return metadata;
+    }
+
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    public void setMetadata(Metadata metadata) {
+        this.metadata = metadata;
+    }
+
+    public CompoundConfigurationSettingsOptions withMetadata(Metadata metadata) {
+        this.metadata = metadata;
+        return this;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -156,6 +194,10 @@ public class CompoundConfigurationSettingsOptions {
         sb.append('=');
         sb.append(((this.source == null)?"<null>":this.source));
         sb.append(',');
+        sb.append("metadata");
+        sb.append('=');
+        sb.append(((this.metadata == null)?"<null>":this.metadata));
+        sb.append(',');
         if (sb.charAt((sb.length()- 1)) == ',') {
             sb.setCharAt((sb.length()- 1), ']');
         } else {
@@ -168,6 +210,7 @@ public class CompoundConfigurationSettingsOptions {
     public int hashCode() {
         int result = 1;
         result = ((result* 31)+((this.ethos == null)? 0 :this.ethos.hashCode()));
+        result = ((result* 31)+((this.metadata == null)? 0 :this.metadata.hashCode()));
         result = ((result* 31)+((this.id == null)? 0 :this.id.hashCode()));
         result = ((result* 31)+((this.source == null)? 0 :this.source.hashCode()));
         return result;
@@ -182,7 +225,7 @@ public class CompoundConfigurationSettingsOptions {
             return false;
         }
         CompoundConfigurationSettingsOptions rhs = ((CompoundConfigurationSettingsOptions) other);
-        return ((((this.ethos == rhs.ethos)||((this.ethos!= null)&&this.ethos.equals(rhs.ethos)))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.source == rhs.source)||((this.source!= null)&&this.source.equals(rhs.source))));
+        return (((((this.ethos == rhs.ethos)||((this.ethos!= null)&&this.ethos.equals(rhs.ethos)))&&((this.metadata == rhs.metadata)||((this.metadata!= null)&&this.metadata.equals(rhs.metadata))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.source == rhs.source)||((this.source!= null)&&this.source.equals(rhs.source))));
     }
 
 }

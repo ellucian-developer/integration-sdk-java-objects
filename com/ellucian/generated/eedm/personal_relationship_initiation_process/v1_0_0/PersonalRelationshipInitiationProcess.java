@@ -2,6 +2,7 @@
 package com.ellucian.generated.eedm.personal_relationship_initiation_process.v1_0_0;
 
 import javax.annotation.processing.Generated;
+import com.ellucian.generated.eedm.academic_catalogs.v6_0.Metadata;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -22,7 +23,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "status",
     "startOn",
     "endOn",
-    "comment"
+    "comment",
+    "metadata"
 })
 @Generated("jsonschema2pojo")
 public class PersonalRelationshipInitiationProcess {
@@ -93,6 +95,15 @@ public class PersonalRelationshipInitiationProcess {
     @JsonProperty("comment")
     @JsonPropertyDescription("The comment on the relationship.")
     private String comment;
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    @JsonPropertyDescription("Metadata about the JSON payload")
+    private Metadata metadata;
 
     /**
      * Subject Person
@@ -289,6 +300,33 @@ public class PersonalRelationshipInitiationProcess {
         return this;
     }
 
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    public Metadata getMetadata() {
+        return metadata;
+    }
+
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    public void setMetadata(Metadata metadata) {
+        this.metadata = metadata;
+    }
+
+    public PersonalRelationshipInitiationProcess withMetadata(Metadata metadata) {
+        this.metadata = metadata;
+        return this;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -321,6 +359,10 @@ public class PersonalRelationshipInitiationProcess {
         sb.append('=');
         sb.append(((this.comment == null)?"<null>":this.comment));
         sb.append(',');
+        sb.append("metadata");
+        sb.append('=');
+        sb.append(((this.metadata == null)?"<null>":this.metadata));
+        sb.append(',');
         if (sb.charAt((sb.length()- 1)) == ',') {
             sb.setCharAt((sb.length()- 1), ']');
         } else {
@@ -333,6 +375,7 @@ public class PersonalRelationshipInitiationProcess {
     public int hashCode() {
         int result = 1;
         result = ((result* 31)+((this.subjectPerson == null)? 0 :this.subjectPerson.hashCode()));
+        result = ((result* 31)+((this.metadata == null)? 0 :this.metadata.hashCode()));
         result = ((result* 31)+((this.related == null)? 0 :this.related.hashCode()));
         result = ((result* 31)+((this.relationshipType == null)? 0 :this.relationshipType.hashCode()));
         result = ((result* 31)+((this.endOn == null)? 0 :this.endOn.hashCode()));
@@ -351,7 +394,7 @@ public class PersonalRelationshipInitiationProcess {
             return false;
         }
         PersonalRelationshipInitiationProcess rhs = ((PersonalRelationshipInitiationProcess) other);
-        return ((((((((this.subjectPerson == rhs.subjectPerson)||((this.subjectPerson!= null)&&this.subjectPerson.equals(rhs.subjectPerson)))&&((this.related == rhs.related)||((this.related!= null)&&this.related.equals(rhs.related))))&&((this.relationshipType == rhs.relationshipType)||((this.relationshipType!= null)&&this.relationshipType.equals(rhs.relationshipType))))&&((this.endOn == rhs.endOn)||((this.endOn!= null)&&this.endOn.equals(rhs.endOn))))&&((this.startOn == rhs.startOn)||((this.startOn!= null)&&this.startOn.equals(rhs.startOn))))&&((this.comment == rhs.comment)||((this.comment!= null)&&this.comment.equals(rhs.comment))))&&((this.status == rhs.status)||((this.status!= null)&&this.status.equals(rhs.status))));
+        return (((((((((this.subjectPerson == rhs.subjectPerson)||((this.subjectPerson!= null)&&this.subjectPerson.equals(rhs.subjectPerson)))&&((this.metadata == rhs.metadata)||((this.metadata!= null)&&this.metadata.equals(rhs.metadata))))&&((this.related == rhs.related)||((this.related!= null)&&this.related.equals(rhs.related))))&&((this.relationshipType == rhs.relationshipType)||((this.relationshipType!= null)&&this.relationshipType.equals(rhs.relationshipType))))&&((this.endOn == rhs.endOn)||((this.endOn!= null)&&this.endOn.equals(rhs.endOn))))&&((this.startOn == rhs.startOn)||((this.startOn!= null)&&this.startOn.equals(rhs.startOn))))&&((this.comment == rhs.comment)||((this.comment!= null)&&this.comment.equals(rhs.comment))))&&((this.status == rhs.status)||((this.status!= null)&&this.status.equals(rhs.status))));
     }
 
 }

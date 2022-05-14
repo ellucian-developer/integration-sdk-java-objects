@@ -4,6 +4,7 @@ package com.ellucian.generated.eedm.institution_job_supervisors.v11_0;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.processing.Generated;
+import com.ellucian.generated.eedm.academic_catalogs.v6_0.Metadata;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -23,7 +24,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "employer",
     "position",
     "department",
-    "supervisors"
+    "supervisors",
+    "metadata"
 })
 @Generated("jsonschema2pojo")
 public class InstitutionJobSupervisors {
@@ -87,6 +89,15 @@ public class InstitutionJobSupervisors {
     @JsonProperty("supervisors")
     @JsonPropertyDescription("The supervisors associated with the employee's job.")
     private List<Supervisor> supervisors = new ArrayList<Supervisor>();
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    @JsonPropertyDescription("Metadata about the JSON payload")
+    private Metadata metadata;
 
     /**
      * ID
@@ -260,6 +271,33 @@ public class InstitutionJobSupervisors {
         return this;
     }
 
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    public Metadata getMetadata() {
+        return metadata;
+    }
+
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    public void setMetadata(Metadata metadata) {
+        this.metadata = metadata;
+    }
+
+    public InstitutionJobSupervisors withMetadata(Metadata metadata) {
+        this.metadata = metadata;
+        return this;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -288,6 +326,10 @@ public class InstitutionJobSupervisors {
         sb.append('=');
         sb.append(((this.supervisors == null)?"<null>":this.supervisors));
         sb.append(',');
+        sb.append("metadata");
+        sb.append('=');
+        sb.append(((this.metadata == null)?"<null>":this.metadata));
+        sb.append(',');
         if (sb.charAt((sb.length()- 1)) == ',') {
             sb.setCharAt((sb.length()- 1), ']');
         } else {
@@ -299,6 +341,7 @@ public class InstitutionJobSupervisors {
     @Override
     public int hashCode() {
         int result = 1;
+        result = ((result* 31)+((this.metadata == null)? 0 :this.metadata.hashCode()));
         result = ((result* 31)+((this.person == null)? 0 :this.person.hashCode()));
         result = ((result* 31)+((this.employer == null)? 0 :this.employer.hashCode()));
         result = ((result* 31)+((this.id == null)? 0 :this.id.hashCode()));
@@ -317,7 +360,7 @@ public class InstitutionJobSupervisors {
             return false;
         }
         InstitutionJobSupervisors rhs = ((InstitutionJobSupervisors) other);
-        return (((((((this.person == rhs.person)||((this.person!= null)&&this.person.equals(rhs.person)))&&((this.employer == rhs.employer)||((this.employer!= null)&&this.employer.equals(rhs.employer))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.position == rhs.position)||((this.position!= null)&&this.position.equals(rhs.position))))&&((this.department == rhs.department)||((this.department!= null)&&this.department.equals(rhs.department))))&&((this.supervisors == rhs.supervisors)||((this.supervisors!= null)&&this.supervisors.equals(rhs.supervisors))));
+        return ((((((((this.metadata == rhs.metadata)||((this.metadata!= null)&&this.metadata.equals(rhs.metadata)))&&((this.person == rhs.person)||((this.person!= null)&&this.person.equals(rhs.person))))&&((this.employer == rhs.employer)||((this.employer!= null)&&this.employer.equals(rhs.employer))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.position == rhs.position)||((this.position!= null)&&this.position.equals(rhs.position))))&&((this.department == rhs.department)||((this.department!= null)&&this.department.equals(rhs.department))))&&((this.supervisors == rhs.supervisors)||((this.supervisors!= null)&&this.supervisors.equals(rhs.supervisors))));
     }
 
 }

@@ -2,6 +2,7 @@
 package com.ellucian.generated.eedm.dfe_application_submission_process.v1_0_0;
 
 import javax.annotation.processing.Generated;
+import com.ellucian.generated.eedm.academic_catalogs.v6_0.Metadata;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -18,7 +19,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
     "dfeApplicationId",
     "type",
-    "attribute"
+    "attribute",
+    "metadata"
 })
 @Generated("jsonschema2pojo")
 public class DfeApplicationSubmissionProcess {
@@ -52,6 +54,15 @@ public class DfeApplicationSubmissionProcess {
     @JsonProperty("attribute")
     @JsonPropertyDescription("The attributes of the application and applicant.")
     private Attribute attribute;
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    @JsonPropertyDescription("Metadata about the JSON payload")
+    private Metadata metadata;
 
     /**
      * DfE Application ID
@@ -138,6 +149,33 @@ public class DfeApplicationSubmissionProcess {
         return this;
     }
 
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    public Metadata getMetadata() {
+        return metadata;
+    }
+
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    public void setMetadata(Metadata metadata) {
+        this.metadata = metadata;
+    }
+
+    public DfeApplicationSubmissionProcess withMetadata(Metadata metadata) {
+        this.metadata = metadata;
+        return this;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -154,6 +192,10 @@ public class DfeApplicationSubmissionProcess {
         sb.append('=');
         sb.append(((this.attribute == null)?"<null>":this.attribute));
         sb.append(',');
+        sb.append("metadata");
+        sb.append('=');
+        sb.append(((this.metadata == null)?"<null>":this.metadata));
+        sb.append(',');
         if (sb.charAt((sb.length()- 1)) == ',') {
             sb.setCharAt((sb.length()- 1), ']');
         } else {
@@ -165,6 +207,7 @@ public class DfeApplicationSubmissionProcess {
     @Override
     public int hashCode() {
         int result = 1;
+        result = ((result* 31)+((this.metadata == null)? 0 :this.metadata.hashCode()));
         result = ((result* 31)+((this.attribute == null)? 0 :this.attribute.hashCode()));
         result = ((result* 31)+((this.type == null)? 0 :this.type.hashCode()));
         result = ((result* 31)+((this.dfeApplicationId == null)? 0 :this.dfeApplicationId.hashCode()));
@@ -180,7 +223,7 @@ public class DfeApplicationSubmissionProcess {
             return false;
         }
         DfeApplicationSubmissionProcess rhs = ((DfeApplicationSubmissionProcess) other);
-        return ((((this.attribute == rhs.attribute)||((this.attribute!= null)&&this.attribute.equals(rhs.attribute)))&&((this.type == rhs.type)||((this.type!= null)&&this.type.equals(rhs.type))))&&((this.dfeApplicationId == rhs.dfeApplicationId)||((this.dfeApplicationId!= null)&&this.dfeApplicationId.equals(rhs.dfeApplicationId))));
+        return (((((this.metadata == rhs.metadata)||((this.metadata!= null)&&this.metadata.equals(rhs.metadata)))&&((this.attribute == rhs.attribute)||((this.attribute!= null)&&this.attribute.equals(rhs.attribute))))&&((this.type == rhs.type)||((this.type!= null)&&this.type.equals(rhs.type))))&&((this.dfeApplicationId == rhs.dfeApplicationId)||((this.dfeApplicationId!= null)&&this.dfeApplicationId.equals(rhs.dfeApplicationId))));
     }
 
 }

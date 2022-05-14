@@ -4,6 +4,7 @@ package com.ellucian.generated.eedm.student_grade_point_averages.v1_0_0;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.processing.Generated;
+import com.ellucian.generated.eedm.academic_catalogs.v6_0.Metadata;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -22,7 +23,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "student",
     "periodBased",
     "cumulative",
-    "earnedDegrees"
+    "earnedDegrees",
+    "metadata"
 })
 @Generated("jsonschema2pojo")
 public class StudentGradePointAverages {
@@ -74,6 +76,15 @@ public class StudentGradePointAverages {
     @JsonProperty("earnedDegrees")
     @JsonPropertyDescription("The grade point average of the student for earned degrees.")
     private List<EarnedDegree> earnedDegrees = new ArrayList<EarnedDegree>();
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    @JsonPropertyDescription("Metadata about the JSON payload")
+    private Metadata metadata;
 
     /**
      * ID
@@ -214,6 +225,33 @@ public class StudentGradePointAverages {
         return this;
     }
 
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    public Metadata getMetadata() {
+        return metadata;
+    }
+
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    public void setMetadata(Metadata metadata) {
+        this.metadata = metadata;
+    }
+
+    public StudentGradePointAverages withMetadata(Metadata metadata) {
+        this.metadata = metadata;
+        return this;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -238,6 +276,10 @@ public class StudentGradePointAverages {
         sb.append('=');
         sb.append(((this.earnedDegrees == null)?"<null>":this.earnedDegrees));
         sb.append(',');
+        sb.append("metadata");
+        sb.append('=');
+        sb.append(((this.metadata == null)?"<null>":this.metadata));
+        sb.append(',');
         if (sb.charAt((sb.length()- 1)) == ',') {
             sb.setCharAt((sb.length()- 1), ']');
         } else {
@@ -249,10 +291,11 @@ public class StudentGradePointAverages {
     @Override
     public int hashCode() {
         int result = 1;
-        result = ((result* 31)+((this.id == null)? 0 :this.id.hashCode()));
-        result = ((result* 31)+((this.cumulative == null)? 0 :this.cumulative.hashCode()));
+        result = ((result* 31)+((this.metadata == null)? 0 :this.metadata.hashCode()));
         result = ((result* 31)+((this.student == null)? 0 :this.student.hashCode()));
         result = ((result* 31)+((this.periodBased == null)? 0 :this.periodBased.hashCode()));
+        result = ((result* 31)+((this.id == null)? 0 :this.id.hashCode()));
+        result = ((result* 31)+((this.cumulative == null)? 0 :this.cumulative.hashCode()));
         result = ((result* 31)+((this.earnedDegrees == null)? 0 :this.earnedDegrees.hashCode()));
         return result;
     }
@@ -266,7 +309,7 @@ public class StudentGradePointAverages {
             return false;
         }
         StudentGradePointAverages rhs = ((StudentGradePointAverages) other);
-        return ((((((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id)))&&((this.cumulative == rhs.cumulative)||((this.cumulative!= null)&&this.cumulative.equals(rhs.cumulative))))&&((this.student == rhs.student)||((this.student!= null)&&this.student.equals(rhs.student))))&&((this.periodBased == rhs.periodBased)||((this.periodBased!= null)&&this.periodBased.equals(rhs.periodBased))))&&((this.earnedDegrees == rhs.earnedDegrees)||((this.earnedDegrees!= null)&&this.earnedDegrees.equals(rhs.earnedDegrees))));
+        return (((((((this.metadata == rhs.metadata)||((this.metadata!= null)&&this.metadata.equals(rhs.metadata)))&&((this.student == rhs.student)||((this.student!= null)&&this.student.equals(rhs.student))))&&((this.periodBased == rhs.periodBased)||((this.periodBased!= null)&&this.periodBased.equals(rhs.periodBased))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.cumulative == rhs.cumulative)||((this.cumulative!= null)&&this.cumulative.equals(rhs.cumulative))))&&((this.earnedDegrees == rhs.earnedDegrees)||((this.earnedDegrees!= null)&&this.earnedDegrees.equals(rhs.earnedDegrees))));
     }
 
 }

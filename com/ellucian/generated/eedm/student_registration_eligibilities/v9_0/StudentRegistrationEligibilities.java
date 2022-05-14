@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import javax.annotation.processing.Generated;
+import com.ellucian.generated.eedm.academic_catalogs.v6_0.Metadata;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -29,7 +30,8 @@ import com.fasterxml.jackson.annotation.JsonValue;
     "alternatePin",
     "eligibilityStatus",
     "ineligibilityReasons",
-    "priorityRegistrationTimeSlots"
+    "priorityRegistrationTimeSlots",
+    "metadata"
 })
 @Generated("jsonschema2pojo")
 public class StudentRegistrationEligibilities {
@@ -109,6 +111,15 @@ public class StudentRegistrationEligibilities {
     @JsonProperty("priorityRegistrationTimeSlots")
     @JsonPropertyDescription("Time periods when the student is assigned priority registration.")
     private List<PriorityRegistrationTimeSlot> priorityRegistrationTimeSlots = new ArrayList<PriorityRegistrationTimeSlot>();
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    @JsonPropertyDescription("Metadata about the JSON payload")
+    private Metadata metadata;
 
     /**
      * Student
@@ -332,6 +343,33 @@ public class StudentRegistrationEligibilities {
         return this;
     }
 
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    public Metadata getMetadata() {
+        return metadata;
+    }
+
+    /**
+     * Metadata
+     * <p>
+     * Metadata about the JSON payload
+     * 
+     */
+    @JsonProperty("metadata")
+    public void setMetadata(Metadata metadata) {
+        this.metadata = metadata;
+    }
+
+    public StudentRegistrationEligibilities withMetadata(Metadata metadata) {
+        this.metadata = metadata;
+        return this;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -368,6 +406,10 @@ public class StudentRegistrationEligibilities {
         sb.append('=');
         sb.append(((this.priorityRegistrationTimeSlots == null)?"<null>":this.priorityRegistrationTimeSlots));
         sb.append(',');
+        sb.append("metadata");
+        sb.append('=');
+        sb.append(((this.metadata == null)?"<null>":this.metadata));
+        sb.append(',');
         if (sb.charAt((sb.length()- 1)) == ',') {
             sb.setCharAt((sb.length()- 1), ']');
         } else {
@@ -380,6 +422,7 @@ public class StudentRegistrationEligibilities {
     public int hashCode() {
         int result = 1;
         result = ((result* 31)+((this.eligibilityStatus == null)? 0 :this.eligibilityStatus.hashCode()));
+        result = ((result* 31)+((this.metadata == null)? 0 :this.metadata.hashCode()));
         result = ((result* 31)+((this.student == null)? 0 :this.student.hashCode()));
         result = ((result* 31)+((this.alternatePin == null)? 0 :this.alternatePin.hashCode()));
         result = ((result* 31)+((this.endOn == null)? 0 :this.endOn.hashCode()));
@@ -399,7 +442,7 @@ public class StudentRegistrationEligibilities {
             return false;
         }
         StudentRegistrationEligibilities rhs = ((StudentRegistrationEligibilities) other);
-        return (((((((((this.eligibilityStatus == rhs.eligibilityStatus)||((this.eligibilityStatus!= null)&&this.eligibilityStatus.equals(rhs.eligibilityStatus)))&&((this.student == rhs.student)||((this.student!= null)&&this.student.equals(rhs.student))))&&((this.alternatePin == rhs.alternatePin)||((this.alternatePin!= null)&&this.alternatePin.equals(rhs.alternatePin))))&&((this.endOn == rhs.endOn)||((this.endOn!= null)&&this.endOn.equals(rhs.endOn))))&&((this.priorityRegistrationTimeSlots == rhs.priorityRegistrationTimeSlots)||((this.priorityRegistrationTimeSlots!= null)&&this.priorityRegistrationTimeSlots.equals(rhs.priorityRegistrationTimeSlots))))&&((this.startOn == rhs.startOn)||((this.startOn!= null)&&this.startOn.equals(rhs.startOn))))&&((this.academicPeriod == rhs.academicPeriod)||((this.academicPeriod!= null)&&this.academicPeriod.equals(rhs.academicPeriod))))&&((this.ineligibilityReasons == rhs.ineligibilityReasons)||((this.ineligibilityReasons!= null)&&this.ineligibilityReasons.equals(rhs.ineligibilityReasons))));
+        return ((((((((((this.eligibilityStatus == rhs.eligibilityStatus)||((this.eligibilityStatus!= null)&&this.eligibilityStatus.equals(rhs.eligibilityStatus)))&&((this.metadata == rhs.metadata)||((this.metadata!= null)&&this.metadata.equals(rhs.metadata))))&&((this.student == rhs.student)||((this.student!= null)&&this.student.equals(rhs.student))))&&((this.alternatePin == rhs.alternatePin)||((this.alternatePin!= null)&&this.alternatePin.equals(rhs.alternatePin))))&&((this.endOn == rhs.endOn)||((this.endOn!= null)&&this.endOn.equals(rhs.endOn))))&&((this.priorityRegistrationTimeSlots == rhs.priorityRegistrationTimeSlots)||((this.priorityRegistrationTimeSlots!= null)&&this.priorityRegistrationTimeSlots.equals(rhs.priorityRegistrationTimeSlots))))&&((this.startOn == rhs.startOn)||((this.startOn!= null)&&this.startOn.equals(rhs.startOn))))&&((this.academicPeriod == rhs.academicPeriod)||((this.academicPeriod!= null)&&this.academicPeriod.equals(rhs.academicPeriod))))&&((this.ineligibilityReasons == rhs.ineligibilityReasons)||((this.ineligibilityReasons!= null)&&this.ineligibilityReasons.equals(rhs.ineligibilityReasons))));
     }
 
 
