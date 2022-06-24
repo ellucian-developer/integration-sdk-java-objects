@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.billing_mass_data_entry_charges_payments.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -14,7 +15,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "currCode",
     "keyblocDocumentNumber",
     "keyblocDetailCode",
     "keyblocEffDate",
@@ -27,15 +27,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class KeyBlock {
 
     /**
-     * Currency Code
-     * <p>
-     * Lineage reference object : currCode, Lookup lineage reference object : gtvcurr
-     * 
-     */
-    @JsonProperty("currCode")
-    @JsonPropertyDescription("Lineage reference object : currCode, Lookup lineage reference object : gtvcurr")
-    private Object currCode;
-    /**
      * Document
      * <p>
      * Lineage reference object : keyblocDocumentNumber
@@ -43,7 +34,7 @@ public class KeyBlock {
      */
     @JsonProperty("keyblocDocumentNumber")
     @JsonPropertyDescription("Lineage reference object : keyblocDocumentNumber")
-    private Object keyblocDocumentNumber;
+    private String keyblocDocumentNumber;
     /**
      * Detail Code
      * <p>
@@ -52,7 +43,7 @@ public class KeyBlock {
      */
     @JsonProperty("keyblocDetailCode")
     @JsonPropertyDescription("Lineage reference object : keyblocDetailCode, Lookup lineage reference object : tbbdetc")
-    private Object keyblocDetailCode;
+    private String keyblocDetailCode;
     /**
      * Effective Date
      * <p>
@@ -61,7 +52,7 @@ public class KeyBlock {
      */
     @JsonProperty("keyblocEffDate")
     @JsonPropertyDescription("Lineage reference object : keyblocEffDate")
-    private Object keyblocEffDate;
+    private Date keyblocEffDate;
     /**
      * Deposit Total
      * <p>
@@ -70,7 +61,7 @@ public class KeyBlock {
      */
     @JsonProperty("runningDepoTotal")
     @JsonPropertyDescription("Lineage reference object : runningDepoTotal")
-    private Object runningDepoTotal;
+    private Double runningDepoTotal;
     /**
      * Total
      * <p>
@@ -79,7 +70,7 @@ public class KeyBlock {
      */
     @JsonProperty("runningAccdTotal")
     @JsonPropertyDescription("Lineage reference object : runningAccdTotal")
-    private Object runningAccdTotal;
+    private Double runningAccdTotal;
     /**
      * Amount
      * <p>
@@ -88,7 +79,7 @@ public class KeyBlock {
      */
     @JsonProperty("keyblocAmount")
     @JsonPropertyDescription("Lineage reference object : keyblocAmount")
-    private Object keyblocAmount;
+    private Double keyblocAmount;
     /**
      * Memo Total
      * <p>
@@ -97,36 +88,9 @@ public class KeyBlock {
      */
     @JsonProperty("runningMemoTotal")
     @JsonPropertyDescription("Lineage reference object : runningMemoTotal")
-    private Object runningMemoTotal;
+    private Double runningMemoTotal;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-
-    /**
-     * Currency Code
-     * <p>
-     * Lineage reference object : currCode, Lookup lineage reference object : gtvcurr
-     * 
-     */
-    @JsonProperty("currCode")
-    public Object getCurrCode() {
-        return currCode;
-    }
-
-    /**
-     * Currency Code
-     * <p>
-     * Lineage reference object : currCode, Lookup lineage reference object : gtvcurr
-     * 
-     */
-    @JsonProperty("currCode")
-    public void setCurrCode(Object currCode) {
-        this.currCode = currCode;
-    }
-
-    public KeyBlock withCurrCode(Object currCode) {
-        this.currCode = currCode;
-        return this;
-    }
 
     /**
      * Document
@@ -135,7 +99,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyblocDocumentNumber")
-    public Object getKeyblocDocumentNumber() {
+    public String getKeyblocDocumentNumber() {
         return keyblocDocumentNumber;
     }
 
@@ -146,11 +110,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyblocDocumentNumber")
-    public void setKeyblocDocumentNumber(Object keyblocDocumentNumber) {
+    public void setKeyblocDocumentNumber(String keyblocDocumentNumber) {
         this.keyblocDocumentNumber = keyblocDocumentNumber;
     }
 
-    public KeyBlock withKeyblocDocumentNumber(Object keyblocDocumentNumber) {
+    public KeyBlock withKeyblocDocumentNumber(String keyblocDocumentNumber) {
         this.keyblocDocumentNumber = keyblocDocumentNumber;
         return this;
     }
@@ -162,7 +126,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyblocDetailCode")
-    public Object getKeyblocDetailCode() {
+    public String getKeyblocDetailCode() {
         return keyblocDetailCode;
     }
 
@@ -173,11 +137,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyblocDetailCode")
-    public void setKeyblocDetailCode(Object keyblocDetailCode) {
+    public void setKeyblocDetailCode(String keyblocDetailCode) {
         this.keyblocDetailCode = keyblocDetailCode;
     }
 
-    public KeyBlock withKeyblocDetailCode(Object keyblocDetailCode) {
+    public KeyBlock withKeyblocDetailCode(String keyblocDetailCode) {
         this.keyblocDetailCode = keyblocDetailCode;
         return this;
     }
@@ -189,7 +153,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyblocEffDate")
-    public Object getKeyblocEffDate() {
+    public Date getKeyblocEffDate() {
         return keyblocEffDate;
     }
 
@@ -200,11 +164,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyblocEffDate")
-    public void setKeyblocEffDate(Object keyblocEffDate) {
+    public void setKeyblocEffDate(Date keyblocEffDate) {
         this.keyblocEffDate = keyblocEffDate;
     }
 
-    public KeyBlock withKeyblocEffDate(Object keyblocEffDate) {
+    public KeyBlock withKeyblocEffDate(Date keyblocEffDate) {
         this.keyblocEffDate = keyblocEffDate;
         return this;
     }
@@ -216,7 +180,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("runningDepoTotal")
-    public Object getRunningDepoTotal() {
+    public Double getRunningDepoTotal() {
         return runningDepoTotal;
     }
 
@@ -227,11 +191,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("runningDepoTotal")
-    public void setRunningDepoTotal(Object runningDepoTotal) {
+    public void setRunningDepoTotal(Double runningDepoTotal) {
         this.runningDepoTotal = runningDepoTotal;
     }
 
-    public KeyBlock withRunningDepoTotal(Object runningDepoTotal) {
+    public KeyBlock withRunningDepoTotal(Double runningDepoTotal) {
         this.runningDepoTotal = runningDepoTotal;
         return this;
     }
@@ -243,7 +207,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("runningAccdTotal")
-    public Object getRunningAccdTotal() {
+    public Double getRunningAccdTotal() {
         return runningAccdTotal;
     }
 
@@ -254,11 +218,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("runningAccdTotal")
-    public void setRunningAccdTotal(Object runningAccdTotal) {
+    public void setRunningAccdTotal(Double runningAccdTotal) {
         this.runningAccdTotal = runningAccdTotal;
     }
 
-    public KeyBlock withRunningAccdTotal(Object runningAccdTotal) {
+    public KeyBlock withRunningAccdTotal(Double runningAccdTotal) {
         this.runningAccdTotal = runningAccdTotal;
         return this;
     }
@@ -270,7 +234,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyblocAmount")
-    public Object getKeyblocAmount() {
+    public Double getKeyblocAmount() {
         return keyblocAmount;
     }
 
@@ -281,11 +245,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyblocAmount")
-    public void setKeyblocAmount(Object keyblocAmount) {
+    public void setKeyblocAmount(Double keyblocAmount) {
         this.keyblocAmount = keyblocAmount;
     }
 
-    public KeyBlock withKeyblocAmount(Object keyblocAmount) {
+    public KeyBlock withKeyblocAmount(Double keyblocAmount) {
         this.keyblocAmount = keyblocAmount;
         return this;
     }
@@ -297,7 +261,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("runningMemoTotal")
-    public Object getRunningMemoTotal() {
+    public Double getRunningMemoTotal() {
         return runningMemoTotal;
     }
 
@@ -308,11 +272,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("runningMemoTotal")
-    public void setRunningMemoTotal(Object runningMemoTotal) {
+    public void setRunningMemoTotal(Double runningMemoTotal) {
         this.runningMemoTotal = runningMemoTotal;
     }
 
-    public KeyBlock withRunningMemoTotal(Object runningMemoTotal) {
+    public KeyBlock withRunningMemoTotal(Double runningMemoTotal) {
         this.runningMemoTotal = runningMemoTotal;
         return this;
     }
@@ -336,10 +300,6 @@ public class KeyBlock {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(KeyBlock.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
-        sb.append("currCode");
-        sb.append('=');
-        sb.append(((this.currCode == null)?"<null>":this.currCode));
-        sb.append(',');
         sb.append("keyblocDocumentNumber");
         sb.append('=');
         sb.append(((this.keyblocDocumentNumber == null)?"<null>":this.keyblocDocumentNumber));
@@ -383,7 +343,6 @@ public class KeyBlock {
     @Override
     public int hashCode() {
         int result = 1;
-        result = ((result* 31)+((this.currCode == null)? 0 :this.currCode.hashCode()));
         result = ((result* 31)+((this.keyblocDocumentNumber == null)? 0 :this.keyblocDocumentNumber.hashCode()));
         result = ((result* 31)+((this.keyblocDetailCode == null)? 0 :this.keyblocDetailCode.hashCode()));
         result = ((result* 31)+((this.keyblocEffDate == null)? 0 :this.keyblocEffDate.hashCode()));
@@ -404,7 +363,7 @@ public class KeyBlock {
             return false;
         }
         KeyBlock rhs = ((KeyBlock) other);
-        return ((((((((((this.currCode == rhs.currCode)||((this.currCode!= null)&&this.currCode.equals(rhs.currCode)))&&((this.keyblocDocumentNumber == rhs.keyblocDocumentNumber)||((this.keyblocDocumentNumber!= null)&&this.keyblocDocumentNumber.equals(rhs.keyblocDocumentNumber))))&&((this.keyblocDetailCode == rhs.keyblocDetailCode)||((this.keyblocDetailCode!= null)&&this.keyblocDetailCode.equals(rhs.keyblocDetailCode))))&&((this.keyblocEffDate == rhs.keyblocEffDate)||((this.keyblocEffDate!= null)&&this.keyblocEffDate.equals(rhs.keyblocEffDate))))&&((this.runningDepoTotal == rhs.runningDepoTotal)||((this.runningDepoTotal!= null)&&this.runningDepoTotal.equals(rhs.runningDepoTotal))))&&((this.runningAccdTotal == rhs.runningAccdTotal)||((this.runningAccdTotal!= null)&&this.runningAccdTotal.equals(rhs.runningAccdTotal))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.keyblocAmount == rhs.keyblocAmount)||((this.keyblocAmount!= null)&&this.keyblocAmount.equals(rhs.keyblocAmount))))&&((this.runningMemoTotal == rhs.runningMemoTotal)||((this.runningMemoTotal!= null)&&this.runningMemoTotal.equals(rhs.runningMemoTotal))));
+        return (((((((((this.keyblocDocumentNumber == rhs.keyblocDocumentNumber)||((this.keyblocDocumentNumber!= null)&&this.keyblocDocumentNumber.equals(rhs.keyblocDocumentNumber)))&&((this.keyblocDetailCode == rhs.keyblocDetailCode)||((this.keyblocDetailCode!= null)&&this.keyblocDetailCode.equals(rhs.keyblocDetailCode))))&&((this.keyblocEffDate == rhs.keyblocEffDate)||((this.keyblocEffDate!= null)&&this.keyblocEffDate.equals(rhs.keyblocEffDate))))&&((this.runningDepoTotal == rhs.runningDepoTotal)||((this.runningDepoTotal!= null)&&this.runningDepoTotal.equals(rhs.runningDepoTotal))))&&((this.runningAccdTotal == rhs.runningAccdTotal)||((this.runningAccdTotal!= null)&&this.runningAccdTotal.equals(rhs.runningAccdTotal))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.keyblocAmount == rhs.keyblocAmount)||((this.keyblocAmount!= null)&&this.keyblocAmount.equals(rhs.keyblocAmount))))&&((this.runningMemoTotal == rhs.runningMemoTotal)||((this.runningMemoTotal!= null)&&this.runningMemoTotal.equals(rhs.runningMemoTotal))));
     }
 
 }

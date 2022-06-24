@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.employee_new_hire.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -37,7 +38,7 @@ public class Job {
      */
     @JsonProperty("jcreDesc")
     @JsonPropertyDescription("Lineage reference object : jcreDesc")
-    private Object jcreDesc;
+    private String jcreDesc;
     /**
      * Change Reason
      * <p>
@@ -46,7 +47,7 @@ public class Job {
      */
     @JsonProperty("jcreCode")
     @JsonPropertyDescription("Lineage reference object : jcreCode")
-    private Object jcreCode;
+    private String jcreCode;
     /**
      * Job Type
      * <p>
@@ -56,14 +57,14 @@ public class Job {
      */
     @JsonProperty("contractType")
     @JsonPropertyDescription("Lineage reference object : contractType")
-    private Object contractType;
+    private String contractType;
     /**
      * Lineage reference object : nbrbjobActivityDate
      * 
      */
     @JsonProperty("nbrbjobActivityDate")
     @JsonPropertyDescription("Lineage reference object : nbrbjobActivityDate")
-    private Object nbrbjobActivityDate;
+    private Date nbrbjobActivityDate;
     /**
      * Deferred Pay
      * <p>
@@ -72,7 +73,7 @@ public class Job {
      */
     @JsonProperty("deferPay")
     @JsonPropertyDescription("Lineage reference object : deferPay")
-    private Object deferPay;
+    private String deferPay;
     /**
      * Title
      * <p>
@@ -82,7 +83,7 @@ public class Job {
      */
     @JsonProperty("title")
     @JsonPropertyDescription("Lineage reference object : jobsTitle")
-    private Object title;
+    private String title;
     /**
      * Annual Salary
      * <p>
@@ -91,7 +92,7 @@ public class Job {
      */
     @JsonProperty("salary")
     @JsonPropertyDescription("Lineage reference object : salary")
-    private Object salary;
+    private Double salary;
     /**
      * Position
      * <p>
@@ -101,7 +102,7 @@ public class Job {
      */
     @JsonProperty("posn")
     @JsonPropertyDescription("Lineage reference object : posn")
-    private Object posn;
+    private String posn;
     /**
      * Begin Date
      * <p>
@@ -111,14 +112,14 @@ public class Job {
      */
     @JsonProperty("beginDate")
     @JsonPropertyDescription("Lineage reference object : beginDate")
-    private Object beginDate;
+    private Date beginDate;
     /**
      * Lineage reference object : nbrbjobUserId
      * 
      */
     @JsonProperty("nbrbjobUserId")
     @JsonPropertyDescription("Lineage reference object : nbrbjobUserId")
-    private Object nbrbjobUserId;
+    private String nbrbjobUserId;
     /**
      * Suffix
      * <p>
@@ -128,7 +129,7 @@ public class Job {
      */
     @JsonProperty("suff")
     @JsonPropertyDescription("Lineage reference object : suff")
-    private Object suff;
+    private String suff;
     /**
      * Rate
      * <p>
@@ -137,7 +138,7 @@ public class Job {
      */
     @JsonProperty("rate")
     @JsonPropertyDescription("Lineage reference object : rate")
-    private Object rate;
+    private Double rate;
     /**
      * Step
      * <p>
@@ -147,7 +148,7 @@ public class Job {
      */
     @JsonProperty("step")
     @JsonPropertyDescription("Lineage reference object : step")
-    private Object step;
+    private Double step;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -156,7 +157,7 @@ public class Job {
      * 
      */
     @JsonProperty("jcreDesc")
-    public Object getJcreDesc() {
+    public String getJcreDesc() {
         return jcreDesc;
     }
 
@@ -165,11 +166,11 @@ public class Job {
      * 
      */
     @JsonProperty("jcreDesc")
-    public void setJcreDesc(Object jcreDesc) {
+    public void setJcreDesc(String jcreDesc) {
         this.jcreDesc = jcreDesc;
     }
 
-    public Job withJcreDesc(Object jcreDesc) {
+    public Job withJcreDesc(String jcreDesc) {
         this.jcreDesc = jcreDesc;
         return this;
     }
@@ -181,7 +182,7 @@ public class Job {
      * 
      */
     @JsonProperty("jcreCode")
-    public Object getJcreCode() {
+    public String getJcreCode() {
         return jcreCode;
     }
 
@@ -192,11 +193,11 @@ public class Job {
      * 
      */
     @JsonProperty("jcreCode")
-    public void setJcreCode(Object jcreCode) {
+    public void setJcreCode(String jcreCode) {
         this.jcreCode = jcreCode;
     }
 
-    public Job withJcreCode(Object jcreCode) {
+    public Job withJcreCode(String jcreCode) {
         this.jcreCode = jcreCode;
         return this;
     }
@@ -209,7 +210,7 @@ public class Job {
      * 
      */
     @JsonProperty("contractType")
-    public Object getContractType() {
+    public String getContractType() {
         return contractType;
     }
 
@@ -221,11 +222,11 @@ public class Job {
      * 
      */
     @JsonProperty("contractType")
-    public void setContractType(Object contractType) {
+    public void setContractType(String contractType) {
         this.contractType = contractType;
     }
 
-    public Job withContractType(Object contractType) {
+    public Job withContractType(String contractType) {
         this.contractType = contractType;
         return this;
     }
@@ -235,7 +236,7 @@ public class Job {
      * 
      */
     @JsonProperty("nbrbjobActivityDate")
-    public Object getNbrbjobActivityDate() {
+    public Date getNbrbjobActivityDate() {
         return nbrbjobActivityDate;
     }
 
@@ -244,11 +245,11 @@ public class Job {
      * 
      */
     @JsonProperty("nbrbjobActivityDate")
-    public void setNbrbjobActivityDate(Object nbrbjobActivityDate) {
+    public void setNbrbjobActivityDate(Date nbrbjobActivityDate) {
         this.nbrbjobActivityDate = nbrbjobActivityDate;
     }
 
-    public Job withNbrbjobActivityDate(Object nbrbjobActivityDate) {
+    public Job withNbrbjobActivityDate(Date nbrbjobActivityDate) {
         this.nbrbjobActivityDate = nbrbjobActivityDate;
         return this;
     }
@@ -260,7 +261,7 @@ public class Job {
      * 
      */
     @JsonProperty("deferPay")
-    public Object getDeferPay() {
+    public String getDeferPay() {
         return deferPay;
     }
 
@@ -271,11 +272,11 @@ public class Job {
      * 
      */
     @JsonProperty("deferPay")
-    public void setDeferPay(Object deferPay) {
+    public void setDeferPay(String deferPay) {
         this.deferPay = deferPay;
     }
 
-    public Job withDeferPay(Object deferPay) {
+    public Job withDeferPay(String deferPay) {
         this.deferPay = deferPay;
         return this;
     }
@@ -288,7 +289,7 @@ public class Job {
      * 
      */
     @JsonProperty("title")
-    public Object getTitle() {
+    public String getTitle() {
         return title;
     }
 
@@ -300,11 +301,11 @@ public class Job {
      * 
      */
     @JsonProperty("title")
-    public void setTitle(Object title) {
+    public void setTitle(String title) {
         this.title = title;
     }
 
-    public Job withTitle(Object title) {
+    public Job withTitle(String title) {
         this.title = title;
         return this;
     }
@@ -316,7 +317,7 @@ public class Job {
      * 
      */
     @JsonProperty("salary")
-    public Object getSalary() {
+    public Double getSalary() {
         return salary;
     }
 
@@ -327,11 +328,11 @@ public class Job {
      * 
      */
     @JsonProperty("salary")
-    public void setSalary(Object salary) {
+    public void setSalary(Double salary) {
         this.salary = salary;
     }
 
-    public Job withSalary(Object salary) {
+    public Job withSalary(Double salary) {
         this.salary = salary;
         return this;
     }
@@ -344,7 +345,7 @@ public class Job {
      * 
      */
     @JsonProperty("posn")
-    public Object getPosn() {
+    public String getPosn() {
         return posn;
     }
 
@@ -356,11 +357,11 @@ public class Job {
      * 
      */
     @JsonProperty("posn")
-    public void setPosn(Object posn) {
+    public void setPosn(String posn) {
         this.posn = posn;
     }
 
-    public Job withPosn(Object posn) {
+    public Job withPosn(String posn) {
         this.posn = posn;
         return this;
     }
@@ -373,7 +374,7 @@ public class Job {
      * 
      */
     @JsonProperty("beginDate")
-    public Object getBeginDate() {
+    public Date getBeginDate() {
         return beginDate;
     }
 
@@ -385,11 +386,11 @@ public class Job {
      * 
      */
     @JsonProperty("beginDate")
-    public void setBeginDate(Object beginDate) {
+    public void setBeginDate(Date beginDate) {
         this.beginDate = beginDate;
     }
 
-    public Job withBeginDate(Object beginDate) {
+    public Job withBeginDate(Date beginDate) {
         this.beginDate = beginDate;
         return this;
     }
@@ -399,7 +400,7 @@ public class Job {
      * 
      */
     @JsonProperty("nbrbjobUserId")
-    public Object getNbrbjobUserId() {
+    public String getNbrbjobUserId() {
         return nbrbjobUserId;
     }
 
@@ -408,11 +409,11 @@ public class Job {
      * 
      */
     @JsonProperty("nbrbjobUserId")
-    public void setNbrbjobUserId(Object nbrbjobUserId) {
+    public void setNbrbjobUserId(String nbrbjobUserId) {
         this.nbrbjobUserId = nbrbjobUserId;
     }
 
-    public Job withNbrbjobUserId(Object nbrbjobUserId) {
+    public Job withNbrbjobUserId(String nbrbjobUserId) {
         this.nbrbjobUserId = nbrbjobUserId;
         return this;
     }
@@ -425,7 +426,7 @@ public class Job {
      * 
      */
     @JsonProperty("suff")
-    public Object getSuff() {
+    public String getSuff() {
         return suff;
     }
 
@@ -437,11 +438,11 @@ public class Job {
      * 
      */
     @JsonProperty("suff")
-    public void setSuff(Object suff) {
+    public void setSuff(String suff) {
         this.suff = suff;
     }
 
-    public Job withSuff(Object suff) {
+    public Job withSuff(String suff) {
         this.suff = suff;
         return this;
     }
@@ -453,7 +454,7 @@ public class Job {
      * 
      */
     @JsonProperty("rate")
-    public Object getRate() {
+    public Double getRate() {
         return rate;
     }
 
@@ -464,11 +465,11 @@ public class Job {
      * 
      */
     @JsonProperty("rate")
-    public void setRate(Object rate) {
+    public void setRate(Double rate) {
         this.rate = rate;
     }
 
-    public Job withRate(Object rate) {
+    public Job withRate(Double rate) {
         this.rate = rate;
         return this;
     }
@@ -481,7 +482,7 @@ public class Job {
      * 
      */
     @JsonProperty("step")
-    public Object getStep() {
+    public Double getStep() {
         return step;
     }
 
@@ -493,11 +494,11 @@ public class Job {
      * 
      */
     @JsonProperty("step")
-    public void setStep(Object step) {
+    public void setStep(Double step) {
         this.step = step;
     }
 
-    public Job withStep(Object step) {
+    public Job withStep(Double step) {
         this.step = step;
         return this;
     }

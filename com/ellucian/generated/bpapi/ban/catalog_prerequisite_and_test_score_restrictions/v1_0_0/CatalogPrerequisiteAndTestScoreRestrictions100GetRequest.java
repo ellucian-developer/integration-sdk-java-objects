@@ -26,14 +26,14 @@ public class CatalogPrerequisiteAndTestScoreRestrictions100GetRequest {
      */
     @JsonProperty("keyblckTermCode")
     @JsonPropertyDescription("Lineage reference object : keyBlckTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblckTermCode;
+    private String keyblckTermCode;
     /**
      * Lineage reference object : program
      * 
      */
     @JsonProperty("program")
     @JsonPropertyDescription("Lineage reference object : program")
-    private Object program;
+    private String program;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -42,7 +42,7 @@ public class CatalogPrerequisiteAndTestScoreRestrictions100GetRequest {
      * 
      */
     @JsonProperty("keyblckTermCode")
-    public Object getKeyblckTermCode() {
+    public String getKeyblckTermCode() {
         return keyblckTermCode;
     }
 
@@ -51,11 +51,11 @@ public class CatalogPrerequisiteAndTestScoreRestrictions100GetRequest {
      * 
      */
     @JsonProperty("keyblckTermCode")
-    public void setKeyblckTermCode(Object keyblckTermCode) {
+    public void setKeyblckTermCode(String keyblckTermCode) {
         this.keyblckTermCode = keyblckTermCode;
     }
 
-    public CatalogPrerequisiteAndTestScoreRestrictions100GetRequest withKeyblckTermCode(Object keyblckTermCode) {
+    public CatalogPrerequisiteAndTestScoreRestrictions100GetRequest withKeyblckTermCode(String keyblckTermCode) {
         this.keyblckTermCode = keyblckTermCode;
         return this;
     }
@@ -65,7 +65,7 @@ public class CatalogPrerequisiteAndTestScoreRestrictions100GetRequest {
      * 
      */
     @JsonProperty("program")
-    public Object getProgram() {
+    public String getProgram() {
         return program;
     }
 
@@ -74,11 +74,11 @@ public class CatalogPrerequisiteAndTestScoreRestrictions100GetRequest {
      * 
      */
     @JsonProperty("program")
-    public void setProgram(Object program) {
+    public void setProgram(String program) {
         this.program = program;
     }
 
-    public CatalogPrerequisiteAndTestScoreRestrictions100GetRequest withProgram(Object program) {
+    public CatalogPrerequisiteAndTestScoreRestrictions100GetRequest withProgram(String program) {
         this.program = program;
         return this;
     }

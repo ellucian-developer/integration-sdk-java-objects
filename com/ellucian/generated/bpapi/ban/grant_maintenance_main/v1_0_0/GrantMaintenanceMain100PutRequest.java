@@ -517,7 +517,7 @@ public class GrantMaintenanceMain100PutRequest {
      */
     @JsonProperty("displayFrbgrntCode")
     @JsonPropertyDescription("Lineage reference object : displayFrbgrntCode")
-    private Object displayFrbgrntCode;
+    private String displayFrbgrntCode;
     /**
      * Proposal
      * <p>
@@ -526,7 +526,7 @@ public class GrantMaintenanceMain100PutRequest {
      */
     @JsonProperty("displayPropCode")
     @JsonPropertyDescription("Lineage reference object : displayPropCode")
-    private Object displayPropCode;
+    private String displayPropCode;
     /**
      * Project Start Date
      * <p>
@@ -2019,7 +2019,7 @@ public class GrantMaintenanceMain100PutRequest {
      * 
      */
     @JsonProperty("displayFrbgrntCode")
-    public Object getDisplayFrbgrntCode() {
+    public String getDisplayFrbgrntCode() {
         return displayFrbgrntCode;
     }
 
@@ -2030,11 +2030,11 @@ public class GrantMaintenanceMain100PutRequest {
      * 
      */
     @JsonProperty("displayFrbgrntCode")
-    public void setDisplayFrbgrntCode(Object displayFrbgrntCode) {
+    public void setDisplayFrbgrntCode(String displayFrbgrntCode) {
         this.displayFrbgrntCode = displayFrbgrntCode;
     }
 
-    public GrantMaintenanceMain100PutRequest withDisplayFrbgrntCode(Object displayFrbgrntCode) {
+    public GrantMaintenanceMain100PutRequest withDisplayFrbgrntCode(String displayFrbgrntCode) {
         this.displayFrbgrntCode = displayFrbgrntCode;
         return this;
     }
@@ -2046,7 +2046,7 @@ public class GrantMaintenanceMain100PutRequest {
      * 
      */
     @JsonProperty("displayPropCode")
-    public Object getDisplayPropCode() {
+    public String getDisplayPropCode() {
         return displayPropCode;
     }
 
@@ -2057,11 +2057,11 @@ public class GrantMaintenanceMain100PutRequest {
      * 
      */
     @JsonProperty("displayPropCode")
-    public void setDisplayPropCode(Object displayPropCode) {
+    public void setDisplayPropCode(String displayPropCode) {
         this.displayPropCode = displayPropCode;
     }
 
-    public GrantMaintenanceMain100PutRequest withDisplayPropCode(Object displayPropCode) {
+    public GrantMaintenanceMain100PutRequest withDisplayPropCode(String displayPropCode) {
         this.displayPropCode = displayPropCode;
         return this;
     }

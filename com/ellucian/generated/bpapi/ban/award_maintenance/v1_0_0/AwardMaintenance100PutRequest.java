@@ -151,7 +151,7 @@ public class AwardMaintenance100PutRequest {
      */
     @JsonProperty("keyblckAidyCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAidyCode, Lookup lineage reference object : robinst")
-    private Object keyblckAidyCode;
+    private String keyblckAidyCode;
     /**
      * Paid
      * <p>
@@ -216,7 +216,7 @@ public class AwardMaintenance100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Lock
      * <p>
@@ -656,7 +656,7 @@ public class AwardMaintenance100PutRequest {
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public Object getKeyblckAidyCode() {
+    public String getKeyblckAidyCode() {
         return keyblckAidyCode;
     }
 
@@ -667,11 +667,11 @@ public class AwardMaintenance100PutRequest {
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public void setKeyblckAidyCode(Object keyblckAidyCode) {
+    public void setKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
     }
 
-    public AwardMaintenance100PutRequest withKeyblckAidyCode(Object keyblckAidyCode) {
+    public AwardMaintenance100PutRequest withKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
         return this;
     }
@@ -860,7 +860,7 @@ public class AwardMaintenance100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -871,11 +871,11 @@ public class AwardMaintenance100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public AwardMaintenance100PutRequest withId(Object id) {
+    public AwardMaintenance100PutRequest withId(String id) {
         this.id = id;
         return this;
     }

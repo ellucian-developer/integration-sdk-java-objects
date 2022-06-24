@@ -31,7 +31,7 @@ public class SgastdnKeyBlock__1 {
      */
     @JsonProperty("sgastdnId")
     @JsonPropertyDescription("Lineage reference object : sgastdnId")
-    private Object sgastdnId;
+    private String sgastdnId;
     /**
      * Term
      * <p>
@@ -40,28 +40,28 @@ public class SgastdnKeyBlock__1 {
      */
     @JsonProperty("sgastdnTermCodeEff")
     @JsonPropertyDescription("Lineage reference object : sgastdnTermCodeEff, Lookup lineage reference object : stvterm")
-    private Object sgastdnTermCodeEff;
+    private String sgastdnTermCodeEff;
     /**
      * Lineage reference object : sgastdnName
      * 
      */
     @JsonProperty("sgastdnName")
     @JsonPropertyDescription("Lineage reference object : sgastdnName")
-    private Object sgastdnName;
+    private String sgastdnName;
     /**
      * Lineage reference object : confidInfo
      * 
      */
     @JsonProperty("confidInfo")
     @JsonPropertyDescription("Lineage reference object : confidInfo")
-    private Object confidInfo;
+    private String confidInfo;
     /**
      * Lineage reference object : deceasedInd
      * 
      */
     @JsonProperty("deceasedInd")
     @JsonPropertyDescription("Lineage reference object : deceasedInd")
-    private Object deceasedInd;
+    private String deceasedInd;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -72,7 +72,7 @@ public class SgastdnKeyBlock__1 {
      * 
      */
     @JsonProperty("sgastdnId")
-    public Object getSgastdnId() {
+    public String getSgastdnId() {
         return sgastdnId;
     }
 
@@ -83,11 +83,11 @@ public class SgastdnKeyBlock__1 {
      * 
      */
     @JsonProperty("sgastdnId")
-    public void setSgastdnId(Object sgastdnId) {
+    public void setSgastdnId(String sgastdnId) {
         this.sgastdnId = sgastdnId;
     }
 
-    public SgastdnKeyBlock__1 withSgastdnId(Object sgastdnId) {
+    public SgastdnKeyBlock__1 withSgastdnId(String sgastdnId) {
         this.sgastdnId = sgastdnId;
         return this;
     }
@@ -99,7 +99,7 @@ public class SgastdnKeyBlock__1 {
      * 
      */
     @JsonProperty("sgastdnTermCodeEff")
-    public Object getSgastdnTermCodeEff() {
+    public String getSgastdnTermCodeEff() {
         return sgastdnTermCodeEff;
     }
 
@@ -110,11 +110,11 @@ public class SgastdnKeyBlock__1 {
      * 
      */
     @JsonProperty("sgastdnTermCodeEff")
-    public void setSgastdnTermCodeEff(Object sgastdnTermCodeEff) {
+    public void setSgastdnTermCodeEff(String sgastdnTermCodeEff) {
         this.sgastdnTermCodeEff = sgastdnTermCodeEff;
     }
 
-    public SgastdnKeyBlock__1 withSgastdnTermCodeEff(Object sgastdnTermCodeEff) {
+    public SgastdnKeyBlock__1 withSgastdnTermCodeEff(String sgastdnTermCodeEff) {
         this.sgastdnTermCodeEff = sgastdnTermCodeEff;
         return this;
     }
@@ -124,7 +124,7 @@ public class SgastdnKeyBlock__1 {
      * 
      */
     @JsonProperty("sgastdnName")
-    public Object getSgastdnName() {
+    public String getSgastdnName() {
         return sgastdnName;
     }
 
@@ -133,11 +133,11 @@ public class SgastdnKeyBlock__1 {
      * 
      */
     @JsonProperty("sgastdnName")
-    public void setSgastdnName(Object sgastdnName) {
+    public void setSgastdnName(String sgastdnName) {
         this.sgastdnName = sgastdnName;
     }
 
-    public SgastdnKeyBlock__1 withSgastdnName(Object sgastdnName) {
+    public SgastdnKeyBlock__1 withSgastdnName(String sgastdnName) {
         this.sgastdnName = sgastdnName;
         return this;
     }
@@ -147,7 +147,7 @@ public class SgastdnKeyBlock__1 {
      * 
      */
     @JsonProperty("confidInfo")
-    public Object getConfidInfo() {
+    public String getConfidInfo() {
         return confidInfo;
     }
 
@@ -156,11 +156,11 @@ public class SgastdnKeyBlock__1 {
      * 
      */
     @JsonProperty("confidInfo")
-    public void setConfidInfo(Object confidInfo) {
+    public void setConfidInfo(String confidInfo) {
         this.confidInfo = confidInfo;
     }
 
-    public SgastdnKeyBlock__1 withConfidInfo(Object confidInfo) {
+    public SgastdnKeyBlock__1 withConfidInfo(String confidInfo) {
         this.confidInfo = confidInfo;
         return this;
     }
@@ -170,7 +170,7 @@ public class SgastdnKeyBlock__1 {
      * 
      */
     @JsonProperty("deceasedInd")
-    public Object getDeceasedInd() {
+    public String getDeceasedInd() {
         return deceasedInd;
     }
 
@@ -179,11 +179,11 @@ public class SgastdnKeyBlock__1 {
      * 
      */
     @JsonProperty("deceasedInd")
-    public void setDeceasedInd(Object deceasedInd) {
+    public void setDeceasedInd(String deceasedInd) {
         this.deceasedInd = deceasedInd;
     }
 
-    public SgastdnKeyBlock__1 withDeceasedInd(Object deceasedInd) {
+    public SgastdnKeyBlock__1 withDeceasedInd(String deceasedInd) {
         this.deceasedInd = deceasedInd;
         return this;
     }

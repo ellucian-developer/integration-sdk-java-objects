@@ -28,14 +28,14 @@ public class KeyBlock {
      */
     @JsonProperty("keyblckEgrpCode")
     @JsonPropertyDescription("Lineage reference object : keyblckEgrpCode, Lookup lineage reference object : stvegrp")
-    private Object keyblckEgrpCode;
+    private String keyblckEgrpCode;
     /**
      * Lineage reference object : egrpDesc
      * 
      */
     @JsonProperty("egrpDesc")
     @JsonPropertyDescription("Lineage reference object : egrpDesc")
-    private Object egrpDesc;
+    private String egrpDesc;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -46,7 +46,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyblckEgrpCode")
-    public Object getKeyblckEgrpCode() {
+    public String getKeyblckEgrpCode() {
         return keyblckEgrpCode;
     }
 
@@ -57,11 +57,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyblckEgrpCode")
-    public void setKeyblckEgrpCode(Object keyblckEgrpCode) {
+    public void setKeyblckEgrpCode(String keyblckEgrpCode) {
         this.keyblckEgrpCode = keyblckEgrpCode;
     }
 
-    public KeyBlock withKeyblckEgrpCode(Object keyblckEgrpCode) {
+    public KeyBlock withKeyblckEgrpCode(String keyblckEgrpCode) {
         this.keyblckEgrpCode = keyblckEgrpCode;
         return this;
     }
@@ -71,7 +71,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("egrpDesc")
-    public Object getEgrpDesc() {
+    public String getEgrpDesc() {
         return egrpDesc;
     }
 
@@ -80,11 +80,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("egrpDesc")
-    public void setEgrpDesc(Object egrpDesc) {
+    public void setEgrpDesc(String egrpDesc) {
         this.egrpDesc = egrpDesc;
     }
 
-    public KeyBlock withEgrpDesc(Object egrpDesc) {
+    public KeyBlock withEgrpDesc(String egrpDesc) {
         this.egrpDesc = egrpDesc;
         return this;
     }

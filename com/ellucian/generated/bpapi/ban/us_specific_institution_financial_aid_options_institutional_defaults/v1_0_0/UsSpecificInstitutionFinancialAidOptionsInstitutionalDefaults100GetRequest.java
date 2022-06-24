@@ -28,7 +28,7 @@ public class UsSpecificInstitutionFinancialAidOptionsInstitutionalDefaults100Get
      */
     @JsonProperty("keyblckAidyCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAidyCode, Lookup lineage reference object : robinst")
-    private Object keyblckAidyCode;
+    private String keyblckAidyCode;
     /**
      * College Scholarship Service ID
      * <p>
@@ -48,7 +48,7 @@ public class UsSpecificInstitutionFinancialAidOptionsInstitutionalDefaults100Get
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public Object getKeyblckAidyCode() {
+    public String getKeyblckAidyCode() {
         return keyblckAidyCode;
     }
 
@@ -59,11 +59,11 @@ public class UsSpecificInstitutionFinancialAidOptionsInstitutionalDefaults100Get
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public void setKeyblckAidyCode(Object keyblckAidyCode) {
+    public void setKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
     }
 
-    public UsSpecificInstitutionFinancialAidOptionsInstitutionalDefaults100GetRequest withKeyblckAidyCode(Object keyblckAidyCode) {
+    public UsSpecificInstitutionFinancialAidOptionsInstitutionalDefaults100GetRequest withKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
         return this;
     }

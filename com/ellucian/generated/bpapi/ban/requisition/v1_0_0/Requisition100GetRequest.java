@@ -27,7 +27,7 @@ public class Requisition100GetRequest {
      */
     @JsonProperty("displayRqstCode")
     @JsonPropertyDescription("Lineage reference object : displayRqstCode")
-    private Object displayRqstCode;
+    private String displayRqstCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -38,7 +38,7 @@ public class Requisition100GetRequest {
      * 
      */
     @JsonProperty("displayRqstCode")
-    public Object getDisplayRqstCode() {
+    public String getDisplayRqstCode() {
         return displayRqstCode;
     }
 
@@ -49,11 +49,11 @@ public class Requisition100GetRequest {
      * 
      */
     @JsonProperty("displayRqstCode")
-    public void setDisplayRqstCode(Object displayRqstCode) {
+    public void setDisplayRqstCode(String displayRqstCode) {
         this.displayRqstCode = displayRqstCode;
     }
 
-    public Requisition100GetRequest withDisplayRqstCode(Object displayRqstCode) {
+    public Requisition100GetRequest withDisplayRqstCode(String displayRqstCode) {
         this.displayRqstCode = displayRqstCode;
         return this;
     }

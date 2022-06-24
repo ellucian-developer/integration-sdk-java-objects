@@ -33,7 +33,7 @@ public class RegistrationAddAuthorizationCodes100GetRequest {
      */
     @JsonProperty("keyTermCode")
     @JsonPropertyDescription("Lineage reference object : keyTermCode, Lookup lineage reference object : stvterm")
-    private Object keyTermCode;
+    private String keyTermCode;
     /**
      * Student ID
      * <p>
@@ -77,7 +77,7 @@ public class RegistrationAddAuthorizationCodes100GetRequest {
      */
     @JsonProperty("keyCrn")
     @JsonPropertyDescription("Lineage reference object : keyCrn")
-    private Object keyCrn;
+    private String keyCrn;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -88,7 +88,7 @@ public class RegistrationAddAuthorizationCodes100GetRequest {
      * 
      */
     @JsonProperty("keyTermCode")
-    public Object getKeyTermCode() {
+    public String getKeyTermCode() {
         return keyTermCode;
     }
 
@@ -99,11 +99,11 @@ public class RegistrationAddAuthorizationCodes100GetRequest {
      * 
      */
     @JsonProperty("keyTermCode")
-    public void setKeyTermCode(Object keyTermCode) {
+    public void setKeyTermCode(String keyTermCode) {
         this.keyTermCode = keyTermCode;
     }
 
-    public RegistrationAddAuthorizationCodes100GetRequest withKeyTermCode(Object keyTermCode) {
+    public RegistrationAddAuthorizationCodes100GetRequest withKeyTermCode(String keyTermCode) {
         this.keyTermCode = keyTermCode;
         return this;
     }
@@ -223,7 +223,7 @@ public class RegistrationAddAuthorizationCodes100GetRequest {
      * 
      */
     @JsonProperty("keyCrn")
-    public Object getKeyCrn() {
+    public String getKeyCrn() {
         return keyCrn;
     }
 
@@ -234,11 +234,11 @@ public class RegistrationAddAuthorizationCodes100GetRequest {
      * 
      */
     @JsonProperty("keyCrn")
-    public void setKeyCrn(Object keyCrn) {
+    public void setKeyCrn(String keyCrn) {
         this.keyCrn = keyCrn;
     }
 
-    public RegistrationAddAuthorizationCodes100GetRequest withKeyCrn(Object keyCrn) {
+    public RegistrationAddAuthorizationCodes100GetRequest withKeyCrn(String keyCrn) {
         this.keyCrn = keyCrn;
         return this;
     }

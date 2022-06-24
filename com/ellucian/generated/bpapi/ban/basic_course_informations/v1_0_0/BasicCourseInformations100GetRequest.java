@@ -29,7 +29,7 @@ public class BasicCourseInformations100GetRequest {
      */
     @JsonProperty("crseNumb")
     @JsonPropertyDescription("Lineage reference object : scacrseCrseNumb, Lookup lineage reference object : stvsubj")
-    private Object crseNumb;
+    private String crseNumb;
     /**
      * Term
      * <p>
@@ -38,7 +38,7 @@ public class BasicCourseInformations100GetRequest {
      */
     @JsonProperty("termCodeEff")
     @JsonPropertyDescription("Lineage reference object : scacrseTermCodeEff")
-    private Object termCodeEff;
+    private String termCodeEff;
     /**
      * Subject
      * <p>
@@ -47,7 +47,7 @@ public class BasicCourseInformations100GetRequest {
      */
     @JsonProperty("subjCode")
     @JsonPropertyDescription("Lineage reference object : scacrseSubjCode, Lookup lineage reference object : stvsubj")
-    private Object subjCode;
+    private String subjCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -58,7 +58,7 @@ public class BasicCourseInformations100GetRequest {
      * 
      */
     @JsonProperty("crseNumb")
-    public Object getCrseNumb() {
+    public String getCrseNumb() {
         return crseNumb;
     }
 
@@ -69,11 +69,11 @@ public class BasicCourseInformations100GetRequest {
      * 
      */
     @JsonProperty("crseNumb")
-    public void setCrseNumb(Object crseNumb) {
+    public void setCrseNumb(String crseNumb) {
         this.crseNumb = crseNumb;
     }
 
-    public BasicCourseInformations100GetRequest withCrseNumb(Object crseNumb) {
+    public BasicCourseInformations100GetRequest withCrseNumb(String crseNumb) {
         this.crseNumb = crseNumb;
         return this;
     }
@@ -85,7 +85,7 @@ public class BasicCourseInformations100GetRequest {
      * 
      */
     @JsonProperty("termCodeEff")
-    public Object getTermCodeEff() {
+    public String getTermCodeEff() {
         return termCodeEff;
     }
 
@@ -96,11 +96,11 @@ public class BasicCourseInformations100GetRequest {
      * 
      */
     @JsonProperty("termCodeEff")
-    public void setTermCodeEff(Object termCodeEff) {
+    public void setTermCodeEff(String termCodeEff) {
         this.termCodeEff = termCodeEff;
     }
 
-    public BasicCourseInformations100GetRequest withTermCodeEff(Object termCodeEff) {
+    public BasicCourseInformations100GetRequest withTermCodeEff(String termCodeEff) {
         this.termCodeEff = termCodeEff;
         return this;
     }
@@ -112,7 +112,7 @@ public class BasicCourseInformations100GetRequest {
      * 
      */
     @JsonProperty("subjCode")
-    public Object getSubjCode() {
+    public String getSubjCode() {
         return subjCode;
     }
 
@@ -123,11 +123,11 @@ public class BasicCourseInformations100GetRequest {
      * 
      */
     @JsonProperty("subjCode")
-    public void setSubjCode(Object subjCode) {
+    public void setSubjCode(String subjCode) {
         this.subjCode = subjCode;
     }
 
-    public BasicCourseInformations100GetRequest withSubjCode(Object subjCode) {
+    public BasicCourseInformations100GetRequest withSubjCode(String subjCode) {
         this.subjCode = subjCode;
         return this;
     }

@@ -28,7 +28,7 @@ public class ScheduleCrossListDefinition100GetRequest {
      */
     @JsonProperty("keyblocXlstGroup")
     @JsonPropertyDescription("Lineage reference object : keyblocXlstGroup")
-    private Object keyblocXlstGroup;
+    private String keyblocXlstGroup;
     /**
      * Term
      * <p>
@@ -37,7 +37,7 @@ public class ScheduleCrossListDefinition100GetRequest {
      */
     @JsonProperty("keyblocTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCode;
+    private String keyblocTermCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -48,7 +48,7 @@ public class ScheduleCrossListDefinition100GetRequest {
      * 
      */
     @JsonProperty("keyblocXlstGroup")
-    public Object getKeyblocXlstGroup() {
+    public String getKeyblocXlstGroup() {
         return keyblocXlstGroup;
     }
 
@@ -59,11 +59,11 @@ public class ScheduleCrossListDefinition100GetRequest {
      * 
      */
     @JsonProperty("keyblocXlstGroup")
-    public void setKeyblocXlstGroup(Object keyblocXlstGroup) {
+    public void setKeyblocXlstGroup(String keyblocXlstGroup) {
         this.keyblocXlstGroup = keyblocXlstGroup;
     }
 
-    public ScheduleCrossListDefinition100GetRequest withKeyblocXlstGroup(Object keyblocXlstGroup) {
+    public ScheduleCrossListDefinition100GetRequest withKeyblocXlstGroup(String keyblocXlstGroup) {
         this.keyblocXlstGroup = keyblocXlstGroup;
         return this;
     }
@@ -75,7 +75,7 @@ public class ScheduleCrossListDefinition100GetRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public Object getKeyblocTermCode() {
+    public String getKeyblocTermCode() {
         return keyblocTermCode;
     }
 
@@ -86,11 +86,11 @@ public class ScheduleCrossListDefinition100GetRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public void setKeyblocTermCode(Object keyblocTermCode) {
+    public void setKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
     }
 
-    public ScheduleCrossListDefinition100GetRequest withKeyblocTermCode(Object keyblocTermCode) {
+    public ScheduleCrossListDefinition100GetRequest withKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
         return this;
     }

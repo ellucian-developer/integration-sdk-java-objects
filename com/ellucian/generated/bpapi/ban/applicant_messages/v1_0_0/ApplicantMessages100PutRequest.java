@@ -37,7 +37,7 @@ public class ApplicantMessages100PutRequest {
      */
     @JsonProperty("keyblckAidyCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAidyCode, Lookup lineage reference object : robinst")
-    private Object keyblckAidyCode;
+    private String keyblckAidyCode;
     /**
      * Expiration Date
      * <p>
@@ -100,7 +100,7 @@ public class ApplicantMessages100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Message
      * <p>
@@ -129,7 +129,7 @@ public class ApplicantMessages100PutRequest {
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public Object getKeyblckAidyCode() {
+    public String getKeyblckAidyCode() {
         return keyblckAidyCode;
     }
 
@@ -140,11 +140,11 @@ public class ApplicantMessages100PutRequest {
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public void setKeyblckAidyCode(Object keyblckAidyCode) {
+    public void setKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
     }
 
-    public ApplicantMessages100PutRequest withKeyblckAidyCode(Object keyblckAidyCode) {
+    public ApplicantMessages100PutRequest withKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
         return this;
     }
@@ -318,7 +318,7 @@ public class ApplicantMessages100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -329,11 +329,11 @@ public class ApplicantMessages100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public ApplicantMessages100PutRequest withId(Object id) {
+    public ApplicantMessages100PutRequest withId(String id) {
         this.id = id;
         return this;
     }

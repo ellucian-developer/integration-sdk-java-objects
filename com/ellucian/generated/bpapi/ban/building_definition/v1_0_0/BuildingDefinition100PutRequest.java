@@ -248,7 +248,7 @@ public class BuildingDefinition100PutRequest {
      */
     @JsonProperty("slabldgBldgCode")
     @JsonPropertyDescription("Lineage reference object : slabldgBldgCode, Lookup lineage reference object : stvbldg")
-    private Object slabldgBldgCode;
+    private String slabldgBldgCode;
     /**
      * Phone
      * <p>
@@ -876,7 +876,7 @@ public class BuildingDefinition100PutRequest {
      * 
      */
     @JsonProperty("slabldgBldgCode")
-    public Object getSlabldgBldgCode() {
+    public String getSlabldgBldgCode() {
         return slabldgBldgCode;
     }
 
@@ -887,11 +887,11 @@ public class BuildingDefinition100PutRequest {
      * 
      */
     @JsonProperty("slabldgBldgCode")
-    public void setSlabldgBldgCode(Object slabldgBldgCode) {
+    public void setSlabldgBldgCode(String slabldgBldgCode) {
         this.slabldgBldgCode = slabldgBldgCode;
     }
 
-    public BuildingDefinition100PutRequest withSlabldgBldgCode(Object slabldgBldgCode) {
+    public BuildingDefinition100PutRequest withSlabldgBldgCode(String slabldgBldgCode) {
         this.slabldgBldgCode = slabldgBldgCode;
         return this;
     }

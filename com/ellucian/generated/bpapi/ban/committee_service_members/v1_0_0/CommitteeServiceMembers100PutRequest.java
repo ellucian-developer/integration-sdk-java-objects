@@ -165,7 +165,7 @@ public class CommitteeServiceMembers100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Committee/Service Type
      * <p>
@@ -175,7 +175,7 @@ public class CommitteeServiceMembers100PutRequest {
      */
     @JsonProperty("shacomiComtCode")
     @JsonPropertyDescription("Lineage reference object : shacomiComtCode, Lookup lineage reference object : stvcomt")
-    private Object shacomiComtCode;
+    private String shacomiComtCode;
     /**
      * Home College
      * <p>
@@ -571,7 +571,7 @@ public class CommitteeServiceMembers100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -582,11 +582,11 @@ public class CommitteeServiceMembers100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public CommitteeServiceMembers100PutRequest withId(Object id) {
+    public CommitteeServiceMembers100PutRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -599,7 +599,7 @@ public class CommitteeServiceMembers100PutRequest {
      * 
      */
     @JsonProperty("shacomiComtCode")
-    public Object getShacomiComtCode() {
+    public String getShacomiComtCode() {
         return shacomiComtCode;
     }
 
@@ -611,11 +611,11 @@ public class CommitteeServiceMembers100PutRequest {
      * 
      */
     @JsonProperty("shacomiComtCode")
-    public void setShacomiComtCode(Object shacomiComtCode) {
+    public void setShacomiComtCode(String shacomiComtCode) {
         this.shacomiComtCode = shacomiComtCode;
     }
 
-    public CommitteeServiceMembers100PutRequest withShacomiComtCode(Object shacomiComtCode) {
+    public CommitteeServiceMembers100PutRequest withShacomiComtCode(String shacomiComtCode) {
         this.shacomiComtCode = shacomiComtCode;
         return this;
     }

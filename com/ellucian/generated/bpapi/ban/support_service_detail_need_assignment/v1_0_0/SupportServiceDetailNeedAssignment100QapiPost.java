@@ -14,32 +14,21 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "seadetlId",
-    "seadetlTermCodeEff",
-    "seadetlSsgpCode",
-    "needCode",
+    "id",
+    "termCodeEff",
     "ssgpCode",
+    "needCode",
+    "serdtndSsgpCode",
     "ndrfCode",
     "selfInd"
 })
 @Generated("jsonschema2pojo")
 public class SupportServiceDetailNeedAssignment100QapiPost {
 
-    @JsonProperty("seadetlId")
-    private String seadetlId;
-    @JsonProperty("seadetlTermCodeEff")
-    private String seadetlTermCodeEff;
-    @JsonProperty("seadetlSsgpCode")
-    private String seadetlSsgpCode;
-    /**
-     * Need
-     * <p>
-     * Lineage reference object : SERDTND_NEED_CODE, Lookup lineage reference object : stvneed
-     * 
-     */
-    @JsonProperty("needCode")
-    @JsonPropertyDescription("Lineage reference object : SERDTND_NEED_CODE, Lookup lineage reference object : stvneed")
-    private String needCode;
+    @JsonProperty("id")
+    private String id;
+    @JsonProperty("termCodeEff")
+    private String termCodeEff;
     /**
      * Group
      * <p>
@@ -49,6 +38,17 @@ public class SupportServiceDetailNeedAssignment100QapiPost {
     @JsonProperty("ssgpCode")
     @JsonPropertyDescription("Lineage reference object : SERDTND_SSGP_CODE, Lookup lineage reference object : stvssgp")
     private String ssgpCode;
+    /**
+     * Need
+     * <p>
+     * Lineage reference object : SERDTND_NEED_CODE, Lookup lineage reference object : stvneed
+     * 
+     */
+    @JsonProperty("needCode")
+    @JsonPropertyDescription("Lineage reference object : SERDTND_NEED_CODE, Lookup lineage reference object : stvneed")
+    private String needCode;
+    @JsonProperty("serdtndSsgpCode")
+    private String serdtndSsgpCode;
     /**
      * Need Referral Code
      * <p>
@@ -68,48 +68,60 @@ public class SupportServiceDetailNeedAssignment100QapiPost {
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    @JsonProperty("seadetlId")
-    public String getSeadetlId() {
-        return seadetlId;
+    @JsonProperty("id")
+    public String getId() {
+        return id;
     }
 
-    @JsonProperty("seadetlId")
-    public void setSeadetlId(String seadetlId) {
-        this.seadetlId = seadetlId;
+    @JsonProperty("id")
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public SupportServiceDetailNeedAssignment100QapiPost withSeadetlId(String seadetlId) {
-        this.seadetlId = seadetlId;
+    public SupportServiceDetailNeedAssignment100QapiPost withId(String id) {
+        this.id = id;
         return this;
     }
 
-    @JsonProperty("seadetlTermCodeEff")
-    public String getSeadetlTermCodeEff() {
-        return seadetlTermCodeEff;
+    @JsonProperty("termCodeEff")
+    public String getTermCodeEff() {
+        return termCodeEff;
     }
 
-    @JsonProperty("seadetlTermCodeEff")
-    public void setSeadetlTermCodeEff(String seadetlTermCodeEff) {
-        this.seadetlTermCodeEff = seadetlTermCodeEff;
+    @JsonProperty("termCodeEff")
+    public void setTermCodeEff(String termCodeEff) {
+        this.termCodeEff = termCodeEff;
     }
 
-    public SupportServiceDetailNeedAssignment100QapiPost withSeadetlTermCodeEff(String seadetlTermCodeEff) {
-        this.seadetlTermCodeEff = seadetlTermCodeEff;
+    public SupportServiceDetailNeedAssignment100QapiPost withTermCodeEff(String termCodeEff) {
+        this.termCodeEff = termCodeEff;
         return this;
     }
 
-    @JsonProperty("seadetlSsgpCode")
-    public String getSeadetlSsgpCode() {
-        return seadetlSsgpCode;
+    /**
+     * Group
+     * <p>
+     * Lineage reference object : SERDTND_SSGP_CODE, Lookup lineage reference object : stvssgp
+     * 
+     */
+    @JsonProperty("ssgpCode")
+    public String getSsgpCode() {
+        return ssgpCode;
     }
 
-    @JsonProperty("seadetlSsgpCode")
-    public void setSeadetlSsgpCode(String seadetlSsgpCode) {
-        this.seadetlSsgpCode = seadetlSsgpCode;
+    /**
+     * Group
+     * <p>
+     * Lineage reference object : SERDTND_SSGP_CODE, Lookup lineage reference object : stvssgp
+     * 
+     */
+    @JsonProperty("ssgpCode")
+    public void setSsgpCode(String ssgpCode) {
+        this.ssgpCode = ssgpCode;
     }
 
-    public SupportServiceDetailNeedAssignment100QapiPost withSeadetlSsgpCode(String seadetlSsgpCode) {
-        this.seadetlSsgpCode = seadetlSsgpCode;
+    public SupportServiceDetailNeedAssignment100QapiPost withSsgpCode(String ssgpCode) {
+        this.ssgpCode = ssgpCode;
         return this;
     }
 
@@ -140,30 +152,18 @@ public class SupportServiceDetailNeedAssignment100QapiPost {
         return this;
     }
 
-    /**
-     * Group
-     * <p>
-     * Lineage reference object : SERDTND_SSGP_CODE, Lookup lineage reference object : stvssgp
-     * 
-     */
-    @JsonProperty("ssgpCode")
-    public String getSsgpCode() {
-        return ssgpCode;
+    @JsonProperty("serdtndSsgpCode")
+    public String getSerdtndSsgpCode() {
+        return serdtndSsgpCode;
     }
 
-    /**
-     * Group
-     * <p>
-     * Lineage reference object : SERDTND_SSGP_CODE, Lookup lineage reference object : stvssgp
-     * 
-     */
-    @JsonProperty("ssgpCode")
-    public void setSsgpCode(String ssgpCode) {
-        this.ssgpCode = ssgpCode;
+    @JsonProperty("serdtndSsgpCode")
+    public void setSerdtndSsgpCode(String serdtndSsgpCode) {
+        this.serdtndSsgpCode = serdtndSsgpCode;
     }
 
-    public SupportServiceDetailNeedAssignment100QapiPost withSsgpCode(String ssgpCode) {
-        this.ssgpCode = ssgpCode;
+    public SupportServiceDetailNeedAssignment100QapiPost withSerdtndSsgpCode(String serdtndSsgpCode) {
+        this.serdtndSsgpCode = serdtndSsgpCode;
         return this;
     }
 
@@ -236,25 +236,25 @@ public class SupportServiceDetailNeedAssignment100QapiPost {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(SupportServiceDetailNeedAssignment100QapiPost.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
-        sb.append("seadetlId");
+        sb.append("id");
         sb.append('=');
-        sb.append(((this.seadetlId == null)?"<null>":this.seadetlId));
+        sb.append(((this.id == null)?"<null>":this.id));
         sb.append(',');
-        sb.append("seadetlTermCodeEff");
+        sb.append("termCodeEff");
         sb.append('=');
-        sb.append(((this.seadetlTermCodeEff == null)?"<null>":this.seadetlTermCodeEff));
+        sb.append(((this.termCodeEff == null)?"<null>":this.termCodeEff));
         sb.append(',');
-        sb.append("seadetlSsgpCode");
+        sb.append("ssgpCode");
         sb.append('=');
-        sb.append(((this.seadetlSsgpCode == null)?"<null>":this.seadetlSsgpCode));
+        sb.append(((this.ssgpCode == null)?"<null>":this.ssgpCode));
         sb.append(',');
         sb.append("needCode");
         sb.append('=');
         sb.append(((this.needCode == null)?"<null>":this.needCode));
         sb.append(',');
-        sb.append("ssgpCode");
+        sb.append("serdtndSsgpCode");
         sb.append('=');
-        sb.append(((this.ssgpCode == null)?"<null>":this.ssgpCode));
+        sb.append(((this.serdtndSsgpCode == null)?"<null>":this.serdtndSsgpCode));
         sb.append(',');
         sb.append("ndrfCode");
         sb.append('=');
@@ -281,11 +281,11 @@ public class SupportServiceDetailNeedAssignment100QapiPost {
         int result = 1;
         result = ((result* 31)+((this.ndrfCode == null)? 0 :this.ndrfCode.hashCode()));
         result = ((result* 31)+((this.needCode == null)? 0 :this.needCode.hashCode()));
+        result = ((result* 31)+((this.termCodeEff == null)? 0 :this.termCodeEff.hashCode()));
         result = ((result* 31)+((this.selfInd == null)? 0 :this.selfInd.hashCode()));
-        result = ((result* 31)+((this.seadetlTermCodeEff == null)? 0 :this.seadetlTermCodeEff.hashCode()));
         result = ((result* 31)+((this.ssgpCode == null)? 0 :this.ssgpCode.hashCode()));
-        result = ((result* 31)+((this.seadetlId == null)? 0 :this.seadetlId.hashCode()));
-        result = ((result* 31)+((this.seadetlSsgpCode == null)? 0 :this.seadetlSsgpCode.hashCode()));
+        result = ((result* 31)+((this.serdtndSsgpCode == null)? 0 :this.serdtndSsgpCode.hashCode()));
+        result = ((result* 31)+((this.id == null)? 0 :this.id.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
         return result;
     }
@@ -299,7 +299,7 @@ public class SupportServiceDetailNeedAssignment100QapiPost {
             return false;
         }
         SupportServiceDetailNeedAssignment100QapiPost rhs = ((SupportServiceDetailNeedAssignment100QapiPost) other);
-        return (((((((((this.ndrfCode == rhs.ndrfCode)||((this.ndrfCode!= null)&&this.ndrfCode.equals(rhs.ndrfCode)))&&((this.needCode == rhs.needCode)||((this.needCode!= null)&&this.needCode.equals(rhs.needCode))))&&((this.selfInd == rhs.selfInd)||((this.selfInd!= null)&&this.selfInd.equals(rhs.selfInd))))&&((this.seadetlTermCodeEff == rhs.seadetlTermCodeEff)||((this.seadetlTermCodeEff!= null)&&this.seadetlTermCodeEff.equals(rhs.seadetlTermCodeEff))))&&((this.ssgpCode == rhs.ssgpCode)||((this.ssgpCode!= null)&&this.ssgpCode.equals(rhs.ssgpCode))))&&((this.seadetlId == rhs.seadetlId)||((this.seadetlId!= null)&&this.seadetlId.equals(rhs.seadetlId))))&&((this.seadetlSsgpCode == rhs.seadetlSsgpCode)||((this.seadetlSsgpCode!= null)&&this.seadetlSsgpCode.equals(rhs.seadetlSsgpCode))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))));
+        return (((((((((this.ndrfCode == rhs.ndrfCode)||((this.ndrfCode!= null)&&this.ndrfCode.equals(rhs.ndrfCode)))&&((this.needCode == rhs.needCode)||((this.needCode!= null)&&this.needCode.equals(rhs.needCode))))&&((this.termCodeEff == rhs.termCodeEff)||((this.termCodeEff!= null)&&this.termCodeEff.equals(rhs.termCodeEff))))&&((this.selfInd == rhs.selfInd)||((this.selfInd!= null)&&this.selfInd.equals(rhs.selfInd))))&&((this.ssgpCode == rhs.ssgpCode)||((this.ssgpCode!= null)&&this.ssgpCode.equals(rhs.ssgpCode))))&&((this.serdtndSsgpCode == rhs.serdtndSsgpCode)||((this.serdtndSsgpCode!= null)&&this.serdtndSsgpCode.equals(rhs.serdtndSsgpCode))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))));
     }
 
 }

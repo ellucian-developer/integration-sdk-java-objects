@@ -96,7 +96,7 @@ public class ApplicantPellGrant100PutRequest {
      */
     @JsonProperty("keyblckAidyCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAidyCode, Lookup lineage reference object : robinst")
-    private Object keyblckAidyCode;
+    private String keyblckAidyCode;
     /**
      * Transaction Number
      * <p>
@@ -114,7 +114,7 @@ public class ApplicantPellGrant100PutRequest {
      */
     @JsonProperty("keyblckId")
     @JsonPropertyDescription("Lineage reference object : keyblckId")
-    private Object keyblckId;
+    private String keyblckId;
     /**
      * Secondary SAR EFC
      * <p>
@@ -322,7 +322,7 @@ public class ApplicantPellGrant100PutRequest {
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public Object getKeyblckAidyCode() {
+    public String getKeyblckAidyCode() {
         return keyblckAidyCode;
     }
 
@@ -333,11 +333,11 @@ public class ApplicantPellGrant100PutRequest {
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public void setKeyblckAidyCode(Object keyblckAidyCode) {
+    public void setKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
     }
 
-    public ApplicantPellGrant100PutRequest withKeyblckAidyCode(Object keyblckAidyCode) {
+    public ApplicantPellGrant100PutRequest withKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
         return this;
     }
@@ -376,7 +376,7 @@ public class ApplicantPellGrant100PutRequest {
      * 
      */
     @JsonProperty("keyblckId")
-    public Object getKeyblckId() {
+    public String getKeyblckId() {
         return keyblckId;
     }
 
@@ -387,11 +387,11 @@ public class ApplicantPellGrant100PutRequest {
      * 
      */
     @JsonProperty("keyblckId")
-    public void setKeyblckId(Object keyblckId) {
+    public void setKeyblckId(String keyblckId) {
         this.keyblckId = keyblckId;
     }
 
-    public ApplicantPellGrant100PutRequest withKeyblckId(Object keyblckId) {
+    public ApplicantPellGrant100PutRequest withKeyblckId(String keyblckId) {
         this.keyblckId = keyblckId;
         return this;
     }

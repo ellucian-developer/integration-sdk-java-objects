@@ -47,7 +47,7 @@ public class AcctBal {
      */
     @JsonProperty("effDate91")
     @JsonPropertyDescription("Lineage reference object : effDate91")
-    private Object effDate91;
+    private Double effDate91;
     /**
      * Balance Due
      * <p>
@@ -56,7 +56,7 @@ public class AcctBal {
      */
     @JsonProperty("balanceDue")
     @JsonPropertyDescription("Lineage reference object : balanceDue")
-    private Object balanceDue;
+    private Double balanceDue;
     /**
      * Unbilled
      * <p>
@@ -65,7 +65,7 @@ public class AcctBal {
      */
     @JsonProperty("billDateUnbilled")
     @JsonPropertyDescription("Lineage reference object : billDateUnbilled")
-    private Object billDateUnbilled;
+    private Double billDateUnbilled;
     /**
      *  61-90
      * <p>
@@ -74,7 +74,7 @@ public class AcctBal {
      */
     @JsonProperty("effDate61")
     @JsonPropertyDescription("Lineage reference object : effDate61")
-    private Object effDate61;
+    private Double effDate61;
     /**
      * Future
      * <p>
@@ -83,7 +83,7 @@ public class AcctBal {
      */
     @JsonProperty("effDateFut")
     @JsonPropertyDescription("Lineage reference object : effDateFut")
-    private Object effDateFut;
+    private Double effDateFut;
     /**
      * Memo Balance
      * <p>
@@ -92,7 +92,7 @@ public class AcctBal {
      */
     @JsonProperty("memoBal")
     @JsonPropertyDescription("Lineage reference object : memoBal")
-    private Object memoBal;
+    private Double memoBal;
     /**
      *  91+
      * <p>
@@ -101,7 +101,7 @@ public class AcctBal {
      */
     @JsonProperty("billDate91")
     @JsonPropertyDescription("Lineage reference object : billDate91")
-    private Object billDate91;
+    private Double billDate91;
     /**
      * Past Due
      * <p>
@@ -110,7 +110,7 @@ public class AcctBal {
      */
     @JsonProperty("pastDue")
     @JsonPropertyDescription("Lineage reference object : pastDue")
-    private Object pastDue;
+    private Double pastDue;
     /**
      * Net Balance
      * <p>
@@ -119,7 +119,7 @@ public class AcctBal {
      */
     @JsonProperty("netBal")
     @JsonPropertyDescription("Lineage reference object : netBal")
-    private Object netBal;
+    private Double netBal;
     /**
      * Deposit Balance
      * <p>
@@ -128,7 +128,7 @@ public class AcctBal {
      */
     @JsonProperty("depoBal")
     @JsonPropertyDescription("Lineage reference object : depoBal")
-    private Object depoBal;
+    private Double depoBal;
     /**
      * Current Due
      * <p>
@@ -137,7 +137,7 @@ public class AcctBal {
      */
     @JsonProperty("currentDue")
     @JsonPropertyDescription("Lineage reference object : currentDue")
-    private Object currentDue;
+    private Double currentDue;
     /**
      * Future Due
      * <p>
@@ -146,7 +146,7 @@ public class AcctBal {
      */
     @JsonProperty("futureDue")
     @JsonPropertyDescription("Lineage reference object : futureDue")
-    private Object futureDue;
+    private Double futureDue;
     /**
      * Account Balance
      * <p>
@@ -155,7 +155,7 @@ public class AcctBal {
      */
     @JsonProperty("acctBal")
     @JsonPropertyDescription("Lineage reference object : acctBal")
-    private Object acctBal;
+    private Double acctBal;
     /**
      * NSF Counter
      * <p>
@@ -164,7 +164,7 @@ public class AcctBal {
      */
     @JsonProperty("nsfCounter")
     @JsonPropertyDescription("Lineage reference object : nsfCounter")
-    private Object nsfCounter;
+    private Double nsfCounter;
     /**
      * Amount Due
      * <p>
@@ -173,7 +173,7 @@ public class AcctBal {
      */
     @JsonProperty("amountDue")
     @JsonPropertyDescription("Lineage reference object : amountDue")
-    private Object amountDue;
+    private Double amountDue;
     /**
      *  0-30
      * <p>
@@ -182,7 +182,7 @@ public class AcctBal {
      */
     @JsonProperty("effDate0")
     @JsonPropertyDescription("Lineage reference object : effDate0")
-    private Object effDate0;
+    private Double effDate0;
     /**
      * Unapplied Credit
      * <p>
@@ -191,7 +191,7 @@ public class AcctBal {
      */
     @JsonProperty("unappliedCr")
     @JsonPropertyDescription("Lineage reference object : unappliedCr")
-    private Object unappliedCr;
+    private Double unappliedCr;
     /**
      *  61-90
      * <p>
@@ -200,7 +200,7 @@ public class AcctBal {
      */
     @JsonProperty("billDate61")
     @JsonPropertyDescription("Lineage reference object : billDate61")
-    private Object billDate61;
+    private Double billDate61;
     /**
      *  31-60
      * <p>
@@ -209,7 +209,7 @@ public class AcctBal {
      */
     @JsonProperty("billDate31")
     @JsonPropertyDescription("Lineage reference object : billDate31")
-    private Object billDate31;
+    private Double billDate31;
     /**
      *  31-60
      * <p>
@@ -218,7 +218,7 @@ public class AcctBal {
      */
     @JsonProperty("effDate31")
     @JsonPropertyDescription("Lineage reference object : effDate31")
-    private Object effDate31;
+    private Double effDate31;
     /**
      *  0-30
      * <p>
@@ -227,7 +227,7 @@ public class AcctBal {
      */
     @JsonProperty("billDate0")
     @JsonPropertyDescription("Lineage reference object : billDate0")
-    private Object billDate0;
+    private Double billDate0;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -238,7 +238,7 @@ public class AcctBal {
      * 
      */
     @JsonProperty("effDate91")
-    public Object getEffDate91() {
+    public Double getEffDate91() {
         return effDate91;
     }
 
@@ -249,11 +249,11 @@ public class AcctBal {
      * 
      */
     @JsonProperty("effDate91")
-    public void setEffDate91(Object effDate91) {
+    public void setEffDate91(Double effDate91) {
         this.effDate91 = effDate91;
     }
 
-    public AcctBal withEffDate91(Object effDate91) {
+    public AcctBal withEffDate91(Double effDate91) {
         this.effDate91 = effDate91;
         return this;
     }
@@ -265,7 +265,7 @@ public class AcctBal {
      * 
      */
     @JsonProperty("balanceDue")
-    public Object getBalanceDue() {
+    public Double getBalanceDue() {
         return balanceDue;
     }
 
@@ -276,11 +276,11 @@ public class AcctBal {
      * 
      */
     @JsonProperty("balanceDue")
-    public void setBalanceDue(Object balanceDue) {
+    public void setBalanceDue(Double balanceDue) {
         this.balanceDue = balanceDue;
     }
 
-    public AcctBal withBalanceDue(Object balanceDue) {
+    public AcctBal withBalanceDue(Double balanceDue) {
         this.balanceDue = balanceDue;
         return this;
     }
@@ -292,7 +292,7 @@ public class AcctBal {
      * 
      */
     @JsonProperty("billDateUnbilled")
-    public Object getBillDateUnbilled() {
+    public Double getBillDateUnbilled() {
         return billDateUnbilled;
     }
 
@@ -303,11 +303,11 @@ public class AcctBal {
      * 
      */
     @JsonProperty("billDateUnbilled")
-    public void setBillDateUnbilled(Object billDateUnbilled) {
+    public void setBillDateUnbilled(Double billDateUnbilled) {
         this.billDateUnbilled = billDateUnbilled;
     }
 
-    public AcctBal withBillDateUnbilled(Object billDateUnbilled) {
+    public AcctBal withBillDateUnbilled(Double billDateUnbilled) {
         this.billDateUnbilled = billDateUnbilled;
         return this;
     }
@@ -319,7 +319,7 @@ public class AcctBal {
      * 
      */
     @JsonProperty("effDate61")
-    public Object getEffDate61() {
+    public Double getEffDate61() {
         return effDate61;
     }
 
@@ -330,11 +330,11 @@ public class AcctBal {
      * 
      */
     @JsonProperty("effDate61")
-    public void setEffDate61(Object effDate61) {
+    public void setEffDate61(Double effDate61) {
         this.effDate61 = effDate61;
     }
 
-    public AcctBal withEffDate61(Object effDate61) {
+    public AcctBal withEffDate61(Double effDate61) {
         this.effDate61 = effDate61;
         return this;
     }
@@ -346,7 +346,7 @@ public class AcctBal {
      * 
      */
     @JsonProperty("effDateFut")
-    public Object getEffDateFut() {
+    public Double getEffDateFut() {
         return effDateFut;
     }
 
@@ -357,11 +357,11 @@ public class AcctBal {
      * 
      */
     @JsonProperty("effDateFut")
-    public void setEffDateFut(Object effDateFut) {
+    public void setEffDateFut(Double effDateFut) {
         this.effDateFut = effDateFut;
     }
 
-    public AcctBal withEffDateFut(Object effDateFut) {
+    public AcctBal withEffDateFut(Double effDateFut) {
         this.effDateFut = effDateFut;
         return this;
     }
@@ -373,7 +373,7 @@ public class AcctBal {
      * 
      */
     @JsonProperty("memoBal")
-    public Object getMemoBal() {
+    public Double getMemoBal() {
         return memoBal;
     }
 
@@ -384,11 +384,11 @@ public class AcctBal {
      * 
      */
     @JsonProperty("memoBal")
-    public void setMemoBal(Object memoBal) {
+    public void setMemoBal(Double memoBal) {
         this.memoBal = memoBal;
     }
 
-    public AcctBal withMemoBal(Object memoBal) {
+    public AcctBal withMemoBal(Double memoBal) {
         this.memoBal = memoBal;
         return this;
     }
@@ -400,7 +400,7 @@ public class AcctBal {
      * 
      */
     @JsonProperty("billDate91")
-    public Object getBillDate91() {
+    public Double getBillDate91() {
         return billDate91;
     }
 
@@ -411,11 +411,11 @@ public class AcctBal {
      * 
      */
     @JsonProperty("billDate91")
-    public void setBillDate91(Object billDate91) {
+    public void setBillDate91(Double billDate91) {
         this.billDate91 = billDate91;
     }
 
-    public AcctBal withBillDate91(Object billDate91) {
+    public AcctBal withBillDate91(Double billDate91) {
         this.billDate91 = billDate91;
         return this;
     }
@@ -427,7 +427,7 @@ public class AcctBal {
      * 
      */
     @JsonProperty("pastDue")
-    public Object getPastDue() {
+    public Double getPastDue() {
         return pastDue;
     }
 
@@ -438,11 +438,11 @@ public class AcctBal {
      * 
      */
     @JsonProperty("pastDue")
-    public void setPastDue(Object pastDue) {
+    public void setPastDue(Double pastDue) {
         this.pastDue = pastDue;
     }
 
-    public AcctBal withPastDue(Object pastDue) {
+    public AcctBal withPastDue(Double pastDue) {
         this.pastDue = pastDue;
         return this;
     }
@@ -454,7 +454,7 @@ public class AcctBal {
      * 
      */
     @JsonProperty("netBal")
-    public Object getNetBal() {
+    public Double getNetBal() {
         return netBal;
     }
 
@@ -465,11 +465,11 @@ public class AcctBal {
      * 
      */
     @JsonProperty("netBal")
-    public void setNetBal(Object netBal) {
+    public void setNetBal(Double netBal) {
         this.netBal = netBal;
     }
 
-    public AcctBal withNetBal(Object netBal) {
+    public AcctBal withNetBal(Double netBal) {
         this.netBal = netBal;
         return this;
     }
@@ -481,7 +481,7 @@ public class AcctBal {
      * 
      */
     @JsonProperty("depoBal")
-    public Object getDepoBal() {
+    public Double getDepoBal() {
         return depoBal;
     }
 
@@ -492,11 +492,11 @@ public class AcctBal {
      * 
      */
     @JsonProperty("depoBal")
-    public void setDepoBal(Object depoBal) {
+    public void setDepoBal(Double depoBal) {
         this.depoBal = depoBal;
     }
 
-    public AcctBal withDepoBal(Object depoBal) {
+    public AcctBal withDepoBal(Double depoBal) {
         this.depoBal = depoBal;
         return this;
     }
@@ -508,7 +508,7 @@ public class AcctBal {
      * 
      */
     @JsonProperty("currentDue")
-    public Object getCurrentDue() {
+    public Double getCurrentDue() {
         return currentDue;
     }
 
@@ -519,11 +519,11 @@ public class AcctBal {
      * 
      */
     @JsonProperty("currentDue")
-    public void setCurrentDue(Object currentDue) {
+    public void setCurrentDue(Double currentDue) {
         this.currentDue = currentDue;
     }
 
-    public AcctBal withCurrentDue(Object currentDue) {
+    public AcctBal withCurrentDue(Double currentDue) {
         this.currentDue = currentDue;
         return this;
     }
@@ -535,7 +535,7 @@ public class AcctBal {
      * 
      */
     @JsonProperty("futureDue")
-    public Object getFutureDue() {
+    public Double getFutureDue() {
         return futureDue;
     }
 
@@ -546,11 +546,11 @@ public class AcctBal {
      * 
      */
     @JsonProperty("futureDue")
-    public void setFutureDue(Object futureDue) {
+    public void setFutureDue(Double futureDue) {
         this.futureDue = futureDue;
     }
 
-    public AcctBal withFutureDue(Object futureDue) {
+    public AcctBal withFutureDue(Double futureDue) {
         this.futureDue = futureDue;
         return this;
     }
@@ -562,7 +562,7 @@ public class AcctBal {
      * 
      */
     @JsonProperty("acctBal")
-    public Object getAcctBal() {
+    public Double getAcctBal() {
         return acctBal;
     }
 
@@ -573,11 +573,11 @@ public class AcctBal {
      * 
      */
     @JsonProperty("acctBal")
-    public void setAcctBal(Object acctBal) {
+    public void setAcctBal(Double acctBal) {
         this.acctBal = acctBal;
     }
 
-    public AcctBal withAcctBal(Object acctBal) {
+    public AcctBal withAcctBal(Double acctBal) {
         this.acctBal = acctBal;
         return this;
     }
@@ -589,7 +589,7 @@ public class AcctBal {
      * 
      */
     @JsonProperty("nsfCounter")
-    public Object getNsfCounter() {
+    public Double getNsfCounter() {
         return nsfCounter;
     }
 
@@ -600,11 +600,11 @@ public class AcctBal {
      * 
      */
     @JsonProperty("nsfCounter")
-    public void setNsfCounter(Object nsfCounter) {
+    public void setNsfCounter(Double nsfCounter) {
         this.nsfCounter = nsfCounter;
     }
 
-    public AcctBal withNsfCounter(Object nsfCounter) {
+    public AcctBal withNsfCounter(Double nsfCounter) {
         this.nsfCounter = nsfCounter;
         return this;
     }
@@ -616,7 +616,7 @@ public class AcctBal {
      * 
      */
     @JsonProperty("amountDue")
-    public Object getAmountDue() {
+    public Double getAmountDue() {
         return amountDue;
     }
 
@@ -627,11 +627,11 @@ public class AcctBal {
      * 
      */
     @JsonProperty("amountDue")
-    public void setAmountDue(Object amountDue) {
+    public void setAmountDue(Double amountDue) {
         this.amountDue = amountDue;
     }
 
-    public AcctBal withAmountDue(Object amountDue) {
+    public AcctBal withAmountDue(Double amountDue) {
         this.amountDue = amountDue;
         return this;
     }
@@ -643,7 +643,7 @@ public class AcctBal {
      * 
      */
     @JsonProperty("effDate0")
-    public Object getEffDate0() {
+    public Double getEffDate0() {
         return effDate0;
     }
 
@@ -654,11 +654,11 @@ public class AcctBal {
      * 
      */
     @JsonProperty("effDate0")
-    public void setEffDate0(Object effDate0) {
+    public void setEffDate0(Double effDate0) {
         this.effDate0 = effDate0;
     }
 
-    public AcctBal withEffDate0(Object effDate0) {
+    public AcctBal withEffDate0(Double effDate0) {
         this.effDate0 = effDate0;
         return this;
     }
@@ -670,7 +670,7 @@ public class AcctBal {
      * 
      */
     @JsonProperty("unappliedCr")
-    public Object getUnappliedCr() {
+    public Double getUnappliedCr() {
         return unappliedCr;
     }
 
@@ -681,11 +681,11 @@ public class AcctBal {
      * 
      */
     @JsonProperty("unappliedCr")
-    public void setUnappliedCr(Object unappliedCr) {
+    public void setUnappliedCr(Double unappliedCr) {
         this.unappliedCr = unappliedCr;
     }
 
-    public AcctBal withUnappliedCr(Object unappliedCr) {
+    public AcctBal withUnappliedCr(Double unappliedCr) {
         this.unappliedCr = unappliedCr;
         return this;
     }
@@ -697,7 +697,7 @@ public class AcctBal {
      * 
      */
     @JsonProperty("billDate61")
-    public Object getBillDate61() {
+    public Double getBillDate61() {
         return billDate61;
     }
 
@@ -708,11 +708,11 @@ public class AcctBal {
      * 
      */
     @JsonProperty("billDate61")
-    public void setBillDate61(Object billDate61) {
+    public void setBillDate61(Double billDate61) {
         this.billDate61 = billDate61;
     }
 
-    public AcctBal withBillDate61(Object billDate61) {
+    public AcctBal withBillDate61(Double billDate61) {
         this.billDate61 = billDate61;
         return this;
     }
@@ -724,7 +724,7 @@ public class AcctBal {
      * 
      */
     @JsonProperty("billDate31")
-    public Object getBillDate31() {
+    public Double getBillDate31() {
         return billDate31;
     }
 
@@ -735,11 +735,11 @@ public class AcctBal {
      * 
      */
     @JsonProperty("billDate31")
-    public void setBillDate31(Object billDate31) {
+    public void setBillDate31(Double billDate31) {
         this.billDate31 = billDate31;
     }
 
-    public AcctBal withBillDate31(Object billDate31) {
+    public AcctBal withBillDate31(Double billDate31) {
         this.billDate31 = billDate31;
         return this;
     }
@@ -751,7 +751,7 @@ public class AcctBal {
      * 
      */
     @JsonProperty("effDate31")
-    public Object getEffDate31() {
+    public Double getEffDate31() {
         return effDate31;
     }
 
@@ -762,11 +762,11 @@ public class AcctBal {
      * 
      */
     @JsonProperty("effDate31")
-    public void setEffDate31(Object effDate31) {
+    public void setEffDate31(Double effDate31) {
         this.effDate31 = effDate31;
     }
 
-    public AcctBal withEffDate31(Object effDate31) {
+    public AcctBal withEffDate31(Double effDate31) {
         this.effDate31 = effDate31;
         return this;
     }
@@ -778,7 +778,7 @@ public class AcctBal {
      * 
      */
     @JsonProperty("billDate0")
-    public Object getBillDate0() {
+    public Double getBillDate0() {
         return billDate0;
     }
 
@@ -789,11 +789,11 @@ public class AcctBal {
      * 
      */
     @JsonProperty("billDate0")
-    public void setBillDate0(Object billDate0) {
+    public void setBillDate0(Double billDate0) {
         this.billDate0 = billDate0;
     }
 
-    public AcctBal withBillDate0(Object billDate0) {
+    public AcctBal withBillDate0(Double billDate0) {
         this.billDate0 = billDate0;
         return this;
     }

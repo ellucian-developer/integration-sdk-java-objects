@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.billing_mass_data_entry_memos.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -30,7 +31,7 @@ public class KeyBlock3 {
      */
     @JsonProperty("keybloc3DetailCode")
     @JsonPropertyDescription("Lineage reference object : keybloc3DetailCode, Lookup lineage reference object : tbbdetc")
-    private Object keybloc3DetailCode;
+    private String keybloc3DetailCode;
     /**
      * Bill Indicator
      * <p>
@@ -39,7 +40,7 @@ public class KeyBlock3 {
      */
     @JsonProperty("keybloc3BillingInd")
     @JsonPropertyDescription("Lineage reference object : keybloc3BillingInd")
-    private Object keybloc3BillingInd;
+    private String keybloc3BillingInd;
     /**
      * Expiration Date
      * <p>
@@ -48,7 +49,7 @@ public class KeyBlock3 {
      */
     @JsonProperty("keybloc3ExpDate")
     @JsonPropertyDescription("Lineage reference object : keybloc3ExpDate")
-    private Object keybloc3ExpDate;
+    private Date keybloc3ExpDate;
     /**
      * Amount
      * <p>
@@ -57,7 +58,7 @@ public class KeyBlock3 {
      */
     @JsonProperty("keybloc3Amount")
     @JsonPropertyDescription("Lineage reference object : keybloc3Amount")
-    private Object keybloc3Amount;
+    private Double keybloc3Amount;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -68,7 +69,7 @@ public class KeyBlock3 {
      * 
      */
     @JsonProperty("keybloc3DetailCode")
-    public Object getKeybloc3DetailCode() {
+    public String getKeybloc3DetailCode() {
         return keybloc3DetailCode;
     }
 
@@ -79,11 +80,11 @@ public class KeyBlock3 {
      * 
      */
     @JsonProperty("keybloc3DetailCode")
-    public void setKeybloc3DetailCode(Object keybloc3DetailCode) {
+    public void setKeybloc3DetailCode(String keybloc3DetailCode) {
         this.keybloc3DetailCode = keybloc3DetailCode;
     }
 
-    public KeyBlock3 withKeybloc3DetailCode(Object keybloc3DetailCode) {
+    public KeyBlock3 withKeybloc3DetailCode(String keybloc3DetailCode) {
         this.keybloc3DetailCode = keybloc3DetailCode;
         return this;
     }
@@ -95,7 +96,7 @@ public class KeyBlock3 {
      * 
      */
     @JsonProperty("keybloc3BillingInd")
-    public Object getKeybloc3BillingInd() {
+    public String getKeybloc3BillingInd() {
         return keybloc3BillingInd;
     }
 
@@ -106,11 +107,11 @@ public class KeyBlock3 {
      * 
      */
     @JsonProperty("keybloc3BillingInd")
-    public void setKeybloc3BillingInd(Object keybloc3BillingInd) {
+    public void setKeybloc3BillingInd(String keybloc3BillingInd) {
         this.keybloc3BillingInd = keybloc3BillingInd;
     }
 
-    public KeyBlock3 withKeybloc3BillingInd(Object keybloc3BillingInd) {
+    public KeyBlock3 withKeybloc3BillingInd(String keybloc3BillingInd) {
         this.keybloc3BillingInd = keybloc3BillingInd;
         return this;
     }
@@ -122,7 +123,7 @@ public class KeyBlock3 {
      * 
      */
     @JsonProperty("keybloc3ExpDate")
-    public Object getKeybloc3ExpDate() {
+    public Date getKeybloc3ExpDate() {
         return keybloc3ExpDate;
     }
 
@@ -133,11 +134,11 @@ public class KeyBlock3 {
      * 
      */
     @JsonProperty("keybloc3ExpDate")
-    public void setKeybloc3ExpDate(Object keybloc3ExpDate) {
+    public void setKeybloc3ExpDate(Date keybloc3ExpDate) {
         this.keybloc3ExpDate = keybloc3ExpDate;
     }
 
-    public KeyBlock3 withKeybloc3ExpDate(Object keybloc3ExpDate) {
+    public KeyBlock3 withKeybloc3ExpDate(Date keybloc3ExpDate) {
         this.keybloc3ExpDate = keybloc3ExpDate;
         return this;
     }
@@ -149,7 +150,7 @@ public class KeyBlock3 {
      * 
      */
     @JsonProperty("keybloc3Amount")
-    public Object getKeybloc3Amount() {
+    public Double getKeybloc3Amount() {
         return keybloc3Amount;
     }
 
@@ -160,11 +161,11 @@ public class KeyBlock3 {
      * 
      */
     @JsonProperty("keybloc3Amount")
-    public void setKeybloc3Amount(Object keybloc3Amount) {
+    public void setKeybloc3Amount(Double keybloc3Amount) {
         this.keybloc3Amount = keybloc3Amount;
     }
 
-    public KeyBlock3 withKeybloc3Amount(Object keybloc3Amount) {
+    public KeyBlock3 withKeybloc3Amount(Double keybloc3Amount) {
         this.keybloc3Amount = keybloc3Amount;
         return this;
     }

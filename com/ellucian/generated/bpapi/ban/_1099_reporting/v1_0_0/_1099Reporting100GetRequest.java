@@ -64,7 +64,7 @@ public class _1099Reporting100GetRequest {
      */
     @JsonProperty("ftvvendVendOwner")
     @JsonPropertyDescription("Lineage reference object : ftvvendVendOwner, Lookup lineage reference object : ftvvend")
-    private Object ftvvendVendOwner;
+    private String ftvvendVendOwner;
     /**
      * Income Type
      * <p>
@@ -111,7 +111,7 @@ public class _1099Reporting100GetRequest {
      */
     @JsonProperty("faa1099VendCode")
     @JsonPropertyDescription("Lineage reference object : faa1099VendCode, Lookup lineage reference object : ftvvend")
-    private Object faa1099VendCode;
+    private String faa1099VendCode;
     /**
      * Federal Withheld
      * <p>
@@ -158,7 +158,7 @@ public class _1099Reporting100GetRequest {
      */
     @JsonProperty("taxID")
     @JsonPropertyDescription("Lineage reference object : taxId")
-    private Object taxID;
+    private String taxID;
     /**
      * Payer TIN
      * <p>
@@ -167,7 +167,7 @@ public class _1099Reporting100GetRequest {
      */
     @JsonProperty("tin")
     @JsonPropertyDescription("Lineage reference object : instTin, Lookup lineage reference object : fob1099,for1099")
-    private Object tin;
+    private String tin;
     /**
      * Chart
      * <p>
@@ -205,7 +205,7 @@ public class _1099Reporting100GetRequest {
      */
     @JsonProperty("faa1099RptYr")
     @JsonPropertyDescription("Lineage reference object : faa1099RptYr")
-    private Object faa1099RptYr;
+    private String faa1099RptYr;
     /**
      * Bank
      * <p>
@@ -280,7 +280,7 @@ public class _1099Reporting100GetRequest {
      * 
      */
     @JsonProperty("ftvvendVendOwner")
-    public Object getFtvvendVendOwner() {
+    public String getFtvvendVendOwner() {
         return ftvvendVendOwner;
     }
 
@@ -291,11 +291,11 @@ public class _1099Reporting100GetRequest {
      * 
      */
     @JsonProperty("ftvvendVendOwner")
-    public void setFtvvendVendOwner(Object ftvvendVendOwner) {
+    public void setFtvvendVendOwner(String ftvvendVendOwner) {
         this.ftvvendVendOwner = ftvvendVendOwner;
     }
 
-    public _1099Reporting100GetRequest withFtvvendVendOwner(Object ftvvendVendOwner) {
+    public _1099Reporting100GetRequest withFtvvendVendOwner(String ftvvendVendOwner) {
         this.ftvvendVendOwner = ftvvendVendOwner;
         return this;
     }
@@ -419,7 +419,7 @@ public class _1099Reporting100GetRequest {
      * 
      */
     @JsonProperty("faa1099VendCode")
-    public Object getFaa1099VendCode() {
+    public String getFaa1099VendCode() {
         return faa1099VendCode;
     }
 
@@ -430,11 +430,11 @@ public class _1099Reporting100GetRequest {
      * 
      */
     @JsonProperty("faa1099VendCode")
-    public void setFaa1099VendCode(Object faa1099VendCode) {
+    public void setFaa1099VendCode(String faa1099VendCode) {
         this.faa1099VendCode = faa1099VendCode;
     }
 
-    public _1099Reporting100GetRequest withFaa1099VendCode(Object faa1099VendCode) {
+    public _1099Reporting100GetRequest withFaa1099VendCode(String faa1099VendCode) {
         this.faa1099VendCode = faa1099VendCode;
         return this;
     }
@@ -557,7 +557,7 @@ public class _1099Reporting100GetRequest {
      * 
      */
     @JsonProperty("taxID")
-    public Object getTaxID() {
+    public String getTaxID() {
         return taxID;
     }
 
@@ -569,11 +569,11 @@ public class _1099Reporting100GetRequest {
      * 
      */
     @JsonProperty("taxID")
-    public void setTaxID(Object taxID) {
+    public void setTaxID(String taxID) {
         this.taxID = taxID;
     }
 
-    public _1099Reporting100GetRequest withTaxID(Object taxID) {
+    public _1099Reporting100GetRequest withTaxID(String taxID) {
         this.taxID = taxID;
         return this;
     }
@@ -585,7 +585,7 @@ public class _1099Reporting100GetRequest {
      * 
      */
     @JsonProperty("tin")
-    public Object getTin() {
+    public String getTin() {
         return tin;
     }
 
@@ -596,11 +596,11 @@ public class _1099Reporting100GetRequest {
      * 
      */
     @JsonProperty("tin")
-    public void setTin(Object tin) {
+    public void setTin(String tin) {
         this.tin = tin;
     }
 
-    public _1099Reporting100GetRequest withTin(Object tin) {
+    public _1099Reporting100GetRequest withTin(String tin) {
         this.tin = tin;
         return this;
     }
@@ -696,7 +696,7 @@ public class _1099Reporting100GetRequest {
      * 
      */
     @JsonProperty("faa1099RptYr")
-    public Object getFaa1099RptYr() {
+    public String getFaa1099RptYr() {
         return faa1099RptYr;
     }
 
@@ -708,11 +708,11 @@ public class _1099Reporting100GetRequest {
      * 
      */
     @JsonProperty("faa1099RptYr")
-    public void setFaa1099RptYr(Object faa1099RptYr) {
+    public void setFaa1099RptYr(String faa1099RptYr) {
         this.faa1099RptYr = faa1099RptYr;
     }
 
-    public _1099Reporting100GetRequest withFaa1099RptYr(Object faa1099RptYr) {
+    public _1099Reporting100GetRequest withFaa1099RptYr(String faa1099RptYr) {
         this.faa1099RptYr = faa1099RptYr;
         return this;
     }

@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.student_course_registrations_student_term.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -39,7 +40,7 @@ public class KeyBlock {
      */
     @JsonProperty("printBill")
     @JsonPropertyDescription("Lineage reference object : printBill")
-    private Object printBill;
+    private String printBill;
     /**
      * Print Schedule
      * <p>
@@ -48,21 +49,21 @@ public class KeyBlock {
      */
     @JsonProperty("printSchedule")
     @JsonPropertyDescription("Lineage reference object : printSchedule")
-    private Object printSchedule;
+    private String printSchedule;
     /**
      * Lineage reference object : holdDesc
      * 
      */
     @JsonProperty("holdDesc")
     @JsonPropertyDescription("Lineage reference object : holdDesc")
-    private Object holdDesc;
+    private String holdDesc;
     /**
      * Lineage reference object : confidInd
      * 
      */
     @JsonProperty("confidInd")
     @JsonPropertyDescription("Lineage reference object : confidInd")
-    private Object confidInd;
+    private String confidInd;
     /**
      * Study Path
      * <p>
@@ -71,14 +72,14 @@ public class KeyBlock {
      */
     @JsonProperty("keyStudypath")
     @JsonPropertyDescription("Lineage reference object : keyStudypath, Lookup lineage reference object : sovlcur,stvastd,stvcast,sgvstsp,sgrstsp,stvastd,stvcast,sgvstsp,sgrstsp,sovlcur")
-    private Object keyStudypath;
+    private Double keyStudypath;
     /**
      * Lineage reference object : dcsdInd
      * 
      */
     @JsonProperty("dcsdInd")
     @JsonPropertyDescription("Lineage reference object : dcsdInd")
-    private Object dcsdInd;
+    private String dcsdInd;
     /**
      * View Current/Active Curricula
      * <p>
@@ -87,7 +88,7 @@ public class KeyBlock {
      */
     @JsonProperty("viewCurrent")
     @JsonPropertyDescription("Lineage reference object : viewCurrent")
-    private Object viewCurrent;
+    private String viewCurrent;
     /**
      * Holds
      * <p>
@@ -96,14 +97,14 @@ public class KeyBlock {
      */
     @JsonProperty("holdPassword")
     @JsonPropertyDescription("Lineage reference object : holdPassword")
-    private Object holdPassword;
+    private String holdPassword;
     /**
      * Lineage reference object : rwname
      * 
      */
     @JsonProperty("rwname")
     @JsonPropertyDescription("Lineage reference object : rwname")
-    private Object rwname;
+    private String rwname;
     /**
      * Date
      * <p>
@@ -112,7 +113,7 @@ public class KeyBlock {
      */
     @JsonProperty("rstsEstsDate")
     @JsonPropertyDescription("Lineage reference object : rstsEstsDate")
-    private Object rstsEstsDate;
+    private Date rstsEstsDate;
     /**
      * Term
      * <p>
@@ -121,7 +122,7 @@ public class KeyBlock {
      */
     @JsonProperty("term")
     @JsonPropertyDescription("Lineage reference object : term, Lookup lineage reference object : stvterm")
-    private Object term;
+    private String term;
     /**
      * ID
      * <p>
@@ -130,7 +131,7 @@ public class KeyBlock {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Date
      * <p>
@@ -139,7 +140,7 @@ public class KeyBlock {
      */
     @JsonProperty("lastAssessmentDate")
     @JsonPropertyDescription("Lineage reference object : lastAssessmentDate")
-    private Object lastAssessmentDate;
+    private Date lastAssessmentDate;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -150,7 +151,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("printBill")
-    public Object getPrintBill() {
+    public String getPrintBill() {
         return printBill;
     }
 
@@ -161,11 +162,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("printBill")
-    public void setPrintBill(Object printBill) {
+    public void setPrintBill(String printBill) {
         this.printBill = printBill;
     }
 
-    public KeyBlock withPrintBill(Object printBill) {
+    public KeyBlock withPrintBill(String printBill) {
         this.printBill = printBill;
         return this;
     }
@@ -177,7 +178,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("printSchedule")
-    public Object getPrintSchedule() {
+    public String getPrintSchedule() {
         return printSchedule;
     }
 
@@ -188,11 +189,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("printSchedule")
-    public void setPrintSchedule(Object printSchedule) {
+    public void setPrintSchedule(String printSchedule) {
         this.printSchedule = printSchedule;
     }
 
-    public KeyBlock withPrintSchedule(Object printSchedule) {
+    public KeyBlock withPrintSchedule(String printSchedule) {
         this.printSchedule = printSchedule;
         return this;
     }
@@ -202,7 +203,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("holdDesc")
-    public Object getHoldDesc() {
+    public String getHoldDesc() {
         return holdDesc;
     }
 
@@ -211,11 +212,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("holdDesc")
-    public void setHoldDesc(Object holdDesc) {
+    public void setHoldDesc(String holdDesc) {
         this.holdDesc = holdDesc;
     }
 
-    public KeyBlock withHoldDesc(Object holdDesc) {
+    public KeyBlock withHoldDesc(String holdDesc) {
         this.holdDesc = holdDesc;
         return this;
     }
@@ -225,7 +226,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("confidInd")
-    public Object getConfidInd() {
+    public String getConfidInd() {
         return confidInd;
     }
 
@@ -234,11 +235,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("confidInd")
-    public void setConfidInd(Object confidInd) {
+    public void setConfidInd(String confidInd) {
         this.confidInd = confidInd;
     }
 
-    public KeyBlock withConfidInd(Object confidInd) {
+    public KeyBlock withConfidInd(String confidInd) {
         this.confidInd = confidInd;
         return this;
     }
@@ -250,7 +251,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyStudypath")
-    public Object getKeyStudypath() {
+    public Double getKeyStudypath() {
         return keyStudypath;
     }
 
@@ -261,11 +262,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyStudypath")
-    public void setKeyStudypath(Object keyStudypath) {
+    public void setKeyStudypath(Double keyStudypath) {
         this.keyStudypath = keyStudypath;
     }
 
-    public KeyBlock withKeyStudypath(Object keyStudypath) {
+    public KeyBlock withKeyStudypath(Double keyStudypath) {
         this.keyStudypath = keyStudypath;
         return this;
     }
@@ -275,7 +276,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("dcsdInd")
-    public Object getDcsdInd() {
+    public String getDcsdInd() {
         return dcsdInd;
     }
 
@@ -284,11 +285,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("dcsdInd")
-    public void setDcsdInd(Object dcsdInd) {
+    public void setDcsdInd(String dcsdInd) {
         this.dcsdInd = dcsdInd;
     }
 
-    public KeyBlock withDcsdInd(Object dcsdInd) {
+    public KeyBlock withDcsdInd(String dcsdInd) {
         this.dcsdInd = dcsdInd;
         return this;
     }
@@ -300,7 +301,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("viewCurrent")
-    public Object getViewCurrent() {
+    public String getViewCurrent() {
         return viewCurrent;
     }
 
@@ -311,11 +312,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("viewCurrent")
-    public void setViewCurrent(Object viewCurrent) {
+    public void setViewCurrent(String viewCurrent) {
         this.viewCurrent = viewCurrent;
     }
 
-    public KeyBlock withViewCurrent(Object viewCurrent) {
+    public KeyBlock withViewCurrent(String viewCurrent) {
         this.viewCurrent = viewCurrent;
         return this;
     }
@@ -327,7 +328,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("holdPassword")
-    public Object getHoldPassword() {
+    public String getHoldPassword() {
         return holdPassword;
     }
 
@@ -338,11 +339,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("holdPassword")
-    public void setHoldPassword(Object holdPassword) {
+    public void setHoldPassword(String holdPassword) {
         this.holdPassword = holdPassword;
     }
 
-    public KeyBlock withHoldPassword(Object holdPassword) {
+    public KeyBlock withHoldPassword(String holdPassword) {
         this.holdPassword = holdPassword;
         return this;
     }
@@ -352,7 +353,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("rwname")
-    public Object getRwname() {
+    public String getRwname() {
         return rwname;
     }
 
@@ -361,11 +362,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("rwname")
-    public void setRwname(Object rwname) {
+    public void setRwname(String rwname) {
         this.rwname = rwname;
     }
 
-    public KeyBlock withRwname(Object rwname) {
+    public KeyBlock withRwname(String rwname) {
         this.rwname = rwname;
         return this;
     }
@@ -377,7 +378,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("rstsEstsDate")
-    public Object getRstsEstsDate() {
+    public Date getRstsEstsDate() {
         return rstsEstsDate;
     }
 
@@ -388,11 +389,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("rstsEstsDate")
-    public void setRstsEstsDate(Object rstsEstsDate) {
+    public void setRstsEstsDate(Date rstsEstsDate) {
         this.rstsEstsDate = rstsEstsDate;
     }
 
-    public KeyBlock withRstsEstsDate(Object rstsEstsDate) {
+    public KeyBlock withRstsEstsDate(Date rstsEstsDate) {
         this.rstsEstsDate = rstsEstsDate;
         return this;
     }
@@ -404,7 +405,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("term")
-    public Object getTerm() {
+    public String getTerm() {
         return term;
     }
 
@@ -415,11 +416,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("term")
-    public void setTerm(Object term) {
+    public void setTerm(String term) {
         this.term = term;
     }
 
-    public KeyBlock withTerm(Object term) {
+    public KeyBlock withTerm(String term) {
         this.term = term;
         return this;
     }
@@ -431,7 +432,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -442,11 +443,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public KeyBlock withId(Object id) {
+    public KeyBlock withId(String id) {
         this.id = id;
         return this;
     }
@@ -458,7 +459,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("lastAssessmentDate")
-    public Object getLastAssessmentDate() {
+    public Date getLastAssessmentDate() {
         return lastAssessmentDate;
     }
 
@@ -469,11 +470,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("lastAssessmentDate")
-    public void setLastAssessmentDate(Object lastAssessmentDate) {
+    public void setLastAssessmentDate(Date lastAssessmentDate) {
         this.lastAssessmentDate = lastAssessmentDate;
     }
 
-    public KeyBlock withLastAssessmentDate(Object lastAssessmentDate) {
+    public KeyBlock withLastAssessmentDate(Date lastAssessmentDate) {
         this.lastAssessmentDate = lastAssessmentDate;
         return this;
     }

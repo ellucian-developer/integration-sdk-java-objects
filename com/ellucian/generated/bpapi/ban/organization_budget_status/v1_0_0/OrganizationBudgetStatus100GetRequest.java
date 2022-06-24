@@ -40,7 +40,7 @@ public class OrganizationBudgetStatus100GetRequest {
      */
     @JsonProperty("keyblocLocnCode")
     @JsonPropertyDescription("Lineage reference object : keyblocLocnCode")
-    private Object keyblocLocnCode;
+    private String keyblocLocnCode;
     /**
      * Chart
      * <p>
@@ -50,7 +50,7 @@ public class OrganizationBudgetStatus100GetRequest {
      */
     @JsonProperty("keyblocCoasCode")
     @JsonPropertyDescription("Lineage reference object : keyblocCoasCode, Lookup lineage reference object : ftvcoas")
-    private Object keyblocCoasCode;
+    private String keyblocCoasCode;
     /**
      * Account Type
      * <p>
@@ -59,7 +59,7 @@ public class OrganizationBudgetStatus100GetRequest {
      */
     @JsonProperty("keyblocAtypCode")
     @JsonPropertyDescription("Lineage reference object : keyblocAtypCode, Lookup lineage reference object : ftvatyp")
-    private Object keyblocAtypCode;
+    private String keyblocAtypCode;
     /**
      * Account
      * <p>
@@ -68,7 +68,7 @@ public class OrganizationBudgetStatus100GetRequest {
      */
     @JsonProperty("keyblocAcctCode")
     @JsonPropertyDescription("Lineage reference object : keyblocAcctCode")
-    private Object keyblocAcctCode;
+    private String keyblocAcctCode;
     /**
      * Program
      * <p>
@@ -77,7 +77,7 @@ public class OrganizationBudgetStatus100GetRequest {
      */
     @JsonProperty("keyblocProgCode")
     @JsonPropertyDescription("Lineage reference object : keyblocProgCode")
-    private Object keyblocProgCode;
+    private String keyblocProgCode;
     /**
      * Index
      * <p>
@@ -86,7 +86,7 @@ public class OrganizationBudgetStatus100GetRequest {
      */
     @JsonProperty("keyblocAcciCode")
     @JsonPropertyDescription("Lineage reference object : keyblocAcciCode, Lookup lineage reference object : ftvacci")
-    private Object keyblocAcciCode;
+    private String keyblocAcciCode;
     /**
      * Organization
      * <p>
@@ -95,7 +95,7 @@ public class OrganizationBudgetStatus100GetRequest {
      */
     @JsonProperty("keyblocOrgnCode")
     @JsonPropertyDescription("Lineage reference object : keyblocOrgnCode")
-    private Object keyblocOrgnCode;
+    private String keyblocOrgnCode;
     /**
      * Commit Type
      * <p>
@@ -104,7 +104,7 @@ public class OrganizationBudgetStatus100GetRequest {
      */
     @JsonProperty("keyblocCmtType")
     @JsonPropertyDescription("Lineage reference object : keyblocCmtType")
-    private Object keyblocCmtType;
+    private String keyblocCmtType;
     /**
      * Activity
      * <p>
@@ -113,7 +113,7 @@ public class OrganizationBudgetStatus100GetRequest {
      */
     @JsonProperty("keyblocActvCode")
     @JsonPropertyDescription("Lineage reference object : keyblocActvCode")
-    private Object keyblocActvCode;
+    private String keyblocActvCode;
     /**
      * Account
      * <p>
@@ -131,7 +131,7 @@ public class OrganizationBudgetStatus100GetRequest {
      */
     @JsonProperty("inclRev")
     @JsonPropertyDescription("Lineage reference object : inclRev")
-    private Object inclRev;
+    private String inclRev;
     /**
      * Fund
      * <p>
@@ -140,7 +140,7 @@ public class OrganizationBudgetStatus100GetRequest {
      */
     @JsonProperty("keyblocFundCode")
     @JsonPropertyDescription("Lineage reference object : keyblocFundCode")
-    private Object keyblocFundCode;
+    private String keyblocFundCode;
     /**
      * Fiscal Year
      * <p>
@@ -150,7 +150,7 @@ public class OrganizationBudgetStatus100GetRequest {
      */
     @JsonProperty("keyblocFsyrCode")
     @JsonPropertyDescription("Lineage reference object : keyblocFsyrCode, Lookup lineage reference object : ftvfsyr,ftvfspd,ftvfspd,ftvfspd,ftvfspd")
-    private Object keyblocFsyrCode;
+    private String keyblocFsyrCode;
     /**
      * Query Specific Account
      * <p>
@@ -159,7 +159,7 @@ public class OrganizationBudgetStatus100GetRequest {
      */
     @JsonProperty("queryAcct")
     @JsonPropertyDescription("Lineage reference object : queryAcct")
-    private Object queryAcct;
+    private String queryAcct;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -170,7 +170,7 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocLocnCode")
-    public Object getKeyblocLocnCode() {
+    public String getKeyblocLocnCode() {
         return keyblocLocnCode;
     }
 
@@ -181,11 +181,11 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocLocnCode")
-    public void setKeyblocLocnCode(Object keyblocLocnCode) {
+    public void setKeyblocLocnCode(String keyblocLocnCode) {
         this.keyblocLocnCode = keyblocLocnCode;
     }
 
-    public OrganizationBudgetStatus100GetRequest withKeyblocLocnCode(Object keyblocLocnCode) {
+    public OrganizationBudgetStatus100GetRequest withKeyblocLocnCode(String keyblocLocnCode) {
         this.keyblocLocnCode = keyblocLocnCode;
         return this;
     }
@@ -198,7 +198,7 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocCoasCode")
-    public Object getKeyblocCoasCode() {
+    public String getKeyblocCoasCode() {
         return keyblocCoasCode;
     }
 
@@ -210,11 +210,11 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocCoasCode")
-    public void setKeyblocCoasCode(Object keyblocCoasCode) {
+    public void setKeyblocCoasCode(String keyblocCoasCode) {
         this.keyblocCoasCode = keyblocCoasCode;
     }
 
-    public OrganizationBudgetStatus100GetRequest withKeyblocCoasCode(Object keyblocCoasCode) {
+    public OrganizationBudgetStatus100GetRequest withKeyblocCoasCode(String keyblocCoasCode) {
         this.keyblocCoasCode = keyblocCoasCode;
         return this;
     }
@@ -226,7 +226,7 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocAtypCode")
-    public Object getKeyblocAtypCode() {
+    public String getKeyblocAtypCode() {
         return keyblocAtypCode;
     }
 
@@ -237,11 +237,11 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocAtypCode")
-    public void setKeyblocAtypCode(Object keyblocAtypCode) {
+    public void setKeyblocAtypCode(String keyblocAtypCode) {
         this.keyblocAtypCode = keyblocAtypCode;
     }
 
-    public OrganizationBudgetStatus100GetRequest withKeyblocAtypCode(Object keyblocAtypCode) {
+    public OrganizationBudgetStatus100GetRequest withKeyblocAtypCode(String keyblocAtypCode) {
         this.keyblocAtypCode = keyblocAtypCode;
         return this;
     }
@@ -253,7 +253,7 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocAcctCode")
-    public Object getKeyblocAcctCode() {
+    public String getKeyblocAcctCode() {
         return keyblocAcctCode;
     }
 
@@ -264,11 +264,11 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocAcctCode")
-    public void setKeyblocAcctCode(Object keyblocAcctCode) {
+    public void setKeyblocAcctCode(String keyblocAcctCode) {
         this.keyblocAcctCode = keyblocAcctCode;
     }
 
-    public OrganizationBudgetStatus100GetRequest withKeyblocAcctCode(Object keyblocAcctCode) {
+    public OrganizationBudgetStatus100GetRequest withKeyblocAcctCode(String keyblocAcctCode) {
         this.keyblocAcctCode = keyblocAcctCode;
         return this;
     }
@@ -280,7 +280,7 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocProgCode")
-    public Object getKeyblocProgCode() {
+    public String getKeyblocProgCode() {
         return keyblocProgCode;
     }
 
@@ -291,11 +291,11 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocProgCode")
-    public void setKeyblocProgCode(Object keyblocProgCode) {
+    public void setKeyblocProgCode(String keyblocProgCode) {
         this.keyblocProgCode = keyblocProgCode;
     }
 
-    public OrganizationBudgetStatus100GetRequest withKeyblocProgCode(Object keyblocProgCode) {
+    public OrganizationBudgetStatus100GetRequest withKeyblocProgCode(String keyblocProgCode) {
         this.keyblocProgCode = keyblocProgCode;
         return this;
     }
@@ -307,7 +307,7 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocAcciCode")
-    public Object getKeyblocAcciCode() {
+    public String getKeyblocAcciCode() {
         return keyblocAcciCode;
     }
 
@@ -318,11 +318,11 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocAcciCode")
-    public void setKeyblocAcciCode(Object keyblocAcciCode) {
+    public void setKeyblocAcciCode(String keyblocAcciCode) {
         this.keyblocAcciCode = keyblocAcciCode;
     }
 
-    public OrganizationBudgetStatus100GetRequest withKeyblocAcciCode(Object keyblocAcciCode) {
+    public OrganizationBudgetStatus100GetRequest withKeyblocAcciCode(String keyblocAcciCode) {
         this.keyblocAcciCode = keyblocAcciCode;
         return this;
     }
@@ -334,7 +334,7 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocOrgnCode")
-    public Object getKeyblocOrgnCode() {
+    public String getKeyblocOrgnCode() {
         return keyblocOrgnCode;
     }
 
@@ -345,11 +345,11 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocOrgnCode")
-    public void setKeyblocOrgnCode(Object keyblocOrgnCode) {
+    public void setKeyblocOrgnCode(String keyblocOrgnCode) {
         this.keyblocOrgnCode = keyblocOrgnCode;
     }
 
-    public OrganizationBudgetStatus100GetRequest withKeyblocOrgnCode(Object keyblocOrgnCode) {
+    public OrganizationBudgetStatus100GetRequest withKeyblocOrgnCode(String keyblocOrgnCode) {
         this.keyblocOrgnCode = keyblocOrgnCode;
         return this;
     }
@@ -361,7 +361,7 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocCmtType")
-    public Object getKeyblocCmtType() {
+    public String getKeyblocCmtType() {
         return keyblocCmtType;
     }
 
@@ -372,11 +372,11 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocCmtType")
-    public void setKeyblocCmtType(Object keyblocCmtType) {
+    public void setKeyblocCmtType(String keyblocCmtType) {
         this.keyblocCmtType = keyblocCmtType;
     }
 
-    public OrganizationBudgetStatus100GetRequest withKeyblocCmtType(Object keyblocCmtType) {
+    public OrganizationBudgetStatus100GetRequest withKeyblocCmtType(String keyblocCmtType) {
         this.keyblocCmtType = keyblocCmtType;
         return this;
     }
@@ -388,7 +388,7 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocActvCode")
-    public Object getKeyblocActvCode() {
+    public String getKeyblocActvCode() {
         return keyblocActvCode;
     }
 
@@ -399,11 +399,11 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocActvCode")
-    public void setKeyblocActvCode(Object keyblocActvCode) {
+    public void setKeyblocActvCode(String keyblocActvCode) {
         this.keyblocActvCode = keyblocActvCode;
     }
 
-    public OrganizationBudgetStatus100GetRequest withKeyblocActvCode(Object keyblocActvCode) {
+    public OrganizationBudgetStatus100GetRequest withKeyblocActvCode(String keyblocActvCode) {
         this.keyblocActvCode = keyblocActvCode;
         return this;
     }
@@ -442,7 +442,7 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("inclRev")
-    public Object getInclRev() {
+    public String getInclRev() {
         return inclRev;
     }
 
@@ -453,11 +453,11 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("inclRev")
-    public void setInclRev(Object inclRev) {
+    public void setInclRev(String inclRev) {
         this.inclRev = inclRev;
     }
 
-    public OrganizationBudgetStatus100GetRequest withInclRev(Object inclRev) {
+    public OrganizationBudgetStatus100GetRequest withInclRev(String inclRev) {
         this.inclRev = inclRev;
         return this;
     }
@@ -469,7 +469,7 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocFundCode")
-    public Object getKeyblocFundCode() {
+    public String getKeyblocFundCode() {
         return keyblocFundCode;
     }
 
@@ -480,11 +480,11 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocFundCode")
-    public void setKeyblocFundCode(Object keyblocFundCode) {
+    public void setKeyblocFundCode(String keyblocFundCode) {
         this.keyblocFundCode = keyblocFundCode;
     }
 
-    public OrganizationBudgetStatus100GetRequest withKeyblocFundCode(Object keyblocFundCode) {
+    public OrganizationBudgetStatus100GetRequest withKeyblocFundCode(String keyblocFundCode) {
         this.keyblocFundCode = keyblocFundCode;
         return this;
     }
@@ -497,7 +497,7 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocFsyrCode")
-    public Object getKeyblocFsyrCode() {
+    public String getKeyblocFsyrCode() {
         return keyblocFsyrCode;
     }
 
@@ -509,11 +509,11 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocFsyrCode")
-    public void setKeyblocFsyrCode(Object keyblocFsyrCode) {
+    public void setKeyblocFsyrCode(String keyblocFsyrCode) {
         this.keyblocFsyrCode = keyblocFsyrCode;
     }
 
-    public OrganizationBudgetStatus100GetRequest withKeyblocFsyrCode(Object keyblocFsyrCode) {
+    public OrganizationBudgetStatus100GetRequest withKeyblocFsyrCode(String keyblocFsyrCode) {
         this.keyblocFsyrCode = keyblocFsyrCode;
         return this;
     }
@@ -525,7 +525,7 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("queryAcct")
-    public Object getQueryAcct() {
+    public String getQueryAcct() {
         return queryAcct;
     }
 
@@ -536,11 +536,11 @@ public class OrganizationBudgetStatus100GetRequest {
      * 
      */
     @JsonProperty("queryAcct")
-    public void setQueryAcct(Object queryAcct) {
+    public void setQueryAcct(String queryAcct) {
         this.queryAcct = queryAcct;
     }
 
-    public OrganizationBudgetStatus100GetRequest withQueryAcct(Object queryAcct) {
+    public OrganizationBudgetStatus100GetRequest withQueryAcct(String queryAcct) {
         this.queryAcct = queryAcct;
         return this;
     }

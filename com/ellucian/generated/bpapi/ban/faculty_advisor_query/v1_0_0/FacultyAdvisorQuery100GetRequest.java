@@ -42,7 +42,7 @@ public class FacultyAdvisorQuery100GetRequest {
      */
     @JsonProperty("keyblckFcstCode")
     @JsonPropertyDescription("Lineage reference object : keyblckFcstCode, Lookup lineage reference object : stvfcst")
-    private Object keyblckFcstCode;
+    private String keyblckFcstCode;
     /**
      * Department
      * <p>
@@ -60,7 +60,7 @@ public class FacultyAdvisorQuery100GetRequest {
      */
     @JsonProperty("keyblckTenrCode")
     @JsonPropertyDescription("Lineage reference object : keyblckTenrCode")
-    private Object keyblckTenrCode;
+    private String keyblckTenrCode;
     /**
      * Term
      * <p>
@@ -69,7 +69,7 @@ public class FacultyAdvisorQuery100GetRequest {
      */
     @JsonProperty("keyblckTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblckTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblckTermCode;
+    private String keyblckTermCode;
     /**
      * Advisor
      * <p>
@@ -78,7 +78,7 @@ public class FacultyAdvisorQuery100GetRequest {
      */
     @JsonProperty("keyblckAdvrInd")
     @JsonPropertyDescription("Lineage reference object : keyblckAdvrInd")
-    private Object keyblckAdvrInd;
+    private String keyblckAdvrInd;
     @JsonProperty("faclSchdInd")
     private String faclSchdInd;
     /**
@@ -124,7 +124,7 @@ public class FacultyAdvisorQuery100GetRequest {
      */
     @JsonProperty("keyblckFctgCode")
     @JsonPropertyDescription("Lineage reference object : keyblckFctgCode, Lookup lineage reference object : stvfctg")
-    private Object keyblckFctgCode;
+    private String keyblckFctgCode;
     /**
      * Faculty
      * <p>
@@ -133,7 +133,7 @@ public class FacultyAdvisorQuery100GetRequest {
      */
     @JsonProperty("keyblckSchdInd")
     @JsonPropertyDescription("Lineage reference object : keyblckSchdInd")
-    private Object keyblckSchdInd;
+    private String keyblckSchdInd;
     /**
      * First Name
      * <p>
@@ -150,7 +150,7 @@ public class FacultyAdvisorQuery100GetRequest {
      */
     @JsonProperty("keyblckFstpCode")
     @JsonPropertyDescription("Lineage reference object : keyblckFstpCode, Lookup lineage reference object : stvfstp")
-    private Object keyblckFstpCode;
+    private String keyblckFstpCode;
     /**
      * Lookup lineage reference object : sirdpcl,sirdpcl
      * 
@@ -168,7 +168,7 @@ public class FacultyAdvisorQuery100GetRequest {
      * 
      */
     @JsonProperty("keyblckFcstCode")
-    public Object getKeyblckFcstCode() {
+    public String getKeyblckFcstCode() {
         return keyblckFcstCode;
     }
 
@@ -179,11 +179,11 @@ public class FacultyAdvisorQuery100GetRequest {
      * 
      */
     @JsonProperty("keyblckFcstCode")
-    public void setKeyblckFcstCode(Object keyblckFcstCode) {
+    public void setKeyblckFcstCode(String keyblckFcstCode) {
         this.keyblckFcstCode = keyblckFcstCode;
     }
 
-    public FacultyAdvisorQuery100GetRequest withKeyblckFcstCode(Object keyblckFcstCode) {
+    public FacultyAdvisorQuery100GetRequest withKeyblckFcstCode(String keyblckFcstCode) {
         this.keyblckFcstCode = keyblckFcstCode;
         return this;
     }
@@ -222,7 +222,7 @@ public class FacultyAdvisorQuery100GetRequest {
      * 
      */
     @JsonProperty("keyblckTenrCode")
-    public Object getKeyblckTenrCode() {
+    public String getKeyblckTenrCode() {
         return keyblckTenrCode;
     }
 
@@ -233,11 +233,11 @@ public class FacultyAdvisorQuery100GetRequest {
      * 
      */
     @JsonProperty("keyblckTenrCode")
-    public void setKeyblckTenrCode(Object keyblckTenrCode) {
+    public void setKeyblckTenrCode(String keyblckTenrCode) {
         this.keyblckTenrCode = keyblckTenrCode;
     }
 
-    public FacultyAdvisorQuery100GetRequest withKeyblckTenrCode(Object keyblckTenrCode) {
+    public FacultyAdvisorQuery100GetRequest withKeyblckTenrCode(String keyblckTenrCode) {
         this.keyblckTenrCode = keyblckTenrCode;
         return this;
     }
@@ -249,7 +249,7 @@ public class FacultyAdvisorQuery100GetRequest {
      * 
      */
     @JsonProperty("keyblckTermCode")
-    public Object getKeyblckTermCode() {
+    public String getKeyblckTermCode() {
         return keyblckTermCode;
     }
 
@@ -260,11 +260,11 @@ public class FacultyAdvisorQuery100GetRequest {
      * 
      */
     @JsonProperty("keyblckTermCode")
-    public void setKeyblckTermCode(Object keyblckTermCode) {
+    public void setKeyblckTermCode(String keyblckTermCode) {
         this.keyblckTermCode = keyblckTermCode;
     }
 
-    public FacultyAdvisorQuery100GetRequest withKeyblckTermCode(Object keyblckTermCode) {
+    public FacultyAdvisorQuery100GetRequest withKeyblckTermCode(String keyblckTermCode) {
         this.keyblckTermCode = keyblckTermCode;
         return this;
     }
@@ -276,7 +276,7 @@ public class FacultyAdvisorQuery100GetRequest {
      * 
      */
     @JsonProperty("keyblckAdvrInd")
-    public Object getKeyblckAdvrInd() {
+    public String getKeyblckAdvrInd() {
         return keyblckAdvrInd;
     }
 
@@ -287,11 +287,11 @@ public class FacultyAdvisorQuery100GetRequest {
      * 
      */
     @JsonProperty("keyblckAdvrInd")
-    public void setKeyblckAdvrInd(Object keyblckAdvrInd) {
+    public void setKeyblckAdvrInd(String keyblckAdvrInd) {
         this.keyblckAdvrInd = keyblckAdvrInd;
     }
 
-    public FacultyAdvisorQuery100GetRequest withKeyblckAdvrInd(Object keyblckAdvrInd) {
+    public FacultyAdvisorQuery100GetRequest withKeyblckAdvrInd(String keyblckAdvrInd) {
         this.keyblckAdvrInd = keyblckAdvrInd;
         return this;
     }
@@ -441,7 +441,7 @@ public class FacultyAdvisorQuery100GetRequest {
      * 
      */
     @JsonProperty("keyblckFctgCode")
-    public Object getKeyblckFctgCode() {
+    public String getKeyblckFctgCode() {
         return keyblckFctgCode;
     }
 
@@ -452,11 +452,11 @@ public class FacultyAdvisorQuery100GetRequest {
      * 
      */
     @JsonProperty("keyblckFctgCode")
-    public void setKeyblckFctgCode(Object keyblckFctgCode) {
+    public void setKeyblckFctgCode(String keyblckFctgCode) {
         this.keyblckFctgCode = keyblckFctgCode;
     }
 
-    public FacultyAdvisorQuery100GetRequest withKeyblckFctgCode(Object keyblckFctgCode) {
+    public FacultyAdvisorQuery100GetRequest withKeyblckFctgCode(String keyblckFctgCode) {
         this.keyblckFctgCode = keyblckFctgCode;
         return this;
     }
@@ -468,7 +468,7 @@ public class FacultyAdvisorQuery100GetRequest {
      * 
      */
     @JsonProperty("keyblckSchdInd")
-    public Object getKeyblckSchdInd() {
+    public String getKeyblckSchdInd() {
         return keyblckSchdInd;
     }
 
@@ -479,11 +479,11 @@ public class FacultyAdvisorQuery100GetRequest {
      * 
      */
     @JsonProperty("keyblckSchdInd")
-    public void setKeyblckSchdInd(Object keyblckSchdInd) {
+    public void setKeyblckSchdInd(String keyblckSchdInd) {
         this.keyblckSchdInd = keyblckSchdInd;
     }
 
-    public FacultyAdvisorQuery100GetRequest withKeyblckSchdInd(Object keyblckSchdInd) {
+    public FacultyAdvisorQuery100GetRequest withKeyblckSchdInd(String keyblckSchdInd) {
         this.keyblckSchdInd = keyblckSchdInd;
         return this;
     }
@@ -522,7 +522,7 @@ public class FacultyAdvisorQuery100GetRequest {
      * 
      */
     @JsonProperty("keyblckFstpCode")
-    public Object getKeyblckFstpCode() {
+    public String getKeyblckFstpCode() {
         return keyblckFstpCode;
     }
 
@@ -533,11 +533,11 @@ public class FacultyAdvisorQuery100GetRequest {
      * 
      */
     @JsonProperty("keyblckFstpCode")
-    public void setKeyblckFstpCode(Object keyblckFstpCode) {
+    public void setKeyblckFstpCode(String keyblckFstpCode) {
         this.keyblckFstpCode = keyblckFstpCode;
     }
 
-    public FacultyAdvisorQuery100GetRequest withKeyblckFstpCode(Object keyblckFstpCode) {
+    public FacultyAdvisorQuery100GetRequest withKeyblckFstpCode(String keyblckFstpCode) {
         this.keyblckFstpCode = keyblckFstpCode;
         return this;
     }

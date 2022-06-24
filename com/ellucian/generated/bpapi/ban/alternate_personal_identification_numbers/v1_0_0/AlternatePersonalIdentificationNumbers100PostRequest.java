@@ -51,7 +51,7 @@ public class AlternatePersonalIdentificationNumbers100PostRequest {
      */
     @JsonProperty("termCodeKey")
     @JsonPropertyDescription("Lineage reference object : termCode, Lookup lineage reference object : stvterm")
-    private Object termCodeKey;
+    private String termCodeKey;
     /**
      * ID
      * <p>
@@ -60,7 +60,7 @@ public class AlternatePersonalIdentificationNumbers100PostRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Term Code
      * <p>
@@ -139,7 +139,7 @@ public class AlternatePersonalIdentificationNumbers100PostRequest {
      * 
      */
     @JsonProperty("termCodeKey")
-    public Object getTermCodeKey() {
+    public String getTermCodeKey() {
         return termCodeKey;
     }
 
@@ -150,11 +150,11 @@ public class AlternatePersonalIdentificationNumbers100PostRequest {
      * 
      */
     @JsonProperty("termCodeKey")
-    public void setTermCodeKey(Object termCodeKey) {
+    public void setTermCodeKey(String termCodeKey) {
         this.termCodeKey = termCodeKey;
     }
 
-    public AlternatePersonalIdentificationNumbers100PostRequest withTermCodeKey(Object termCodeKey) {
+    public AlternatePersonalIdentificationNumbers100PostRequest withTermCodeKey(String termCodeKey) {
         this.termCodeKey = termCodeKey;
         return this;
     }
@@ -166,7 +166,7 @@ public class AlternatePersonalIdentificationNumbers100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -177,11 +177,11 @@ public class AlternatePersonalIdentificationNumbers100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public AlternatePersonalIdentificationNumbers100PostRequest withId(Object id) {
+    public AlternatePersonalIdentificationNumbers100PostRequest withId(String id) {
         this.id = id;
         return this;
     }

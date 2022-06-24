@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.person_comments.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -14,11 +15,76 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "id"
+    "date",
+    "contactToTime",
+    "contactDate",
+    "cmttCode",
+    "confidentialInd",
+    "ctypCode",
+    "id",
+    "text",
+    "contactFromTime",
+    "userId",
+    "origCode"
 })
 @Generated("jsonschema2pojo")
 public class PersonComments100GetRequest {
 
+    /**
+     * Add Date
+     * <p>
+     * Lineage reference object : SPRCMNT_DATE
+     * 
+     */
+    @JsonProperty("date")
+    @JsonPropertyDescription("Lineage reference object : SPRCMNT_DATE")
+    private Date date;
+    /**
+     * To Time
+     * <p>
+     * Lineage reference object : SPRCMNT_CONTACT_TO_TIME
+     * 
+     */
+    @JsonProperty("contactToTime")
+    @JsonPropertyDescription("Lineage reference object : SPRCMNT_CONTACT_TO_TIME")
+    private Double contactToTime;
+    /**
+     * Contact Date
+     * <p>
+     * Lineage reference object : SPRCMNT_CONTACT_DATE
+     * 
+     */
+    @JsonProperty("contactDate")
+    @JsonPropertyDescription("Lineage reference object : SPRCMNT_CONTACT_DATE")
+    private Date contactDate;
+    /**
+     * Comment Type
+     * <p>
+     * Lineage reference object : SPRCMNT_CMTT_CODE, Lookup lineage reference object : stvcmtt
+     * (Required)
+     * 
+     */
+    @JsonProperty("cmttCode")
+    @JsonPropertyDescription("Lineage reference object : SPRCMNT_CMTT_CODE, Lookup lineage reference object : stvcmtt")
+    private String cmttCode;
+    /**
+     * Confidentiality
+     * <p>
+     * Lineage reference object : SPRCMNT_CONFIDENTIAL_IND
+     * 
+     */
+    @JsonProperty("confidentialInd")
+    @JsonPropertyDescription("Lineage reference object : SPRCMNT_CONFIDENTIAL_IND")
+    private String confidentialInd;
+    /**
+     * Contact
+     * <p>
+     * Lineage reference object : SPRCMNT_CTYP_CODE, Lookup lineage reference object : stvctyp
+     * 
+     */
+    @JsonProperty("ctypCode")
+    @JsonPropertyDescription("Lineage reference object : SPRCMNT_CTYP_CODE, Lookup lineage reference object : stvctyp")
+    private String ctypCode;
     /**
      * ID
      * <p>
@@ -27,9 +93,209 @@ public class PersonComments100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
+    /**
+     * Comments
+     * <p>
+     * Lineage reference object : SPRCMNT_TEXT
+     * 
+     */
+    @JsonProperty("text")
+    @JsonPropertyDescription("Lineage reference object : SPRCMNT_TEXT")
+    private String text;
+    /**
+     * From Time
+     * <p>
+     * Lineage reference object : SPRCMNT_CONTACT_FROM_TIME
+     * 
+     */
+    @JsonProperty("contactFromTime")
+    @JsonPropertyDescription("Lineage reference object : SPRCMNT_CONTACT_FROM_TIME")
+    private Double contactFromTime;
+    /**
+     * Last Updated by
+     * <p>
+     * Lineage reference object : SPRCMNT_USER_ID
+     * 
+     */
+    @JsonProperty("userId")
+    @JsonPropertyDescription("Lineage reference object : SPRCMNT_USER_ID")
+    private String userId;
+    /**
+     * Originator
+     * <p>
+     * Lineage reference object : SPRCMNT_ORIG_CODE, Lookup lineage reference object : stvorig
+     * 
+     */
+    @JsonProperty("origCode")
+    @JsonPropertyDescription("Lineage reference object : SPRCMNT_ORIG_CODE, Lookup lineage reference object : stvorig")
+    private String origCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+    /**
+     * Add Date
+     * <p>
+     * Lineage reference object : SPRCMNT_DATE
+     * 
+     */
+    @JsonProperty("date")
+    public Date getDate() {
+        return date;
+    }
+
+    /**
+     * Add Date
+     * <p>
+     * Lineage reference object : SPRCMNT_DATE
+     * 
+     */
+    @JsonProperty("date")
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public PersonComments100GetRequest withDate(Date date) {
+        this.date = date;
+        return this;
+    }
+
+    /**
+     * To Time
+     * <p>
+     * Lineage reference object : SPRCMNT_CONTACT_TO_TIME
+     * 
+     */
+    @JsonProperty("contactToTime")
+    public Double getContactToTime() {
+        return contactToTime;
+    }
+
+    /**
+     * To Time
+     * <p>
+     * Lineage reference object : SPRCMNT_CONTACT_TO_TIME
+     * 
+     */
+    @JsonProperty("contactToTime")
+    public void setContactToTime(Double contactToTime) {
+        this.contactToTime = contactToTime;
+    }
+
+    public PersonComments100GetRequest withContactToTime(Double contactToTime) {
+        this.contactToTime = contactToTime;
+        return this;
+    }
+
+    /**
+     * Contact Date
+     * <p>
+     * Lineage reference object : SPRCMNT_CONTACT_DATE
+     * 
+     */
+    @JsonProperty("contactDate")
+    public Date getContactDate() {
+        return contactDate;
+    }
+
+    /**
+     * Contact Date
+     * <p>
+     * Lineage reference object : SPRCMNT_CONTACT_DATE
+     * 
+     */
+    @JsonProperty("contactDate")
+    public void setContactDate(Date contactDate) {
+        this.contactDate = contactDate;
+    }
+
+    public PersonComments100GetRequest withContactDate(Date contactDate) {
+        this.contactDate = contactDate;
+        return this;
+    }
+
+    /**
+     * Comment Type
+     * <p>
+     * Lineage reference object : SPRCMNT_CMTT_CODE, Lookup lineage reference object : stvcmtt
+     * (Required)
+     * 
+     */
+    @JsonProperty("cmttCode")
+    public String getCmttCode() {
+        return cmttCode;
+    }
+
+    /**
+     * Comment Type
+     * <p>
+     * Lineage reference object : SPRCMNT_CMTT_CODE, Lookup lineage reference object : stvcmtt
+     * (Required)
+     * 
+     */
+    @JsonProperty("cmttCode")
+    public void setCmttCode(String cmttCode) {
+        this.cmttCode = cmttCode;
+    }
+
+    public PersonComments100GetRequest withCmttCode(String cmttCode) {
+        this.cmttCode = cmttCode;
+        return this;
+    }
+
+    /**
+     * Confidentiality
+     * <p>
+     * Lineage reference object : SPRCMNT_CONFIDENTIAL_IND
+     * 
+     */
+    @JsonProperty("confidentialInd")
+    public String getConfidentialInd() {
+        return confidentialInd;
+    }
+
+    /**
+     * Confidentiality
+     * <p>
+     * Lineage reference object : SPRCMNT_CONFIDENTIAL_IND
+     * 
+     */
+    @JsonProperty("confidentialInd")
+    public void setConfidentialInd(String confidentialInd) {
+        this.confidentialInd = confidentialInd;
+    }
+
+    public PersonComments100GetRequest withConfidentialInd(String confidentialInd) {
+        this.confidentialInd = confidentialInd;
+        return this;
+    }
+
+    /**
+     * Contact
+     * <p>
+     * Lineage reference object : SPRCMNT_CTYP_CODE, Lookup lineage reference object : stvctyp
+     * 
+     */
+    @JsonProperty("ctypCode")
+    public String getCtypCode() {
+        return ctypCode;
+    }
+
+    /**
+     * Contact
+     * <p>
+     * Lineage reference object : SPRCMNT_CTYP_CODE, Lookup lineage reference object : stvctyp
+     * 
+     */
+    @JsonProperty("ctypCode")
+    public void setCtypCode(String ctypCode) {
+        this.ctypCode = ctypCode;
+    }
+
+    public PersonComments100GetRequest withCtypCode(String ctypCode) {
+        this.ctypCode = ctypCode;
+        return this;
+    }
 
     /**
      * ID
@@ -38,7 +304,7 @@ public class PersonComments100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -49,12 +315,120 @@ public class PersonComments100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public PersonComments100GetRequest withId(Object id) {
+    public PersonComments100GetRequest withId(String id) {
         this.id = id;
+        return this;
+    }
+
+    /**
+     * Comments
+     * <p>
+     * Lineage reference object : SPRCMNT_TEXT
+     * 
+     */
+    @JsonProperty("text")
+    public String getText() {
+        return text;
+    }
+
+    /**
+     * Comments
+     * <p>
+     * Lineage reference object : SPRCMNT_TEXT
+     * 
+     */
+    @JsonProperty("text")
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public PersonComments100GetRequest withText(String text) {
+        this.text = text;
+        return this;
+    }
+
+    /**
+     * From Time
+     * <p>
+     * Lineage reference object : SPRCMNT_CONTACT_FROM_TIME
+     * 
+     */
+    @JsonProperty("contactFromTime")
+    public Double getContactFromTime() {
+        return contactFromTime;
+    }
+
+    /**
+     * From Time
+     * <p>
+     * Lineage reference object : SPRCMNT_CONTACT_FROM_TIME
+     * 
+     */
+    @JsonProperty("contactFromTime")
+    public void setContactFromTime(Double contactFromTime) {
+        this.contactFromTime = contactFromTime;
+    }
+
+    public PersonComments100GetRequest withContactFromTime(Double contactFromTime) {
+        this.contactFromTime = contactFromTime;
+        return this;
+    }
+
+    /**
+     * Last Updated by
+     * <p>
+     * Lineage reference object : SPRCMNT_USER_ID
+     * 
+     */
+    @JsonProperty("userId")
+    public String getUserId() {
+        return userId;
+    }
+
+    /**
+     * Last Updated by
+     * <p>
+     * Lineage reference object : SPRCMNT_USER_ID
+     * 
+     */
+    @JsonProperty("userId")
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public PersonComments100GetRequest withUserId(String userId) {
+        this.userId = userId;
+        return this;
+    }
+
+    /**
+     * Originator
+     * <p>
+     * Lineage reference object : SPRCMNT_ORIG_CODE, Lookup lineage reference object : stvorig
+     * 
+     */
+    @JsonProperty("origCode")
+    public String getOrigCode() {
+        return origCode;
+    }
+
+    /**
+     * Originator
+     * <p>
+     * Lineage reference object : SPRCMNT_ORIG_CODE, Lookup lineage reference object : stvorig
+     * 
+     */
+    @JsonProperty("origCode")
+    public void setOrigCode(String origCode) {
+        this.origCode = origCode;
+    }
+
+    public PersonComments100GetRequest withOrigCode(String origCode) {
+        this.origCode = origCode;
         return this;
     }
 
@@ -77,9 +451,49 @@ public class PersonComments100GetRequest {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(PersonComments100GetRequest.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
+        sb.append("date");
+        sb.append('=');
+        sb.append(((this.date == null)?"<null>":this.date));
+        sb.append(',');
+        sb.append("contactToTime");
+        sb.append('=');
+        sb.append(((this.contactToTime == null)?"<null>":this.contactToTime));
+        sb.append(',');
+        sb.append("contactDate");
+        sb.append('=');
+        sb.append(((this.contactDate == null)?"<null>":this.contactDate));
+        sb.append(',');
+        sb.append("cmttCode");
+        sb.append('=');
+        sb.append(((this.cmttCode == null)?"<null>":this.cmttCode));
+        sb.append(',');
+        sb.append("confidentialInd");
+        sb.append('=');
+        sb.append(((this.confidentialInd == null)?"<null>":this.confidentialInd));
+        sb.append(',');
+        sb.append("ctypCode");
+        sb.append('=');
+        sb.append(((this.ctypCode == null)?"<null>":this.ctypCode));
+        sb.append(',');
         sb.append("id");
         sb.append('=');
         sb.append(((this.id == null)?"<null>":this.id));
+        sb.append(',');
+        sb.append("text");
+        sb.append('=');
+        sb.append(((this.text == null)?"<null>":this.text));
+        sb.append(',');
+        sb.append("contactFromTime");
+        sb.append('=');
+        sb.append(((this.contactFromTime == null)?"<null>":this.contactFromTime));
+        sb.append(',');
+        sb.append("userId");
+        sb.append('=');
+        sb.append(((this.userId == null)?"<null>":this.userId));
+        sb.append(',');
+        sb.append("origCode");
+        sb.append('=');
+        sb.append(((this.origCode == null)?"<null>":this.origCode));
         sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');
@@ -96,8 +510,18 @@ public class PersonComments100GetRequest {
     @Override
     public int hashCode() {
         int result = 1;
+        result = ((result* 31)+((this.date == null)? 0 :this.date.hashCode()));
+        result = ((result* 31)+((this.contactToTime == null)? 0 :this.contactToTime.hashCode()));
+        result = ((result* 31)+((this.contactDate == null)? 0 :this.contactDate.hashCode()));
+        result = ((result* 31)+((this.cmttCode == null)? 0 :this.cmttCode.hashCode()));
+        result = ((result* 31)+((this.userId == null)? 0 :this.userId.hashCode()));
+        result = ((result* 31)+((this.origCode == null)? 0 :this.origCode.hashCode()));
+        result = ((result* 31)+((this.confidentialInd == null)? 0 :this.confidentialInd.hashCode()));
+        result = ((result* 31)+((this.ctypCode == null)? 0 :this.ctypCode.hashCode()));
         result = ((result* 31)+((this.id == null)? 0 :this.id.hashCode()));
+        result = ((result* 31)+((this.text == null)? 0 :this.text.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
+        result = ((result* 31)+((this.contactFromTime == null)? 0 :this.contactFromTime.hashCode()));
         return result;
     }
 
@@ -110,7 +534,7 @@ public class PersonComments100GetRequest {
             return false;
         }
         PersonComments100GetRequest rhs = ((PersonComments100GetRequest) other);
-        return (((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id)))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))));
+        return (((((((((((((this.date == rhs.date)||((this.date!= null)&&this.date.equals(rhs.date)))&&((this.contactToTime == rhs.contactToTime)||((this.contactToTime!= null)&&this.contactToTime.equals(rhs.contactToTime))))&&((this.contactDate == rhs.contactDate)||((this.contactDate!= null)&&this.contactDate.equals(rhs.contactDate))))&&((this.cmttCode == rhs.cmttCode)||((this.cmttCode!= null)&&this.cmttCode.equals(rhs.cmttCode))))&&((this.userId == rhs.userId)||((this.userId!= null)&&this.userId.equals(rhs.userId))))&&((this.origCode == rhs.origCode)||((this.origCode!= null)&&this.origCode.equals(rhs.origCode))))&&((this.confidentialInd == rhs.confidentialInd)||((this.confidentialInd!= null)&&this.confidentialInd.equals(rhs.confidentialInd))))&&((this.ctypCode == rhs.ctypCode)||((this.ctypCode!= null)&&this.ctypCode.equals(rhs.ctypCode))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.text == rhs.text)||((this.text!= null)&&this.text.equals(rhs.text))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.contactFromTime == rhs.contactFromTime)||((this.contactFromTime!= null)&&this.contactFromTime.equals(rhs.contactFromTime))));
     }
 
 }

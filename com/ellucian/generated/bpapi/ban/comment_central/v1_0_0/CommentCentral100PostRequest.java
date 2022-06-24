@@ -80,7 +80,7 @@ public class CommentCentral100PostRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Purge
      * <p>
@@ -244,7 +244,7 @@ public class CommentCentral100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -255,11 +255,11 @@ public class CommentCentral100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public CommentCentral100PostRequest withId(Object id) {
+    public CommentCentral100PostRequest withId(String id) {
         this.id = id;
         return this;
     }

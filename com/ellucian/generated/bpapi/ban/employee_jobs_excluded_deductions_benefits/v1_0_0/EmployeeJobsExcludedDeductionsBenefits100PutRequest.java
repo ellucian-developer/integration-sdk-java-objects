@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.employee_jobs_excluded_deductions_benefits.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -34,7 +35,7 @@ public class EmployeeJobsExcludedDeductionsBenefits100PutRequest {
      */
     @JsonProperty("queryDate")
     @JsonPropertyDescription("Lineage reference object : queryDate")
-    private Object queryDate;
+    private Date queryDate;
     /**
      * Suffix
      * <p>
@@ -43,7 +44,7 @@ public class EmployeeJobsExcludedDeductionsBenefits100PutRequest {
      */
     @JsonProperty("suff")
     @JsonPropertyDescription("Lineage reference object : suff")
-    private Object suff;
+    private String suff;
     /**
      * Code
      * <p>
@@ -63,7 +64,7 @@ public class EmployeeJobsExcludedDeductionsBenefits100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Code
      * <p>
@@ -81,7 +82,7 @@ public class EmployeeJobsExcludedDeductionsBenefits100PutRequest {
      */
     @JsonProperty("posn")
     @JsonPropertyDescription("Lineage reference object : posn")
-    private Object posn;
+    private String posn;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -93,7 +94,7 @@ public class EmployeeJobsExcludedDeductionsBenefits100PutRequest {
      * 
      */
     @JsonProperty("queryDate")
-    public Object getQueryDate() {
+    public Date getQueryDate() {
         return queryDate;
     }
 
@@ -105,11 +106,11 @@ public class EmployeeJobsExcludedDeductionsBenefits100PutRequest {
      * 
      */
     @JsonProperty("queryDate")
-    public void setQueryDate(Object queryDate) {
+    public void setQueryDate(Date queryDate) {
         this.queryDate = queryDate;
     }
 
-    public EmployeeJobsExcludedDeductionsBenefits100PutRequest withQueryDate(Object queryDate) {
+    public EmployeeJobsExcludedDeductionsBenefits100PutRequest withQueryDate(Date queryDate) {
         this.queryDate = queryDate;
         return this;
     }
@@ -121,7 +122,7 @@ public class EmployeeJobsExcludedDeductionsBenefits100PutRequest {
      * 
      */
     @JsonProperty("suff")
-    public Object getSuff() {
+    public String getSuff() {
         return suff;
     }
 
@@ -132,11 +133,11 @@ public class EmployeeJobsExcludedDeductionsBenefits100PutRequest {
      * 
      */
     @JsonProperty("suff")
-    public void setSuff(Object suff) {
+    public void setSuff(String suff) {
         this.suff = suff;
     }
 
-    public EmployeeJobsExcludedDeductionsBenefits100PutRequest withSuff(Object suff) {
+    public EmployeeJobsExcludedDeductionsBenefits100PutRequest withSuff(String suff) {
         this.suff = suff;
         return this;
     }
@@ -190,7 +191,7 @@ public class EmployeeJobsExcludedDeductionsBenefits100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -201,11 +202,11 @@ public class EmployeeJobsExcludedDeductionsBenefits100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public EmployeeJobsExcludedDeductionsBenefits100PutRequest withId(Object id) {
+    public EmployeeJobsExcludedDeductionsBenefits100PutRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -244,7 +245,7 @@ public class EmployeeJobsExcludedDeductionsBenefits100PutRequest {
      * 
      */
     @JsonProperty("posn")
-    public Object getPosn() {
+    public String getPosn() {
         return posn;
     }
 
@@ -255,11 +256,11 @@ public class EmployeeJobsExcludedDeductionsBenefits100PutRequest {
      * 
      */
     @JsonProperty("posn")
-    public void setPosn(Object posn) {
+    public void setPosn(String posn) {
         this.posn = posn;
     }
 
-    public EmployeeJobsExcludedDeductionsBenefits100PutRequest withPosn(Object posn) {
+    public EmployeeJobsExcludedDeductionsBenefits100PutRequest withPosn(String posn) {
         this.posn = posn;
         return this;
     }

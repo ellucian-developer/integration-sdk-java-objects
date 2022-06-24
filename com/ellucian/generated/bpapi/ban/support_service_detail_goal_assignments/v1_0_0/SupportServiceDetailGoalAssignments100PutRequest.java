@@ -16,22 +16,21 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "criteria.origCode",
-    "serdtglSsrsCode",
-    "seadetlSsgpCode",
+    "termCodeEff",
+    "goalCode",
     "criteria.goalCode",
     "criteria.estimateDate",
-    "serdtglGoalCode",
     "origCode",
     "criteria.ssrsCode",
-    "seadetlTermCodeEff",
     "criteria.actualDate",
     "ssgpCode",
     "treqCode",
-    "seadetlId",
     "criteria.priorityNbr",
     "criteria.treqCode",
     "actualDate",
     "criteria.ssgpCode",
+    "id",
+    "serdtglSsgpCode",
     "priorityNbr",
     "ssrsCode",
     "estimateDate"
@@ -49,23 +48,24 @@ public class SupportServiceDetailGoalAssignments100PutRequest {
     @JsonPropertyDescription("Lineage reference object : SERDTGL_ORIG_CODE, Lookup lineage reference object : stvorig")
     private String criteriaOrigCode;
     /**
-     * Result
+     * Term
      * <p>
-     * Lineage reference object : SERDTGL_SSRS_CODE, Lookup lineage reference object : stvssrs
+     * Lineage reference object : seadetlTermCodeEff, Lookup lineage reference object : stvterm
      * 
      */
-    @JsonProperty("serdtglSsrsCode")
-    @JsonPropertyDescription("Lineage reference object : SERDTGL_SSRS_CODE, Lookup lineage reference object : stvssrs")
-    private String serdtglSsrsCode;
+    @JsonProperty("termCodeEff")
+    @JsonPropertyDescription("Lineage reference object : seadetlTermCodeEff, Lookup lineage reference object : stvterm")
+    private String termCodeEff;
     /**
-     * Service Group
+     * Goal
      * <p>
-     * Lineage reference object : seadetlSsgpCode, Lookup lineage reference object : stvssgp
+     * Lineage reference object : SERDTGL_GOAL_CODE, Lookup lineage reference object : stvgoal
+     * (Required)
      * 
      */
-    @JsonProperty("seadetlSsgpCode")
-    @JsonPropertyDescription("Lineage reference object : seadetlSsgpCode, Lookup lineage reference object : stvssgp")
-    private Object seadetlSsgpCode;
+    @JsonProperty("goalCode")
+    @JsonPropertyDescription("Lineage reference object : SERDTGL_GOAL_CODE, Lookup lineage reference object : stvgoal")
+    private String goalCode;
     /**
      * Goal
      * <p>
@@ -86,16 +86,6 @@ public class SupportServiceDetailGoalAssignments100PutRequest {
     @JsonPropertyDescription("Lineage reference object : SERDTGL_ESTIMATE_DATE")
     private Date criteriaEstimateDate;
     /**
-     * Goal
-     * <p>
-     * Lineage reference object : SERDTGL_GOAL_CODE, Lookup lineage reference object : stvgoal
-     * (Required)
-     * 
-     */
-    @JsonProperty("serdtglGoalCode")
-    @JsonPropertyDescription("Lineage reference object : SERDTGL_GOAL_CODE, Lookup lineage reference object : stvgoal")
-    private String serdtglGoalCode;
-    /**
      * Review
      * <p>
      * Lineage reference object : SERDTGL_ORIG_CODE, Lookup lineage reference object : stvorig
@@ -114,15 +104,6 @@ public class SupportServiceDetailGoalAssignments100PutRequest {
     @JsonPropertyDescription("Lineage reference object : SERDTGL_SSRS_CODE, Lookup lineage reference object : stvssrs")
     private String criteriaSsrsCode;
     /**
-     * Term
-     * <p>
-     * Lineage reference object : seadetlTermCodeEff, Lookup lineage reference object : stvterm
-     * 
-     */
-    @JsonProperty("seadetlTermCodeEff")
-    @JsonPropertyDescription("Lineage reference object : seadetlTermCodeEff, Lookup lineage reference object : stvterm")
-    private Object seadetlTermCodeEff;
-    /**
      * Actual Completion Date
      * <p>
      * Lineage reference object : SERDTGL_ACTUAL_DATE
@@ -132,13 +113,13 @@ public class SupportServiceDetailGoalAssignments100PutRequest {
     @JsonPropertyDescription("Lineage reference object : SERDTGL_ACTUAL_DATE")
     private Date criteriaActualDate;
     /**
-     * Group
+     * Service Group
      * <p>
-     * Lineage reference object : SERDTGL_SSGP_CODE, Lookup lineage reference object : stvssgp
+     * Lineage reference object : seadetlSsgpCode, Lookup lineage reference object : stvssgp
      * 
      */
     @JsonProperty("ssgpCode")
-    @JsonPropertyDescription("Lineage reference object : SERDTGL_SSGP_CODE, Lookup lineage reference object : stvssgp")
+    @JsonPropertyDescription("Lineage reference object : seadetlSsgpCode, Lookup lineage reference object : stvssgp")
     private String ssgpCode;
     /**
      * Time
@@ -149,15 +130,6 @@ public class SupportServiceDetailGoalAssignments100PutRequest {
     @JsonProperty("treqCode")
     @JsonPropertyDescription("Lineage reference object : SERDTGL_TREQ_CODE, Lookup lineage reference object : stvtreq")
     private String treqCode;
-    /**
-     * ID
-     * <p>
-     * Lineage reference object : seadetlId
-     * 
-     */
-    @JsonProperty("seadetlId")
-    @JsonPropertyDescription("Lineage reference object : seadetlId")
-    private Object seadetlId;
     /**
      * Priority Number
      * <p>
@@ -194,6 +166,24 @@ public class SupportServiceDetailGoalAssignments100PutRequest {
     @JsonProperty("criteria.ssgpCode")
     @JsonPropertyDescription("Lineage reference object : SERDTGL_SSGP_CODE, Lookup lineage reference object : stvssgp")
     private String criteriaSsgpCode;
+    /**
+     * ID
+     * <p>
+     * Lineage reference object : seadetlId
+     * 
+     */
+    @JsonProperty("id")
+    @JsonPropertyDescription("Lineage reference object : seadetlId")
+    private String id;
+    /**
+     * Group
+     * <p>
+     * Lineage reference object : SERDTGL_SSGP_CODE, Lookup lineage reference object : stvssgp
+     * 
+     */
+    @JsonProperty("serdtglSsgpCode")
+    @JsonPropertyDescription("Lineage reference object : SERDTGL_SSGP_CODE, Lookup lineage reference object : stvssgp")
+    private String serdtglSsgpCode;
     /**
      * Priority Number
      * <p>
@@ -252,56 +242,58 @@ public class SupportServiceDetailGoalAssignments100PutRequest {
     }
 
     /**
-     * Result
+     * Term
      * <p>
-     * Lineage reference object : SERDTGL_SSRS_CODE, Lookup lineage reference object : stvssrs
+     * Lineage reference object : seadetlTermCodeEff, Lookup lineage reference object : stvterm
      * 
      */
-    @JsonProperty("serdtglSsrsCode")
-    public String getSerdtglSsrsCode() {
-        return serdtglSsrsCode;
+    @JsonProperty("termCodeEff")
+    public String getTermCodeEff() {
+        return termCodeEff;
     }
 
     /**
-     * Result
+     * Term
      * <p>
-     * Lineage reference object : SERDTGL_SSRS_CODE, Lookup lineage reference object : stvssrs
+     * Lineage reference object : seadetlTermCodeEff, Lookup lineage reference object : stvterm
      * 
      */
-    @JsonProperty("serdtglSsrsCode")
-    public void setSerdtglSsrsCode(String serdtglSsrsCode) {
-        this.serdtglSsrsCode = serdtglSsrsCode;
+    @JsonProperty("termCodeEff")
+    public void setTermCodeEff(String termCodeEff) {
+        this.termCodeEff = termCodeEff;
     }
 
-    public SupportServiceDetailGoalAssignments100PutRequest withSerdtglSsrsCode(String serdtglSsrsCode) {
-        this.serdtglSsrsCode = serdtglSsrsCode;
+    public SupportServiceDetailGoalAssignments100PutRequest withTermCodeEff(String termCodeEff) {
+        this.termCodeEff = termCodeEff;
         return this;
     }
 
     /**
-     * Service Group
+     * Goal
      * <p>
-     * Lineage reference object : seadetlSsgpCode, Lookup lineage reference object : stvssgp
+     * Lineage reference object : SERDTGL_GOAL_CODE, Lookup lineage reference object : stvgoal
+     * (Required)
      * 
      */
-    @JsonProperty("seadetlSsgpCode")
-    public Object getSeadetlSsgpCode() {
-        return seadetlSsgpCode;
+    @JsonProperty("goalCode")
+    public String getGoalCode() {
+        return goalCode;
     }
 
     /**
-     * Service Group
+     * Goal
      * <p>
-     * Lineage reference object : seadetlSsgpCode, Lookup lineage reference object : stvssgp
+     * Lineage reference object : SERDTGL_GOAL_CODE, Lookup lineage reference object : stvgoal
+     * (Required)
      * 
      */
-    @JsonProperty("seadetlSsgpCode")
-    public void setSeadetlSsgpCode(Object seadetlSsgpCode) {
-        this.seadetlSsgpCode = seadetlSsgpCode;
+    @JsonProperty("goalCode")
+    public void setGoalCode(String goalCode) {
+        this.goalCode = goalCode;
     }
 
-    public SupportServiceDetailGoalAssignments100PutRequest withSeadetlSsgpCode(Object seadetlSsgpCode) {
-        this.seadetlSsgpCode = seadetlSsgpCode;
+    public SupportServiceDetailGoalAssignments100PutRequest withGoalCode(String goalCode) {
+        this.goalCode = goalCode;
         return this;
     }
 
@@ -362,35 +354,6 @@ public class SupportServiceDetailGoalAssignments100PutRequest {
     }
 
     /**
-     * Goal
-     * <p>
-     * Lineage reference object : SERDTGL_GOAL_CODE, Lookup lineage reference object : stvgoal
-     * (Required)
-     * 
-     */
-    @JsonProperty("serdtglGoalCode")
-    public String getSerdtglGoalCode() {
-        return serdtglGoalCode;
-    }
-
-    /**
-     * Goal
-     * <p>
-     * Lineage reference object : SERDTGL_GOAL_CODE, Lookup lineage reference object : stvgoal
-     * (Required)
-     * 
-     */
-    @JsonProperty("serdtglGoalCode")
-    public void setSerdtglGoalCode(String serdtglGoalCode) {
-        this.serdtglGoalCode = serdtglGoalCode;
-    }
-
-    public SupportServiceDetailGoalAssignments100PutRequest withSerdtglGoalCode(String serdtglGoalCode) {
-        this.serdtglGoalCode = serdtglGoalCode;
-        return this;
-    }
-
-    /**
      * Review
      * <p>
      * Lineage reference object : SERDTGL_ORIG_CODE, Lookup lineage reference object : stvorig
@@ -445,33 +408,6 @@ public class SupportServiceDetailGoalAssignments100PutRequest {
     }
 
     /**
-     * Term
-     * <p>
-     * Lineage reference object : seadetlTermCodeEff, Lookup lineage reference object : stvterm
-     * 
-     */
-    @JsonProperty("seadetlTermCodeEff")
-    public Object getSeadetlTermCodeEff() {
-        return seadetlTermCodeEff;
-    }
-
-    /**
-     * Term
-     * <p>
-     * Lineage reference object : seadetlTermCodeEff, Lookup lineage reference object : stvterm
-     * 
-     */
-    @JsonProperty("seadetlTermCodeEff")
-    public void setSeadetlTermCodeEff(Object seadetlTermCodeEff) {
-        this.seadetlTermCodeEff = seadetlTermCodeEff;
-    }
-
-    public SupportServiceDetailGoalAssignments100PutRequest withSeadetlTermCodeEff(Object seadetlTermCodeEff) {
-        this.seadetlTermCodeEff = seadetlTermCodeEff;
-        return this;
-    }
-
-    /**
      * Actual Completion Date
      * <p>
      * Lineage reference object : SERDTGL_ACTUAL_DATE
@@ -499,9 +435,9 @@ public class SupportServiceDetailGoalAssignments100PutRequest {
     }
 
     /**
-     * Group
+     * Service Group
      * <p>
-     * Lineage reference object : SERDTGL_SSGP_CODE, Lookup lineage reference object : stvssgp
+     * Lineage reference object : seadetlSsgpCode, Lookup lineage reference object : stvssgp
      * 
      */
     @JsonProperty("ssgpCode")
@@ -510,9 +446,9 @@ public class SupportServiceDetailGoalAssignments100PutRequest {
     }
 
     /**
-     * Group
+     * Service Group
      * <p>
-     * Lineage reference object : SERDTGL_SSGP_CODE, Lookup lineage reference object : stvssgp
+     * Lineage reference object : seadetlSsgpCode, Lookup lineage reference object : stvssgp
      * 
      */
     @JsonProperty("ssgpCode")
@@ -549,33 +485,6 @@ public class SupportServiceDetailGoalAssignments100PutRequest {
 
     public SupportServiceDetailGoalAssignments100PutRequest withTreqCode(String treqCode) {
         this.treqCode = treqCode;
-        return this;
-    }
-
-    /**
-     * ID
-     * <p>
-     * Lineage reference object : seadetlId
-     * 
-     */
-    @JsonProperty("seadetlId")
-    public Object getSeadetlId() {
-        return seadetlId;
-    }
-
-    /**
-     * ID
-     * <p>
-     * Lineage reference object : seadetlId
-     * 
-     */
-    @JsonProperty("seadetlId")
-    public void setSeadetlId(Object seadetlId) {
-        this.seadetlId = seadetlId;
-    }
-
-    public SupportServiceDetailGoalAssignments100PutRequest withSeadetlId(Object seadetlId) {
-        this.seadetlId = seadetlId;
         return this;
     }
 
@@ -688,6 +597,60 @@ public class SupportServiceDetailGoalAssignments100PutRequest {
     }
 
     /**
+     * ID
+     * <p>
+     * Lineage reference object : seadetlId
+     * 
+     */
+    @JsonProperty("id")
+    public String getId() {
+        return id;
+    }
+
+    /**
+     * ID
+     * <p>
+     * Lineage reference object : seadetlId
+     * 
+     */
+    @JsonProperty("id")
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public SupportServiceDetailGoalAssignments100PutRequest withId(String id) {
+        this.id = id;
+        return this;
+    }
+
+    /**
+     * Group
+     * <p>
+     * Lineage reference object : SERDTGL_SSGP_CODE, Lookup lineage reference object : stvssgp
+     * 
+     */
+    @JsonProperty("serdtglSsgpCode")
+    public String getSerdtglSsgpCode() {
+        return serdtglSsgpCode;
+    }
+
+    /**
+     * Group
+     * <p>
+     * Lineage reference object : SERDTGL_SSGP_CODE, Lookup lineage reference object : stvssgp
+     * 
+     */
+    @JsonProperty("serdtglSsgpCode")
+    public void setSerdtglSsgpCode(String serdtglSsgpCode) {
+        this.serdtglSsgpCode = serdtglSsgpCode;
+    }
+
+    public SupportServiceDetailGoalAssignments100PutRequest withSerdtglSsgpCode(String serdtglSsgpCode) {
+        this.serdtglSsgpCode = serdtglSsgpCode;
+        return this;
+    }
+
+    /**
      * Priority Number
      * <p>
      * Lineage reference object : SERDTGL_PRIORITY_NBR
@@ -791,13 +754,13 @@ public class SupportServiceDetailGoalAssignments100PutRequest {
         sb.append('=');
         sb.append(((this.criteriaOrigCode == null)?"<null>":this.criteriaOrigCode));
         sb.append(',');
-        sb.append("serdtglSsrsCode");
+        sb.append("termCodeEff");
         sb.append('=');
-        sb.append(((this.serdtglSsrsCode == null)?"<null>":this.serdtglSsrsCode));
+        sb.append(((this.termCodeEff == null)?"<null>":this.termCodeEff));
         sb.append(',');
-        sb.append("seadetlSsgpCode");
+        sb.append("goalCode");
         sb.append('=');
-        sb.append(((this.seadetlSsgpCode == null)?"<null>":this.seadetlSsgpCode));
+        sb.append(((this.goalCode == null)?"<null>":this.goalCode));
         sb.append(',');
         sb.append("criteriaGoalCode");
         sb.append('=');
@@ -807,10 +770,6 @@ public class SupportServiceDetailGoalAssignments100PutRequest {
         sb.append('=');
         sb.append(((this.criteriaEstimateDate == null)?"<null>":this.criteriaEstimateDate));
         sb.append(',');
-        sb.append("serdtglGoalCode");
-        sb.append('=');
-        sb.append(((this.serdtglGoalCode == null)?"<null>":this.serdtglGoalCode));
-        sb.append(',');
         sb.append("origCode");
         sb.append('=');
         sb.append(((this.origCode == null)?"<null>":this.origCode));
@@ -818,10 +777,6 @@ public class SupportServiceDetailGoalAssignments100PutRequest {
         sb.append("criteriaSsrsCode");
         sb.append('=');
         sb.append(((this.criteriaSsrsCode == null)?"<null>":this.criteriaSsrsCode));
-        sb.append(',');
-        sb.append("seadetlTermCodeEff");
-        sb.append('=');
-        sb.append(((this.seadetlTermCodeEff == null)?"<null>":this.seadetlTermCodeEff));
         sb.append(',');
         sb.append("criteriaActualDate");
         sb.append('=');
@@ -834,10 +789,6 @@ public class SupportServiceDetailGoalAssignments100PutRequest {
         sb.append("treqCode");
         sb.append('=');
         sb.append(((this.treqCode == null)?"<null>":this.treqCode));
-        sb.append(',');
-        sb.append("seadetlId");
-        sb.append('=');
-        sb.append(((this.seadetlId == null)?"<null>":this.seadetlId));
         sb.append(',');
         sb.append("criteriaPriorityNbr");
         sb.append('=');
@@ -854,6 +805,14 @@ public class SupportServiceDetailGoalAssignments100PutRequest {
         sb.append("criteriaSsgpCode");
         sb.append('=');
         sb.append(((this.criteriaSsgpCode == null)?"<null>":this.criteriaSsgpCode));
+        sb.append(',');
+        sb.append("id");
+        sb.append('=');
+        sb.append(((this.id == null)?"<null>":this.id));
+        sb.append(',');
+        sb.append("serdtglSsgpCode");
+        sb.append('=');
+        sb.append(((this.serdtglSsgpCode == null)?"<null>":this.serdtglSsgpCode));
         sb.append(',');
         sb.append("priorityNbr");
         sb.append('=');
@@ -883,22 +842,21 @@ public class SupportServiceDetailGoalAssignments100PutRequest {
     public int hashCode() {
         int result = 1;
         result = ((result* 31)+((this.criteriaEstimateDate == null)? 0 :this.criteriaEstimateDate.hashCode()));
-        result = ((result* 31)+((this.serdtglSsrsCode == null)? 0 :this.serdtglSsrsCode.hashCode()));
+        result = ((result* 31)+((this.termCodeEff == null)? 0 :this.termCodeEff.hashCode()));
+        result = ((result* 31)+((this.goalCode == null)? 0 :this.goalCode.hashCode()));
         result = ((result* 31)+((this.criteriaOrigCode == null)? 0 :this.criteriaOrigCode.hashCode()));
-        result = ((result* 31)+((this.seadetlSsgpCode == null)? 0 :this.seadetlSsgpCode.hashCode()));
-        result = ((result* 31)+((this.serdtglGoalCode == null)? 0 :this.serdtglGoalCode.hashCode()));
         result = ((result* 31)+((this.origCode == null)? 0 :this.origCode.hashCode()));
         result = ((result* 31)+((this.criteriaGoalCode == null)? 0 :this.criteriaGoalCode.hashCode()));
         result = ((result* 31)+((this.criteriaPriorityNbr == null)? 0 :this.criteriaPriorityNbr.hashCode()));
         result = ((result* 31)+((this.criteriaSsrsCode == null)? 0 :this.criteriaSsrsCode.hashCode()));
-        result = ((result* 31)+((this.seadetlTermCodeEff == null)? 0 :this.seadetlTermCodeEff.hashCode()));
         result = ((result* 31)+((this.ssgpCode == null)? 0 :this.ssgpCode.hashCode()));
         result = ((result* 31)+((this.treqCode == null)? 0 :this.treqCode.hashCode()));
         result = ((result* 31)+((this.criteriaActualDate == null)? 0 :this.criteriaActualDate.hashCode()));
-        result = ((result* 31)+((this.seadetlId == null)? 0 :this.seadetlId.hashCode()));
         result = ((result* 31)+((this.actualDate == null)? 0 :this.actualDate.hashCode()));
+        result = ((result* 31)+((this.id == null)? 0 :this.id.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
         result = ((result* 31)+((this.criteriaTreqCode == null)? 0 :this.criteriaTreqCode.hashCode()));
+        result = ((result* 31)+((this.serdtglSsgpCode == null)? 0 :this.serdtglSsgpCode.hashCode()));
         result = ((result* 31)+((this.criteriaSsgpCode == null)? 0 :this.criteriaSsgpCode.hashCode()));
         result = ((result* 31)+((this.priorityNbr == null)? 0 :this.priorityNbr.hashCode()));
         result = ((result* 31)+((this.ssrsCode == null)? 0 :this.ssrsCode.hashCode()));
@@ -915,7 +873,7 @@ public class SupportServiceDetailGoalAssignments100PutRequest {
             return false;
         }
         SupportServiceDetailGoalAssignments100PutRequest rhs = ((SupportServiceDetailGoalAssignments100PutRequest) other);
-        return ((((((((((((((((((((((this.criteriaEstimateDate == rhs.criteriaEstimateDate)||((this.criteriaEstimateDate!= null)&&this.criteriaEstimateDate.equals(rhs.criteriaEstimateDate)))&&((this.serdtglSsrsCode == rhs.serdtglSsrsCode)||((this.serdtglSsrsCode!= null)&&this.serdtglSsrsCode.equals(rhs.serdtglSsrsCode))))&&((this.criteriaOrigCode == rhs.criteriaOrigCode)||((this.criteriaOrigCode!= null)&&this.criteriaOrigCode.equals(rhs.criteriaOrigCode))))&&((this.seadetlSsgpCode == rhs.seadetlSsgpCode)||((this.seadetlSsgpCode!= null)&&this.seadetlSsgpCode.equals(rhs.seadetlSsgpCode))))&&((this.serdtglGoalCode == rhs.serdtglGoalCode)||((this.serdtglGoalCode!= null)&&this.serdtglGoalCode.equals(rhs.serdtglGoalCode))))&&((this.origCode == rhs.origCode)||((this.origCode!= null)&&this.origCode.equals(rhs.origCode))))&&((this.criteriaGoalCode == rhs.criteriaGoalCode)||((this.criteriaGoalCode!= null)&&this.criteriaGoalCode.equals(rhs.criteriaGoalCode))))&&((this.criteriaPriorityNbr == rhs.criteriaPriorityNbr)||((this.criteriaPriorityNbr!= null)&&this.criteriaPriorityNbr.equals(rhs.criteriaPriorityNbr))))&&((this.criteriaSsrsCode == rhs.criteriaSsrsCode)||((this.criteriaSsrsCode!= null)&&this.criteriaSsrsCode.equals(rhs.criteriaSsrsCode))))&&((this.seadetlTermCodeEff == rhs.seadetlTermCodeEff)||((this.seadetlTermCodeEff!= null)&&this.seadetlTermCodeEff.equals(rhs.seadetlTermCodeEff))))&&((this.ssgpCode == rhs.ssgpCode)||((this.ssgpCode!= null)&&this.ssgpCode.equals(rhs.ssgpCode))))&&((this.treqCode == rhs.treqCode)||((this.treqCode!= null)&&this.treqCode.equals(rhs.treqCode))))&&((this.criteriaActualDate == rhs.criteriaActualDate)||((this.criteriaActualDate!= null)&&this.criteriaActualDate.equals(rhs.criteriaActualDate))))&&((this.seadetlId == rhs.seadetlId)||((this.seadetlId!= null)&&this.seadetlId.equals(rhs.seadetlId))))&&((this.actualDate == rhs.actualDate)||((this.actualDate!= null)&&this.actualDate.equals(rhs.actualDate))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.criteriaTreqCode == rhs.criteriaTreqCode)||((this.criteriaTreqCode!= null)&&this.criteriaTreqCode.equals(rhs.criteriaTreqCode))))&&((this.criteriaSsgpCode == rhs.criteriaSsgpCode)||((this.criteriaSsgpCode!= null)&&this.criteriaSsgpCode.equals(rhs.criteriaSsgpCode))))&&((this.priorityNbr == rhs.priorityNbr)||((this.priorityNbr!= null)&&this.priorityNbr.equals(rhs.priorityNbr))))&&((this.ssrsCode == rhs.ssrsCode)||((this.ssrsCode!= null)&&this.ssrsCode.equals(rhs.ssrsCode))))&&((this.estimateDate == rhs.estimateDate)||((this.estimateDate!= null)&&this.estimateDate.equals(rhs.estimateDate))));
+        return (((((((((((((((((((((this.criteriaEstimateDate == rhs.criteriaEstimateDate)||((this.criteriaEstimateDate!= null)&&this.criteriaEstimateDate.equals(rhs.criteriaEstimateDate)))&&((this.termCodeEff == rhs.termCodeEff)||((this.termCodeEff!= null)&&this.termCodeEff.equals(rhs.termCodeEff))))&&((this.goalCode == rhs.goalCode)||((this.goalCode!= null)&&this.goalCode.equals(rhs.goalCode))))&&((this.criteriaOrigCode == rhs.criteriaOrigCode)||((this.criteriaOrigCode!= null)&&this.criteriaOrigCode.equals(rhs.criteriaOrigCode))))&&((this.origCode == rhs.origCode)||((this.origCode!= null)&&this.origCode.equals(rhs.origCode))))&&((this.criteriaGoalCode == rhs.criteriaGoalCode)||((this.criteriaGoalCode!= null)&&this.criteriaGoalCode.equals(rhs.criteriaGoalCode))))&&((this.criteriaPriorityNbr == rhs.criteriaPriorityNbr)||((this.criteriaPriorityNbr!= null)&&this.criteriaPriorityNbr.equals(rhs.criteriaPriorityNbr))))&&((this.criteriaSsrsCode == rhs.criteriaSsrsCode)||((this.criteriaSsrsCode!= null)&&this.criteriaSsrsCode.equals(rhs.criteriaSsrsCode))))&&((this.ssgpCode == rhs.ssgpCode)||((this.ssgpCode!= null)&&this.ssgpCode.equals(rhs.ssgpCode))))&&((this.treqCode == rhs.treqCode)||((this.treqCode!= null)&&this.treqCode.equals(rhs.treqCode))))&&((this.criteriaActualDate == rhs.criteriaActualDate)||((this.criteriaActualDate!= null)&&this.criteriaActualDate.equals(rhs.criteriaActualDate))))&&((this.actualDate == rhs.actualDate)||((this.actualDate!= null)&&this.actualDate.equals(rhs.actualDate))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.criteriaTreqCode == rhs.criteriaTreqCode)||((this.criteriaTreqCode!= null)&&this.criteriaTreqCode.equals(rhs.criteriaTreqCode))))&&((this.serdtglSsgpCode == rhs.serdtglSsgpCode)||((this.serdtglSsgpCode!= null)&&this.serdtglSsgpCode.equals(rhs.serdtglSsgpCode))))&&((this.criteriaSsgpCode == rhs.criteriaSsgpCode)||((this.criteriaSsgpCode!= null)&&this.criteriaSsgpCode.equals(rhs.criteriaSsgpCode))))&&((this.priorityNbr == rhs.priorityNbr)||((this.priorityNbr!= null)&&this.priorityNbr.equals(rhs.priorityNbr))))&&((this.ssrsCode == rhs.ssrsCode)||((this.ssrsCode!= null)&&this.ssrsCode.equals(rhs.ssrsCode))))&&((this.estimateDate == rhs.estimateDate)||((this.estimateDate!= null)&&this.estimateDate.equals(rhs.estimateDate))));
     }
 
 }

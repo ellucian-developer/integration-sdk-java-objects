@@ -28,7 +28,7 @@ public class DirectCashReceipt100GetRequest {
      */
     @JsonProperty("documentNumber")
     @JsonPropertyDescription("Lineage reference object : documentNumber")
-    private Object documentNumber;
+    private String documentNumber;
     /**
      * Vendor Code
      * <p>
@@ -37,7 +37,7 @@ public class DirectCashReceipt100GetRequest {
      */
     @JsonProperty("vendor")
     @JsonPropertyDescription("Lineage reference object : keyBlockVendor")
-    private Object vendor;
+    private String vendor;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -48,7 +48,7 @@ public class DirectCashReceipt100GetRequest {
      * 
      */
     @JsonProperty("documentNumber")
-    public Object getDocumentNumber() {
+    public String getDocumentNumber() {
         return documentNumber;
     }
 
@@ -59,11 +59,11 @@ public class DirectCashReceipt100GetRequest {
      * 
      */
     @JsonProperty("documentNumber")
-    public void setDocumentNumber(Object documentNumber) {
+    public void setDocumentNumber(String documentNumber) {
         this.documentNumber = documentNumber;
     }
 
-    public DirectCashReceipt100GetRequest withDocumentNumber(Object documentNumber) {
+    public DirectCashReceipt100GetRequest withDocumentNumber(String documentNumber) {
         this.documentNumber = documentNumber;
         return this;
     }
@@ -75,7 +75,7 @@ public class DirectCashReceipt100GetRequest {
      * 
      */
     @JsonProperty("vendor")
-    public Object getVendor() {
+    public String getVendor() {
         return vendor;
     }
 
@@ -86,11 +86,11 @@ public class DirectCashReceipt100GetRequest {
      * 
      */
     @JsonProperty("vendor")
-    public void setVendor(Object vendor) {
+    public void setVendor(String vendor) {
         this.vendor = vendor;
     }
 
-    public DirectCashReceipt100GetRequest withVendor(Object vendor) {
+    public DirectCashReceipt100GetRequest withVendor(String vendor) {
         this.vendor = vendor;
         return this;
     }

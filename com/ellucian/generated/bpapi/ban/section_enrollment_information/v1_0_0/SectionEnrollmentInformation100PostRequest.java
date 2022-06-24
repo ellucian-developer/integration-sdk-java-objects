@@ -189,7 +189,7 @@ public class SectionEnrollmentInformation100PostRequest {
      */
     @JsonProperty("crn")
     @JsonPropertyDescription("Lineage reference object : ssasectCrn")
-    private Object crn;
+    private String crn;
     /**
      * Overflow
      * <p>
@@ -272,7 +272,7 @@ public class SectionEnrollmentInformation100PostRequest {
      */
     @JsonProperty("termCode")
     @JsonPropertyDescription("Lineage reference object : ssasectTermCode, Lookup lineage reference object : stvterm")
-    private Object termCode;
+    private String termCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -696,7 +696,7 @@ public class SectionEnrollmentInformation100PostRequest {
      * 
      */
     @JsonProperty("crn")
-    public Object getCrn() {
+    public String getCrn() {
         return crn;
     }
 
@@ -707,11 +707,11 @@ public class SectionEnrollmentInformation100PostRequest {
      * 
      */
     @JsonProperty("crn")
-    public void setCrn(Object crn) {
+    public void setCrn(String crn) {
         this.crn = crn;
     }
 
-    public SectionEnrollmentInformation100PostRequest withCrn(Object crn) {
+    public SectionEnrollmentInformation100PostRequest withCrn(String crn) {
         this.crn = crn;
         return this;
     }
@@ -943,7 +943,7 @@ public class SectionEnrollmentInformation100PostRequest {
      * 
      */
     @JsonProperty("termCode")
-    public Object getTermCode() {
+    public String getTermCode() {
         return termCode;
     }
 
@@ -954,11 +954,11 @@ public class SectionEnrollmentInformation100PostRequest {
      * 
      */
     @JsonProperty("termCode")
-    public void setTermCode(Object termCode) {
+    public void setTermCode(String termCode) {
         this.termCode = termCode;
     }
 
-    public SectionEnrollmentInformation100PostRequest withTermCode(Object termCode) {
+    public SectionEnrollmentInformation100PostRequest withTermCode(String termCode) {
         this.termCode = termCode;
         return this;
     }

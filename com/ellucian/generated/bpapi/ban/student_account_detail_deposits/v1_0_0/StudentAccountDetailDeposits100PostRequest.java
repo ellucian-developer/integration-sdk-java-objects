@@ -27,6 +27,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "holdPassword",
     "id",
     "receiptNumber",
+    "desc",
     "termCode",
     "expirationDate"
 })
@@ -116,7 +117,7 @@ public class StudentAccountDetailDeposits100PostRequest {
      */
     @JsonProperty("receiptGenInd2")
     @JsonPropertyDescription("Lineage reference object : receiptGenInd2")
-    private Object receiptGenInd2;
+    private String receiptGenInd2;
     /**
      * Holds
      * <p>
@@ -125,7 +126,7 @@ public class StudentAccountDetailDeposits100PostRequest {
      */
     @JsonProperty("holdPassword")
     @JsonPropertyDescription("Lineage reference object : holdPassword")
-    private Object holdPassword;
+    private String holdPassword;
     /**
      * ID
      * <p>
@@ -134,7 +135,7 @@ public class StudentAccountDetailDeposits100PostRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Receipt
      * <p>
@@ -144,6 +145,16 @@ public class StudentAccountDetailDeposits100PostRequest {
     @JsonProperty("receiptNumber")
     @JsonPropertyDescription("Lineage reference object : TBRDEPO_RECEIPT_NUMBER")
     private Double receiptNumber;
+    /**
+     * Deposit Description
+     * <p>
+     * Lineage reference object : TBRDEPO_DESC
+     * (Required)
+     * 
+     */
+    @JsonProperty("desc")
+    @JsonPropertyDescription("Lineage reference object : TBRDEPO_DESC")
+    private String desc;
     /**
      * Term
      * <p>
@@ -397,7 +408,7 @@ public class StudentAccountDetailDeposits100PostRequest {
      * 
      */
     @JsonProperty("receiptGenInd2")
-    public Object getReceiptGenInd2() {
+    public String getReceiptGenInd2() {
         return receiptGenInd2;
     }
 
@@ -408,11 +419,11 @@ public class StudentAccountDetailDeposits100PostRequest {
      * 
      */
     @JsonProperty("receiptGenInd2")
-    public void setReceiptGenInd2(Object receiptGenInd2) {
+    public void setReceiptGenInd2(String receiptGenInd2) {
         this.receiptGenInd2 = receiptGenInd2;
     }
 
-    public StudentAccountDetailDeposits100PostRequest withReceiptGenInd2(Object receiptGenInd2) {
+    public StudentAccountDetailDeposits100PostRequest withReceiptGenInd2(String receiptGenInd2) {
         this.receiptGenInd2 = receiptGenInd2;
         return this;
     }
@@ -424,7 +435,7 @@ public class StudentAccountDetailDeposits100PostRequest {
      * 
      */
     @JsonProperty("holdPassword")
-    public Object getHoldPassword() {
+    public String getHoldPassword() {
         return holdPassword;
     }
 
@@ -435,11 +446,11 @@ public class StudentAccountDetailDeposits100PostRequest {
      * 
      */
     @JsonProperty("holdPassword")
-    public void setHoldPassword(Object holdPassword) {
+    public void setHoldPassword(String holdPassword) {
         this.holdPassword = holdPassword;
     }
 
-    public StudentAccountDetailDeposits100PostRequest withHoldPassword(Object holdPassword) {
+    public StudentAccountDetailDeposits100PostRequest withHoldPassword(String holdPassword) {
         this.holdPassword = holdPassword;
         return this;
     }
@@ -451,7 +462,7 @@ public class StudentAccountDetailDeposits100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -462,11 +473,11 @@ public class StudentAccountDetailDeposits100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public StudentAccountDetailDeposits100PostRequest withId(Object id) {
+    public StudentAccountDetailDeposits100PostRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -495,6 +506,35 @@ public class StudentAccountDetailDeposits100PostRequest {
 
     public StudentAccountDetailDeposits100PostRequest withReceiptNumber(Double receiptNumber) {
         this.receiptNumber = receiptNumber;
+        return this;
+    }
+
+    /**
+     * Deposit Description
+     * <p>
+     * Lineage reference object : TBRDEPO_DESC
+     * (Required)
+     * 
+     */
+    @JsonProperty("desc")
+    public String getDesc() {
+        return desc;
+    }
+
+    /**
+     * Deposit Description
+     * <p>
+     * Lineage reference object : TBRDEPO_DESC
+     * (Required)
+     * 
+     */
+    @JsonProperty("desc")
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public StudentAccountDetailDeposits100PostRequest withDesc(String desc) {
+        this.desc = desc;
         return this;
     }
 
@@ -621,6 +661,10 @@ public class StudentAccountDetailDeposits100PostRequest {
         sb.append('=');
         sb.append(((this.receiptNumber == null)?"<null>":this.receiptNumber));
         sb.append(',');
+        sb.append("desc");
+        sb.append('=');
+        sb.append(((this.desc == null)?"<null>":this.desc));
+        sb.append(',');
         sb.append("termCode");
         sb.append('=');
         sb.append(((this.termCode == null)?"<null>":this.termCode));
@@ -657,6 +701,7 @@ public class StudentAccountDetailDeposits100PostRequest {
         result = ((result* 31)+((this.id == null)? 0 :this.id.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
         result = ((result* 31)+((this.receiptNumber == null)? 0 :this.receiptNumber.hashCode()));
+        result = ((result* 31)+((this.desc == null)? 0 :this.desc.hashCode()));
         result = ((result* 31)+((this.termCode == null)? 0 :this.termCode.hashCode()));
         result = ((result* 31)+((this.expirationDate == null)? 0 :this.expirationDate.hashCode()));
         return result;
@@ -671,7 +716,7 @@ public class StudentAccountDetailDeposits100PostRequest {
             return false;
         }
         StudentAccountDetailDeposits100PostRequest rhs = ((StudentAccountDetailDeposits100PostRequest) other);
-        return ((((((((((((((((this.relAmount == rhs.relAmount)||((this.relAmount!= null)&&this.relAmount.equals(rhs.relAmount)))&&((this.minAmount == rhs.minAmount)||((this.minAmount!= null)&&this.minAmount.equals(rhs.minAmount))))&&((this.amount == rhs.amount)||((this.amount!= null)&&this.amount.equals(rhs.amount))))&&((this.releaseDate == rhs.releaseDate)||((this.releaseDate!= null)&&this.releaseDate.equals(rhs.releaseDate))))&&((this.documentNumber == rhs.documentNumber)||((this.documentNumber!= null)&&this.documentNumber.equals(rhs.documentNumber))))&&((this.detailCodePayment == rhs.detailCodePayment)||((this.detailCodePayment!= null)&&this.detailCodePayment.equals(rhs.detailCodePayment))))&&((this.detailCodeDeposit == rhs.detailCodeDeposit)||((this.detailCodeDeposit!= null)&&this.detailCodeDeposit.equals(rhs.detailCodeDeposit))))&&((this.autoReleaseInd == rhs.autoReleaseInd)||((this.autoReleaseInd!= null)&&this.autoReleaseInd.equals(rhs.autoReleaseInd))))&&((this.receiptGenInd2 == rhs.receiptGenInd2)||((this.receiptGenInd2 != null)&&this.receiptGenInd2 .equals(rhs.receiptGenInd2))))&&((this.holdPassword == rhs.holdPassword)||((this.holdPassword!= null)&&this.holdPassword.equals(rhs.holdPassword))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.receiptNumber == rhs.receiptNumber)||((this.receiptNumber!= null)&&this.receiptNumber.equals(rhs.receiptNumber))))&&((this.termCode == rhs.termCode)||((this.termCode!= null)&&this.termCode.equals(rhs.termCode))))&&((this.expirationDate == rhs.expirationDate)||((this.expirationDate!= null)&&this.expirationDate.equals(rhs.expirationDate))));
+        return (((((((((((((((((this.relAmount == rhs.relAmount)||((this.relAmount!= null)&&this.relAmount.equals(rhs.relAmount)))&&((this.minAmount == rhs.minAmount)||((this.minAmount!= null)&&this.minAmount.equals(rhs.minAmount))))&&((this.amount == rhs.amount)||((this.amount!= null)&&this.amount.equals(rhs.amount))))&&((this.releaseDate == rhs.releaseDate)||((this.releaseDate!= null)&&this.releaseDate.equals(rhs.releaseDate))))&&((this.documentNumber == rhs.documentNumber)||((this.documentNumber!= null)&&this.documentNumber.equals(rhs.documentNumber))))&&((this.detailCodePayment == rhs.detailCodePayment)||((this.detailCodePayment!= null)&&this.detailCodePayment.equals(rhs.detailCodePayment))))&&((this.detailCodeDeposit == rhs.detailCodeDeposit)||((this.detailCodeDeposit!= null)&&this.detailCodeDeposit.equals(rhs.detailCodeDeposit))))&&((this.autoReleaseInd == rhs.autoReleaseInd)||((this.autoReleaseInd!= null)&&this.autoReleaseInd.equals(rhs.autoReleaseInd))))&&((this.receiptGenInd2 == rhs.receiptGenInd2)||((this.receiptGenInd2 != null)&&this.receiptGenInd2 .equals(rhs.receiptGenInd2))))&&((this.holdPassword == rhs.holdPassword)||((this.holdPassword!= null)&&this.holdPassword.equals(rhs.holdPassword))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.receiptNumber == rhs.receiptNumber)||((this.receiptNumber!= null)&&this.receiptNumber.equals(rhs.receiptNumber))))&&((this.desc == rhs.desc)||((this.desc!= null)&&this.desc.equals(rhs.desc))))&&((this.termCode == rhs.termCode)||((this.termCode!= null)&&this.termCode.equals(rhs.termCode))))&&((this.expirationDate == rhs.expirationDate)||((this.expirationDate!= null)&&this.expirationDate.equals(rhs.expirationDate))));
     }
 
 }

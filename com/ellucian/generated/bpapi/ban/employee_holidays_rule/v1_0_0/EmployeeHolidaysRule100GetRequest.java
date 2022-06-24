@@ -51,7 +51,7 @@ public class EmployeeHolidaysRule100GetRequest {
      */
     @JsonProperty("ecls")
     @JsonPropertyDescription("Lineage reference object : ecls")
-    private Object ecls;
+    private String ecls;
     /**
      * Description
      * <p>
@@ -129,7 +129,7 @@ public class EmployeeHolidaysRule100GetRequest {
      * 
      */
     @JsonProperty("ecls")
-    public Object getEcls() {
+    public String getEcls() {
         return ecls;
     }
 
@@ -141,11 +141,11 @@ public class EmployeeHolidaysRule100GetRequest {
      * 
      */
     @JsonProperty("ecls")
-    public void setEcls(Object ecls) {
+    public void setEcls(String ecls) {
         this.ecls = ecls;
     }
 
-    public EmployeeHolidaysRule100GetRequest withEcls(Object ecls) {
+    public EmployeeHolidaysRule100GetRequest withEcls(String ecls) {
         this.ecls = ecls;
         return this;
     }

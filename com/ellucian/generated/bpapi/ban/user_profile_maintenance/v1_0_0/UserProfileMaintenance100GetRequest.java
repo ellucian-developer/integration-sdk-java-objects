@@ -28,7 +28,7 @@ public class UserProfileMaintenance100GetRequest {
      */
     @JsonProperty("userId")
     @JsonPropertyDescription("Lineage reference object : keyBlockUserId, Lookup lineage reference object : all_users")
-    private Object userId;
+    private String userId;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -40,7 +40,7 @@ public class UserProfileMaintenance100GetRequest {
      * 
      */
     @JsonProperty("userId")
-    public Object getUserId() {
+    public String getUserId() {
         return userId;
     }
 
@@ -52,11 +52,11 @@ public class UserProfileMaintenance100GetRequest {
      * 
      */
     @JsonProperty("userId")
-    public void setUserId(Object userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 
-    public UserProfileMaintenance100GetRequest withUserId(Object userId) {
+    public UserProfileMaintenance100GetRequest withUserId(String userId) {
         this.userId = userId;
         return this;
     }

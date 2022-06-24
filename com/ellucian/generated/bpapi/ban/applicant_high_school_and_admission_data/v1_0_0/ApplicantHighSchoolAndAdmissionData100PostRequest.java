@@ -93,7 +93,7 @@ public class ApplicantHighSchoolAndAdmissionData100PostRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : keyblckId")
-    private Object id;
+    private String id;
     /**
      * Advanced Placement/International Baccalaureate Courses
      * <p>
@@ -305,7 +305,7 @@ public class ApplicantHighSchoolAndAdmissionData100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -316,11 +316,11 @@ public class ApplicantHighSchoolAndAdmissionData100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public ApplicantHighSchoolAndAdmissionData100PostRequest withId(Object id) {
+    public ApplicantHighSchoolAndAdmissionData100PostRequest withId(String id) {
         this.id = id;
         return this;
     }

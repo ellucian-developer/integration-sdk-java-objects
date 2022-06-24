@@ -45,7 +45,7 @@ public class Summary {
      */
     @JsonProperty("dispsumImBudgetAmt")
     @JsonPropertyDescription("Lineage reference object : dispsumImBudgetAmt")
-    private Object dispsumImBudgetAmt;
+    private Double dispsumImBudgetAmt;
     /**
      * Resource
      * <p>
@@ -54,7 +54,7 @@ public class Summary {
      */
     @JsonProperty("dispsumResourceAmt")
     @JsonPropertyDescription("Lineage reference object : dispsumResourceAmt")
-    private Object dispsumResourceAmt;
+    private Double dispsumResourceAmt;
     /**
      * Budget Group
      * <p>
@@ -63,7 +63,7 @@ public class Summary {
      */
     @JsonProperty("dispsumBudgetGroup")
     @JsonPropertyDescription("Lineage reference object : dispsumBudgetGroup")
-    private Object dispsumBudgetGroup;
+    private String dispsumBudgetGroup;
     /**
      * Pell Award
      * <p>
@@ -72,7 +72,7 @@ public class Summary {
      */
     @JsonProperty("dispsumCrossoverPellAward")
     @JsonPropertyDescription("Lineage reference object : dispsumCrossoverPellAward")
-    private Object dispsumCrossoverPellAward;
+    private Double dispsumCrossoverPellAward;
     /**
      * Gross Need
      * <p>
@@ -81,7 +81,7 @@ public class Summary {
      */
     @JsonProperty("dispsumFmGrossNeed")
     @JsonPropertyDescription("Lineage reference object : dispsumFmGrossNeed")
-    private Object dispsumFmGrossNeed;
+    private Double dispsumFmGrossNeed;
     /**
      * Offered
      * <p>
@@ -90,7 +90,7 @@ public class Summary {
      */
     @JsonProperty("dispsumOfferAmt")
     @JsonPropertyDescription("Lineage reference object : dispsumOfferAmt")
-    private Object dispsumOfferAmt;
+    private Double dispsumOfferAmt;
     /**
      * Unmet Need
      * <p>
@@ -99,7 +99,7 @@ public class Summary {
      */
     @JsonProperty("dispsumFmUnmetNeed")
     @JsonPropertyDescription("Lineage reference object : dispsumFmUnmetNeed")
-    private Object dispsumFmUnmetNeed;
+    private Double dispsumFmUnmetNeed;
     /**
      * Crossover Aid Year
      * <p>
@@ -108,7 +108,7 @@ public class Summary {
      */
     @JsonProperty("dispsumCrossoverAidyCode")
     @JsonPropertyDescription("Lineage reference object : dispsumCrossoverAidyCode")
-    private Object dispsumCrossoverAidyCode;
+    private String dispsumCrossoverAidyCode;
     /**
      * EFC
      * <p>
@@ -117,7 +117,7 @@ public class Summary {
      */
     @JsonProperty("dispsumImEfc")
     @JsonPropertyDescription("Lineage reference object : dispsumImEfc")
-    private Object dispsumImEfc;
+    private Double dispsumImEfc;
     /**
      * Pell
      * <p>
@@ -126,14 +126,14 @@ public class Summary {
      */
     @JsonProperty("dispsumPellBudgetAmt")
     @JsonPropertyDescription("Lineage reference object : dispsumPellBudgetAmt")
-    private Object dispsumPellBudgetAmt;
+    private Double dispsumPellBudgetAmt;
     /**
      * Lineage reference object : dispsumBudgetGroupInd
      * 
      */
     @JsonProperty("dispsumBudgetGroupInd")
     @JsonPropertyDescription("Lineage reference object : dispsumBudgetGroupInd")
-    private Object dispsumBudgetGroupInd;
+    private String dispsumBudgetGroupInd;
     /**
      * Budget
      * <p>
@@ -142,14 +142,14 @@ public class Summary {
      */
     @JsonProperty("dispsumFmBudgetAmt")
     @JsonPropertyDescription("Lineage reference object : dispsumFmBudgetAmt")
-    private Object dispsumFmBudgetAmt;
+    private Double dispsumFmBudgetAmt;
     /**
      * Lineage reference object : dispsumPellEfc
      * 
      */
     @JsonProperty("dispsumPellEfc")
     @JsonPropertyDescription("Lineage reference object : dispsumPellEfc")
-    private Object dispsumPellEfc;
+    private Double dispsumPellEfc;
     /**
      * BBAYS Awarded
      * <p>
@@ -158,7 +158,7 @@ public class Summary {
      */
     @JsonProperty("dispsumBbayAwardedInd")
     @JsonPropertyDescription("Lineage reference object : dispsumBbayAwardedInd")
-    private Object dispsumBbayAwardedInd;
+    private String dispsumBbayAwardedInd;
     /**
      * Aid Period
      * <p>
@@ -167,14 +167,14 @@ public class Summary {
      */
     @JsonProperty("dispsumAprdCode")
     @JsonPropertyDescription("Lineage reference object : dispsumAprdCode")
-    private Object dispsumAprdCode;
+    private String dispsumAprdCode;
     /**
      * Lineage reference object : dispsumImGrossNeed
      * 
      */
     @JsonProperty("dispsumImGrossNeed")
     @JsonPropertyDescription("Lineage reference object : dispsumImGrossNeed")
-    private Object dispsumImGrossNeed;
+    private Double dispsumImGrossNeed;
     /**
      * Pell Aid Period
      * <p>
@@ -183,7 +183,7 @@ public class Summary {
      */
     @JsonProperty("dispsumAprdCodePell")
     @JsonPropertyDescription("Lineage reference object : dispsumAprdCodePell")
-    private Object dispsumAprdCodePell;
+    private String dispsumAprdCodePell;
     /**
      * FM
      * <p>
@@ -192,14 +192,14 @@ public class Summary {
      */
     @JsonProperty("dispsumFmEfc")
     @JsonPropertyDescription("Lineage reference object : dispsumFmEfc")
-    private Object dispsumFmEfc;
+    private Double dispsumFmEfc;
     /**
      * Lineage reference object : dispsumImUnmetNeed
      * 
      */
     @JsonProperty("dispsumImUnmetNeed")
     @JsonPropertyDescription("Lineage reference object : dispsumImUnmetNeed")
-    private Object dispsumImUnmetNeed;
+    private Double dispsumImUnmetNeed;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -210,7 +210,7 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumImBudgetAmt")
-    public Object getDispsumImBudgetAmt() {
+    public Double getDispsumImBudgetAmt() {
         return dispsumImBudgetAmt;
     }
 
@@ -221,11 +221,11 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumImBudgetAmt")
-    public void setDispsumImBudgetAmt(Object dispsumImBudgetAmt) {
+    public void setDispsumImBudgetAmt(Double dispsumImBudgetAmt) {
         this.dispsumImBudgetAmt = dispsumImBudgetAmt;
     }
 
-    public Summary withDispsumImBudgetAmt(Object dispsumImBudgetAmt) {
+    public Summary withDispsumImBudgetAmt(Double dispsumImBudgetAmt) {
         this.dispsumImBudgetAmt = dispsumImBudgetAmt;
         return this;
     }
@@ -237,7 +237,7 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumResourceAmt")
-    public Object getDispsumResourceAmt() {
+    public Double getDispsumResourceAmt() {
         return dispsumResourceAmt;
     }
 
@@ -248,11 +248,11 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumResourceAmt")
-    public void setDispsumResourceAmt(Object dispsumResourceAmt) {
+    public void setDispsumResourceAmt(Double dispsumResourceAmt) {
         this.dispsumResourceAmt = dispsumResourceAmt;
     }
 
-    public Summary withDispsumResourceAmt(Object dispsumResourceAmt) {
+    public Summary withDispsumResourceAmt(Double dispsumResourceAmt) {
         this.dispsumResourceAmt = dispsumResourceAmt;
         return this;
     }
@@ -264,7 +264,7 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumBudgetGroup")
-    public Object getDispsumBudgetGroup() {
+    public String getDispsumBudgetGroup() {
         return dispsumBudgetGroup;
     }
 
@@ -275,11 +275,11 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumBudgetGroup")
-    public void setDispsumBudgetGroup(Object dispsumBudgetGroup) {
+    public void setDispsumBudgetGroup(String dispsumBudgetGroup) {
         this.dispsumBudgetGroup = dispsumBudgetGroup;
     }
 
-    public Summary withDispsumBudgetGroup(Object dispsumBudgetGroup) {
+    public Summary withDispsumBudgetGroup(String dispsumBudgetGroup) {
         this.dispsumBudgetGroup = dispsumBudgetGroup;
         return this;
     }
@@ -291,7 +291,7 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumCrossoverPellAward")
-    public Object getDispsumCrossoverPellAward() {
+    public Double getDispsumCrossoverPellAward() {
         return dispsumCrossoverPellAward;
     }
 
@@ -302,11 +302,11 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumCrossoverPellAward")
-    public void setDispsumCrossoverPellAward(Object dispsumCrossoverPellAward) {
+    public void setDispsumCrossoverPellAward(Double dispsumCrossoverPellAward) {
         this.dispsumCrossoverPellAward = dispsumCrossoverPellAward;
     }
 
-    public Summary withDispsumCrossoverPellAward(Object dispsumCrossoverPellAward) {
+    public Summary withDispsumCrossoverPellAward(Double dispsumCrossoverPellAward) {
         this.dispsumCrossoverPellAward = dispsumCrossoverPellAward;
         return this;
     }
@@ -318,7 +318,7 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumFmGrossNeed")
-    public Object getDispsumFmGrossNeed() {
+    public Double getDispsumFmGrossNeed() {
         return dispsumFmGrossNeed;
     }
 
@@ -329,11 +329,11 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumFmGrossNeed")
-    public void setDispsumFmGrossNeed(Object dispsumFmGrossNeed) {
+    public void setDispsumFmGrossNeed(Double dispsumFmGrossNeed) {
         this.dispsumFmGrossNeed = dispsumFmGrossNeed;
     }
 
-    public Summary withDispsumFmGrossNeed(Object dispsumFmGrossNeed) {
+    public Summary withDispsumFmGrossNeed(Double dispsumFmGrossNeed) {
         this.dispsumFmGrossNeed = dispsumFmGrossNeed;
         return this;
     }
@@ -345,7 +345,7 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumOfferAmt")
-    public Object getDispsumOfferAmt() {
+    public Double getDispsumOfferAmt() {
         return dispsumOfferAmt;
     }
 
@@ -356,11 +356,11 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumOfferAmt")
-    public void setDispsumOfferAmt(Object dispsumOfferAmt) {
+    public void setDispsumOfferAmt(Double dispsumOfferAmt) {
         this.dispsumOfferAmt = dispsumOfferAmt;
     }
 
-    public Summary withDispsumOfferAmt(Object dispsumOfferAmt) {
+    public Summary withDispsumOfferAmt(Double dispsumOfferAmt) {
         this.dispsumOfferAmt = dispsumOfferAmt;
         return this;
     }
@@ -372,7 +372,7 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumFmUnmetNeed")
-    public Object getDispsumFmUnmetNeed() {
+    public Double getDispsumFmUnmetNeed() {
         return dispsumFmUnmetNeed;
     }
 
@@ -383,11 +383,11 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumFmUnmetNeed")
-    public void setDispsumFmUnmetNeed(Object dispsumFmUnmetNeed) {
+    public void setDispsumFmUnmetNeed(Double dispsumFmUnmetNeed) {
         this.dispsumFmUnmetNeed = dispsumFmUnmetNeed;
     }
 
-    public Summary withDispsumFmUnmetNeed(Object dispsumFmUnmetNeed) {
+    public Summary withDispsumFmUnmetNeed(Double dispsumFmUnmetNeed) {
         this.dispsumFmUnmetNeed = dispsumFmUnmetNeed;
         return this;
     }
@@ -399,7 +399,7 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumCrossoverAidyCode")
-    public Object getDispsumCrossoverAidyCode() {
+    public String getDispsumCrossoverAidyCode() {
         return dispsumCrossoverAidyCode;
     }
 
@@ -410,11 +410,11 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumCrossoverAidyCode")
-    public void setDispsumCrossoverAidyCode(Object dispsumCrossoverAidyCode) {
+    public void setDispsumCrossoverAidyCode(String dispsumCrossoverAidyCode) {
         this.dispsumCrossoverAidyCode = dispsumCrossoverAidyCode;
     }
 
-    public Summary withDispsumCrossoverAidyCode(Object dispsumCrossoverAidyCode) {
+    public Summary withDispsumCrossoverAidyCode(String dispsumCrossoverAidyCode) {
         this.dispsumCrossoverAidyCode = dispsumCrossoverAidyCode;
         return this;
     }
@@ -426,7 +426,7 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumImEfc")
-    public Object getDispsumImEfc() {
+    public Double getDispsumImEfc() {
         return dispsumImEfc;
     }
 
@@ -437,11 +437,11 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumImEfc")
-    public void setDispsumImEfc(Object dispsumImEfc) {
+    public void setDispsumImEfc(Double dispsumImEfc) {
         this.dispsumImEfc = dispsumImEfc;
     }
 
-    public Summary withDispsumImEfc(Object dispsumImEfc) {
+    public Summary withDispsumImEfc(Double dispsumImEfc) {
         this.dispsumImEfc = dispsumImEfc;
         return this;
     }
@@ -453,7 +453,7 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumPellBudgetAmt")
-    public Object getDispsumPellBudgetAmt() {
+    public Double getDispsumPellBudgetAmt() {
         return dispsumPellBudgetAmt;
     }
 
@@ -464,11 +464,11 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumPellBudgetAmt")
-    public void setDispsumPellBudgetAmt(Object dispsumPellBudgetAmt) {
+    public void setDispsumPellBudgetAmt(Double dispsumPellBudgetAmt) {
         this.dispsumPellBudgetAmt = dispsumPellBudgetAmt;
     }
 
-    public Summary withDispsumPellBudgetAmt(Object dispsumPellBudgetAmt) {
+    public Summary withDispsumPellBudgetAmt(Double dispsumPellBudgetAmt) {
         this.dispsumPellBudgetAmt = dispsumPellBudgetAmt;
         return this;
     }
@@ -478,7 +478,7 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumBudgetGroupInd")
-    public Object getDispsumBudgetGroupInd() {
+    public String getDispsumBudgetGroupInd() {
         return dispsumBudgetGroupInd;
     }
 
@@ -487,11 +487,11 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumBudgetGroupInd")
-    public void setDispsumBudgetGroupInd(Object dispsumBudgetGroupInd) {
+    public void setDispsumBudgetGroupInd(String dispsumBudgetGroupInd) {
         this.dispsumBudgetGroupInd = dispsumBudgetGroupInd;
     }
 
-    public Summary withDispsumBudgetGroupInd(Object dispsumBudgetGroupInd) {
+    public Summary withDispsumBudgetGroupInd(String dispsumBudgetGroupInd) {
         this.dispsumBudgetGroupInd = dispsumBudgetGroupInd;
         return this;
     }
@@ -503,7 +503,7 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumFmBudgetAmt")
-    public Object getDispsumFmBudgetAmt() {
+    public Double getDispsumFmBudgetAmt() {
         return dispsumFmBudgetAmt;
     }
 
@@ -514,11 +514,11 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumFmBudgetAmt")
-    public void setDispsumFmBudgetAmt(Object dispsumFmBudgetAmt) {
+    public void setDispsumFmBudgetAmt(Double dispsumFmBudgetAmt) {
         this.dispsumFmBudgetAmt = dispsumFmBudgetAmt;
     }
 
-    public Summary withDispsumFmBudgetAmt(Object dispsumFmBudgetAmt) {
+    public Summary withDispsumFmBudgetAmt(Double dispsumFmBudgetAmt) {
         this.dispsumFmBudgetAmt = dispsumFmBudgetAmt;
         return this;
     }
@@ -528,7 +528,7 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumPellEfc")
-    public Object getDispsumPellEfc() {
+    public Double getDispsumPellEfc() {
         return dispsumPellEfc;
     }
 
@@ -537,11 +537,11 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumPellEfc")
-    public void setDispsumPellEfc(Object dispsumPellEfc) {
+    public void setDispsumPellEfc(Double dispsumPellEfc) {
         this.dispsumPellEfc = dispsumPellEfc;
     }
 
-    public Summary withDispsumPellEfc(Object dispsumPellEfc) {
+    public Summary withDispsumPellEfc(Double dispsumPellEfc) {
         this.dispsumPellEfc = dispsumPellEfc;
         return this;
     }
@@ -553,7 +553,7 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumBbayAwardedInd")
-    public Object getDispsumBbayAwardedInd() {
+    public String getDispsumBbayAwardedInd() {
         return dispsumBbayAwardedInd;
     }
 
@@ -564,11 +564,11 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumBbayAwardedInd")
-    public void setDispsumBbayAwardedInd(Object dispsumBbayAwardedInd) {
+    public void setDispsumBbayAwardedInd(String dispsumBbayAwardedInd) {
         this.dispsumBbayAwardedInd = dispsumBbayAwardedInd;
     }
 
-    public Summary withDispsumBbayAwardedInd(Object dispsumBbayAwardedInd) {
+    public Summary withDispsumBbayAwardedInd(String dispsumBbayAwardedInd) {
         this.dispsumBbayAwardedInd = dispsumBbayAwardedInd;
         return this;
     }
@@ -580,7 +580,7 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumAprdCode")
-    public Object getDispsumAprdCode() {
+    public String getDispsumAprdCode() {
         return dispsumAprdCode;
     }
 
@@ -591,11 +591,11 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumAprdCode")
-    public void setDispsumAprdCode(Object dispsumAprdCode) {
+    public void setDispsumAprdCode(String dispsumAprdCode) {
         this.dispsumAprdCode = dispsumAprdCode;
     }
 
-    public Summary withDispsumAprdCode(Object dispsumAprdCode) {
+    public Summary withDispsumAprdCode(String dispsumAprdCode) {
         this.dispsumAprdCode = dispsumAprdCode;
         return this;
     }
@@ -605,7 +605,7 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumImGrossNeed")
-    public Object getDispsumImGrossNeed() {
+    public Double getDispsumImGrossNeed() {
         return dispsumImGrossNeed;
     }
 
@@ -614,11 +614,11 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumImGrossNeed")
-    public void setDispsumImGrossNeed(Object dispsumImGrossNeed) {
+    public void setDispsumImGrossNeed(Double dispsumImGrossNeed) {
         this.dispsumImGrossNeed = dispsumImGrossNeed;
     }
 
-    public Summary withDispsumImGrossNeed(Object dispsumImGrossNeed) {
+    public Summary withDispsumImGrossNeed(Double dispsumImGrossNeed) {
         this.dispsumImGrossNeed = dispsumImGrossNeed;
         return this;
     }
@@ -630,7 +630,7 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumAprdCodePell")
-    public Object getDispsumAprdCodePell() {
+    public String getDispsumAprdCodePell() {
         return dispsumAprdCodePell;
     }
 
@@ -641,11 +641,11 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumAprdCodePell")
-    public void setDispsumAprdCodePell(Object dispsumAprdCodePell) {
+    public void setDispsumAprdCodePell(String dispsumAprdCodePell) {
         this.dispsumAprdCodePell = dispsumAprdCodePell;
     }
 
-    public Summary withDispsumAprdCodePell(Object dispsumAprdCodePell) {
+    public Summary withDispsumAprdCodePell(String dispsumAprdCodePell) {
         this.dispsumAprdCodePell = dispsumAprdCodePell;
         return this;
     }
@@ -657,7 +657,7 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumFmEfc")
-    public Object getDispsumFmEfc() {
+    public Double getDispsumFmEfc() {
         return dispsumFmEfc;
     }
 
@@ -668,11 +668,11 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumFmEfc")
-    public void setDispsumFmEfc(Object dispsumFmEfc) {
+    public void setDispsumFmEfc(Double dispsumFmEfc) {
         this.dispsumFmEfc = dispsumFmEfc;
     }
 
-    public Summary withDispsumFmEfc(Object dispsumFmEfc) {
+    public Summary withDispsumFmEfc(Double dispsumFmEfc) {
         this.dispsumFmEfc = dispsumFmEfc;
         return this;
     }
@@ -682,7 +682,7 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumImUnmetNeed")
-    public Object getDispsumImUnmetNeed() {
+    public Double getDispsumImUnmetNeed() {
         return dispsumImUnmetNeed;
     }
 
@@ -691,11 +691,11 @@ public class Summary {
      * 
      */
     @JsonProperty("dispsumImUnmetNeed")
-    public void setDispsumImUnmetNeed(Object dispsumImUnmetNeed) {
+    public void setDispsumImUnmetNeed(Double dispsumImUnmetNeed) {
         this.dispsumImUnmetNeed = dispsumImUnmetNeed;
     }
 
-    public Summary withDispsumImUnmetNeed(Object dispsumImUnmetNeed) {
+    public Summary withDispsumImUnmetNeed(Double dispsumImUnmetNeed) {
         this.dispsumImUnmetNeed = dispsumImUnmetNeed;
         return this;
     }

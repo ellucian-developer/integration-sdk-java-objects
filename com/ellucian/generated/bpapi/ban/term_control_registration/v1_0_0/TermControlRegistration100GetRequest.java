@@ -27,7 +27,7 @@ public class TermControlRegistration100GetRequest {
      */
     @JsonProperty("xxxxxxxTermCode")
     @JsonPropertyDescription("Lineage reference object : xxxxxxxTermCode, Lookup lineage reference object : stvterm")
-    private Object xxxxxxxTermCode;
+    private String xxxxxxxTermCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -38,7 +38,7 @@ public class TermControlRegistration100GetRequest {
      * 
      */
     @JsonProperty("xxxxxxxTermCode")
-    public Object getXxxxxxxTermCode() {
+    public String getXxxxxxxTermCode() {
         return xxxxxxxTermCode;
     }
 
@@ -49,11 +49,11 @@ public class TermControlRegistration100GetRequest {
      * 
      */
     @JsonProperty("xxxxxxxTermCode")
-    public void setXxxxxxxTermCode(Object xxxxxxxTermCode) {
+    public void setXxxxxxxTermCode(String xxxxxxxTermCode) {
         this.xxxxxxxTermCode = xxxxxxxTermCode;
     }
 
-    public TermControlRegistration100GetRequest withXxxxxxxTermCode(Object xxxxxxxTermCode) {
+    public TermControlRegistration100GetRequest withXxxxxxxTermCode(String xxxxxxxTermCode) {
         this.xxxxxxxTermCode = xxxxxxxTermCode;
         return this;
     }

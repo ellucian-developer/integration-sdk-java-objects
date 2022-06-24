@@ -36,7 +36,7 @@ public class DisplayOption {
      */
     @JsonProperty("dataExtractPromptCb")
     @JsonPropertyDescription("Lineage reference object : dataExtractPromptCb")
-    private Object dataExtractPromptCb;
+    private String dataExtractPromptCb;
     /**
      * Display Additional Deceased Warning
      * <p>
@@ -45,7 +45,7 @@ public class DisplayOption {
      */
     @JsonProperty("deceasedPromptCb")
     @JsonPropertyDescription("Lineage reference object : deceasedPromptCb")
-    private Object deceasedPromptCb;
+    private String deceasedPromptCb;
     /**
      * Display Release Number on Title Bar
      * <p>
@@ -54,7 +54,7 @@ public class DisplayOption {
      */
     @JsonProperty("releaseCb")
     @JsonPropertyDescription("Lineage reference object : releaseCb")
-    private Object releaseCb;
+    private String releaseCb;
     /**
      * Display Form Name on Title Bar
      * <p>
@@ -63,7 +63,7 @@ public class DisplayOption {
      */
     @JsonProperty("formnameCb")
     @JsonPropertyDescription("Lineage reference object : formnameCb")
-    private Object formnameCb;
+    private String formnameCb;
     /**
      * Display Duplicate SSN/SIN/TIN Warning
      * <p>
@@ -72,14 +72,14 @@ public class DisplayOption {
      */
     @JsonProperty("duplicateSsnCb")
     @JsonPropertyDescription("Lineage reference object : duplicateSsnCb")
-    private Object duplicateSsnCb;
+    private String duplicateSsnCb;
     /**
      * Lineage reference object : enableBtnAccessibilityModeCb
      * 
      */
     @JsonProperty("enableBtnAccessibilityModeCb")
     @JsonPropertyDescription("Lineage reference object : enableBtnAccessibilityModeCb")
-    private Object enableBtnAccessibilityModeCb;
+    private String enableBtnAccessibilityModeCb;
     /**
      * Display Additional Confidential Warning
      * <p>
@@ -88,7 +88,7 @@ public class DisplayOption {
      */
     @JsonProperty("confidentialPromptCb")
     @JsonPropertyDescription("Lineage reference object : confidentialPromptCb")
-    private Object confidentialPromptCb;
+    private String confidentialPromptCb;
     /**
      * Display Database Instance on Title Bar
      * <p>
@@ -97,7 +97,7 @@ public class DisplayOption {
      */
     @JsonProperty("dbaseInstCb")
     @JsonPropertyDescription("Lineage reference object : dbaseInstCb")
-    private Object dbaseInstCb;
+    private String dbaseInstCb;
     /**
      * Display Form Name on Menu
      * <p>
@@ -106,7 +106,7 @@ public class DisplayOption {
      */
     @JsonProperty("formnameDisplayInd")
     @JsonPropertyDescription("Lineage reference object : formnameDisplayInd")
-    private Object formnameDisplayInd;
+    private String formnameDisplayInd;
     /**
      * Prompt Before Exiting Banner
      * <p>
@@ -115,7 +115,7 @@ public class DisplayOption {
      */
     @JsonProperty("exitPromptCb")
     @JsonPropertyDescription("Lineage reference object : exitPromptCb")
-    private Object exitPromptCb;
+    private String exitPromptCb;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -126,7 +126,7 @@ public class DisplayOption {
      * 
      */
     @JsonProperty("dataExtractPromptCb")
-    public Object getDataExtractPromptCb() {
+    public String getDataExtractPromptCb() {
         return dataExtractPromptCb;
     }
 
@@ -137,11 +137,11 @@ public class DisplayOption {
      * 
      */
     @JsonProperty("dataExtractPromptCb")
-    public void setDataExtractPromptCb(Object dataExtractPromptCb) {
+    public void setDataExtractPromptCb(String dataExtractPromptCb) {
         this.dataExtractPromptCb = dataExtractPromptCb;
     }
 
-    public DisplayOption withDataExtractPromptCb(Object dataExtractPromptCb) {
+    public DisplayOption withDataExtractPromptCb(String dataExtractPromptCb) {
         this.dataExtractPromptCb = dataExtractPromptCb;
         return this;
     }
@@ -153,7 +153,7 @@ public class DisplayOption {
      * 
      */
     @JsonProperty("deceasedPromptCb")
-    public Object getDeceasedPromptCb() {
+    public String getDeceasedPromptCb() {
         return deceasedPromptCb;
     }
 
@@ -164,11 +164,11 @@ public class DisplayOption {
      * 
      */
     @JsonProperty("deceasedPromptCb")
-    public void setDeceasedPromptCb(Object deceasedPromptCb) {
+    public void setDeceasedPromptCb(String deceasedPromptCb) {
         this.deceasedPromptCb = deceasedPromptCb;
     }
 
-    public DisplayOption withDeceasedPromptCb(Object deceasedPromptCb) {
+    public DisplayOption withDeceasedPromptCb(String deceasedPromptCb) {
         this.deceasedPromptCb = deceasedPromptCb;
         return this;
     }
@@ -180,7 +180,7 @@ public class DisplayOption {
      * 
      */
     @JsonProperty("releaseCb")
-    public Object getReleaseCb() {
+    public String getReleaseCb() {
         return releaseCb;
     }
 
@@ -191,11 +191,11 @@ public class DisplayOption {
      * 
      */
     @JsonProperty("releaseCb")
-    public void setReleaseCb(Object releaseCb) {
+    public void setReleaseCb(String releaseCb) {
         this.releaseCb = releaseCb;
     }
 
-    public DisplayOption withReleaseCb(Object releaseCb) {
+    public DisplayOption withReleaseCb(String releaseCb) {
         this.releaseCb = releaseCb;
         return this;
     }
@@ -207,7 +207,7 @@ public class DisplayOption {
      * 
      */
     @JsonProperty("formnameCb")
-    public Object getFormnameCb() {
+    public String getFormnameCb() {
         return formnameCb;
     }
 
@@ -218,11 +218,11 @@ public class DisplayOption {
      * 
      */
     @JsonProperty("formnameCb")
-    public void setFormnameCb(Object formnameCb) {
+    public void setFormnameCb(String formnameCb) {
         this.formnameCb = formnameCb;
     }
 
-    public DisplayOption withFormnameCb(Object formnameCb) {
+    public DisplayOption withFormnameCb(String formnameCb) {
         this.formnameCb = formnameCb;
         return this;
     }
@@ -234,7 +234,7 @@ public class DisplayOption {
      * 
      */
     @JsonProperty("duplicateSsnCb")
-    public Object getDuplicateSsnCb() {
+    public String getDuplicateSsnCb() {
         return duplicateSsnCb;
     }
 
@@ -245,11 +245,11 @@ public class DisplayOption {
      * 
      */
     @JsonProperty("duplicateSsnCb")
-    public void setDuplicateSsnCb(Object duplicateSsnCb) {
+    public void setDuplicateSsnCb(String duplicateSsnCb) {
         this.duplicateSsnCb = duplicateSsnCb;
     }
 
-    public DisplayOption withDuplicateSsnCb(Object duplicateSsnCb) {
+    public DisplayOption withDuplicateSsnCb(String duplicateSsnCb) {
         this.duplicateSsnCb = duplicateSsnCb;
         return this;
     }
@@ -259,7 +259,7 @@ public class DisplayOption {
      * 
      */
     @JsonProperty("enableBtnAccessibilityModeCb")
-    public Object getEnableBtnAccessibilityModeCb() {
+    public String getEnableBtnAccessibilityModeCb() {
         return enableBtnAccessibilityModeCb;
     }
 
@@ -268,11 +268,11 @@ public class DisplayOption {
      * 
      */
     @JsonProperty("enableBtnAccessibilityModeCb")
-    public void setEnableBtnAccessibilityModeCb(Object enableBtnAccessibilityModeCb) {
+    public void setEnableBtnAccessibilityModeCb(String enableBtnAccessibilityModeCb) {
         this.enableBtnAccessibilityModeCb = enableBtnAccessibilityModeCb;
     }
 
-    public DisplayOption withEnableBtnAccessibilityModeCb(Object enableBtnAccessibilityModeCb) {
+    public DisplayOption withEnableBtnAccessibilityModeCb(String enableBtnAccessibilityModeCb) {
         this.enableBtnAccessibilityModeCb = enableBtnAccessibilityModeCb;
         return this;
     }
@@ -284,7 +284,7 @@ public class DisplayOption {
      * 
      */
     @JsonProperty("confidentialPromptCb")
-    public Object getConfidentialPromptCb() {
+    public String getConfidentialPromptCb() {
         return confidentialPromptCb;
     }
 
@@ -295,11 +295,11 @@ public class DisplayOption {
      * 
      */
     @JsonProperty("confidentialPromptCb")
-    public void setConfidentialPromptCb(Object confidentialPromptCb) {
+    public void setConfidentialPromptCb(String confidentialPromptCb) {
         this.confidentialPromptCb = confidentialPromptCb;
     }
 
-    public DisplayOption withConfidentialPromptCb(Object confidentialPromptCb) {
+    public DisplayOption withConfidentialPromptCb(String confidentialPromptCb) {
         this.confidentialPromptCb = confidentialPromptCb;
         return this;
     }
@@ -311,7 +311,7 @@ public class DisplayOption {
      * 
      */
     @JsonProperty("dbaseInstCb")
-    public Object getDbaseInstCb() {
+    public String getDbaseInstCb() {
         return dbaseInstCb;
     }
 
@@ -322,11 +322,11 @@ public class DisplayOption {
      * 
      */
     @JsonProperty("dbaseInstCb")
-    public void setDbaseInstCb(Object dbaseInstCb) {
+    public void setDbaseInstCb(String dbaseInstCb) {
         this.dbaseInstCb = dbaseInstCb;
     }
 
-    public DisplayOption withDbaseInstCb(Object dbaseInstCb) {
+    public DisplayOption withDbaseInstCb(String dbaseInstCb) {
         this.dbaseInstCb = dbaseInstCb;
         return this;
     }
@@ -338,7 +338,7 @@ public class DisplayOption {
      * 
      */
     @JsonProperty("formnameDisplayInd")
-    public Object getFormnameDisplayInd() {
+    public String getFormnameDisplayInd() {
         return formnameDisplayInd;
     }
 
@@ -349,11 +349,11 @@ public class DisplayOption {
      * 
      */
     @JsonProperty("formnameDisplayInd")
-    public void setFormnameDisplayInd(Object formnameDisplayInd) {
+    public void setFormnameDisplayInd(String formnameDisplayInd) {
         this.formnameDisplayInd = formnameDisplayInd;
     }
 
-    public DisplayOption withFormnameDisplayInd(Object formnameDisplayInd) {
+    public DisplayOption withFormnameDisplayInd(String formnameDisplayInd) {
         this.formnameDisplayInd = formnameDisplayInd;
         return this;
     }
@@ -365,7 +365,7 @@ public class DisplayOption {
      * 
      */
     @JsonProperty("exitPromptCb")
-    public Object getExitPromptCb() {
+    public String getExitPromptCb() {
         return exitPromptCb;
     }
 
@@ -376,11 +376,11 @@ public class DisplayOption {
      * 
      */
     @JsonProperty("exitPromptCb")
-    public void setExitPromptCb(Object exitPromptCb) {
+    public void setExitPromptCb(String exitPromptCb) {
         this.exitPromptCb = exitPromptCb;
     }
 
-    public DisplayOption withExitPromptCb(Object exitPromptCb) {
+    public DisplayOption withExitPromptCb(String exitPromptCb) {
         this.exitPromptCb = exitPromptCb;
         return this;
     }

@@ -176,7 +176,7 @@ public class PriorCollegePriorCollegeAndDegree100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Official Transcript
      * <p>
@@ -700,7 +700,7 @@ public class PriorCollegePriorCollegeAndDegree100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -711,11 +711,11 @@ public class PriorCollegePriorCollegeAndDegree100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public PriorCollegePriorCollegeAndDegree100PutRequest withId(Object id) {
+    public PriorCollegePriorCollegeAndDegree100PutRequest withId(String id) {
         this.id = id;
         return this;
     }

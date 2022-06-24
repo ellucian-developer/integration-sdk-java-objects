@@ -70,7 +70,7 @@ public class EmployeeClassRuleEligibleEarnings100GetRequest {
      */
     @JsonProperty("ecls")
     @JsonPropertyDescription("Lineage reference object : ecls")
-    private Object ecls;
+    private String ecls;
     /**
      * Lineage reference object : PTREERN_ACCRUE_SENIORITY_IND
      * 
@@ -222,7 +222,7 @@ public class EmployeeClassRuleEligibleEarnings100GetRequest {
      * 
      */
     @JsonProperty("ecls")
-    public Object getEcls() {
+    public String getEcls() {
         return ecls;
     }
 
@@ -234,11 +234,11 @@ public class EmployeeClassRuleEligibleEarnings100GetRequest {
      * 
      */
     @JsonProperty("ecls")
-    public void setEcls(Object ecls) {
+    public void setEcls(String ecls) {
         this.ecls = ecls;
     }
 
-    public EmployeeClassRuleEligibleEarnings100GetRequest withEcls(Object ecls) {
+    public EmployeeClassRuleEligibleEarnings100GetRequest withEcls(String ecls) {
         this.ecls = ecls;
         return this;
     }

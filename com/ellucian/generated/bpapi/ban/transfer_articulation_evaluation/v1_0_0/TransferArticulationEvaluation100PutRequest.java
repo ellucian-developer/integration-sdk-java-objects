@@ -156,7 +156,7 @@ public class TransferArticulationEvaluation100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Transfer Grade
      * <p>
@@ -174,7 +174,7 @@ public class TransferArticulationEvaluation100PutRequest {
      */
     @JsonProperty("keyblocSbgiCode")
     @JsonPropertyDescription("Lineage reference object : keyblocSbgiCode")
-    private Object keyblocSbgiCode;
+    private String keyblocSbgiCode;
     /**
      * Transfer Title
      * <p>
@@ -191,7 +191,7 @@ public class TransferArticulationEvaluation100PutRequest {
      */
     @JsonProperty("keyblocProgram")
     @JsonPropertyDescription("Lineage reference object : keyblocProgram")
-    private Object keyblocProgram;
+    private String keyblocProgram;
     /**
      * Equivalent Subject
      * <p>
@@ -606,7 +606,7 @@ public class TransferArticulationEvaluation100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -617,11 +617,11 @@ public class TransferArticulationEvaluation100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public TransferArticulationEvaluation100PutRequest withId(Object id) {
+    public TransferArticulationEvaluation100PutRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -660,7 +660,7 @@ public class TransferArticulationEvaluation100PutRequest {
      * 
      */
     @JsonProperty("keyblocSbgiCode")
-    public Object getKeyblocSbgiCode() {
+    public String getKeyblocSbgiCode() {
         return keyblocSbgiCode;
     }
 
@@ -671,11 +671,11 @@ public class TransferArticulationEvaluation100PutRequest {
      * 
      */
     @JsonProperty("keyblocSbgiCode")
-    public void setKeyblocSbgiCode(Object keyblocSbgiCode) {
+    public void setKeyblocSbgiCode(String keyblocSbgiCode) {
         this.keyblocSbgiCode = keyblocSbgiCode;
     }
 
-    public TransferArticulationEvaluation100PutRequest withKeyblocSbgiCode(Object keyblocSbgiCode) {
+    public TransferArticulationEvaluation100PutRequest withKeyblocSbgiCode(String keyblocSbgiCode) {
         this.keyblocSbgiCode = keyblocSbgiCode;
         return this;
     }
@@ -714,7 +714,7 @@ public class TransferArticulationEvaluation100PutRequest {
      * 
      */
     @JsonProperty("keyblocProgram")
-    public Object getKeyblocProgram() {
+    public String getKeyblocProgram() {
         return keyblocProgram;
     }
 
@@ -725,11 +725,11 @@ public class TransferArticulationEvaluation100PutRequest {
      * 
      */
     @JsonProperty("keyblocProgram")
-    public void setKeyblocProgram(Object keyblocProgram) {
+    public void setKeyblocProgram(String keyblocProgram) {
         this.keyblocProgram = keyblocProgram;
     }
 
-    public TransferArticulationEvaluation100PutRequest withKeyblocProgram(Object keyblocProgram) {
+    public TransferArticulationEvaluation100PutRequest withKeyblocProgram(String keyblocProgram) {
         this.keyblocProgram = keyblocProgram;
         return this;
     }

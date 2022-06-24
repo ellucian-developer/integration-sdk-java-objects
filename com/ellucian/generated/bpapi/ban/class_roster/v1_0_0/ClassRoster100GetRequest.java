@@ -30,7 +30,7 @@ public class ClassRoster100GetRequest {
      */
     @JsonProperty("ssbsectCrnt")
     @JsonPropertyDescription("Lineage reference object : ssbsectCrnt")
-    private Object ssbsectCrnt;
+    private String ssbsectCrnt;
     /**
      * Degree Award Status
      * <p>
@@ -39,7 +39,7 @@ public class ClassRoster100GetRequest {
      */
     @JsonProperty("ssbsectDegsAwrdInd")
     @JsonPropertyDescription("Lineage reference object : ssbsectDegsAwrdInd")
-    private Object ssbsectDegsAwrdInd;
+    private String ssbsectDegsAwrdInd;
     /**
      * Term
      * <p>
@@ -48,7 +48,7 @@ public class ClassRoster100GetRequest {
      */
     @JsonProperty("ssbsectTermCodet")
     @JsonPropertyDescription("Lineage reference object : ssbsectTermCodet, Lookup lineage reference object : stvterm")
-    private Object ssbsectTermCodet;
+    private String ssbsectTermCodet;
     /**
      * Roll
      * <p>
@@ -57,7 +57,7 @@ public class ClassRoster100GetRequest {
      */
     @JsonProperty("rollIndicator")
     @JsonPropertyDescription("Lineage reference object : rollIndicator")
-    private Object rollIndicator;
+    private String rollIndicator;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -68,7 +68,7 @@ public class ClassRoster100GetRequest {
      * 
      */
     @JsonProperty("ssbsectCrnt")
-    public Object getSsbsectCrnt() {
+    public String getSsbsectCrnt() {
         return ssbsectCrnt;
     }
 
@@ -79,11 +79,11 @@ public class ClassRoster100GetRequest {
      * 
      */
     @JsonProperty("ssbsectCrnt")
-    public void setSsbsectCrnt(Object ssbsectCrnt) {
+    public void setSsbsectCrnt(String ssbsectCrnt) {
         this.ssbsectCrnt = ssbsectCrnt;
     }
 
-    public ClassRoster100GetRequest withSsbsectCrnt(Object ssbsectCrnt) {
+    public ClassRoster100GetRequest withSsbsectCrnt(String ssbsectCrnt) {
         this.ssbsectCrnt = ssbsectCrnt;
         return this;
     }
@@ -95,7 +95,7 @@ public class ClassRoster100GetRequest {
      * 
      */
     @JsonProperty("ssbsectDegsAwrdInd")
-    public Object getSsbsectDegsAwrdInd() {
+    public String getSsbsectDegsAwrdInd() {
         return ssbsectDegsAwrdInd;
     }
 
@@ -106,11 +106,11 @@ public class ClassRoster100GetRequest {
      * 
      */
     @JsonProperty("ssbsectDegsAwrdInd")
-    public void setSsbsectDegsAwrdInd(Object ssbsectDegsAwrdInd) {
+    public void setSsbsectDegsAwrdInd(String ssbsectDegsAwrdInd) {
         this.ssbsectDegsAwrdInd = ssbsectDegsAwrdInd;
     }
 
-    public ClassRoster100GetRequest withSsbsectDegsAwrdInd(Object ssbsectDegsAwrdInd) {
+    public ClassRoster100GetRequest withSsbsectDegsAwrdInd(String ssbsectDegsAwrdInd) {
         this.ssbsectDegsAwrdInd = ssbsectDegsAwrdInd;
         return this;
     }
@@ -122,7 +122,7 @@ public class ClassRoster100GetRequest {
      * 
      */
     @JsonProperty("ssbsectTermCodet")
-    public Object getSsbsectTermCodet() {
+    public String getSsbsectTermCodet() {
         return ssbsectTermCodet;
     }
 
@@ -133,11 +133,11 @@ public class ClassRoster100GetRequest {
      * 
      */
     @JsonProperty("ssbsectTermCodet")
-    public void setSsbsectTermCodet(Object ssbsectTermCodet) {
+    public void setSsbsectTermCodet(String ssbsectTermCodet) {
         this.ssbsectTermCodet = ssbsectTermCodet;
     }
 
-    public ClassRoster100GetRequest withSsbsectTermCodet(Object ssbsectTermCodet) {
+    public ClassRoster100GetRequest withSsbsectTermCodet(String ssbsectTermCodet) {
         this.ssbsectTermCodet = ssbsectTermCodet;
         return this;
     }
@@ -149,7 +149,7 @@ public class ClassRoster100GetRequest {
      * 
      */
     @JsonProperty("rollIndicator")
-    public Object getRollIndicator() {
+    public String getRollIndicator() {
         return rollIndicator;
     }
 
@@ -160,11 +160,11 @@ public class ClassRoster100GetRequest {
      * 
      */
     @JsonProperty("rollIndicator")
-    public void setRollIndicator(Object rollIndicator) {
+    public void setRollIndicator(String rollIndicator) {
         this.rollIndicator = rollIndicator;
     }
 
-    public ClassRoster100GetRequest withRollIndicator(Object rollIndicator) {
+    public ClassRoster100GetRequest withRollIndicator(String rollIndicator) {
         this.rollIndicator = rollIndicator;
         return this;
     }

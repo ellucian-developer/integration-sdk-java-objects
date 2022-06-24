@@ -51,7 +51,7 @@ public class EmployeeNewHire100PutRequest {
      */
     @JsonProperty("confirmedReDate")
     @JsonPropertyDescription("Lineage reference object : confirmedReDate")
-    private Object confirmedReDate;
+    private Date confirmedReDate;
     /**
      * Last Name Prefix
      * <p>
@@ -60,7 +60,7 @@ public class EmployeeNewHire100PutRequest {
      */
     @JsonProperty("surnamePrefix")
     @JsonPropertyDescription("Lineage reference object : surnamePrefix")
-    private Object surnamePrefix;
+    private String surnamePrefix;
     /**
      * Home Department COA
      * <p>
@@ -70,7 +70,7 @@ public class EmployeeNewHire100PutRequest {
      */
     @JsonProperty("pebemplCoasCodeHome")
     @JsonPropertyDescription("Lineage reference object : pebemplCoasCodeHome")
-    private Object pebemplCoasCodeHome;
+    private String pebemplCoasCodeHome;
     /**
      * Change Reason
      * <p>
@@ -79,7 +79,7 @@ public class EmployeeNewHire100PutRequest {
      */
     @JsonProperty("jcreCode")
     @JsonPropertyDescription("Lineage reference object : jcreCode")
-    private Object jcreCode;
+    private String jcreCode;
     /**
      * Prefix
      * <p>
@@ -88,7 +88,7 @@ public class EmployeeNewHire100PutRequest {
      */
     @JsonProperty("prefix")
     @JsonPropertyDescription("Lineage reference object : prefix")
-    private Object prefix;
+    private String prefix;
     /**
      * Job Type
      * <p>
@@ -98,7 +98,7 @@ public class EmployeeNewHire100PutRequest {
      */
     @JsonProperty("contractType")
     @JsonPropertyDescription("Lineage reference object : contractType")
-    private Object contractType;
+    private String contractType;
     /**
      * Deferred Pay
      * <p>
@@ -107,7 +107,7 @@ public class EmployeeNewHire100PutRequest {
      */
     @JsonProperty("deferPay")
     @JsonPropertyDescription("Lineage reference object : deferPay")
-    private Object deferPay;
+    private String deferPay;
     /**
      * Suffix
      * <p>
@@ -116,7 +116,7 @@ public class EmployeeNewHire100PutRequest {
      */
     @JsonProperty("suffix")
     @JsonPropertyDescription("Lineage reference object : suffix")
-    private Object suffix;
+    private String suffix;
     /**
      * Title
      * <p>
@@ -126,7 +126,7 @@ public class EmployeeNewHire100PutRequest {
      */
     @JsonProperty("title")
     @JsonPropertyDescription("Lineage reference object : jobsTitle")
-    private Object title;
+    private String title;
     /**
      * Ethnicity
      * <p>
@@ -135,7 +135,7 @@ public class EmployeeNewHire100PutRequest {
      */
     @JsonProperty("ethnCode")
     @JsonPropertyDescription("Lineage reference object : ethnCode, Lookup lineage reference object : stvethn")
-    private Object ethnCode;
+    private String ethnCode;
     /**
      * Position
      * <p>
@@ -145,7 +145,7 @@ public class EmployeeNewHire100PutRequest {
      */
     @JsonProperty("posn")
     @JsonPropertyDescription("Lineage reference object : posn")
-    private Object posn;
+    private String posn;
     /**
      * Benefit Category
      * <p>
@@ -155,7 +155,7 @@ public class EmployeeNewHire100PutRequest {
      */
     @JsonProperty("pebemplBcatCode")
     @JsonPropertyDescription("Lineage reference object : pebemplBcatCode, Lookup lineage reference object : ptrecbc,ptrbcat")
-    private Object pebemplBcatCode;
+    private String pebemplBcatCode;
     /**
      * Address and Telephone
      * <p>
@@ -174,7 +174,7 @@ public class EmployeeNewHire100PutRequest {
      */
     @JsonProperty("pebemplFirstHireDate")
     @JsonPropertyDescription("Lineage reference object : pebemplFirstHireDate")
-    private Object pebemplFirstHireDate;
+    private Date pebemplFirstHireDate;
     /**
      * Begin Date
      * <p>
@@ -184,7 +184,7 @@ public class EmployeeNewHire100PutRequest {
      */
     @JsonProperty("beginDate")
     @JsonPropertyDescription("Lineage reference object : beginDate")
-    private Object beginDate;
+    private Date beginDate;
     /**
      * Name Type
      * <p>
@@ -193,7 +193,7 @@ public class EmployeeNewHire100PutRequest {
      */
     @JsonProperty("ntypCode")
     @JsonPropertyDescription("Lineage reference object : ntypCode, Lookup lineage reference object : gtvntyp")
-    private Object ntypCode;
+    private String ntypCode;
     /**
      * Suffix
      * <p>
@@ -203,7 +203,7 @@ public class EmployeeNewHire100PutRequest {
      */
     @JsonProperty("suff")
     @JsonPropertyDescription("Lineage reference object : suff")
-    private Object suff;
+    private String suff;
     /**
      * Allow New Hire Benefits Enrollment
      * <p>
@@ -212,7 +212,7 @@ public class EmployeeNewHire100PutRequest {
      */
     @JsonProperty("pebemplNewHireInd")
     @JsonPropertyDescription("Lineage reference object : pebemplNewHireInd")
-    private Object pebemplNewHireInd;
+    private String pebemplNewHireInd;
     /**
      * Organization
      * <p>
@@ -222,7 +222,7 @@ public class EmployeeNewHire100PutRequest {
      */
     @JsonProperty("pebemplOrgnCodeHome")
     @JsonPropertyDescription("Lineage reference object : pebemplOrgnCodeHome")
-    private Object pebemplOrgnCodeHome;
+    private String pebemplOrgnCodeHome;
     /**
      * Step
      * <p>
@@ -232,7 +232,7 @@ public class EmployeeNewHire100PutRequest {
      */
     @JsonProperty("step")
     @JsonPropertyDescription("Lineage reference object : step")
-    private Object step;
+    private Double step;
     /**
      * ID
      * <p>
@@ -241,7 +241,7 @@ public class EmployeeNewHire100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * New Ethnicity
      * <p>
@@ -250,7 +250,7 @@ public class EmployeeNewHire100PutRequest {
      */
     @JsonProperty("ethnCde")
     @JsonPropertyDescription("Lineage reference object : ethnCde")
-    private Object ethnCde;
+    private String ethnCde;
     /**
      * Employee Class
      * <p>
@@ -260,7 +260,7 @@ public class EmployeeNewHire100PutRequest {
      */
     @JsonProperty("pebemplEclsCode")
     @JsonPropertyDescription("Lineage reference object : pebemplEclsCode")
-    private Object pebemplEclsCode;
+    private String pebemplEclsCode;
     /**
      * Ethnicity and Race Confirmed
      * <p>
@@ -269,7 +269,7 @@ public class EmployeeNewHire100PutRequest {
      */
     @JsonProperty("confirmedReCde")
     @JsonPropertyDescription("Lineage reference object : confirmedReCde")
-    private Object confirmedReCde;
+    private String confirmedReCde;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -280,7 +280,7 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("confirmedReDate")
-    public Object getConfirmedReDate() {
+    public Date getConfirmedReDate() {
         return confirmedReDate;
     }
 
@@ -291,11 +291,11 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("confirmedReDate")
-    public void setConfirmedReDate(Object confirmedReDate) {
+    public void setConfirmedReDate(Date confirmedReDate) {
         this.confirmedReDate = confirmedReDate;
     }
 
-    public EmployeeNewHire100PutRequest withConfirmedReDate(Object confirmedReDate) {
+    public EmployeeNewHire100PutRequest withConfirmedReDate(Date confirmedReDate) {
         this.confirmedReDate = confirmedReDate;
         return this;
     }
@@ -307,7 +307,7 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("surnamePrefix")
-    public Object getSurnamePrefix() {
+    public String getSurnamePrefix() {
         return surnamePrefix;
     }
 
@@ -318,11 +318,11 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("surnamePrefix")
-    public void setSurnamePrefix(Object surnamePrefix) {
+    public void setSurnamePrefix(String surnamePrefix) {
         this.surnamePrefix = surnamePrefix;
     }
 
-    public EmployeeNewHire100PutRequest withSurnamePrefix(Object surnamePrefix) {
+    public EmployeeNewHire100PutRequest withSurnamePrefix(String surnamePrefix) {
         this.surnamePrefix = surnamePrefix;
         return this;
     }
@@ -335,7 +335,7 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("pebemplCoasCodeHome")
-    public Object getPebemplCoasCodeHome() {
+    public String getPebemplCoasCodeHome() {
         return pebemplCoasCodeHome;
     }
 
@@ -347,11 +347,11 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("pebemplCoasCodeHome")
-    public void setPebemplCoasCodeHome(Object pebemplCoasCodeHome) {
+    public void setPebemplCoasCodeHome(String pebemplCoasCodeHome) {
         this.pebemplCoasCodeHome = pebemplCoasCodeHome;
     }
 
-    public EmployeeNewHire100PutRequest withPebemplCoasCodeHome(Object pebemplCoasCodeHome) {
+    public EmployeeNewHire100PutRequest withPebemplCoasCodeHome(String pebemplCoasCodeHome) {
         this.pebemplCoasCodeHome = pebemplCoasCodeHome;
         return this;
     }
@@ -363,7 +363,7 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("jcreCode")
-    public Object getJcreCode() {
+    public String getJcreCode() {
         return jcreCode;
     }
 
@@ -374,11 +374,11 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("jcreCode")
-    public void setJcreCode(Object jcreCode) {
+    public void setJcreCode(String jcreCode) {
         this.jcreCode = jcreCode;
     }
 
-    public EmployeeNewHire100PutRequest withJcreCode(Object jcreCode) {
+    public EmployeeNewHire100PutRequest withJcreCode(String jcreCode) {
         this.jcreCode = jcreCode;
         return this;
     }
@@ -390,7 +390,7 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("prefix")
-    public Object getPrefix() {
+    public String getPrefix() {
         return prefix;
     }
 
@@ -401,11 +401,11 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("prefix")
-    public void setPrefix(Object prefix) {
+    public void setPrefix(String prefix) {
         this.prefix = prefix;
     }
 
-    public EmployeeNewHire100PutRequest withPrefix(Object prefix) {
+    public EmployeeNewHire100PutRequest withPrefix(String prefix) {
         this.prefix = prefix;
         return this;
     }
@@ -418,7 +418,7 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("contractType")
-    public Object getContractType() {
+    public String getContractType() {
         return contractType;
     }
 
@@ -430,11 +430,11 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("contractType")
-    public void setContractType(Object contractType) {
+    public void setContractType(String contractType) {
         this.contractType = contractType;
     }
 
-    public EmployeeNewHire100PutRequest withContractType(Object contractType) {
+    public EmployeeNewHire100PutRequest withContractType(String contractType) {
         this.contractType = contractType;
         return this;
     }
@@ -446,7 +446,7 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("deferPay")
-    public Object getDeferPay() {
+    public String getDeferPay() {
         return deferPay;
     }
 
@@ -457,11 +457,11 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("deferPay")
-    public void setDeferPay(Object deferPay) {
+    public void setDeferPay(String deferPay) {
         this.deferPay = deferPay;
     }
 
-    public EmployeeNewHire100PutRequest withDeferPay(Object deferPay) {
+    public EmployeeNewHire100PutRequest withDeferPay(String deferPay) {
         this.deferPay = deferPay;
         return this;
     }
@@ -473,7 +473,7 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("suffix")
-    public Object getSuffix() {
+    public String getSuffix() {
         return suffix;
     }
 
@@ -484,11 +484,11 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("suffix")
-    public void setSuffix(Object suffix) {
+    public void setSuffix(String suffix) {
         this.suffix = suffix;
     }
 
-    public EmployeeNewHire100PutRequest withSuffix(Object suffix) {
+    public EmployeeNewHire100PutRequest withSuffix(String suffix) {
         this.suffix = suffix;
         return this;
     }
@@ -501,7 +501,7 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("title")
-    public Object getTitle() {
+    public String getTitle() {
         return title;
     }
 
@@ -513,11 +513,11 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("title")
-    public void setTitle(Object title) {
+    public void setTitle(String title) {
         this.title = title;
     }
 
-    public EmployeeNewHire100PutRequest withTitle(Object title) {
+    public EmployeeNewHire100PutRequest withTitle(String title) {
         this.title = title;
         return this;
     }
@@ -529,7 +529,7 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("ethnCode")
-    public Object getEthnCode() {
+    public String getEthnCode() {
         return ethnCode;
     }
 
@@ -540,11 +540,11 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("ethnCode")
-    public void setEthnCode(Object ethnCode) {
+    public void setEthnCode(String ethnCode) {
         this.ethnCode = ethnCode;
     }
 
-    public EmployeeNewHire100PutRequest withEthnCode(Object ethnCode) {
+    public EmployeeNewHire100PutRequest withEthnCode(String ethnCode) {
         this.ethnCode = ethnCode;
         return this;
     }
@@ -557,7 +557,7 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("posn")
-    public Object getPosn() {
+    public String getPosn() {
         return posn;
     }
 
@@ -569,11 +569,11 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("posn")
-    public void setPosn(Object posn) {
+    public void setPosn(String posn) {
         this.posn = posn;
     }
 
-    public EmployeeNewHire100PutRequest withPosn(Object posn) {
+    public EmployeeNewHire100PutRequest withPosn(String posn) {
         this.posn = posn;
         return this;
     }
@@ -586,7 +586,7 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("pebemplBcatCode")
-    public Object getPebemplBcatCode() {
+    public String getPebemplBcatCode() {
         return pebemplBcatCode;
     }
 
@@ -598,11 +598,11 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("pebemplBcatCode")
-    public void setPebemplBcatCode(Object pebemplBcatCode) {
+    public void setPebemplBcatCode(String pebemplBcatCode) {
         this.pebemplBcatCode = pebemplBcatCode;
     }
 
-    public EmployeeNewHire100PutRequest withPebemplBcatCode(Object pebemplBcatCode) {
+    public EmployeeNewHire100PutRequest withPebemplBcatCode(String pebemplBcatCode) {
         this.pebemplBcatCode = pebemplBcatCode;
         return this;
     }
@@ -642,7 +642,7 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("pebemplFirstHireDate")
-    public Object getPebemplFirstHireDate() {
+    public Date getPebemplFirstHireDate() {
         return pebemplFirstHireDate;
     }
 
@@ -654,11 +654,11 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("pebemplFirstHireDate")
-    public void setPebemplFirstHireDate(Object pebemplFirstHireDate) {
+    public void setPebemplFirstHireDate(Date pebemplFirstHireDate) {
         this.pebemplFirstHireDate = pebemplFirstHireDate;
     }
 
-    public EmployeeNewHire100PutRequest withPebemplFirstHireDate(Object pebemplFirstHireDate) {
+    public EmployeeNewHire100PutRequest withPebemplFirstHireDate(Date pebemplFirstHireDate) {
         this.pebemplFirstHireDate = pebemplFirstHireDate;
         return this;
     }
@@ -671,7 +671,7 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("beginDate")
-    public Object getBeginDate() {
+    public Date getBeginDate() {
         return beginDate;
     }
 
@@ -683,11 +683,11 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("beginDate")
-    public void setBeginDate(Object beginDate) {
+    public void setBeginDate(Date beginDate) {
         this.beginDate = beginDate;
     }
 
-    public EmployeeNewHire100PutRequest withBeginDate(Object beginDate) {
+    public EmployeeNewHire100PutRequest withBeginDate(Date beginDate) {
         this.beginDate = beginDate;
         return this;
     }
@@ -699,7 +699,7 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("ntypCode")
-    public Object getNtypCode() {
+    public String getNtypCode() {
         return ntypCode;
     }
 
@@ -710,11 +710,11 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("ntypCode")
-    public void setNtypCode(Object ntypCode) {
+    public void setNtypCode(String ntypCode) {
         this.ntypCode = ntypCode;
     }
 
-    public EmployeeNewHire100PutRequest withNtypCode(Object ntypCode) {
+    public EmployeeNewHire100PutRequest withNtypCode(String ntypCode) {
         this.ntypCode = ntypCode;
         return this;
     }
@@ -727,7 +727,7 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("suff")
-    public Object getSuff() {
+    public String getSuff() {
         return suff;
     }
 
@@ -739,11 +739,11 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("suff")
-    public void setSuff(Object suff) {
+    public void setSuff(String suff) {
         this.suff = suff;
     }
 
-    public EmployeeNewHire100PutRequest withSuff(Object suff) {
+    public EmployeeNewHire100PutRequest withSuff(String suff) {
         this.suff = suff;
         return this;
     }
@@ -755,7 +755,7 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("pebemplNewHireInd")
-    public Object getPebemplNewHireInd() {
+    public String getPebemplNewHireInd() {
         return pebemplNewHireInd;
     }
 
@@ -766,11 +766,11 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("pebemplNewHireInd")
-    public void setPebemplNewHireInd(Object pebemplNewHireInd) {
+    public void setPebemplNewHireInd(String pebemplNewHireInd) {
         this.pebemplNewHireInd = pebemplNewHireInd;
     }
 
-    public EmployeeNewHire100PutRequest withPebemplNewHireInd(Object pebemplNewHireInd) {
+    public EmployeeNewHire100PutRequest withPebemplNewHireInd(String pebemplNewHireInd) {
         this.pebemplNewHireInd = pebemplNewHireInd;
         return this;
     }
@@ -783,7 +783,7 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("pebemplOrgnCodeHome")
-    public Object getPebemplOrgnCodeHome() {
+    public String getPebemplOrgnCodeHome() {
         return pebemplOrgnCodeHome;
     }
 
@@ -795,11 +795,11 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("pebemplOrgnCodeHome")
-    public void setPebemplOrgnCodeHome(Object pebemplOrgnCodeHome) {
+    public void setPebemplOrgnCodeHome(String pebemplOrgnCodeHome) {
         this.pebemplOrgnCodeHome = pebemplOrgnCodeHome;
     }
 
-    public EmployeeNewHire100PutRequest withPebemplOrgnCodeHome(Object pebemplOrgnCodeHome) {
+    public EmployeeNewHire100PutRequest withPebemplOrgnCodeHome(String pebemplOrgnCodeHome) {
         this.pebemplOrgnCodeHome = pebemplOrgnCodeHome;
         return this;
     }
@@ -812,7 +812,7 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("step")
-    public Object getStep() {
+    public Double getStep() {
         return step;
     }
 
@@ -824,11 +824,11 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("step")
-    public void setStep(Object step) {
+    public void setStep(Double step) {
         this.step = step;
     }
 
-    public EmployeeNewHire100PutRequest withStep(Object step) {
+    public EmployeeNewHire100PutRequest withStep(Double step) {
         this.step = step;
         return this;
     }
@@ -840,7 +840,7 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -851,11 +851,11 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public EmployeeNewHire100PutRequest withId(Object id) {
+    public EmployeeNewHire100PutRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -867,7 +867,7 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("ethnCde")
-    public Object getEthnCde() {
+    public String getEthnCde() {
         return ethnCde;
     }
 
@@ -878,11 +878,11 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("ethnCde")
-    public void setEthnCde(Object ethnCde) {
+    public void setEthnCde(String ethnCde) {
         this.ethnCde = ethnCde;
     }
 
-    public EmployeeNewHire100PutRequest withEthnCde(Object ethnCde) {
+    public EmployeeNewHire100PutRequest withEthnCde(String ethnCde) {
         this.ethnCde = ethnCde;
         return this;
     }
@@ -895,7 +895,7 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("pebemplEclsCode")
-    public Object getPebemplEclsCode() {
+    public String getPebemplEclsCode() {
         return pebemplEclsCode;
     }
 
@@ -907,11 +907,11 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("pebemplEclsCode")
-    public void setPebemplEclsCode(Object pebemplEclsCode) {
+    public void setPebemplEclsCode(String pebemplEclsCode) {
         this.pebemplEclsCode = pebemplEclsCode;
     }
 
-    public EmployeeNewHire100PutRequest withPebemplEclsCode(Object pebemplEclsCode) {
+    public EmployeeNewHire100PutRequest withPebemplEclsCode(String pebemplEclsCode) {
         this.pebemplEclsCode = pebemplEclsCode;
         return this;
     }
@@ -923,7 +923,7 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("confirmedReCde")
-    public Object getConfirmedReCde() {
+    public String getConfirmedReCde() {
         return confirmedReCde;
     }
 
@@ -934,11 +934,11 @@ public class EmployeeNewHire100PutRequest {
      * 
      */
     @JsonProperty("confirmedReCde")
-    public void setConfirmedReCde(Object confirmedReCde) {
+    public void setConfirmedReCde(String confirmedReCde) {
         this.confirmedReCde = confirmedReCde;
     }
 
-    public EmployeeNewHire100PutRequest withConfirmedReCde(Object confirmedReCde) {
+    public EmployeeNewHire100PutRequest withConfirmedReCde(String confirmedReCde) {
         this.confirmedReCde = confirmedReCde;
         return this;
     }

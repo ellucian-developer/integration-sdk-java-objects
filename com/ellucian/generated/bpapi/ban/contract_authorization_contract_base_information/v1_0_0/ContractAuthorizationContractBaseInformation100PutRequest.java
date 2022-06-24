@@ -56,7 +56,7 @@ public class ContractAuthorizationContractBaseInformation100PutRequest {
      */
     @JsonProperty("keyblocTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCode;
+    private String keyblocTermCode;
     /**
      * Expiration Term
      * <p>
@@ -85,7 +85,7 @@ public class ContractAuthorizationContractBaseInformation100PutRequest {
      */
     @JsonProperty("contractNumber")
     @JsonPropertyDescription("Lineage reference object : contractNumber")
-    private Object contractNumber;
+    private Double contractNumber;
     /**
      * Roll Students
      * <p>
@@ -166,7 +166,7 @@ public class ContractAuthorizationContractBaseInformation100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Description
      * <p>
@@ -238,7 +238,7 @@ public class ContractAuthorizationContractBaseInformation100PutRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public Object getKeyblocTermCode() {
+    public String getKeyblocTermCode() {
         return keyblocTermCode;
     }
 
@@ -249,11 +249,11 @@ public class ContractAuthorizationContractBaseInformation100PutRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public void setKeyblocTermCode(Object keyblocTermCode) {
+    public void setKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
     }
 
-    public ContractAuthorizationContractBaseInformation100PutRequest withKeyblocTermCode(Object keyblocTermCode) {
+    public ContractAuthorizationContractBaseInformation100PutRequest withKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
         return this;
     }
@@ -334,7 +334,7 @@ public class ContractAuthorizationContractBaseInformation100PutRequest {
      * 
      */
     @JsonProperty("contractNumber")
-    public Object getContractNumber() {
+    public Double getContractNumber() {
         return contractNumber;
     }
 
@@ -345,11 +345,11 @@ public class ContractAuthorizationContractBaseInformation100PutRequest {
      * 
      */
     @JsonProperty("contractNumber")
-    public void setContractNumber(Object contractNumber) {
+    public void setContractNumber(Double contractNumber) {
         this.contractNumber = contractNumber;
     }
 
-    public ContractAuthorizationContractBaseInformation100PutRequest withContractNumber(Object contractNumber) {
+    public ContractAuthorizationContractBaseInformation100PutRequest withContractNumber(Double contractNumber) {
         this.contractNumber = contractNumber;
         return this;
     }
@@ -590,7 +590,7 @@ public class ContractAuthorizationContractBaseInformation100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -601,11 +601,11 @@ public class ContractAuthorizationContractBaseInformation100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public ContractAuthorizationContractBaseInformation100PutRequest withId(Object id) {
+    public ContractAuthorizationContractBaseInformation100PutRequest withId(String id) {
         this.id = id;
         return this;
     }

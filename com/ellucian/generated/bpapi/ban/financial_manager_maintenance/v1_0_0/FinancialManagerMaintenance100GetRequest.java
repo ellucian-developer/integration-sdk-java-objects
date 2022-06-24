@@ -31,7 +31,7 @@ public class FinancialManagerMaintenance100GetRequest {
      */
     @JsonProperty("lastName")
     @JsonPropertyDescription("Lineage reference object : finMgrName")
-    private Object lastName;
+    private String lastName;
     /**
      * Last Name Prefix
      * <p>
@@ -40,7 +40,7 @@ public class FinancialManagerMaintenance100GetRequest {
      */
     @JsonProperty("lastNamePrefix")
     @JsonPropertyDescription("Lineage reference object : finMgrSurnamePrefix")
-    private Object lastNamePrefix;
+    private String lastNamePrefix;
     /**
      * First Name
      * <p>
@@ -49,7 +49,7 @@ public class FinancialManagerMaintenance100GetRequest {
      */
     @JsonProperty("firstName")
     @JsonPropertyDescription("Lineage reference object : finMgrFirstName")
-    private Object firstName;
+    private String firstName;
     /**
      * Middle Name
      * <p>
@@ -58,7 +58,7 @@ public class FinancialManagerMaintenance100GetRequest {
      */
     @JsonProperty("middleName")
     @JsonPropertyDescription("Lineage reference object : finMgrMi")
-    private Object middleName;
+    private String middleName;
     /**
      * Financial Manager
      * <p>
@@ -67,7 +67,7 @@ public class FinancialManagerMaintenance100GetRequest {
      */
     @JsonProperty("displayFmgrCode")
     @JsonPropertyDescription("Lineage reference object : displayFmgrCode, Lookup lineage reference object : spriden,ftvfmgr")
-    private Object displayFmgrCode;
+    private String displayFmgrCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -78,7 +78,7 @@ public class FinancialManagerMaintenance100GetRequest {
      * 
      */
     @JsonProperty("lastName")
-    public Object getLastName() {
+    public String getLastName() {
         return lastName;
     }
 
@@ -89,11 +89,11 @@ public class FinancialManagerMaintenance100GetRequest {
      * 
      */
     @JsonProperty("lastName")
-    public void setLastName(Object lastName) {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    public FinancialManagerMaintenance100GetRequest withLastName(Object lastName) {
+    public FinancialManagerMaintenance100GetRequest withLastName(String lastName) {
         this.lastName = lastName;
         return this;
     }
@@ -105,7 +105,7 @@ public class FinancialManagerMaintenance100GetRequest {
      * 
      */
     @JsonProperty("lastNamePrefix")
-    public Object getLastNamePrefix() {
+    public String getLastNamePrefix() {
         return lastNamePrefix;
     }
 
@@ -116,11 +116,11 @@ public class FinancialManagerMaintenance100GetRequest {
      * 
      */
     @JsonProperty("lastNamePrefix")
-    public void setLastNamePrefix(Object lastNamePrefix) {
+    public void setLastNamePrefix(String lastNamePrefix) {
         this.lastNamePrefix = lastNamePrefix;
     }
 
-    public FinancialManagerMaintenance100GetRequest withLastNamePrefix(Object lastNamePrefix) {
+    public FinancialManagerMaintenance100GetRequest withLastNamePrefix(String lastNamePrefix) {
         this.lastNamePrefix = lastNamePrefix;
         return this;
     }
@@ -132,7 +132,7 @@ public class FinancialManagerMaintenance100GetRequest {
      * 
      */
     @JsonProperty("firstName")
-    public Object getFirstName() {
+    public String getFirstName() {
         return firstName;
     }
 
@@ -143,11 +143,11 @@ public class FinancialManagerMaintenance100GetRequest {
      * 
      */
     @JsonProperty("firstName")
-    public void setFirstName(Object firstName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
-    public FinancialManagerMaintenance100GetRequest withFirstName(Object firstName) {
+    public FinancialManagerMaintenance100GetRequest withFirstName(String firstName) {
         this.firstName = firstName;
         return this;
     }
@@ -159,7 +159,7 @@ public class FinancialManagerMaintenance100GetRequest {
      * 
      */
     @JsonProperty("middleName")
-    public Object getMiddleName() {
+    public String getMiddleName() {
         return middleName;
     }
 
@@ -170,11 +170,11 @@ public class FinancialManagerMaintenance100GetRequest {
      * 
      */
     @JsonProperty("middleName")
-    public void setMiddleName(Object middleName) {
+    public void setMiddleName(String middleName) {
         this.middleName = middleName;
     }
 
-    public FinancialManagerMaintenance100GetRequest withMiddleName(Object middleName) {
+    public FinancialManagerMaintenance100GetRequest withMiddleName(String middleName) {
         this.middleName = middleName;
         return this;
     }
@@ -186,7 +186,7 @@ public class FinancialManagerMaintenance100GetRequest {
      * 
      */
     @JsonProperty("displayFmgrCode")
-    public Object getDisplayFmgrCode() {
+    public String getDisplayFmgrCode() {
         return displayFmgrCode;
     }
 
@@ -197,11 +197,11 @@ public class FinancialManagerMaintenance100GetRequest {
      * 
      */
     @JsonProperty("displayFmgrCode")
-    public void setDisplayFmgrCode(Object displayFmgrCode) {
+    public void setDisplayFmgrCode(String displayFmgrCode) {
         this.displayFmgrCode = displayFmgrCode;
     }
 
-    public FinancialManagerMaintenance100GetRequest withDisplayFmgrCode(Object displayFmgrCode) {
+    public FinancialManagerMaintenance100GetRequest withDisplayFmgrCode(String displayFmgrCode) {
         this.displayFmgrCode = displayFmgrCode;
         return this;
     }

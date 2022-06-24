@@ -510,7 +510,7 @@ public class VendorMaintenance100PutRequest {
      */
     @JsonProperty("ftvvendVendCode")
     @JsonPropertyDescription("Lineage reference object : ftvvendVendCode, Lookup lineage reference object : ftvvend")
-    private Object ftvvendVendCode;
+    private String ftvvendVendCode;
     /**
      * State Indicator
      * <p>
@@ -1923,7 +1923,7 @@ public class VendorMaintenance100PutRequest {
      * 
      */
     @JsonProperty("ftvvendVendCode")
-    public Object getFtvvendVendCode() {
+    public String getFtvvendVendCode() {
         return ftvvendVendCode;
     }
 
@@ -1935,11 +1935,11 @@ public class VendorMaintenance100PutRequest {
      * 
      */
     @JsonProperty("ftvvendVendCode")
-    public void setFtvvendVendCode(Object ftvvendVendCode) {
+    public void setFtvvendVendCode(String ftvvendVendCode) {
         this.ftvvendVendCode = ftvvendVendCode;
     }
 
-    public VendorMaintenance100PutRequest withFtvvendVendCode(Object ftvvendVendCode) {
+    public VendorMaintenance100PutRequest withFtvvendVendCode(String ftvvendVendCode) {
         this.ftvvendVendCode = ftvvendVendCode;
         return this;
     }

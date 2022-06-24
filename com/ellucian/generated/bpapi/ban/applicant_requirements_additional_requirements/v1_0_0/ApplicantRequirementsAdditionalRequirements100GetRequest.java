@@ -113,7 +113,7 @@ public class ApplicantRequirementsAdditionalRequirements100GetRequest {
      */
     @JsonProperty("keyblckAidyCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAidyCode, Lookup lineage reference object : robinst")
-    private Object keyblckAidyCode;
+    private String keyblckAidyCode;
     /**
      * ID
      * <p>
@@ -122,7 +122,7 @@ public class ApplicantRequirementsAdditionalRequirements100GetRequest {
      */
     @JsonProperty("keyblckId")
     @JsonPropertyDescription("Lineage reference object : keyblckId")
-    private Object keyblckId;
+    private String keyblckId;
     /**
      * Status Date
      * <p>
@@ -406,7 +406,7 @@ public class ApplicantRequirementsAdditionalRequirements100GetRequest {
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public Object getKeyblckAidyCode() {
+    public String getKeyblckAidyCode() {
         return keyblckAidyCode;
     }
 
@@ -417,11 +417,11 @@ public class ApplicantRequirementsAdditionalRequirements100GetRequest {
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public void setKeyblckAidyCode(Object keyblckAidyCode) {
+    public void setKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
     }
 
-    public ApplicantRequirementsAdditionalRequirements100GetRequest withKeyblckAidyCode(Object keyblckAidyCode) {
+    public ApplicantRequirementsAdditionalRequirements100GetRequest withKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
         return this;
     }
@@ -433,7 +433,7 @@ public class ApplicantRequirementsAdditionalRequirements100GetRequest {
      * 
      */
     @JsonProperty("keyblckId")
-    public Object getKeyblckId() {
+    public String getKeyblckId() {
         return keyblckId;
     }
 
@@ -444,11 +444,11 @@ public class ApplicantRequirementsAdditionalRequirements100GetRequest {
      * 
      */
     @JsonProperty("keyblckId")
-    public void setKeyblckId(Object keyblckId) {
+    public void setKeyblckId(String keyblckId) {
         this.keyblckId = keyblckId;
     }
 
-    public ApplicantRequirementsAdditionalRequirements100GetRequest withKeyblckId(Object keyblckId) {
+    public ApplicantRequirementsAdditionalRequirements100GetRequest withKeyblckId(String keyblckId) {
         this.keyblckId = keyblckId;
         return this;
     }

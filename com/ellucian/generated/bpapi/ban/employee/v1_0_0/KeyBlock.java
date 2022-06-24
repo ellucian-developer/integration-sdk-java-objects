@@ -26,7 +26,7 @@ public class KeyBlock {
      */
     @JsonProperty("nname")
     @JsonPropertyDescription("Lineage reference object : nname")
-    private Object nname;
+    private String nname;
     /**
      * ID
      * <p>
@@ -35,7 +35,7 @@ public class KeyBlock {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -44,7 +44,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("nname")
-    public Object getNname() {
+    public String getNname() {
         return nname;
     }
 
@@ -53,11 +53,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("nname")
-    public void setNname(Object nname) {
+    public void setNname(String nname) {
         this.nname = nname;
     }
 
-    public KeyBlock withNname(Object nname) {
+    public KeyBlock withNname(String nname) {
         this.nname = nname;
         return this;
     }
@@ -69,7 +69,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -80,11 +80,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public KeyBlock withId(Object id) {
+    public KeyBlock withId(String id) {
         this.id = id;
         return this;
     }

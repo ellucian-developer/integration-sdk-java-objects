@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.employee_new_hire.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -46,7 +47,7 @@ public class BioDemo__1 {
      */
     @JsonProperty("confirmedReDate")
     @JsonPropertyDescription("Lineage reference object : confirmedReDate")
-    private Object confirmedReDate;
+    private Date confirmedReDate;
     /**
      * Last Name
      * <p>
@@ -56,21 +57,21 @@ public class BioDemo__1 {
      */
     @JsonProperty("lastName")
     @JsonPropertyDescription("Lineage reference object : lastName")
-    private Object lastName;
+    private String lastName;
     /**
      * Lineage reference object : spridenActivityDate
      * 
      */
     @JsonProperty("spridenActivityDate")
     @JsonPropertyDescription("Lineage reference object : spridenActivityDate")
-    private Object spridenActivityDate;
+    private Date spridenActivityDate;
     /**
      * Lineage reference object : spridenUserId
      * 
      */
     @JsonProperty("spridenUserId")
     @JsonPropertyDescription("Lineage reference object : spridenUserId")
-    private Object spridenUserId;
+    private String spridenUserId;
     /**
      * Prefix
      * <p>
@@ -79,14 +80,14 @@ public class BioDemo__1 {
      */
     @JsonProperty("prefix")
     @JsonPropertyDescription("Lineage reference object : prefix")
-    private Object prefix;
+    private String prefix;
     /**
      * Lineage reference object : ethnicityDesc
      * 
      */
     @JsonProperty("ethnicityDesc")
     @JsonPropertyDescription("Lineage reference object : ethnicityDesc")
-    private Object ethnicityDesc;
+    private String ethnicityDesc;
     /**
      * Gender
      * <p>
@@ -95,7 +96,7 @@ public class BioDemo__1 {
      */
     @JsonProperty("sex")
     @JsonPropertyDescription("Lineage reference object : sex")
-    private Object sex;
+    private String sex;
     /**
      * Suffix
      * <p>
@@ -104,7 +105,7 @@ public class BioDemo__1 {
      */
     @JsonProperty("suffix")
     @JsonPropertyDescription("Lineage reference object : suffix")
-    private Object suffix;
+    private String suffix;
     /**
      * Birth Date
      * <p>
@@ -114,7 +115,7 @@ public class BioDemo__1 {
      */
     @JsonProperty("birthDate")
     @JsonPropertyDescription("Lineage reference object : birthDate")
-    private Object birthDate;
+    private Date birthDate;
     /**
      * Ethnicity
      * <p>
@@ -123,7 +124,7 @@ public class BioDemo__1 {
      */
     @JsonProperty("ethnCode")
     @JsonPropertyDescription("Lineage reference object : ethnCode, Lookup lineage reference object : stvethn")
-    private Object ethnCode;
+    private String ethnCode;
     /**
      * SSN/SIN/TIN
      * <p>
@@ -133,14 +134,14 @@ public class BioDemo__1 {
      */
     @JsonProperty("ssn")
     @JsonPropertyDescription("Lineage reference object : ssn")
-    private Object ssn;
+    private String ssn;
     /**
      * Lineage reference object : citzDesc
      * 
      */
     @JsonProperty("citzDesc")
     @JsonPropertyDescription("Lineage reference object : citzDesc")
-    private Object citzDesc;
+    private String citzDesc;
     /**
      * First Name
      * <p>
@@ -150,7 +151,7 @@ public class BioDemo__1 {
      */
     @JsonProperty("firstName")
     @JsonPropertyDescription("Lineage reference object : firstName")
-    private Object firstName;
+    private String firstName;
     /**
      * Name Type
      * <p>
@@ -159,7 +160,7 @@ public class BioDemo__1 {
      */
     @JsonProperty("ntypCode")
     @JsonPropertyDescription("Lineage reference object : ntypCode, Lookup lineage reference object : gtvntyp")
-    private Object ntypCode;
+    private String ntypCode;
     /**
      * Citizenship
      * <p>
@@ -169,14 +170,14 @@ public class BioDemo__1 {
      */
     @JsonProperty("citzCode")
     @JsonPropertyDescription("Lineage reference object : citzCode, Lookup lineage reference object : stvcitz")
-    private Object citzCode;
+    private String citzCode;
     /**
      * Lineage reference object : ntypDesc
      * 
      */
     @JsonProperty("ntypDesc")
     @JsonPropertyDescription("Lineage reference object : ntypDesc")
-    private Object ntypDesc;
+    private String ntypDesc;
     /**
      * New Ethnicity
      * <p>
@@ -185,7 +186,7 @@ public class BioDemo__1 {
      */
     @JsonProperty("ethnCde")
     @JsonPropertyDescription("Lineage reference object : ethnCde")
-    private Object ethnCde;
+    private String ethnCde;
     /**
      * Ethnicity and Race Confirmed
      * <p>
@@ -194,7 +195,7 @@ public class BioDemo__1 {
      */
     @JsonProperty("confirmedReCde")
     @JsonPropertyDescription("Lineage reference object : confirmedReCde")
-    private Object confirmedReCde;
+    private String confirmedReCde;
     /**
      * Middle Name
      * <p>
@@ -203,7 +204,7 @@ public class BioDemo__1 {
      */
     @JsonProperty("mi")
     @JsonPropertyDescription("Lineage reference object : mi")
-    private Object mi;
+    private String mi;
     /**
      * Age
      * <p>
@@ -212,7 +213,7 @@ public class BioDemo__1 {
      */
     @JsonProperty("age")
     @JsonPropertyDescription("Lineage reference object : age")
-    private Object age;
+    private Double age;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -223,7 +224,7 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("confirmedReDate")
-    public Object getConfirmedReDate() {
+    public Date getConfirmedReDate() {
         return confirmedReDate;
     }
 
@@ -234,11 +235,11 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("confirmedReDate")
-    public void setConfirmedReDate(Object confirmedReDate) {
+    public void setConfirmedReDate(Date confirmedReDate) {
         this.confirmedReDate = confirmedReDate;
     }
 
-    public BioDemo__1 withConfirmedReDate(Object confirmedReDate) {
+    public BioDemo__1 withConfirmedReDate(Date confirmedReDate) {
         this.confirmedReDate = confirmedReDate;
         return this;
     }
@@ -251,7 +252,7 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("lastName")
-    public Object getLastName() {
+    public String getLastName() {
         return lastName;
     }
 
@@ -263,11 +264,11 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("lastName")
-    public void setLastName(Object lastName) {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    public BioDemo__1 withLastName(Object lastName) {
+    public BioDemo__1 withLastName(String lastName) {
         this.lastName = lastName;
         return this;
     }
@@ -277,7 +278,7 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("spridenActivityDate")
-    public Object getSpridenActivityDate() {
+    public Date getSpridenActivityDate() {
         return spridenActivityDate;
     }
 
@@ -286,11 +287,11 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("spridenActivityDate")
-    public void setSpridenActivityDate(Object spridenActivityDate) {
+    public void setSpridenActivityDate(Date spridenActivityDate) {
         this.spridenActivityDate = spridenActivityDate;
     }
 
-    public BioDemo__1 withSpridenActivityDate(Object spridenActivityDate) {
+    public BioDemo__1 withSpridenActivityDate(Date spridenActivityDate) {
         this.spridenActivityDate = spridenActivityDate;
         return this;
     }
@@ -300,7 +301,7 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("spridenUserId")
-    public Object getSpridenUserId() {
+    public String getSpridenUserId() {
         return spridenUserId;
     }
 
@@ -309,11 +310,11 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("spridenUserId")
-    public void setSpridenUserId(Object spridenUserId) {
+    public void setSpridenUserId(String spridenUserId) {
         this.spridenUserId = spridenUserId;
     }
 
-    public BioDemo__1 withSpridenUserId(Object spridenUserId) {
+    public BioDemo__1 withSpridenUserId(String spridenUserId) {
         this.spridenUserId = spridenUserId;
         return this;
     }
@@ -325,7 +326,7 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("prefix")
-    public Object getPrefix() {
+    public String getPrefix() {
         return prefix;
     }
 
@@ -336,11 +337,11 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("prefix")
-    public void setPrefix(Object prefix) {
+    public void setPrefix(String prefix) {
         this.prefix = prefix;
     }
 
-    public BioDemo__1 withPrefix(Object prefix) {
+    public BioDemo__1 withPrefix(String prefix) {
         this.prefix = prefix;
         return this;
     }
@@ -350,7 +351,7 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("ethnicityDesc")
-    public Object getEthnicityDesc() {
+    public String getEthnicityDesc() {
         return ethnicityDesc;
     }
 
@@ -359,11 +360,11 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("ethnicityDesc")
-    public void setEthnicityDesc(Object ethnicityDesc) {
+    public void setEthnicityDesc(String ethnicityDesc) {
         this.ethnicityDesc = ethnicityDesc;
     }
 
-    public BioDemo__1 withEthnicityDesc(Object ethnicityDesc) {
+    public BioDemo__1 withEthnicityDesc(String ethnicityDesc) {
         this.ethnicityDesc = ethnicityDesc;
         return this;
     }
@@ -375,7 +376,7 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("sex")
-    public Object getSex() {
+    public String getSex() {
         return sex;
     }
 
@@ -386,11 +387,11 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("sex")
-    public void setSex(Object sex) {
+    public void setSex(String sex) {
         this.sex = sex;
     }
 
-    public BioDemo__1 withSex(Object sex) {
+    public BioDemo__1 withSex(String sex) {
         this.sex = sex;
         return this;
     }
@@ -402,7 +403,7 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("suffix")
-    public Object getSuffix() {
+    public String getSuffix() {
         return suffix;
     }
 
@@ -413,11 +414,11 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("suffix")
-    public void setSuffix(Object suffix) {
+    public void setSuffix(String suffix) {
         this.suffix = suffix;
     }
 
-    public BioDemo__1 withSuffix(Object suffix) {
+    public BioDemo__1 withSuffix(String suffix) {
         this.suffix = suffix;
         return this;
     }
@@ -430,7 +431,7 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("birthDate")
-    public Object getBirthDate() {
+    public Date getBirthDate() {
         return birthDate;
     }
 
@@ -442,11 +443,11 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("birthDate")
-    public void setBirthDate(Object birthDate) {
+    public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
     }
 
-    public BioDemo__1 withBirthDate(Object birthDate) {
+    public BioDemo__1 withBirthDate(Date birthDate) {
         this.birthDate = birthDate;
         return this;
     }
@@ -458,7 +459,7 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("ethnCode")
-    public Object getEthnCode() {
+    public String getEthnCode() {
         return ethnCode;
     }
 
@@ -469,11 +470,11 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("ethnCode")
-    public void setEthnCode(Object ethnCode) {
+    public void setEthnCode(String ethnCode) {
         this.ethnCode = ethnCode;
     }
 
-    public BioDemo__1 withEthnCode(Object ethnCode) {
+    public BioDemo__1 withEthnCode(String ethnCode) {
         this.ethnCode = ethnCode;
         return this;
     }
@@ -486,7 +487,7 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("ssn")
-    public Object getSsn() {
+    public String getSsn() {
         return ssn;
     }
 
@@ -498,11 +499,11 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("ssn")
-    public void setSsn(Object ssn) {
+    public void setSsn(String ssn) {
         this.ssn = ssn;
     }
 
-    public BioDemo__1 withSsn(Object ssn) {
+    public BioDemo__1 withSsn(String ssn) {
         this.ssn = ssn;
         return this;
     }
@@ -512,7 +513,7 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("citzDesc")
-    public Object getCitzDesc() {
+    public String getCitzDesc() {
         return citzDesc;
     }
 
@@ -521,11 +522,11 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("citzDesc")
-    public void setCitzDesc(Object citzDesc) {
+    public void setCitzDesc(String citzDesc) {
         this.citzDesc = citzDesc;
     }
 
-    public BioDemo__1 withCitzDesc(Object citzDesc) {
+    public BioDemo__1 withCitzDesc(String citzDesc) {
         this.citzDesc = citzDesc;
         return this;
     }
@@ -538,7 +539,7 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("firstName")
-    public Object getFirstName() {
+    public String getFirstName() {
         return firstName;
     }
 
@@ -550,11 +551,11 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("firstName")
-    public void setFirstName(Object firstName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
-    public BioDemo__1 withFirstName(Object firstName) {
+    public BioDemo__1 withFirstName(String firstName) {
         this.firstName = firstName;
         return this;
     }
@@ -566,7 +567,7 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("ntypCode")
-    public Object getNtypCode() {
+    public String getNtypCode() {
         return ntypCode;
     }
 
@@ -577,11 +578,11 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("ntypCode")
-    public void setNtypCode(Object ntypCode) {
+    public void setNtypCode(String ntypCode) {
         this.ntypCode = ntypCode;
     }
 
-    public BioDemo__1 withNtypCode(Object ntypCode) {
+    public BioDemo__1 withNtypCode(String ntypCode) {
         this.ntypCode = ntypCode;
         return this;
     }
@@ -594,7 +595,7 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("citzCode")
-    public Object getCitzCode() {
+    public String getCitzCode() {
         return citzCode;
     }
 
@@ -606,11 +607,11 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("citzCode")
-    public void setCitzCode(Object citzCode) {
+    public void setCitzCode(String citzCode) {
         this.citzCode = citzCode;
     }
 
-    public BioDemo__1 withCitzCode(Object citzCode) {
+    public BioDemo__1 withCitzCode(String citzCode) {
         this.citzCode = citzCode;
         return this;
     }
@@ -620,7 +621,7 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("ntypDesc")
-    public Object getNtypDesc() {
+    public String getNtypDesc() {
         return ntypDesc;
     }
 
@@ -629,11 +630,11 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("ntypDesc")
-    public void setNtypDesc(Object ntypDesc) {
+    public void setNtypDesc(String ntypDesc) {
         this.ntypDesc = ntypDesc;
     }
 
-    public BioDemo__1 withNtypDesc(Object ntypDesc) {
+    public BioDemo__1 withNtypDesc(String ntypDesc) {
         this.ntypDesc = ntypDesc;
         return this;
     }
@@ -645,7 +646,7 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("ethnCde")
-    public Object getEthnCde() {
+    public String getEthnCde() {
         return ethnCde;
     }
 
@@ -656,11 +657,11 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("ethnCde")
-    public void setEthnCde(Object ethnCde) {
+    public void setEthnCde(String ethnCde) {
         this.ethnCde = ethnCde;
     }
 
-    public BioDemo__1 withEthnCde(Object ethnCde) {
+    public BioDemo__1 withEthnCde(String ethnCde) {
         this.ethnCde = ethnCde;
         return this;
     }
@@ -672,7 +673,7 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("confirmedReCde")
-    public Object getConfirmedReCde() {
+    public String getConfirmedReCde() {
         return confirmedReCde;
     }
 
@@ -683,11 +684,11 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("confirmedReCde")
-    public void setConfirmedReCde(Object confirmedReCde) {
+    public void setConfirmedReCde(String confirmedReCde) {
         this.confirmedReCde = confirmedReCde;
     }
 
-    public BioDemo__1 withConfirmedReCde(Object confirmedReCde) {
+    public BioDemo__1 withConfirmedReCde(String confirmedReCde) {
         this.confirmedReCde = confirmedReCde;
         return this;
     }
@@ -699,7 +700,7 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("mi")
-    public Object getMi() {
+    public String getMi() {
         return mi;
     }
 
@@ -710,11 +711,11 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("mi")
-    public void setMi(Object mi) {
+    public void setMi(String mi) {
         this.mi = mi;
     }
 
-    public BioDemo__1 withMi(Object mi) {
+    public BioDemo__1 withMi(String mi) {
         this.mi = mi;
         return this;
     }
@@ -726,7 +727,7 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("age")
-    public Object getAge() {
+    public Double getAge() {
         return age;
     }
 
@@ -737,11 +738,11 @@ public class BioDemo__1 {
      * 
      */
     @JsonProperty("age")
-    public void setAge(Object age) {
+    public void setAge(Double age) {
         this.age = age;
     }
 
-    public BioDemo__1 withAge(Object age) {
+    public BioDemo__1 withAge(Double age) {
         this.age = age;
         return this;
     }

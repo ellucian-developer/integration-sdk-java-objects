@@ -75,7 +75,7 @@ public class AdmissionsApplicationContactsCohortsAttributes100GetRequest {
      */
     @JsonProperty("kbentryTermCode")
     @JsonPropertyDescription("Lineage reference object : kbentryTermCode, Lookup lineage reference object : stvterm")
-    private Object kbentryTermCode;
+    private String kbentryTermCode;
     /**
      * Contact Type
      * <p>
@@ -101,7 +101,7 @@ public class AdmissionsApplicationContactsCohortsAttributes100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -228,7 +228,7 @@ public class AdmissionsApplicationContactsCohortsAttributes100GetRequest {
      * 
      */
     @JsonProperty("kbentryTermCode")
-    public Object getKbentryTermCode() {
+    public String getKbentryTermCode() {
         return kbentryTermCode;
     }
 
@@ -239,11 +239,11 @@ public class AdmissionsApplicationContactsCohortsAttributes100GetRequest {
      * 
      */
     @JsonProperty("kbentryTermCode")
-    public void setKbentryTermCode(Object kbentryTermCode) {
+    public void setKbentryTermCode(String kbentryTermCode) {
         this.kbentryTermCode = kbentryTermCode;
     }
 
-    public AdmissionsApplicationContactsCohortsAttributes100GetRequest withKbentryTermCode(Object kbentryTermCode) {
+    public AdmissionsApplicationContactsCohortsAttributes100GetRequest withKbentryTermCode(String kbentryTermCode) {
         this.kbentryTermCode = kbentryTermCode;
         return this;
     }
@@ -307,7 +307,7 @@ public class AdmissionsApplicationContactsCohortsAttributes100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -318,11 +318,11 @@ public class AdmissionsApplicationContactsCohortsAttributes100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public AdmissionsApplicationContactsCohortsAttributes100GetRequest withId(Object id) {
+    public AdmissionsApplicationContactsCohortsAttributes100GetRequest withId(String id) {
         this.id = id;
         return this;
     }

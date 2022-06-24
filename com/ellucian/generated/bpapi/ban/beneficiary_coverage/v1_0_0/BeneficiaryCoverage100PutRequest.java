@@ -59,7 +59,7 @@ public class BeneficiaryCoverage100PutRequest {
      */
     @JsonProperty("bdcaCode")
     @JsonPropertyDescription("Lineage reference object : bdcaCode")
-    private Object bdcaCode;
+    private String bdcaCode;
     /**
      * Coverage End Date
      * <p>
@@ -139,7 +139,7 @@ public class BeneficiaryCoverage100PutRequest {
      */
     @JsonProperty("queryDate")
     @JsonPropertyDescription("Lineage reference object : queryDate")
-    private Object queryDate;
+    private Date queryDate;
     /**
      * Sequence Number
      * <p>
@@ -174,7 +174,7 @@ public class BeneficiaryCoverage100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Requested Date
      * <p>
@@ -242,7 +242,7 @@ public class BeneficiaryCoverage100PutRequest {
      * 
      */
     @JsonProperty("bdcaCode")
-    public Object getBdcaCode() {
+    public String getBdcaCode() {
         return bdcaCode;
     }
 
@@ -253,11 +253,11 @@ public class BeneficiaryCoverage100PutRequest {
      * 
      */
     @JsonProperty("bdcaCode")
-    public void setBdcaCode(Object bdcaCode) {
+    public void setBdcaCode(String bdcaCode) {
         this.bdcaCode = bdcaCode;
     }
 
-    public BeneficiaryCoverage100PutRequest withBdcaCode(Object bdcaCode) {
+    public BeneficiaryCoverage100PutRequest withBdcaCode(String bdcaCode) {
         this.bdcaCode = bdcaCode;
         return this;
     }
@@ -483,7 +483,7 @@ public class BeneficiaryCoverage100PutRequest {
      * 
      */
     @JsonProperty("queryDate")
-    public Object getQueryDate() {
+    public Date getQueryDate() {
         return queryDate;
     }
 
@@ -494,11 +494,11 @@ public class BeneficiaryCoverage100PutRequest {
      * 
      */
     @JsonProperty("queryDate")
-    public void setQueryDate(Object queryDate) {
+    public void setQueryDate(Date queryDate) {
         this.queryDate = queryDate;
     }
 
-    public BeneficiaryCoverage100PutRequest withQueryDate(Object queryDate) {
+    public BeneficiaryCoverage100PutRequest withQueryDate(Date queryDate) {
         this.queryDate = queryDate;
         return this;
     }
@@ -589,7 +589,7 @@ public class BeneficiaryCoverage100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -600,11 +600,11 @@ public class BeneficiaryCoverage100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public BeneficiaryCoverage100PutRequest withId(Object id) {
+    public BeneficiaryCoverage100PutRequest withId(String id) {
         this.id = id;
         return this;
     }

@@ -28,7 +28,7 @@ public class RattCtrlBlock {
      */
     @JsonProperty("ssrrattAttsIeCde")
     @JsonPropertyDescription("Lineage reference object : ssrrattAttsIeCde")
-    private Object ssrrattAttsIeCde;
+    private String ssrrattAttsIeCde;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -40,7 +40,7 @@ public class RattCtrlBlock {
      * 
      */
     @JsonProperty("ssrrattAttsIeCde")
-    public Object getSsrrattAttsIeCde() {
+    public String getSsrrattAttsIeCde() {
         return ssrrattAttsIeCde;
     }
 
@@ -52,11 +52,11 @@ public class RattCtrlBlock {
      * 
      */
     @JsonProperty("ssrrattAttsIeCde")
-    public void setSsrrattAttsIeCde(Object ssrrattAttsIeCde) {
+    public void setSsrrattAttsIeCde(String ssrrattAttsIeCde) {
         this.ssrrattAttsIeCde = ssrrattAttsIeCde;
     }
 
-    public RattCtrlBlock withSsrrattAttsIeCde(Object ssrrattAttsIeCde) {
+    public RattCtrlBlock withSsrrattAttsIeCde(String ssrrattAttsIeCde) {
         this.ssrrattAttsIeCde = ssrrattAttsIeCde;
         return this;
     }

@@ -28,7 +28,7 @@ public class AttrCtrlBlock {
      */
     @JsonProperty("sgrsattTermCodeTo")
     @JsonPropertyDescription("Lineage reference object : sgrsattTermCodeTo, Lookup lineage reference object : stvterm")
-    private Object sgrsattTermCodeTo;
+    private String sgrsattTermCodeTo;
     /**
      * From Term
      * <p>
@@ -37,7 +37,7 @@ public class AttrCtrlBlock {
      */
     @JsonProperty("sgrsattTermCodeFrom")
     @JsonPropertyDescription("Lineage reference object : sgrsattTermCodeFrom, Lookup lineage reference object : stvterm")
-    private Object sgrsattTermCodeFrom;
+    private String sgrsattTermCodeFrom;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -48,7 +48,7 @@ public class AttrCtrlBlock {
      * 
      */
     @JsonProperty("sgrsattTermCodeTo")
-    public Object getSgrsattTermCodeTo() {
+    public String getSgrsattTermCodeTo() {
         return sgrsattTermCodeTo;
     }
 
@@ -59,11 +59,11 @@ public class AttrCtrlBlock {
      * 
      */
     @JsonProperty("sgrsattTermCodeTo")
-    public void setSgrsattTermCodeTo(Object sgrsattTermCodeTo) {
+    public void setSgrsattTermCodeTo(String sgrsattTermCodeTo) {
         this.sgrsattTermCodeTo = sgrsattTermCodeTo;
     }
 
-    public AttrCtrlBlock withSgrsattTermCodeTo(Object sgrsattTermCodeTo) {
+    public AttrCtrlBlock withSgrsattTermCodeTo(String sgrsattTermCodeTo) {
         this.sgrsattTermCodeTo = sgrsattTermCodeTo;
         return this;
     }
@@ -75,7 +75,7 @@ public class AttrCtrlBlock {
      * 
      */
     @JsonProperty("sgrsattTermCodeFrom")
-    public Object getSgrsattTermCodeFrom() {
+    public String getSgrsattTermCodeFrom() {
         return sgrsattTermCodeFrom;
     }
 
@@ -86,11 +86,11 @@ public class AttrCtrlBlock {
      * 
      */
     @JsonProperty("sgrsattTermCodeFrom")
-    public void setSgrsattTermCodeFrom(Object sgrsattTermCodeFrom) {
+    public void setSgrsattTermCodeFrom(String sgrsattTermCodeFrom) {
         this.sgrsattTermCodeFrom = sgrsattTermCodeFrom;
     }
 
-    public AttrCtrlBlock withSgrsattTermCodeFrom(Object sgrsattTermCodeFrom) {
+    public AttrCtrlBlock withSgrsattTermCodeFrom(String sgrsattTermCodeFrom) {
         this.sgrsattTermCodeFrom = sgrsattTermCodeFrom;
         return this;
     }

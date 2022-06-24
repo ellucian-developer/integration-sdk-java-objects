@@ -141,7 +141,7 @@ public class IdentificationTelephone100PostRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * International Access
      * <p>
@@ -478,7 +478,7 @@ public class IdentificationTelephone100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -489,11 +489,11 @@ public class IdentificationTelephone100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public IdentificationTelephone100PostRequest withId(Object id) {
+    public IdentificationTelephone100PostRequest withId(String id) {
         this.id = id;
         return this;
     }

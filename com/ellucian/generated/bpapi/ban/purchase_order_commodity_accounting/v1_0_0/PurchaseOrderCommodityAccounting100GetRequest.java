@@ -209,7 +209,7 @@ public class PurchaseOrderCommodityAccounting100GetRequest {
      */
     @JsonProperty("displayPohdCode")
     @JsonPropertyDescription("Lineage reference object : displayPohdCode")
-    private Object displayPohdCode;
+    private String displayPohdCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -739,7 +739,7 @@ public class PurchaseOrderCommodityAccounting100GetRequest {
      * 
      */
     @JsonProperty("displayPohdCode")
-    public Object getDisplayPohdCode() {
+    public String getDisplayPohdCode() {
         return displayPohdCode;
     }
 
@@ -750,11 +750,11 @@ public class PurchaseOrderCommodityAccounting100GetRequest {
      * 
      */
     @JsonProperty("displayPohdCode")
-    public void setDisplayPohdCode(Object displayPohdCode) {
+    public void setDisplayPohdCode(String displayPohdCode) {
         this.displayPohdCode = displayPohdCode;
     }
 
-    public PurchaseOrderCommodityAccounting100GetRequest withDisplayPohdCode(Object displayPohdCode) {
+    public PurchaseOrderCommodityAccounting100GetRequest withDisplayPohdCode(String displayPohdCode) {
         this.displayPohdCode = displayPohdCode;
         return this;
     }

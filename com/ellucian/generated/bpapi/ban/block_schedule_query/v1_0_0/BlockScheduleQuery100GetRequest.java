@@ -30,7 +30,7 @@ public class BlockScheduleQuery100GetRequest {
      */
     @JsonProperty("ssablkqTermCodeEff")
     @JsonPropertyDescription("Lineage reference object : ssablkqTermCodeEff, Lookup lineage reference object : stvterm")
-    private Object ssablkqTermCodeEff;
+    private String ssablkqTermCodeEff;
     /**
      * Block Code
      * <p>
@@ -48,7 +48,7 @@ public class BlockScheduleQuery100GetRequest {
      */
     @JsonProperty("ssablkqKeyCrn")
     @JsonPropertyDescription("Lineage reference object : ssablkqKeyCrn")
-    private Object ssablkqKeyCrn;
+    private Double ssablkqKeyCrn;
     /**
      * Description
      * <p>
@@ -67,7 +67,7 @@ public class BlockScheduleQuery100GetRequest {
      * 
      */
     @JsonProperty("ssablkqTermCodeEff")
-    public Object getSsablkqTermCodeEff() {
+    public String getSsablkqTermCodeEff() {
         return ssablkqTermCodeEff;
     }
 
@@ -78,11 +78,11 @@ public class BlockScheduleQuery100GetRequest {
      * 
      */
     @JsonProperty("ssablkqTermCodeEff")
-    public void setSsablkqTermCodeEff(Object ssablkqTermCodeEff) {
+    public void setSsablkqTermCodeEff(String ssablkqTermCodeEff) {
         this.ssablkqTermCodeEff = ssablkqTermCodeEff;
     }
 
-    public BlockScheduleQuery100GetRequest withSsablkqTermCodeEff(Object ssablkqTermCodeEff) {
+    public BlockScheduleQuery100GetRequest withSsablkqTermCodeEff(String ssablkqTermCodeEff) {
         this.ssablkqTermCodeEff = ssablkqTermCodeEff;
         return this;
     }
@@ -121,7 +121,7 @@ public class BlockScheduleQuery100GetRequest {
      * 
      */
     @JsonProperty("ssablkqKeyCrn")
-    public Object getSsablkqKeyCrn() {
+    public Double getSsablkqKeyCrn() {
         return ssablkqKeyCrn;
     }
 
@@ -132,11 +132,11 @@ public class BlockScheduleQuery100GetRequest {
      * 
      */
     @JsonProperty("ssablkqKeyCrn")
-    public void setSsablkqKeyCrn(Object ssablkqKeyCrn) {
+    public void setSsablkqKeyCrn(Double ssablkqKeyCrn) {
         this.ssablkqKeyCrn = ssablkqKeyCrn;
     }
 
-    public BlockScheduleQuery100GetRequest withSsablkqKeyCrn(Object ssablkqKeyCrn) {
+    public BlockScheduleQuery100GetRequest withSsablkqKeyCrn(Double ssablkqKeyCrn) {
         this.ssablkqKeyCrn = ssablkqKeyCrn;
         return this;
     }

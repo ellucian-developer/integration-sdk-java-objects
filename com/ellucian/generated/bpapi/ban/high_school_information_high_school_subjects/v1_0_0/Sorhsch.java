@@ -1,0 +1,644 @@
+
+package com.ellucian.generated.bpapi.ban.high_school_information_high_school_subjects.v1_0_0;
+
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+import javax.annotation.processing.Generated;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyDescription;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+    "dplmCode",
+    "collPrepInd",
+    "epsccode",
+    "sbgiCode",
+    "classRank",
+    "transRecvDate",
+    "admrCode",
+    "classSize",
+    "gradeCompleted",
+    "percentile",
+    "graduationDate",
+    "stvsbgiDesc",
+    "gpa",
+    "stvadmrDesc",
+    "stvdplmDesc"
+})
+@Generated("jsonschema2pojo")
+public class Sorhsch {
+
+    /**
+     * Diploma
+     * <p>
+     * Lineage reference object : SORHSCH_DPLM_CODE, Lookup lineage reference object : stvdplm
+     * 
+     */
+    @JsonProperty("dplmCode")
+    @JsonPropertyDescription("Lineage reference object : SORHSCH_DPLM_CODE, Lookup lineage reference object : stvdplm")
+    private String dplmCode;
+    /**
+     * College Preparation
+     * <p>
+     * Lineage reference object : SORHSCH_COLL_PREP_IND
+     * 
+     */
+    @JsonProperty("collPrepInd")
+    @JsonPropertyDescription("Lineage reference object : SORHSCH_COLL_PREP_IND")
+    private String collPrepInd;
+    /**
+     * Enrollment Planning Service Code
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("epsccode")
+    private String epsccode;
+    /**
+     * High School
+     * <p>
+     * Lineage reference object : SORHSCH_SBGI_CODE
+     * (Required)
+     * 
+     */
+    @JsonProperty("sbgiCode")
+    @JsonPropertyDescription("Lineage reference object : SORHSCH_SBGI_CODE")
+    private String sbgiCode;
+    /**
+     * Class Rank and Size
+     * <p>
+     * Lineage reference object : SORHSCH_CLASS_RANK
+     * 
+     */
+    @JsonProperty("classRank")
+    @JsonPropertyDescription("Lineage reference object : SORHSCH_CLASS_RANK")
+    private Double classRank;
+    /**
+     * Transcript Received Date
+     * <p>
+     * Lineage reference object : SORHSCH_TRANS_RECV_DATE
+     * 
+     */
+    @JsonProperty("transRecvDate")
+    @JsonPropertyDescription("Lineage reference object : SORHSCH_TRANS_RECV_DATE")
+    private Date transRecvDate;
+    /**
+     * Admissions Request
+     * <p>
+     * Lineage reference object : SORHSCH_ADMR_CODE, Lookup lineage reference object : stvadmr
+     * 
+     */
+    @JsonProperty("admrCode")
+    @JsonPropertyDescription("Lineage reference object : SORHSCH_ADMR_CODE, Lookup lineage reference object : stvadmr")
+    private String admrCode;
+    /**
+     * Class Size
+     * <p>
+     * Lineage reference object : SORHSCH_CLASS_SIZE
+     * 
+     */
+    @JsonProperty("classSize")
+    @JsonPropertyDescription("Lineage reference object : SORHSCH_CLASS_SIZE")
+    private Double classSize;
+    /**
+     * Lineage reference object : SORHSCH_GRADE_COMPLETED
+     * 
+     */
+    @JsonProperty("gradeCompleted")
+    @JsonPropertyDescription("Lineage reference object : SORHSCH_GRADE_COMPLETED")
+    private String gradeCompleted;
+    /**
+     * Percentile
+     * <p>
+     * Lineage reference object : SORHSCH_PERCENTILE
+     * 
+     */
+    @JsonProperty("percentile")
+    @JsonPropertyDescription("Lineage reference object : SORHSCH_PERCENTILE")
+    private Double percentile;
+    /**
+     * Graduation Date
+     * <p>
+     * Lineage reference object : SORHSCH_GRADUATION_DATE
+     * 
+     */
+    @JsonProperty("graduationDate")
+    @JsonPropertyDescription("Lineage reference object : SORHSCH_GRADUATION_DATE")
+    private Date graduationDate;
+    @JsonProperty("stvsbgiDesc")
+    private String stvsbgiDesc;
+    /**
+     * GPA
+     * <p>
+     * Lineage reference object : SORHSCH_GPA
+     * 
+     */
+    @JsonProperty("gpa")
+    @JsonPropertyDescription("Lineage reference object : SORHSCH_GPA")
+    private String gpa;
+    @JsonProperty("stvadmrDesc")
+    private String stvadmrDesc;
+    @JsonProperty("stvdplmDesc")
+    private String stvdplmDesc;
+    @JsonIgnore
+    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+    /**
+     * Diploma
+     * <p>
+     * Lineage reference object : SORHSCH_DPLM_CODE, Lookup lineage reference object : stvdplm
+     * 
+     */
+    @JsonProperty("dplmCode")
+    public String getDplmCode() {
+        return dplmCode;
+    }
+
+    /**
+     * Diploma
+     * <p>
+     * Lineage reference object : SORHSCH_DPLM_CODE, Lookup lineage reference object : stvdplm
+     * 
+     */
+    @JsonProperty("dplmCode")
+    public void setDplmCode(String dplmCode) {
+        this.dplmCode = dplmCode;
+    }
+
+    public Sorhsch withDplmCode(String dplmCode) {
+        this.dplmCode = dplmCode;
+        return this;
+    }
+
+    /**
+     * College Preparation
+     * <p>
+     * Lineage reference object : SORHSCH_COLL_PREP_IND
+     * 
+     */
+    @JsonProperty("collPrepInd")
+    public String getCollPrepInd() {
+        return collPrepInd;
+    }
+
+    /**
+     * College Preparation
+     * <p>
+     * Lineage reference object : SORHSCH_COLL_PREP_IND
+     * 
+     */
+    @JsonProperty("collPrepInd")
+    public void setCollPrepInd(String collPrepInd) {
+        this.collPrepInd = collPrepInd;
+    }
+
+    public Sorhsch withCollPrepInd(String collPrepInd) {
+        this.collPrepInd = collPrepInd;
+        return this;
+    }
+
+    /**
+     * Enrollment Planning Service Code
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("epsccode")
+    public String getEpsccode() {
+        return epsccode;
+    }
+
+    /**
+     * Enrollment Planning Service Code
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("epsccode")
+    public void setEpsccode(String epsccode) {
+        this.epsccode = epsccode;
+    }
+
+    public Sorhsch withEpsccode(String epsccode) {
+        this.epsccode = epsccode;
+        return this;
+    }
+
+    /**
+     * High School
+     * <p>
+     * Lineage reference object : SORHSCH_SBGI_CODE
+     * (Required)
+     * 
+     */
+    @JsonProperty("sbgiCode")
+    public String getSbgiCode() {
+        return sbgiCode;
+    }
+
+    /**
+     * High School
+     * <p>
+     * Lineage reference object : SORHSCH_SBGI_CODE
+     * (Required)
+     * 
+     */
+    @JsonProperty("sbgiCode")
+    public void setSbgiCode(String sbgiCode) {
+        this.sbgiCode = sbgiCode;
+    }
+
+    public Sorhsch withSbgiCode(String sbgiCode) {
+        this.sbgiCode = sbgiCode;
+        return this;
+    }
+
+    /**
+     * Class Rank and Size
+     * <p>
+     * Lineage reference object : SORHSCH_CLASS_RANK
+     * 
+     */
+    @JsonProperty("classRank")
+    public Double getClassRank() {
+        return classRank;
+    }
+
+    /**
+     * Class Rank and Size
+     * <p>
+     * Lineage reference object : SORHSCH_CLASS_RANK
+     * 
+     */
+    @JsonProperty("classRank")
+    public void setClassRank(Double classRank) {
+        this.classRank = classRank;
+    }
+
+    public Sorhsch withClassRank(Double classRank) {
+        this.classRank = classRank;
+        return this;
+    }
+
+    /**
+     * Transcript Received Date
+     * <p>
+     * Lineage reference object : SORHSCH_TRANS_RECV_DATE
+     * 
+     */
+    @JsonProperty("transRecvDate")
+    public Date getTransRecvDate() {
+        return transRecvDate;
+    }
+
+    /**
+     * Transcript Received Date
+     * <p>
+     * Lineage reference object : SORHSCH_TRANS_RECV_DATE
+     * 
+     */
+    @JsonProperty("transRecvDate")
+    public void setTransRecvDate(Date transRecvDate) {
+        this.transRecvDate = transRecvDate;
+    }
+
+    public Sorhsch withTransRecvDate(Date transRecvDate) {
+        this.transRecvDate = transRecvDate;
+        return this;
+    }
+
+    /**
+     * Admissions Request
+     * <p>
+     * Lineage reference object : SORHSCH_ADMR_CODE, Lookup lineage reference object : stvadmr
+     * 
+     */
+    @JsonProperty("admrCode")
+    public String getAdmrCode() {
+        return admrCode;
+    }
+
+    /**
+     * Admissions Request
+     * <p>
+     * Lineage reference object : SORHSCH_ADMR_CODE, Lookup lineage reference object : stvadmr
+     * 
+     */
+    @JsonProperty("admrCode")
+    public void setAdmrCode(String admrCode) {
+        this.admrCode = admrCode;
+    }
+
+    public Sorhsch withAdmrCode(String admrCode) {
+        this.admrCode = admrCode;
+        return this;
+    }
+
+    /**
+     * Class Size
+     * <p>
+     * Lineage reference object : SORHSCH_CLASS_SIZE
+     * 
+     */
+    @JsonProperty("classSize")
+    public Double getClassSize() {
+        return classSize;
+    }
+
+    /**
+     * Class Size
+     * <p>
+     * Lineage reference object : SORHSCH_CLASS_SIZE
+     * 
+     */
+    @JsonProperty("classSize")
+    public void setClassSize(Double classSize) {
+        this.classSize = classSize;
+    }
+
+    public Sorhsch withClassSize(Double classSize) {
+        this.classSize = classSize;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SORHSCH_GRADE_COMPLETED
+     * 
+     */
+    @JsonProperty("gradeCompleted")
+    public String getGradeCompleted() {
+        return gradeCompleted;
+    }
+
+    /**
+     * Lineage reference object : SORHSCH_GRADE_COMPLETED
+     * 
+     */
+    @JsonProperty("gradeCompleted")
+    public void setGradeCompleted(String gradeCompleted) {
+        this.gradeCompleted = gradeCompleted;
+    }
+
+    public Sorhsch withGradeCompleted(String gradeCompleted) {
+        this.gradeCompleted = gradeCompleted;
+        return this;
+    }
+
+    /**
+     * Percentile
+     * <p>
+     * Lineage reference object : SORHSCH_PERCENTILE
+     * 
+     */
+    @JsonProperty("percentile")
+    public Double getPercentile() {
+        return percentile;
+    }
+
+    /**
+     * Percentile
+     * <p>
+     * Lineage reference object : SORHSCH_PERCENTILE
+     * 
+     */
+    @JsonProperty("percentile")
+    public void setPercentile(Double percentile) {
+        this.percentile = percentile;
+    }
+
+    public Sorhsch withPercentile(Double percentile) {
+        this.percentile = percentile;
+        return this;
+    }
+
+    /**
+     * Graduation Date
+     * <p>
+     * Lineage reference object : SORHSCH_GRADUATION_DATE
+     * 
+     */
+    @JsonProperty("graduationDate")
+    public Date getGraduationDate() {
+        return graduationDate;
+    }
+
+    /**
+     * Graduation Date
+     * <p>
+     * Lineage reference object : SORHSCH_GRADUATION_DATE
+     * 
+     */
+    @JsonProperty("graduationDate")
+    public void setGraduationDate(Date graduationDate) {
+        this.graduationDate = graduationDate;
+    }
+
+    public Sorhsch withGraduationDate(Date graduationDate) {
+        this.graduationDate = graduationDate;
+        return this;
+    }
+
+    @JsonProperty("stvsbgiDesc")
+    public String getStvsbgiDesc() {
+        return stvsbgiDesc;
+    }
+
+    @JsonProperty("stvsbgiDesc")
+    public void setStvsbgiDesc(String stvsbgiDesc) {
+        this.stvsbgiDesc = stvsbgiDesc;
+    }
+
+    public Sorhsch withStvsbgiDesc(String stvsbgiDesc) {
+        this.stvsbgiDesc = stvsbgiDesc;
+        return this;
+    }
+
+    /**
+     * GPA
+     * <p>
+     * Lineage reference object : SORHSCH_GPA
+     * 
+     */
+    @JsonProperty("gpa")
+    public String getGpa() {
+        return gpa;
+    }
+
+    /**
+     * GPA
+     * <p>
+     * Lineage reference object : SORHSCH_GPA
+     * 
+     */
+    @JsonProperty("gpa")
+    public void setGpa(String gpa) {
+        this.gpa = gpa;
+    }
+
+    public Sorhsch withGpa(String gpa) {
+        this.gpa = gpa;
+        return this;
+    }
+
+    @JsonProperty("stvadmrDesc")
+    public String getStvadmrDesc() {
+        return stvadmrDesc;
+    }
+
+    @JsonProperty("stvadmrDesc")
+    public void setStvadmrDesc(String stvadmrDesc) {
+        this.stvadmrDesc = stvadmrDesc;
+    }
+
+    public Sorhsch withStvadmrDesc(String stvadmrDesc) {
+        this.stvadmrDesc = stvadmrDesc;
+        return this;
+    }
+
+    @JsonProperty("stvdplmDesc")
+    public String getStvdplmDesc() {
+        return stvdplmDesc;
+    }
+
+    @JsonProperty("stvdplmDesc")
+    public void setStvdplmDesc(String stvdplmDesc) {
+        this.stvdplmDesc = stvdplmDesc;
+    }
+
+    public Sorhsch withStvdplmDesc(String stvdplmDesc) {
+        this.stvdplmDesc = stvdplmDesc;
+        return this;
+    }
+
+    @JsonAnyGetter
+    public Map<String, Object> getAdditionalProperties() {
+        return this.additionalProperties;
+    }
+
+    @JsonAnySetter
+    public void setAdditionalProperty(String name, Object value) {
+        this.additionalProperties.put(name, value);
+    }
+
+    public Sorhsch withAdditionalProperty(String name, Object value) {
+        this.additionalProperties.put(name, value);
+        return this;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(Sorhsch.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
+        sb.append("dplmCode");
+        sb.append('=');
+        sb.append(((this.dplmCode == null)?"<null>":this.dplmCode));
+        sb.append(',');
+        sb.append("collPrepInd");
+        sb.append('=');
+        sb.append(((this.collPrepInd == null)?"<null>":this.collPrepInd));
+        sb.append(',');
+        sb.append("epsccode");
+        sb.append('=');
+        sb.append(((this.epsccode == null)?"<null>":this.epsccode));
+        sb.append(',');
+        sb.append("sbgiCode");
+        sb.append('=');
+        sb.append(((this.sbgiCode == null)?"<null>":this.sbgiCode));
+        sb.append(',');
+        sb.append("classRank");
+        sb.append('=');
+        sb.append(((this.classRank == null)?"<null>":this.classRank));
+        sb.append(',');
+        sb.append("transRecvDate");
+        sb.append('=');
+        sb.append(((this.transRecvDate == null)?"<null>":this.transRecvDate));
+        sb.append(',');
+        sb.append("admrCode");
+        sb.append('=');
+        sb.append(((this.admrCode == null)?"<null>":this.admrCode));
+        sb.append(',');
+        sb.append("classSize");
+        sb.append('=');
+        sb.append(((this.classSize == null)?"<null>":this.classSize));
+        sb.append(',');
+        sb.append("gradeCompleted");
+        sb.append('=');
+        sb.append(((this.gradeCompleted == null)?"<null>":this.gradeCompleted));
+        sb.append(',');
+        sb.append("percentile");
+        sb.append('=');
+        sb.append(((this.percentile == null)?"<null>":this.percentile));
+        sb.append(',');
+        sb.append("graduationDate");
+        sb.append('=');
+        sb.append(((this.graduationDate == null)?"<null>":this.graduationDate));
+        sb.append(',');
+        sb.append("stvsbgiDesc");
+        sb.append('=');
+        sb.append(((this.stvsbgiDesc == null)?"<null>":this.stvsbgiDesc));
+        sb.append(',');
+        sb.append("gpa");
+        sb.append('=');
+        sb.append(((this.gpa == null)?"<null>":this.gpa));
+        sb.append(',');
+        sb.append("stvadmrDesc");
+        sb.append('=');
+        sb.append(((this.stvadmrDesc == null)?"<null>":this.stvadmrDesc));
+        sb.append(',');
+        sb.append("stvdplmDesc");
+        sb.append('=');
+        sb.append(((this.stvdplmDesc == null)?"<null>":this.stvdplmDesc));
+        sb.append(',');
+        sb.append("additionalProperties");
+        sb.append('=');
+        sb.append(((this.additionalProperties == null)?"<null>":this.additionalProperties));
+        sb.append(',');
+        if (sb.charAt((sb.length()- 1)) == ',') {
+            sb.setCharAt((sb.length()- 1), ']');
+        } else {
+            sb.append(']');
+        }
+        return sb.toString();
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 1;
+        result = ((result* 31)+((this.dplmCode == null)? 0 :this.dplmCode.hashCode()));
+        result = ((result* 31)+((this.collPrepInd == null)? 0 :this.collPrepInd.hashCode()));
+        result = ((result* 31)+((this.epsccode == null)? 0 :this.epsccode.hashCode()));
+        result = ((result* 31)+((this.sbgiCode == null)? 0 :this.sbgiCode.hashCode()));
+        result = ((result* 31)+((this.classRank == null)? 0 :this.classRank.hashCode()));
+        result = ((result* 31)+((this.transRecvDate == null)? 0 :this.transRecvDate.hashCode()));
+        result = ((result* 31)+((this.admrCode == null)? 0 :this.admrCode.hashCode()));
+        result = ((result* 31)+((this.classSize == null)? 0 :this.classSize.hashCode()));
+        result = ((result* 31)+((this.gradeCompleted == null)? 0 :this.gradeCompleted.hashCode()));
+        result = ((result* 31)+((this.percentile == null)? 0 :this.percentile.hashCode()));
+        result = ((result* 31)+((this.graduationDate == null)? 0 :this.graduationDate.hashCode()));
+        result = ((result* 31)+((this.stvsbgiDesc == null)? 0 :this.stvsbgiDesc.hashCode()));
+        result = ((result* 31)+((this.gpa == null)? 0 :this.gpa.hashCode()));
+        result = ((result* 31)+((this.stvadmrDesc == null)? 0 :this.stvadmrDesc.hashCode()));
+        result = ((result* 31)+((this.stvdplmDesc == null)? 0 :this.stvdplmDesc.hashCode()));
+        result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if (other == this) {
+            return true;
+        }
+        if ((other instanceof Sorhsch) == false) {
+            return false;
+        }
+        Sorhsch rhs = ((Sorhsch) other);
+        return (((((((((((((((((this.dplmCode == rhs.dplmCode)||((this.dplmCode!= null)&&this.dplmCode.equals(rhs.dplmCode)))&&((this.collPrepInd == rhs.collPrepInd)||((this.collPrepInd!= null)&&this.collPrepInd.equals(rhs.collPrepInd))))&&((this.epsccode == rhs.epsccode)||((this.epsccode!= null)&&this.epsccode.equals(rhs.epsccode))))&&((this.sbgiCode == rhs.sbgiCode)||((this.sbgiCode!= null)&&this.sbgiCode.equals(rhs.sbgiCode))))&&((this.classRank == rhs.classRank)||((this.classRank!= null)&&this.classRank.equals(rhs.classRank))))&&((this.transRecvDate == rhs.transRecvDate)||((this.transRecvDate!= null)&&this.transRecvDate.equals(rhs.transRecvDate))))&&((this.admrCode == rhs.admrCode)||((this.admrCode!= null)&&this.admrCode.equals(rhs.admrCode))))&&((this.classSize == rhs.classSize)||((this.classSize!= null)&&this.classSize.equals(rhs.classSize))))&&((this.gradeCompleted == rhs.gradeCompleted)||((this.gradeCompleted!= null)&&this.gradeCompleted.equals(rhs.gradeCompleted))))&&((this.percentile == rhs.percentile)||((this.percentile!= null)&&this.percentile.equals(rhs.percentile))))&&((this.graduationDate == rhs.graduationDate)||((this.graduationDate!= null)&&this.graduationDate.equals(rhs.graduationDate))))&&((this.stvsbgiDesc == rhs.stvsbgiDesc)||((this.stvsbgiDesc!= null)&&this.stvsbgiDesc.equals(rhs.stvsbgiDesc))))&&((this.gpa == rhs.gpa)||((this.gpa!= null)&&this.gpa.equals(rhs.gpa))))&&((this.stvadmrDesc == rhs.stvadmrDesc)||((this.stvadmrDesc!= null)&&this.stvadmrDesc.equals(rhs.stvadmrDesc))))&&((this.stvdplmDesc == rhs.stvdplmDesc)||((this.stvdplmDesc!= null)&&this.stvdplmDesc.equals(rhs.stvdplmDesc))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))));
+    }
+
+}

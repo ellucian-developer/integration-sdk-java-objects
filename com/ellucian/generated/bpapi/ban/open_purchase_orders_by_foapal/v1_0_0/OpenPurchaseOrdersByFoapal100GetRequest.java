@@ -50,7 +50,7 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      */
     @JsonProperty("displayAcciCode")
     @JsonPropertyDescription("Lineage reference object : displayAcciCode, Lookup lineage reference object : ftvacci")
-    private Object displayAcciCode;
+    private String displayAcciCode;
     /**
      * Proj
      * <p>
@@ -59,7 +59,7 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      */
     @JsonProperty("displayProjCode")
     @JsonPropertyDescription("Lineage reference object : displayProjCode, Lookup lineage reference object : ftvproj")
-    private Object displayProjCode;
+    private String displayProjCode;
     /**
      * Item
      * <p>
@@ -77,7 +77,7 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      */
     @JsonProperty("displayOrgnCode")
     @JsonPropertyDescription("Lineage reference object : displayOrgnCode")
-    private Object displayOrgnCode;
+    private String displayOrgnCode;
     /**
      * Locn
      * <p>
@@ -86,7 +86,7 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      */
     @JsonProperty("displayLocnCode")
     @JsonPropertyDescription("Lineage reference object : displayLocnCode")
-    private Object displayLocnCode;
+    private String displayLocnCode;
     /**
      * Prog
      * <p>
@@ -95,7 +95,7 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      */
     @JsonProperty("displayProgCode")
     @JsonPropertyDescription("Lineage reference object : displayProgCode")
-    private Object displayProgCode;
+    private String displayProgCode;
     /**
      * COA
      * <p>
@@ -105,7 +105,7 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      */
     @JsonProperty("displayCoasCode")
     @JsonPropertyDescription("Lineage reference object : displayCoasCode, Lookup lineage reference object : ftvcoas")
-    private Object displayCoasCode;
+    private String displayCoasCode;
     /**
      * Commodity
      * <p>
@@ -123,7 +123,7 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      */
     @JsonProperty("displayAcctCode")
     @JsonPropertyDescription("Lineage reference object : displayAcctCode")
-    private Object displayAcctCode;
+    private String displayAcctCode;
     /**
      * Quantity
      * <p>
@@ -150,7 +150,7 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      */
     @JsonProperty("displayActvCode")
     @JsonPropertyDescription("Lineage reference object : displayActvCode")
-    private Object displayActvCode;
+    private String displayActvCode;
     /**
      * Fund
      * <p>
@@ -159,7 +159,7 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      */
     @JsonProperty("displayFundCode")
     @JsonPropertyDescription("Lineage reference object : displayFundCode")
-    private Object displayFundCode;
+    private String displayFundCode;
     /**
      * U/M
      * <p>
@@ -206,7 +206,7 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      * 
      */
     @JsonProperty("displayAcciCode")
-    public Object getDisplayAcciCode() {
+    public String getDisplayAcciCode() {
         return displayAcciCode;
     }
 
@@ -217,11 +217,11 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      * 
      */
     @JsonProperty("displayAcciCode")
-    public void setDisplayAcciCode(Object displayAcciCode) {
+    public void setDisplayAcciCode(String displayAcciCode) {
         this.displayAcciCode = displayAcciCode;
     }
 
-    public OpenPurchaseOrdersByFoapal100GetRequest withDisplayAcciCode(Object displayAcciCode) {
+    public OpenPurchaseOrdersByFoapal100GetRequest withDisplayAcciCode(String displayAcciCode) {
         this.displayAcciCode = displayAcciCode;
         return this;
     }
@@ -233,7 +233,7 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      * 
      */
     @JsonProperty("displayProjCode")
-    public Object getDisplayProjCode() {
+    public String getDisplayProjCode() {
         return displayProjCode;
     }
 
@@ -244,11 +244,11 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      * 
      */
     @JsonProperty("displayProjCode")
-    public void setDisplayProjCode(Object displayProjCode) {
+    public void setDisplayProjCode(String displayProjCode) {
         this.displayProjCode = displayProjCode;
     }
 
-    public OpenPurchaseOrdersByFoapal100GetRequest withDisplayProjCode(Object displayProjCode) {
+    public OpenPurchaseOrdersByFoapal100GetRequest withDisplayProjCode(String displayProjCode) {
         this.displayProjCode = displayProjCode;
         return this;
     }
@@ -287,7 +287,7 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      * 
      */
     @JsonProperty("displayOrgnCode")
-    public Object getDisplayOrgnCode() {
+    public String getDisplayOrgnCode() {
         return displayOrgnCode;
     }
 
@@ -298,11 +298,11 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      * 
      */
     @JsonProperty("displayOrgnCode")
-    public void setDisplayOrgnCode(Object displayOrgnCode) {
+    public void setDisplayOrgnCode(String displayOrgnCode) {
         this.displayOrgnCode = displayOrgnCode;
     }
 
-    public OpenPurchaseOrdersByFoapal100GetRequest withDisplayOrgnCode(Object displayOrgnCode) {
+    public OpenPurchaseOrdersByFoapal100GetRequest withDisplayOrgnCode(String displayOrgnCode) {
         this.displayOrgnCode = displayOrgnCode;
         return this;
     }
@@ -314,7 +314,7 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      * 
      */
     @JsonProperty("displayLocnCode")
-    public Object getDisplayLocnCode() {
+    public String getDisplayLocnCode() {
         return displayLocnCode;
     }
 
@@ -325,11 +325,11 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      * 
      */
     @JsonProperty("displayLocnCode")
-    public void setDisplayLocnCode(Object displayLocnCode) {
+    public void setDisplayLocnCode(String displayLocnCode) {
         this.displayLocnCode = displayLocnCode;
     }
 
-    public OpenPurchaseOrdersByFoapal100GetRequest withDisplayLocnCode(Object displayLocnCode) {
+    public OpenPurchaseOrdersByFoapal100GetRequest withDisplayLocnCode(String displayLocnCode) {
         this.displayLocnCode = displayLocnCode;
         return this;
     }
@@ -341,7 +341,7 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      * 
      */
     @JsonProperty("displayProgCode")
-    public Object getDisplayProgCode() {
+    public String getDisplayProgCode() {
         return displayProgCode;
     }
 
@@ -352,11 +352,11 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      * 
      */
     @JsonProperty("displayProgCode")
-    public void setDisplayProgCode(Object displayProgCode) {
+    public void setDisplayProgCode(String displayProgCode) {
         this.displayProgCode = displayProgCode;
     }
 
-    public OpenPurchaseOrdersByFoapal100GetRequest withDisplayProgCode(Object displayProgCode) {
+    public OpenPurchaseOrdersByFoapal100GetRequest withDisplayProgCode(String displayProgCode) {
         this.displayProgCode = displayProgCode;
         return this;
     }
@@ -369,7 +369,7 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      * 
      */
     @JsonProperty("displayCoasCode")
-    public Object getDisplayCoasCode() {
+    public String getDisplayCoasCode() {
         return displayCoasCode;
     }
 
@@ -381,11 +381,11 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      * 
      */
     @JsonProperty("displayCoasCode")
-    public void setDisplayCoasCode(Object displayCoasCode) {
+    public void setDisplayCoasCode(String displayCoasCode) {
         this.displayCoasCode = displayCoasCode;
     }
 
-    public OpenPurchaseOrdersByFoapal100GetRequest withDisplayCoasCode(Object displayCoasCode) {
+    public OpenPurchaseOrdersByFoapal100GetRequest withDisplayCoasCode(String displayCoasCode) {
         this.displayCoasCode = displayCoasCode;
         return this;
     }
@@ -424,7 +424,7 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      * 
      */
     @JsonProperty("displayAcctCode")
-    public Object getDisplayAcctCode() {
+    public String getDisplayAcctCode() {
         return displayAcctCode;
     }
 
@@ -435,11 +435,11 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      * 
      */
     @JsonProperty("displayAcctCode")
-    public void setDisplayAcctCode(Object displayAcctCode) {
+    public void setDisplayAcctCode(String displayAcctCode) {
         this.displayAcctCode = displayAcctCode;
     }
 
-    public OpenPurchaseOrdersByFoapal100GetRequest withDisplayAcctCode(Object displayAcctCode) {
+    public OpenPurchaseOrdersByFoapal100GetRequest withDisplayAcctCode(String displayAcctCode) {
         this.displayAcctCode = displayAcctCode;
         return this;
     }
@@ -505,7 +505,7 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      * 
      */
     @JsonProperty("displayActvCode")
-    public Object getDisplayActvCode() {
+    public String getDisplayActvCode() {
         return displayActvCode;
     }
 
@@ -516,11 +516,11 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      * 
      */
     @JsonProperty("displayActvCode")
-    public void setDisplayActvCode(Object displayActvCode) {
+    public void setDisplayActvCode(String displayActvCode) {
         this.displayActvCode = displayActvCode;
     }
 
-    public OpenPurchaseOrdersByFoapal100GetRequest withDisplayActvCode(Object displayActvCode) {
+    public OpenPurchaseOrdersByFoapal100GetRequest withDisplayActvCode(String displayActvCode) {
         this.displayActvCode = displayActvCode;
         return this;
     }
@@ -532,7 +532,7 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      * 
      */
     @JsonProperty("displayFundCode")
-    public Object getDisplayFundCode() {
+    public String getDisplayFundCode() {
         return displayFundCode;
     }
 
@@ -543,11 +543,11 @@ public class OpenPurchaseOrdersByFoapal100GetRequest {
      * 
      */
     @JsonProperty("displayFundCode")
-    public void setDisplayFundCode(Object displayFundCode) {
+    public void setDisplayFundCode(String displayFundCode) {
         this.displayFundCode = displayFundCode;
     }
 
-    public OpenPurchaseOrdersByFoapal100GetRequest withDisplayFundCode(Object displayFundCode) {
+    public OpenPurchaseOrdersByFoapal100GetRequest withDisplayFundCode(String displayFundCode) {
         this.displayFundCode = displayFundCode;
         return this;
     }

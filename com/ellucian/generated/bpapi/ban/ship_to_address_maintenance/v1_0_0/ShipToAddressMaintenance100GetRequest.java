@@ -52,7 +52,7 @@ public class ShipToAddressMaintenance100GetRequest {
      */
     @JsonProperty("displayShipCode")
     @JsonPropertyDescription("Lineage reference object : displayShipCode, Lookup lineage reference object : ftvship")
-    private Object displayShipCode;
+    private String displayShipCode;
     /**
      * ZIP or Postal Code
      * <p>
@@ -279,7 +279,7 @@ public class ShipToAddressMaintenance100GetRequest {
      * 
      */
     @JsonProperty("displayShipCode")
-    public Object getDisplayShipCode() {
+    public String getDisplayShipCode() {
         return displayShipCode;
     }
 
@@ -291,11 +291,11 @@ public class ShipToAddressMaintenance100GetRequest {
      * 
      */
     @JsonProperty("displayShipCode")
-    public void setDisplayShipCode(Object displayShipCode) {
+    public void setDisplayShipCode(String displayShipCode) {
         this.displayShipCode = displayShipCode;
     }
 
-    public ShipToAddressMaintenance100GetRequest withDisplayShipCode(Object displayShipCode) {
+    public ShipToAddressMaintenance100GetRequest withDisplayShipCode(String displayShipCode) {
         this.displayShipCode = displayShipCode;
         return this;
     }

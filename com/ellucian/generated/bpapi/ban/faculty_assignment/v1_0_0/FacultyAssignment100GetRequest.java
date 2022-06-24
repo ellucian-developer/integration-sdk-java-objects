@@ -28,7 +28,7 @@ public class FacultyAssignment100GetRequest {
      */
     @JsonProperty("keyblocTermCodeEff")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCodeEff, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCodeEff;
+    private String keyblocTermCodeEff;
     /**
      * ID
      * <p>
@@ -37,7 +37,7 @@ public class FacultyAssignment100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -48,7 +48,7 @@ public class FacultyAssignment100GetRequest {
      * 
      */
     @JsonProperty("keyblocTermCodeEff")
-    public Object getKeyblocTermCodeEff() {
+    public String getKeyblocTermCodeEff() {
         return keyblocTermCodeEff;
     }
 
@@ -59,11 +59,11 @@ public class FacultyAssignment100GetRequest {
      * 
      */
     @JsonProperty("keyblocTermCodeEff")
-    public void setKeyblocTermCodeEff(Object keyblocTermCodeEff) {
+    public void setKeyblocTermCodeEff(String keyblocTermCodeEff) {
         this.keyblocTermCodeEff = keyblocTermCodeEff;
     }
 
-    public FacultyAssignment100GetRequest withKeyblocTermCodeEff(Object keyblocTermCodeEff) {
+    public FacultyAssignment100GetRequest withKeyblocTermCodeEff(String keyblocTermCodeEff) {
         this.keyblocTermCodeEff = keyblocTermCodeEff;
         return this;
     }
@@ -75,7 +75,7 @@ public class FacultyAssignment100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -86,11 +86,11 @@ public class FacultyAssignment100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public FacultyAssignment100GetRequest withId(Object id) {
+    public FacultyAssignment100GetRequest withId(String id) {
         this.id = id;
         return this;
     }

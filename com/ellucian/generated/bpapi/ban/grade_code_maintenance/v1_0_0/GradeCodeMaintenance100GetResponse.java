@@ -15,33 +15,18 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "shrgrdo",
-    "shrgrde"
+    "shrgrde",
+    "shrgrdo"
 })
 @Generated("jsonschema2pojo")
 public class GradeCodeMaintenance100GetResponse {
 
-    @JsonProperty("shrgrdo")
-    private List<Shrgrdo> shrgrdo = new ArrayList<Shrgrdo>();
     @JsonProperty("shrgrde")
     private List<Shrgrde> shrgrde = new ArrayList<Shrgrde>();
+    @JsonProperty("shrgrdo")
+    private List<Shrgrdo> shrgrdo = new ArrayList<Shrgrdo>();
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-
-    @JsonProperty("shrgrdo")
-    public List<Shrgrdo> getShrgrdo() {
-        return shrgrdo;
-    }
-
-    @JsonProperty("shrgrdo")
-    public void setShrgrdo(List<Shrgrdo> shrgrdo) {
-        this.shrgrdo = shrgrdo;
-    }
-
-    public GradeCodeMaintenance100GetResponse withShrgrdo(List<Shrgrdo> shrgrdo) {
-        this.shrgrdo = shrgrdo;
-        return this;
-    }
 
     @JsonProperty("shrgrde")
     public List<Shrgrde> getShrgrde() {
@@ -55,6 +40,21 @@ public class GradeCodeMaintenance100GetResponse {
 
     public GradeCodeMaintenance100GetResponse withShrgrde(List<Shrgrde> shrgrde) {
         this.shrgrde = shrgrde;
+        return this;
+    }
+
+    @JsonProperty("shrgrdo")
+    public List<Shrgrdo> getShrgrdo() {
+        return shrgrdo;
+    }
+
+    @JsonProperty("shrgrdo")
+    public void setShrgrdo(List<Shrgrdo> shrgrdo) {
+        this.shrgrdo = shrgrdo;
+    }
+
+    public GradeCodeMaintenance100GetResponse withShrgrdo(List<Shrgrdo> shrgrdo) {
+        this.shrgrdo = shrgrdo;
         return this;
     }
 
@@ -77,13 +77,13 @@ public class GradeCodeMaintenance100GetResponse {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(GradeCodeMaintenance100GetResponse.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
-        sb.append("shrgrdo");
-        sb.append('=');
-        sb.append(((this.shrgrdo == null)?"<null>":this.shrgrdo));
-        sb.append(',');
         sb.append("shrgrde");
         sb.append('=');
         sb.append(((this.shrgrde == null)?"<null>":this.shrgrde));
+        sb.append(',');
+        sb.append("shrgrdo");
+        sb.append('=');
+        sb.append(((this.shrgrdo == null)?"<null>":this.shrgrdo));
         sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');

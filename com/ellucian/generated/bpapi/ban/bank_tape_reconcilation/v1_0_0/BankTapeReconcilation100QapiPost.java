@@ -16,6 +16,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "bankCode",
+    "reconInd",
     "bankAcct",
     "cashAcct",
     "checkDepositCode",
@@ -30,6 +31,15 @@ public class BankTapeReconcilation100QapiPost {
 
     @JsonProperty("bankCode")
     private String bankCode;
+    /**
+     * Status
+     * <p>
+     * Lineage reference object : FABBKTP_RECON_IND
+     * 
+     */
+    @JsonProperty("reconInd")
+    @JsonPropertyDescription("Lineage reference object : FABBKTP_RECON_IND")
+    private String reconInd;
     @JsonProperty("bankAcct")
     private String bankAcct;
     @JsonProperty("cashAcct")
@@ -105,6 +115,33 @@ public class BankTapeReconcilation100QapiPost {
 
     public BankTapeReconcilation100QapiPost withBankCode(String bankCode) {
         this.bankCode = bankCode;
+        return this;
+    }
+
+    /**
+     * Status
+     * <p>
+     * Lineage reference object : FABBKTP_RECON_IND
+     * 
+     */
+    @JsonProperty("reconInd")
+    public String getReconInd() {
+        return reconInd;
+    }
+
+    /**
+     * Status
+     * <p>
+     * Lineage reference object : FABBKTP_RECON_IND
+     * 
+     */
+    @JsonProperty("reconInd")
+    public void setReconInd(String reconInd) {
+        this.reconInd = reconInd;
+    }
+
+    public BankTapeReconcilation100QapiPost withReconInd(String reconInd) {
+        this.reconInd = reconInd;
         return this;
     }
 
@@ -327,6 +364,10 @@ public class BankTapeReconcilation100QapiPost {
         sb.append('=');
         sb.append(((this.bankCode == null)?"<null>":this.bankCode));
         sb.append(',');
+        sb.append("reconInd");
+        sb.append('=');
+        sb.append(((this.reconInd == null)?"<null>":this.reconInd));
+        sb.append(',');
         sb.append("bankAcct");
         sb.append('=');
         sb.append(((this.bankAcct == null)?"<null>":this.bankAcct));
@@ -381,6 +422,7 @@ public class BankTapeReconcilation100QapiPost {
         result = ((result* 31)+((this.bankAcct == null)? 0 :this.bankAcct.hashCode()));
         result = ((result* 31)+((this.transDate == null)? 0 :this.transDate.hashCode()));
         result = ((result* 31)+((this.amt == null)? 0 :this.amt.hashCode()));
+        result = ((result* 31)+((this.reconInd == null)? 0 :this.reconInd.hashCode()));
         result = ((result* 31)+((this.checkDepositInd == null)? 0 :this.checkDepositInd.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
         result = ((result* 31)+((this.desc == null)? 0 :this.desc.hashCode()));
@@ -396,7 +438,7 @@ public class BankTapeReconcilation100QapiPost {
             return false;
         }
         BankTapeReconcilation100QapiPost rhs = ((BankTapeReconcilation100QapiPost) other);
-        return (((((((((((this.cashAcct == rhs.cashAcct)||((this.cashAcct!= null)&&this.cashAcct.equals(rhs.cashAcct)))&&((this.internalDocCode == rhs.internalDocCode)||((this.internalDocCode!= null)&&this.internalDocCode.equals(rhs.internalDocCode))))&&((this.bankCode == rhs.bankCode)||((this.bankCode!= null)&&this.bankCode.equals(rhs.bankCode))))&&((this.checkDepositCode == rhs.checkDepositCode)||((this.checkDepositCode!= null)&&this.checkDepositCode.equals(rhs.checkDepositCode))))&&((this.bankAcct == rhs.bankAcct)||((this.bankAcct!= null)&&this.bankAcct.equals(rhs.bankAcct))))&&((this.transDate == rhs.transDate)||((this.transDate!= null)&&this.transDate.equals(rhs.transDate))))&&((this.amt == rhs.amt)||((this.amt!= null)&&this.amt.equals(rhs.amt))))&&((this.checkDepositInd == rhs.checkDepositInd)||((this.checkDepositInd!= null)&&this.checkDepositInd.equals(rhs.checkDepositInd))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.desc == rhs.desc)||((this.desc!= null)&&this.desc.equals(rhs.desc))));
+        return ((((((((((((this.cashAcct == rhs.cashAcct)||((this.cashAcct!= null)&&this.cashAcct.equals(rhs.cashAcct)))&&((this.internalDocCode == rhs.internalDocCode)||((this.internalDocCode!= null)&&this.internalDocCode.equals(rhs.internalDocCode))))&&((this.bankCode == rhs.bankCode)||((this.bankCode!= null)&&this.bankCode.equals(rhs.bankCode))))&&((this.checkDepositCode == rhs.checkDepositCode)||((this.checkDepositCode!= null)&&this.checkDepositCode.equals(rhs.checkDepositCode))))&&((this.bankAcct == rhs.bankAcct)||((this.bankAcct!= null)&&this.bankAcct.equals(rhs.bankAcct))))&&((this.transDate == rhs.transDate)||((this.transDate!= null)&&this.transDate.equals(rhs.transDate))))&&((this.amt == rhs.amt)||((this.amt!= null)&&this.amt.equals(rhs.amt))))&&((this.reconInd == rhs.reconInd)||((this.reconInd!= null)&&this.reconInd.equals(rhs.reconInd))))&&((this.checkDepositInd == rhs.checkDepositInd)||((this.checkDepositInd!= null)&&this.checkDepositInd.equals(rhs.checkDepositInd))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.desc == rhs.desc)||((this.desc!= null)&&this.desc.equals(rhs.desc))));
     }
 
 }

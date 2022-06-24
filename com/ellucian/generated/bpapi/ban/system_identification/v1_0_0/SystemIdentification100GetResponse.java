@@ -59,14 +59,14 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("finHeading")
     @JsonPropertyDescription("Lineage reference object : finHeading")
-    private Object finHeading;
+    private String finHeading;
     /**
      * Lineage reference object : aluHeading
      * 
      */
     @JsonProperty("aluHeading")
     @JsonPropertyDescription("Lineage reference object : aluHeading")
-    private Object aluHeading;
+    private String aluHeading;
     /**
      * Applicant
      * <p>
@@ -75,14 +75,14 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("hrAppl")
     @JsonPropertyDescription("Lineage reference object : hrAppl")
-    private Object hrAppl;
+    private String hrAppl;
     /**
      * Lineage reference object : confidMsg
      * 
      */
     @JsonProperty("confidMsg")
     @JsonPropertyDescription("Lineage reference object : confidMsg")
-    private Object confidMsg;
+    private String confidMsg;
     /**
      * Admissions
      * <p>
@@ -91,7 +91,7 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("stdAdm")
     @JsonPropertyDescription("Lineage reference object : stdAdm")
-    private Object stdAdm;
+    private String stdAdm;
     /**
      * Organization
      * <p>
@@ -100,14 +100,14 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("aluOrgn")
     @JsonPropertyDescription("Lineage reference object : aluOrgn")
-    private Object aluOrgn;
+    private String aluOrgn;
     /**
      * Lineage reference object : stdHeading
      * 
      */
     @JsonProperty("stdHeading")
     @JsonPropertyDescription("Lineage reference object : stdHeading")
-    private Object stdHeading;
+    private String stdHeading;
     /**
      * Vendor
      * <p>
@@ -116,7 +116,7 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("finVend")
     @JsonPropertyDescription("Lineage reference object : finVend")
-    private Object finVend;
+    private String finVend;
     /**
      * Cobra Person
      * <p>
@@ -125,7 +125,7 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("hrCobra")
     @JsonPropertyDescription("Lineage reference object : hrCobra")
-    private Object hrCobra;
+    private String hrCobra;
     /**
      * Employee
      * <p>
@@ -134,7 +134,7 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("hrEmpl")
     @JsonPropertyDescription("Lineage reference object : hrEmpl")
-    private Object hrEmpl;
+    private String hrEmpl;
     /**
      * Employee
      * <p>
@@ -143,7 +143,7 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("finEmpl")
     @JsonPropertyDescription("Lineage reference object : finEmpl")
-    private Object finEmpl;
+    private String finEmpl;
     /**
      * ID
      * <p>
@@ -152,7 +152,7 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Category
      * <p>
@@ -161,7 +161,7 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("advIndivDonrCatg")
     @JsonPropertyDescription("Lineage reference object : advIndivDonrCatg")
-    private Object advIndivDonrCatg;
+    private String advIndivDonrCatg;
     /**
      * Agency
      * <p>
@@ -170,7 +170,7 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("finAgency")
     @JsonPropertyDescription("Lineage reference object : finAgency")
-    private Object finAgency;
+    private String finAgency;
     /**
      * Recruiting
      * <p>
@@ -179,7 +179,7 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("stdRecr")
     @JsonPropertyDescription("Lineage reference object : stdRecr")
-    private Object stdRecr;
+    private String stdRecr;
     /**
      * Applicant
      * <p>
@@ -188,7 +188,7 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("finAidAppl")
     @JsonPropertyDescription("Lineage reference object : finAidAppl")
-    private Object finAidAppl;
+    private String finAidAppl;
     /**
      * General Student
      * <p>
@@ -197,7 +197,7 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("stdGenr")
     @JsonPropertyDescription("Lineage reference object : stdGenr")
-    private Object stdGenr;
+    private String stdGenr;
     /**
      * Individual
      * <p>
@@ -206,7 +206,7 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("aluConst")
     @JsonPropertyDescription("Lineage reference object : aluConst")
-    private Object aluConst;
+    private String aluConst;
     /**
      * Registration
      * <p>
@@ -215,7 +215,7 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("stdRegr")
     @JsonPropertyDescription("Lineage reference object : stdRegr")
-    private Object stdRegr;
+    private String stdRegr;
     /**
      * Customer
      * <p>
@@ -224,7 +224,7 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("finCust")
     @JsonPropertyDescription("Lineage reference object : finCust")
-    private Object finCust;
+    private String finCust;
     /**
      * Transfer Work
      * <p>
@@ -233,7 +233,7 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("stdTran")
     @JsonPropertyDescription("Lineage reference object : stdTran")
-    private Object stdTran;
+    private String stdTran;
     /**
      * Housing
      * <p>
@@ -242,28 +242,28 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("stdHous")
     @JsonPropertyDescription("Lineage reference object : stdHous")
-    private Object stdHous;
+    private String stdHous;
     /**
      * Lineage reference object : hrHeading
      * 
      */
     @JsonProperty("hrHeading")
     @JsonPropertyDescription("Lineage reference object : hrHeading")
-    private Object hrHeading;
+    private String hrHeading;
     /**
      * Lineage reference object : arHeading2
      * 
      */
     @JsonProperty("arHeading2")
     @JsonPropertyDescription("Lineage reference object : arHeading2")
-    private Object arHeading2;
+    private String arHeading2;
     /**
      * Lineage reference object : arHeading1
      * 
      */
     @JsonProperty("arHeading1")
     @JsonPropertyDescription("Lineage reference object : arHeading1")
-    private Object arHeading1;
+    private String arHeading1;
     /**
      * Accounts Receivable
      * <p>
@@ -272,7 +272,7 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("ar")
     @JsonPropertyDescription("Lineage reference object : ar")
-    private Object ar;
+    private String ar;
     /**
      * Bank
      * <p>
@@ -281,7 +281,7 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("finBank")
     @JsonPropertyDescription("Lineage reference object : finBank")
-    private Object finBank;
+    private String finBank;
     /**
      * Financial Manager
      * <p>
@@ -290,7 +290,7 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("finMagr")
     @JsonPropertyDescription("Lineage reference object : finMagr")
-    private Object finMagr;
+    private String finMagr;
     /**
      * Faculty
      * <p>
@@ -299,21 +299,21 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("stdFacu")
     @JsonPropertyDescription("Lineage reference object : stdFacu")
-    private Object stdFacu;
+    private String stdFacu;
     /**
      * Lineage reference object : finAidHeading
      * 
      */
     @JsonProperty("finAidHeading")
     @JsonPropertyDescription("Lineage reference object : finAidHeading")
-    private Object finAidHeading;
+    private String finAidHeading;
     /**
      * Lineage reference object : dcsdMsg
      * 
      */
     @JsonProperty("dcsdMsg")
     @JsonPropertyDescription("Lineage reference object : dcsdMsg")
-    private Object dcsdMsg;
+    private String dcsdMsg;
     /**
      * Class
      * <p>
@@ -322,14 +322,14 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("advIndivPrefClas")
     @JsonPropertyDescription("Lineage reference object : advIndivPrefClas")
-    private Object advIndivPrefClas;
+    private String advIndivPrefClas;
     /**
      * Lineage reference object : nname
      * 
      */
     @JsonProperty("nname")
     @JsonPropertyDescription("Lineage reference object : nname")
-    private Object nname;
+    private String nname;
     /**
      * Category
      * <p>
@@ -338,7 +338,7 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("advOrgnDonrCatg")
     @JsonPropertyDescription("Lineage reference object : advOrgnDonrCatg")
-    private Object advOrgnDonrCatg;
+    private String advOrgnDonrCatg;
     /**
      * Beneficiary
      * <p>
@@ -347,7 +347,7 @@ public class SystemIdentification100GetResponse {
      */
     @JsonProperty("hrBene")
     @JsonPropertyDescription("Lineage reference object : hrBene")
-    private Object hrBene;
+    private String hrBene;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -356,7 +356,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("finHeading")
-    public Object getFinHeading() {
+    public String getFinHeading() {
         return finHeading;
     }
 
@@ -365,11 +365,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("finHeading")
-    public void setFinHeading(Object finHeading) {
+    public void setFinHeading(String finHeading) {
         this.finHeading = finHeading;
     }
 
-    public SystemIdentification100GetResponse withFinHeading(Object finHeading) {
+    public SystemIdentification100GetResponse withFinHeading(String finHeading) {
         this.finHeading = finHeading;
         return this;
     }
@@ -379,7 +379,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("aluHeading")
-    public Object getAluHeading() {
+    public String getAluHeading() {
         return aluHeading;
     }
 
@@ -388,11 +388,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("aluHeading")
-    public void setAluHeading(Object aluHeading) {
+    public void setAluHeading(String aluHeading) {
         this.aluHeading = aluHeading;
     }
 
-    public SystemIdentification100GetResponse withAluHeading(Object aluHeading) {
+    public SystemIdentification100GetResponse withAluHeading(String aluHeading) {
         this.aluHeading = aluHeading;
         return this;
     }
@@ -404,7 +404,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("hrAppl")
-    public Object getHrAppl() {
+    public String getHrAppl() {
         return hrAppl;
     }
 
@@ -415,11 +415,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("hrAppl")
-    public void setHrAppl(Object hrAppl) {
+    public void setHrAppl(String hrAppl) {
         this.hrAppl = hrAppl;
     }
 
-    public SystemIdentification100GetResponse withHrAppl(Object hrAppl) {
+    public SystemIdentification100GetResponse withHrAppl(String hrAppl) {
         this.hrAppl = hrAppl;
         return this;
     }
@@ -429,7 +429,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("confidMsg")
-    public Object getConfidMsg() {
+    public String getConfidMsg() {
         return confidMsg;
     }
 
@@ -438,11 +438,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("confidMsg")
-    public void setConfidMsg(Object confidMsg) {
+    public void setConfidMsg(String confidMsg) {
         this.confidMsg = confidMsg;
     }
 
-    public SystemIdentification100GetResponse withConfidMsg(Object confidMsg) {
+    public SystemIdentification100GetResponse withConfidMsg(String confidMsg) {
         this.confidMsg = confidMsg;
         return this;
     }
@@ -454,7 +454,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("stdAdm")
-    public Object getStdAdm() {
+    public String getStdAdm() {
         return stdAdm;
     }
 
@@ -465,11 +465,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("stdAdm")
-    public void setStdAdm(Object stdAdm) {
+    public void setStdAdm(String stdAdm) {
         this.stdAdm = stdAdm;
     }
 
-    public SystemIdentification100GetResponse withStdAdm(Object stdAdm) {
+    public SystemIdentification100GetResponse withStdAdm(String stdAdm) {
         this.stdAdm = stdAdm;
         return this;
     }
@@ -481,7 +481,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("aluOrgn")
-    public Object getAluOrgn() {
+    public String getAluOrgn() {
         return aluOrgn;
     }
 
@@ -492,11 +492,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("aluOrgn")
-    public void setAluOrgn(Object aluOrgn) {
+    public void setAluOrgn(String aluOrgn) {
         this.aluOrgn = aluOrgn;
     }
 
-    public SystemIdentification100GetResponse withAluOrgn(Object aluOrgn) {
+    public SystemIdentification100GetResponse withAluOrgn(String aluOrgn) {
         this.aluOrgn = aluOrgn;
         return this;
     }
@@ -506,7 +506,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("stdHeading")
-    public Object getStdHeading() {
+    public String getStdHeading() {
         return stdHeading;
     }
 
@@ -515,11 +515,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("stdHeading")
-    public void setStdHeading(Object stdHeading) {
+    public void setStdHeading(String stdHeading) {
         this.stdHeading = stdHeading;
     }
 
-    public SystemIdentification100GetResponse withStdHeading(Object stdHeading) {
+    public SystemIdentification100GetResponse withStdHeading(String stdHeading) {
         this.stdHeading = stdHeading;
         return this;
     }
@@ -531,7 +531,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("finVend")
-    public Object getFinVend() {
+    public String getFinVend() {
         return finVend;
     }
 
@@ -542,11 +542,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("finVend")
-    public void setFinVend(Object finVend) {
+    public void setFinVend(String finVend) {
         this.finVend = finVend;
     }
 
-    public SystemIdentification100GetResponse withFinVend(Object finVend) {
+    public SystemIdentification100GetResponse withFinVend(String finVend) {
         this.finVend = finVend;
         return this;
     }
@@ -558,7 +558,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("hrCobra")
-    public Object getHrCobra() {
+    public String getHrCobra() {
         return hrCobra;
     }
 
@@ -569,11 +569,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("hrCobra")
-    public void setHrCobra(Object hrCobra) {
+    public void setHrCobra(String hrCobra) {
         this.hrCobra = hrCobra;
     }
 
-    public SystemIdentification100GetResponse withHrCobra(Object hrCobra) {
+    public SystemIdentification100GetResponse withHrCobra(String hrCobra) {
         this.hrCobra = hrCobra;
         return this;
     }
@@ -585,7 +585,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("hrEmpl")
-    public Object getHrEmpl() {
+    public String getHrEmpl() {
         return hrEmpl;
     }
 
@@ -596,11 +596,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("hrEmpl")
-    public void setHrEmpl(Object hrEmpl) {
+    public void setHrEmpl(String hrEmpl) {
         this.hrEmpl = hrEmpl;
     }
 
-    public SystemIdentification100GetResponse withHrEmpl(Object hrEmpl) {
+    public SystemIdentification100GetResponse withHrEmpl(String hrEmpl) {
         this.hrEmpl = hrEmpl;
         return this;
     }
@@ -612,7 +612,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("finEmpl")
-    public Object getFinEmpl() {
+    public String getFinEmpl() {
         return finEmpl;
     }
 
@@ -623,11 +623,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("finEmpl")
-    public void setFinEmpl(Object finEmpl) {
+    public void setFinEmpl(String finEmpl) {
         this.finEmpl = finEmpl;
     }
 
-    public SystemIdentification100GetResponse withFinEmpl(Object finEmpl) {
+    public SystemIdentification100GetResponse withFinEmpl(String finEmpl) {
         this.finEmpl = finEmpl;
         return this;
     }
@@ -639,7 +639,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -650,11 +650,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public SystemIdentification100GetResponse withId(Object id) {
+    public SystemIdentification100GetResponse withId(String id) {
         this.id = id;
         return this;
     }
@@ -666,7 +666,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("advIndivDonrCatg")
-    public Object getAdvIndivDonrCatg() {
+    public String getAdvIndivDonrCatg() {
         return advIndivDonrCatg;
     }
 
@@ -677,11 +677,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("advIndivDonrCatg")
-    public void setAdvIndivDonrCatg(Object advIndivDonrCatg) {
+    public void setAdvIndivDonrCatg(String advIndivDonrCatg) {
         this.advIndivDonrCatg = advIndivDonrCatg;
     }
 
-    public SystemIdentification100GetResponse withAdvIndivDonrCatg(Object advIndivDonrCatg) {
+    public SystemIdentification100GetResponse withAdvIndivDonrCatg(String advIndivDonrCatg) {
         this.advIndivDonrCatg = advIndivDonrCatg;
         return this;
     }
@@ -693,7 +693,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("finAgency")
-    public Object getFinAgency() {
+    public String getFinAgency() {
         return finAgency;
     }
 
@@ -704,11 +704,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("finAgency")
-    public void setFinAgency(Object finAgency) {
+    public void setFinAgency(String finAgency) {
         this.finAgency = finAgency;
     }
 
-    public SystemIdentification100GetResponse withFinAgency(Object finAgency) {
+    public SystemIdentification100GetResponse withFinAgency(String finAgency) {
         this.finAgency = finAgency;
         return this;
     }
@@ -720,7 +720,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("stdRecr")
-    public Object getStdRecr() {
+    public String getStdRecr() {
         return stdRecr;
     }
 
@@ -731,11 +731,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("stdRecr")
-    public void setStdRecr(Object stdRecr) {
+    public void setStdRecr(String stdRecr) {
         this.stdRecr = stdRecr;
     }
 
-    public SystemIdentification100GetResponse withStdRecr(Object stdRecr) {
+    public SystemIdentification100GetResponse withStdRecr(String stdRecr) {
         this.stdRecr = stdRecr;
         return this;
     }
@@ -747,7 +747,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("finAidAppl")
-    public Object getFinAidAppl() {
+    public String getFinAidAppl() {
         return finAidAppl;
     }
 
@@ -758,11 +758,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("finAidAppl")
-    public void setFinAidAppl(Object finAidAppl) {
+    public void setFinAidAppl(String finAidAppl) {
         this.finAidAppl = finAidAppl;
     }
 
-    public SystemIdentification100GetResponse withFinAidAppl(Object finAidAppl) {
+    public SystemIdentification100GetResponse withFinAidAppl(String finAidAppl) {
         this.finAidAppl = finAidAppl;
         return this;
     }
@@ -774,7 +774,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("stdGenr")
-    public Object getStdGenr() {
+    public String getStdGenr() {
         return stdGenr;
     }
 
@@ -785,11 +785,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("stdGenr")
-    public void setStdGenr(Object stdGenr) {
+    public void setStdGenr(String stdGenr) {
         this.stdGenr = stdGenr;
     }
 
-    public SystemIdentification100GetResponse withStdGenr(Object stdGenr) {
+    public SystemIdentification100GetResponse withStdGenr(String stdGenr) {
         this.stdGenr = stdGenr;
         return this;
     }
@@ -801,7 +801,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("aluConst")
-    public Object getAluConst() {
+    public String getAluConst() {
         return aluConst;
     }
 
@@ -812,11 +812,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("aluConst")
-    public void setAluConst(Object aluConst) {
+    public void setAluConst(String aluConst) {
         this.aluConst = aluConst;
     }
 
-    public SystemIdentification100GetResponse withAluConst(Object aluConst) {
+    public SystemIdentification100GetResponse withAluConst(String aluConst) {
         this.aluConst = aluConst;
         return this;
     }
@@ -828,7 +828,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("stdRegr")
-    public Object getStdRegr() {
+    public String getStdRegr() {
         return stdRegr;
     }
 
@@ -839,11 +839,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("stdRegr")
-    public void setStdRegr(Object stdRegr) {
+    public void setStdRegr(String stdRegr) {
         this.stdRegr = stdRegr;
     }
 
-    public SystemIdentification100GetResponse withStdRegr(Object stdRegr) {
+    public SystemIdentification100GetResponse withStdRegr(String stdRegr) {
         this.stdRegr = stdRegr;
         return this;
     }
@@ -855,7 +855,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("finCust")
-    public Object getFinCust() {
+    public String getFinCust() {
         return finCust;
     }
 
@@ -866,11 +866,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("finCust")
-    public void setFinCust(Object finCust) {
+    public void setFinCust(String finCust) {
         this.finCust = finCust;
     }
 
-    public SystemIdentification100GetResponse withFinCust(Object finCust) {
+    public SystemIdentification100GetResponse withFinCust(String finCust) {
         this.finCust = finCust;
         return this;
     }
@@ -882,7 +882,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("stdTran")
-    public Object getStdTran() {
+    public String getStdTran() {
         return stdTran;
     }
 
@@ -893,11 +893,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("stdTran")
-    public void setStdTran(Object stdTran) {
+    public void setStdTran(String stdTran) {
         this.stdTran = stdTran;
     }
 
-    public SystemIdentification100GetResponse withStdTran(Object stdTran) {
+    public SystemIdentification100GetResponse withStdTran(String stdTran) {
         this.stdTran = stdTran;
         return this;
     }
@@ -909,7 +909,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("stdHous")
-    public Object getStdHous() {
+    public String getStdHous() {
         return stdHous;
     }
 
@@ -920,11 +920,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("stdHous")
-    public void setStdHous(Object stdHous) {
+    public void setStdHous(String stdHous) {
         this.stdHous = stdHous;
     }
 
-    public SystemIdentification100GetResponse withStdHous(Object stdHous) {
+    public SystemIdentification100GetResponse withStdHous(String stdHous) {
         this.stdHous = stdHous;
         return this;
     }
@@ -934,7 +934,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("hrHeading")
-    public Object getHrHeading() {
+    public String getHrHeading() {
         return hrHeading;
     }
 
@@ -943,11 +943,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("hrHeading")
-    public void setHrHeading(Object hrHeading) {
+    public void setHrHeading(String hrHeading) {
         this.hrHeading = hrHeading;
     }
 
-    public SystemIdentification100GetResponse withHrHeading(Object hrHeading) {
+    public SystemIdentification100GetResponse withHrHeading(String hrHeading) {
         this.hrHeading = hrHeading;
         return this;
     }
@@ -957,7 +957,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("arHeading2")
-    public Object getArHeading2() {
+    public String getArHeading2() {
         return arHeading2;
     }
 
@@ -966,11 +966,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("arHeading2")
-    public void setArHeading2(Object arHeading2) {
+    public void setArHeading2(String arHeading2) {
         this.arHeading2 = arHeading2;
     }
 
-    public SystemIdentification100GetResponse withArHeading2(Object arHeading2) {
+    public SystemIdentification100GetResponse withArHeading2(String arHeading2) {
         this.arHeading2 = arHeading2;
         return this;
     }
@@ -980,7 +980,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("arHeading1")
-    public Object getArHeading1() {
+    public String getArHeading1() {
         return arHeading1;
     }
 
@@ -989,11 +989,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("arHeading1")
-    public void setArHeading1(Object arHeading1) {
+    public void setArHeading1(String arHeading1) {
         this.arHeading1 = arHeading1;
     }
 
-    public SystemIdentification100GetResponse withArHeading1(Object arHeading1) {
+    public SystemIdentification100GetResponse withArHeading1(String arHeading1) {
         this.arHeading1 = arHeading1;
         return this;
     }
@@ -1005,7 +1005,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("ar")
-    public Object getAr() {
+    public String getAr() {
         return ar;
     }
 
@@ -1016,11 +1016,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("ar")
-    public void setAr(Object ar) {
+    public void setAr(String ar) {
         this.ar = ar;
     }
 
-    public SystemIdentification100GetResponse withAr(Object ar) {
+    public SystemIdentification100GetResponse withAr(String ar) {
         this.ar = ar;
         return this;
     }
@@ -1032,7 +1032,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("finBank")
-    public Object getFinBank() {
+    public String getFinBank() {
         return finBank;
     }
 
@@ -1043,11 +1043,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("finBank")
-    public void setFinBank(Object finBank) {
+    public void setFinBank(String finBank) {
         this.finBank = finBank;
     }
 
-    public SystemIdentification100GetResponse withFinBank(Object finBank) {
+    public SystemIdentification100GetResponse withFinBank(String finBank) {
         this.finBank = finBank;
         return this;
     }
@@ -1059,7 +1059,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("finMagr")
-    public Object getFinMagr() {
+    public String getFinMagr() {
         return finMagr;
     }
 
@@ -1070,11 +1070,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("finMagr")
-    public void setFinMagr(Object finMagr) {
+    public void setFinMagr(String finMagr) {
         this.finMagr = finMagr;
     }
 
-    public SystemIdentification100GetResponse withFinMagr(Object finMagr) {
+    public SystemIdentification100GetResponse withFinMagr(String finMagr) {
         this.finMagr = finMagr;
         return this;
     }
@@ -1086,7 +1086,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("stdFacu")
-    public Object getStdFacu() {
+    public String getStdFacu() {
         return stdFacu;
     }
 
@@ -1097,11 +1097,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("stdFacu")
-    public void setStdFacu(Object stdFacu) {
+    public void setStdFacu(String stdFacu) {
         this.stdFacu = stdFacu;
     }
 
-    public SystemIdentification100GetResponse withStdFacu(Object stdFacu) {
+    public SystemIdentification100GetResponse withStdFacu(String stdFacu) {
         this.stdFacu = stdFacu;
         return this;
     }
@@ -1111,7 +1111,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("finAidHeading")
-    public Object getFinAidHeading() {
+    public String getFinAidHeading() {
         return finAidHeading;
     }
 
@@ -1120,11 +1120,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("finAidHeading")
-    public void setFinAidHeading(Object finAidHeading) {
+    public void setFinAidHeading(String finAidHeading) {
         this.finAidHeading = finAidHeading;
     }
 
-    public SystemIdentification100GetResponse withFinAidHeading(Object finAidHeading) {
+    public SystemIdentification100GetResponse withFinAidHeading(String finAidHeading) {
         this.finAidHeading = finAidHeading;
         return this;
     }
@@ -1134,7 +1134,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("dcsdMsg")
-    public Object getDcsdMsg() {
+    public String getDcsdMsg() {
         return dcsdMsg;
     }
 
@@ -1143,11 +1143,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("dcsdMsg")
-    public void setDcsdMsg(Object dcsdMsg) {
+    public void setDcsdMsg(String dcsdMsg) {
         this.dcsdMsg = dcsdMsg;
     }
 
-    public SystemIdentification100GetResponse withDcsdMsg(Object dcsdMsg) {
+    public SystemIdentification100GetResponse withDcsdMsg(String dcsdMsg) {
         this.dcsdMsg = dcsdMsg;
         return this;
     }
@@ -1159,7 +1159,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("advIndivPrefClas")
-    public Object getAdvIndivPrefClas() {
+    public String getAdvIndivPrefClas() {
         return advIndivPrefClas;
     }
 
@@ -1170,11 +1170,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("advIndivPrefClas")
-    public void setAdvIndivPrefClas(Object advIndivPrefClas) {
+    public void setAdvIndivPrefClas(String advIndivPrefClas) {
         this.advIndivPrefClas = advIndivPrefClas;
     }
 
-    public SystemIdentification100GetResponse withAdvIndivPrefClas(Object advIndivPrefClas) {
+    public SystemIdentification100GetResponse withAdvIndivPrefClas(String advIndivPrefClas) {
         this.advIndivPrefClas = advIndivPrefClas;
         return this;
     }
@@ -1184,7 +1184,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("nname")
-    public Object getNname() {
+    public String getNname() {
         return nname;
     }
 
@@ -1193,11 +1193,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("nname")
-    public void setNname(Object nname) {
+    public void setNname(String nname) {
         this.nname = nname;
     }
 
-    public SystemIdentification100GetResponse withNname(Object nname) {
+    public SystemIdentification100GetResponse withNname(String nname) {
         this.nname = nname;
         return this;
     }
@@ -1209,7 +1209,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("advOrgnDonrCatg")
-    public Object getAdvOrgnDonrCatg() {
+    public String getAdvOrgnDonrCatg() {
         return advOrgnDonrCatg;
     }
 
@@ -1220,11 +1220,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("advOrgnDonrCatg")
-    public void setAdvOrgnDonrCatg(Object advOrgnDonrCatg) {
+    public void setAdvOrgnDonrCatg(String advOrgnDonrCatg) {
         this.advOrgnDonrCatg = advOrgnDonrCatg;
     }
 
-    public SystemIdentification100GetResponse withAdvOrgnDonrCatg(Object advOrgnDonrCatg) {
+    public SystemIdentification100GetResponse withAdvOrgnDonrCatg(String advOrgnDonrCatg) {
         this.advOrgnDonrCatg = advOrgnDonrCatg;
         return this;
     }
@@ -1236,7 +1236,7 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("hrBene")
-    public Object getHrBene() {
+    public String getHrBene() {
         return hrBene;
     }
 
@@ -1247,11 +1247,11 @@ public class SystemIdentification100GetResponse {
      * 
      */
     @JsonProperty("hrBene")
-    public void setHrBene(Object hrBene) {
+    public void setHrBene(String hrBene) {
         this.hrBene = hrBene;
     }
 
-    public SystemIdentification100GetResponse withHrBene(Object hrBene) {
+    public SystemIdentification100GetResponse withHrBene(String hrBene) {
         this.hrBene = hrBene;
         return this;
     }

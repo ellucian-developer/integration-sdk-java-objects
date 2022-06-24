@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.employee_benefit_or_deduction.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -30,7 +31,7 @@ public class EmployeeBenefitOrDeduction100PostRequest {
      */
     @JsonProperty("queryDate")
     @JsonPropertyDescription("Lineage reference object : queryDate")
-    private Object queryDate;
+    private Date queryDate;
     /**
      * Payroll Id
      * <p>
@@ -49,7 +50,7 @@ public class EmployeeBenefitOrDeduction100PostRequest {
      */
     @JsonProperty("bdcaCode")
     @JsonPropertyDescription("Lineage reference object : bdcaCode")
-    private Object bdcaCode;
+    private String bdcaCode;
     /**
      * ID
      * <p>
@@ -58,7 +59,7 @@ public class EmployeeBenefitOrDeduction100PostRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -69,7 +70,7 @@ public class EmployeeBenefitOrDeduction100PostRequest {
      * 
      */
     @JsonProperty("queryDate")
-    public Object getQueryDate() {
+    public Date getQueryDate() {
         return queryDate;
     }
 
@@ -80,11 +81,11 @@ public class EmployeeBenefitOrDeduction100PostRequest {
      * 
      */
     @JsonProperty("queryDate")
-    public void setQueryDate(Object queryDate) {
+    public void setQueryDate(Date queryDate) {
         this.queryDate = queryDate;
     }
 
-    public EmployeeBenefitOrDeduction100PostRequest withQueryDate(Object queryDate) {
+    public EmployeeBenefitOrDeduction100PostRequest withQueryDate(Date queryDate) {
         this.queryDate = queryDate;
         return this;
     }
@@ -125,7 +126,7 @@ public class EmployeeBenefitOrDeduction100PostRequest {
      * 
      */
     @JsonProperty("bdcaCode")
-    public Object getBdcaCode() {
+    public String getBdcaCode() {
         return bdcaCode;
     }
 
@@ -136,11 +137,11 @@ public class EmployeeBenefitOrDeduction100PostRequest {
      * 
      */
     @JsonProperty("bdcaCode")
-    public void setBdcaCode(Object bdcaCode) {
+    public void setBdcaCode(String bdcaCode) {
         this.bdcaCode = bdcaCode;
     }
 
-    public EmployeeBenefitOrDeduction100PostRequest withBdcaCode(Object bdcaCode) {
+    public EmployeeBenefitOrDeduction100PostRequest withBdcaCode(String bdcaCode) {
         this.bdcaCode = bdcaCode;
         return this;
     }
@@ -152,7 +153,7 @@ public class EmployeeBenefitOrDeduction100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -163,11 +164,11 @@ public class EmployeeBenefitOrDeduction100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public EmployeeBenefitOrDeduction100PostRequest withId(Object id) {
+    public EmployeeBenefitOrDeduction100PostRequest withId(String id) {
         this.id = id;
         return this;
     }

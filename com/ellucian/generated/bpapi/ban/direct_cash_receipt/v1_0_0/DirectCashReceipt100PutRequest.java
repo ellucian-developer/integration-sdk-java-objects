@@ -118,7 +118,7 @@ public class DirectCashReceipt100PutRequest {
      */
     @JsonProperty("documentNumber")
     @JsonPropertyDescription("Lineage reference object : documentNumber")
-    private Object documentNumber;
+    private String documentNumber;
     /**
      * COA
      * <p>
@@ -202,7 +202,7 @@ public class DirectCashReceipt100PutRequest {
      */
     @JsonProperty("vendor")
     @JsonPropertyDescription("Lineage reference object : keyBlockVendor")
-    private Object vendor;
+    private String vendor;
     /**
      * Transaction Date
      * <p>
@@ -613,7 +613,7 @@ public class DirectCashReceipt100PutRequest {
      * 
      */
     @JsonProperty("documentNumber")
-    public Object getDocumentNumber() {
+    public String getDocumentNumber() {
         return documentNumber;
     }
 
@@ -624,11 +624,11 @@ public class DirectCashReceipt100PutRequest {
      * 
      */
     @JsonProperty("documentNumber")
-    public void setDocumentNumber(Object documentNumber) {
+    public void setDocumentNumber(String documentNumber) {
         this.documentNumber = documentNumber;
     }
 
-    public DirectCashReceipt100PutRequest withDocumentNumber(Object documentNumber) {
+    public DirectCashReceipt100PutRequest withDocumentNumber(String documentNumber) {
         this.documentNumber = documentNumber;
         return this;
     }
@@ -873,7 +873,7 @@ public class DirectCashReceipt100PutRequest {
      * 
      */
     @JsonProperty("vendor")
-    public Object getVendor() {
+    public String getVendor() {
         return vendor;
     }
 
@@ -884,11 +884,11 @@ public class DirectCashReceipt100PutRequest {
      * 
      */
     @JsonProperty("vendor")
-    public void setVendor(Object vendor) {
+    public void setVendor(String vendor) {
         this.vendor = vendor;
     }
 
-    public DirectCashReceipt100PutRequest withVendor(Object vendor) {
+    public DirectCashReceipt100PutRequest withVendor(String vendor) {
         this.vendor = vendor;
         return this;
     }

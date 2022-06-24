@@ -205,7 +205,7 @@ public class PurchaseOrderInformation100PutRequest {
      */
     @JsonProperty("displayPohdCode")
     @JsonPropertyDescription("Lineage reference object : displayPohdCode")
-    private Object displayPohdCode;
+    private String displayPohdCode;
     /**
      * Blanket Order
      * <p>
@@ -707,7 +707,7 @@ public class PurchaseOrderInformation100PutRequest {
      * 
      */
     @JsonProperty("displayPohdCode")
-    public Object getDisplayPohdCode() {
+    public String getDisplayPohdCode() {
         return displayPohdCode;
     }
 
@@ -718,11 +718,11 @@ public class PurchaseOrderInformation100PutRequest {
      * 
      */
     @JsonProperty("displayPohdCode")
-    public void setDisplayPohdCode(Object displayPohdCode) {
+    public void setDisplayPohdCode(String displayPohdCode) {
         this.displayPohdCode = displayPohdCode;
     }
 
-    public PurchaseOrderInformation100PutRequest withDisplayPohdCode(Object displayPohdCode) {
+    public PurchaseOrderInformation100PutRequest withDisplayPohdCode(String displayPohdCode) {
         this.displayPohdCode = displayPohdCode;
         return this;
     }

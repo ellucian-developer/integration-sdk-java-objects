@@ -114,7 +114,7 @@ public class StandardReportFfr100PutResponse {
     @JsonProperty("displayTotalFedShare")
     private Double displayTotalFedShare;
     /**
-     * DUNS Number
+     * Unique Entity Identifier
      * <p>
      * 
      * 
@@ -567,7 +567,7 @@ public class StandardReportFfr100PutResponse {
     }
 
     /**
-     * DUNS Number
+     * Unique Entity Identifier
      * <p>
      * 
      * 
@@ -578,7 +578,7 @@ public class StandardReportFfr100PutResponse {
     }
 
     /**
-     * DUNS Number
+     * Unique Entity Identifier
      * <p>
      * 
      * 

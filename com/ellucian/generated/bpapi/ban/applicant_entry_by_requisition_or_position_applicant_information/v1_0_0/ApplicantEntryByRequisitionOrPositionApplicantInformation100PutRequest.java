@@ -44,7 +44,7 @@ public class ApplicantEntryByRequisitionOrPositionApplicantInformation100PutRequ
      */
     @JsonProperty("reqNo")
     @JsonPropertyDescription("Lineage reference object : reqNo")
-    private Object reqNo;
+    private String reqNo;
     /**
      * Source
      * <p>
@@ -63,7 +63,7 @@ public class ApplicantEntryByRequisitionOrPositionApplicantInformation100PutRequ
      */
     @JsonProperty("pclsCode")
     @JsonPropertyDescription("Lineage reference object : pclsCode")
-    private Object pclsCode;
+    private String pclsCode;
     /**
      * Applicant ID
      * <p>
@@ -88,7 +88,7 @@ public class ApplicantEntryByRequisitionOrPositionApplicantInformation100PutRequ
      */
     @JsonProperty("posn")
     @JsonPropertyDescription("Lineage reference object : posn")
-    private Object posn;
+    private String posn;
     /**
      * Full or Part or No Preference
      * <p>
@@ -144,7 +144,7 @@ public class ApplicantEntryByRequisitionOrPositionApplicantInformation100PutRequ
      * 
      */
     @JsonProperty("reqNo")
-    public Object getReqNo() {
+    public String getReqNo() {
         return reqNo;
     }
 
@@ -155,11 +155,11 @@ public class ApplicantEntryByRequisitionOrPositionApplicantInformation100PutRequ
      * 
      */
     @JsonProperty("reqNo")
-    public void setReqNo(Object reqNo) {
+    public void setReqNo(String reqNo) {
         this.reqNo = reqNo;
     }
 
-    public ApplicantEntryByRequisitionOrPositionApplicantInformation100PutRequest withReqNo(Object reqNo) {
+    public ApplicantEntryByRequisitionOrPositionApplicantInformation100PutRequest withReqNo(String reqNo) {
         this.reqNo = reqNo;
         return this;
     }
@@ -200,7 +200,7 @@ public class ApplicantEntryByRequisitionOrPositionApplicantInformation100PutRequ
      * 
      */
     @JsonProperty("pclsCode")
-    public Object getPclsCode() {
+    public String getPclsCode() {
         return pclsCode;
     }
 
@@ -211,11 +211,11 @@ public class ApplicantEntryByRequisitionOrPositionApplicantInformation100PutRequ
      * 
      */
     @JsonProperty("pclsCode")
-    public void setPclsCode(Object pclsCode) {
+    public void setPclsCode(String pclsCode) {
         this.pclsCode = pclsCode;
     }
 
-    public ApplicantEntryByRequisitionOrPositionApplicantInformation100PutRequest withPclsCode(Object pclsCode) {
+    public ApplicantEntryByRequisitionOrPositionApplicantInformation100PutRequest withPclsCode(String pclsCode) {
         this.pclsCode = pclsCode;
         return this;
     }
@@ -281,7 +281,7 @@ public class ApplicantEntryByRequisitionOrPositionApplicantInformation100PutRequ
      * 
      */
     @JsonProperty("posn")
-    public Object getPosn() {
+    public String getPosn() {
         return posn;
     }
 
@@ -292,11 +292,11 @@ public class ApplicantEntryByRequisitionOrPositionApplicantInformation100PutRequ
      * 
      */
     @JsonProperty("posn")
-    public void setPosn(Object posn) {
+    public void setPosn(String posn) {
         this.posn = posn;
     }
 
-    public ApplicantEntryByRequisitionOrPositionApplicantInformation100PutRequest withPosn(Object posn) {
+    public ApplicantEntryByRequisitionOrPositionApplicantInformation100PutRequest withPosn(String posn) {
         this.posn = posn;
         return this;
     }

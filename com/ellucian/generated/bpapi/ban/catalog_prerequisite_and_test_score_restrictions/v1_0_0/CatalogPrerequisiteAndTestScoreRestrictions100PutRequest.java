@@ -116,7 +116,7 @@ public class CatalogPrerequisiteAndTestScoreRestrictions100PutRequest {
      */
     @JsonProperty("keyblckTermCode")
     @JsonPropertyDescription("Lineage reference object : keyBlckTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblckTermCode;
+    private String keyblckTermCode;
     /**
      * Subject
      * <p>
@@ -134,7 +134,7 @@ public class CatalogPrerequisiteAndTestScoreRestrictions100PutRequest {
      */
     @JsonProperty("program")
     @JsonPropertyDescription("Lineage reference object : program")
-    private Object program;
+    private String program;
     /**
      * Course Title
      * <p>
@@ -448,7 +448,7 @@ public class CatalogPrerequisiteAndTestScoreRestrictions100PutRequest {
      * 
      */
     @JsonProperty("keyblckTermCode")
-    public Object getKeyblckTermCode() {
+    public String getKeyblckTermCode() {
         return keyblckTermCode;
     }
 
@@ -457,11 +457,11 @@ public class CatalogPrerequisiteAndTestScoreRestrictions100PutRequest {
      * 
      */
     @JsonProperty("keyblckTermCode")
-    public void setKeyblckTermCode(Object keyblckTermCode) {
+    public void setKeyblckTermCode(String keyblckTermCode) {
         this.keyblckTermCode = keyblckTermCode;
     }
 
-    public CatalogPrerequisiteAndTestScoreRestrictions100PutRequest withKeyblckTermCode(Object keyblckTermCode) {
+    public CatalogPrerequisiteAndTestScoreRestrictions100PutRequest withKeyblckTermCode(String keyblckTermCode) {
         this.keyblckTermCode = keyblckTermCode;
         return this;
     }
@@ -513,7 +513,7 @@ public class CatalogPrerequisiteAndTestScoreRestrictions100PutRequest {
      * 
      */
     @JsonProperty("program")
-    public Object getProgram() {
+    public String getProgram() {
         return program;
     }
 
@@ -522,11 +522,11 @@ public class CatalogPrerequisiteAndTestScoreRestrictions100PutRequest {
      * 
      */
     @JsonProperty("program")
-    public void setProgram(Object program) {
+    public void setProgram(String program) {
         this.program = program;
     }
 
-    public CatalogPrerequisiteAndTestScoreRestrictions100PutRequest withProgram(Object program) {
+    public CatalogPrerequisiteAndTestScoreRestrictions100PutRequest withProgram(String program) {
         this.program = program;
         return this;
     }

@@ -86,7 +86,7 @@ public class OpenLearningSectionDefaultRules100PostRequest {
      */
     @JsonProperty("keyblckTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblckTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblckTermCode;
+    private String keyblckTermCode;
     /**
      * Census Date 2
      * <p>
@@ -149,7 +149,7 @@ public class OpenLearningSectionDefaultRules100PostRequest {
      */
     @JsonProperty("keyblocTermCodeDef")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCodedef, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCodeDef;
+    private String keyblocTermCodeDef;
     /**
      * Status Code
      * <p>
@@ -350,7 +350,7 @@ public class OpenLearningSectionDefaultRules100PostRequest {
      * 
      */
     @JsonProperty("keyblckTermCode")
-    public Object getKeyblckTermCode() {
+    public String getKeyblckTermCode() {
         return keyblckTermCode;
     }
 
@@ -361,11 +361,11 @@ public class OpenLearningSectionDefaultRules100PostRequest {
      * 
      */
     @JsonProperty("keyblckTermCode")
-    public void setKeyblckTermCode(Object keyblckTermCode) {
+    public void setKeyblckTermCode(String keyblckTermCode) {
         this.keyblckTermCode = keyblckTermCode;
     }
 
-    public OpenLearningSectionDefaultRules100PostRequest withKeyblckTermCode(Object keyblckTermCode) {
+    public OpenLearningSectionDefaultRules100PostRequest withKeyblckTermCode(String keyblckTermCode) {
         this.keyblckTermCode = keyblckTermCode;
         return this;
     }
@@ -539,7 +539,7 @@ public class OpenLearningSectionDefaultRules100PostRequest {
      * 
      */
     @JsonProperty("keyblocTermCodeDef")
-    public Object getKeyblocTermCodeDef() {
+    public String getKeyblocTermCodeDef() {
         return keyblocTermCodeDef;
     }
 
@@ -550,11 +550,11 @@ public class OpenLearningSectionDefaultRules100PostRequest {
      * 
      */
     @JsonProperty("keyblocTermCodeDef")
-    public void setKeyblocTermCodeDef(Object keyblocTermCodeDef) {
+    public void setKeyblocTermCodeDef(String keyblocTermCodeDef) {
         this.keyblocTermCodeDef = keyblocTermCodeDef;
     }
 
-    public OpenLearningSectionDefaultRules100PostRequest withKeyblocTermCodeDef(Object keyblocTermCodeDef) {
+    public OpenLearningSectionDefaultRules100PostRequest withKeyblocTermCodeDef(String keyblocTermCodeDef) {
         this.keyblocTermCodeDef = keyblocTermCodeDef;
         return this;
     }

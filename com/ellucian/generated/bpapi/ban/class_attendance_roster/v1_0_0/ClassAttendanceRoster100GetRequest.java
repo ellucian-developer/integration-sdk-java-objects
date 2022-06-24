@@ -29,7 +29,7 @@ public class ClassAttendanceRoster100GetRequest {
      */
     @JsonProperty("ssbsectCrnt")
     @JsonPropertyDescription("Lineage reference object : ssbsectCrnt")
-    private Object ssbsectCrnt;
+    private String ssbsectCrnt;
     /**
      * Degree Award Status
      * <p>
@@ -38,7 +38,7 @@ public class ClassAttendanceRoster100GetRequest {
      */
     @JsonProperty("ssbsectDegsAwrdInd")
     @JsonPropertyDescription("Lineage reference object : ssbsectDegsAwrdInd")
-    private Object ssbsectDegsAwrdInd;
+    private String ssbsectDegsAwrdInd;
     /**
      * Term
      * <p>
@@ -47,7 +47,7 @@ public class ClassAttendanceRoster100GetRequest {
      */
     @JsonProperty("ssbsectTermCodet")
     @JsonPropertyDescription("Lineage reference object : ssbsectTermCodet, Lookup lineage reference object : stvterm")
-    private Object ssbsectTermCodet;
+    private String ssbsectTermCodet;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -58,7 +58,7 @@ public class ClassAttendanceRoster100GetRequest {
      * 
      */
     @JsonProperty("ssbsectCrnt")
-    public Object getSsbsectCrnt() {
+    public String getSsbsectCrnt() {
         return ssbsectCrnt;
     }
 
@@ -69,11 +69,11 @@ public class ClassAttendanceRoster100GetRequest {
      * 
      */
     @JsonProperty("ssbsectCrnt")
-    public void setSsbsectCrnt(Object ssbsectCrnt) {
+    public void setSsbsectCrnt(String ssbsectCrnt) {
         this.ssbsectCrnt = ssbsectCrnt;
     }
 
-    public ClassAttendanceRoster100GetRequest withSsbsectCrnt(Object ssbsectCrnt) {
+    public ClassAttendanceRoster100GetRequest withSsbsectCrnt(String ssbsectCrnt) {
         this.ssbsectCrnt = ssbsectCrnt;
         return this;
     }
@@ -85,7 +85,7 @@ public class ClassAttendanceRoster100GetRequest {
      * 
      */
     @JsonProperty("ssbsectDegsAwrdInd")
-    public Object getSsbsectDegsAwrdInd() {
+    public String getSsbsectDegsAwrdInd() {
         return ssbsectDegsAwrdInd;
     }
 
@@ -96,11 +96,11 @@ public class ClassAttendanceRoster100GetRequest {
      * 
      */
     @JsonProperty("ssbsectDegsAwrdInd")
-    public void setSsbsectDegsAwrdInd(Object ssbsectDegsAwrdInd) {
+    public void setSsbsectDegsAwrdInd(String ssbsectDegsAwrdInd) {
         this.ssbsectDegsAwrdInd = ssbsectDegsAwrdInd;
     }
 
-    public ClassAttendanceRoster100GetRequest withSsbsectDegsAwrdInd(Object ssbsectDegsAwrdInd) {
+    public ClassAttendanceRoster100GetRequest withSsbsectDegsAwrdInd(String ssbsectDegsAwrdInd) {
         this.ssbsectDegsAwrdInd = ssbsectDegsAwrdInd;
         return this;
     }
@@ -112,7 +112,7 @@ public class ClassAttendanceRoster100GetRequest {
      * 
      */
     @JsonProperty("ssbsectTermCodet")
-    public Object getSsbsectTermCodet() {
+    public String getSsbsectTermCodet() {
         return ssbsectTermCodet;
     }
 
@@ -123,11 +123,11 @@ public class ClassAttendanceRoster100GetRequest {
      * 
      */
     @JsonProperty("ssbsectTermCodet")
-    public void setSsbsectTermCodet(Object ssbsectTermCodet) {
+    public void setSsbsectTermCodet(String ssbsectTermCodet) {
         this.ssbsectTermCodet = ssbsectTermCodet;
     }
 
-    public ClassAttendanceRoster100GetRequest withSsbsectTermCodet(Object ssbsectTermCodet) {
+    public ClassAttendanceRoster100GetRequest withSsbsectTermCodet(String ssbsectTermCodet) {
         this.ssbsectTermCodet = ssbsectTermCodet;
         return this;
     }

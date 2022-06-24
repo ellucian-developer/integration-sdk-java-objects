@@ -29,7 +29,7 @@ public class RegistrationAddAuthorizationCodes100PostRequest {
      */
     @JsonProperty("keyTermCode")
     @JsonPropertyDescription("Lineage reference object : keyTermCode, Lookup lineage reference object : stvterm")
-    private Object keyTermCode;
+    private String keyTermCode;
     /**
      * CRN
      * <p>
@@ -38,7 +38,7 @@ public class RegistrationAddAuthorizationCodes100PostRequest {
      */
     @JsonProperty("keyCrn")
     @JsonPropertyDescription("Lineage reference object : keyCrn")
-    private Object keyCrn;
+    private String keyCrn;
     /**
      * Number of Random Authorization Codes to Create
      * <p>
@@ -58,7 +58,7 @@ public class RegistrationAddAuthorizationCodes100PostRequest {
      * 
      */
     @JsonProperty("keyTermCode")
-    public Object getKeyTermCode() {
+    public String getKeyTermCode() {
         return keyTermCode;
     }
 
@@ -69,11 +69,11 @@ public class RegistrationAddAuthorizationCodes100PostRequest {
      * 
      */
     @JsonProperty("keyTermCode")
-    public void setKeyTermCode(Object keyTermCode) {
+    public void setKeyTermCode(String keyTermCode) {
         this.keyTermCode = keyTermCode;
     }
 
-    public RegistrationAddAuthorizationCodes100PostRequest withKeyTermCode(Object keyTermCode) {
+    public RegistrationAddAuthorizationCodes100PostRequest withKeyTermCode(String keyTermCode) {
         this.keyTermCode = keyTermCode;
         return this;
     }
@@ -85,7 +85,7 @@ public class RegistrationAddAuthorizationCodes100PostRequest {
      * 
      */
     @JsonProperty("keyCrn")
-    public Object getKeyCrn() {
+    public String getKeyCrn() {
         return keyCrn;
     }
 
@@ -96,11 +96,11 @@ public class RegistrationAddAuthorizationCodes100PostRequest {
      * 
      */
     @JsonProperty("keyCrn")
-    public void setKeyCrn(Object keyCrn) {
+    public void setKeyCrn(String keyCrn) {
         this.keyCrn = keyCrn;
     }
 
-    public RegistrationAddAuthorizationCodes100PostRequest withKeyCrn(Object keyCrn) {
+    public RegistrationAddAuthorizationCodes100PostRequest withKeyCrn(String keyCrn) {
         this.keyCrn = keyCrn;
         return this;
     }

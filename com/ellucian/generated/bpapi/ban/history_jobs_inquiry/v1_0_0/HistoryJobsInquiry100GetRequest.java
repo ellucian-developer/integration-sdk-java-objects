@@ -41,7 +41,7 @@ public class HistoryJobsInquiry100GetRequest {
      */
     @JsonProperty("year")
     @JsonPropertyDescription("Lineage reference object : year")
-    private Object year;
+    private String year;
     /**
      * Lineage reference object : PHVJOBS_DISP
      * 
@@ -78,7 +78,7 @@ public class HistoryJobsInquiry100GetRequest {
      */
     @JsonProperty("coas")
     @JsonPropertyDescription("Lineage reference object : coas")
-    private Object coas;
+    private String coas;
     /**
      * Payroll Number
      * <p>
@@ -88,7 +88,7 @@ public class HistoryJobsInquiry100GetRequest {
      */
     @JsonProperty("payno")
     @JsonPropertyDescription("Lineage reference object : payno")
-    private Object payno;
+    private Double payno;
     /**
      * Lineage reference object : PHVJOBS_ID_SEQ
      * 
@@ -105,7 +105,7 @@ public class HistoryJobsInquiry100GetRequest {
      */
     @JsonProperty("pictCode")
     @JsonPropertyDescription("Lineage reference object : pictCode")
-    private Object pictCode;
+    private String pictCode;
     /**
      * Time Sheet Method
      * <p>
@@ -114,7 +114,7 @@ public class HistoryJobsInquiry100GetRequest {
      */
     @JsonProperty("trCode")
     @JsonPropertyDescription("Lineage reference object : trCode")
-    private Object trCode;
+    private String trCode;
     /**
      * Lineage reference object : PHVJOBS_SUFF
      * 
@@ -130,7 +130,7 @@ public class HistoryJobsInquiry100GetRequest {
      */
     @JsonProperty("orgn")
     @JsonPropertyDescription("Lineage reference object : orgn")
-    private Object orgn;
+    private String orgn;
     /**
      * Lineage reference object : PHVJOBS_EFFECTIVE_DATE
      * 
@@ -149,7 +149,7 @@ public class HistoryJobsInquiry100GetRequest {
      * 
      */
     @JsonProperty("year")
-    public Object getYear() {
+    public String getYear() {
         return year;
     }
 
@@ -161,11 +161,11 @@ public class HistoryJobsInquiry100GetRequest {
      * 
      */
     @JsonProperty("year")
-    public void setYear(Object year) {
+    public void setYear(String year) {
         this.year = year;
     }
 
-    public HistoryJobsInquiry100GetRequest withYear(Object year) {
+    public HistoryJobsInquiry100GetRequest withYear(String year) {
         this.year = year;
         return this;
     }
@@ -269,7 +269,7 @@ public class HistoryJobsInquiry100GetRequest {
      * 
      */
     @JsonProperty("coas")
-    public Object getCoas() {
+    public String getCoas() {
         return coas;
     }
 
@@ -280,11 +280,11 @@ public class HistoryJobsInquiry100GetRequest {
      * 
      */
     @JsonProperty("coas")
-    public void setCoas(Object coas) {
+    public void setCoas(String coas) {
         this.coas = coas;
     }
 
-    public HistoryJobsInquiry100GetRequest withCoas(Object coas) {
+    public HistoryJobsInquiry100GetRequest withCoas(String coas) {
         this.coas = coas;
         return this;
     }
@@ -297,7 +297,7 @@ public class HistoryJobsInquiry100GetRequest {
      * 
      */
     @JsonProperty("payno")
-    public Object getPayno() {
+    public Double getPayno() {
         return payno;
     }
 
@@ -309,11 +309,11 @@ public class HistoryJobsInquiry100GetRequest {
      * 
      */
     @JsonProperty("payno")
-    public void setPayno(Object payno) {
+    public void setPayno(Double payno) {
         this.payno = payno;
     }
 
-    public HistoryJobsInquiry100GetRequest withPayno(Object payno) {
+    public HistoryJobsInquiry100GetRequest withPayno(Double payno) {
         this.payno = payno;
         return this;
     }
@@ -349,7 +349,7 @@ public class HistoryJobsInquiry100GetRequest {
      * 
      */
     @JsonProperty("pictCode")
-    public Object getPictCode() {
+    public String getPictCode() {
         return pictCode;
     }
 
@@ -361,11 +361,11 @@ public class HistoryJobsInquiry100GetRequest {
      * 
      */
     @JsonProperty("pictCode")
-    public void setPictCode(Object pictCode) {
+    public void setPictCode(String pictCode) {
         this.pictCode = pictCode;
     }
 
-    public HistoryJobsInquiry100GetRequest withPictCode(Object pictCode) {
+    public HistoryJobsInquiry100GetRequest withPictCode(String pictCode) {
         this.pictCode = pictCode;
         return this;
     }
@@ -377,7 +377,7 @@ public class HistoryJobsInquiry100GetRequest {
      * 
      */
     @JsonProperty("trCode")
-    public Object getTrCode() {
+    public String getTrCode() {
         return trCode;
     }
 
@@ -388,11 +388,11 @@ public class HistoryJobsInquiry100GetRequest {
      * 
      */
     @JsonProperty("trCode")
-    public void setTrCode(Object trCode) {
+    public void setTrCode(String trCode) {
         this.trCode = trCode;
     }
 
-    public HistoryJobsInquiry100GetRequest withTrCode(Object trCode) {
+    public HistoryJobsInquiry100GetRequest withTrCode(String trCode) {
         this.trCode = trCode;
         return this;
     }
@@ -427,7 +427,7 @@ public class HistoryJobsInquiry100GetRequest {
      * 
      */
     @JsonProperty("orgn")
-    public Object getOrgn() {
+    public String getOrgn() {
         return orgn;
     }
 
@@ -438,11 +438,11 @@ public class HistoryJobsInquiry100GetRequest {
      * 
      */
     @JsonProperty("orgn")
-    public void setOrgn(Object orgn) {
+    public void setOrgn(String orgn) {
         this.orgn = orgn;
     }
 
-    public HistoryJobsInquiry100GetRequest withOrgn(Object orgn) {
+    public HistoryJobsInquiry100GetRequest withOrgn(String orgn) {
         this.orgn = orgn;
         return this;
     }

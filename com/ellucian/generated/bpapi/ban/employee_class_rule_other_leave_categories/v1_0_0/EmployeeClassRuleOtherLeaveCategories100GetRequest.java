@@ -50,7 +50,7 @@ public class EmployeeClassRuleOtherLeaveCategories100GetRequest {
      */
     @JsonProperty("ecls")
     @JsonPropertyDescription("Lineage reference object : ecls")
-    private Object ecls;
+    private String ecls;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -118,7 +118,7 @@ public class EmployeeClassRuleOtherLeaveCategories100GetRequest {
      * 
      */
     @JsonProperty("ecls")
-    public Object getEcls() {
+    public String getEcls() {
         return ecls;
     }
 
@@ -130,11 +130,11 @@ public class EmployeeClassRuleOtherLeaveCategories100GetRequest {
      * 
      */
     @JsonProperty("ecls")
-    public void setEcls(Object ecls) {
+    public void setEcls(String ecls) {
         this.ecls = ecls;
     }
 
-    public EmployeeClassRuleOtherLeaveCategories100GetRequest withEcls(Object ecls) {
+    public EmployeeClassRuleOtherLeaveCategories100GetRequest withEcls(String ecls) {
         this.ecls = ecls;
         return this;
     }

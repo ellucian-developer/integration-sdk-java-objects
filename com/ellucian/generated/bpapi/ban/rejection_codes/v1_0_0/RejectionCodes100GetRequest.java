@@ -39,7 +39,7 @@ public class RejectionCodes100GetRequest {
      */
     @JsonProperty("keyblckRjctType")
     @JsonPropertyDescription("Lineage reference object : keyblckRjctType")
-    private Object keyblckRjctType;
+    private String keyblckRjctType;
     /**
      * Type Code
      * <p>
@@ -95,7 +95,7 @@ public class RejectionCodes100GetRequest {
      * 
      */
     @JsonProperty("keyblckRjctType")
-    public Object getKeyblckRjctType() {
+    public String getKeyblckRjctType() {
         return keyblckRjctType;
     }
 
@@ -106,11 +106,11 @@ public class RejectionCodes100GetRequest {
      * 
      */
     @JsonProperty("keyblckRjctType")
-    public void setKeyblckRjctType(Object keyblckRjctType) {
+    public void setKeyblckRjctType(String keyblckRjctType) {
         this.keyblckRjctType = keyblckRjctType;
     }
 
-    public RejectionCodes100GetRequest withKeyblckRjctType(Object keyblckRjctType) {
+    public RejectionCodes100GetRequest withKeyblckRjctType(String keyblckRjctType) {
         this.keyblckRjctType = keyblckRjctType;
         return this;
     }

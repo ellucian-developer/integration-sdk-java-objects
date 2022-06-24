@@ -58,7 +58,7 @@ public class UserApproval100GetRequest {
      */
     @JsonProperty("nextIndicator")
     @JsonPropertyDescription("Lineage reference object : nextIndicator")
-    private Object nextIndicator;
+    private String nextIndicator;
     /**
      * Originating User
      * <p>
@@ -76,7 +76,7 @@ public class UserApproval100GetRequest {
      */
     @JsonProperty("docCode")
     @JsonPropertyDescription("Lineage reference object : docCode")
-    private Object docCode;
+    private String docCode;
     /**
      * User ID
      * <p>
@@ -85,7 +85,7 @@ public class UserApproval100GetRequest {
      */
     @JsonProperty("userId")
     @JsonPropertyDescription("Lineage reference object : userId")
-    private Object userId;
+    private String userId;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -175,7 +175,7 @@ public class UserApproval100GetRequest {
      * 
      */
     @JsonProperty("nextIndicator")
-    public Object getNextIndicator() {
+    public String getNextIndicator() {
         return nextIndicator;
     }
 
@@ -184,11 +184,11 @@ public class UserApproval100GetRequest {
      * 
      */
     @JsonProperty("nextIndicator")
-    public void setNextIndicator(Object nextIndicator) {
+    public void setNextIndicator(String nextIndicator) {
         this.nextIndicator = nextIndicator;
     }
 
-    public UserApproval100GetRequest withNextIndicator(Object nextIndicator) {
+    public UserApproval100GetRequest withNextIndicator(String nextIndicator) {
         this.nextIndicator = nextIndicator;
         return this;
     }
@@ -227,7 +227,7 @@ public class UserApproval100GetRequest {
      * 
      */
     @JsonProperty("docCode")
-    public Object getDocCode() {
+    public String getDocCode() {
         return docCode;
     }
 
@@ -238,11 +238,11 @@ public class UserApproval100GetRequest {
      * 
      */
     @JsonProperty("docCode")
-    public void setDocCode(Object docCode) {
+    public void setDocCode(String docCode) {
         this.docCode = docCode;
     }
 
-    public UserApproval100GetRequest withDocCode(Object docCode) {
+    public UserApproval100GetRequest withDocCode(String docCode) {
         this.docCode = docCode;
         return this;
     }
@@ -254,7 +254,7 @@ public class UserApproval100GetRequest {
      * 
      */
     @JsonProperty("userId")
-    public Object getUserId() {
+    public String getUserId() {
         return userId;
     }
 
@@ -265,11 +265,11 @@ public class UserApproval100GetRequest {
      * 
      */
     @JsonProperty("userId")
-    public void setUserId(Object userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 
-    public UserApproval100GetRequest withUserId(Object userId) {
+    public UserApproval100GetRequest withUserId(String userId) {
         this.userId = userId;
         return this;
     }

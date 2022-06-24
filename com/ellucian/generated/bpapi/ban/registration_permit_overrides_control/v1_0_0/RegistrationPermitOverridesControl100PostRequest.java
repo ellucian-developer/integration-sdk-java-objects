@@ -95,7 +95,7 @@ public class RegistrationPermitOverridesControl100PostRequest {
      */
     @JsonProperty("keyblocTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCode;
+    private String keyblocTermCode;
     /**
      * Copy From Term
      * <p>
@@ -104,7 +104,7 @@ public class RegistrationPermitOverridesControl100PostRequest {
      */
     @JsonProperty("xxxxxxxTermCodeDef")
     @JsonPropertyDescription("Lineage reference object : xxxxxxxTermCodedef, Lookup lineage reference object : stvterm")
-    private Object xxxxxxxTermCodeDef;
+    private String xxxxxxxTermCodeDef;
     /**
      * Repeat Limit
      * <p>
@@ -403,7 +403,7 @@ public class RegistrationPermitOverridesControl100PostRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public Object getKeyblocTermCode() {
+    public String getKeyblocTermCode() {
         return keyblocTermCode;
     }
 
@@ -414,11 +414,11 @@ public class RegistrationPermitOverridesControl100PostRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public void setKeyblocTermCode(Object keyblocTermCode) {
+    public void setKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
     }
 
-    public RegistrationPermitOverridesControl100PostRequest withKeyblocTermCode(Object keyblocTermCode) {
+    public RegistrationPermitOverridesControl100PostRequest withKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
         return this;
     }
@@ -430,7 +430,7 @@ public class RegistrationPermitOverridesControl100PostRequest {
      * 
      */
     @JsonProperty("xxxxxxxTermCodeDef")
-    public Object getXxxxxxxTermCodeDef() {
+    public String getXxxxxxxTermCodeDef() {
         return xxxxxxxTermCodeDef;
     }
 
@@ -441,11 +441,11 @@ public class RegistrationPermitOverridesControl100PostRequest {
      * 
      */
     @JsonProperty("xxxxxxxTermCodeDef")
-    public void setXxxxxxxTermCodeDef(Object xxxxxxxTermCodeDef) {
+    public void setXxxxxxxTermCodeDef(String xxxxxxxTermCodeDef) {
         this.xxxxxxxTermCodeDef = xxxxxxxTermCodeDef;
     }
 
-    public RegistrationPermitOverridesControl100PostRequest withXxxxxxxTermCodeDef(Object xxxxxxxTermCodeDef) {
+    public RegistrationPermitOverridesControl100PostRequest withXxxxxxxTermCodeDef(String xxxxxxxTermCodeDef) {
         this.xxxxxxxTermCodeDef = xxxxxxxTermCodeDef;
         return this;
     }

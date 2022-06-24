@@ -27,7 +27,7 @@ public class SorcmnrCtrl {
      */
     @JsonProperty("cmnrMultipleMsg")
     @JsonPropertyDescription("Lineage reference object : cmnrMultipleMsg")
-    private Object cmnrMultipleMsg;
+    private String cmnrMultipleMsg;
     /**
      * From Term
      * <p>
@@ -36,7 +36,7 @@ public class SorcmnrCtrl {
      */
     @JsonProperty("minrFrtermDisp")
     @JsonPropertyDescription("Lineage reference object : minrFrtermDisp, Lookup lineage reference object : sorcmnr,stvterm")
-    private Object minrFrtermDisp;
+    private String minrFrtermDisp;
     /**
      * To Term
      * <p>
@@ -45,7 +45,7 @@ public class SorcmnrCtrl {
      */
     @JsonProperty("minrTotermDisp")
     @JsonPropertyDescription("Lineage reference object : minrTotermDisp")
-    private Object minrTotermDisp;
+    private String minrTotermDisp;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -54,7 +54,7 @@ public class SorcmnrCtrl {
      * 
      */
     @JsonProperty("cmnrMultipleMsg")
-    public Object getCmnrMultipleMsg() {
+    public String getCmnrMultipleMsg() {
         return cmnrMultipleMsg;
     }
 
@@ -63,11 +63,11 @@ public class SorcmnrCtrl {
      * 
      */
     @JsonProperty("cmnrMultipleMsg")
-    public void setCmnrMultipleMsg(Object cmnrMultipleMsg) {
+    public void setCmnrMultipleMsg(String cmnrMultipleMsg) {
         this.cmnrMultipleMsg = cmnrMultipleMsg;
     }
 
-    public SorcmnrCtrl withCmnrMultipleMsg(Object cmnrMultipleMsg) {
+    public SorcmnrCtrl withCmnrMultipleMsg(String cmnrMultipleMsg) {
         this.cmnrMultipleMsg = cmnrMultipleMsg;
         return this;
     }
@@ -79,7 +79,7 @@ public class SorcmnrCtrl {
      * 
      */
     @JsonProperty("minrFrtermDisp")
-    public Object getMinrFrtermDisp() {
+    public String getMinrFrtermDisp() {
         return minrFrtermDisp;
     }
 
@@ -90,11 +90,11 @@ public class SorcmnrCtrl {
      * 
      */
     @JsonProperty("minrFrtermDisp")
-    public void setMinrFrtermDisp(Object minrFrtermDisp) {
+    public void setMinrFrtermDisp(String minrFrtermDisp) {
         this.minrFrtermDisp = minrFrtermDisp;
     }
 
-    public SorcmnrCtrl withMinrFrtermDisp(Object minrFrtermDisp) {
+    public SorcmnrCtrl withMinrFrtermDisp(String minrFrtermDisp) {
         this.minrFrtermDisp = minrFrtermDisp;
         return this;
     }
@@ -106,7 +106,7 @@ public class SorcmnrCtrl {
      * 
      */
     @JsonProperty("minrTotermDisp")
-    public Object getMinrTotermDisp() {
+    public String getMinrTotermDisp() {
         return minrTotermDisp;
     }
 
@@ -117,11 +117,11 @@ public class SorcmnrCtrl {
      * 
      */
     @JsonProperty("minrTotermDisp")
-    public void setMinrTotermDisp(Object minrTotermDisp) {
+    public void setMinrTotermDisp(String minrTotermDisp) {
         this.minrTotermDisp = minrTotermDisp;
     }
 
-    public SorcmnrCtrl withMinrTotermDisp(Object minrTotermDisp) {
+    public SorcmnrCtrl withMinrTotermDisp(String minrTotermDisp) {
         this.minrTotermDisp = minrTotermDisp;
         return this;
     }

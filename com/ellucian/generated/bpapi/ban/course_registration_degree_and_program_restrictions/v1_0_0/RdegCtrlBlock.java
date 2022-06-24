@@ -28,7 +28,7 @@ public class RdegCtrlBlock {
      */
     @JsonProperty("rdegCtrlEndcopy")
     @JsonPropertyDescription("Lineage reference object : rdegCtrlEndcopy")
-    private Object rdegCtrlEndcopy;
+    private String rdegCtrlEndcopy;
     /**
      * To Term
      * <p>
@@ -37,7 +37,7 @@ public class RdegCtrlBlock {
      */
     @JsonProperty("scrrdegTermCodeTo")
     @JsonPropertyDescription("Lineage reference object : scrrdegTermCodeTo, Lookup lineage reference object : stvterm")
-    private Object scrrdegTermCodeTo;
+    private String scrrdegTermCodeTo;
     /**
      * From Term
      * <p>
@@ -46,7 +46,7 @@ public class RdegCtrlBlock {
      */
     @JsonProperty("scrrdegTermCodeFrom")
     @JsonPropertyDescription("Lineage reference object : scrrdegTermCodeFrom, Lookup lineage reference object : stvterm")
-    private Object scrrdegTermCodeFrom;
+    private String scrrdegTermCodeFrom;
     /**
      * Include/Exclude (I/E)
      * <p>
@@ -56,7 +56,7 @@ public class RdegCtrlBlock {
      */
     @JsonProperty("scrrdegDegcInd")
     @JsonPropertyDescription("Lineage reference object : scrrdegDegcInd")
-    private Object scrrdegDegcInd;
+    private String scrrdegDegcInd;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -65,7 +65,7 @@ public class RdegCtrlBlock {
      * 
      */
     @JsonProperty("rdegCtrlEndcopy")
-    public Object getRdegCtrlEndcopy() {
+    public String getRdegCtrlEndcopy() {
         return rdegCtrlEndcopy;
     }
 
@@ -74,11 +74,11 @@ public class RdegCtrlBlock {
      * 
      */
     @JsonProperty("rdegCtrlEndcopy")
-    public void setRdegCtrlEndcopy(Object rdegCtrlEndcopy) {
+    public void setRdegCtrlEndcopy(String rdegCtrlEndcopy) {
         this.rdegCtrlEndcopy = rdegCtrlEndcopy;
     }
 
-    public RdegCtrlBlock withRdegCtrlEndcopy(Object rdegCtrlEndcopy) {
+    public RdegCtrlBlock withRdegCtrlEndcopy(String rdegCtrlEndcopy) {
         this.rdegCtrlEndcopy = rdegCtrlEndcopy;
         return this;
     }
@@ -90,7 +90,7 @@ public class RdegCtrlBlock {
      * 
      */
     @JsonProperty("scrrdegTermCodeTo")
-    public Object getScrrdegTermCodeTo() {
+    public String getScrrdegTermCodeTo() {
         return scrrdegTermCodeTo;
     }
 
@@ -101,11 +101,11 @@ public class RdegCtrlBlock {
      * 
      */
     @JsonProperty("scrrdegTermCodeTo")
-    public void setScrrdegTermCodeTo(Object scrrdegTermCodeTo) {
+    public void setScrrdegTermCodeTo(String scrrdegTermCodeTo) {
         this.scrrdegTermCodeTo = scrrdegTermCodeTo;
     }
 
-    public RdegCtrlBlock withScrrdegTermCodeTo(Object scrrdegTermCodeTo) {
+    public RdegCtrlBlock withScrrdegTermCodeTo(String scrrdegTermCodeTo) {
         this.scrrdegTermCodeTo = scrrdegTermCodeTo;
         return this;
     }
@@ -117,7 +117,7 @@ public class RdegCtrlBlock {
      * 
      */
     @JsonProperty("scrrdegTermCodeFrom")
-    public Object getScrrdegTermCodeFrom() {
+    public String getScrrdegTermCodeFrom() {
         return scrrdegTermCodeFrom;
     }
 
@@ -128,11 +128,11 @@ public class RdegCtrlBlock {
      * 
      */
     @JsonProperty("scrrdegTermCodeFrom")
-    public void setScrrdegTermCodeFrom(Object scrrdegTermCodeFrom) {
+    public void setScrrdegTermCodeFrom(String scrrdegTermCodeFrom) {
         this.scrrdegTermCodeFrom = scrrdegTermCodeFrom;
     }
 
-    public RdegCtrlBlock withScrrdegTermCodeFrom(Object scrrdegTermCodeFrom) {
+    public RdegCtrlBlock withScrrdegTermCodeFrom(String scrrdegTermCodeFrom) {
         this.scrrdegTermCodeFrom = scrrdegTermCodeFrom;
         return this;
     }
@@ -145,7 +145,7 @@ public class RdegCtrlBlock {
      * 
      */
     @JsonProperty("scrrdegDegcInd")
-    public Object getScrrdegDegcInd() {
+    public String getScrrdegDegcInd() {
         return scrrdegDegcInd;
     }
 
@@ -157,11 +157,11 @@ public class RdegCtrlBlock {
      * 
      */
     @JsonProperty("scrrdegDegcInd")
-    public void setScrrdegDegcInd(Object scrrdegDegcInd) {
+    public void setScrrdegDegcInd(String scrrdegDegcInd) {
         this.scrrdegDegcInd = scrrdegDegcInd;
     }
 
-    public RdegCtrlBlock withScrrdegDegcInd(Object scrrdegDegcInd) {
+    public RdegCtrlBlock withScrrdegDegcInd(String scrrdegDegcInd) {
         this.scrrdegDegcInd = scrrdegDegcInd;
         return this;
     }

@@ -30,7 +30,7 @@ public class CoursePrerequisitesAreaRestrictions100PostRequest {
      */
     @JsonProperty("crseNumb")
     @JsonPropertyDescription("Lineage reference object : scapreqCrseNumb, Lookup lineage reference object : scbcrse,scbcrky")
-    private Object crseNumb;
+    private String crseNumb;
     /**
      * Term
      * <p>
@@ -39,7 +39,7 @@ public class CoursePrerequisitesAreaRestrictions100PostRequest {
      */
     @JsonProperty("termCodeEff")
     @JsonPropertyDescription("Lineage reference object : scapreqTermCodeEff, Lookup lineage reference object : stvterm,scbcrky,scbcrky")
-    private Object termCodeEff;
+    private String termCodeEff;
     /**
      * Area
      * <p>
@@ -57,7 +57,7 @@ public class CoursePrerequisitesAreaRestrictions100PostRequest {
      */
     @JsonProperty("subjCode")
     @JsonPropertyDescription("Lineage reference object : scapreqSubjCode, Lookup lineage reference object : stvsubj")
-    private Object subjCode;
+    private String subjCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -68,7 +68,7 @@ public class CoursePrerequisitesAreaRestrictions100PostRequest {
      * 
      */
     @JsonProperty("crseNumb")
-    public Object getCrseNumb() {
+    public String getCrseNumb() {
         return crseNumb;
     }
 
@@ -79,11 +79,11 @@ public class CoursePrerequisitesAreaRestrictions100PostRequest {
      * 
      */
     @JsonProperty("crseNumb")
-    public void setCrseNumb(Object crseNumb) {
+    public void setCrseNumb(String crseNumb) {
         this.crseNumb = crseNumb;
     }
 
-    public CoursePrerequisitesAreaRestrictions100PostRequest withCrseNumb(Object crseNumb) {
+    public CoursePrerequisitesAreaRestrictions100PostRequest withCrseNumb(String crseNumb) {
         this.crseNumb = crseNumb;
         return this;
     }
@@ -95,7 +95,7 @@ public class CoursePrerequisitesAreaRestrictions100PostRequest {
      * 
      */
     @JsonProperty("termCodeEff")
-    public Object getTermCodeEff() {
+    public String getTermCodeEff() {
         return termCodeEff;
     }
 
@@ -106,11 +106,11 @@ public class CoursePrerequisitesAreaRestrictions100PostRequest {
      * 
      */
     @JsonProperty("termCodeEff")
-    public void setTermCodeEff(Object termCodeEff) {
+    public void setTermCodeEff(String termCodeEff) {
         this.termCodeEff = termCodeEff;
     }
 
-    public CoursePrerequisitesAreaRestrictions100PostRequest withTermCodeEff(Object termCodeEff) {
+    public CoursePrerequisitesAreaRestrictions100PostRequest withTermCodeEff(String termCodeEff) {
         this.termCodeEff = termCodeEff;
         return this;
     }
@@ -149,7 +149,7 @@ public class CoursePrerequisitesAreaRestrictions100PostRequest {
      * 
      */
     @JsonProperty("subjCode")
-    public Object getSubjCode() {
+    public String getSubjCode() {
         return subjCode;
     }
 
@@ -160,11 +160,11 @@ public class CoursePrerequisitesAreaRestrictions100PostRequest {
      * 
      */
     @JsonProperty("subjCode")
-    public void setSubjCode(Object subjCode) {
+    public void setSubjCode(String subjCode) {
         this.subjCode = subjCode;
     }
 
-    public CoursePrerequisitesAreaRestrictions100PostRequest withSubjCode(Object subjCode) {
+    public CoursePrerequisitesAreaRestrictions100PostRequest withSubjCode(String subjCode) {
         this.subjCode = subjCode;
         return this;
     }

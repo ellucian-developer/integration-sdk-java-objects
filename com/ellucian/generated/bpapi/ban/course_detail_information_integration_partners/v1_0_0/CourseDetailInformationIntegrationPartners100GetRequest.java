@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.course_detail_information_integration_partners.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -14,13 +15,25 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
+    "activityDate",
     "scacrseCrseNumb",
     "scacrseSubjCode",
-    "scacrseTermCodeEff"
+    "intgCde",
+    "scacrseTermCodeEff",
+    "userId"
 })
 @Generated("jsonschema2pojo")
 public class CourseDetailInformationIntegrationPartners100GetRequest {
 
+    /**
+     * Activity Date
+     * <p>
+     * Lineage reference object : SCRINTG_ACTIVITY_DATE
+     * 
+     */
+    @JsonProperty("activityDate")
+    @JsonPropertyDescription("Lineage reference object : SCRINTG_ACTIVITY_DATE")
+    private Date activityDate;
     /**
      * Course
      * <p>
@@ -29,7 +42,7 @@ public class CourseDetailInformationIntegrationPartners100GetRequest {
      */
     @JsonProperty("scacrseCrseNumb")
     @JsonPropertyDescription("Lineage reference object : scacrseCrseNumb, Lookup lineage reference object : scbcrse,scbcrky")
-    private Object scacrseCrseNumb;
+    private String scacrseCrseNumb;
     /**
      * Subject
      * <p>
@@ -38,7 +51,17 @@ public class CourseDetailInformationIntegrationPartners100GetRequest {
      */
     @JsonProperty("scacrseSubjCode")
     @JsonPropertyDescription("Lineage reference object : scacrseSubjCode, Lookup lineage reference object : stvsubj")
-    private Object scacrseSubjCode;
+    private String scacrseSubjCode;
+    /**
+     * Integration Partners
+     * <p>
+     * Lineage reference object : SCRINTG_INTG_CDE
+     * (Required)
+     * 
+     */
+    @JsonProperty("intgCde")
+    @JsonPropertyDescription("Lineage reference object : SCRINTG_INTG_CDE")
+    private String intgCde;
     /**
      * Term
      * <p>
@@ -47,9 +70,45 @@ public class CourseDetailInformationIntegrationPartners100GetRequest {
      */
     @JsonProperty("scacrseTermCodeEff")
     @JsonPropertyDescription("Lineage reference object : scacrseTermCodeEff, Lookup lineage reference object : stvterm,scbcrky,scbcrky")
-    private Object scacrseTermCodeEff;
+    private String scacrseTermCodeEff;
+    /**
+     * User ID
+     * <p>
+     * Lineage reference object : SCRINTG_USER_ID
+     * 
+     */
+    @JsonProperty("userId")
+    @JsonPropertyDescription("Lineage reference object : SCRINTG_USER_ID")
+    private String userId;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+    /**
+     * Activity Date
+     * <p>
+     * Lineage reference object : SCRINTG_ACTIVITY_DATE
+     * 
+     */
+    @JsonProperty("activityDate")
+    public Date getActivityDate() {
+        return activityDate;
+    }
+
+    /**
+     * Activity Date
+     * <p>
+     * Lineage reference object : SCRINTG_ACTIVITY_DATE
+     * 
+     */
+    @JsonProperty("activityDate")
+    public void setActivityDate(Date activityDate) {
+        this.activityDate = activityDate;
+    }
+
+    public CourseDetailInformationIntegrationPartners100GetRequest withActivityDate(Date activityDate) {
+        this.activityDate = activityDate;
+        return this;
+    }
 
     /**
      * Course
@@ -58,7 +117,7 @@ public class CourseDetailInformationIntegrationPartners100GetRequest {
      * 
      */
     @JsonProperty("scacrseCrseNumb")
-    public Object getScacrseCrseNumb() {
+    public String getScacrseCrseNumb() {
         return scacrseCrseNumb;
     }
 
@@ -69,11 +128,11 @@ public class CourseDetailInformationIntegrationPartners100GetRequest {
      * 
      */
     @JsonProperty("scacrseCrseNumb")
-    public void setScacrseCrseNumb(Object scacrseCrseNumb) {
+    public void setScacrseCrseNumb(String scacrseCrseNumb) {
         this.scacrseCrseNumb = scacrseCrseNumb;
     }
 
-    public CourseDetailInformationIntegrationPartners100GetRequest withScacrseCrseNumb(Object scacrseCrseNumb) {
+    public CourseDetailInformationIntegrationPartners100GetRequest withScacrseCrseNumb(String scacrseCrseNumb) {
         this.scacrseCrseNumb = scacrseCrseNumb;
         return this;
     }
@@ -85,7 +144,7 @@ public class CourseDetailInformationIntegrationPartners100GetRequest {
      * 
      */
     @JsonProperty("scacrseSubjCode")
-    public Object getScacrseSubjCode() {
+    public String getScacrseSubjCode() {
         return scacrseSubjCode;
     }
 
@@ -96,12 +155,41 @@ public class CourseDetailInformationIntegrationPartners100GetRequest {
      * 
      */
     @JsonProperty("scacrseSubjCode")
-    public void setScacrseSubjCode(Object scacrseSubjCode) {
+    public void setScacrseSubjCode(String scacrseSubjCode) {
         this.scacrseSubjCode = scacrseSubjCode;
     }
 
-    public CourseDetailInformationIntegrationPartners100GetRequest withScacrseSubjCode(Object scacrseSubjCode) {
+    public CourseDetailInformationIntegrationPartners100GetRequest withScacrseSubjCode(String scacrseSubjCode) {
         this.scacrseSubjCode = scacrseSubjCode;
+        return this;
+    }
+
+    /**
+     * Integration Partners
+     * <p>
+     * Lineage reference object : SCRINTG_INTG_CDE
+     * (Required)
+     * 
+     */
+    @JsonProperty("intgCde")
+    public String getIntgCde() {
+        return intgCde;
+    }
+
+    /**
+     * Integration Partners
+     * <p>
+     * Lineage reference object : SCRINTG_INTG_CDE
+     * (Required)
+     * 
+     */
+    @JsonProperty("intgCde")
+    public void setIntgCde(String intgCde) {
+        this.intgCde = intgCde;
+    }
+
+    public CourseDetailInformationIntegrationPartners100GetRequest withIntgCde(String intgCde) {
+        this.intgCde = intgCde;
         return this;
     }
 
@@ -112,7 +200,7 @@ public class CourseDetailInformationIntegrationPartners100GetRequest {
      * 
      */
     @JsonProperty("scacrseTermCodeEff")
-    public Object getScacrseTermCodeEff() {
+    public String getScacrseTermCodeEff() {
         return scacrseTermCodeEff;
     }
 
@@ -123,12 +211,39 @@ public class CourseDetailInformationIntegrationPartners100GetRequest {
      * 
      */
     @JsonProperty("scacrseTermCodeEff")
-    public void setScacrseTermCodeEff(Object scacrseTermCodeEff) {
+    public void setScacrseTermCodeEff(String scacrseTermCodeEff) {
         this.scacrseTermCodeEff = scacrseTermCodeEff;
     }
 
-    public CourseDetailInformationIntegrationPartners100GetRequest withScacrseTermCodeEff(Object scacrseTermCodeEff) {
+    public CourseDetailInformationIntegrationPartners100GetRequest withScacrseTermCodeEff(String scacrseTermCodeEff) {
         this.scacrseTermCodeEff = scacrseTermCodeEff;
+        return this;
+    }
+
+    /**
+     * User ID
+     * <p>
+     * Lineage reference object : SCRINTG_USER_ID
+     * 
+     */
+    @JsonProperty("userId")
+    public String getUserId() {
+        return userId;
+    }
+
+    /**
+     * User ID
+     * <p>
+     * Lineage reference object : SCRINTG_USER_ID
+     * 
+     */
+    @JsonProperty("userId")
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public CourseDetailInformationIntegrationPartners100GetRequest withUserId(String userId) {
+        this.userId = userId;
         return this;
     }
 
@@ -151,6 +266,10 @@ public class CourseDetailInformationIntegrationPartners100GetRequest {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(CourseDetailInformationIntegrationPartners100GetRequest.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
+        sb.append("activityDate");
+        sb.append('=');
+        sb.append(((this.activityDate == null)?"<null>":this.activityDate));
+        sb.append(',');
         sb.append("scacrseCrseNumb");
         sb.append('=');
         sb.append(((this.scacrseCrseNumb == null)?"<null>":this.scacrseCrseNumb));
@@ -159,9 +278,17 @@ public class CourseDetailInformationIntegrationPartners100GetRequest {
         sb.append('=');
         sb.append(((this.scacrseSubjCode == null)?"<null>":this.scacrseSubjCode));
         sb.append(',');
+        sb.append("intgCde");
+        sb.append('=');
+        sb.append(((this.intgCde == null)?"<null>":this.intgCde));
+        sb.append(',');
         sb.append("scacrseTermCodeEff");
         sb.append('=');
         sb.append(((this.scacrseTermCodeEff == null)?"<null>":this.scacrseTermCodeEff));
+        sb.append(',');
+        sb.append("userId");
+        sb.append('=');
+        sb.append(((this.userId == null)?"<null>":this.userId));
         sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');
@@ -178,10 +305,13 @@ public class CourseDetailInformationIntegrationPartners100GetRequest {
     @Override
     public int hashCode() {
         int result = 1;
-        result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
+        result = ((result* 31)+((this.activityDate == null)? 0 :this.activityDate.hashCode()));
         result = ((result* 31)+((this.scacrseCrseNumb == null)? 0 :this.scacrseCrseNumb.hashCode()));
-        result = ((result* 31)+((this.scacrseTermCodeEff == null)? 0 :this.scacrseTermCodeEff.hashCode()));
         result = ((result* 31)+((this.scacrseSubjCode == null)? 0 :this.scacrseSubjCode.hashCode()));
+        result = ((result* 31)+((this.intgCde == null)? 0 :this.intgCde.hashCode()));
+        result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
+        result = ((result* 31)+((this.scacrseTermCodeEff == null)? 0 :this.scacrseTermCodeEff.hashCode()));
+        result = ((result* 31)+((this.userId == null)? 0 :this.userId.hashCode()));
         return result;
     }
 
@@ -194,7 +324,7 @@ public class CourseDetailInformationIntegrationPartners100GetRequest {
             return false;
         }
         CourseDetailInformationIntegrationPartners100GetRequest rhs = ((CourseDetailInformationIntegrationPartners100GetRequest) other);
-        return (((((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties)))&&((this.scacrseCrseNumb == rhs.scacrseCrseNumb)||((this.scacrseCrseNumb!= null)&&this.scacrseCrseNumb.equals(rhs.scacrseCrseNumb))))&&((this.scacrseTermCodeEff == rhs.scacrseTermCodeEff)||((this.scacrseTermCodeEff!= null)&&this.scacrseTermCodeEff.equals(rhs.scacrseTermCodeEff))))&&((this.scacrseSubjCode == rhs.scacrseSubjCode)||((this.scacrseSubjCode!= null)&&this.scacrseSubjCode.equals(rhs.scacrseSubjCode))));
+        return ((((((((this.activityDate == rhs.activityDate)||((this.activityDate!= null)&&this.activityDate.equals(rhs.activityDate)))&&((this.scacrseCrseNumb == rhs.scacrseCrseNumb)||((this.scacrseCrseNumb!= null)&&this.scacrseCrseNumb.equals(rhs.scacrseCrseNumb))))&&((this.scacrseSubjCode == rhs.scacrseSubjCode)||((this.scacrseSubjCode!= null)&&this.scacrseSubjCode.equals(rhs.scacrseSubjCode))))&&((this.intgCde == rhs.intgCde)||((this.intgCde!= null)&&this.intgCde.equals(rhs.intgCde))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.scacrseTermCodeEff == rhs.scacrseTermCodeEff)||((this.scacrseTermCodeEff!= null)&&this.scacrseTermCodeEff.equals(rhs.scacrseTermCodeEff))))&&((this.userId == rhs.userId)||((this.userId!= null)&&this.userId.equals(rhs.userId))));
     }
 
 }

@@ -28,7 +28,7 @@ public class LocationHierarchyQuery100GetRequest {
      */
     @JsonProperty("ftxlochLocnCode")
     @JsonPropertyDescription("Lineage reference object : ftxlochLocnCode")
-    private Object ftxlochLocnCode;
+    private String ftxlochLocnCode;
     /**
      * COA
      * <p>
@@ -37,7 +37,7 @@ public class LocationHierarchyQuery100GetRequest {
      */
     @JsonProperty("ftxlochCoasCode")
     @JsonPropertyDescription("Lineage reference object : ftxlochCoasCode, Lookup lineage reference object : ftvcoas")
-    private Object ftxlochCoasCode;
+    private String ftxlochCoasCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -48,7 +48,7 @@ public class LocationHierarchyQuery100GetRequest {
      * 
      */
     @JsonProperty("ftxlochLocnCode")
-    public Object getFtxlochLocnCode() {
+    public String getFtxlochLocnCode() {
         return ftxlochLocnCode;
     }
 
@@ -59,11 +59,11 @@ public class LocationHierarchyQuery100GetRequest {
      * 
      */
     @JsonProperty("ftxlochLocnCode")
-    public void setFtxlochLocnCode(Object ftxlochLocnCode) {
+    public void setFtxlochLocnCode(String ftxlochLocnCode) {
         this.ftxlochLocnCode = ftxlochLocnCode;
     }
 
-    public LocationHierarchyQuery100GetRequest withFtxlochLocnCode(Object ftxlochLocnCode) {
+    public LocationHierarchyQuery100GetRequest withFtxlochLocnCode(String ftxlochLocnCode) {
         this.ftxlochLocnCode = ftxlochLocnCode;
         return this;
     }
@@ -75,7 +75,7 @@ public class LocationHierarchyQuery100GetRequest {
      * 
      */
     @JsonProperty("ftxlochCoasCode")
-    public Object getFtxlochCoasCode() {
+    public String getFtxlochCoasCode() {
         return ftxlochCoasCode;
     }
 
@@ -86,11 +86,11 @@ public class LocationHierarchyQuery100GetRequest {
      * 
      */
     @JsonProperty("ftxlochCoasCode")
-    public void setFtxlochCoasCode(Object ftxlochCoasCode) {
+    public void setFtxlochCoasCode(String ftxlochCoasCode) {
         this.ftxlochCoasCode = ftxlochCoasCode;
     }
 
-    public LocationHierarchyQuery100GetRequest withFtxlochCoasCode(Object ftxlochCoasCode) {
+    public LocationHierarchyQuery100GetRequest withFtxlochCoasCode(String ftxlochCoasCode) {
         this.ftxlochCoasCode = ftxlochCoasCode;
         return this;
     }

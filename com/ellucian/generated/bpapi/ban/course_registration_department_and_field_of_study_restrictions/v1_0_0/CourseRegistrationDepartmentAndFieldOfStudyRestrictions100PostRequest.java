@@ -41,7 +41,7 @@ public class CourseRegistrationDepartmentAndFieldOfStudyRestrictions100PostReque
      */
     @JsonProperty("scacrseCrseNumb")
     @JsonPropertyDescription("Lineage reference object : scacrseCrseNumb, Lookup lineage reference object : scbcrse,scbcrky")
-    private Object scacrseCrseNumb;
+    private String scacrseCrseNumb;
     /**
      * Subject
      * <p>
@@ -50,7 +50,7 @@ public class CourseRegistrationDepartmentAndFieldOfStudyRestrictions100PostReque
      */
     @JsonProperty("scacrseSubjCode")
     @JsonPropertyDescription("Lineage reference object : scacrseSubjCode, Lookup lineage reference object : stvsubj")
-    private Object scacrseSubjCode;
+    private String scacrseSubjCode;
     /**
      * Term
      * <p>
@@ -59,7 +59,7 @@ public class CourseRegistrationDepartmentAndFieldOfStudyRestrictions100PostReque
      */
     @JsonProperty("scacrseTermCodeEff")
     @JsonPropertyDescription("Lineage reference object : scacrseTermCodeEff, Lookup lineage reference object : stvterm,scbcrky,scbcrky")
-    private Object scacrseTermCodeEff;
+    private String scacrseTermCodeEff;
     /**
      * Code
      * <p>
@@ -115,7 +115,7 @@ public class CourseRegistrationDepartmentAndFieldOfStudyRestrictions100PostReque
      * 
      */
     @JsonProperty("scacrseCrseNumb")
-    public Object getScacrseCrseNumb() {
+    public String getScacrseCrseNumb() {
         return scacrseCrseNumb;
     }
 
@@ -126,11 +126,11 @@ public class CourseRegistrationDepartmentAndFieldOfStudyRestrictions100PostReque
      * 
      */
     @JsonProperty("scacrseCrseNumb")
-    public void setScacrseCrseNumb(Object scacrseCrseNumb) {
+    public void setScacrseCrseNumb(String scacrseCrseNumb) {
         this.scacrseCrseNumb = scacrseCrseNumb;
     }
 
-    public CourseRegistrationDepartmentAndFieldOfStudyRestrictions100PostRequest withScacrseCrseNumb(Object scacrseCrseNumb) {
+    public CourseRegistrationDepartmentAndFieldOfStudyRestrictions100PostRequest withScacrseCrseNumb(String scacrseCrseNumb) {
         this.scacrseCrseNumb = scacrseCrseNumb;
         return this;
     }
@@ -142,7 +142,7 @@ public class CourseRegistrationDepartmentAndFieldOfStudyRestrictions100PostReque
      * 
      */
     @JsonProperty("scacrseSubjCode")
-    public Object getScacrseSubjCode() {
+    public String getScacrseSubjCode() {
         return scacrseSubjCode;
     }
 
@@ -153,11 +153,11 @@ public class CourseRegistrationDepartmentAndFieldOfStudyRestrictions100PostReque
      * 
      */
     @JsonProperty("scacrseSubjCode")
-    public void setScacrseSubjCode(Object scacrseSubjCode) {
+    public void setScacrseSubjCode(String scacrseSubjCode) {
         this.scacrseSubjCode = scacrseSubjCode;
     }
 
-    public CourseRegistrationDepartmentAndFieldOfStudyRestrictions100PostRequest withScacrseSubjCode(Object scacrseSubjCode) {
+    public CourseRegistrationDepartmentAndFieldOfStudyRestrictions100PostRequest withScacrseSubjCode(String scacrseSubjCode) {
         this.scacrseSubjCode = scacrseSubjCode;
         return this;
     }
@@ -169,7 +169,7 @@ public class CourseRegistrationDepartmentAndFieldOfStudyRestrictions100PostReque
      * 
      */
     @JsonProperty("scacrseTermCodeEff")
-    public Object getScacrseTermCodeEff() {
+    public String getScacrseTermCodeEff() {
         return scacrseTermCodeEff;
     }
 
@@ -180,11 +180,11 @@ public class CourseRegistrationDepartmentAndFieldOfStudyRestrictions100PostReque
      * 
      */
     @JsonProperty("scacrseTermCodeEff")
-    public void setScacrseTermCodeEff(Object scacrseTermCodeEff) {
+    public void setScacrseTermCodeEff(String scacrseTermCodeEff) {
         this.scacrseTermCodeEff = scacrseTermCodeEff;
     }
 
-    public CourseRegistrationDepartmentAndFieldOfStudyRestrictions100PostRequest withScacrseTermCodeEff(Object scacrseTermCodeEff) {
+    public CourseRegistrationDepartmentAndFieldOfStudyRestrictions100PostRequest withScacrseTermCodeEff(String scacrseTermCodeEff) {
         this.scacrseTermCodeEff = scacrseTermCodeEff;
         return this;
     }

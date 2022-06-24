@@ -207,7 +207,7 @@ public class AgencyCodeInformationAddress100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Registration Number
      * <p>
@@ -723,7 +723,7 @@ public class AgencyCodeInformationAddress100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -734,11 +734,11 @@ public class AgencyCodeInformationAddress100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public AgencyCodeInformationAddress100GetRequest withId(Object id) {
+    public AgencyCodeInformationAddress100GetRequest withId(String id) {
         this.id = id;
         return this;
     }

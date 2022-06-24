@@ -83,7 +83,7 @@ public class HoldInformation100PostRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Amount
      * <p>
@@ -253,7 +253,7 @@ public class HoldInformation100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -264,11 +264,11 @@ public class HoldInformation100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public HoldInformation100PostRequest withId(Object id) {
+    public HoldInformation100PostRequest withId(String id) {
         this.id = id;
         return this;
     }

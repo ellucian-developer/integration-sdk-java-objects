@@ -49,7 +49,7 @@ public class CurriculaSummaryHonors100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Degree Sequence
      * <p>
@@ -58,7 +58,7 @@ public class CurriculaSummaryHonors100GetRequest {
      */
     @JsonProperty("dgmrSeqNo")
     @JsonPropertyDescription("Lineage reference object : dgmrSeqNo")
-    private Object dgmrSeqNo;
+    private Double dgmrSeqNo;
     /**
      * View Current/Active Curricula
      * <p>
@@ -67,7 +67,7 @@ public class CurriculaSummaryHonors100GetRequest {
      */
     @JsonProperty("viewCurrent")
     @JsonPropertyDescription("Lineage reference object : viewCurrent")
-    private Object viewCurrent;
+    private String viewCurrent;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -132,7 +132,7 @@ public class CurriculaSummaryHonors100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -143,11 +143,11 @@ public class CurriculaSummaryHonors100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public CurriculaSummaryHonors100GetRequest withId(Object id) {
+    public CurriculaSummaryHonors100GetRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -159,7 +159,7 @@ public class CurriculaSummaryHonors100GetRequest {
      * 
      */
     @JsonProperty("dgmrSeqNo")
-    public Object getDgmrSeqNo() {
+    public Double getDgmrSeqNo() {
         return dgmrSeqNo;
     }
 
@@ -170,11 +170,11 @@ public class CurriculaSummaryHonors100GetRequest {
      * 
      */
     @JsonProperty("dgmrSeqNo")
-    public void setDgmrSeqNo(Object dgmrSeqNo) {
+    public void setDgmrSeqNo(Double dgmrSeqNo) {
         this.dgmrSeqNo = dgmrSeqNo;
     }
 
-    public CurriculaSummaryHonors100GetRequest withDgmrSeqNo(Object dgmrSeqNo) {
+    public CurriculaSummaryHonors100GetRequest withDgmrSeqNo(Double dgmrSeqNo) {
         this.dgmrSeqNo = dgmrSeqNo;
         return this;
     }
@@ -186,7 +186,7 @@ public class CurriculaSummaryHonors100GetRequest {
      * 
      */
     @JsonProperty("viewCurrent")
-    public Object getViewCurrent() {
+    public String getViewCurrent() {
         return viewCurrent;
     }
 
@@ -197,11 +197,11 @@ public class CurriculaSummaryHonors100GetRequest {
      * 
      */
     @JsonProperty("viewCurrent")
-    public void setViewCurrent(Object viewCurrent) {
+    public void setViewCurrent(String viewCurrent) {
         this.viewCurrent = viewCurrent;
     }
 
-    public CurriculaSummaryHonors100GetRequest withViewCurrent(Object viewCurrent) {
+    public CurriculaSummaryHonors100GetRequest withViewCurrent(String viewCurrent) {
         this.viewCurrent = viewCurrent;
         return this;
     }

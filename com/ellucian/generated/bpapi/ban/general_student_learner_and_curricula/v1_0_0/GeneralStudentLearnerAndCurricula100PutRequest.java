@@ -201,7 +201,7 @@ public class GeneralStudentLearnerAndCurricula100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Term
      * <p>
@@ -210,7 +210,7 @@ public class GeneralStudentLearnerAndCurricula100PutRequest {
      */
     @JsonProperty("stvtermTermCode")
     @JsonPropertyDescription("Lineage reference object : stvtermTermCode, Lookup lineage reference object : stvterm")
-    private Object stvtermTermCode;
+    private String stvtermTermCode;
     /**
      * Fee Assessment Rate
      * <p>
@@ -826,7 +826,7 @@ public class GeneralStudentLearnerAndCurricula100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -837,11 +837,11 @@ public class GeneralStudentLearnerAndCurricula100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public GeneralStudentLearnerAndCurricula100PutRequest withId(Object id) {
+    public GeneralStudentLearnerAndCurricula100PutRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -853,7 +853,7 @@ public class GeneralStudentLearnerAndCurricula100PutRequest {
      * 
      */
     @JsonProperty("stvtermTermCode")
-    public Object getStvtermTermCode() {
+    public String getStvtermTermCode() {
         return stvtermTermCode;
     }
 
@@ -864,11 +864,11 @@ public class GeneralStudentLearnerAndCurricula100PutRequest {
      * 
      */
     @JsonProperty("stvtermTermCode")
-    public void setStvtermTermCode(Object stvtermTermCode) {
+    public void setStvtermTermCode(String stvtermTermCode) {
         this.stvtermTermCode = stvtermTermCode;
     }
 
-    public GeneralStudentLearnerAndCurricula100PutRequest withStvtermTermCode(Object stvtermTermCode) {
+    public GeneralStudentLearnerAndCurricula100PutRequest withStvtermTermCode(String stvtermTermCode) {
         this.stvtermTermCode = stvtermTermCode;
         return this;
     }

@@ -29,7 +29,7 @@ public class ApplicantEntryByRequisitionOrPositionStatusLog100GetRequest {
      */
     @JsonProperty("reqNo")
     @JsonPropertyDescription("Lineage reference object : reqNo")
-    private Object reqNo;
+    private String reqNo;
     /**
      * Position Class
      * <p>
@@ -38,7 +38,7 @@ public class ApplicantEntryByRequisitionOrPositionStatusLog100GetRequest {
      */
     @JsonProperty("pclsCode")
     @JsonPropertyDescription("Lineage reference object : pclsCode")
-    private Object pclsCode;
+    private String pclsCode;
     /**
      * Position Number
      * <p>
@@ -47,7 +47,7 @@ public class ApplicantEntryByRequisitionOrPositionStatusLog100GetRequest {
      */
     @JsonProperty("posn")
     @JsonPropertyDescription("Lineage reference object : posn")
-    private Object posn;
+    private String posn;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -58,7 +58,7 @@ public class ApplicantEntryByRequisitionOrPositionStatusLog100GetRequest {
      * 
      */
     @JsonProperty("reqNo")
-    public Object getReqNo() {
+    public String getReqNo() {
         return reqNo;
     }
 
@@ -69,11 +69,11 @@ public class ApplicantEntryByRequisitionOrPositionStatusLog100GetRequest {
      * 
      */
     @JsonProperty("reqNo")
-    public void setReqNo(Object reqNo) {
+    public void setReqNo(String reqNo) {
         this.reqNo = reqNo;
     }
 
-    public ApplicantEntryByRequisitionOrPositionStatusLog100GetRequest withReqNo(Object reqNo) {
+    public ApplicantEntryByRequisitionOrPositionStatusLog100GetRequest withReqNo(String reqNo) {
         this.reqNo = reqNo;
         return this;
     }
@@ -85,7 +85,7 @@ public class ApplicantEntryByRequisitionOrPositionStatusLog100GetRequest {
      * 
      */
     @JsonProperty("pclsCode")
-    public Object getPclsCode() {
+    public String getPclsCode() {
         return pclsCode;
     }
 
@@ -96,11 +96,11 @@ public class ApplicantEntryByRequisitionOrPositionStatusLog100GetRequest {
      * 
      */
     @JsonProperty("pclsCode")
-    public void setPclsCode(Object pclsCode) {
+    public void setPclsCode(String pclsCode) {
         this.pclsCode = pclsCode;
     }
 
-    public ApplicantEntryByRequisitionOrPositionStatusLog100GetRequest withPclsCode(Object pclsCode) {
+    public ApplicantEntryByRequisitionOrPositionStatusLog100GetRequest withPclsCode(String pclsCode) {
         this.pclsCode = pclsCode;
         return this;
     }
@@ -112,7 +112,7 @@ public class ApplicantEntryByRequisitionOrPositionStatusLog100GetRequest {
      * 
      */
     @JsonProperty("posn")
-    public Object getPosn() {
+    public String getPosn() {
         return posn;
     }
 
@@ -123,11 +123,11 @@ public class ApplicantEntryByRequisitionOrPositionStatusLog100GetRequest {
      * 
      */
     @JsonProperty("posn")
-    public void setPosn(Object posn) {
+    public void setPosn(String posn) {
         this.posn = posn;
     }
 
-    public ApplicantEntryByRequisitionOrPositionStatusLog100GetRequest withPosn(Object posn) {
+    public ApplicantEntryByRequisitionOrPositionStatusLog100GetRequest withPosn(String posn) {
         this.posn = posn;
         return this;
     }

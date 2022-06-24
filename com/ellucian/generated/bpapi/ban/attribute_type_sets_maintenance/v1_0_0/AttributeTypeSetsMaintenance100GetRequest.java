@@ -30,14 +30,14 @@ public class AttributeTypeSetsMaintenance100GetRequest {
      */
     @JsonProperty("ftvattsCoasCode")
     @JsonPropertyDescription("Lineage reference object : ftvattsCoasCode, Lookup lineage reference object : ftvcoas")
-    private Object ftvattsCoasCode;
+    private String ftvattsCoasCode;
     /**
      * Lineage reference object : ftvattsValidFoapal
      * 
      */
     @JsonProperty("ftvattsValidFoapal")
     @JsonPropertyDescription("Lineage reference object : ftvattsValidFoapal")
-    private Object ftvattsValidFoapal;
+    private String ftvattsValidFoapal;
     /**
      * Ftratts Attt Code
      * <p>
@@ -56,7 +56,7 @@ public class AttributeTypeSetsMaintenance100GetRequest {
      */
     @JsonProperty("ftvattsCode")
     @JsonPropertyDescription("Lineage reference object : ftvattsCode, Lookup lineage reference object : ftvatts")
-    private Object ftvattsCode;
+    private String ftvattsCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -67,7 +67,7 @@ public class AttributeTypeSetsMaintenance100GetRequest {
      * 
      */
     @JsonProperty("ftvattsCoasCode")
-    public Object getFtvattsCoasCode() {
+    public String getFtvattsCoasCode() {
         return ftvattsCoasCode;
     }
 
@@ -78,11 +78,11 @@ public class AttributeTypeSetsMaintenance100GetRequest {
      * 
      */
     @JsonProperty("ftvattsCoasCode")
-    public void setFtvattsCoasCode(Object ftvattsCoasCode) {
+    public void setFtvattsCoasCode(String ftvattsCoasCode) {
         this.ftvattsCoasCode = ftvattsCoasCode;
     }
 
-    public AttributeTypeSetsMaintenance100GetRequest withFtvattsCoasCode(Object ftvattsCoasCode) {
+    public AttributeTypeSetsMaintenance100GetRequest withFtvattsCoasCode(String ftvattsCoasCode) {
         this.ftvattsCoasCode = ftvattsCoasCode;
         return this;
     }
@@ -92,7 +92,7 @@ public class AttributeTypeSetsMaintenance100GetRequest {
      * 
      */
     @JsonProperty("ftvattsValidFoapal")
-    public Object getFtvattsValidFoapal() {
+    public String getFtvattsValidFoapal() {
         return ftvattsValidFoapal;
     }
 
@@ -101,11 +101,11 @@ public class AttributeTypeSetsMaintenance100GetRequest {
      * 
      */
     @JsonProperty("ftvattsValidFoapal")
-    public void setFtvattsValidFoapal(Object ftvattsValidFoapal) {
+    public void setFtvattsValidFoapal(String ftvattsValidFoapal) {
         this.ftvattsValidFoapal = ftvattsValidFoapal;
     }
 
-    public AttributeTypeSetsMaintenance100GetRequest withFtvattsValidFoapal(Object ftvattsValidFoapal) {
+    public AttributeTypeSetsMaintenance100GetRequest withFtvattsValidFoapal(String ftvattsValidFoapal) {
         this.ftvattsValidFoapal = ftvattsValidFoapal;
         return this;
     }
@@ -146,7 +146,7 @@ public class AttributeTypeSetsMaintenance100GetRequest {
      * 
      */
     @JsonProperty("ftvattsCode")
-    public Object getFtvattsCode() {
+    public String getFtvattsCode() {
         return ftvattsCode;
     }
 
@@ -157,11 +157,11 @@ public class AttributeTypeSetsMaintenance100GetRequest {
      * 
      */
     @JsonProperty("ftvattsCode")
-    public void setFtvattsCode(Object ftvattsCode) {
+    public void setFtvattsCode(String ftvattsCode) {
         this.ftvattsCode = ftvattsCode;
     }
 
-    public AttributeTypeSetsMaintenance100GetRequest withFtvattsCode(Object ftvattsCode) {
+    public AttributeTypeSetsMaintenance100GetRequest withFtvattsCode(String ftvattsCode) {
         this.ftvattsCode = ftvattsCode;
         return this;
     }

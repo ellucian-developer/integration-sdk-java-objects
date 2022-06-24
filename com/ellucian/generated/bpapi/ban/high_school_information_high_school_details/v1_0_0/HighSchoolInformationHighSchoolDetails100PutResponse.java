@@ -23,6 +23,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "transRecvDate",
     "admrCode",
     "classSize",
+    "gradeCompleted",
     "percentile",
     "graduationDate",
     "stvsbgiDesc",
@@ -105,6 +106,13 @@ public class HighSchoolInformationHighSchoolDetails100PutResponse {
     @JsonProperty("classSize")
     @JsonPropertyDescription("Lineage reference object : SORHSCH_CLASS_SIZE")
     private Double classSize;
+    /**
+     * Lineage reference object : SORHSCH_GRADE_COMPLETED
+     * 
+     */
+    @JsonProperty("gradeCompleted")
+    @JsonPropertyDescription("Lineage reference object : SORHSCH_GRADE_COMPLETED")
+    private String gradeCompleted;
     /**
      * Percentile
      * <p>
@@ -360,6 +368,29 @@ public class HighSchoolInformationHighSchoolDetails100PutResponse {
     }
 
     /**
+     * Lineage reference object : SORHSCH_GRADE_COMPLETED
+     * 
+     */
+    @JsonProperty("gradeCompleted")
+    public String getGradeCompleted() {
+        return gradeCompleted;
+    }
+
+    /**
+     * Lineage reference object : SORHSCH_GRADE_COMPLETED
+     * 
+     */
+    @JsonProperty("gradeCompleted")
+    public void setGradeCompleted(String gradeCompleted) {
+        this.gradeCompleted = gradeCompleted;
+    }
+
+    public HighSchoolInformationHighSchoolDetails100PutResponse withGradeCompleted(String gradeCompleted) {
+        this.gradeCompleted = gradeCompleted;
+        return this;
+    }
+
+    /**
      * Percentile
      * <p>
      * Lineage reference object : SORHSCH_PERCENTILE
@@ -536,6 +567,10 @@ public class HighSchoolInformationHighSchoolDetails100PutResponse {
         sb.append('=');
         sb.append(((this.classSize == null)?"<null>":this.classSize));
         sb.append(',');
+        sb.append("gradeCompleted");
+        sb.append('=');
+        sb.append(((this.gradeCompleted == null)?"<null>":this.gradeCompleted));
+        sb.append(',');
         sb.append("percentile");
         sb.append('=');
         sb.append(((this.percentile == null)?"<null>":this.percentile));
@@ -583,6 +618,7 @@ public class HighSchoolInformationHighSchoolDetails100PutResponse {
         result = ((result* 31)+((this.transRecvDate == null)? 0 :this.transRecvDate.hashCode()));
         result = ((result* 31)+((this.admrCode == null)? 0 :this.admrCode.hashCode()));
         result = ((result* 31)+((this.classSize == null)? 0 :this.classSize.hashCode()));
+        result = ((result* 31)+((this.gradeCompleted == null)? 0 :this.gradeCompleted.hashCode()));
         result = ((result* 31)+((this.percentile == null)? 0 :this.percentile.hashCode()));
         result = ((result* 31)+((this.graduationDate == null)? 0 :this.graduationDate.hashCode()));
         result = ((result* 31)+((this.stvsbgiDesc == null)? 0 :this.stvsbgiDesc.hashCode()));
@@ -602,7 +638,7 @@ public class HighSchoolInformationHighSchoolDetails100PutResponse {
             return false;
         }
         HighSchoolInformationHighSchoolDetails100PutResponse rhs = ((HighSchoolInformationHighSchoolDetails100PutResponse) other);
-        return ((((((((((((((((this.dplmCode == rhs.dplmCode)||((this.dplmCode!= null)&&this.dplmCode.equals(rhs.dplmCode)))&&((this.collPrepInd == rhs.collPrepInd)||((this.collPrepInd!= null)&&this.collPrepInd.equals(rhs.collPrepInd))))&&((this.epsccode == rhs.epsccode)||((this.epsccode!= null)&&this.epsccode.equals(rhs.epsccode))))&&((this.sbgiCode == rhs.sbgiCode)||((this.sbgiCode!= null)&&this.sbgiCode.equals(rhs.sbgiCode))))&&((this.classRank == rhs.classRank)||((this.classRank!= null)&&this.classRank.equals(rhs.classRank))))&&((this.transRecvDate == rhs.transRecvDate)||((this.transRecvDate!= null)&&this.transRecvDate.equals(rhs.transRecvDate))))&&((this.admrCode == rhs.admrCode)||((this.admrCode!= null)&&this.admrCode.equals(rhs.admrCode))))&&((this.classSize == rhs.classSize)||((this.classSize!= null)&&this.classSize.equals(rhs.classSize))))&&((this.percentile == rhs.percentile)||((this.percentile!= null)&&this.percentile.equals(rhs.percentile))))&&((this.graduationDate == rhs.graduationDate)||((this.graduationDate!= null)&&this.graduationDate.equals(rhs.graduationDate))))&&((this.stvsbgiDesc == rhs.stvsbgiDesc)||((this.stvsbgiDesc!= null)&&this.stvsbgiDesc.equals(rhs.stvsbgiDesc))))&&((this.gpa == rhs.gpa)||((this.gpa!= null)&&this.gpa.equals(rhs.gpa))))&&((this.stvadmrDesc == rhs.stvadmrDesc)||((this.stvadmrDesc!= null)&&this.stvadmrDesc.equals(rhs.stvadmrDesc))))&&((this.stvdplmDesc == rhs.stvdplmDesc)||((this.stvdplmDesc!= null)&&this.stvdplmDesc.equals(rhs.stvdplmDesc))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))));
+        return (((((((((((((((((this.dplmCode == rhs.dplmCode)||((this.dplmCode!= null)&&this.dplmCode.equals(rhs.dplmCode)))&&((this.collPrepInd == rhs.collPrepInd)||((this.collPrepInd!= null)&&this.collPrepInd.equals(rhs.collPrepInd))))&&((this.epsccode == rhs.epsccode)||((this.epsccode!= null)&&this.epsccode.equals(rhs.epsccode))))&&((this.sbgiCode == rhs.sbgiCode)||((this.sbgiCode!= null)&&this.sbgiCode.equals(rhs.sbgiCode))))&&((this.classRank == rhs.classRank)||((this.classRank!= null)&&this.classRank.equals(rhs.classRank))))&&((this.transRecvDate == rhs.transRecvDate)||((this.transRecvDate!= null)&&this.transRecvDate.equals(rhs.transRecvDate))))&&((this.admrCode == rhs.admrCode)||((this.admrCode!= null)&&this.admrCode.equals(rhs.admrCode))))&&((this.classSize == rhs.classSize)||((this.classSize!= null)&&this.classSize.equals(rhs.classSize))))&&((this.gradeCompleted == rhs.gradeCompleted)||((this.gradeCompleted!= null)&&this.gradeCompleted.equals(rhs.gradeCompleted))))&&((this.percentile == rhs.percentile)||((this.percentile!= null)&&this.percentile.equals(rhs.percentile))))&&((this.graduationDate == rhs.graduationDate)||((this.graduationDate!= null)&&this.graduationDate.equals(rhs.graduationDate))))&&((this.stvsbgiDesc == rhs.stvsbgiDesc)||((this.stvsbgiDesc!= null)&&this.stvsbgiDesc.equals(rhs.stvsbgiDesc))))&&((this.gpa == rhs.gpa)||((this.gpa!= null)&&this.gpa.equals(rhs.gpa))))&&((this.stvadmrDesc == rhs.stvadmrDesc)||((this.stvadmrDesc!= null)&&this.stvadmrDesc.equals(rhs.stvadmrDesc))))&&((this.stvdplmDesc == rhs.stvdplmDesc)||((this.stvdplmDesc!= null)&&this.stvdplmDesc.equals(rhs.stvdplmDesc))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))));
     }
 
 }

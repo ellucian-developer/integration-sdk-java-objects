@@ -34,7 +34,7 @@ public class ElectronicApprovalSummaryOtherInformationAndComments100GetRequest {
      */
     @JsonProperty("transactionToDate")
     @JsonPropertyDescription("Lineage reference object : transactionToDate")
-    private Object transactionToDate;
+    private Date transactionToDate;
     /**
      * Date and Time
      * <p>
@@ -63,7 +63,7 @@ public class ElectronicApprovalSummaryOtherInformationAndComments100GetRequest {
      */
     @JsonProperty("transactionStatus")
     @JsonPropertyDescription("Lineage reference object : transactionStatus")
-    private Object transactionStatus;
+    private String transactionStatus;
     /**
      * Proxy For
      * <p>
@@ -72,7 +72,7 @@ public class ElectronicApprovalSummaryOtherInformationAndComments100GetRequest {
      */
     @JsonProperty("proxyFor")
     @JsonPropertyDescription("Lineage reference object : proxyFor")
-    private Object proxyFor;
+    private String proxyFor;
     /**
      * Submitted From Date
      * <p>
@@ -81,7 +81,7 @@ public class ElectronicApprovalSummaryOtherInformationAndComments100GetRequest {
      */
     @JsonProperty("transactionFromDate")
     @JsonPropertyDescription("Lineage reference object : transactionFromDate")
-    private Object transactionFromDate;
+    private Date transactionFromDate;
     /**
      * Made By
      * <p>
@@ -101,7 +101,7 @@ public class ElectronicApprovalSummaryOtherInformationAndComments100GetRequest {
      * 
      */
     @JsonProperty("transactionToDate")
-    public Object getTransactionToDate() {
+    public Date getTransactionToDate() {
         return transactionToDate;
     }
 
@@ -112,11 +112,11 @@ public class ElectronicApprovalSummaryOtherInformationAndComments100GetRequest {
      * 
      */
     @JsonProperty("transactionToDate")
-    public void setTransactionToDate(Object transactionToDate) {
+    public void setTransactionToDate(Date transactionToDate) {
         this.transactionToDate = transactionToDate;
     }
 
-    public ElectronicApprovalSummaryOtherInformationAndComments100GetRequest withTransactionToDate(Object transactionToDate) {
+    public ElectronicApprovalSummaryOtherInformationAndComments100GetRequest withTransactionToDate(Date transactionToDate) {
         this.transactionToDate = transactionToDate;
         return this;
     }
@@ -185,7 +185,7 @@ public class ElectronicApprovalSummaryOtherInformationAndComments100GetRequest {
      * 
      */
     @JsonProperty("transactionStatus")
-    public Object getTransactionStatus() {
+    public String getTransactionStatus() {
         return transactionStatus;
     }
 
@@ -197,11 +197,11 @@ public class ElectronicApprovalSummaryOtherInformationAndComments100GetRequest {
      * 
      */
     @JsonProperty("transactionStatus")
-    public void setTransactionStatus(Object transactionStatus) {
+    public void setTransactionStatus(String transactionStatus) {
         this.transactionStatus = transactionStatus;
     }
 
-    public ElectronicApprovalSummaryOtherInformationAndComments100GetRequest withTransactionStatus(Object transactionStatus) {
+    public ElectronicApprovalSummaryOtherInformationAndComments100GetRequest withTransactionStatus(String transactionStatus) {
         this.transactionStatus = transactionStatus;
         return this;
     }
@@ -213,7 +213,7 @@ public class ElectronicApprovalSummaryOtherInformationAndComments100GetRequest {
      * 
      */
     @JsonProperty("proxyFor")
-    public Object getProxyFor() {
+    public String getProxyFor() {
         return proxyFor;
     }
 
@@ -224,11 +224,11 @@ public class ElectronicApprovalSummaryOtherInformationAndComments100GetRequest {
      * 
      */
     @JsonProperty("proxyFor")
-    public void setProxyFor(Object proxyFor) {
+    public void setProxyFor(String proxyFor) {
         this.proxyFor = proxyFor;
     }
 
-    public ElectronicApprovalSummaryOtherInformationAndComments100GetRequest withProxyFor(Object proxyFor) {
+    public ElectronicApprovalSummaryOtherInformationAndComments100GetRequest withProxyFor(String proxyFor) {
         this.proxyFor = proxyFor;
         return this;
     }
@@ -240,7 +240,7 @@ public class ElectronicApprovalSummaryOtherInformationAndComments100GetRequest {
      * 
      */
     @JsonProperty("transactionFromDate")
-    public Object getTransactionFromDate() {
+    public Date getTransactionFromDate() {
         return transactionFromDate;
     }
 
@@ -251,11 +251,11 @@ public class ElectronicApprovalSummaryOtherInformationAndComments100GetRequest {
      * 
      */
     @JsonProperty("transactionFromDate")
-    public void setTransactionFromDate(Object transactionFromDate) {
+    public void setTransactionFromDate(Date transactionFromDate) {
         this.transactionFromDate = transactionFromDate;
     }
 
-    public ElectronicApprovalSummaryOtherInformationAndComments100GetRequest withTransactionFromDate(Object transactionFromDate) {
+    public ElectronicApprovalSummaryOtherInformationAndComments100GetRequest withTransactionFromDate(Date transactionFromDate) {
         this.transactionFromDate = transactionFromDate;
         return this;
     }

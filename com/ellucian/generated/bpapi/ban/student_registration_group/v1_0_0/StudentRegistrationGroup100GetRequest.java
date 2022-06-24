@@ -61,7 +61,7 @@ public class StudentRegistrationGroup100GetRequest {
      */
     @JsonProperty("keyblocTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCode;
+    private String keyblocTermCode;
     /**
      * Begin Times
      * <p>
@@ -79,7 +79,7 @@ public class StudentRegistrationGroup100GetRequest {
      */
     @JsonProperty("keyblocId")
     @JsonPropertyDescription("Lineage reference object : keyblocId")
-    private Object keyblocId;
+    private String keyblocId;
     /**
      * Priority
      * <p>
@@ -180,7 +180,7 @@ public class StudentRegistrationGroup100GetRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public Object getKeyblocTermCode() {
+    public String getKeyblocTermCode() {
         return keyblocTermCode;
     }
 
@@ -191,11 +191,11 @@ public class StudentRegistrationGroup100GetRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public void setKeyblocTermCode(Object keyblocTermCode) {
+    public void setKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
     }
 
-    public StudentRegistrationGroup100GetRequest withKeyblocTermCode(Object keyblocTermCode) {
+    public StudentRegistrationGroup100GetRequest withKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
         return this;
     }
@@ -234,7 +234,7 @@ public class StudentRegistrationGroup100GetRequest {
      * 
      */
     @JsonProperty("keyblocId")
-    public Object getKeyblocId() {
+    public String getKeyblocId() {
         return keyblocId;
     }
 
@@ -245,11 +245,11 @@ public class StudentRegistrationGroup100GetRequest {
      * 
      */
     @JsonProperty("keyblocId")
-    public void setKeyblocId(Object keyblocId) {
+    public void setKeyblocId(String keyblocId) {
         this.keyblocId = keyblocId;
     }
 
-    public StudentRegistrationGroup100GetRequest withKeyblocId(Object keyblocId) {
+    public StudentRegistrationGroup100GetRequest withKeyblocId(String keyblocId) {
         this.keyblocId = keyblocId;
         return this;
     }

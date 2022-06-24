@@ -29,7 +29,7 @@ public class RcamCtrlBlock {
      */
     @JsonProperty("scrrcamTermCodeTo")
     @JsonPropertyDescription("Lineage reference object : scrrcamTermCodeTo, Lookup lineage reference object : stvterm")
-    private Object scrrcamTermCodeTo;
+    private String scrrcamTermCodeTo;
     /**
      * From Term
      * <p>
@@ -38,7 +38,7 @@ public class RcamCtrlBlock {
      */
     @JsonProperty("scrrcamTermCodeFrom")
     @JsonPropertyDescription("Lineage reference object : scrrcamTermCodeFrom, Lookup lineage reference object : stvterm")
-    private Object scrrcamTermCodeFrom;
+    private String scrrcamTermCodeFrom;
     /**
      * Include/Exclude (I/E)
      * <p>
@@ -48,7 +48,7 @@ public class RcamCtrlBlock {
      */
     @JsonProperty("scrrcamCampInd")
     @JsonPropertyDescription("Lineage reference object : scrrcamCampInd")
-    private Object scrrcamCampInd;
+    private String scrrcamCampInd;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -59,7 +59,7 @@ public class RcamCtrlBlock {
      * 
      */
     @JsonProperty("scrrcamTermCodeTo")
-    public Object getScrrcamTermCodeTo() {
+    public String getScrrcamTermCodeTo() {
         return scrrcamTermCodeTo;
     }
 
@@ -70,11 +70,11 @@ public class RcamCtrlBlock {
      * 
      */
     @JsonProperty("scrrcamTermCodeTo")
-    public void setScrrcamTermCodeTo(Object scrrcamTermCodeTo) {
+    public void setScrrcamTermCodeTo(String scrrcamTermCodeTo) {
         this.scrrcamTermCodeTo = scrrcamTermCodeTo;
     }
 
-    public RcamCtrlBlock withScrrcamTermCodeTo(Object scrrcamTermCodeTo) {
+    public RcamCtrlBlock withScrrcamTermCodeTo(String scrrcamTermCodeTo) {
         this.scrrcamTermCodeTo = scrrcamTermCodeTo;
         return this;
     }
@@ -86,7 +86,7 @@ public class RcamCtrlBlock {
      * 
      */
     @JsonProperty("scrrcamTermCodeFrom")
-    public Object getScrrcamTermCodeFrom() {
+    public String getScrrcamTermCodeFrom() {
         return scrrcamTermCodeFrom;
     }
 
@@ -97,11 +97,11 @@ public class RcamCtrlBlock {
      * 
      */
     @JsonProperty("scrrcamTermCodeFrom")
-    public void setScrrcamTermCodeFrom(Object scrrcamTermCodeFrom) {
+    public void setScrrcamTermCodeFrom(String scrrcamTermCodeFrom) {
         this.scrrcamTermCodeFrom = scrrcamTermCodeFrom;
     }
 
-    public RcamCtrlBlock withScrrcamTermCodeFrom(Object scrrcamTermCodeFrom) {
+    public RcamCtrlBlock withScrrcamTermCodeFrom(String scrrcamTermCodeFrom) {
         this.scrrcamTermCodeFrom = scrrcamTermCodeFrom;
         return this;
     }
@@ -114,7 +114,7 @@ public class RcamCtrlBlock {
      * 
      */
     @JsonProperty("scrrcamCampInd")
-    public Object getScrrcamCampInd() {
+    public String getScrrcamCampInd() {
         return scrrcamCampInd;
     }
 
@@ -126,11 +126,11 @@ public class RcamCtrlBlock {
      * 
      */
     @JsonProperty("scrrcamCampInd")
-    public void setScrrcamCampInd(Object scrrcamCampInd) {
+    public void setScrrcamCampInd(String scrrcamCampInd) {
         this.scrrcamCampInd = scrrcamCampInd;
     }
 
-    public RcamCtrlBlock withScrrcamCampInd(Object scrrcamCampInd) {
+    public RcamCtrlBlock withScrrcamCampInd(String scrrcamCampInd) {
         this.scrrcamCampInd = scrrcamCampInd;
         return this;
     }

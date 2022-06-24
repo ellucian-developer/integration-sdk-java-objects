@@ -1,0 +1,1791 @@
+
+package com.ellucian.generated.bpapi.ban.program_output_inquiry.v0_1_0;
+
+import java.util.HashMap;
+import java.util.Map;
+import javax.annotation.processing.Generated;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyDescription;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+    "actCoursesOverall",
+    "reqCreditsITrad",
+    "reqCreditsOverall",
+    "actLastEarnCourses",
+    "maxCreditsINontrad",
+    "lastEarnedCourses",
+    "maxCreditsTransfer",
+    "actCoursesINontrad",
+    "actCreditsITrad",
+    "connectorInst",
+    "lastInstCourses",
+    "captiveInd",
+    "connectorOverall",
+    "connectorTransfer",
+    "connectorINontrad",
+    "actGpaAct",
+    "actCoursesTransfer",
+    "connectorLastInst",
+    "actCoursesITrad",
+    "actCoursesInst",
+    "singleInd",
+    "actCreditsInst",
+    "actLastInstCourses",
+    "termCodeEff",
+    "minProgramGpaReq",
+    "actLastInstCredits",
+    "actLastEarnCredits",
+    "sourceText",
+    "maxCoursesTransfer",
+    "connectorITrad",
+    "lastEarnedCredits",
+    "yearRule",
+    "actCreditsTransfer",
+    "minGpaReq",
+    "reqCoursesOverall",
+    "maxCoursesINontrad",
+    "reqCoursesITrad",
+    "lastInstCredits",
+    "actProgramGpaAct",
+    "connectorLastEarned",
+    "reqCreditsInst",
+    "reqCoursesInst",
+    "actCreditsOverall",
+    "actCreditsINontrad",
+    "grdeCodeMin"
+})
+@Generated("jsonschema2pojo")
+public class ProgramOutputInquiry010GetResponse {
+
+    /**
+     * Courses Used
+     * <p>
+     * Lineage reference object : SMBPOGN_ACT_COURSES_OVERALL
+     * 
+     */
+    @JsonProperty("actCoursesOverall")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_ACT_COURSES_OVERALL")
+    private Double actCoursesOverall;
+    /**
+     * Required Institutional Traditional
+     * <p>
+     * Lineage reference object : SMBPOGN_REQ_CREDITS_I_TRAD
+     * 
+     */
+    @JsonProperty("reqCreditsITrad")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_REQ_CREDITS_I_TRAD")
+    private Double reqCreditsITrad;
+    /**
+     * Lineage reference object : SMBPOGN_REQ_CREDITS_OVERALL
+     * 
+     */
+    @JsonProperty("reqCreditsOverall")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_REQ_CREDITS_OVERALL")
+    private Double reqCreditsOverall;
+    /**
+     * Lineage reference object : SMBPOGN_ACT_LAST_EARN_COURSES
+     * 
+     */
+    @JsonProperty("actLastEarnCourses")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_ACT_LAST_EARN_COURSES")
+    private Double actLastEarnCourses;
+    /**
+     * Maximum Institutional Non-Traditional
+     * <p>
+     * Lineage reference object : SMBPOGN_MAX_CREDITS_I_NONTRAD
+     * 
+     */
+    @JsonProperty("maxCreditsINontrad")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_MAX_CREDITS_I_NONTRAD")
+    private Double maxCreditsINontrad;
+    /**
+     * Lineage reference object : SMBPOGN_LAST_EARNED_COURSES
+     * 
+     */
+    @JsonProperty("lastEarnedCourses")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_LAST_EARNED_COURSES")
+    private Double lastEarnedCourses;
+    /**
+     * Maximum Transfer
+     * <p>
+     * Lineage reference object : SMBPOGN_MAX_CREDITS_TRANSFER
+     * 
+     */
+    @JsonProperty("maxCreditsTransfer")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_MAX_CREDITS_TRANSFER")
+    private Double maxCreditsTransfer;
+    /**
+     * Lineage reference object : SMBPOGN_ACT_COURSES_I_NONTRAD
+     * 
+     */
+    @JsonProperty("actCoursesINontrad")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_ACT_COURSES_I_NONTRAD")
+    private Double actCoursesINontrad;
+    /**
+     * Lineage reference object : SMBPOGN_ACT_CREDITS_I_TRAD
+     * 
+     */
+    @JsonProperty("actCreditsITrad")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_ACT_CREDITS_I_TRAD")
+    private Double actCreditsITrad;
+    /**
+     * Lineage reference object : SMBPOGN_CONNECTOR_INST
+     * 
+     */
+    @JsonProperty("connectorInst")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_CONNECTOR_INST")
+    private String connectorInst;
+    /**
+     * Lineage reference object : SMBPOGN_LAST_INST_COURSES
+     * 
+     */
+    @JsonProperty("lastInstCourses")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_LAST_INST_COURSES")
+    private Double lastInstCourses;
+    /**
+     * Captive Program
+     * <p>
+     * Lineage reference object : SMBPOGN_CAPTIVE_IND
+     * 
+     */
+    @JsonProperty("captiveInd")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_CAPTIVE_IND")
+    private String captiveInd;
+    /**
+     * Lineage reference object : SMBPOGN_CONNECTOR_OVERALL
+     * 
+     */
+    @JsonProperty("connectorOverall")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_CONNECTOR_OVERALL")
+    private String connectorOverall;
+    /**
+     * Lineage reference object : SMBPOGN_CONNECTOR_TRANSFER
+     * 
+     */
+    @JsonProperty("connectorTransfer")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_CONNECTOR_TRANSFER")
+    private String connectorTransfer;
+    /**
+     * Lineage reference object : SMBPOGN_CONNECTOR_I_NONTRAD
+     * 
+     */
+    @JsonProperty("connectorINontrad")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_CONNECTOR_I_NONTRAD")
+    private String connectorINontrad;
+    @JsonProperty("actGpaAct")
+    private Double actGpaAct;
+    /**
+     * Lineage reference object : SMBPOGN_ACT_COURSES_TRANSFER
+     * 
+     */
+    @JsonProperty("actCoursesTransfer")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_ACT_COURSES_TRANSFER")
+    private Double actCoursesTransfer;
+    /**
+     * Lineage reference object : SMBPOGN_CONNECTOR_LAST_INST
+     * 
+     */
+    @JsonProperty("connectorLastInst")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_CONNECTOR_LAST_INST")
+    private String connectorLastInst;
+    /**
+     * Lineage reference object : SMBPOGN_ACT_COURSES_I_TRAD
+     * 
+     */
+    @JsonProperty("actCoursesITrad")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_ACT_COURSES_I_TRAD")
+    private Double actCoursesITrad;
+    /**
+     * Lineage reference object : SMBPOGN_ACT_COURSES_INST
+     * 
+     */
+    @JsonProperty("actCoursesInst")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_ACT_COURSES_INST")
+    private Double actCoursesInst;
+    /**
+     * Single Entity
+     * <p>
+     * Lineage reference object : SMBPOGN_SINGLE_IND
+     * 
+     */
+    @JsonProperty("singleInd")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_SINGLE_IND")
+    private String singleInd;
+    /**
+     * Credits Required
+     * <p>
+     * Lineage reference object : SMBPOGN_ACT_CREDITS_INST
+     * 
+     */
+    @JsonProperty("actCreditsInst")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_ACT_CREDITS_INST")
+    private Double actCreditsInst;
+    /**
+     * Lineage reference object : SMBPOGN_ACT_LAST_INST_COURSES
+     * 
+     */
+    @JsonProperty("actLastInstCourses")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_ACT_LAST_INST_COURSES")
+    private Double actLastInstCourses;
+    /**
+     * Term Effective
+     * <p>
+     * Lineage reference object : SMBPOGN_TERM_CODE_EFF
+     * 
+     */
+    @JsonProperty("termCodeEff")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_TERM_CODE_EFF")
+    private String termCodeEff;
+    /**
+     * Required
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("minProgramGpaReq")
+    private Double minProgramGpaReq;
+    /**
+     * Lineage reference object : SMBPOGN_ACT_LAST_INST_CREDITS
+     * 
+     */
+    @JsonProperty("actLastInstCredits")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_ACT_LAST_INST_CREDITS")
+    private Double actLastInstCredits;
+    /**
+     * Lineage reference object : SMBPOGN_ACT_LAST_EARN_CREDITS
+     * 
+     */
+    @JsonProperty("actLastEarnCredits")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_ACT_LAST_EARN_CREDITS")
+    private Double actLastEarnCredits;
+    /**
+     * Source
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("sourceText")
+    private String sourceText;
+    /**
+     * Lineage reference object : SMBPOGN_MAX_COURSES_TRANSFER
+     * 
+     */
+    @JsonProperty("maxCoursesTransfer")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_MAX_COURSES_TRANSFER")
+    private Double maxCoursesTransfer;
+    /**
+     * Lineage reference object : SMBPOGN_CONNECTOR_I_TRAD
+     * 
+     */
+    @JsonProperty("connectorITrad")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_CONNECTOR_I_TRAD")
+    private String connectorITrad;
+    /**
+     * ...out of Last Earned
+     * <p>
+     * Lineage reference object : SMBPOGN_LAST_EARNED_CREDITS
+     * 
+     */
+    @JsonProperty("lastEarnedCredits")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_LAST_EARNED_CREDITS")
+    private Double lastEarnedCredits;
+    /**
+     * Course Year Limit
+     * <p>
+     * Lineage reference object : SMBPOGN_YEAR_RULE
+     * 
+     */
+    @JsonProperty("yearRule")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_YEAR_RULE")
+    private Double yearRule;
+    /**
+     * Lineage reference object : SMBPOGN_ACT_CREDITS_TRANSFER
+     * 
+     */
+    @JsonProperty("actCreditsTransfer")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_ACT_CREDITS_TRANSFER")
+    private Double actCreditsTransfer;
+    /**
+     * Minimum GPA
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("minGpaReq")
+    private Double minGpaReq;
+    /**
+     * Courses Required
+     * <p>
+     * Lineage reference object : SMBPOGN_REQ_COURSES_OVERALL
+     * 
+     */
+    @JsonProperty("reqCoursesOverall")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_REQ_COURSES_OVERALL")
+    private Double reqCoursesOverall;
+    /**
+     * Lineage reference object : SMBPOGN_MAX_COURSES_I_NONTRAD
+     * 
+     */
+    @JsonProperty("maxCoursesINontrad")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_MAX_COURSES_I_NONTRAD")
+    private Double maxCoursesINontrad;
+    /**
+     * Lineage reference object : SMBPOGN_REQ_COURSES_I_TRAD
+     * 
+     */
+    @JsonProperty("reqCoursesITrad")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_REQ_COURSES_I_TRAD")
+    private Double reqCoursesITrad;
+    /**
+     * Last Number Institutional Required
+     * <p>
+     * Lineage reference object : SMBPOGN_LAST_INST_CREDITS
+     * 
+     */
+    @JsonProperty("lastInstCredits")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_LAST_INST_CREDITS")
+    private Double lastInstCredits;
+    /**
+     * Actual
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("actProgramGpaAct")
+    private Double actProgramGpaAct;
+    /**
+     * Lineage reference object : SMBPOGN_CONNECTOR_LAST_EARNED
+     * 
+     */
+    @JsonProperty("connectorLastEarned")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_CONNECTOR_LAST_EARNED")
+    private String connectorLastEarned;
+    /**
+     * Required Institutional
+     * <p>
+     * Lineage reference object : SMBPOGN_REQ_CREDITS_INST
+     * 
+     */
+    @JsonProperty("reqCreditsInst")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_REQ_CREDITS_INST")
+    private Double reqCreditsInst;
+    /**
+     * Lineage reference object : SMBPOGN_REQ_COURSES_INST
+     * 
+     */
+    @JsonProperty("reqCoursesInst")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_REQ_COURSES_INST")
+    private Double reqCoursesInst;
+    /**
+     * Credits Used
+     * <p>
+     * Lineage reference object : SMBPOGN_ACT_CREDITS_OVERALL
+     * 
+     */
+    @JsonProperty("actCreditsOverall")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_ACT_CREDITS_OVERALL")
+    private Double actCreditsOverall;
+    /**
+     * Lineage reference object : SMBPOGN_ACT_CREDITS_I_NONTRAD
+     * 
+     */
+    @JsonProperty("actCreditsINontrad")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_ACT_CREDITS_I_NONTRAD")
+    private Double actCreditsINontrad;
+    /**
+     * Minimum Course Grade
+     * <p>
+     * Lineage reference object : SMBPOGN_GRDE_CODE_MIN
+     * 
+     */
+    @JsonProperty("grdeCodeMin")
+    @JsonPropertyDescription("Lineage reference object : SMBPOGN_GRDE_CODE_MIN")
+    private String grdeCodeMin;
+    @JsonIgnore
+    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+    /**
+     * Courses Used
+     * <p>
+     * Lineage reference object : SMBPOGN_ACT_COURSES_OVERALL
+     * 
+     */
+    @JsonProperty("actCoursesOverall")
+    public Double getActCoursesOverall() {
+        return actCoursesOverall;
+    }
+
+    /**
+     * Courses Used
+     * <p>
+     * Lineage reference object : SMBPOGN_ACT_COURSES_OVERALL
+     * 
+     */
+    @JsonProperty("actCoursesOverall")
+    public void setActCoursesOverall(Double actCoursesOverall) {
+        this.actCoursesOverall = actCoursesOverall;
+    }
+
+    public ProgramOutputInquiry010GetResponse withActCoursesOverall(Double actCoursesOverall) {
+        this.actCoursesOverall = actCoursesOverall;
+        return this;
+    }
+
+    /**
+     * Required Institutional Traditional
+     * <p>
+     * Lineage reference object : SMBPOGN_REQ_CREDITS_I_TRAD
+     * 
+     */
+    @JsonProperty("reqCreditsITrad")
+    public Double getReqCreditsITrad() {
+        return reqCreditsITrad;
+    }
+
+    /**
+     * Required Institutional Traditional
+     * <p>
+     * Lineage reference object : SMBPOGN_REQ_CREDITS_I_TRAD
+     * 
+     */
+    @JsonProperty("reqCreditsITrad")
+    public void setReqCreditsITrad(Double reqCreditsITrad) {
+        this.reqCreditsITrad = reqCreditsITrad;
+    }
+
+    public ProgramOutputInquiry010GetResponse withReqCreditsITrad(Double reqCreditsITrad) {
+        this.reqCreditsITrad = reqCreditsITrad;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_REQ_CREDITS_OVERALL
+     * 
+     */
+    @JsonProperty("reqCreditsOverall")
+    public Double getReqCreditsOverall() {
+        return reqCreditsOverall;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_REQ_CREDITS_OVERALL
+     * 
+     */
+    @JsonProperty("reqCreditsOverall")
+    public void setReqCreditsOverall(Double reqCreditsOverall) {
+        this.reqCreditsOverall = reqCreditsOverall;
+    }
+
+    public ProgramOutputInquiry010GetResponse withReqCreditsOverall(Double reqCreditsOverall) {
+        this.reqCreditsOverall = reqCreditsOverall;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_ACT_LAST_EARN_COURSES
+     * 
+     */
+    @JsonProperty("actLastEarnCourses")
+    public Double getActLastEarnCourses() {
+        return actLastEarnCourses;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_ACT_LAST_EARN_COURSES
+     * 
+     */
+    @JsonProperty("actLastEarnCourses")
+    public void setActLastEarnCourses(Double actLastEarnCourses) {
+        this.actLastEarnCourses = actLastEarnCourses;
+    }
+
+    public ProgramOutputInquiry010GetResponse withActLastEarnCourses(Double actLastEarnCourses) {
+        this.actLastEarnCourses = actLastEarnCourses;
+        return this;
+    }
+
+    /**
+     * Maximum Institutional Non-Traditional
+     * <p>
+     * Lineage reference object : SMBPOGN_MAX_CREDITS_I_NONTRAD
+     * 
+     */
+    @JsonProperty("maxCreditsINontrad")
+    public Double getMaxCreditsINontrad() {
+        return maxCreditsINontrad;
+    }
+
+    /**
+     * Maximum Institutional Non-Traditional
+     * <p>
+     * Lineage reference object : SMBPOGN_MAX_CREDITS_I_NONTRAD
+     * 
+     */
+    @JsonProperty("maxCreditsINontrad")
+    public void setMaxCreditsINontrad(Double maxCreditsINontrad) {
+        this.maxCreditsINontrad = maxCreditsINontrad;
+    }
+
+    public ProgramOutputInquiry010GetResponse withMaxCreditsINontrad(Double maxCreditsINontrad) {
+        this.maxCreditsINontrad = maxCreditsINontrad;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_LAST_EARNED_COURSES
+     * 
+     */
+    @JsonProperty("lastEarnedCourses")
+    public Double getLastEarnedCourses() {
+        return lastEarnedCourses;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_LAST_EARNED_COURSES
+     * 
+     */
+    @JsonProperty("lastEarnedCourses")
+    public void setLastEarnedCourses(Double lastEarnedCourses) {
+        this.lastEarnedCourses = lastEarnedCourses;
+    }
+
+    public ProgramOutputInquiry010GetResponse withLastEarnedCourses(Double lastEarnedCourses) {
+        this.lastEarnedCourses = lastEarnedCourses;
+        return this;
+    }
+
+    /**
+     * Maximum Transfer
+     * <p>
+     * Lineage reference object : SMBPOGN_MAX_CREDITS_TRANSFER
+     * 
+     */
+    @JsonProperty("maxCreditsTransfer")
+    public Double getMaxCreditsTransfer() {
+        return maxCreditsTransfer;
+    }
+
+    /**
+     * Maximum Transfer
+     * <p>
+     * Lineage reference object : SMBPOGN_MAX_CREDITS_TRANSFER
+     * 
+     */
+    @JsonProperty("maxCreditsTransfer")
+    public void setMaxCreditsTransfer(Double maxCreditsTransfer) {
+        this.maxCreditsTransfer = maxCreditsTransfer;
+    }
+
+    public ProgramOutputInquiry010GetResponse withMaxCreditsTransfer(Double maxCreditsTransfer) {
+        this.maxCreditsTransfer = maxCreditsTransfer;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_ACT_COURSES_I_NONTRAD
+     * 
+     */
+    @JsonProperty("actCoursesINontrad")
+    public Double getActCoursesINontrad() {
+        return actCoursesINontrad;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_ACT_COURSES_I_NONTRAD
+     * 
+     */
+    @JsonProperty("actCoursesINontrad")
+    public void setActCoursesINontrad(Double actCoursesINontrad) {
+        this.actCoursesINontrad = actCoursesINontrad;
+    }
+
+    public ProgramOutputInquiry010GetResponse withActCoursesINontrad(Double actCoursesINontrad) {
+        this.actCoursesINontrad = actCoursesINontrad;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_ACT_CREDITS_I_TRAD
+     * 
+     */
+    @JsonProperty("actCreditsITrad")
+    public Double getActCreditsITrad() {
+        return actCreditsITrad;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_ACT_CREDITS_I_TRAD
+     * 
+     */
+    @JsonProperty("actCreditsITrad")
+    public void setActCreditsITrad(Double actCreditsITrad) {
+        this.actCreditsITrad = actCreditsITrad;
+    }
+
+    public ProgramOutputInquiry010GetResponse withActCreditsITrad(Double actCreditsITrad) {
+        this.actCreditsITrad = actCreditsITrad;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_CONNECTOR_INST
+     * 
+     */
+    @JsonProperty("connectorInst")
+    public String getConnectorInst() {
+        return connectorInst;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_CONNECTOR_INST
+     * 
+     */
+    @JsonProperty("connectorInst")
+    public void setConnectorInst(String connectorInst) {
+        this.connectorInst = connectorInst;
+    }
+
+    public ProgramOutputInquiry010GetResponse withConnectorInst(String connectorInst) {
+        this.connectorInst = connectorInst;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_LAST_INST_COURSES
+     * 
+     */
+    @JsonProperty("lastInstCourses")
+    public Double getLastInstCourses() {
+        return lastInstCourses;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_LAST_INST_COURSES
+     * 
+     */
+    @JsonProperty("lastInstCourses")
+    public void setLastInstCourses(Double lastInstCourses) {
+        this.lastInstCourses = lastInstCourses;
+    }
+
+    public ProgramOutputInquiry010GetResponse withLastInstCourses(Double lastInstCourses) {
+        this.lastInstCourses = lastInstCourses;
+        return this;
+    }
+
+    /**
+     * Captive Program
+     * <p>
+     * Lineage reference object : SMBPOGN_CAPTIVE_IND
+     * 
+     */
+    @JsonProperty("captiveInd")
+    public String getCaptiveInd() {
+        return captiveInd;
+    }
+
+    /**
+     * Captive Program
+     * <p>
+     * Lineage reference object : SMBPOGN_CAPTIVE_IND
+     * 
+     */
+    @JsonProperty("captiveInd")
+    public void setCaptiveInd(String captiveInd) {
+        this.captiveInd = captiveInd;
+    }
+
+    public ProgramOutputInquiry010GetResponse withCaptiveInd(String captiveInd) {
+        this.captiveInd = captiveInd;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_CONNECTOR_OVERALL
+     * 
+     */
+    @JsonProperty("connectorOverall")
+    public String getConnectorOverall() {
+        return connectorOverall;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_CONNECTOR_OVERALL
+     * 
+     */
+    @JsonProperty("connectorOverall")
+    public void setConnectorOverall(String connectorOverall) {
+        this.connectorOverall = connectorOverall;
+    }
+
+    public ProgramOutputInquiry010GetResponse withConnectorOverall(String connectorOverall) {
+        this.connectorOverall = connectorOverall;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_CONNECTOR_TRANSFER
+     * 
+     */
+    @JsonProperty("connectorTransfer")
+    public String getConnectorTransfer() {
+        return connectorTransfer;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_CONNECTOR_TRANSFER
+     * 
+     */
+    @JsonProperty("connectorTransfer")
+    public void setConnectorTransfer(String connectorTransfer) {
+        this.connectorTransfer = connectorTransfer;
+    }
+
+    public ProgramOutputInquiry010GetResponse withConnectorTransfer(String connectorTransfer) {
+        this.connectorTransfer = connectorTransfer;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_CONNECTOR_I_NONTRAD
+     * 
+     */
+    @JsonProperty("connectorINontrad")
+    public String getConnectorINontrad() {
+        return connectorINontrad;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_CONNECTOR_I_NONTRAD
+     * 
+     */
+    @JsonProperty("connectorINontrad")
+    public void setConnectorINontrad(String connectorINontrad) {
+        this.connectorINontrad = connectorINontrad;
+    }
+
+    public ProgramOutputInquiry010GetResponse withConnectorINontrad(String connectorINontrad) {
+        this.connectorINontrad = connectorINontrad;
+        return this;
+    }
+
+    @JsonProperty("actGpaAct")
+    public Double getActGpaAct() {
+        return actGpaAct;
+    }
+
+    @JsonProperty("actGpaAct")
+    public void setActGpaAct(Double actGpaAct) {
+        this.actGpaAct = actGpaAct;
+    }
+
+    public ProgramOutputInquiry010GetResponse withActGpaAct(Double actGpaAct) {
+        this.actGpaAct = actGpaAct;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_ACT_COURSES_TRANSFER
+     * 
+     */
+    @JsonProperty("actCoursesTransfer")
+    public Double getActCoursesTransfer() {
+        return actCoursesTransfer;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_ACT_COURSES_TRANSFER
+     * 
+     */
+    @JsonProperty("actCoursesTransfer")
+    public void setActCoursesTransfer(Double actCoursesTransfer) {
+        this.actCoursesTransfer = actCoursesTransfer;
+    }
+
+    public ProgramOutputInquiry010GetResponse withActCoursesTransfer(Double actCoursesTransfer) {
+        this.actCoursesTransfer = actCoursesTransfer;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_CONNECTOR_LAST_INST
+     * 
+     */
+    @JsonProperty("connectorLastInst")
+    public String getConnectorLastInst() {
+        return connectorLastInst;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_CONNECTOR_LAST_INST
+     * 
+     */
+    @JsonProperty("connectorLastInst")
+    public void setConnectorLastInst(String connectorLastInst) {
+        this.connectorLastInst = connectorLastInst;
+    }
+
+    public ProgramOutputInquiry010GetResponse withConnectorLastInst(String connectorLastInst) {
+        this.connectorLastInst = connectorLastInst;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_ACT_COURSES_I_TRAD
+     * 
+     */
+    @JsonProperty("actCoursesITrad")
+    public Double getActCoursesITrad() {
+        return actCoursesITrad;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_ACT_COURSES_I_TRAD
+     * 
+     */
+    @JsonProperty("actCoursesITrad")
+    public void setActCoursesITrad(Double actCoursesITrad) {
+        this.actCoursesITrad = actCoursesITrad;
+    }
+
+    public ProgramOutputInquiry010GetResponse withActCoursesITrad(Double actCoursesITrad) {
+        this.actCoursesITrad = actCoursesITrad;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_ACT_COURSES_INST
+     * 
+     */
+    @JsonProperty("actCoursesInst")
+    public Double getActCoursesInst() {
+        return actCoursesInst;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_ACT_COURSES_INST
+     * 
+     */
+    @JsonProperty("actCoursesInst")
+    public void setActCoursesInst(Double actCoursesInst) {
+        this.actCoursesInst = actCoursesInst;
+    }
+
+    public ProgramOutputInquiry010GetResponse withActCoursesInst(Double actCoursesInst) {
+        this.actCoursesInst = actCoursesInst;
+        return this;
+    }
+
+    /**
+     * Single Entity
+     * <p>
+     * Lineage reference object : SMBPOGN_SINGLE_IND
+     * 
+     */
+    @JsonProperty("singleInd")
+    public String getSingleInd() {
+        return singleInd;
+    }
+
+    /**
+     * Single Entity
+     * <p>
+     * Lineage reference object : SMBPOGN_SINGLE_IND
+     * 
+     */
+    @JsonProperty("singleInd")
+    public void setSingleInd(String singleInd) {
+        this.singleInd = singleInd;
+    }
+
+    public ProgramOutputInquiry010GetResponse withSingleInd(String singleInd) {
+        this.singleInd = singleInd;
+        return this;
+    }
+
+    /**
+     * Credits Required
+     * <p>
+     * Lineage reference object : SMBPOGN_ACT_CREDITS_INST
+     * 
+     */
+    @JsonProperty("actCreditsInst")
+    public Double getActCreditsInst() {
+        return actCreditsInst;
+    }
+
+    /**
+     * Credits Required
+     * <p>
+     * Lineage reference object : SMBPOGN_ACT_CREDITS_INST
+     * 
+     */
+    @JsonProperty("actCreditsInst")
+    public void setActCreditsInst(Double actCreditsInst) {
+        this.actCreditsInst = actCreditsInst;
+    }
+
+    public ProgramOutputInquiry010GetResponse withActCreditsInst(Double actCreditsInst) {
+        this.actCreditsInst = actCreditsInst;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_ACT_LAST_INST_COURSES
+     * 
+     */
+    @JsonProperty("actLastInstCourses")
+    public Double getActLastInstCourses() {
+        return actLastInstCourses;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_ACT_LAST_INST_COURSES
+     * 
+     */
+    @JsonProperty("actLastInstCourses")
+    public void setActLastInstCourses(Double actLastInstCourses) {
+        this.actLastInstCourses = actLastInstCourses;
+    }
+
+    public ProgramOutputInquiry010GetResponse withActLastInstCourses(Double actLastInstCourses) {
+        this.actLastInstCourses = actLastInstCourses;
+        return this;
+    }
+
+    /**
+     * Term Effective
+     * <p>
+     * Lineage reference object : SMBPOGN_TERM_CODE_EFF
+     * 
+     */
+    @JsonProperty("termCodeEff")
+    public String getTermCodeEff() {
+        return termCodeEff;
+    }
+
+    /**
+     * Term Effective
+     * <p>
+     * Lineage reference object : SMBPOGN_TERM_CODE_EFF
+     * 
+     */
+    @JsonProperty("termCodeEff")
+    public void setTermCodeEff(String termCodeEff) {
+        this.termCodeEff = termCodeEff;
+    }
+
+    public ProgramOutputInquiry010GetResponse withTermCodeEff(String termCodeEff) {
+        this.termCodeEff = termCodeEff;
+        return this;
+    }
+
+    /**
+     * Required
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("minProgramGpaReq")
+    public Double getMinProgramGpaReq() {
+        return minProgramGpaReq;
+    }
+
+    /**
+     * Required
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("minProgramGpaReq")
+    public void setMinProgramGpaReq(Double minProgramGpaReq) {
+        this.minProgramGpaReq = minProgramGpaReq;
+    }
+
+    public ProgramOutputInquiry010GetResponse withMinProgramGpaReq(Double minProgramGpaReq) {
+        this.minProgramGpaReq = minProgramGpaReq;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_ACT_LAST_INST_CREDITS
+     * 
+     */
+    @JsonProperty("actLastInstCredits")
+    public Double getActLastInstCredits() {
+        return actLastInstCredits;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_ACT_LAST_INST_CREDITS
+     * 
+     */
+    @JsonProperty("actLastInstCredits")
+    public void setActLastInstCredits(Double actLastInstCredits) {
+        this.actLastInstCredits = actLastInstCredits;
+    }
+
+    public ProgramOutputInquiry010GetResponse withActLastInstCredits(Double actLastInstCredits) {
+        this.actLastInstCredits = actLastInstCredits;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_ACT_LAST_EARN_CREDITS
+     * 
+     */
+    @JsonProperty("actLastEarnCredits")
+    public Double getActLastEarnCredits() {
+        return actLastEarnCredits;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_ACT_LAST_EARN_CREDITS
+     * 
+     */
+    @JsonProperty("actLastEarnCredits")
+    public void setActLastEarnCredits(Double actLastEarnCredits) {
+        this.actLastEarnCredits = actLastEarnCredits;
+    }
+
+    public ProgramOutputInquiry010GetResponse withActLastEarnCredits(Double actLastEarnCredits) {
+        this.actLastEarnCredits = actLastEarnCredits;
+        return this;
+    }
+
+    /**
+     * Source
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("sourceText")
+    public String getSourceText() {
+        return sourceText;
+    }
+
+    /**
+     * Source
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("sourceText")
+    public void setSourceText(String sourceText) {
+        this.sourceText = sourceText;
+    }
+
+    public ProgramOutputInquiry010GetResponse withSourceText(String sourceText) {
+        this.sourceText = sourceText;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_MAX_COURSES_TRANSFER
+     * 
+     */
+    @JsonProperty("maxCoursesTransfer")
+    public Double getMaxCoursesTransfer() {
+        return maxCoursesTransfer;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_MAX_COURSES_TRANSFER
+     * 
+     */
+    @JsonProperty("maxCoursesTransfer")
+    public void setMaxCoursesTransfer(Double maxCoursesTransfer) {
+        this.maxCoursesTransfer = maxCoursesTransfer;
+    }
+
+    public ProgramOutputInquiry010GetResponse withMaxCoursesTransfer(Double maxCoursesTransfer) {
+        this.maxCoursesTransfer = maxCoursesTransfer;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_CONNECTOR_I_TRAD
+     * 
+     */
+    @JsonProperty("connectorITrad")
+    public String getConnectorITrad() {
+        return connectorITrad;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_CONNECTOR_I_TRAD
+     * 
+     */
+    @JsonProperty("connectorITrad")
+    public void setConnectorITrad(String connectorITrad) {
+        this.connectorITrad = connectorITrad;
+    }
+
+    public ProgramOutputInquiry010GetResponse withConnectorITrad(String connectorITrad) {
+        this.connectorITrad = connectorITrad;
+        return this;
+    }
+
+    /**
+     * ...out of Last Earned
+     * <p>
+     * Lineage reference object : SMBPOGN_LAST_EARNED_CREDITS
+     * 
+     */
+    @JsonProperty("lastEarnedCredits")
+    public Double getLastEarnedCredits() {
+        return lastEarnedCredits;
+    }
+
+    /**
+     * ...out of Last Earned
+     * <p>
+     * Lineage reference object : SMBPOGN_LAST_EARNED_CREDITS
+     * 
+     */
+    @JsonProperty("lastEarnedCredits")
+    public void setLastEarnedCredits(Double lastEarnedCredits) {
+        this.lastEarnedCredits = lastEarnedCredits;
+    }
+
+    public ProgramOutputInquiry010GetResponse withLastEarnedCredits(Double lastEarnedCredits) {
+        this.lastEarnedCredits = lastEarnedCredits;
+        return this;
+    }
+
+    /**
+     * Course Year Limit
+     * <p>
+     * Lineage reference object : SMBPOGN_YEAR_RULE
+     * 
+     */
+    @JsonProperty("yearRule")
+    public Double getYearRule() {
+        return yearRule;
+    }
+
+    /**
+     * Course Year Limit
+     * <p>
+     * Lineage reference object : SMBPOGN_YEAR_RULE
+     * 
+     */
+    @JsonProperty("yearRule")
+    public void setYearRule(Double yearRule) {
+        this.yearRule = yearRule;
+    }
+
+    public ProgramOutputInquiry010GetResponse withYearRule(Double yearRule) {
+        this.yearRule = yearRule;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_ACT_CREDITS_TRANSFER
+     * 
+     */
+    @JsonProperty("actCreditsTransfer")
+    public Double getActCreditsTransfer() {
+        return actCreditsTransfer;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_ACT_CREDITS_TRANSFER
+     * 
+     */
+    @JsonProperty("actCreditsTransfer")
+    public void setActCreditsTransfer(Double actCreditsTransfer) {
+        this.actCreditsTransfer = actCreditsTransfer;
+    }
+
+    public ProgramOutputInquiry010GetResponse withActCreditsTransfer(Double actCreditsTransfer) {
+        this.actCreditsTransfer = actCreditsTransfer;
+        return this;
+    }
+
+    /**
+     * Minimum GPA
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("minGpaReq")
+    public Double getMinGpaReq() {
+        return minGpaReq;
+    }
+
+    /**
+     * Minimum GPA
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("minGpaReq")
+    public void setMinGpaReq(Double minGpaReq) {
+        this.minGpaReq = minGpaReq;
+    }
+
+    public ProgramOutputInquiry010GetResponse withMinGpaReq(Double minGpaReq) {
+        this.minGpaReq = minGpaReq;
+        return this;
+    }
+
+    /**
+     * Courses Required
+     * <p>
+     * Lineage reference object : SMBPOGN_REQ_COURSES_OVERALL
+     * 
+     */
+    @JsonProperty("reqCoursesOverall")
+    public Double getReqCoursesOverall() {
+        return reqCoursesOverall;
+    }
+
+    /**
+     * Courses Required
+     * <p>
+     * Lineage reference object : SMBPOGN_REQ_COURSES_OVERALL
+     * 
+     */
+    @JsonProperty("reqCoursesOverall")
+    public void setReqCoursesOverall(Double reqCoursesOverall) {
+        this.reqCoursesOverall = reqCoursesOverall;
+    }
+
+    public ProgramOutputInquiry010GetResponse withReqCoursesOverall(Double reqCoursesOverall) {
+        this.reqCoursesOverall = reqCoursesOverall;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_MAX_COURSES_I_NONTRAD
+     * 
+     */
+    @JsonProperty("maxCoursesINontrad")
+    public Double getMaxCoursesINontrad() {
+        return maxCoursesINontrad;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_MAX_COURSES_I_NONTRAD
+     * 
+     */
+    @JsonProperty("maxCoursesINontrad")
+    public void setMaxCoursesINontrad(Double maxCoursesINontrad) {
+        this.maxCoursesINontrad = maxCoursesINontrad;
+    }
+
+    public ProgramOutputInquiry010GetResponse withMaxCoursesINontrad(Double maxCoursesINontrad) {
+        this.maxCoursesINontrad = maxCoursesINontrad;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_REQ_COURSES_I_TRAD
+     * 
+     */
+    @JsonProperty("reqCoursesITrad")
+    public Double getReqCoursesITrad() {
+        return reqCoursesITrad;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_REQ_COURSES_I_TRAD
+     * 
+     */
+    @JsonProperty("reqCoursesITrad")
+    public void setReqCoursesITrad(Double reqCoursesITrad) {
+        this.reqCoursesITrad = reqCoursesITrad;
+    }
+
+    public ProgramOutputInquiry010GetResponse withReqCoursesITrad(Double reqCoursesITrad) {
+        this.reqCoursesITrad = reqCoursesITrad;
+        return this;
+    }
+
+    /**
+     * Last Number Institutional Required
+     * <p>
+     * Lineage reference object : SMBPOGN_LAST_INST_CREDITS
+     * 
+     */
+    @JsonProperty("lastInstCredits")
+    public Double getLastInstCredits() {
+        return lastInstCredits;
+    }
+
+    /**
+     * Last Number Institutional Required
+     * <p>
+     * Lineage reference object : SMBPOGN_LAST_INST_CREDITS
+     * 
+     */
+    @JsonProperty("lastInstCredits")
+    public void setLastInstCredits(Double lastInstCredits) {
+        this.lastInstCredits = lastInstCredits;
+    }
+
+    public ProgramOutputInquiry010GetResponse withLastInstCredits(Double lastInstCredits) {
+        this.lastInstCredits = lastInstCredits;
+        return this;
+    }
+
+    /**
+     * Actual
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("actProgramGpaAct")
+    public Double getActProgramGpaAct() {
+        return actProgramGpaAct;
+    }
+
+    /**
+     * Actual
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("actProgramGpaAct")
+    public void setActProgramGpaAct(Double actProgramGpaAct) {
+        this.actProgramGpaAct = actProgramGpaAct;
+    }
+
+    public ProgramOutputInquiry010GetResponse withActProgramGpaAct(Double actProgramGpaAct) {
+        this.actProgramGpaAct = actProgramGpaAct;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_CONNECTOR_LAST_EARNED
+     * 
+     */
+    @JsonProperty("connectorLastEarned")
+    public String getConnectorLastEarned() {
+        return connectorLastEarned;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_CONNECTOR_LAST_EARNED
+     * 
+     */
+    @JsonProperty("connectorLastEarned")
+    public void setConnectorLastEarned(String connectorLastEarned) {
+        this.connectorLastEarned = connectorLastEarned;
+    }
+
+    public ProgramOutputInquiry010GetResponse withConnectorLastEarned(String connectorLastEarned) {
+        this.connectorLastEarned = connectorLastEarned;
+        return this;
+    }
+
+    /**
+     * Required Institutional
+     * <p>
+     * Lineage reference object : SMBPOGN_REQ_CREDITS_INST
+     * 
+     */
+    @JsonProperty("reqCreditsInst")
+    public Double getReqCreditsInst() {
+        return reqCreditsInst;
+    }
+
+    /**
+     * Required Institutional
+     * <p>
+     * Lineage reference object : SMBPOGN_REQ_CREDITS_INST
+     * 
+     */
+    @JsonProperty("reqCreditsInst")
+    public void setReqCreditsInst(Double reqCreditsInst) {
+        this.reqCreditsInst = reqCreditsInst;
+    }
+
+    public ProgramOutputInquiry010GetResponse withReqCreditsInst(Double reqCreditsInst) {
+        this.reqCreditsInst = reqCreditsInst;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_REQ_COURSES_INST
+     * 
+     */
+    @JsonProperty("reqCoursesInst")
+    public Double getReqCoursesInst() {
+        return reqCoursesInst;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_REQ_COURSES_INST
+     * 
+     */
+    @JsonProperty("reqCoursesInst")
+    public void setReqCoursesInst(Double reqCoursesInst) {
+        this.reqCoursesInst = reqCoursesInst;
+    }
+
+    public ProgramOutputInquiry010GetResponse withReqCoursesInst(Double reqCoursesInst) {
+        this.reqCoursesInst = reqCoursesInst;
+        return this;
+    }
+
+    /**
+     * Credits Used
+     * <p>
+     * Lineage reference object : SMBPOGN_ACT_CREDITS_OVERALL
+     * 
+     */
+    @JsonProperty("actCreditsOverall")
+    public Double getActCreditsOverall() {
+        return actCreditsOverall;
+    }
+
+    /**
+     * Credits Used
+     * <p>
+     * Lineage reference object : SMBPOGN_ACT_CREDITS_OVERALL
+     * 
+     */
+    @JsonProperty("actCreditsOverall")
+    public void setActCreditsOverall(Double actCreditsOverall) {
+        this.actCreditsOverall = actCreditsOverall;
+    }
+
+    public ProgramOutputInquiry010GetResponse withActCreditsOverall(Double actCreditsOverall) {
+        this.actCreditsOverall = actCreditsOverall;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_ACT_CREDITS_I_NONTRAD
+     * 
+     */
+    @JsonProperty("actCreditsINontrad")
+    public Double getActCreditsINontrad() {
+        return actCreditsINontrad;
+    }
+
+    /**
+     * Lineage reference object : SMBPOGN_ACT_CREDITS_I_NONTRAD
+     * 
+     */
+    @JsonProperty("actCreditsINontrad")
+    public void setActCreditsINontrad(Double actCreditsINontrad) {
+        this.actCreditsINontrad = actCreditsINontrad;
+    }
+
+    public ProgramOutputInquiry010GetResponse withActCreditsINontrad(Double actCreditsINontrad) {
+        this.actCreditsINontrad = actCreditsINontrad;
+        return this;
+    }
+
+    /**
+     * Minimum Course Grade
+     * <p>
+     * Lineage reference object : SMBPOGN_GRDE_CODE_MIN
+     * 
+     */
+    @JsonProperty("grdeCodeMin")
+    public String getGrdeCodeMin() {
+        return grdeCodeMin;
+    }
+
+    /**
+     * Minimum Course Grade
+     * <p>
+     * Lineage reference object : SMBPOGN_GRDE_CODE_MIN
+     * 
+     */
+    @JsonProperty("grdeCodeMin")
+    public void setGrdeCodeMin(String grdeCodeMin) {
+        this.grdeCodeMin = grdeCodeMin;
+    }
+
+    public ProgramOutputInquiry010GetResponse withGrdeCodeMin(String grdeCodeMin) {
+        this.grdeCodeMin = grdeCodeMin;
+        return this;
+    }
+
+    @JsonAnyGetter
+    public Map<String, Object> getAdditionalProperties() {
+        return this.additionalProperties;
+    }
+
+    @JsonAnySetter
+    public void setAdditionalProperty(String name, Object value) {
+        this.additionalProperties.put(name, value);
+    }
+
+    public ProgramOutputInquiry010GetResponse withAdditionalProperty(String name, Object value) {
+        this.additionalProperties.put(name, value);
+        return this;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(ProgramOutputInquiry010GetResponse.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
+        sb.append("actCoursesOverall");
+        sb.append('=');
+        sb.append(((this.actCoursesOverall == null)?"<null>":this.actCoursesOverall));
+        sb.append(',');
+        sb.append("reqCreditsITrad");
+        sb.append('=');
+        sb.append(((this.reqCreditsITrad == null)?"<null>":this.reqCreditsITrad));
+        sb.append(',');
+        sb.append("reqCreditsOverall");
+        sb.append('=');
+        sb.append(((this.reqCreditsOverall == null)?"<null>":this.reqCreditsOverall));
+        sb.append(',');
+        sb.append("actLastEarnCourses");
+        sb.append('=');
+        sb.append(((this.actLastEarnCourses == null)?"<null>":this.actLastEarnCourses));
+        sb.append(',');
+        sb.append("maxCreditsINontrad");
+        sb.append('=');
+        sb.append(((this.maxCreditsINontrad == null)?"<null>":this.maxCreditsINontrad));
+        sb.append(',');
+        sb.append("lastEarnedCourses");
+        sb.append('=');
+        sb.append(((this.lastEarnedCourses == null)?"<null>":this.lastEarnedCourses));
+        sb.append(',');
+        sb.append("maxCreditsTransfer");
+        sb.append('=');
+        sb.append(((this.maxCreditsTransfer == null)?"<null>":this.maxCreditsTransfer));
+        sb.append(',');
+        sb.append("actCoursesINontrad");
+        sb.append('=');
+        sb.append(((this.actCoursesINontrad == null)?"<null>":this.actCoursesINontrad));
+        sb.append(',');
+        sb.append("actCreditsITrad");
+        sb.append('=');
+        sb.append(((this.actCreditsITrad == null)?"<null>":this.actCreditsITrad));
+        sb.append(',');
+        sb.append("connectorInst");
+        sb.append('=');
+        sb.append(((this.connectorInst == null)?"<null>":this.connectorInst));
+        sb.append(',');
+        sb.append("lastInstCourses");
+        sb.append('=');
+        sb.append(((this.lastInstCourses == null)?"<null>":this.lastInstCourses));
+        sb.append(',');
+        sb.append("captiveInd");
+        sb.append('=');
+        sb.append(((this.captiveInd == null)?"<null>":this.captiveInd));
+        sb.append(',');
+        sb.append("connectorOverall");
+        sb.append('=');
+        sb.append(((this.connectorOverall == null)?"<null>":this.connectorOverall));
+        sb.append(',');
+        sb.append("connectorTransfer");
+        sb.append('=');
+        sb.append(((this.connectorTransfer == null)?"<null>":this.connectorTransfer));
+        sb.append(',');
+        sb.append("connectorINontrad");
+        sb.append('=');
+        sb.append(((this.connectorINontrad == null)?"<null>":this.connectorINontrad));
+        sb.append(',');
+        sb.append("actGpaAct");
+        sb.append('=');
+        sb.append(((this.actGpaAct == null)?"<null>":this.actGpaAct));
+        sb.append(',');
+        sb.append("actCoursesTransfer");
+        sb.append('=');
+        sb.append(((this.actCoursesTransfer == null)?"<null>":this.actCoursesTransfer));
+        sb.append(',');
+        sb.append("connectorLastInst");
+        sb.append('=');
+        sb.append(((this.connectorLastInst == null)?"<null>":this.connectorLastInst));
+        sb.append(',');
+        sb.append("actCoursesITrad");
+        sb.append('=');
+        sb.append(((this.actCoursesITrad == null)?"<null>":this.actCoursesITrad));
+        sb.append(',');
+        sb.append("actCoursesInst");
+        sb.append('=');
+        sb.append(((this.actCoursesInst == null)?"<null>":this.actCoursesInst));
+        sb.append(',');
+        sb.append("singleInd");
+        sb.append('=');
+        sb.append(((this.singleInd == null)?"<null>":this.singleInd));
+        sb.append(',');
+        sb.append("actCreditsInst");
+        sb.append('=');
+        sb.append(((this.actCreditsInst == null)?"<null>":this.actCreditsInst));
+        sb.append(',');
+        sb.append("actLastInstCourses");
+        sb.append('=');
+        sb.append(((this.actLastInstCourses == null)?"<null>":this.actLastInstCourses));
+        sb.append(',');
+        sb.append("termCodeEff");
+        sb.append('=');
+        sb.append(((this.termCodeEff == null)?"<null>":this.termCodeEff));
+        sb.append(',');
+        sb.append("minProgramGpaReq");
+        sb.append('=');
+        sb.append(((this.minProgramGpaReq == null)?"<null>":this.minProgramGpaReq));
+        sb.append(',');
+        sb.append("actLastInstCredits");
+        sb.append('=');
+        sb.append(((this.actLastInstCredits == null)?"<null>":this.actLastInstCredits));
+        sb.append(',');
+        sb.append("actLastEarnCredits");
+        sb.append('=');
+        sb.append(((this.actLastEarnCredits == null)?"<null>":this.actLastEarnCredits));
+        sb.append(',');
+        sb.append("sourceText");
+        sb.append('=');
+        sb.append(((this.sourceText == null)?"<null>":this.sourceText));
+        sb.append(',');
+        sb.append("maxCoursesTransfer");
+        sb.append('=');
+        sb.append(((this.maxCoursesTransfer == null)?"<null>":this.maxCoursesTransfer));
+        sb.append(',');
+        sb.append("connectorITrad");
+        sb.append('=');
+        sb.append(((this.connectorITrad == null)?"<null>":this.connectorITrad));
+        sb.append(',');
+        sb.append("lastEarnedCredits");
+        sb.append('=');
+        sb.append(((this.lastEarnedCredits == null)?"<null>":this.lastEarnedCredits));
+        sb.append(',');
+        sb.append("yearRule");
+        sb.append('=');
+        sb.append(((this.yearRule == null)?"<null>":this.yearRule));
+        sb.append(',');
+        sb.append("actCreditsTransfer");
+        sb.append('=');
+        sb.append(((this.actCreditsTransfer == null)?"<null>":this.actCreditsTransfer));
+        sb.append(',');
+        sb.append("minGpaReq");
+        sb.append('=');
+        sb.append(((this.minGpaReq == null)?"<null>":this.minGpaReq));
+        sb.append(',');
+        sb.append("reqCoursesOverall");
+        sb.append('=');
+        sb.append(((this.reqCoursesOverall == null)?"<null>":this.reqCoursesOverall));
+        sb.append(',');
+        sb.append("maxCoursesINontrad");
+        sb.append('=');
+        sb.append(((this.maxCoursesINontrad == null)?"<null>":this.maxCoursesINontrad));
+        sb.append(',');
+        sb.append("reqCoursesITrad");
+        sb.append('=');
+        sb.append(((this.reqCoursesITrad == null)?"<null>":this.reqCoursesITrad));
+        sb.append(',');
+        sb.append("lastInstCredits");
+        sb.append('=');
+        sb.append(((this.lastInstCredits == null)?"<null>":this.lastInstCredits));
+        sb.append(',');
+        sb.append("actProgramGpaAct");
+        sb.append('=');
+        sb.append(((this.actProgramGpaAct == null)?"<null>":this.actProgramGpaAct));
+        sb.append(',');
+        sb.append("connectorLastEarned");
+        sb.append('=');
+        sb.append(((this.connectorLastEarned == null)?"<null>":this.connectorLastEarned));
+        sb.append(',');
+        sb.append("reqCreditsInst");
+        sb.append('=');
+        sb.append(((this.reqCreditsInst == null)?"<null>":this.reqCreditsInst));
+        sb.append(',');
+        sb.append("reqCoursesInst");
+        sb.append('=');
+        sb.append(((this.reqCoursesInst == null)?"<null>":this.reqCoursesInst));
+        sb.append(',');
+        sb.append("actCreditsOverall");
+        sb.append('=');
+        sb.append(((this.actCreditsOverall == null)?"<null>":this.actCreditsOverall));
+        sb.append(',');
+        sb.append("actCreditsINontrad");
+        sb.append('=');
+        sb.append(((this.actCreditsINontrad == null)?"<null>":this.actCreditsINontrad));
+        sb.append(',');
+        sb.append("grdeCodeMin");
+        sb.append('=');
+        sb.append(((this.grdeCodeMin == null)?"<null>":this.grdeCodeMin));
+        sb.append(',');
+        sb.append("additionalProperties");
+        sb.append('=');
+        sb.append(((this.additionalProperties == null)?"<null>":this.additionalProperties));
+        sb.append(',');
+        if (sb.charAt((sb.length()- 1)) == ',') {
+            sb.setCharAt((sb.length()- 1), ']');
+        } else {
+            sb.append(']');
+        }
+        return sb.toString();
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 1;
+        result = ((result* 31)+((this.actCoursesOverall == null)? 0 :this.actCoursesOverall.hashCode()));
+        result = ((result* 31)+((this.reqCreditsITrad == null)? 0 :this.reqCreditsITrad.hashCode()));
+        result = ((result* 31)+((this.reqCreditsOverall == null)? 0 :this.reqCreditsOverall.hashCode()));
+        result = ((result* 31)+((this.actLastEarnCourses == null)? 0 :this.actLastEarnCourses.hashCode()));
+        result = ((result* 31)+((this.maxCreditsINontrad == null)? 0 :this.maxCreditsINontrad.hashCode()));
+        result = ((result* 31)+((this.lastEarnedCourses == null)? 0 :this.lastEarnedCourses.hashCode()));
+        result = ((result* 31)+((this.maxCreditsTransfer == null)? 0 :this.maxCreditsTransfer.hashCode()));
+        result = ((result* 31)+((this.actCoursesINontrad == null)? 0 :this.actCoursesINontrad.hashCode()));
+        result = ((result* 31)+((this.actCreditsITrad == null)? 0 :this.actCreditsITrad.hashCode()));
+        result = ((result* 31)+((this.connectorInst == null)? 0 :this.connectorInst.hashCode()));
+        result = ((result* 31)+((this.lastInstCourses == null)? 0 :this.lastInstCourses.hashCode()));
+        result = ((result* 31)+((this.captiveInd == null)? 0 :this.captiveInd.hashCode()));
+        result = ((result* 31)+((this.connectorOverall == null)? 0 :this.connectorOverall.hashCode()));
+        result = ((result* 31)+((this.connectorTransfer == null)? 0 :this.connectorTransfer.hashCode()));
+        result = ((result* 31)+((this.connectorINontrad == null)? 0 :this.connectorINontrad.hashCode()));
+        result = ((result* 31)+((this.actGpaAct == null)? 0 :this.actGpaAct.hashCode()));
+        result = ((result* 31)+((this.actCoursesTransfer == null)? 0 :this.actCoursesTransfer.hashCode()));
+        result = ((result* 31)+((this.connectorLastInst == null)? 0 :this.connectorLastInst.hashCode()));
+        result = ((result* 31)+((this.actCoursesITrad == null)? 0 :this.actCoursesITrad.hashCode()));
+        result = ((result* 31)+((this.actCoursesInst == null)? 0 :this.actCoursesInst.hashCode()));
+        result = ((result* 31)+((this.singleInd == null)? 0 :this.singleInd.hashCode()));
+        result = ((result* 31)+((this.actCreditsInst == null)? 0 :this.actCreditsInst.hashCode()));
+        result = ((result* 31)+((this.actLastInstCourses == null)? 0 :this.actLastInstCourses.hashCode()));
+        result = ((result* 31)+((this.termCodeEff == null)? 0 :this.termCodeEff.hashCode()));
+        result = ((result* 31)+((this.minProgramGpaReq == null)? 0 :this.minProgramGpaReq.hashCode()));
+        result = ((result* 31)+((this.actLastInstCredits == null)? 0 :this.actLastInstCredits.hashCode()));
+        result = ((result* 31)+((this.actLastEarnCredits == null)? 0 :this.actLastEarnCredits.hashCode()));
+        result = ((result* 31)+((this.sourceText == null)? 0 :this.sourceText.hashCode()));
+        result = ((result* 31)+((this.maxCoursesTransfer == null)? 0 :this.maxCoursesTransfer.hashCode()));
+        result = ((result* 31)+((this.connectorITrad == null)? 0 :this.connectorITrad.hashCode()));
+        result = ((result* 31)+((this.lastEarnedCredits == null)? 0 :this.lastEarnedCredits.hashCode()));
+        result = ((result* 31)+((this.yearRule == null)? 0 :this.yearRule.hashCode()));
+        result = ((result* 31)+((this.actCreditsTransfer == null)? 0 :this.actCreditsTransfer.hashCode()));
+        result = ((result* 31)+((this.minGpaReq == null)? 0 :this.minGpaReq.hashCode()));
+        result = ((result* 31)+((this.reqCoursesOverall == null)? 0 :this.reqCoursesOverall.hashCode()));
+        result = ((result* 31)+((this.maxCoursesINontrad == null)? 0 :this.maxCoursesINontrad.hashCode()));
+        result = ((result* 31)+((this.reqCoursesITrad == null)? 0 :this.reqCoursesITrad.hashCode()));
+        result = ((result* 31)+((this.lastInstCredits == null)? 0 :this.lastInstCredits.hashCode()));
+        result = ((result* 31)+((this.actProgramGpaAct == null)? 0 :this.actProgramGpaAct.hashCode()));
+        result = ((result* 31)+((this.connectorLastEarned == null)? 0 :this.connectorLastEarned.hashCode()));
+        result = ((result* 31)+((this.reqCreditsInst == null)? 0 :this.reqCreditsInst.hashCode()));
+        result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
+        result = ((result* 31)+((this.reqCoursesInst == null)? 0 :this.reqCoursesInst.hashCode()));
+        result = ((result* 31)+((this.actCreditsOverall == null)? 0 :this.actCreditsOverall.hashCode()));
+        result = ((result* 31)+((this.actCreditsINontrad == null)? 0 :this.actCreditsINontrad.hashCode()));
+        result = ((result* 31)+((this.grdeCodeMin == null)? 0 :this.grdeCodeMin.hashCode()));
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if (other == this) {
+            return true;
+        }
+        if ((other instanceof ProgramOutputInquiry010GetResponse) == false) {
+            return false;
+        }
+        ProgramOutputInquiry010GetResponse rhs = ((ProgramOutputInquiry010GetResponse) other);
+        return (((((((((((((((((((((((((((((((((((((((((((((((this.actCoursesOverall == rhs.actCoursesOverall)||((this.actCoursesOverall!= null)&&this.actCoursesOverall.equals(rhs.actCoursesOverall)))&&((this.reqCreditsITrad == rhs.reqCreditsITrad)||((this.reqCreditsITrad!= null)&&this.reqCreditsITrad.equals(rhs.reqCreditsITrad))))&&((this.reqCreditsOverall == rhs.reqCreditsOverall)||((this.reqCreditsOverall!= null)&&this.reqCreditsOverall.equals(rhs.reqCreditsOverall))))&&((this.actLastEarnCourses == rhs.actLastEarnCourses)||((this.actLastEarnCourses!= null)&&this.actLastEarnCourses.equals(rhs.actLastEarnCourses))))&&((this.maxCreditsINontrad == rhs.maxCreditsINontrad)||((this.maxCreditsINontrad!= null)&&this.maxCreditsINontrad.equals(rhs.maxCreditsINontrad))))&&((this.lastEarnedCourses == rhs.lastEarnedCourses)||((this.lastEarnedCourses!= null)&&this.lastEarnedCourses.equals(rhs.lastEarnedCourses))))&&((this.maxCreditsTransfer == rhs.maxCreditsTransfer)||((this.maxCreditsTransfer!= null)&&this.maxCreditsTransfer.equals(rhs.maxCreditsTransfer))))&&((this.actCoursesINontrad == rhs.actCoursesINontrad)||((this.actCoursesINontrad!= null)&&this.actCoursesINontrad.equals(rhs.actCoursesINontrad))))&&((this.actCreditsITrad == rhs.actCreditsITrad)||((this.actCreditsITrad!= null)&&this.actCreditsITrad.equals(rhs.actCreditsITrad))))&&((this.connectorInst == rhs.connectorInst)||((this.connectorInst!= null)&&this.connectorInst.equals(rhs.connectorInst))))&&((this.lastInstCourses == rhs.lastInstCourses)||((this.lastInstCourses!= null)&&this.lastInstCourses.equals(rhs.lastInstCourses))))&&((this.captiveInd == rhs.captiveInd)||((this.captiveInd!= null)&&this.captiveInd.equals(rhs.captiveInd))))&&((this.connectorOverall == rhs.connectorOverall)||((this.connectorOverall!= null)&&this.connectorOverall.equals(rhs.connectorOverall))))&&((this.connectorTransfer == rhs.connectorTransfer)||((this.connectorTransfer!= null)&&this.connectorTransfer.equals(rhs.connectorTransfer))))&&((this.connectorINontrad == rhs.connectorINontrad)||((this.connectorINontrad!= null)&&this.connectorINontrad.equals(rhs.connectorINontrad))))&&((this.actGpaAct == rhs.actGpaAct)||((this.actGpaAct!= null)&&this.actGpaAct.equals(rhs.actGpaAct))))&&((this.actCoursesTransfer == rhs.actCoursesTransfer)||((this.actCoursesTransfer!= null)&&this.actCoursesTransfer.equals(rhs.actCoursesTransfer))))&&((this.connectorLastInst == rhs.connectorLastInst)||((this.connectorLastInst!= null)&&this.connectorLastInst.equals(rhs.connectorLastInst))))&&((this.actCoursesITrad == rhs.actCoursesITrad)||((this.actCoursesITrad!= null)&&this.actCoursesITrad.equals(rhs.actCoursesITrad))))&&((this.actCoursesInst == rhs.actCoursesInst)||((this.actCoursesInst!= null)&&this.actCoursesInst.equals(rhs.actCoursesInst))))&&((this.singleInd == rhs.singleInd)||((this.singleInd!= null)&&this.singleInd.equals(rhs.singleInd))))&&((this.actCreditsInst == rhs.actCreditsInst)||((this.actCreditsInst!= null)&&this.actCreditsInst.equals(rhs.actCreditsInst))))&&((this.actLastInstCourses == rhs.actLastInstCourses)||((this.actLastInstCourses!= null)&&this.actLastInstCourses.equals(rhs.actLastInstCourses))))&&((this.termCodeEff == rhs.termCodeEff)||((this.termCodeEff!= null)&&this.termCodeEff.equals(rhs.termCodeEff))))&&((this.minProgramGpaReq == rhs.minProgramGpaReq)||((this.minProgramGpaReq!= null)&&this.minProgramGpaReq.equals(rhs.minProgramGpaReq))))&&((this.actLastInstCredits == rhs.actLastInstCredits)||((this.actLastInstCredits!= null)&&this.actLastInstCredits.equals(rhs.actLastInstCredits))))&&((this.actLastEarnCredits == rhs.actLastEarnCredits)||((this.actLastEarnCredits!= null)&&this.actLastEarnCredits.equals(rhs.actLastEarnCredits))))&&((this.sourceText == rhs.sourceText)||((this.sourceText!= null)&&this.sourceText.equals(rhs.sourceText))))&&((this.maxCoursesTransfer == rhs.maxCoursesTransfer)||((this.maxCoursesTransfer!= null)&&this.maxCoursesTransfer.equals(rhs.maxCoursesTransfer))))&&((this.connectorITrad == rhs.connectorITrad)||((this.connectorITrad!= null)&&this.connectorITrad.equals(rhs.connectorITrad))))&&((this.lastEarnedCredits == rhs.lastEarnedCredits)||((this.lastEarnedCredits!= null)&&this.lastEarnedCredits.equals(rhs.lastEarnedCredits))))&&((this.yearRule == rhs.yearRule)||((this.yearRule!= null)&&this.yearRule.equals(rhs.yearRule))))&&((this.actCreditsTransfer == rhs.actCreditsTransfer)||((this.actCreditsTransfer!= null)&&this.actCreditsTransfer.equals(rhs.actCreditsTransfer))))&&((this.minGpaReq == rhs.minGpaReq)||((this.minGpaReq!= null)&&this.minGpaReq.equals(rhs.minGpaReq))))&&((this.reqCoursesOverall == rhs.reqCoursesOverall)||((this.reqCoursesOverall!= null)&&this.reqCoursesOverall.equals(rhs.reqCoursesOverall))))&&((this.maxCoursesINontrad == rhs.maxCoursesINontrad)||((this.maxCoursesINontrad!= null)&&this.maxCoursesINontrad.equals(rhs.maxCoursesINontrad))))&&((this.reqCoursesITrad == rhs.reqCoursesITrad)||((this.reqCoursesITrad!= null)&&this.reqCoursesITrad.equals(rhs.reqCoursesITrad))))&&((this.lastInstCredits == rhs.lastInstCredits)||((this.lastInstCredits!= null)&&this.lastInstCredits.equals(rhs.lastInstCredits))))&&((this.actProgramGpaAct == rhs.actProgramGpaAct)||((this.actProgramGpaAct!= null)&&this.actProgramGpaAct.equals(rhs.actProgramGpaAct))))&&((this.connectorLastEarned == rhs.connectorLastEarned)||((this.connectorLastEarned!= null)&&this.connectorLastEarned.equals(rhs.connectorLastEarned))))&&((this.reqCreditsInst == rhs.reqCreditsInst)||((this.reqCreditsInst!= null)&&this.reqCreditsInst.equals(rhs.reqCreditsInst))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.reqCoursesInst == rhs.reqCoursesInst)||((this.reqCoursesInst!= null)&&this.reqCoursesInst.equals(rhs.reqCoursesInst))))&&((this.actCreditsOverall == rhs.actCreditsOverall)||((this.actCreditsOverall!= null)&&this.actCreditsOverall.equals(rhs.actCreditsOverall))))&&((this.actCreditsINontrad == rhs.actCreditsINontrad)||((this.actCreditsINontrad!= null)&&this.actCreditsINontrad.equals(rhs.actCreditsINontrad))))&&((this.grdeCodeMin == rhs.grdeCodeMin)||((this.grdeCodeMin!= null)&&this.grdeCodeMin.equals(rhs.grdeCodeMin))));
+    }
+
+}

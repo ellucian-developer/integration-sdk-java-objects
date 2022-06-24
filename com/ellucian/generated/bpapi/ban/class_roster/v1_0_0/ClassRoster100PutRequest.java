@@ -15,7 +15,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "criteria.spridenId",
     "ssbsectCrnt",
     "ssbsectDegsAwrdInd",
     "ssbsectTermCodet",
@@ -32,8 +31,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "criteria.creditHr",
     "criteria.incompleteExtDate",
     "criteria.grdeCode",
-    "criteria.gcmtCodeDesc",
-    "criteria.spridenCurrName",
     "criteria.grdeIncmpFinal",
     "criteria.gcmtCode",
     "criteria.gmodCode"
@@ -42,14 +39,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class ClassRoster100PutRequest {
 
     /**
-     * ID
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.spridenId")
-    private String criteriaSpridenId;
-    /**
      * CRN
      * <p>
      * Lineage reference object : ssbsectCrnt
@@ -57,7 +46,7 @@ public class ClassRoster100PutRequest {
      */
     @JsonProperty("ssbsectCrnt")
     @JsonPropertyDescription("Lineage reference object : ssbsectCrnt")
-    private Object ssbsectCrnt;
+    private String ssbsectCrnt;
     /**
      * Degree Award Status
      * <p>
@@ -66,7 +55,7 @@ public class ClassRoster100PutRequest {
      */
     @JsonProperty("ssbsectDegsAwrdInd")
     @JsonPropertyDescription("Lineage reference object : ssbsectDegsAwrdInd")
-    private Object ssbsectDegsAwrdInd;
+    private String ssbsectDegsAwrdInd;
     /**
      * Term
      * <p>
@@ -75,7 +64,7 @@ public class ClassRoster100PutRequest {
      */
     @JsonProperty("ssbsectTermCodet")
     @JsonPropertyDescription("Lineage reference object : ssbsectTermCodet, Lookup lineage reference object : stvterm")
-    private Object ssbsectTermCodet;
+    private String ssbsectTermCodet;
     /**
      * Sequence
      * <p>
@@ -104,7 +93,7 @@ public class ClassRoster100PutRequest {
      */
     @JsonProperty("rollIndicator")
     @JsonPropertyDescription("Lineage reference object : rollIndicator")
-    private Object rollIndicator;
+    private String rollIndicator;
     /**
      * Status Date
      * <p>
@@ -187,22 +176,6 @@ public class ClassRoster100PutRequest {
     @JsonPropertyDescription("Lineage reference object : SFRSTCR_GRDE_CODE")
     private String criteriaGrdeCode;
     /**
-     * Grade Comment Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.gcmtCodeDesc")
-    private String criteriaGcmtCodeDesc;
-    /**
-     * Name
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.spridenCurrName")
-    private String criteriaSpridenCurrName;
-    /**
      * Incomplete Final Grade
      * <p>
      * Lineage reference object : SFRSTCR_GRDE_CODE_INCMP_FINAL, Lookup lineage reference object : shrgrde,shrgrde
@@ -233,40 +206,13 @@ public class ClassRoster100PutRequest {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
-     * ID
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.spridenId")
-    public String getCriteriaSpridenId() {
-        return criteriaSpridenId;
-    }
-
-    /**
-     * ID
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.spridenId")
-    public void setCriteriaSpridenId(String criteriaSpridenId) {
-        this.criteriaSpridenId = criteriaSpridenId;
-    }
-
-    public ClassRoster100PutRequest withCriteriaSpridenId(String criteriaSpridenId) {
-        this.criteriaSpridenId = criteriaSpridenId;
-        return this;
-    }
-
-    /**
      * CRN
      * <p>
      * Lineage reference object : ssbsectCrnt
      * 
      */
     @JsonProperty("ssbsectCrnt")
-    public Object getSsbsectCrnt() {
+    public String getSsbsectCrnt() {
         return ssbsectCrnt;
     }
 
@@ -277,11 +223,11 @@ public class ClassRoster100PutRequest {
      * 
      */
     @JsonProperty("ssbsectCrnt")
-    public void setSsbsectCrnt(Object ssbsectCrnt) {
+    public void setSsbsectCrnt(String ssbsectCrnt) {
         this.ssbsectCrnt = ssbsectCrnt;
     }
 
-    public ClassRoster100PutRequest withSsbsectCrnt(Object ssbsectCrnt) {
+    public ClassRoster100PutRequest withSsbsectCrnt(String ssbsectCrnt) {
         this.ssbsectCrnt = ssbsectCrnt;
         return this;
     }
@@ -293,7 +239,7 @@ public class ClassRoster100PutRequest {
      * 
      */
     @JsonProperty("ssbsectDegsAwrdInd")
-    public Object getSsbsectDegsAwrdInd() {
+    public String getSsbsectDegsAwrdInd() {
         return ssbsectDegsAwrdInd;
     }
 
@@ -304,11 +250,11 @@ public class ClassRoster100PutRequest {
      * 
      */
     @JsonProperty("ssbsectDegsAwrdInd")
-    public void setSsbsectDegsAwrdInd(Object ssbsectDegsAwrdInd) {
+    public void setSsbsectDegsAwrdInd(String ssbsectDegsAwrdInd) {
         this.ssbsectDegsAwrdInd = ssbsectDegsAwrdInd;
     }
 
-    public ClassRoster100PutRequest withSsbsectDegsAwrdInd(Object ssbsectDegsAwrdInd) {
+    public ClassRoster100PutRequest withSsbsectDegsAwrdInd(String ssbsectDegsAwrdInd) {
         this.ssbsectDegsAwrdInd = ssbsectDegsAwrdInd;
         return this;
     }
@@ -320,7 +266,7 @@ public class ClassRoster100PutRequest {
      * 
      */
     @JsonProperty("ssbsectTermCodet")
-    public Object getSsbsectTermCodet() {
+    public String getSsbsectTermCodet() {
         return ssbsectTermCodet;
     }
 
@@ -331,11 +277,11 @@ public class ClassRoster100PutRequest {
      * 
      */
     @JsonProperty("ssbsectTermCodet")
-    public void setSsbsectTermCodet(Object ssbsectTermCodet) {
+    public void setSsbsectTermCodet(String ssbsectTermCodet) {
         this.ssbsectTermCodet = ssbsectTermCodet;
     }
 
-    public ClassRoster100PutRequest withSsbsectTermCodet(Object ssbsectTermCodet) {
+    public ClassRoster100PutRequest withSsbsectTermCodet(String ssbsectTermCodet) {
         this.ssbsectTermCodet = ssbsectTermCodet;
         return this;
     }
@@ -416,7 +362,7 @@ public class ClassRoster100PutRequest {
      * 
      */
     @JsonProperty("rollIndicator")
-    public Object getRollIndicator() {
+    public String getRollIndicator() {
         return rollIndicator;
     }
 
@@ -427,11 +373,11 @@ public class ClassRoster100PutRequest {
      * 
      */
     @JsonProperty("rollIndicator")
-    public void setRollIndicator(Object rollIndicator) {
+    public void setRollIndicator(String rollIndicator) {
         this.rollIndicator = rollIndicator;
     }
 
-    public ClassRoster100PutRequest withRollIndicator(Object rollIndicator) {
+    public ClassRoster100PutRequest withRollIndicator(String rollIndicator) {
         this.rollIndicator = rollIndicator;
         return this;
     }
@@ -680,60 +626,6 @@ public class ClassRoster100PutRequest {
     }
 
     /**
-     * Grade Comment Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.gcmtCodeDesc")
-    public String getCriteriaGcmtCodeDesc() {
-        return criteriaGcmtCodeDesc;
-    }
-
-    /**
-     * Grade Comment Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.gcmtCodeDesc")
-    public void setCriteriaGcmtCodeDesc(String criteriaGcmtCodeDesc) {
-        this.criteriaGcmtCodeDesc = criteriaGcmtCodeDesc;
-    }
-
-    public ClassRoster100PutRequest withCriteriaGcmtCodeDesc(String criteriaGcmtCodeDesc) {
-        this.criteriaGcmtCodeDesc = criteriaGcmtCodeDesc;
-        return this;
-    }
-
-    /**
-     * Name
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.spridenCurrName")
-    public String getCriteriaSpridenCurrName() {
-        return criteriaSpridenCurrName;
-    }
-
-    /**
-     * Name
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.spridenCurrName")
-    public void setCriteriaSpridenCurrName(String criteriaSpridenCurrName) {
-        this.criteriaSpridenCurrName = criteriaSpridenCurrName;
-    }
-
-    public ClassRoster100PutRequest withCriteriaSpridenCurrName(String criteriaSpridenCurrName) {
-        this.criteriaSpridenCurrName = criteriaSpridenCurrName;
-        return this;
-    }
-
-    /**
      * Incomplete Final Grade
      * <p>
      * Lineage reference object : SFRSTCR_GRDE_CODE_INCMP_FINAL, Lookup lineage reference object : shrgrde,shrgrde
@@ -833,10 +725,6 @@ public class ClassRoster100PutRequest {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(ClassRoster100PutRequest.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
-        sb.append("criteriaSpridenId");
-        sb.append('=');
-        sb.append(((this.criteriaSpridenId == null)?"<null>":this.criteriaSpridenId));
-        sb.append(',');
         sb.append("ssbsectCrnt");
         sb.append('=');
         sb.append(((this.ssbsectCrnt == null)?"<null>":this.ssbsectCrnt));
@@ -901,14 +789,6 @@ public class ClassRoster100PutRequest {
         sb.append('=');
         sb.append(((this.criteriaGrdeCode == null)?"<null>":this.criteriaGrdeCode));
         sb.append(',');
-        sb.append("criteriaGcmtCodeDesc");
-        sb.append('=');
-        sb.append(((this.criteriaGcmtCodeDesc == null)?"<null>":this.criteriaGcmtCodeDesc));
-        sb.append(',');
-        sb.append("criteriaSpridenCurrName");
-        sb.append('=');
-        sb.append(((this.criteriaSpridenCurrName == null)?"<null>":this.criteriaSpridenCurrName));
-        sb.append(',');
         sb.append("criteriaGrdeIncmpFinal");
         sb.append('=');
         sb.append(((this.criteriaGrdeIncmpFinal == null)?"<null>":this.criteriaGrdeIncmpFinal));
@@ -952,13 +832,10 @@ public class ClassRoster100PutRequest {
         result = ((result* 31)+((this.criteriaGmodCode == null)? 0 :this.criteriaGmodCode.hashCode()));
         result = ((result* 31)+((this.criteriaCreditHr == null)? 0 :this.criteriaCreditHr.hashCode()));
         result = ((result* 31)+((this.gcmtCode == null)? 0 :this.gcmtCode.hashCode()));
-        result = ((result* 31)+((this.criteriaSpridenCurrName == null)? 0 :this.criteriaSpridenCurrName.hashCode()));
-        result = ((result* 31)+((this.criteriaGcmtCodeDesc == null)? 0 :this.criteriaGcmtCodeDesc.hashCode()));
         result = ((result* 31)+((this.criteriaRegSeq == null)? 0 :this.criteriaRegSeq.hashCode()));
         result = ((result* 31)+((this.criteriaRolled == null)? 0 :this.criteriaRolled.hashCode()));
         result = ((result* 31)+((this.criteriaIncompleteExtDate == null)? 0 :this.criteriaIncompleteExtDate.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
-        result = ((result* 31)+((this.criteriaSpridenId == null)? 0 :this.criteriaSpridenId.hashCode()));
         return result;
     }
 
@@ -971,7 +848,7 @@ public class ClassRoster100PutRequest {
             return false;
         }
         ClassRoster100PutRequest rhs = ((ClassRoster100PutRequest) other);
-        return ((((((((((((((((((((((((this.criteriaGrdeCodeMid == rhs.criteriaGrdeCodeMid)||((this.criteriaGrdeCodeMid!= null)&&this.criteriaGrdeCodeMid.equals(rhs.criteriaGrdeCodeMid)))&&((this.criteriaGcmtCode == rhs.criteriaGcmtCode)||((this.criteriaGcmtCode!= null)&&this.criteriaGcmtCode.equals(rhs.criteriaGcmtCode))))&&((this.ssbsectCrnt == rhs.ssbsectCrnt)||((this.ssbsectCrnt!= null)&&this.ssbsectCrnt.equals(rhs.ssbsectCrnt))))&&((this.criteriaGrdeCode == rhs.criteriaGrdeCode)||((this.criteriaGrdeCode!= null)&&this.criteriaGrdeCode.equals(rhs.criteriaGrdeCode))))&&((this.ssbsectDegsAwrdInd == rhs.ssbsectDegsAwrdInd)||((this.ssbsectDegsAwrdInd!= null)&&this.ssbsectDegsAwrdInd.equals(rhs.ssbsectDegsAwrdInd))))&&((this.ssbsectTermCodet == rhs.ssbsectTermCodet)||((this.ssbsectTermCodet!= null)&&this.ssbsectTermCodet.equals(rhs.ssbsectTermCodet))))&&((this.grdeCodeMid == rhs.grdeCodeMid)||((this.grdeCodeMid!= null)&&this.grdeCodeMid.equals(rhs.grdeCodeMid))))&&((this.criteriaRstsDate == rhs.criteriaRstsDate)||((this.criteriaRstsDate!= null)&&this.criteriaRstsDate.equals(rhs.criteriaRstsDate))))&&((this.rollIndicator == rhs.rollIndicator)||((this.rollIndicator!= null)&&this.rollIndicator.equals(rhs.rollIndicator))))&&((this.grdeCode == rhs.grdeCode)||((this.grdeCode!= null)&&this.grdeCode.equals(rhs.grdeCode))))&&((this.criteriaGrdeIncmpFinal == rhs.criteriaGrdeIncmpFinal)||((this.criteriaGrdeIncmpFinal!= null)&&this.criteriaGrdeIncmpFinal.equals(rhs.criteriaGrdeIncmpFinal))))&&((this.criteriaRstsCode == rhs.criteriaRstsCode)||((this.criteriaRstsCode!= null)&&this.criteriaRstsCode.equals(rhs.criteriaRstsCode))))&&((this.grdeIncmpFinal == rhs.grdeIncmpFinal)||((this.grdeIncmpFinal!= null)&&this.grdeIncmpFinal.equals(rhs.grdeIncmpFinal))))&&((this.criteriaGmodCode == rhs.criteriaGmodCode)||((this.criteriaGmodCode!= null)&&this.criteriaGmodCode.equals(rhs.criteriaGmodCode))))&&((this.criteriaCreditHr == rhs.criteriaCreditHr)||((this.criteriaCreditHr!= null)&&this.criteriaCreditHr.equals(rhs.criteriaCreditHr))))&&((this.gcmtCode == rhs.gcmtCode)||((this.gcmtCode!= null)&&this.gcmtCode.equals(rhs.gcmtCode))))&&((this.criteriaSpridenCurrName == rhs.criteriaSpridenCurrName)||((this.criteriaSpridenCurrName!= null)&&this.criteriaSpridenCurrName.equals(rhs.criteriaSpridenCurrName))))&&((this.criteriaGcmtCodeDesc == rhs.criteriaGcmtCodeDesc)||((this.criteriaGcmtCodeDesc!= null)&&this.criteriaGcmtCodeDesc.equals(rhs.criteriaGcmtCodeDesc))))&&((this.criteriaRegSeq == rhs.criteriaRegSeq)||((this.criteriaRegSeq!= null)&&this.criteriaRegSeq.equals(rhs.criteriaRegSeq))))&&((this.criteriaRolled == rhs.criteriaRolled)||((this.criteriaRolled!= null)&&this.criteriaRolled.equals(rhs.criteriaRolled))))&&((this.criteriaIncompleteExtDate == rhs.criteriaIncompleteExtDate)||((this.criteriaIncompleteExtDate!= null)&&this.criteriaIncompleteExtDate.equals(rhs.criteriaIncompleteExtDate))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.criteriaSpridenId == rhs.criteriaSpridenId)||((this.criteriaSpridenId!= null)&&this.criteriaSpridenId.equals(rhs.criteriaSpridenId))));
+        return (((((((((((((((((((((this.criteriaGrdeCodeMid == rhs.criteriaGrdeCodeMid)||((this.criteriaGrdeCodeMid!= null)&&this.criteriaGrdeCodeMid.equals(rhs.criteriaGrdeCodeMid)))&&((this.criteriaGcmtCode == rhs.criteriaGcmtCode)||((this.criteriaGcmtCode!= null)&&this.criteriaGcmtCode.equals(rhs.criteriaGcmtCode))))&&((this.ssbsectCrnt == rhs.ssbsectCrnt)||((this.ssbsectCrnt!= null)&&this.ssbsectCrnt.equals(rhs.ssbsectCrnt))))&&((this.criteriaGrdeCode == rhs.criteriaGrdeCode)||((this.criteriaGrdeCode!= null)&&this.criteriaGrdeCode.equals(rhs.criteriaGrdeCode))))&&((this.ssbsectDegsAwrdInd == rhs.ssbsectDegsAwrdInd)||((this.ssbsectDegsAwrdInd!= null)&&this.ssbsectDegsAwrdInd.equals(rhs.ssbsectDegsAwrdInd))))&&((this.ssbsectTermCodet == rhs.ssbsectTermCodet)||((this.ssbsectTermCodet!= null)&&this.ssbsectTermCodet.equals(rhs.ssbsectTermCodet))))&&((this.grdeCodeMid == rhs.grdeCodeMid)||((this.grdeCodeMid!= null)&&this.grdeCodeMid.equals(rhs.grdeCodeMid))))&&((this.criteriaRstsDate == rhs.criteriaRstsDate)||((this.criteriaRstsDate!= null)&&this.criteriaRstsDate.equals(rhs.criteriaRstsDate))))&&((this.rollIndicator == rhs.rollIndicator)||((this.rollIndicator!= null)&&this.rollIndicator.equals(rhs.rollIndicator))))&&((this.grdeCode == rhs.grdeCode)||((this.grdeCode!= null)&&this.grdeCode.equals(rhs.grdeCode))))&&((this.criteriaGrdeIncmpFinal == rhs.criteriaGrdeIncmpFinal)||((this.criteriaGrdeIncmpFinal!= null)&&this.criteriaGrdeIncmpFinal.equals(rhs.criteriaGrdeIncmpFinal))))&&((this.criteriaRstsCode == rhs.criteriaRstsCode)||((this.criteriaRstsCode!= null)&&this.criteriaRstsCode.equals(rhs.criteriaRstsCode))))&&((this.grdeIncmpFinal == rhs.grdeIncmpFinal)||((this.grdeIncmpFinal!= null)&&this.grdeIncmpFinal.equals(rhs.grdeIncmpFinal))))&&((this.criteriaGmodCode == rhs.criteriaGmodCode)||((this.criteriaGmodCode!= null)&&this.criteriaGmodCode.equals(rhs.criteriaGmodCode))))&&((this.criteriaCreditHr == rhs.criteriaCreditHr)||((this.criteriaCreditHr!= null)&&this.criteriaCreditHr.equals(rhs.criteriaCreditHr))))&&((this.gcmtCode == rhs.gcmtCode)||((this.gcmtCode!= null)&&this.gcmtCode.equals(rhs.gcmtCode))))&&((this.criteriaRegSeq == rhs.criteriaRegSeq)||((this.criteriaRegSeq!= null)&&this.criteriaRegSeq.equals(rhs.criteriaRegSeq))))&&((this.criteriaRolled == rhs.criteriaRolled)||((this.criteriaRolled!= null)&&this.criteriaRolled.equals(rhs.criteriaRolled))))&&((this.criteriaIncompleteExtDate == rhs.criteriaIncompleteExtDate)||((this.criteriaIncompleteExtDate!= null)&&this.criteriaIncompleteExtDate.equals(rhs.criteriaIncompleteExtDate))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))));
     }
 
 }

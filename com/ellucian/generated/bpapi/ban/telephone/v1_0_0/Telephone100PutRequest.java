@@ -14,22 +14,61 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "criteria.teleCode",
     "phoneExt",
+    "unlistInd",
+    "ctryCodePhone",
+    "teleCode",
+    "criteria.teleCode",
     "phoneNumber",
     "addrSeqno",
-    "unlistInd",
+    "statusInd",
     "phoneArea",
     "comment",
     "id",
     "intlAccess",
-    "ctryCodePhone",
     "atypCode",
-    "teleCode"
+    "primaryInd"
 })
 @Generated("jsonschema2pojo")
 public class Telephone100PutRequest {
 
+    /**
+     * Extension
+     * <p>
+     * Lineage reference object : SPRTELE_PHONE_EXT
+     * 
+     */
+    @JsonProperty("phoneExt")
+    @JsonPropertyDescription("Lineage reference object : SPRTELE_PHONE_EXT")
+    private String phoneExt;
+    /**
+     * Unlisted
+     * <p>
+     * Lineage reference object : SPRTELE_UNLIST_IND
+     * 
+     */
+    @JsonProperty("unlistInd")
+    @JsonPropertyDescription("Lineage reference object : SPRTELE_UNLIST_IND")
+    private String unlistInd;
+    /**
+     * Country Code
+     * <p>
+     * Lineage reference object : SPRTELE_CTRY_CODE_PHONE
+     * 
+     */
+    @JsonProperty("ctryCodePhone")
+    @JsonPropertyDescription("Lineage reference object : SPRTELE_CTRY_CODE_PHONE")
+    private String ctryCodePhone;
+    /**
+     * Telephone Type
+     * <p>
+     * Lineage reference object : SPRTELE_TELE_CODE, Lookup lineage reference object : stvtele
+     * (Required)
+     * 
+     */
+    @JsonProperty("teleCode")
+    @JsonPropertyDescription("Lineage reference object : SPRTELE_TELE_CODE, Lookup lineage reference object : stvtele")
+    private String teleCode;
     /**
      * Telephone Type
      * <p>
@@ -40,15 +79,6 @@ public class Telephone100PutRequest {
     @JsonProperty("criteria.teleCode")
     @JsonPropertyDescription("Lineage reference object : SPRTELE_TELE_CODE, Lookup lineage reference object : stvtele")
     private String criteriaTeleCode;
-    /**
-     * Extension
-     * <p>
-     * Lineage reference object : SPRTELE_PHONE_EXT
-     * 
-     */
-    @JsonProperty("phoneExt")
-    @JsonPropertyDescription("Lineage reference object : SPRTELE_PHONE_EXT")
-    private String phoneExt;
     /**
      * Phone Number
      * <p>
@@ -68,14 +98,14 @@ public class Telephone100PutRequest {
     @JsonPropertyDescription("Lineage reference object : SPRTELE_ADDR_SEQNO")
     private Double addrSeqno;
     /**
-     * Unlisted
+     * Inactivate
      * <p>
-     * Lineage reference object : SPRTELE_UNLIST_IND
+     * Lineage reference object : SPRTELE_STATUS_IND
      * 
      */
-    @JsonProperty("unlistInd")
-    @JsonPropertyDescription("Lineage reference object : SPRTELE_UNLIST_IND")
-    private String unlistInd;
+    @JsonProperty("statusInd")
+    @JsonPropertyDescription("Lineage reference object : SPRTELE_STATUS_IND")
+    private String statusInd;
     /**
      * Area Code
      * <p>
@@ -102,7 +132,7 @@ public class Telephone100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * International Access
      * <p>
@@ -113,15 +143,6 @@ public class Telephone100PutRequest {
     @JsonPropertyDescription("Lineage reference object : SPRTELE_INTL_ACCESS")
     private String intlAccess;
     /**
-     * Country Code
-     * <p>
-     * Lineage reference object : SPRTELE_CTRY_CODE_PHONE
-     * 
-     */
-    @JsonProperty("ctryCodePhone")
-    @JsonPropertyDescription("Lineage reference object : SPRTELE_CTRY_CODE_PHONE")
-    private String ctryCodePhone;
-    /**
      * Address Type
      * <p>
      * Lineage reference object : SPRTELE_ATYP_CODE
@@ -131,6 +152,99 @@ public class Telephone100PutRequest {
     @JsonPropertyDescription("Lineage reference object : SPRTELE_ATYP_CODE")
     private String atypCode;
     /**
+     * Primary
+     * <p>
+     * Lineage reference object : SPRTELE_PRIMARY_IND
+     * 
+     */
+    @JsonProperty("primaryInd")
+    @JsonPropertyDescription("Lineage reference object : SPRTELE_PRIMARY_IND")
+    private String primaryInd;
+    @JsonIgnore
+    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+    /**
+     * Extension
+     * <p>
+     * Lineage reference object : SPRTELE_PHONE_EXT
+     * 
+     */
+    @JsonProperty("phoneExt")
+    public String getPhoneExt() {
+        return phoneExt;
+    }
+
+    /**
+     * Extension
+     * <p>
+     * Lineage reference object : SPRTELE_PHONE_EXT
+     * 
+     */
+    @JsonProperty("phoneExt")
+    public void setPhoneExt(String phoneExt) {
+        this.phoneExt = phoneExt;
+    }
+
+    public Telephone100PutRequest withPhoneExt(String phoneExt) {
+        this.phoneExt = phoneExt;
+        return this;
+    }
+
+    /**
+     * Unlisted
+     * <p>
+     * Lineage reference object : SPRTELE_UNLIST_IND
+     * 
+     */
+    @JsonProperty("unlistInd")
+    public String getUnlistInd() {
+        return unlistInd;
+    }
+
+    /**
+     * Unlisted
+     * <p>
+     * Lineage reference object : SPRTELE_UNLIST_IND
+     * 
+     */
+    @JsonProperty("unlistInd")
+    public void setUnlistInd(String unlistInd) {
+        this.unlistInd = unlistInd;
+    }
+
+    public Telephone100PutRequest withUnlistInd(String unlistInd) {
+        this.unlistInd = unlistInd;
+        return this;
+    }
+
+    /**
+     * Country Code
+     * <p>
+     * Lineage reference object : SPRTELE_CTRY_CODE_PHONE
+     * 
+     */
+    @JsonProperty("ctryCodePhone")
+    public String getCtryCodePhone() {
+        return ctryCodePhone;
+    }
+
+    /**
+     * Country Code
+     * <p>
+     * Lineage reference object : SPRTELE_CTRY_CODE_PHONE
+     * 
+     */
+    @JsonProperty("ctryCodePhone")
+    public void setCtryCodePhone(String ctryCodePhone) {
+        this.ctryCodePhone = ctryCodePhone;
+    }
+
+    public Telephone100PutRequest withCtryCodePhone(String ctryCodePhone) {
+        this.ctryCodePhone = ctryCodePhone;
+        return this;
+    }
+
+    /**
      * Telephone Type
      * <p>
      * Lineage reference object : SPRTELE_TELE_CODE, Lookup lineage reference object : stvtele
@@ -138,10 +252,26 @@ public class Telephone100PutRequest {
      * 
      */
     @JsonProperty("teleCode")
-    @JsonPropertyDescription("Lineage reference object : SPRTELE_TELE_CODE, Lookup lineage reference object : stvtele")
-    private String teleCode;
-    @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+    public String getTeleCode() {
+        return teleCode;
+    }
+
+    /**
+     * Telephone Type
+     * <p>
+     * Lineage reference object : SPRTELE_TELE_CODE, Lookup lineage reference object : stvtele
+     * (Required)
+     * 
+     */
+    @JsonProperty("teleCode")
+    public void setTeleCode(String teleCode) {
+        this.teleCode = teleCode;
+    }
+
+    public Telephone100PutRequest withTeleCode(String teleCode) {
+        this.teleCode = teleCode;
+        return this;
+    }
 
     /**
      * Telephone Type
@@ -169,33 +299,6 @@ public class Telephone100PutRequest {
 
     public Telephone100PutRequest withCriteriaTeleCode(String criteriaTeleCode) {
         this.criteriaTeleCode = criteriaTeleCode;
-        return this;
-    }
-
-    /**
-     * Extension
-     * <p>
-     * Lineage reference object : SPRTELE_PHONE_EXT
-     * 
-     */
-    @JsonProperty("phoneExt")
-    public String getPhoneExt() {
-        return phoneExt;
-    }
-
-    /**
-     * Extension
-     * <p>
-     * Lineage reference object : SPRTELE_PHONE_EXT
-     * 
-     */
-    @JsonProperty("phoneExt")
-    public void setPhoneExt(String phoneExt) {
-        this.phoneExt = phoneExt;
-    }
-
-    public Telephone100PutRequest withPhoneExt(String phoneExt) {
-        this.phoneExt = phoneExt;
         return this;
     }
 
@@ -254,29 +357,29 @@ public class Telephone100PutRequest {
     }
 
     /**
-     * Unlisted
+     * Inactivate
      * <p>
-     * Lineage reference object : SPRTELE_UNLIST_IND
+     * Lineage reference object : SPRTELE_STATUS_IND
      * 
      */
-    @JsonProperty("unlistInd")
-    public String getUnlistInd() {
-        return unlistInd;
+    @JsonProperty("statusInd")
+    public String getStatusInd() {
+        return statusInd;
     }
 
     /**
-     * Unlisted
+     * Inactivate
      * <p>
-     * Lineage reference object : SPRTELE_UNLIST_IND
+     * Lineage reference object : SPRTELE_STATUS_IND
      * 
      */
-    @JsonProperty("unlistInd")
-    public void setUnlistInd(String unlistInd) {
-        this.unlistInd = unlistInd;
+    @JsonProperty("statusInd")
+    public void setStatusInd(String statusInd) {
+        this.statusInd = statusInd;
     }
 
-    public Telephone100PutRequest withUnlistInd(String unlistInd) {
-        this.unlistInd = unlistInd;
+    public Telephone100PutRequest withStatusInd(String statusInd) {
+        this.statusInd = statusInd;
         return this;
     }
 
@@ -341,7 +444,7 @@ public class Telephone100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -352,11 +455,11 @@ public class Telephone100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public Telephone100PutRequest withId(Object id) {
+    public Telephone100PutRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -389,33 +492,6 @@ public class Telephone100PutRequest {
     }
 
     /**
-     * Country Code
-     * <p>
-     * Lineage reference object : SPRTELE_CTRY_CODE_PHONE
-     * 
-     */
-    @JsonProperty("ctryCodePhone")
-    public String getCtryCodePhone() {
-        return ctryCodePhone;
-    }
-
-    /**
-     * Country Code
-     * <p>
-     * Lineage reference object : SPRTELE_CTRY_CODE_PHONE
-     * 
-     */
-    @JsonProperty("ctryCodePhone")
-    public void setCtryCodePhone(String ctryCodePhone) {
-        this.ctryCodePhone = ctryCodePhone;
-    }
-
-    public Telephone100PutRequest withCtryCodePhone(String ctryCodePhone) {
-        this.ctryCodePhone = ctryCodePhone;
-        return this;
-    }
-
-    /**
      * Address Type
      * <p>
      * Lineage reference object : SPRTELE_ATYP_CODE
@@ -443,31 +519,29 @@ public class Telephone100PutRequest {
     }
 
     /**
-     * Telephone Type
+     * Primary
      * <p>
-     * Lineage reference object : SPRTELE_TELE_CODE, Lookup lineage reference object : stvtele
-     * (Required)
+     * Lineage reference object : SPRTELE_PRIMARY_IND
      * 
      */
-    @JsonProperty("teleCode")
-    public String getTeleCode() {
-        return teleCode;
+    @JsonProperty("primaryInd")
+    public String getPrimaryInd() {
+        return primaryInd;
     }
 
     /**
-     * Telephone Type
+     * Primary
      * <p>
-     * Lineage reference object : SPRTELE_TELE_CODE, Lookup lineage reference object : stvtele
-     * (Required)
+     * Lineage reference object : SPRTELE_PRIMARY_IND
      * 
      */
-    @JsonProperty("teleCode")
-    public void setTeleCode(String teleCode) {
-        this.teleCode = teleCode;
+    @JsonProperty("primaryInd")
+    public void setPrimaryInd(String primaryInd) {
+        this.primaryInd = primaryInd;
     }
 
-    public Telephone100PutRequest withTeleCode(String teleCode) {
-        this.teleCode = teleCode;
+    public Telephone100PutRequest withPrimaryInd(String primaryInd) {
+        this.primaryInd = primaryInd;
         return this;
     }
 
@@ -490,13 +564,25 @@ public class Telephone100PutRequest {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(Telephone100PutRequest.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
-        sb.append("criteriaTeleCode");
-        sb.append('=');
-        sb.append(((this.criteriaTeleCode == null)?"<null>":this.criteriaTeleCode));
-        sb.append(',');
         sb.append("phoneExt");
         sb.append('=');
         sb.append(((this.phoneExt == null)?"<null>":this.phoneExt));
+        sb.append(',');
+        sb.append("unlistInd");
+        sb.append('=');
+        sb.append(((this.unlistInd == null)?"<null>":this.unlistInd));
+        sb.append(',');
+        sb.append("ctryCodePhone");
+        sb.append('=');
+        sb.append(((this.ctryCodePhone == null)?"<null>":this.ctryCodePhone));
+        sb.append(',');
+        sb.append("teleCode");
+        sb.append('=');
+        sb.append(((this.teleCode == null)?"<null>":this.teleCode));
+        sb.append(',');
+        sb.append("criteriaTeleCode");
+        sb.append('=');
+        sb.append(((this.criteriaTeleCode == null)?"<null>":this.criteriaTeleCode));
         sb.append(',');
         sb.append("phoneNumber");
         sb.append('=');
@@ -506,9 +592,9 @@ public class Telephone100PutRequest {
         sb.append('=');
         sb.append(((this.addrSeqno == null)?"<null>":this.addrSeqno));
         sb.append(',');
-        sb.append("unlistInd");
+        sb.append("statusInd");
         sb.append('=');
-        sb.append(((this.unlistInd == null)?"<null>":this.unlistInd));
+        sb.append(((this.statusInd == null)?"<null>":this.statusInd));
         sb.append(',');
         sb.append("phoneArea");
         sb.append('=');
@@ -526,17 +612,13 @@ public class Telephone100PutRequest {
         sb.append('=');
         sb.append(((this.intlAccess == null)?"<null>":this.intlAccess));
         sb.append(',');
-        sb.append("ctryCodePhone");
-        sb.append('=');
-        sb.append(((this.ctryCodePhone == null)?"<null>":this.ctryCodePhone));
-        sb.append(',');
         sb.append("atypCode");
         sb.append('=');
         sb.append(((this.atypCode == null)?"<null>":this.atypCode));
         sb.append(',');
-        sb.append("teleCode");
+        sb.append("primaryInd");
         sb.append('=');
-        sb.append(((this.teleCode == null)?"<null>":this.teleCode));
+        sb.append(((this.primaryInd == null)?"<null>":this.primaryInd));
         sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');
@@ -560,12 +642,14 @@ public class Telephone100PutRequest {
         result = ((result* 31)+((this.phoneNumber == null)? 0 :this.phoneNumber.hashCode()));
         result = ((result* 31)+((this.addrSeqno == null)? 0 :this.addrSeqno.hashCode()));
         result = ((result* 31)+((this.criteriaTeleCode == null)? 0 :this.criteriaTeleCode.hashCode()));
+        result = ((result* 31)+((this.statusInd == null)? 0 :this.statusInd.hashCode()));
         result = ((result* 31)+((this.phoneArea == null)? 0 :this.phoneArea.hashCode()));
         result = ((result* 31)+((this.comment == null)? 0 :this.comment.hashCode()));
         result = ((result* 31)+((this.id == null)? 0 :this.id.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
         result = ((result* 31)+((this.intlAccess == null)? 0 :this.intlAccess.hashCode()));
         result = ((result* 31)+((this.atypCode == null)? 0 :this.atypCode.hashCode()));
+        result = ((result* 31)+((this.primaryInd == null)? 0 :this.primaryInd.hashCode()));
         return result;
     }
 
@@ -578,7 +662,7 @@ public class Telephone100PutRequest {
             return false;
         }
         Telephone100PutRequest rhs = ((Telephone100PutRequest) other);
-        return ((((((((((((((this.phoneExt == rhs.phoneExt)||((this.phoneExt!= null)&&this.phoneExt.equals(rhs.phoneExt)))&&((this.unlistInd == rhs.unlistInd)||((this.unlistInd!= null)&&this.unlistInd.equals(rhs.unlistInd))))&&((this.ctryCodePhone == rhs.ctryCodePhone)||((this.ctryCodePhone!= null)&&this.ctryCodePhone.equals(rhs.ctryCodePhone))))&&((this.teleCode == rhs.teleCode)||((this.teleCode!= null)&&this.teleCode.equals(rhs.teleCode))))&&((this.phoneNumber == rhs.phoneNumber)||((this.phoneNumber!= null)&&this.phoneNumber.equals(rhs.phoneNumber))))&&((this.addrSeqno == rhs.addrSeqno)||((this.addrSeqno!= null)&&this.addrSeqno.equals(rhs.addrSeqno))))&&((this.criteriaTeleCode == rhs.criteriaTeleCode)||((this.criteriaTeleCode!= null)&&this.criteriaTeleCode.equals(rhs.criteriaTeleCode))))&&((this.phoneArea == rhs.phoneArea)||((this.phoneArea!= null)&&this.phoneArea.equals(rhs.phoneArea))))&&((this.comment == rhs.comment)||((this.comment!= null)&&this.comment.equals(rhs.comment))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.intlAccess == rhs.intlAccess)||((this.intlAccess!= null)&&this.intlAccess.equals(rhs.intlAccess))))&&((this.atypCode == rhs.atypCode)||((this.atypCode!= null)&&this.atypCode.equals(rhs.atypCode))));
+        return ((((((((((((((((this.phoneExt == rhs.phoneExt)||((this.phoneExt!= null)&&this.phoneExt.equals(rhs.phoneExt)))&&((this.unlistInd == rhs.unlistInd)||((this.unlistInd!= null)&&this.unlistInd.equals(rhs.unlistInd))))&&((this.ctryCodePhone == rhs.ctryCodePhone)||((this.ctryCodePhone!= null)&&this.ctryCodePhone.equals(rhs.ctryCodePhone))))&&((this.teleCode == rhs.teleCode)||((this.teleCode!= null)&&this.teleCode.equals(rhs.teleCode))))&&((this.phoneNumber == rhs.phoneNumber)||((this.phoneNumber!= null)&&this.phoneNumber.equals(rhs.phoneNumber))))&&((this.addrSeqno == rhs.addrSeqno)||((this.addrSeqno!= null)&&this.addrSeqno.equals(rhs.addrSeqno))))&&((this.criteriaTeleCode == rhs.criteriaTeleCode)||((this.criteriaTeleCode!= null)&&this.criteriaTeleCode.equals(rhs.criteriaTeleCode))))&&((this.statusInd == rhs.statusInd)||((this.statusInd!= null)&&this.statusInd.equals(rhs.statusInd))))&&((this.phoneArea == rhs.phoneArea)||((this.phoneArea!= null)&&this.phoneArea.equals(rhs.phoneArea))))&&((this.comment == rhs.comment)||((this.comment!= null)&&this.comment.equals(rhs.comment))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.intlAccess == rhs.intlAccess)||((this.intlAccess!= null)&&this.intlAccess.equals(rhs.intlAccess))))&&((this.atypCode == rhs.atypCode)||((this.atypCode!= null)&&this.atypCode.equals(rhs.atypCode))))&&((this.primaryInd == rhs.primaryInd)||((this.primaryInd!= null)&&this.primaryInd.equals(rhs.primaryInd))));
     }
 
 }

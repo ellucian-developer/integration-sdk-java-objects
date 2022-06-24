@@ -28,7 +28,7 @@ public class ChrtCtrlBlock__2 {
      */
     @JsonProperty("sgrchrtTermCodeFrom")
     @JsonPropertyDescription("Lineage reference object : sgrchrtTermCodeFrom, Lookup lineage reference object : stvterm")
-    private Object sgrchrtTermCodeFrom;
+    private String sgrchrtTermCodeFrom;
     /**
      * To Term
      * <p>
@@ -37,7 +37,7 @@ public class ChrtCtrlBlock__2 {
      */
     @JsonProperty("sgrchrtTermCodeTo")
     @JsonPropertyDescription("Lineage reference object : sgrchrtTermCodeTo, Lookup lineage reference object : stvterm")
-    private Object sgrchrtTermCodeTo;
+    private String sgrchrtTermCodeTo;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -48,7 +48,7 @@ public class ChrtCtrlBlock__2 {
      * 
      */
     @JsonProperty("sgrchrtTermCodeFrom")
-    public Object getSgrchrtTermCodeFrom() {
+    public String getSgrchrtTermCodeFrom() {
         return sgrchrtTermCodeFrom;
     }
 
@@ -59,11 +59,11 @@ public class ChrtCtrlBlock__2 {
      * 
      */
     @JsonProperty("sgrchrtTermCodeFrom")
-    public void setSgrchrtTermCodeFrom(Object sgrchrtTermCodeFrom) {
+    public void setSgrchrtTermCodeFrom(String sgrchrtTermCodeFrom) {
         this.sgrchrtTermCodeFrom = sgrchrtTermCodeFrom;
     }
 
-    public ChrtCtrlBlock__2 withSgrchrtTermCodeFrom(Object sgrchrtTermCodeFrom) {
+    public ChrtCtrlBlock__2 withSgrchrtTermCodeFrom(String sgrchrtTermCodeFrom) {
         this.sgrchrtTermCodeFrom = sgrchrtTermCodeFrom;
         return this;
     }
@@ -75,7 +75,7 @@ public class ChrtCtrlBlock__2 {
      * 
      */
     @JsonProperty("sgrchrtTermCodeTo")
-    public Object getSgrchrtTermCodeTo() {
+    public String getSgrchrtTermCodeTo() {
         return sgrchrtTermCodeTo;
     }
 
@@ -86,11 +86,11 @@ public class ChrtCtrlBlock__2 {
      * 
      */
     @JsonProperty("sgrchrtTermCodeTo")
-    public void setSgrchrtTermCodeTo(Object sgrchrtTermCodeTo) {
+    public void setSgrchrtTermCodeTo(String sgrchrtTermCodeTo) {
         this.sgrchrtTermCodeTo = sgrchrtTermCodeTo;
     }
 
-    public ChrtCtrlBlock__2 withSgrchrtTermCodeTo(Object sgrchrtTermCodeTo) {
+    public ChrtCtrlBlock__2 withSgrchrtTermCodeTo(String sgrchrtTermCodeTo) {
         this.sgrchrtTermCodeTo = sgrchrtTermCodeTo;
         return this;
     }

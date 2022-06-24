@@ -74,7 +74,7 @@ public class BlockScheduleSectionQuery100GetRequest {
      */
     @JsonProperty("keyblocTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCode;
+    private String keyblocTermCode;
     /**
      * Section
      * <p>
@@ -108,7 +108,7 @@ public class BlockScheduleSectionQuery100GetRequest {
      */
     @JsonProperty("keyblocBlckCode")
     @JsonPropertyDescription("Lineage reference object : keyblocBlckCode, Lookup lineage reference object : stvblck")
-    private Object keyblocBlckCode;
+    private String keyblocBlckCode;
     /**
      * Course
      * <p>
@@ -326,7 +326,7 @@ public class BlockScheduleSectionQuery100GetRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public Object getKeyblocTermCode() {
+    public String getKeyblocTermCode() {
         return keyblocTermCode;
     }
 
@@ -337,11 +337,11 @@ public class BlockScheduleSectionQuery100GetRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public void setKeyblocTermCode(Object keyblocTermCode) {
+    public void setKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
     }
 
-    public BlockScheduleSectionQuery100GetRequest withKeyblocTermCode(Object keyblocTermCode) {
+    public BlockScheduleSectionQuery100GetRequest withKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
         return this;
     }
@@ -434,7 +434,7 @@ public class BlockScheduleSectionQuery100GetRequest {
      * 
      */
     @JsonProperty("keyblocBlckCode")
-    public Object getKeyblocBlckCode() {
+    public String getKeyblocBlckCode() {
         return keyblocBlckCode;
     }
 
@@ -445,11 +445,11 @@ public class BlockScheduleSectionQuery100GetRequest {
      * 
      */
     @JsonProperty("keyblocBlckCode")
-    public void setKeyblocBlckCode(Object keyblocBlckCode) {
+    public void setKeyblocBlckCode(String keyblocBlckCode) {
         this.keyblocBlckCode = keyblocBlckCode;
     }
 
-    public BlockScheduleSectionQuery100GetRequest withKeyblocBlckCode(Object keyblocBlckCode) {
+    public BlockScheduleSectionQuery100GetRequest withKeyblocBlckCode(String keyblocBlckCode) {
         this.keyblocBlckCode = keyblocBlckCode;
         return this;
     }

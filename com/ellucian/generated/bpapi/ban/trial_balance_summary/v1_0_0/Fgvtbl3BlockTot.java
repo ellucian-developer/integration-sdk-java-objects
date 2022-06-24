@@ -36,70 +36,70 @@ public class Fgvtbl3BlockTot {
      */
     @JsonProperty("totalTitle")
     @JsonPropertyDescription("Lineage reference object : totalTitle")
-    private Object totalTitle;
+    private String totalTitle;
     /**
      * Lineage reference object : displayTotCurrDrCr
      * 
      */
     @JsonProperty("displayTotCurrDrCr")
     @JsonPropertyDescription("Lineage reference object : displayTotCurrDrCr")
-    private Object displayTotCurrDrCr;
+    private String displayTotCurrDrCr;
     /**
      * Lineage reference object : holdCurrTot
      * 
      */
     @JsonProperty("holdCurrTot")
     @JsonPropertyDescription("Lineage reference object : holdCurrTot")
-    private Object holdCurrTot;
+    private Double holdCurrTot;
     /**
      * Lineage reference object : curFundBal
      * 
      */
     @JsonProperty("curFundBal")
     @JsonPropertyDescription("Lineage reference object : curFundBal")
-    private Object curFundBal;
+    private Double curFundBal;
     /**
      * Lineage reference object : displayCurFund
      * 
      */
     @JsonProperty("displayCurFund")
     @JsonPropertyDescription("Lineage reference object : displayCurFund")
-    private Object displayCurFund;
+    private String displayCurFund;
     /**
      * Lineage reference object : begTotDrCrDesc
      * 
      */
     @JsonProperty("begTotDrCrDesc")
     @JsonPropertyDescription("Lineage reference object : begTotDrCrDesc")
-    private Object begTotDrCrDesc;
+    private String begTotDrCrDesc;
     /**
      * Lineage reference object : holdBegTot
      * 
      */
     @JsonProperty("holdBegTot")
     @JsonPropertyDescription("Lineage reference object : holdBegTot")
-    private Object holdBegTot;
+    private Double holdBegTot;
     /**
      * Lineage reference object : curTotDrCrDesc
      * 
      */
     @JsonProperty("curTotDrCrDesc")
     @JsonPropertyDescription("Lineage reference object : curTotDrCrDesc")
-    private Object curTotDrCrDesc;
+    private String curTotDrCrDesc;
     /**
      * Lineage reference object : displayTotBegDrCr
      * 
      */
     @JsonProperty("displayTotBegDrCr")
     @JsonPropertyDescription("Lineage reference object : displayTotBegDrCr")
-    private Object displayTotBegDrCr;
+    private String displayTotBegDrCr;
     /**
      * Lineage reference object : curFundBalDrCrDesc
      * 
      */
     @JsonProperty("curFundBalDrCrDesc")
     @JsonPropertyDescription("Lineage reference object : curFundBalDrCrDesc")
-    private Object curFundBalDrCrDesc;
+    private String curFundBalDrCrDesc;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -110,7 +110,7 @@ public class Fgvtbl3BlockTot {
      * 
      */
     @JsonProperty("totalTitle")
-    public Object getTotalTitle() {
+    public String getTotalTitle() {
         return totalTitle;
     }
 
@@ -121,11 +121,11 @@ public class Fgvtbl3BlockTot {
      * 
      */
     @JsonProperty("totalTitle")
-    public void setTotalTitle(Object totalTitle) {
+    public void setTotalTitle(String totalTitle) {
         this.totalTitle = totalTitle;
     }
 
-    public Fgvtbl3BlockTot withTotalTitle(Object totalTitle) {
+    public Fgvtbl3BlockTot withTotalTitle(String totalTitle) {
         this.totalTitle = totalTitle;
         return this;
     }
@@ -135,7 +135,7 @@ public class Fgvtbl3BlockTot {
      * 
      */
     @JsonProperty("displayTotCurrDrCr")
-    public Object getDisplayTotCurrDrCr() {
+    public String getDisplayTotCurrDrCr() {
         return displayTotCurrDrCr;
     }
 
@@ -144,11 +144,11 @@ public class Fgvtbl3BlockTot {
      * 
      */
     @JsonProperty("displayTotCurrDrCr")
-    public void setDisplayTotCurrDrCr(Object displayTotCurrDrCr) {
+    public void setDisplayTotCurrDrCr(String displayTotCurrDrCr) {
         this.displayTotCurrDrCr = displayTotCurrDrCr;
     }
 
-    public Fgvtbl3BlockTot withDisplayTotCurrDrCr(Object displayTotCurrDrCr) {
+    public Fgvtbl3BlockTot withDisplayTotCurrDrCr(String displayTotCurrDrCr) {
         this.displayTotCurrDrCr = displayTotCurrDrCr;
         return this;
     }
@@ -158,7 +158,7 @@ public class Fgvtbl3BlockTot {
      * 
      */
     @JsonProperty("holdCurrTot")
-    public Object getHoldCurrTot() {
+    public Double getHoldCurrTot() {
         return holdCurrTot;
     }
 
@@ -167,11 +167,11 @@ public class Fgvtbl3BlockTot {
      * 
      */
     @JsonProperty("holdCurrTot")
-    public void setHoldCurrTot(Object holdCurrTot) {
+    public void setHoldCurrTot(Double holdCurrTot) {
         this.holdCurrTot = holdCurrTot;
     }
 
-    public Fgvtbl3BlockTot withHoldCurrTot(Object holdCurrTot) {
+    public Fgvtbl3BlockTot withHoldCurrTot(Double holdCurrTot) {
         this.holdCurrTot = holdCurrTot;
         return this;
     }
@@ -181,7 +181,7 @@ public class Fgvtbl3BlockTot {
      * 
      */
     @JsonProperty("curFundBal")
-    public Object getCurFundBal() {
+    public Double getCurFundBal() {
         return curFundBal;
     }
 
@@ -190,11 +190,11 @@ public class Fgvtbl3BlockTot {
      * 
      */
     @JsonProperty("curFundBal")
-    public void setCurFundBal(Object curFundBal) {
+    public void setCurFundBal(Double curFundBal) {
         this.curFundBal = curFundBal;
     }
 
-    public Fgvtbl3BlockTot withCurFundBal(Object curFundBal) {
+    public Fgvtbl3BlockTot withCurFundBal(Double curFundBal) {
         this.curFundBal = curFundBal;
         return this;
     }
@@ -204,7 +204,7 @@ public class Fgvtbl3BlockTot {
      * 
      */
     @JsonProperty("displayCurFund")
-    public Object getDisplayCurFund() {
+    public String getDisplayCurFund() {
         return displayCurFund;
     }
 
@@ -213,11 +213,11 @@ public class Fgvtbl3BlockTot {
      * 
      */
     @JsonProperty("displayCurFund")
-    public void setDisplayCurFund(Object displayCurFund) {
+    public void setDisplayCurFund(String displayCurFund) {
         this.displayCurFund = displayCurFund;
     }
 
-    public Fgvtbl3BlockTot withDisplayCurFund(Object displayCurFund) {
+    public Fgvtbl3BlockTot withDisplayCurFund(String displayCurFund) {
         this.displayCurFund = displayCurFund;
         return this;
     }
@@ -227,7 +227,7 @@ public class Fgvtbl3BlockTot {
      * 
      */
     @JsonProperty("begTotDrCrDesc")
-    public Object getBegTotDrCrDesc() {
+    public String getBegTotDrCrDesc() {
         return begTotDrCrDesc;
     }
 
@@ -236,11 +236,11 @@ public class Fgvtbl3BlockTot {
      * 
      */
     @JsonProperty("begTotDrCrDesc")
-    public void setBegTotDrCrDesc(Object begTotDrCrDesc) {
+    public void setBegTotDrCrDesc(String begTotDrCrDesc) {
         this.begTotDrCrDesc = begTotDrCrDesc;
     }
 
-    public Fgvtbl3BlockTot withBegTotDrCrDesc(Object begTotDrCrDesc) {
+    public Fgvtbl3BlockTot withBegTotDrCrDesc(String begTotDrCrDesc) {
         this.begTotDrCrDesc = begTotDrCrDesc;
         return this;
     }
@@ -250,7 +250,7 @@ public class Fgvtbl3BlockTot {
      * 
      */
     @JsonProperty("holdBegTot")
-    public Object getHoldBegTot() {
+    public Double getHoldBegTot() {
         return holdBegTot;
     }
 
@@ -259,11 +259,11 @@ public class Fgvtbl3BlockTot {
      * 
      */
     @JsonProperty("holdBegTot")
-    public void setHoldBegTot(Object holdBegTot) {
+    public void setHoldBegTot(Double holdBegTot) {
         this.holdBegTot = holdBegTot;
     }
 
-    public Fgvtbl3BlockTot withHoldBegTot(Object holdBegTot) {
+    public Fgvtbl3BlockTot withHoldBegTot(Double holdBegTot) {
         this.holdBegTot = holdBegTot;
         return this;
     }
@@ -273,7 +273,7 @@ public class Fgvtbl3BlockTot {
      * 
      */
     @JsonProperty("curTotDrCrDesc")
-    public Object getCurTotDrCrDesc() {
+    public String getCurTotDrCrDesc() {
         return curTotDrCrDesc;
     }
 
@@ -282,11 +282,11 @@ public class Fgvtbl3BlockTot {
      * 
      */
     @JsonProperty("curTotDrCrDesc")
-    public void setCurTotDrCrDesc(Object curTotDrCrDesc) {
+    public void setCurTotDrCrDesc(String curTotDrCrDesc) {
         this.curTotDrCrDesc = curTotDrCrDesc;
     }
 
-    public Fgvtbl3BlockTot withCurTotDrCrDesc(Object curTotDrCrDesc) {
+    public Fgvtbl3BlockTot withCurTotDrCrDesc(String curTotDrCrDesc) {
         this.curTotDrCrDesc = curTotDrCrDesc;
         return this;
     }
@@ -296,7 +296,7 @@ public class Fgvtbl3BlockTot {
      * 
      */
     @JsonProperty("displayTotBegDrCr")
-    public Object getDisplayTotBegDrCr() {
+    public String getDisplayTotBegDrCr() {
         return displayTotBegDrCr;
     }
 
@@ -305,11 +305,11 @@ public class Fgvtbl3BlockTot {
      * 
      */
     @JsonProperty("displayTotBegDrCr")
-    public void setDisplayTotBegDrCr(Object displayTotBegDrCr) {
+    public void setDisplayTotBegDrCr(String displayTotBegDrCr) {
         this.displayTotBegDrCr = displayTotBegDrCr;
     }
 
-    public Fgvtbl3BlockTot withDisplayTotBegDrCr(Object displayTotBegDrCr) {
+    public Fgvtbl3BlockTot withDisplayTotBegDrCr(String displayTotBegDrCr) {
         this.displayTotBegDrCr = displayTotBegDrCr;
         return this;
     }
@@ -319,7 +319,7 @@ public class Fgvtbl3BlockTot {
      * 
      */
     @JsonProperty("curFundBalDrCrDesc")
-    public Object getCurFundBalDrCrDesc() {
+    public String getCurFundBalDrCrDesc() {
         return curFundBalDrCrDesc;
     }
 
@@ -328,11 +328,11 @@ public class Fgvtbl3BlockTot {
      * 
      */
     @JsonProperty("curFundBalDrCrDesc")
-    public void setCurFundBalDrCrDesc(Object curFundBalDrCrDesc) {
+    public void setCurFundBalDrCrDesc(String curFundBalDrCrDesc) {
         this.curFundBalDrCrDesc = curFundBalDrCrDesc;
     }
 
-    public Fgvtbl3BlockTot withCurFundBalDrCrDesc(Object curFundBalDrCrDesc) {
+    public Fgvtbl3BlockTot withCurFundBalDrCrDesc(String curFundBalDrCrDesc) {
         this.curFundBalDrCrDesc = curFundBalDrCrDesc;
         return this;
     }

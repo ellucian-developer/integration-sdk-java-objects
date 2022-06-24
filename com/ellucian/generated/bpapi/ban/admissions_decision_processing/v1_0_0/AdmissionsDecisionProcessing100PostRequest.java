@@ -31,7 +31,7 @@ public class AdmissionsDecisionProcessing100PostRequest {
      */
     @JsonProperty("keyblocTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCode;
+    private String keyblocTermCode;
     /**
      * Decision Code
      * <p>
@@ -60,7 +60,7 @@ public class AdmissionsDecisionProcessing100PostRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -71,7 +71,7 @@ public class AdmissionsDecisionProcessing100PostRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public Object getKeyblocTermCode() {
+    public String getKeyblocTermCode() {
         return keyblocTermCode;
     }
 
@@ -82,11 +82,11 @@ public class AdmissionsDecisionProcessing100PostRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public void setKeyblocTermCode(Object keyblocTermCode) {
+    public void setKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
     }
 
-    public AdmissionsDecisionProcessing100PostRequest withKeyblocTermCode(Object keyblocTermCode) {
+    public AdmissionsDecisionProcessing100PostRequest withKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
         return this;
     }
@@ -156,7 +156,7 @@ public class AdmissionsDecisionProcessing100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -167,11 +167,11 @@ public class AdmissionsDecisionProcessing100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public AdmissionsDecisionProcessing100PostRequest withId(Object id) {
+    public AdmissionsDecisionProcessing100PostRequest withId(String id) {
         this.id = id;
         return this;
     }

@@ -77,7 +77,7 @@ public class DirectCashReceipt100PostRequest {
      */
     @JsonProperty("documentNumber")
     @JsonPropertyDescription("Lineage reference object : documentNumber")
-    private Object documentNumber;
+    private String documentNumber;
     /**
      * Sequence
      * <p>
@@ -160,7 +160,7 @@ public class DirectCashReceipt100PostRequest {
      */
     @JsonProperty("vendor")
     @JsonPropertyDescription("Lineage reference object : keyBlockVendor")
-    private Object vendor;
+    private String vendor;
     /**
      * Description
      * <p>
@@ -339,7 +339,7 @@ public class DirectCashReceipt100PostRequest {
      * 
      */
     @JsonProperty("documentNumber")
-    public Object getDocumentNumber() {
+    public String getDocumentNumber() {
         return documentNumber;
     }
 
@@ -350,11 +350,11 @@ public class DirectCashReceipt100PostRequest {
      * 
      */
     @JsonProperty("documentNumber")
-    public void setDocumentNumber(Object documentNumber) {
+    public void setDocumentNumber(String documentNumber) {
         this.documentNumber = documentNumber;
     }
 
-    public DirectCashReceipt100PostRequest withDocumentNumber(Object documentNumber) {
+    public DirectCashReceipt100PostRequest withDocumentNumber(String documentNumber) {
         this.documentNumber = documentNumber;
         return this;
     }
@@ -586,7 +586,7 @@ public class DirectCashReceipt100PostRequest {
      * 
      */
     @JsonProperty("vendor")
-    public Object getVendor() {
+    public String getVendor() {
         return vendor;
     }
 
@@ -597,11 +597,11 @@ public class DirectCashReceipt100PostRequest {
      * 
      */
     @JsonProperty("vendor")
-    public void setVendor(Object vendor) {
+    public void setVendor(String vendor) {
         this.vendor = vendor;
     }
 
-    public DirectCashReceipt100PostRequest withVendor(Object vendor) {
+    public DirectCashReceipt100PostRequest withVendor(String vendor) {
         this.vendor = vendor;
         return this;
     }

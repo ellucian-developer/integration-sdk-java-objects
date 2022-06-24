@@ -42,7 +42,7 @@ public class JournalVoucherQuick100PutRequest {
      */
     @JsonProperty("documentNumber")
     @JsonPropertyDescription("Lineage reference object : documentNumber")
-    private Object documentNumber;
+    private String documentNumber;
     /**
      * Transaction Date
      * <p>
@@ -117,7 +117,7 @@ public class JournalVoucherQuick100PutRequest {
      * 
      */
     @JsonProperty("documentNumber")
-    public Object getDocumentNumber() {
+    public String getDocumentNumber() {
         return documentNumber;
     }
 
@@ -128,11 +128,11 @@ public class JournalVoucherQuick100PutRequest {
      * 
      */
     @JsonProperty("documentNumber")
-    public void setDocumentNumber(Object documentNumber) {
+    public void setDocumentNumber(String documentNumber) {
         this.documentNumber = documentNumber;
     }
 
-    public JournalVoucherQuick100PutRequest withDocumentNumber(Object documentNumber) {
+    public JournalVoucherQuick100PutRequest withDocumentNumber(String documentNumber) {
         this.documentNumber = documentNumber;
         return this;
     }

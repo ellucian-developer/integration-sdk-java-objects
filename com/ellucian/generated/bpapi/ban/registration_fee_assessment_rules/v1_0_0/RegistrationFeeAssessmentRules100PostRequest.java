@@ -93,7 +93,7 @@ public class RegistrationFeeAssessmentRules100PostRequest {
      */
     @JsonProperty("blockKeyEntryType")
     @JsonPropertyDescription("Lineage reference object : entryType")
-    private Object blockKeyEntryType;
+    private String blockKeyEntryType;
     /**
      * Curricula
      * <p>
@@ -266,7 +266,7 @@ public class RegistrationFeeAssessmentRules100PostRequest {
      */
     @JsonProperty("ruleType")
     @JsonPropertyDescription("Lineage reference object : ruleType")
-    private Object ruleType;
+    private String ruleType;
     /**
      * Class
      * <p>
@@ -383,7 +383,7 @@ public class RegistrationFeeAssessmentRules100PostRequest {
      */
     @JsonProperty("setCopyIndEnMassInd")
     @JsonPropertyDescription("Lineage reference object : setCopyIndEnMassInd")
-    private Object setCopyIndEnMassInd;
+    private String setCopyIndEnMassInd;
     /**
      * Lineage reference object : SFRRGFE_ASSESS_BY_COURSE_IND
      * 
@@ -480,7 +480,7 @@ public class RegistrationFeeAssessmentRules100PostRequest {
      */
     @JsonProperty("termCode")
     @JsonPropertyDescription("Lineage reference object : termCode, Lookup lineage reference object : stvterm")
-    private Object termCode;
+    private String termCode;
     /**
      * Lineage reference object : SFRRGFE_COPY_IND
      * 
@@ -561,7 +561,7 @@ public class RegistrationFeeAssessmentRules100PostRequest {
      * 
      */
     @JsonProperty("blockKeyEntryType")
-    public Object getBlockKeyEntryType() {
+    public String getBlockKeyEntryType() {
         return blockKeyEntryType;
     }
 
@@ -572,11 +572,11 @@ public class RegistrationFeeAssessmentRules100PostRequest {
      * 
      */
     @JsonProperty("blockKeyEntryType")
-    public void setBlockKeyEntryType(Object blockKeyEntryType) {
+    public void setBlockKeyEntryType(String blockKeyEntryType) {
         this.blockKeyEntryType = blockKeyEntryType;
     }
 
-    public RegistrationFeeAssessmentRules100PostRequest withBlockKeyEntryType(Object blockKeyEntryType) {
+    public RegistrationFeeAssessmentRules100PostRequest withBlockKeyEntryType(String blockKeyEntryType) {
         this.blockKeyEntryType = blockKeyEntryType;
         return this;
     }
@@ -1078,7 +1078,7 @@ public class RegistrationFeeAssessmentRules100PostRequest {
      * 
      */
     @JsonProperty("ruleType")
-    public Object getRuleType() {
+    public String getRuleType() {
         return ruleType;
     }
 
@@ -1089,11 +1089,11 @@ public class RegistrationFeeAssessmentRules100PostRequest {
      * 
      */
     @JsonProperty("ruleType")
-    public void setRuleType(Object ruleType) {
+    public void setRuleType(String ruleType) {
         this.ruleType = ruleType;
     }
 
-    public RegistrationFeeAssessmentRules100PostRequest withRuleType(Object ruleType) {
+    public RegistrationFeeAssessmentRules100PostRequest withRuleType(String ruleType) {
         this.ruleType = ruleType;
         return this;
     }
@@ -1429,7 +1429,7 @@ public class RegistrationFeeAssessmentRules100PostRequest {
      * 
      */
     @JsonProperty("setCopyIndEnMassInd")
-    public Object getSetCopyIndEnMassInd() {
+    public String getSetCopyIndEnMassInd() {
         return setCopyIndEnMassInd;
     }
 
@@ -1440,11 +1440,11 @@ public class RegistrationFeeAssessmentRules100PostRequest {
      * 
      */
     @JsonProperty("setCopyIndEnMassInd")
-    public void setSetCopyIndEnMassInd(Object setCopyIndEnMassInd) {
+    public void setSetCopyIndEnMassInd(String setCopyIndEnMassInd) {
         this.setCopyIndEnMassInd = setCopyIndEnMassInd;
     }
 
-    public RegistrationFeeAssessmentRules100PostRequest withSetCopyIndEnMassInd(Object setCopyIndEnMassInd) {
+    public RegistrationFeeAssessmentRules100PostRequest withSetCopyIndEnMassInd(String setCopyIndEnMassInd) {
         this.setCopyIndEnMassInd = setCopyIndEnMassInd;
         return this;
     }
@@ -1722,7 +1722,7 @@ public class RegistrationFeeAssessmentRules100PostRequest {
      * 
      */
     @JsonProperty("termCode")
-    public Object getTermCode() {
+    public String getTermCode() {
         return termCode;
     }
 
@@ -1733,11 +1733,11 @@ public class RegistrationFeeAssessmentRules100PostRequest {
      * 
      */
     @JsonProperty("termCode")
-    public void setTermCode(Object termCode) {
+    public void setTermCode(String termCode) {
         this.termCode = termCode;
     }
 
-    public RegistrationFeeAssessmentRules100PostRequest withTermCode(Object termCode) {
+    public RegistrationFeeAssessmentRules100PostRequest withTermCode(String termCode) {
         this.termCode = termCode;
         return this;
     }

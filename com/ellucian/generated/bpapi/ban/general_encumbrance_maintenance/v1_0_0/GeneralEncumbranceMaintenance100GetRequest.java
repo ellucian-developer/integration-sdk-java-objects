@@ -27,7 +27,7 @@ public class GeneralEncumbranceMaintenance100GetRequest {
      */
     @JsonProperty("docN")
     @JsonPropertyDescription("Lineage reference object : documentNumber")
-    private Object docN;
+    private String docN;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -38,7 +38,7 @@ public class GeneralEncumbranceMaintenance100GetRequest {
      * 
      */
     @JsonProperty("docN")
-    public Object getDocN() {
+    public String getDocN() {
         return docN;
     }
 
@@ -49,11 +49,11 @@ public class GeneralEncumbranceMaintenance100GetRequest {
      * 
      */
     @JsonProperty("docN")
-    public void setDocN(Object docN) {
+    public void setDocN(String docN) {
         this.docN = docN;
     }
 
-    public GeneralEncumbranceMaintenance100GetRequest withDocN(Object docN) {
+    public GeneralEncumbranceMaintenance100GetRequest withDocN(String docN) {
         this.docN = docN;
         return this;
     }

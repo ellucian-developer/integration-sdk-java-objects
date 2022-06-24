@@ -1,8 +1,9 @@
 
 package com.ellucian.generated.bpapi.ban.course_detail_information_transfer_institutions.v1_0_0;
 
-import java.util.Date;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
@@ -10,131 +11,68 @@ import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "sbgiDescription",
-    "agreementDate",
-    "sbgiCode"
+    "scacrse_key_block",
+    "sbgi_ctrl_block",
+    "scrsbgi"
 })
 @Generated("jsonschema2pojo")
 public class CourseDetailInformationTransferInstitutions100GetResponse {
 
-    /**
-     * Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("sbgiDescription")
-    private String sbgiDescription;
-    /**
-     * Agreement Date
-     * <p>
-     * Lineage reference object : SCRSBGI_AGREEMENT_DATE
-     * (Required)
-     * 
-     */
-    @JsonProperty("agreementDate")
-    @JsonPropertyDescription("Lineage reference object : SCRSBGI_AGREEMENT_DATE")
-    private Date agreementDate;
-    /**
-     * Source
-     * <p>
-     * Lineage reference object : SCRSBGI_SBGI_CODE
-     * (Required)
-     * 
-     */
-    @JsonProperty("sbgiCode")
-    @JsonPropertyDescription("Lineage reference object : SCRSBGI_SBGI_CODE")
-    private String sbgiCode;
+    @JsonProperty("scacrse_key_block")
+    private List<ScacrseKeyBlock> scacrseKeyBlock = new ArrayList<ScacrseKeyBlock>();
+    @JsonProperty("sbgi_ctrl_block")
+    private List<SbgiCtrlBlock> sbgiCtrlBlock = new ArrayList<SbgiCtrlBlock>();
+    @JsonProperty("scrsbgi")
+    private List<Scrsbgi> scrsbgi = new ArrayList<Scrsbgi>();
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    /**
-     * Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("sbgiDescription")
-    public String getSbgiDescription() {
-        return sbgiDescription;
+    @JsonProperty("scacrse_key_block")
+    public List<ScacrseKeyBlock> getScacrseKeyBlock() {
+        return scacrseKeyBlock;
     }
 
-    /**
-     * Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("sbgiDescription")
-    public void setSbgiDescription(String sbgiDescription) {
-        this.sbgiDescription = sbgiDescription;
+    @JsonProperty("scacrse_key_block")
+    public void setScacrseKeyBlock(List<ScacrseKeyBlock> scacrseKeyBlock) {
+        this.scacrseKeyBlock = scacrseKeyBlock;
     }
 
-    public CourseDetailInformationTransferInstitutions100GetResponse withSbgiDescription(String sbgiDescription) {
-        this.sbgiDescription = sbgiDescription;
+    public CourseDetailInformationTransferInstitutions100GetResponse withScacrseKeyBlock(List<ScacrseKeyBlock> scacrseKeyBlock) {
+        this.scacrseKeyBlock = scacrseKeyBlock;
         return this;
     }
 
-    /**
-     * Agreement Date
-     * <p>
-     * Lineage reference object : SCRSBGI_AGREEMENT_DATE
-     * (Required)
-     * 
-     */
-    @JsonProperty("agreementDate")
-    public Date getAgreementDate() {
-        return agreementDate;
+    @JsonProperty("sbgi_ctrl_block")
+    public List<SbgiCtrlBlock> getSbgiCtrlBlock() {
+        return sbgiCtrlBlock;
     }
 
-    /**
-     * Agreement Date
-     * <p>
-     * Lineage reference object : SCRSBGI_AGREEMENT_DATE
-     * (Required)
-     * 
-     */
-    @JsonProperty("agreementDate")
-    public void setAgreementDate(Date agreementDate) {
-        this.agreementDate = agreementDate;
+    @JsonProperty("sbgi_ctrl_block")
+    public void setSbgiCtrlBlock(List<SbgiCtrlBlock> sbgiCtrlBlock) {
+        this.sbgiCtrlBlock = sbgiCtrlBlock;
     }
 
-    public CourseDetailInformationTransferInstitutions100GetResponse withAgreementDate(Date agreementDate) {
-        this.agreementDate = agreementDate;
+    public CourseDetailInformationTransferInstitutions100GetResponse withSbgiCtrlBlock(List<SbgiCtrlBlock> sbgiCtrlBlock) {
+        this.sbgiCtrlBlock = sbgiCtrlBlock;
         return this;
     }
 
-    /**
-     * Source
-     * <p>
-     * Lineage reference object : SCRSBGI_SBGI_CODE
-     * (Required)
-     * 
-     */
-    @JsonProperty("sbgiCode")
-    public String getSbgiCode() {
-        return sbgiCode;
+    @JsonProperty("scrsbgi")
+    public List<Scrsbgi> getScrsbgi() {
+        return scrsbgi;
     }
 
-    /**
-     * Source
-     * <p>
-     * Lineage reference object : SCRSBGI_SBGI_CODE
-     * (Required)
-     * 
-     */
-    @JsonProperty("sbgiCode")
-    public void setSbgiCode(String sbgiCode) {
-        this.sbgiCode = sbgiCode;
+    @JsonProperty("scrsbgi")
+    public void setScrsbgi(List<Scrsbgi> scrsbgi) {
+        this.scrsbgi = scrsbgi;
     }
 
-    public CourseDetailInformationTransferInstitutions100GetResponse withSbgiCode(String sbgiCode) {
-        this.sbgiCode = sbgiCode;
+    public CourseDetailInformationTransferInstitutions100GetResponse withScrsbgi(List<Scrsbgi> scrsbgi) {
+        this.scrsbgi = scrsbgi;
         return this;
     }
 
@@ -157,17 +95,17 @@ public class CourseDetailInformationTransferInstitutions100GetResponse {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(CourseDetailInformationTransferInstitutions100GetResponse.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
-        sb.append("sbgiDescription");
+        sb.append("scacrseKeyBlock");
         sb.append('=');
-        sb.append(((this.sbgiDescription == null)?"<null>":this.sbgiDescription));
+        sb.append(((this.scacrseKeyBlock == null)?"<null>":this.scacrseKeyBlock));
         sb.append(',');
-        sb.append("agreementDate");
+        sb.append("sbgiCtrlBlock");
         sb.append('=');
-        sb.append(((this.agreementDate == null)?"<null>":this.agreementDate));
+        sb.append(((this.sbgiCtrlBlock == null)?"<null>":this.sbgiCtrlBlock));
         sb.append(',');
-        sb.append("sbgiCode");
+        sb.append("scrsbgi");
         sb.append('=');
-        sb.append(((this.sbgiCode == null)?"<null>":this.sbgiCode));
+        sb.append(((this.scrsbgi == null)?"<null>":this.scrsbgi));
         sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');
@@ -184,10 +122,10 @@ public class CourseDetailInformationTransferInstitutions100GetResponse {
     @Override
     public int hashCode() {
         int result = 1;
-        result = ((result* 31)+((this.sbgiDescription == null)? 0 :this.sbgiDescription.hashCode()));
-        result = ((result* 31)+((this.sbgiCode == null)? 0 :this.sbgiCode.hashCode()));
+        result = ((result* 31)+((this.scacrseKeyBlock == null)? 0 :this.scacrseKeyBlock.hashCode()));
+        result = ((result* 31)+((this.sbgiCtrlBlock == null)? 0 :this.sbgiCtrlBlock.hashCode()));
+        result = ((result* 31)+((this.scrsbgi == null)? 0 :this.scrsbgi.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
-        result = ((result* 31)+((this.agreementDate == null)? 0 :this.agreementDate.hashCode()));
         return result;
     }
 
@@ -200,7 +138,7 @@ public class CourseDetailInformationTransferInstitutions100GetResponse {
             return false;
         }
         CourseDetailInformationTransferInstitutions100GetResponse rhs = ((CourseDetailInformationTransferInstitutions100GetResponse) other);
-        return (((((this.sbgiDescription == rhs.sbgiDescription)||((this.sbgiDescription!= null)&&this.sbgiDescription.equals(rhs.sbgiDescription)))&&((this.sbgiCode == rhs.sbgiCode)||((this.sbgiCode!= null)&&this.sbgiCode.equals(rhs.sbgiCode))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.agreementDate == rhs.agreementDate)||((this.agreementDate!= null)&&this.agreementDate.equals(rhs.agreementDate))));
+        return (((((this.scacrseKeyBlock == rhs.scacrseKeyBlock)||((this.scacrseKeyBlock!= null)&&this.scacrseKeyBlock.equals(rhs.scacrseKeyBlock)))&&((this.sbgiCtrlBlock == rhs.sbgiCtrlBlock)||((this.sbgiCtrlBlock!= null)&&this.sbgiCtrlBlock.equals(rhs.sbgiCtrlBlock))))&&((this.scrsbgi == rhs.scrsbgi)||((this.scrsbgi!= null)&&this.scrsbgi.equals(rhs.scrsbgi))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))));
     }
 
 }

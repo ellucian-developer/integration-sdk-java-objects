@@ -15,15 +15,18 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "persPrefFname",
+    "persPrefix",
+    "persLastName",
+    "persLegalName",
+    "persMrtlCode",
     "spridenId",
     "persMi",
     "persSuffix",
     "persSurnamePrefix",
-    "persPrefix",
     "persSsn",
     "spridenNtypCode",
-    "persLegalName",
-    "id"
+    "id",
+    "persFirstName"
 })
 @Generated("jsonschema2pojo")
 public class FinanceCurrentIdentification100PutRequest {
@@ -36,6 +39,39 @@ public class FinanceCurrentIdentification100PutRequest {
      */
     @JsonProperty("persPrefFname")
     private String persPrefFname;
+    /**
+     * Prefix
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("persPrefix")
+    private String persPrefix;
+    /**
+     * Last Name
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("persLastName")
+    private String persLastName;
+    /**
+     * Full Legal Name
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("persLegalName")
+    private String persLegalName;
+    /**
+     * Marital Status
+     * <p>
+     * Lookup lineage reference object : stvmrtl
+     * 
+     */
+    @JsonProperty("persMrtlCode")
+    @JsonPropertyDescription("Lookup lineage reference object : stvmrtl")
+    private String persMrtlCode;
     /**
      * ID
      * <p>
@@ -70,14 +106,6 @@ public class FinanceCurrentIdentification100PutRequest {
     @JsonProperty("persSurnamePrefix")
     private String persSurnamePrefix;
     /**
-     * Prefix
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("persPrefix")
-    private String persPrefix;
-    /**
      * SSN/SIN/TIN
      * <p>
      * 
@@ -95,14 +123,6 @@ public class FinanceCurrentIdentification100PutRequest {
     @JsonPropertyDescription("Lineage reference object : SPRIDEN_NTYP_CODE, Lookup lineage reference object : gtvntyp")
     private String spridenNtypCode;
     /**
-     * Full Legal Name
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("persLegalName")
-    private String persLegalName;
-    /**
      * ID
      * <p>
      * Lineage reference object : id
@@ -110,7 +130,15 @@ public class FinanceCurrentIdentification100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
+    /**
+     * First Name
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("persFirstName")
+    private String persFirstName;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -138,6 +166,114 @@ public class FinanceCurrentIdentification100PutRequest {
 
     public FinanceCurrentIdentification100PutRequest withPersPrefFname(String persPrefFname) {
         this.persPrefFname = persPrefFname;
+        return this;
+    }
+
+    /**
+     * Prefix
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("persPrefix")
+    public String getPersPrefix() {
+        return persPrefix;
+    }
+
+    /**
+     * Prefix
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("persPrefix")
+    public void setPersPrefix(String persPrefix) {
+        this.persPrefix = persPrefix;
+    }
+
+    public FinanceCurrentIdentification100PutRequest withPersPrefix(String persPrefix) {
+        this.persPrefix = persPrefix;
+        return this;
+    }
+
+    /**
+     * Last Name
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("persLastName")
+    public String getPersLastName() {
+        return persLastName;
+    }
+
+    /**
+     * Last Name
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("persLastName")
+    public void setPersLastName(String persLastName) {
+        this.persLastName = persLastName;
+    }
+
+    public FinanceCurrentIdentification100PutRequest withPersLastName(String persLastName) {
+        this.persLastName = persLastName;
+        return this;
+    }
+
+    /**
+     * Full Legal Name
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("persLegalName")
+    public String getPersLegalName() {
+        return persLegalName;
+    }
+
+    /**
+     * Full Legal Name
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("persLegalName")
+    public void setPersLegalName(String persLegalName) {
+        this.persLegalName = persLegalName;
+    }
+
+    public FinanceCurrentIdentification100PutRequest withPersLegalName(String persLegalName) {
+        this.persLegalName = persLegalName;
+        return this;
+    }
+
+    /**
+     * Marital Status
+     * <p>
+     * Lookup lineage reference object : stvmrtl
+     * 
+     */
+    @JsonProperty("persMrtlCode")
+    public String getPersMrtlCode() {
+        return persMrtlCode;
+    }
+
+    /**
+     * Marital Status
+     * <p>
+     * Lookup lineage reference object : stvmrtl
+     * 
+     */
+    @JsonProperty("persMrtlCode")
+    public void setPersMrtlCode(String persMrtlCode) {
+        this.persMrtlCode = persMrtlCode;
+    }
+
+    public FinanceCurrentIdentification100PutRequest withPersMrtlCode(String persMrtlCode) {
+        this.persMrtlCode = persMrtlCode;
         return this;
     }
 
@@ -250,33 +386,6 @@ public class FinanceCurrentIdentification100PutRequest {
     }
 
     /**
-     * Prefix
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("persPrefix")
-    public String getPersPrefix() {
-        return persPrefix;
-    }
-
-    /**
-     * Prefix
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("persPrefix")
-    public void setPersPrefix(String persPrefix) {
-        this.persPrefix = persPrefix;
-    }
-
-    public FinanceCurrentIdentification100PutRequest withPersPrefix(String persPrefix) {
-        this.persPrefix = persPrefix;
-        return this;
-    }
-
-    /**
      * SSN/SIN/TIN
      * <p>
      * 
@@ -331,40 +440,13 @@ public class FinanceCurrentIdentification100PutRequest {
     }
 
     /**
-     * Full Legal Name
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("persLegalName")
-    public String getPersLegalName() {
-        return persLegalName;
-    }
-
-    /**
-     * Full Legal Name
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("persLegalName")
-    public void setPersLegalName(String persLegalName) {
-        this.persLegalName = persLegalName;
-    }
-
-    public FinanceCurrentIdentification100PutRequest withPersLegalName(String persLegalName) {
-        this.persLegalName = persLegalName;
-        return this;
-    }
-
-    /**
      * ID
      * <p>
      * Lineage reference object : id
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -375,12 +457,39 @@ public class FinanceCurrentIdentification100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public FinanceCurrentIdentification100PutRequest withId(Object id) {
+    public FinanceCurrentIdentification100PutRequest withId(String id) {
         this.id = id;
+        return this;
+    }
+
+    /**
+     * First Name
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("persFirstName")
+    public String getPersFirstName() {
+        return persFirstName;
+    }
+
+    /**
+     * First Name
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("persFirstName")
+    public void setPersFirstName(String persFirstName) {
+        this.persFirstName = persFirstName;
+    }
+
+    public FinanceCurrentIdentification100PutRequest withPersFirstName(String persFirstName) {
+        this.persFirstName = persFirstName;
         return this;
     }
 
@@ -407,6 +516,22 @@ public class FinanceCurrentIdentification100PutRequest {
         sb.append('=');
         sb.append(((this.persPrefFname == null)?"<null>":this.persPrefFname));
         sb.append(',');
+        sb.append("persPrefix");
+        sb.append('=');
+        sb.append(((this.persPrefix == null)?"<null>":this.persPrefix));
+        sb.append(',');
+        sb.append("persLastName");
+        sb.append('=');
+        sb.append(((this.persLastName == null)?"<null>":this.persLastName));
+        sb.append(',');
+        sb.append("persLegalName");
+        sb.append('=');
+        sb.append(((this.persLegalName == null)?"<null>":this.persLegalName));
+        sb.append(',');
+        sb.append("persMrtlCode");
+        sb.append('=');
+        sb.append(((this.persMrtlCode == null)?"<null>":this.persMrtlCode));
+        sb.append(',');
         sb.append("spridenId");
         sb.append('=');
         sb.append(((this.spridenId == null)?"<null>":this.spridenId));
@@ -423,10 +548,6 @@ public class FinanceCurrentIdentification100PutRequest {
         sb.append('=');
         sb.append(((this.persSurnamePrefix == null)?"<null>":this.persSurnamePrefix));
         sb.append(',');
-        sb.append("persPrefix");
-        sb.append('=');
-        sb.append(((this.persPrefix == null)?"<null>":this.persPrefix));
-        sb.append(',');
         sb.append("persSsn");
         sb.append('=');
         sb.append(((this.persSsn == null)?"<null>":this.persSsn));
@@ -435,13 +556,13 @@ public class FinanceCurrentIdentification100PutRequest {
         sb.append('=');
         sb.append(((this.spridenNtypCode == null)?"<null>":this.spridenNtypCode));
         sb.append(',');
-        sb.append("persLegalName");
-        sb.append('=');
-        sb.append(((this.persLegalName == null)?"<null>":this.persLegalName));
-        sb.append(',');
         sb.append("id");
         sb.append('=');
         sb.append(((this.id == null)?"<null>":this.id));
+        sb.append(',');
+        sb.append("persFirstName");
+        sb.append('=');
+        sb.append(((this.persFirstName == null)?"<null>":this.persFirstName));
         sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');
@@ -459,16 +580,19 @@ public class FinanceCurrentIdentification100PutRequest {
     public int hashCode() {
         int result = 1;
         result = ((result* 31)+((this.persPrefFname == null)? 0 :this.persPrefFname.hashCode()));
+        result = ((result* 31)+((this.persPrefix == null)? 0 :this.persPrefix.hashCode()));
+        result = ((result* 31)+((this.persLastName == null)? 0 :this.persLastName.hashCode()));
+        result = ((result* 31)+((this.persLegalName == null)? 0 :this.persLegalName.hashCode()));
+        result = ((result* 31)+((this.persMrtlCode == null)? 0 :this.persMrtlCode.hashCode()));
         result = ((result* 31)+((this.spridenId == null)? 0 :this.spridenId.hashCode()));
         result = ((result* 31)+((this.persMi == null)? 0 :this.persMi.hashCode()));
         result = ((result* 31)+((this.persSuffix == null)? 0 :this.persSuffix.hashCode()));
         result = ((result* 31)+((this.persSurnamePrefix == null)? 0 :this.persSurnamePrefix.hashCode()));
-        result = ((result* 31)+((this.persPrefix == null)? 0 :this.persPrefix.hashCode()));
         result = ((result* 31)+((this.persSsn == null)? 0 :this.persSsn.hashCode()));
         result = ((result* 31)+((this.spridenNtypCode == null)? 0 :this.spridenNtypCode.hashCode()));
-        result = ((result* 31)+((this.persLegalName == null)? 0 :this.persLegalName.hashCode()));
         result = ((result* 31)+((this.id == null)? 0 :this.id.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
+        result = ((result* 31)+((this.persFirstName == null)? 0 :this.persFirstName.hashCode()));
         return result;
     }
 
@@ -481,7 +605,7 @@ public class FinanceCurrentIdentification100PutRequest {
             return false;
         }
         FinanceCurrentIdentification100PutRequest rhs = ((FinanceCurrentIdentification100PutRequest) other);
-        return ((((((((((((this.persPrefFname == rhs.persPrefFname)||((this.persPrefFname!= null)&&this.persPrefFname.equals(rhs.persPrefFname)))&&((this.spridenId == rhs.spridenId)||((this.spridenId!= null)&&this.spridenId.equals(rhs.spridenId))))&&((this.persMi == rhs.persMi)||((this.persMi!= null)&&this.persMi.equals(rhs.persMi))))&&((this.persSuffix == rhs.persSuffix)||((this.persSuffix!= null)&&this.persSuffix.equals(rhs.persSuffix))))&&((this.persSurnamePrefix == rhs.persSurnamePrefix)||((this.persSurnamePrefix!= null)&&this.persSurnamePrefix.equals(rhs.persSurnamePrefix))))&&((this.persPrefix == rhs.persPrefix)||((this.persPrefix!= null)&&this.persPrefix.equals(rhs.persPrefix))))&&((this.persSsn == rhs.persSsn)||((this.persSsn!= null)&&this.persSsn.equals(rhs.persSsn))))&&((this.spridenNtypCode == rhs.spridenNtypCode)||((this.spridenNtypCode!= null)&&this.spridenNtypCode.equals(rhs.spridenNtypCode))))&&((this.persLegalName == rhs.persLegalName)||((this.persLegalName!= null)&&this.persLegalName.equals(rhs.persLegalName))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))));
+        return (((((((((((((((this.persPrefFname == rhs.persPrefFname)||((this.persPrefFname!= null)&&this.persPrefFname.equals(rhs.persPrefFname)))&&((this.persPrefix == rhs.persPrefix)||((this.persPrefix!= null)&&this.persPrefix.equals(rhs.persPrefix))))&&((this.persLastName == rhs.persLastName)||((this.persLastName!= null)&&this.persLastName.equals(rhs.persLastName))))&&((this.persLegalName == rhs.persLegalName)||((this.persLegalName!= null)&&this.persLegalName.equals(rhs.persLegalName))))&&((this.persMrtlCode == rhs.persMrtlCode)||((this.persMrtlCode!= null)&&this.persMrtlCode.equals(rhs.persMrtlCode))))&&((this.spridenId == rhs.spridenId)||((this.spridenId!= null)&&this.spridenId.equals(rhs.spridenId))))&&((this.persMi == rhs.persMi)||((this.persMi!= null)&&this.persMi.equals(rhs.persMi))))&&((this.persSuffix == rhs.persSuffix)||((this.persSuffix!= null)&&this.persSuffix.equals(rhs.persSuffix))))&&((this.persSurnamePrefix == rhs.persSurnamePrefix)||((this.persSurnamePrefix!= null)&&this.persSurnamePrefix.equals(rhs.persSurnamePrefix))))&&((this.persSsn == rhs.persSsn)||((this.persSsn!= null)&&this.persSsn.equals(rhs.persSsn))))&&((this.spridenNtypCode == rhs.spridenNtypCode)||((this.spridenNtypCode!= null)&&this.spridenNtypCode.equals(rhs.spridenNtypCode))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.persFirstName == rhs.persFirstName)||((this.persFirstName!= null)&&this.persFirstName.equals(rhs.persFirstName))));
     }
 
 }

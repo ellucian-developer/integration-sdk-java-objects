@@ -31,7 +31,7 @@ public class GeneralTextEntry100PostRequest {
      */
     @JsonProperty("keyblokDocCode")
     @JsonPropertyDescription("Lineage reference object : keyblokDocCode")
-    private Object keyblokDocCode;
+    private String keyblokDocCode;
     /**
      * Type
      * <p>
@@ -41,7 +41,7 @@ public class GeneralTextEntry100PostRequest {
      */
     @JsonProperty("keyblokDtypCode")
     @JsonPropertyDescription("Lineage reference object : keyblokDtypCode, Lookup lineage reference object : ftvdtyp")
-    private Object keyblokDtypCode;
+    private String keyblokDtypCode;
     /**
      * Lineage reference object : FOBTEXT_PRT_IND
      * 
@@ -77,7 +77,7 @@ public class GeneralTextEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblokDocCode")
-    public Object getKeyblokDocCode() {
+    public String getKeyblokDocCode() {
         return keyblokDocCode;
     }
 
@@ -88,11 +88,11 @@ public class GeneralTextEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblokDocCode")
-    public void setKeyblokDocCode(Object keyblokDocCode) {
+    public void setKeyblokDocCode(String keyblokDocCode) {
         this.keyblokDocCode = keyblokDocCode;
     }
 
-    public GeneralTextEntry100PostRequest withKeyblokDocCode(Object keyblokDocCode) {
+    public GeneralTextEntry100PostRequest withKeyblokDocCode(String keyblokDocCode) {
         this.keyblokDocCode = keyblokDocCode;
         return this;
     }
@@ -105,7 +105,7 @@ public class GeneralTextEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblokDtypCode")
-    public Object getKeyblokDtypCode() {
+    public String getKeyblokDtypCode() {
         return keyblokDtypCode;
     }
 
@@ -117,11 +117,11 @@ public class GeneralTextEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblokDtypCode")
-    public void setKeyblokDtypCode(Object keyblokDtypCode) {
+    public void setKeyblokDtypCode(String keyblokDtypCode) {
         this.keyblokDtypCode = keyblokDtypCode;
     }
 
-    public GeneralTextEntry100PostRequest withKeyblokDtypCode(Object keyblokDtypCode) {
+    public GeneralTextEntry100PostRequest withKeyblokDtypCode(String keyblokDtypCode) {
         this.keyblokDtypCode = keyblokDtypCode;
         return this;
     }

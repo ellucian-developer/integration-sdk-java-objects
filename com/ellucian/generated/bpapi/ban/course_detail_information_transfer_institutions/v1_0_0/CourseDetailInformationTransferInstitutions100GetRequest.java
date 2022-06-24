@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.course_detail_information_transfer_institutions.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -15,7 +16,9 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "scacrseCrseNumb",
+    "agreementDate",
     "scacrseSubjCode",
+    "sbgiCode",
     "scacrseTermCodeEff"
 })
 @Generated("jsonschema2pojo")
@@ -29,7 +32,17 @@ public class CourseDetailInformationTransferInstitutions100GetRequest {
      */
     @JsonProperty("scacrseCrseNumb")
     @JsonPropertyDescription("Lineage reference object : scacrseCrseNumb, Lookup lineage reference object : scbcrse,scbcrky")
-    private Object scacrseCrseNumb;
+    private String scacrseCrseNumb;
+    /**
+     * Agreement Date
+     * <p>
+     * Lineage reference object : SCRSBGI_AGREEMENT_DATE
+     * (Required)
+     * 
+     */
+    @JsonProperty("agreementDate")
+    @JsonPropertyDescription("Lineage reference object : SCRSBGI_AGREEMENT_DATE")
+    private Date agreementDate;
     /**
      * Subject
      * <p>
@@ -38,7 +51,17 @@ public class CourseDetailInformationTransferInstitutions100GetRequest {
      */
     @JsonProperty("scacrseSubjCode")
     @JsonPropertyDescription("Lineage reference object : scacrseSubjCode, Lookup lineage reference object : stvsubj")
-    private Object scacrseSubjCode;
+    private String scacrseSubjCode;
+    /**
+     * Source
+     * <p>
+     * Lineage reference object : SCRSBGI_SBGI_CODE
+     * (Required)
+     * 
+     */
+    @JsonProperty("sbgiCode")
+    @JsonPropertyDescription("Lineage reference object : SCRSBGI_SBGI_CODE")
+    private String sbgiCode;
     /**
      * Term
      * <p>
@@ -47,7 +70,7 @@ public class CourseDetailInformationTransferInstitutions100GetRequest {
      */
     @JsonProperty("scacrseTermCodeEff")
     @JsonPropertyDescription("Lineage reference object : scacrseTermCodeEff, Lookup lineage reference object : stvterm,scbcrky,scbcrky")
-    private Object scacrseTermCodeEff;
+    private String scacrseTermCodeEff;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -58,7 +81,7 @@ public class CourseDetailInformationTransferInstitutions100GetRequest {
      * 
      */
     @JsonProperty("scacrseCrseNumb")
-    public Object getScacrseCrseNumb() {
+    public String getScacrseCrseNumb() {
         return scacrseCrseNumb;
     }
 
@@ -69,12 +92,41 @@ public class CourseDetailInformationTransferInstitutions100GetRequest {
      * 
      */
     @JsonProperty("scacrseCrseNumb")
-    public void setScacrseCrseNumb(Object scacrseCrseNumb) {
+    public void setScacrseCrseNumb(String scacrseCrseNumb) {
         this.scacrseCrseNumb = scacrseCrseNumb;
     }
 
-    public CourseDetailInformationTransferInstitutions100GetRequest withScacrseCrseNumb(Object scacrseCrseNumb) {
+    public CourseDetailInformationTransferInstitutions100GetRequest withScacrseCrseNumb(String scacrseCrseNumb) {
         this.scacrseCrseNumb = scacrseCrseNumb;
+        return this;
+    }
+
+    /**
+     * Agreement Date
+     * <p>
+     * Lineage reference object : SCRSBGI_AGREEMENT_DATE
+     * (Required)
+     * 
+     */
+    @JsonProperty("agreementDate")
+    public Date getAgreementDate() {
+        return agreementDate;
+    }
+
+    /**
+     * Agreement Date
+     * <p>
+     * Lineage reference object : SCRSBGI_AGREEMENT_DATE
+     * (Required)
+     * 
+     */
+    @JsonProperty("agreementDate")
+    public void setAgreementDate(Date agreementDate) {
+        this.agreementDate = agreementDate;
+    }
+
+    public CourseDetailInformationTransferInstitutions100GetRequest withAgreementDate(Date agreementDate) {
+        this.agreementDate = agreementDate;
         return this;
     }
 
@@ -85,7 +137,7 @@ public class CourseDetailInformationTransferInstitutions100GetRequest {
      * 
      */
     @JsonProperty("scacrseSubjCode")
-    public Object getScacrseSubjCode() {
+    public String getScacrseSubjCode() {
         return scacrseSubjCode;
     }
 
@@ -96,12 +148,41 @@ public class CourseDetailInformationTransferInstitutions100GetRequest {
      * 
      */
     @JsonProperty("scacrseSubjCode")
-    public void setScacrseSubjCode(Object scacrseSubjCode) {
+    public void setScacrseSubjCode(String scacrseSubjCode) {
         this.scacrseSubjCode = scacrseSubjCode;
     }
 
-    public CourseDetailInformationTransferInstitutions100GetRequest withScacrseSubjCode(Object scacrseSubjCode) {
+    public CourseDetailInformationTransferInstitutions100GetRequest withScacrseSubjCode(String scacrseSubjCode) {
         this.scacrseSubjCode = scacrseSubjCode;
+        return this;
+    }
+
+    /**
+     * Source
+     * <p>
+     * Lineage reference object : SCRSBGI_SBGI_CODE
+     * (Required)
+     * 
+     */
+    @JsonProperty("sbgiCode")
+    public String getSbgiCode() {
+        return sbgiCode;
+    }
+
+    /**
+     * Source
+     * <p>
+     * Lineage reference object : SCRSBGI_SBGI_CODE
+     * (Required)
+     * 
+     */
+    @JsonProperty("sbgiCode")
+    public void setSbgiCode(String sbgiCode) {
+        this.sbgiCode = sbgiCode;
+    }
+
+    public CourseDetailInformationTransferInstitutions100GetRequest withSbgiCode(String sbgiCode) {
+        this.sbgiCode = sbgiCode;
         return this;
     }
 
@@ -112,7 +193,7 @@ public class CourseDetailInformationTransferInstitutions100GetRequest {
      * 
      */
     @JsonProperty("scacrseTermCodeEff")
-    public Object getScacrseTermCodeEff() {
+    public String getScacrseTermCodeEff() {
         return scacrseTermCodeEff;
     }
 
@@ -123,11 +204,11 @@ public class CourseDetailInformationTransferInstitutions100GetRequest {
      * 
      */
     @JsonProperty("scacrseTermCodeEff")
-    public void setScacrseTermCodeEff(Object scacrseTermCodeEff) {
+    public void setScacrseTermCodeEff(String scacrseTermCodeEff) {
         this.scacrseTermCodeEff = scacrseTermCodeEff;
     }
 
-    public CourseDetailInformationTransferInstitutions100GetRequest withScacrseTermCodeEff(Object scacrseTermCodeEff) {
+    public CourseDetailInformationTransferInstitutions100GetRequest withScacrseTermCodeEff(String scacrseTermCodeEff) {
         this.scacrseTermCodeEff = scacrseTermCodeEff;
         return this;
     }
@@ -155,9 +236,17 @@ public class CourseDetailInformationTransferInstitutions100GetRequest {
         sb.append('=');
         sb.append(((this.scacrseCrseNumb == null)?"<null>":this.scacrseCrseNumb));
         sb.append(',');
+        sb.append("agreementDate");
+        sb.append('=');
+        sb.append(((this.agreementDate == null)?"<null>":this.agreementDate));
+        sb.append(',');
         sb.append("scacrseSubjCode");
         sb.append('=');
         sb.append(((this.scacrseSubjCode == null)?"<null>":this.scacrseSubjCode));
+        sb.append(',');
+        sb.append("sbgiCode");
+        sb.append('=');
+        sb.append(((this.sbgiCode == null)?"<null>":this.sbgiCode));
         sb.append(',');
         sb.append("scacrseTermCodeEff");
         sb.append('=');
@@ -178,10 +267,12 @@ public class CourseDetailInformationTransferInstitutions100GetRequest {
     @Override
     public int hashCode() {
         int result = 1;
-        result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
         result = ((result* 31)+((this.scacrseCrseNumb == null)? 0 :this.scacrseCrseNumb.hashCode()));
-        result = ((result* 31)+((this.scacrseTermCodeEff == null)? 0 :this.scacrseTermCodeEff.hashCode()));
+        result = ((result* 31)+((this.agreementDate == null)? 0 :this.agreementDate.hashCode()));
         result = ((result* 31)+((this.scacrseSubjCode == null)? 0 :this.scacrseSubjCode.hashCode()));
+        result = ((result* 31)+((this.sbgiCode == null)? 0 :this.sbgiCode.hashCode()));
+        result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
+        result = ((result* 31)+((this.scacrseTermCodeEff == null)? 0 :this.scacrseTermCodeEff.hashCode()));
         return result;
     }
 
@@ -194,7 +285,7 @@ public class CourseDetailInformationTransferInstitutions100GetRequest {
             return false;
         }
         CourseDetailInformationTransferInstitutions100GetRequest rhs = ((CourseDetailInformationTransferInstitutions100GetRequest) other);
-        return (((((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties)))&&((this.scacrseCrseNumb == rhs.scacrseCrseNumb)||((this.scacrseCrseNumb!= null)&&this.scacrseCrseNumb.equals(rhs.scacrseCrseNumb))))&&((this.scacrseTermCodeEff == rhs.scacrseTermCodeEff)||((this.scacrseTermCodeEff!= null)&&this.scacrseTermCodeEff.equals(rhs.scacrseTermCodeEff))))&&((this.scacrseSubjCode == rhs.scacrseSubjCode)||((this.scacrseSubjCode!= null)&&this.scacrseSubjCode.equals(rhs.scacrseSubjCode))));
+        return (((((((this.scacrseCrseNumb == rhs.scacrseCrseNumb)||((this.scacrseCrseNumb!= null)&&this.scacrseCrseNumb.equals(rhs.scacrseCrseNumb)))&&((this.agreementDate == rhs.agreementDate)||((this.agreementDate!= null)&&this.agreementDate.equals(rhs.agreementDate))))&&((this.scacrseSubjCode == rhs.scacrseSubjCode)||((this.scacrseSubjCode!= null)&&this.scacrseSubjCode.equals(rhs.scacrseSubjCode))))&&((this.sbgiCode == rhs.sbgiCode)||((this.sbgiCode!= null)&&this.sbgiCode.equals(rhs.sbgiCode))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.scacrseTermCodeEff == rhs.scacrseTermCodeEff)||((this.scacrseTermCodeEff!= null)&&this.scacrseTermCodeEff.equals(rhs.scacrseTermCodeEff))));
     }
 
 }

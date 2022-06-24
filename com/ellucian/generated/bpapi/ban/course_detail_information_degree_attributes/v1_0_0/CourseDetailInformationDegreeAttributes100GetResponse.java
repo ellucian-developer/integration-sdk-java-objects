@@ -1,7 +1,9 @@
 
 package com.ellucian.generated.bpapi.ban.course_detail_information_degree_attributes.v1_0_0;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
@@ -9,73 +11,68 @@ import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "attrCode",
-    "attrDescription"
+    "scacrse_key_block",
+    "attr_ctrl_block",
+    "scrattr"
 })
 @Generated("jsonschema2pojo")
 public class CourseDetailInformationDegreeAttributes100GetResponse {
 
-    /**
-     * Attribute
-     * <p>
-     * Lineage reference object : SCRATTR_ATTR_CODE, Lookup lineage reference object : stvattr
-     * (Required)
-     * 
-     */
-    @JsonProperty("attrCode")
-    @JsonPropertyDescription("Lineage reference object : SCRATTR_ATTR_CODE, Lookup lineage reference object : stvattr")
-    private String attrCode;
-    @JsonProperty("attrDescription")
-    private String attrDescription;
+    @JsonProperty("scacrse_key_block")
+    private List<ScacrseKeyBlock> scacrseKeyBlock = new ArrayList<ScacrseKeyBlock>();
+    @JsonProperty("attr_ctrl_block")
+    private List<AttrCtrlBlock> attrCtrlBlock = new ArrayList<AttrCtrlBlock>();
+    @JsonProperty("scrattr")
+    private List<Scrattr> scrattr = new ArrayList<Scrattr>();
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    /**
-     * Attribute
-     * <p>
-     * Lineage reference object : SCRATTR_ATTR_CODE, Lookup lineage reference object : stvattr
-     * (Required)
-     * 
-     */
-    @JsonProperty("attrCode")
-    public String getAttrCode() {
-        return attrCode;
+    @JsonProperty("scacrse_key_block")
+    public List<ScacrseKeyBlock> getScacrseKeyBlock() {
+        return scacrseKeyBlock;
     }
 
-    /**
-     * Attribute
-     * <p>
-     * Lineage reference object : SCRATTR_ATTR_CODE, Lookup lineage reference object : stvattr
-     * (Required)
-     * 
-     */
-    @JsonProperty("attrCode")
-    public void setAttrCode(String attrCode) {
-        this.attrCode = attrCode;
+    @JsonProperty("scacrse_key_block")
+    public void setScacrseKeyBlock(List<ScacrseKeyBlock> scacrseKeyBlock) {
+        this.scacrseKeyBlock = scacrseKeyBlock;
     }
 
-    public CourseDetailInformationDegreeAttributes100GetResponse withAttrCode(String attrCode) {
-        this.attrCode = attrCode;
+    public CourseDetailInformationDegreeAttributes100GetResponse withScacrseKeyBlock(List<ScacrseKeyBlock> scacrseKeyBlock) {
+        this.scacrseKeyBlock = scacrseKeyBlock;
         return this;
     }
 
-    @JsonProperty("attrDescription")
-    public String getAttrDescription() {
-        return attrDescription;
+    @JsonProperty("attr_ctrl_block")
+    public List<AttrCtrlBlock> getAttrCtrlBlock() {
+        return attrCtrlBlock;
     }
 
-    @JsonProperty("attrDescription")
-    public void setAttrDescription(String attrDescription) {
-        this.attrDescription = attrDescription;
+    @JsonProperty("attr_ctrl_block")
+    public void setAttrCtrlBlock(List<AttrCtrlBlock> attrCtrlBlock) {
+        this.attrCtrlBlock = attrCtrlBlock;
     }
 
-    public CourseDetailInformationDegreeAttributes100GetResponse withAttrDescription(String attrDescription) {
-        this.attrDescription = attrDescription;
+    public CourseDetailInformationDegreeAttributes100GetResponse withAttrCtrlBlock(List<AttrCtrlBlock> attrCtrlBlock) {
+        this.attrCtrlBlock = attrCtrlBlock;
+        return this;
+    }
+
+    @JsonProperty("scrattr")
+    public List<Scrattr> getScrattr() {
+        return scrattr;
+    }
+
+    @JsonProperty("scrattr")
+    public void setScrattr(List<Scrattr> scrattr) {
+        this.scrattr = scrattr;
+    }
+
+    public CourseDetailInformationDegreeAttributes100GetResponse withScrattr(List<Scrattr> scrattr) {
+        this.scrattr = scrattr;
         return this;
     }
 
@@ -98,13 +95,17 @@ public class CourseDetailInformationDegreeAttributes100GetResponse {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(CourseDetailInformationDegreeAttributes100GetResponse.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
-        sb.append("attrCode");
+        sb.append("scacrseKeyBlock");
         sb.append('=');
-        sb.append(((this.attrCode == null)?"<null>":this.attrCode));
+        sb.append(((this.scacrseKeyBlock == null)?"<null>":this.scacrseKeyBlock));
         sb.append(',');
-        sb.append("attrDescription");
+        sb.append("attrCtrlBlock");
         sb.append('=');
-        sb.append(((this.attrDescription == null)?"<null>":this.attrDescription));
+        sb.append(((this.attrCtrlBlock == null)?"<null>":this.attrCtrlBlock));
+        sb.append(',');
+        sb.append("scrattr");
+        sb.append('=');
+        sb.append(((this.scrattr == null)?"<null>":this.scrattr));
         sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');
@@ -121,9 +122,10 @@ public class CourseDetailInformationDegreeAttributes100GetResponse {
     @Override
     public int hashCode() {
         int result = 1;
-        result = ((result* 31)+((this.attrCode == null)? 0 :this.attrCode.hashCode()));
+        result = ((result* 31)+((this.scacrseKeyBlock == null)? 0 :this.scacrseKeyBlock.hashCode()));
+        result = ((result* 31)+((this.attrCtrlBlock == null)? 0 :this.attrCtrlBlock.hashCode()));
+        result = ((result* 31)+((this.scrattr == null)? 0 :this.scrattr.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
-        result = ((result* 31)+((this.attrDescription == null)? 0 :this.attrDescription.hashCode()));
         return result;
     }
 
@@ -136,7 +138,7 @@ public class CourseDetailInformationDegreeAttributes100GetResponse {
             return false;
         }
         CourseDetailInformationDegreeAttributes100GetResponse rhs = ((CourseDetailInformationDegreeAttributes100GetResponse) other);
-        return ((((this.attrCode == rhs.attrCode)||((this.attrCode!= null)&&this.attrCode.equals(rhs.attrCode)))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.attrDescription == rhs.attrDescription)||((this.attrDescription!= null)&&this.attrDescription.equals(rhs.attrDescription))));
+        return (((((this.scacrseKeyBlock == rhs.scacrseKeyBlock)||((this.scacrseKeyBlock!= null)&&this.scacrseKeyBlock.equals(rhs.scacrseKeyBlock)))&&((this.attrCtrlBlock == rhs.attrCtrlBlock)||((this.attrCtrlBlock!= null)&&this.attrCtrlBlock.equals(rhs.attrCtrlBlock))))&&((this.scrattr == rhs.scrattr)||((this.scrattr!= null)&&this.scrattr.equals(rhs.scrattr))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))));
     }
 
 }

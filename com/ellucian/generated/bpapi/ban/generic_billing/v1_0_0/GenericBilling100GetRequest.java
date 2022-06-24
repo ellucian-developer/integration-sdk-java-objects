@@ -75,7 +75,7 @@ public class GenericBilling100GetRequest {
      */
     @JsonProperty("displayBillInv")
     @JsonPropertyDescription("Lineage reference object : displayBillInv")
-    private Object displayBillInv;
+    private Double displayBillInv;
     /**
      * Grant
      * <p>
@@ -134,7 +134,7 @@ public class GenericBilling100GetRequest {
      */
     @JsonProperty("displayBfrmCode")
     @JsonPropertyDescription("Lineage reference object : displayBfrmCode")
-    private Object displayBfrmCode;
+    private String displayBfrmCode;
     /**
      * Period To
      * <p>
@@ -153,7 +153,7 @@ public class GenericBilling100GetRequest {
      */
     @JsonProperty("displayGrantCode")
     @JsonPropertyDescription("Lineage reference object : displayGrantCode")
-    private Object displayGrantCode;
+    private String displayGrantCode;
     /**
      * Lineage reference object : FRRGENB_BILL_INV_ADJ_NO
      * (Required)
@@ -187,7 +187,7 @@ public class GenericBilling100GetRequest {
      */
     @JsonProperty("displayBillAdj")
     @JsonPropertyDescription("Lineage reference object : displayBillAdj")
-    private Object displayBillAdj;
+    private Double displayBillAdj;
     /**
      * Date Submitted
      * <p>
@@ -305,7 +305,7 @@ public class GenericBilling100GetRequest {
      * 
      */
     @JsonProperty("displayBillInv")
-    public Object getDisplayBillInv() {
+    public Double getDisplayBillInv() {
         return displayBillInv;
     }
 
@@ -316,11 +316,11 @@ public class GenericBilling100GetRequest {
      * 
      */
     @JsonProperty("displayBillInv")
-    public void setDisplayBillInv(Object displayBillInv) {
+    public void setDisplayBillInv(Double displayBillInv) {
         this.displayBillInv = displayBillInv;
     }
 
-    public GenericBilling100GetRequest withDisplayBillInv(Object displayBillInv) {
+    public GenericBilling100GetRequest withDisplayBillInv(Double displayBillInv) {
         this.displayBillInv = displayBillInv;
         return this;
     }
@@ -477,7 +477,7 @@ public class GenericBilling100GetRequest {
      * 
      */
     @JsonProperty("displayBfrmCode")
-    public Object getDisplayBfrmCode() {
+    public String getDisplayBfrmCode() {
         return displayBfrmCode;
     }
 
@@ -488,11 +488,11 @@ public class GenericBilling100GetRequest {
      * 
      */
     @JsonProperty("displayBfrmCode")
-    public void setDisplayBfrmCode(Object displayBfrmCode) {
+    public void setDisplayBfrmCode(String displayBfrmCode) {
         this.displayBfrmCode = displayBfrmCode;
     }
 
-    public GenericBilling100GetRequest withDisplayBfrmCode(Object displayBfrmCode) {
+    public GenericBilling100GetRequest withDisplayBfrmCode(String displayBfrmCode) {
         this.displayBfrmCode = displayBfrmCode;
         return this;
     }
@@ -533,7 +533,7 @@ public class GenericBilling100GetRequest {
      * 
      */
     @JsonProperty("displayGrantCode")
-    public Object getDisplayGrantCode() {
+    public String getDisplayGrantCode() {
         return displayGrantCode;
     }
 
@@ -544,11 +544,11 @@ public class GenericBilling100GetRequest {
      * 
      */
     @JsonProperty("displayGrantCode")
-    public void setDisplayGrantCode(Object displayGrantCode) {
+    public void setDisplayGrantCode(String displayGrantCode) {
         this.displayGrantCode = displayGrantCode;
     }
 
-    public GenericBilling100GetRequest withDisplayGrantCode(Object displayGrantCode) {
+    public GenericBilling100GetRequest withDisplayGrantCode(String displayGrantCode) {
         this.displayGrantCode = displayGrantCode;
         return this;
     }
@@ -639,7 +639,7 @@ public class GenericBilling100GetRequest {
      * 
      */
     @JsonProperty("displayBillAdj")
-    public Object getDisplayBillAdj() {
+    public Double getDisplayBillAdj() {
         return displayBillAdj;
     }
 
@@ -648,11 +648,11 @@ public class GenericBilling100GetRequest {
      * 
      */
     @JsonProperty("displayBillAdj")
-    public void setDisplayBillAdj(Object displayBillAdj) {
+    public void setDisplayBillAdj(Double displayBillAdj) {
         this.displayBillAdj = displayBillAdj;
     }
 
-    public GenericBilling100GetRequest withDisplayBillAdj(Object displayBillAdj) {
+    public GenericBilling100GetRequest withDisplayBillAdj(Double displayBillAdj) {
         this.displayBillAdj = displayBillAdj;
         return this;
     }

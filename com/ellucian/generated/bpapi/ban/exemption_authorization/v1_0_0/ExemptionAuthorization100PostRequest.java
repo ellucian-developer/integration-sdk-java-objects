@@ -32,7 +32,7 @@ public class ExemptionAuthorization100PostRequest {
      */
     @JsonProperty("exemptionCode")
     @JsonPropertyDescription("Lineage reference object : exemptionCode")
-    private Object exemptionCode;
+    private String exemptionCode;
     /**
      * Roll Students
      * <p>
@@ -50,7 +50,7 @@ public class ExemptionAuthorization100PostRequest {
      */
     @JsonProperty("keyblocTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCode;
+    private String keyblocTermCode;
     /**
      * Roll Exemptions
      * <p>
@@ -90,7 +90,7 @@ public class ExemptionAuthorization100PostRequest {
      * 
      */
     @JsonProperty("exemptionCode")
-    public Object getExemptionCode() {
+    public String getExemptionCode() {
         return exemptionCode;
     }
 
@@ -101,11 +101,11 @@ public class ExemptionAuthorization100PostRequest {
      * 
      */
     @JsonProperty("exemptionCode")
-    public void setExemptionCode(Object exemptionCode) {
+    public void setExemptionCode(String exemptionCode) {
         this.exemptionCode = exemptionCode;
     }
 
-    public ExemptionAuthorization100PostRequest withExemptionCode(Object exemptionCode) {
+    public ExemptionAuthorization100PostRequest withExemptionCode(String exemptionCode) {
         this.exemptionCode = exemptionCode;
         return this;
     }
@@ -144,7 +144,7 @@ public class ExemptionAuthorization100PostRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public Object getKeyblocTermCode() {
+    public String getKeyblocTermCode() {
         return keyblocTermCode;
     }
 
@@ -155,11 +155,11 @@ public class ExemptionAuthorization100PostRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public void setKeyblocTermCode(Object keyblocTermCode) {
+    public void setKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
     }
 
-    public ExemptionAuthorization100PostRequest withKeyblocTermCode(Object keyblocTermCode) {
+    public ExemptionAuthorization100PostRequest withKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
         return this;
     }

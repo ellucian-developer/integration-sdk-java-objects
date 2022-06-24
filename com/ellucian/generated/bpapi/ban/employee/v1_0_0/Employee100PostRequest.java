@@ -228,7 +228,7 @@ public class Employee100PostRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Location
      * <p>
@@ -955,7 +955,7 @@ public class Employee100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -966,11 +966,11 @@ public class Employee100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public Employee100PostRequest withId(Object id) {
+    public Employee100PostRequest withId(String id) {
         this.id = id;
         return this;
     }

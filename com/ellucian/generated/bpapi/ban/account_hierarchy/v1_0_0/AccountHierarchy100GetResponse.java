@@ -41,7 +41,7 @@ public class AccountHierarchy100GetResponse {
      */
     @JsonProperty("level4")
     @JsonPropertyDescription("Lineage reference object : level4")
-    private Object level4;
+    private String level4;
     /**
      * Account
      * <p>
@@ -50,14 +50,14 @@ public class AccountHierarchy100GetResponse {
      */
     @JsonProperty("hpAcctCode")
     @JsonPropertyDescription("Lineage reference object : hpAcctCode")
-    private Object hpAcctCode;
+    private String hpAcctCode;
     /**
      * Lineage reference object : hpTitle
      * 
      */
     @JsonProperty("hpTitle")
     @JsonPropertyDescription("Lineage reference object : hpTitle")
-    private Object hpTitle;
+    private String hpTitle;
     /**
      * Predecessor Account
      * <p>
@@ -66,7 +66,7 @@ public class AccountHierarchy100GetResponse {
      */
     @JsonProperty("hpPredAcctCode")
     @JsonPropertyDescription("Lineage reference object : hpPredAcctCode")
-    private Object hpPredAcctCode;
+    private String hpPredAcctCode;
     /**
      * Chart of Accounts
      * <p>
@@ -75,91 +75,91 @@ public class AccountHierarchy100GetResponse {
      */
     @JsonProperty("hpCoasCode")
     @JsonPropertyDescription("Lineage reference object : hpCoasCode")
-    private Object hpCoasCode;
+    private String hpCoasCode;
     /**
      * Lineage reference object : titl1
      * 
      */
     @JsonProperty("titl1")
     @JsonPropertyDescription("Lineage reference object : titl1")
-    private Object titl1;
+    private String titl1;
     /**
      * Lineage reference object : titl2
      * 
      */
     @JsonProperty("titl2")
     @JsonPropertyDescription("Lineage reference object : titl2")
-    private Object titl2;
+    private String titl2;
     /**
      * Lineage reference object : titl3
      * 
      */
     @JsonProperty("titl3")
     @JsonPropertyDescription("Lineage reference object : titl3")
-    private Object titl3;
+    private String titl3;
     /**
      * Lineage reference object : titl4
      * 
      */
     @JsonProperty("titl4")
     @JsonPropertyDescription("Lineage reference object : titl4")
-    private Object titl4;
+    private String titl4;
     /**
      * Lineage reference object : predTitle
      * 
      */
     @JsonProperty("predTitle")
     @JsonPropertyDescription("Lineage reference object : predTitle")
-    private Object predTitle;
+    private String predTitle;
     /**
      * Lineage reference object : head1
      * 
      */
     @JsonProperty("head1")
     @JsonPropertyDescription("Lineage reference object : head1")
-    private Object head1;
+    private String head1;
     /**
      * Lineage reference object : head2
      * 
      */
     @JsonProperty("head2")
     @JsonPropertyDescription("Lineage reference object : head2")
-    private Object head2;
+    private String head2;
     /**
      * Lineage reference object : head3
      * 
      */
     @JsonProperty("head3")
     @JsonPropertyDescription("Lineage reference object : head3")
-    private Object head3;
+    private String head3;
     /**
      * Lineage reference object : head4
      * 
      */
     @JsonProperty("head4")
     @JsonPropertyDescription("Lineage reference object : head4")
-    private Object head4;
+    private String head4;
     /**
      * Lineage reference object : level1
      * 
      */
     @JsonProperty("level1")
     @JsonPropertyDescription("Lineage reference object : level1")
-    private Object level1;
+    private String level1;
     /**
      * Lineage reference object : level3
      * 
      */
     @JsonProperty("level3")
     @JsonPropertyDescription("Lineage reference object : level3")
-    private Object level3;
+    private String level3;
     /**
      * Lineage reference object : level2
      * 
      */
     @JsonProperty("level2")
     @JsonPropertyDescription("Lineage reference object : level2")
-    private Object level2;
+    private String level2;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -168,7 +168,7 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("level4")
-    public Object getLevel4() {
+    public String getLevel4() {
         return level4;
     }
 
@@ -177,11 +177,11 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("level4")
-    public void setLevel4(Object level4) {
+    public void setLevel4(String level4) {
         this.level4 = level4;
     }
 
-    public AccountHierarchy100GetResponse withLevel4(Object level4) {
+    public AccountHierarchy100GetResponse withLevel4(String level4) {
         this.level4 = level4;
         return this;
     }
@@ -193,7 +193,7 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("hpAcctCode")
-    public Object getHpAcctCode() {
+    public String getHpAcctCode() {
         return hpAcctCode;
     }
 
@@ -204,11 +204,11 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("hpAcctCode")
-    public void setHpAcctCode(Object hpAcctCode) {
+    public void setHpAcctCode(String hpAcctCode) {
         this.hpAcctCode = hpAcctCode;
     }
 
-    public AccountHierarchy100GetResponse withHpAcctCode(Object hpAcctCode) {
+    public AccountHierarchy100GetResponse withHpAcctCode(String hpAcctCode) {
         this.hpAcctCode = hpAcctCode;
         return this;
     }
@@ -218,7 +218,7 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("hpTitle")
-    public Object getHpTitle() {
+    public String getHpTitle() {
         return hpTitle;
     }
 
@@ -227,11 +227,11 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("hpTitle")
-    public void setHpTitle(Object hpTitle) {
+    public void setHpTitle(String hpTitle) {
         this.hpTitle = hpTitle;
     }
 
-    public AccountHierarchy100GetResponse withHpTitle(Object hpTitle) {
+    public AccountHierarchy100GetResponse withHpTitle(String hpTitle) {
         this.hpTitle = hpTitle;
         return this;
     }
@@ -243,7 +243,7 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("hpPredAcctCode")
-    public Object getHpPredAcctCode() {
+    public String getHpPredAcctCode() {
         return hpPredAcctCode;
     }
 
@@ -254,11 +254,11 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("hpPredAcctCode")
-    public void setHpPredAcctCode(Object hpPredAcctCode) {
+    public void setHpPredAcctCode(String hpPredAcctCode) {
         this.hpPredAcctCode = hpPredAcctCode;
     }
 
-    public AccountHierarchy100GetResponse withHpPredAcctCode(Object hpPredAcctCode) {
+    public AccountHierarchy100GetResponse withHpPredAcctCode(String hpPredAcctCode) {
         this.hpPredAcctCode = hpPredAcctCode;
         return this;
     }
@@ -270,7 +270,7 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("hpCoasCode")
-    public Object getHpCoasCode() {
+    public String getHpCoasCode() {
         return hpCoasCode;
     }
 
@@ -281,11 +281,11 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("hpCoasCode")
-    public void setHpCoasCode(Object hpCoasCode) {
+    public void setHpCoasCode(String hpCoasCode) {
         this.hpCoasCode = hpCoasCode;
     }
 
-    public AccountHierarchy100GetResponse withHpCoasCode(Object hpCoasCode) {
+    public AccountHierarchy100GetResponse withHpCoasCode(String hpCoasCode) {
         this.hpCoasCode = hpCoasCode;
         return this;
     }
@@ -295,7 +295,7 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("titl1")
-    public Object getTitl1() {
+    public String getTitl1() {
         return titl1;
     }
 
@@ -304,11 +304,11 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("titl1")
-    public void setTitl1(Object titl1) {
+    public void setTitl1(String titl1) {
         this.titl1 = titl1;
     }
 
-    public AccountHierarchy100GetResponse withTitl1(Object titl1) {
+    public AccountHierarchy100GetResponse withTitl1(String titl1) {
         this.titl1 = titl1;
         return this;
     }
@@ -318,7 +318,7 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("titl2")
-    public Object getTitl2() {
+    public String getTitl2() {
         return titl2;
     }
 
@@ -327,11 +327,11 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("titl2")
-    public void setTitl2(Object titl2) {
+    public void setTitl2(String titl2) {
         this.titl2 = titl2;
     }
 
-    public AccountHierarchy100GetResponse withTitl2(Object titl2) {
+    public AccountHierarchy100GetResponse withTitl2(String titl2) {
         this.titl2 = titl2;
         return this;
     }
@@ -341,7 +341,7 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("titl3")
-    public Object getTitl3() {
+    public String getTitl3() {
         return titl3;
     }
 
@@ -350,11 +350,11 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("titl3")
-    public void setTitl3(Object titl3) {
+    public void setTitl3(String titl3) {
         this.titl3 = titl3;
     }
 
-    public AccountHierarchy100GetResponse withTitl3(Object titl3) {
+    public AccountHierarchy100GetResponse withTitl3(String titl3) {
         this.titl3 = titl3;
         return this;
     }
@@ -364,7 +364,7 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("titl4")
-    public Object getTitl4() {
+    public String getTitl4() {
         return titl4;
     }
 
@@ -373,11 +373,11 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("titl4")
-    public void setTitl4(Object titl4) {
+    public void setTitl4(String titl4) {
         this.titl4 = titl4;
     }
 
-    public AccountHierarchy100GetResponse withTitl4(Object titl4) {
+    public AccountHierarchy100GetResponse withTitl4(String titl4) {
         this.titl4 = titl4;
         return this;
     }
@@ -387,7 +387,7 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("predTitle")
-    public Object getPredTitle() {
+    public String getPredTitle() {
         return predTitle;
     }
 
@@ -396,11 +396,11 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("predTitle")
-    public void setPredTitle(Object predTitle) {
+    public void setPredTitle(String predTitle) {
         this.predTitle = predTitle;
     }
 
-    public AccountHierarchy100GetResponse withPredTitle(Object predTitle) {
+    public AccountHierarchy100GetResponse withPredTitle(String predTitle) {
         this.predTitle = predTitle;
         return this;
     }
@@ -410,7 +410,7 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("head1")
-    public Object getHead1() {
+    public String getHead1() {
         return head1;
     }
 
@@ -419,11 +419,11 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("head1")
-    public void setHead1(Object head1) {
+    public void setHead1(String head1) {
         this.head1 = head1;
     }
 
-    public AccountHierarchy100GetResponse withHead1(Object head1) {
+    public AccountHierarchy100GetResponse withHead1(String head1) {
         this.head1 = head1;
         return this;
     }
@@ -433,7 +433,7 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("head2")
-    public Object getHead2() {
+    public String getHead2() {
         return head2;
     }
 
@@ -442,11 +442,11 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("head2")
-    public void setHead2(Object head2) {
+    public void setHead2(String head2) {
         this.head2 = head2;
     }
 
-    public AccountHierarchy100GetResponse withHead2(Object head2) {
+    public AccountHierarchy100GetResponse withHead2(String head2) {
         this.head2 = head2;
         return this;
     }
@@ -456,7 +456,7 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("head3")
-    public Object getHead3() {
+    public String getHead3() {
         return head3;
     }
 
@@ -465,11 +465,11 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("head3")
-    public void setHead3(Object head3) {
+    public void setHead3(String head3) {
         this.head3 = head3;
     }
 
-    public AccountHierarchy100GetResponse withHead3(Object head3) {
+    public AccountHierarchy100GetResponse withHead3(String head3) {
         this.head3 = head3;
         return this;
     }
@@ -479,7 +479,7 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("head4")
-    public Object getHead4() {
+    public String getHead4() {
         return head4;
     }
 
@@ -488,11 +488,11 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("head4")
-    public void setHead4(Object head4) {
+    public void setHead4(String head4) {
         this.head4 = head4;
     }
 
-    public AccountHierarchy100GetResponse withHead4(Object head4) {
+    public AccountHierarchy100GetResponse withHead4(String head4) {
         this.head4 = head4;
         return this;
     }
@@ -502,7 +502,7 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("level1")
-    public Object getLevel1() {
+    public String getLevel1() {
         return level1;
     }
 
@@ -511,11 +511,11 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("level1")
-    public void setLevel1(Object level1) {
+    public void setLevel1(String level1) {
         this.level1 = level1;
     }
 
-    public AccountHierarchy100GetResponse withLevel1(Object level1) {
+    public AccountHierarchy100GetResponse withLevel1(String level1) {
         this.level1 = level1;
         return this;
     }
@@ -525,7 +525,7 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("level3")
-    public Object getLevel3() {
+    public String getLevel3() {
         return level3;
     }
 
@@ -534,11 +534,11 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("level3")
-    public void setLevel3(Object level3) {
+    public void setLevel3(String level3) {
         this.level3 = level3;
     }
 
-    public AccountHierarchy100GetResponse withLevel3(Object level3) {
+    public AccountHierarchy100GetResponse withLevel3(String level3) {
         this.level3 = level3;
         return this;
     }
@@ -548,7 +548,7 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("level2")
-    public Object getLevel2() {
+    public String getLevel2() {
         return level2;
     }
 
@@ -557,11 +557,11 @@ public class AccountHierarchy100GetResponse {
      * 
      */
     @JsonProperty("level2")
-    public void setLevel2(Object level2) {
+    public void setLevel2(String level2) {
         this.level2 = level2;
     }
 
-    public AccountHierarchy100GetResponse withLevel2(Object level2) {
+    public AccountHierarchy100GetResponse withLevel2(String level2) {
         this.level2 = level2;
         return this;
     }

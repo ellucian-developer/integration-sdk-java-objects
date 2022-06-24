@@ -16,7 +16,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "tbvaccdTranNumber",
-    "currCode",
+    "taxMethod",
     "tbvaccdCrn",
     "tbvaccdDesc",
     "tbvaccdCpdtInd",
@@ -46,6 +46,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "tbvaccdId",
     "tbvaccdAmount",
     "tbvaccdSrceCode",
+    "taxAmount",
     "tbvaccdDetailCode"
 })
 @Generated("jsonschema2pojo")
@@ -61,14 +62,13 @@ public class AccountDetailQuery100GetResponse {
     @JsonPropertyDescription("Lineage reference object : TBVACCD_TRAN_NUMBER")
     private Double tbvaccdTranNumber;
     /**
-     * Currency
+     * Tax Method
      * <p>
-     * Lookup lineage reference object : gtvcurr
+     * 
      * 
      */
-    @JsonProperty("currCode")
-    @JsonPropertyDescription("Lookup lineage reference object : gtvcurr")
-    private String currCode;
+    @JsonProperty("taxMethod")
+    private String taxMethod;
     /**
      * Course Reference Number
      * <p>
@@ -331,6 +331,14 @@ public class AccountDetailQuery100GetResponse {
     @JsonPropertyDescription("Lineage reference object : TBVACCD_SRCE_CODE, Lookup lineage reference object : ttvsrce")
     private String tbvaccdSrceCode;
     /**
+     * Tax
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("taxAmount")
+    private Double taxAmount;
+    /**
      * Detail Code
      * <p>
      * Lineage reference object : TBVACCD_DETAIL_CODE
@@ -370,29 +378,29 @@ public class AccountDetailQuery100GetResponse {
     }
 
     /**
-     * Currency
+     * Tax Method
      * <p>
-     * Lookup lineage reference object : gtvcurr
+     * 
      * 
      */
-    @JsonProperty("currCode")
-    public String getCurrCode() {
-        return currCode;
+    @JsonProperty("taxMethod")
+    public String getTaxMethod() {
+        return taxMethod;
     }
 
     /**
-     * Currency
+     * Tax Method
      * <p>
-     * Lookup lineage reference object : gtvcurr
+     * 
      * 
      */
-    @JsonProperty("currCode")
-    public void setCurrCode(String currCode) {
-        this.currCode = currCode;
+    @JsonProperty("taxMethod")
+    public void setTaxMethod(String taxMethod) {
+        this.taxMethod = taxMethod;
     }
 
-    public AccountDetailQuery100GetResponse withCurrCode(String currCode) {
-        this.currCode = currCode;
+    public AccountDetailQuery100GetResponse withTaxMethod(String taxMethod) {
+        this.taxMethod = taxMethod;
         return this;
     }
 
@@ -1180,6 +1188,33 @@ public class AccountDetailQuery100GetResponse {
     }
 
     /**
+     * Tax
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("taxAmount")
+    public Double getTaxAmount() {
+        return taxAmount;
+    }
+
+    /**
+     * Tax
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("taxAmount")
+    public void setTaxAmount(Double taxAmount) {
+        this.taxAmount = taxAmount;
+    }
+
+    public AccountDetailQuery100GetResponse withTaxAmount(Double taxAmount) {
+        this.taxAmount = taxAmount;
+        return this;
+    }
+
+    /**
      * Detail Code
      * <p>
      * Lineage reference object : TBVACCD_DETAIL_CODE
@@ -1229,9 +1264,9 @@ public class AccountDetailQuery100GetResponse {
         sb.append('=');
         sb.append(((this.tbvaccdTranNumber == null)?"<null>":this.tbvaccdTranNumber));
         sb.append(',');
-        sb.append("currCode");
+        sb.append("taxMethod");
         sb.append('=');
-        sb.append(((this.currCode == null)?"<null>":this.currCode));
+        sb.append(((this.taxMethod == null)?"<null>":this.taxMethod));
         sb.append(',');
         sb.append("tbvaccdCrn");
         sb.append('=');
@@ -1349,6 +1384,10 @@ public class AccountDetailQuery100GetResponse {
         sb.append('=');
         sb.append(((this.tbvaccdSrceCode == null)?"<null>":this.tbvaccdSrceCode));
         sb.append(',');
+        sb.append("taxAmount");
+        sb.append('=');
+        sb.append(((this.taxAmount == null)?"<null>":this.taxAmount));
+        sb.append(',');
         sb.append("tbvaccdDetailCode");
         sb.append('=');
         sb.append(((this.tbvaccdDetailCode == null)?"<null>":this.tbvaccdDetailCode));
@@ -1369,7 +1408,7 @@ public class AccountDetailQuery100GetResponse {
     public int hashCode() {
         int result = 1;
         result = ((result* 31)+((this.tbvaccdTranNumber == null)? 0 :this.tbvaccdTranNumber.hashCode()));
-        result = ((result* 31)+((this.currCode == null)? 0 :this.currCode.hashCode()));
+        result = ((result* 31)+((this.taxMethod == null)? 0 :this.taxMethod.hashCode()));
         result = ((result* 31)+((this.tbvaccdCrn == null)? 0 :this.tbvaccdCrn.hashCode()));
         result = ((result* 31)+((this.tbvaccdDesc == null)? 0 :this.tbvaccdDesc.hashCode()));
         result = ((result* 31)+((this.tbvaccdCpdtInd == null)? 0 :this.tbvaccdCpdtInd.hashCode()));
@@ -1400,6 +1439,7 @@ public class AccountDetailQuery100GetResponse {
         result = ((result* 31)+((this.tbvaccdAmount == null)? 0 :this.tbvaccdAmount.hashCode()));
         result = ((result* 31)+((this.tbvaccdSrceCode == null)? 0 :this.tbvaccdSrceCode.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
+        result = ((result* 31)+((this.taxAmount == null)? 0 :this.taxAmount.hashCode()));
         result = ((result* 31)+((this.tbvaccdDetailCode == null)? 0 :this.tbvaccdDetailCode.hashCode()));
         return result;
     }
@@ -1413,7 +1453,7 @@ public class AccountDetailQuery100GetResponse {
             return false;
         }
         AccountDetailQuery100GetResponse rhs = ((AccountDetailQuery100GetResponse) other);
-        return ((((((((((((((((((((((((((((((((((this.tbvaccdTranNumber == rhs.tbvaccdTranNumber)||((this.tbvaccdTranNumber!= null)&&this.tbvaccdTranNumber.equals(rhs.tbvaccdTranNumber)))&&((this.currCode == rhs.currCode)||((this.currCode!= null)&&this.currCode.equals(rhs.currCode))))&&((this.tbvaccdCrn == rhs.tbvaccdCrn)||((this.tbvaccdCrn!= null)&&this.tbvaccdCrn.equals(rhs.tbvaccdCrn))))&&((this.tbvaccdDesc == rhs.tbvaccdDesc)||((this.tbvaccdDesc!= null)&&this.tbvaccdDesc.equals(rhs.tbvaccdDesc))))&&((this.tbvaccdCpdtInd == rhs.tbvaccdCpdtInd)||((this.tbvaccdCpdtInd!= null)&&this.tbvaccdCpdtInd.equals(rhs.tbvaccdCpdtInd))))&&((this.tbvaccdUser == rhs.tbvaccdUser)||((this.tbvaccdUser!= null)&&this.tbvaccdUser.equals(rhs.tbvaccdUser))))&&((this.tbvaccdName == rhs.tbvaccdName)||((this.tbvaccdName!= null)&&this.tbvaccdName.equals(rhs.tbvaccdName))))&&((this.tbvaccdActivityDate == rhs.tbvaccdActivityDate)||((this.tbvaccdActivityDate!= null)&&this.tbvaccdActivityDate.equals(rhs.tbvaccdActivityDate))))&&((this.tbvaccdPeriod == rhs.tbvaccdPeriod)||((this.tbvaccdPeriod!= null)&&this.tbvaccdPeriod.equals(rhs.tbvaccdPeriod))))&&((this.tbvaccdFeedDocCode == rhs.tbvaccdFeedDocCode)||((this.tbvaccdFeedDocCode!= null)&&this.tbvaccdFeedDocCode.equals(rhs.tbvaccdFeedDocCode))))&&((this.tbvaccdSessionNumber == rhs.tbvaccdSessionNumber)||((this.tbvaccdSessionNumber!= null)&&this.tbvaccdSessionNumber.equals(rhs.tbvaccdSessionNumber))))&&((this.tbvaccdEffectiveDate == rhs.tbvaccdEffectiveDate)||((this.tbvaccdEffectiveDate!= null)&&this.tbvaccdEffectiveDate.equals(rhs.tbvaccdEffectiveDate))))&&((this.tbvaccdAidyCode == rhs.tbvaccdAidyCode)||((this.tbvaccdAidyCode!= null)&&this.tbvaccdAidyCode.equals(rhs.tbvaccdAidyCode))))&&((this.tbvaccdBalance == rhs.tbvaccdBalance)||((this.tbvaccdBalance!= null)&&this.tbvaccdBalance.equals(rhs.tbvaccdBalance))))&&((this.tbvaccdStatementDate == rhs.tbvaccdStatementDate)||((this.tbvaccdStatementDate!= null)&&this.tbvaccdStatementDate.equals(rhs.tbvaccdStatementDate))))&&((this.tbvaccdAcctFeedInd == rhs.tbvaccdAcctFeedInd)||((this.tbvaccdAcctFeedInd!= null)&&this.tbvaccdAcctFeedInd.equals(rhs.tbvaccdAcctFeedInd))))&&((this.tbvaccdCrossrefId == rhs.tbvaccdCrossrefId)||((this.tbvaccdCrossrefId!= null)&&this.tbvaccdCrossrefId.equals(rhs.tbvaccdCrossrefId))))&&((this.tbvaccdTermCode == rhs.tbvaccdTermCode)||((this.tbvaccdTermCode!= null)&&this.tbvaccdTermCode.equals(rhs.tbvaccdTermCode))))&&((this.tbvaccdInvNumberPaid == rhs.tbvaccdInvNumberPaid)||((this.tbvaccdInvNumberPaid!= null)&&this.tbvaccdInvNumberPaid.equals(rhs.tbvaccdInvNumberPaid))))&&((this.tbvaccdCshrEndDate == rhs.tbvaccdCshrEndDate)||((this.tbvaccdCshrEndDate!= null)&&this.tbvaccdCshrEndDate.equals(rhs.tbvaccdCshrEndDate))))&&((this.tbvaccdFeedDate == rhs.tbvaccdFeedDate)||((this.tbvaccdFeedDate!= null)&&this.tbvaccdFeedDate.equals(rhs.tbvaccdFeedDate))))&&((this.tbvaccdTranNumberPaid == rhs.tbvaccdTranNumberPaid)||((this.tbvaccdTranNumberPaid!= null)&&this.tbvaccdTranNumberPaid.equals(rhs.tbvaccdTranNumberPaid))))&&((this.tbvaccdBillDate == rhs.tbvaccdBillDate)||((this.tbvaccdBillDate!= null)&&this.tbvaccdBillDate.equals(rhs.tbvaccdBillDate))))&&((this.tbvaccdDueDate == rhs.tbvaccdDueDate)||((this.tbvaccdDueDate!= null)&&this.tbvaccdDueDate.equals(rhs.tbvaccdDueDate))))&&((this.tbvaccdCrossrefSrceCode == rhs.tbvaccdCrossrefSrceCode)||((this.tbvaccdCrossrefSrceCode!= null)&&this.tbvaccdCrossrefSrceCode.equals(rhs.tbvaccdCrossrefSrceCode))))&&((this.tbvaccdCrossrefNumber == rhs.tbvaccdCrossrefNumber)||((this.tbvaccdCrossrefNumber!= null)&&this.tbvaccdCrossrefNumber.equals(rhs.tbvaccdCrossrefNumber))))&&((this.tbvaccdInvoiceNumber == rhs.tbvaccdInvoiceNumber)||((this.tbvaccdInvoiceNumber!= null)&&this.tbvaccdInvoiceNumber.equals(rhs.tbvaccdInvoiceNumber))))&&((this.tbvaccdReceiptNumber == rhs.tbvaccdReceiptNumber)||((this.tbvaccdReceiptNumber!= null)&&this.tbvaccdReceiptNumber.equals(rhs.tbvaccdReceiptNumber))))&&((this.tbvaccdId == rhs.tbvaccdId)||((this.tbvaccdId!= null)&&this.tbvaccdId.equals(rhs.tbvaccdId))))&&((this.tbvaccdAmount == rhs.tbvaccdAmount)||((this.tbvaccdAmount!= null)&&this.tbvaccdAmount.equals(rhs.tbvaccdAmount))))&&((this.tbvaccdSrceCode == rhs.tbvaccdSrceCode)||((this.tbvaccdSrceCode!= null)&&this.tbvaccdSrceCode.equals(rhs.tbvaccdSrceCode))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.tbvaccdDetailCode == rhs.tbvaccdDetailCode)||((this.tbvaccdDetailCode!= null)&&this.tbvaccdDetailCode.equals(rhs.tbvaccdDetailCode))));
+        return (((((((((((((((((((((((((((((((((((this.tbvaccdTranNumber == rhs.tbvaccdTranNumber)||((this.tbvaccdTranNumber!= null)&&this.tbvaccdTranNumber.equals(rhs.tbvaccdTranNumber)))&&((this.taxMethod == rhs.taxMethod)||((this.taxMethod!= null)&&this.taxMethod.equals(rhs.taxMethod))))&&((this.tbvaccdCrn == rhs.tbvaccdCrn)||((this.tbvaccdCrn!= null)&&this.tbvaccdCrn.equals(rhs.tbvaccdCrn))))&&((this.tbvaccdDesc == rhs.tbvaccdDesc)||((this.tbvaccdDesc!= null)&&this.tbvaccdDesc.equals(rhs.tbvaccdDesc))))&&((this.tbvaccdCpdtInd == rhs.tbvaccdCpdtInd)||((this.tbvaccdCpdtInd!= null)&&this.tbvaccdCpdtInd.equals(rhs.tbvaccdCpdtInd))))&&((this.tbvaccdUser == rhs.tbvaccdUser)||((this.tbvaccdUser!= null)&&this.tbvaccdUser.equals(rhs.tbvaccdUser))))&&((this.tbvaccdName == rhs.tbvaccdName)||((this.tbvaccdName!= null)&&this.tbvaccdName.equals(rhs.tbvaccdName))))&&((this.tbvaccdActivityDate == rhs.tbvaccdActivityDate)||((this.tbvaccdActivityDate!= null)&&this.tbvaccdActivityDate.equals(rhs.tbvaccdActivityDate))))&&((this.tbvaccdPeriod == rhs.tbvaccdPeriod)||((this.tbvaccdPeriod!= null)&&this.tbvaccdPeriod.equals(rhs.tbvaccdPeriod))))&&((this.tbvaccdFeedDocCode == rhs.tbvaccdFeedDocCode)||((this.tbvaccdFeedDocCode!= null)&&this.tbvaccdFeedDocCode.equals(rhs.tbvaccdFeedDocCode))))&&((this.tbvaccdSessionNumber == rhs.tbvaccdSessionNumber)||((this.tbvaccdSessionNumber!= null)&&this.tbvaccdSessionNumber.equals(rhs.tbvaccdSessionNumber))))&&((this.tbvaccdEffectiveDate == rhs.tbvaccdEffectiveDate)||((this.tbvaccdEffectiveDate!= null)&&this.tbvaccdEffectiveDate.equals(rhs.tbvaccdEffectiveDate))))&&((this.tbvaccdAidyCode == rhs.tbvaccdAidyCode)||((this.tbvaccdAidyCode!= null)&&this.tbvaccdAidyCode.equals(rhs.tbvaccdAidyCode))))&&((this.tbvaccdBalance == rhs.tbvaccdBalance)||((this.tbvaccdBalance!= null)&&this.tbvaccdBalance.equals(rhs.tbvaccdBalance))))&&((this.tbvaccdStatementDate == rhs.tbvaccdStatementDate)||((this.tbvaccdStatementDate!= null)&&this.tbvaccdStatementDate.equals(rhs.tbvaccdStatementDate))))&&((this.tbvaccdAcctFeedInd == rhs.tbvaccdAcctFeedInd)||((this.tbvaccdAcctFeedInd!= null)&&this.tbvaccdAcctFeedInd.equals(rhs.tbvaccdAcctFeedInd))))&&((this.tbvaccdCrossrefId == rhs.tbvaccdCrossrefId)||((this.tbvaccdCrossrefId!= null)&&this.tbvaccdCrossrefId.equals(rhs.tbvaccdCrossrefId))))&&((this.tbvaccdTermCode == rhs.tbvaccdTermCode)||((this.tbvaccdTermCode!= null)&&this.tbvaccdTermCode.equals(rhs.tbvaccdTermCode))))&&((this.tbvaccdInvNumberPaid == rhs.tbvaccdInvNumberPaid)||((this.tbvaccdInvNumberPaid!= null)&&this.tbvaccdInvNumberPaid.equals(rhs.tbvaccdInvNumberPaid))))&&((this.tbvaccdCshrEndDate == rhs.tbvaccdCshrEndDate)||((this.tbvaccdCshrEndDate!= null)&&this.tbvaccdCshrEndDate.equals(rhs.tbvaccdCshrEndDate))))&&((this.tbvaccdFeedDate == rhs.tbvaccdFeedDate)||((this.tbvaccdFeedDate!= null)&&this.tbvaccdFeedDate.equals(rhs.tbvaccdFeedDate))))&&((this.tbvaccdTranNumberPaid == rhs.tbvaccdTranNumberPaid)||((this.tbvaccdTranNumberPaid!= null)&&this.tbvaccdTranNumberPaid.equals(rhs.tbvaccdTranNumberPaid))))&&((this.tbvaccdBillDate == rhs.tbvaccdBillDate)||((this.tbvaccdBillDate!= null)&&this.tbvaccdBillDate.equals(rhs.tbvaccdBillDate))))&&((this.tbvaccdDueDate == rhs.tbvaccdDueDate)||((this.tbvaccdDueDate!= null)&&this.tbvaccdDueDate.equals(rhs.tbvaccdDueDate))))&&((this.tbvaccdCrossrefSrceCode == rhs.tbvaccdCrossrefSrceCode)||((this.tbvaccdCrossrefSrceCode!= null)&&this.tbvaccdCrossrefSrceCode.equals(rhs.tbvaccdCrossrefSrceCode))))&&((this.tbvaccdCrossrefNumber == rhs.tbvaccdCrossrefNumber)||((this.tbvaccdCrossrefNumber!= null)&&this.tbvaccdCrossrefNumber.equals(rhs.tbvaccdCrossrefNumber))))&&((this.tbvaccdInvoiceNumber == rhs.tbvaccdInvoiceNumber)||((this.tbvaccdInvoiceNumber!= null)&&this.tbvaccdInvoiceNumber.equals(rhs.tbvaccdInvoiceNumber))))&&((this.tbvaccdReceiptNumber == rhs.tbvaccdReceiptNumber)||((this.tbvaccdReceiptNumber!= null)&&this.tbvaccdReceiptNumber.equals(rhs.tbvaccdReceiptNumber))))&&((this.tbvaccdId == rhs.tbvaccdId)||((this.tbvaccdId!= null)&&this.tbvaccdId.equals(rhs.tbvaccdId))))&&((this.tbvaccdAmount == rhs.tbvaccdAmount)||((this.tbvaccdAmount!= null)&&this.tbvaccdAmount.equals(rhs.tbvaccdAmount))))&&((this.tbvaccdSrceCode == rhs.tbvaccdSrceCode)||((this.tbvaccdSrceCode!= null)&&this.tbvaccdSrceCode.equals(rhs.tbvaccdSrceCode))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.taxAmount == rhs.taxAmount)||((this.taxAmount!= null)&&this.taxAmount.equals(rhs.taxAmount))))&&((this.tbvaccdDetailCode == rhs.tbvaccdDetailCode)||((this.tbvaccdDetailCode!= null)&&this.tbvaccdDetailCode.equals(rhs.tbvaccdDetailCode))));
     }
 
 }

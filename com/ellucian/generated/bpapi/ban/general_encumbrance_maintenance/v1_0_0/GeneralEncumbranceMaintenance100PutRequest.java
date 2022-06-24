@@ -96,7 +96,7 @@ public class GeneralEncumbranceMaintenance100PutRequest {
      */
     @JsonProperty("documentNumber")
     @JsonPropertyDescription("Lineage reference object : documentNumber")
-    private Object documentNumber;
+    private String documentNumber;
     /**
      * Title
      * <p>
@@ -418,7 +418,7 @@ public class GeneralEncumbranceMaintenance100PutRequest {
      * 
      */
     @JsonProperty("documentNumber")
-    public Object getDocumentNumber() {
+    public String getDocumentNumber() {
         return documentNumber;
     }
 
@@ -429,11 +429,11 @@ public class GeneralEncumbranceMaintenance100PutRequest {
      * 
      */
     @JsonProperty("documentNumber")
-    public void setDocumentNumber(Object documentNumber) {
+    public void setDocumentNumber(String documentNumber) {
         this.documentNumber = documentNumber;
     }
 
-    public GeneralEncumbranceMaintenance100PutRequest withDocumentNumber(Object documentNumber) {
+    public GeneralEncumbranceMaintenance100PutRequest withDocumentNumber(String documentNumber) {
         this.documentNumber = documentNumber;
         return this;
     }

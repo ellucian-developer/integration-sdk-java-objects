@@ -129,7 +129,7 @@ public class ParameterDefinition100GetRequest {
      */
     @JsonProperty("keyblckJob")
     @JsonPropertyDescription("Lineage reference object : keyblckJob")
-    private Object keyblckJob;
+    private String keyblckJob;
     /**
      * Lineage reference object : GJBPDEF_DESC
      * (Required)
@@ -420,7 +420,7 @@ public class ParameterDefinition100GetRequest {
      * 
      */
     @JsonProperty("keyblckJob")
-    public Object getKeyblckJob() {
+    public String getKeyblckJob() {
         return keyblckJob;
     }
 
@@ -431,11 +431,11 @@ public class ParameterDefinition100GetRequest {
      * 
      */
     @JsonProperty("keyblckJob")
-    public void setKeyblckJob(Object keyblckJob) {
+    public void setKeyblckJob(String keyblckJob) {
         this.keyblckJob = keyblckJob;
     }
 
-    public ParameterDefinition100GetRequest withKeyblckJob(Object keyblckJob) {
+    public ParameterDefinition100GetRequest withKeyblckJob(String keyblckJob) {
         this.keyblckJob = keyblckJob;
         return this;
     }

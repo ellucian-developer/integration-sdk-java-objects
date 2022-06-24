@@ -35,7 +35,7 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      */
     @JsonProperty("releaseCb")
     @JsonPropertyDescription("Lineage reference object : releaseCb")
-    private Object releaseCb;
+    private String releaseCb;
     /**
      * Display Additional Deceased Warning
      * <p>
@@ -44,7 +44,7 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      */
     @JsonProperty("deceasedPromptCb")
     @JsonPropertyDescription("Lineage reference object : deceasedPromptCb")
-    private Object deceasedPromptCb;
+    private String deceasedPromptCb;
     /**
      * Include Header Row in Data Extract
      * <p>
@@ -53,7 +53,7 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      */
     @JsonProperty("dataExtractPromptCb")
     @JsonPropertyDescription("Lineage reference object : dataExtractPromptCb")
-    private Object dataExtractPromptCb;
+    private String dataExtractPromptCb;
     /**
      * Display Duplicate SSN/SIN/TIN Warning
      * <p>
@@ -62,14 +62,14 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      */
     @JsonProperty("duplicateSsnCb")
     @JsonPropertyDescription("Lineage reference object : duplicateSsnCb")
-    private Object duplicateSsnCb;
+    private String duplicateSsnCb;
     /**
      * Lineage reference object : enableBtnAccessibilityModeCb
      * 
      */
     @JsonProperty("enableBtnAccessibilityModeCb")
     @JsonPropertyDescription("Lineage reference object : enableBtnAccessibilityModeCb")
-    private Object enableBtnAccessibilityModeCb;
+    private String enableBtnAccessibilityModeCb;
     /**
      * Display Additional Confidential Warning
      * <p>
@@ -78,7 +78,7 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      */
     @JsonProperty("confidentialPromptCb")
     @JsonPropertyDescription("Lineage reference object : confidentialPromptCb")
-    private Object confidentialPromptCb;
+    private String confidentialPromptCb;
     /**
      * Display Database Instance on Title Bar
      * <p>
@@ -87,7 +87,7 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      */
     @JsonProperty("dbaseInstCb")
     @JsonPropertyDescription("Lineage reference object : dbaseInstCb")
-    private Object dbaseInstCb;
+    private String dbaseInstCb;
     /**
      * Display Form Name on Menu
      * <p>
@@ -96,7 +96,7 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      */
     @JsonProperty("formnameDisplayInd")
     @JsonPropertyDescription("Lineage reference object : formnameDisplayInd")
-    private Object formnameDisplayInd;
+    private String formnameDisplayInd;
     /**
      * Prompt Before Exiting Banner
      * <p>
@@ -105,7 +105,7 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      */
     @JsonProperty("exitPromptCb")
     @JsonPropertyDescription("Lineage reference object : exitPromptCb")
-    private Object exitPromptCb;
+    private String exitPromptCb;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -116,7 +116,7 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      * 
      */
     @JsonProperty("releaseCb")
-    public Object getReleaseCb() {
+    public String getReleaseCb() {
         return releaseCb;
     }
 
@@ -127,11 +127,11 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      * 
      */
     @JsonProperty("releaseCb")
-    public void setReleaseCb(Object releaseCb) {
+    public void setReleaseCb(String releaseCb) {
         this.releaseCb = releaseCb;
     }
 
-    public GeneralUserPreferencesMaintenance100PutRequest withReleaseCb(Object releaseCb) {
+    public GeneralUserPreferencesMaintenance100PutRequest withReleaseCb(String releaseCb) {
         this.releaseCb = releaseCb;
         return this;
     }
@@ -143,7 +143,7 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      * 
      */
     @JsonProperty("deceasedPromptCb")
-    public Object getDeceasedPromptCb() {
+    public String getDeceasedPromptCb() {
         return deceasedPromptCb;
     }
 
@@ -154,11 +154,11 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      * 
      */
     @JsonProperty("deceasedPromptCb")
-    public void setDeceasedPromptCb(Object deceasedPromptCb) {
+    public void setDeceasedPromptCb(String deceasedPromptCb) {
         this.deceasedPromptCb = deceasedPromptCb;
     }
 
-    public GeneralUserPreferencesMaintenance100PutRequest withDeceasedPromptCb(Object deceasedPromptCb) {
+    public GeneralUserPreferencesMaintenance100PutRequest withDeceasedPromptCb(String deceasedPromptCb) {
         this.deceasedPromptCb = deceasedPromptCb;
         return this;
     }
@@ -170,7 +170,7 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      * 
      */
     @JsonProperty("dataExtractPromptCb")
-    public Object getDataExtractPromptCb() {
+    public String getDataExtractPromptCb() {
         return dataExtractPromptCb;
     }
 
@@ -181,11 +181,11 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      * 
      */
     @JsonProperty("dataExtractPromptCb")
-    public void setDataExtractPromptCb(Object dataExtractPromptCb) {
+    public void setDataExtractPromptCb(String dataExtractPromptCb) {
         this.dataExtractPromptCb = dataExtractPromptCb;
     }
 
-    public GeneralUserPreferencesMaintenance100PutRequest withDataExtractPromptCb(Object dataExtractPromptCb) {
+    public GeneralUserPreferencesMaintenance100PutRequest withDataExtractPromptCb(String dataExtractPromptCb) {
         this.dataExtractPromptCb = dataExtractPromptCb;
         return this;
     }
@@ -197,7 +197,7 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      * 
      */
     @JsonProperty("duplicateSsnCb")
-    public Object getDuplicateSsnCb() {
+    public String getDuplicateSsnCb() {
         return duplicateSsnCb;
     }
 
@@ -208,11 +208,11 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      * 
      */
     @JsonProperty("duplicateSsnCb")
-    public void setDuplicateSsnCb(Object duplicateSsnCb) {
+    public void setDuplicateSsnCb(String duplicateSsnCb) {
         this.duplicateSsnCb = duplicateSsnCb;
     }
 
-    public GeneralUserPreferencesMaintenance100PutRequest withDuplicateSsnCb(Object duplicateSsnCb) {
+    public GeneralUserPreferencesMaintenance100PutRequest withDuplicateSsnCb(String duplicateSsnCb) {
         this.duplicateSsnCb = duplicateSsnCb;
         return this;
     }
@@ -222,7 +222,7 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      * 
      */
     @JsonProperty("enableBtnAccessibilityModeCb")
-    public Object getEnableBtnAccessibilityModeCb() {
+    public String getEnableBtnAccessibilityModeCb() {
         return enableBtnAccessibilityModeCb;
     }
 
@@ -231,11 +231,11 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      * 
      */
     @JsonProperty("enableBtnAccessibilityModeCb")
-    public void setEnableBtnAccessibilityModeCb(Object enableBtnAccessibilityModeCb) {
+    public void setEnableBtnAccessibilityModeCb(String enableBtnAccessibilityModeCb) {
         this.enableBtnAccessibilityModeCb = enableBtnAccessibilityModeCb;
     }
 
-    public GeneralUserPreferencesMaintenance100PutRequest withEnableBtnAccessibilityModeCb(Object enableBtnAccessibilityModeCb) {
+    public GeneralUserPreferencesMaintenance100PutRequest withEnableBtnAccessibilityModeCb(String enableBtnAccessibilityModeCb) {
         this.enableBtnAccessibilityModeCb = enableBtnAccessibilityModeCb;
         return this;
     }
@@ -247,7 +247,7 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      * 
      */
     @JsonProperty("confidentialPromptCb")
-    public Object getConfidentialPromptCb() {
+    public String getConfidentialPromptCb() {
         return confidentialPromptCb;
     }
 
@@ -258,11 +258,11 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      * 
      */
     @JsonProperty("confidentialPromptCb")
-    public void setConfidentialPromptCb(Object confidentialPromptCb) {
+    public void setConfidentialPromptCb(String confidentialPromptCb) {
         this.confidentialPromptCb = confidentialPromptCb;
     }
 
-    public GeneralUserPreferencesMaintenance100PutRequest withConfidentialPromptCb(Object confidentialPromptCb) {
+    public GeneralUserPreferencesMaintenance100PutRequest withConfidentialPromptCb(String confidentialPromptCb) {
         this.confidentialPromptCb = confidentialPromptCb;
         return this;
     }
@@ -274,7 +274,7 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      * 
      */
     @JsonProperty("dbaseInstCb")
-    public Object getDbaseInstCb() {
+    public String getDbaseInstCb() {
         return dbaseInstCb;
     }
 
@@ -285,11 +285,11 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      * 
      */
     @JsonProperty("dbaseInstCb")
-    public void setDbaseInstCb(Object dbaseInstCb) {
+    public void setDbaseInstCb(String dbaseInstCb) {
         this.dbaseInstCb = dbaseInstCb;
     }
 
-    public GeneralUserPreferencesMaintenance100PutRequest withDbaseInstCb(Object dbaseInstCb) {
+    public GeneralUserPreferencesMaintenance100PutRequest withDbaseInstCb(String dbaseInstCb) {
         this.dbaseInstCb = dbaseInstCb;
         return this;
     }
@@ -301,7 +301,7 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      * 
      */
     @JsonProperty("formnameDisplayInd")
-    public Object getFormnameDisplayInd() {
+    public String getFormnameDisplayInd() {
         return formnameDisplayInd;
     }
 
@@ -312,11 +312,11 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      * 
      */
     @JsonProperty("formnameDisplayInd")
-    public void setFormnameDisplayInd(Object formnameDisplayInd) {
+    public void setFormnameDisplayInd(String formnameDisplayInd) {
         this.formnameDisplayInd = formnameDisplayInd;
     }
 
-    public GeneralUserPreferencesMaintenance100PutRequest withFormnameDisplayInd(Object formnameDisplayInd) {
+    public GeneralUserPreferencesMaintenance100PutRequest withFormnameDisplayInd(String formnameDisplayInd) {
         this.formnameDisplayInd = formnameDisplayInd;
         return this;
     }
@@ -328,7 +328,7 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      * 
      */
     @JsonProperty("exitPromptCb")
-    public Object getExitPromptCb() {
+    public String getExitPromptCb() {
         return exitPromptCb;
     }
 
@@ -339,11 +339,11 @@ public class GeneralUserPreferencesMaintenance100PutRequest {
      * 
      */
     @JsonProperty("exitPromptCb")
-    public void setExitPromptCb(Object exitPromptCb) {
+    public void setExitPromptCb(String exitPromptCb) {
         this.exitPromptCb = exitPromptCb;
     }
 
-    public GeneralUserPreferencesMaintenance100PutRequest withExitPromptCb(Object exitPromptCb) {
+    public GeneralUserPreferencesMaintenance100PutRequest withExitPromptCb(String exitPromptCb) {
         this.exitPromptCb = exitPromptCb;
         return this;
     }

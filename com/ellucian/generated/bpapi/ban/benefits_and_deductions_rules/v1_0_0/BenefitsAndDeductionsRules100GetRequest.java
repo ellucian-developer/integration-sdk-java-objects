@@ -28,7 +28,7 @@ public class BenefitsAndDeductionsRules100GetRequest {
      */
     @JsonProperty("bdcaCode")
     @JsonPropertyDescription("Lineage reference object : bdcaCode")
-    private Object bdcaCode;
+    private String bdcaCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -40,7 +40,7 @@ public class BenefitsAndDeductionsRules100GetRequest {
      * 
      */
     @JsonProperty("bdcaCode")
-    public Object getBdcaCode() {
+    public String getBdcaCode() {
         return bdcaCode;
     }
 
@@ -52,11 +52,11 @@ public class BenefitsAndDeductionsRules100GetRequest {
      * 
      */
     @JsonProperty("bdcaCode")
-    public void setBdcaCode(Object bdcaCode) {
+    public void setBdcaCode(String bdcaCode) {
         this.bdcaCode = bdcaCode;
     }
 
-    public BenefitsAndDeductionsRules100GetRequest withBdcaCode(Object bdcaCode) {
+    public BenefitsAndDeductionsRules100GetRequest withBdcaCode(String bdcaCode) {
         this.bdcaCode = bdcaCode;
         return this;
     }

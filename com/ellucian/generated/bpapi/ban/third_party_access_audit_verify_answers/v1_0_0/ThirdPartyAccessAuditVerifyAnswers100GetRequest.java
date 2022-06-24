@@ -27,7 +27,7 @@ public class ThirdPartyAccessAuditVerifyAnswers100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -38,7 +38,7 @@ public class ThirdPartyAccessAuditVerifyAnswers100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -49,11 +49,11 @@ public class ThirdPartyAccessAuditVerifyAnswers100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public ThirdPartyAccessAuditVerifyAnswers100GetRequest withId(Object id) {
+    public ThirdPartyAccessAuditVerifyAnswers100GetRequest withId(String id) {
         this.id = id;
         return this;
     }

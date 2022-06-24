@@ -31,14 +31,14 @@ public class KeyBlock__1 {
      */
     @JsonProperty("keyblckAidyCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAidyCode, Lookup lineage reference object : robinst")
-    private Object keyblckAidyCode;
+    private String keyblckAidyCode;
     /**
      * Lineage reference object : lastName
      * 
      */
     @JsonProperty("lastName")
     @JsonPropertyDescription("Lineage reference object : lastName")
-    private Object lastName;
+    private String lastName;
     /**
      * ID
      * <p>
@@ -47,21 +47,21 @@ public class KeyBlock__1 {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Lineage reference object : confidInfo
      * 
      */
     @JsonProperty("confidInfo")
     @JsonPropertyDescription("Lineage reference object : confidInfo")
-    private Object confidInfo;
+    private String confidInfo;
     /**
      * Lineage reference object : deceasedInd
      * 
      */
     @JsonProperty("deceasedInd")
     @JsonPropertyDescription("Lineage reference object : deceasedInd")
-    private Object deceasedInd;
+    private String deceasedInd;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -72,7 +72,7 @@ public class KeyBlock__1 {
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public Object getKeyblckAidyCode() {
+    public String getKeyblckAidyCode() {
         return keyblckAidyCode;
     }
 
@@ -83,11 +83,11 @@ public class KeyBlock__1 {
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public void setKeyblckAidyCode(Object keyblckAidyCode) {
+    public void setKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
     }
 
-    public KeyBlock__1 withKeyblckAidyCode(Object keyblckAidyCode) {
+    public KeyBlock__1 withKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
         return this;
     }
@@ -97,7 +97,7 @@ public class KeyBlock__1 {
      * 
      */
     @JsonProperty("lastName")
-    public Object getLastName() {
+    public String getLastName() {
         return lastName;
     }
 
@@ -106,11 +106,11 @@ public class KeyBlock__1 {
      * 
      */
     @JsonProperty("lastName")
-    public void setLastName(Object lastName) {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    public KeyBlock__1 withLastName(Object lastName) {
+    public KeyBlock__1 withLastName(String lastName) {
         this.lastName = lastName;
         return this;
     }
@@ -122,7 +122,7 @@ public class KeyBlock__1 {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -133,11 +133,11 @@ public class KeyBlock__1 {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public KeyBlock__1 withId(Object id) {
+    public KeyBlock__1 withId(String id) {
         this.id = id;
         return this;
     }
@@ -147,7 +147,7 @@ public class KeyBlock__1 {
      * 
      */
     @JsonProperty("confidInfo")
-    public Object getConfidInfo() {
+    public String getConfidInfo() {
         return confidInfo;
     }
 
@@ -156,11 +156,11 @@ public class KeyBlock__1 {
      * 
      */
     @JsonProperty("confidInfo")
-    public void setConfidInfo(Object confidInfo) {
+    public void setConfidInfo(String confidInfo) {
         this.confidInfo = confidInfo;
     }
 
-    public KeyBlock__1 withConfidInfo(Object confidInfo) {
+    public KeyBlock__1 withConfidInfo(String confidInfo) {
         this.confidInfo = confidInfo;
         return this;
     }
@@ -170,7 +170,7 @@ public class KeyBlock__1 {
      * 
      */
     @JsonProperty("deceasedInd")
-    public Object getDeceasedInd() {
+    public String getDeceasedInd() {
         return deceasedInd;
     }
 
@@ -179,11 +179,11 @@ public class KeyBlock__1 {
      * 
      */
     @JsonProperty("deceasedInd")
-    public void setDeceasedInd(Object deceasedInd) {
+    public void setDeceasedInd(String deceasedInd) {
         this.deceasedInd = deceasedInd;
     }
 
-    public KeyBlock__1 withDeceasedInd(Object deceasedInd) {
+    public KeyBlock__1 withDeceasedInd(String deceasedInd) {
         this.deceasedInd = deceasedInd;
         return this;
     }

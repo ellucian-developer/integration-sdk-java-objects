@@ -1,8 +1,9 @@
 
 package com.ellucian.generated.bpapi.ban.course_detail_information_integration_partners.v1_0_0;
 
-import java.util.Date;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
@@ -10,165 +11,68 @@ import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "activityDate",
-    "intgDescription",
-    "intgCde",
-    "userId"
+    "scacrse_key_block",
+    "intg_ctlr_block",
+    "scrintg"
 })
 @Generated("jsonschema2pojo")
 public class CourseDetailInformationIntegrationPartners100GetResponse {
 
-    /**
-     * Activity Date
-     * <p>
-     * Lineage reference object : SCRINTG_ACTIVITY_DATE
-     * 
-     */
-    @JsonProperty("activityDate")
-    @JsonPropertyDescription("Lineage reference object : SCRINTG_ACTIVITY_DATE")
-    private Date activityDate;
-    /**
-     * Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("intgDescription")
-    private String intgDescription;
-    /**
-     * Integration Partners
-     * <p>
-     * Lineage reference object : SCRINTG_INTG_CDE
-     * (Required)
-     * 
-     */
-    @JsonProperty("intgCde")
-    @JsonPropertyDescription("Lineage reference object : SCRINTG_INTG_CDE")
-    private String intgCde;
-    /**
-     * User ID
-     * <p>
-     * Lineage reference object : SCRINTG_USER_ID
-     * 
-     */
-    @JsonProperty("userId")
-    @JsonPropertyDescription("Lineage reference object : SCRINTG_USER_ID")
-    private String userId;
+    @JsonProperty("scacrse_key_block")
+    private List<ScacrseKeyBlock> scacrseKeyBlock = new ArrayList<ScacrseKeyBlock>();
+    @JsonProperty("intg_ctlr_block")
+    private List<IntgCtlrBlock> intgCtlrBlock = new ArrayList<IntgCtlrBlock>();
+    @JsonProperty("scrintg")
+    private List<Scrintg> scrintg = new ArrayList<Scrintg>();
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    /**
-     * Activity Date
-     * <p>
-     * Lineage reference object : SCRINTG_ACTIVITY_DATE
-     * 
-     */
-    @JsonProperty("activityDate")
-    public Date getActivityDate() {
-        return activityDate;
+    @JsonProperty("scacrse_key_block")
+    public List<ScacrseKeyBlock> getScacrseKeyBlock() {
+        return scacrseKeyBlock;
     }
 
-    /**
-     * Activity Date
-     * <p>
-     * Lineage reference object : SCRINTG_ACTIVITY_DATE
-     * 
-     */
-    @JsonProperty("activityDate")
-    public void setActivityDate(Date activityDate) {
-        this.activityDate = activityDate;
+    @JsonProperty("scacrse_key_block")
+    public void setScacrseKeyBlock(List<ScacrseKeyBlock> scacrseKeyBlock) {
+        this.scacrseKeyBlock = scacrseKeyBlock;
     }
 
-    public CourseDetailInformationIntegrationPartners100GetResponse withActivityDate(Date activityDate) {
-        this.activityDate = activityDate;
+    public CourseDetailInformationIntegrationPartners100GetResponse withScacrseKeyBlock(List<ScacrseKeyBlock> scacrseKeyBlock) {
+        this.scacrseKeyBlock = scacrseKeyBlock;
         return this;
     }
 
-    /**
-     * Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("intgDescription")
-    public String getIntgDescription() {
-        return intgDescription;
+    @JsonProperty("intg_ctlr_block")
+    public List<IntgCtlrBlock> getIntgCtlrBlock() {
+        return intgCtlrBlock;
     }
 
-    /**
-     * Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("intgDescription")
-    public void setIntgDescription(String intgDescription) {
-        this.intgDescription = intgDescription;
+    @JsonProperty("intg_ctlr_block")
+    public void setIntgCtlrBlock(List<IntgCtlrBlock> intgCtlrBlock) {
+        this.intgCtlrBlock = intgCtlrBlock;
     }
 
-    public CourseDetailInformationIntegrationPartners100GetResponse withIntgDescription(String intgDescription) {
-        this.intgDescription = intgDescription;
+    public CourseDetailInformationIntegrationPartners100GetResponse withIntgCtlrBlock(List<IntgCtlrBlock> intgCtlrBlock) {
+        this.intgCtlrBlock = intgCtlrBlock;
         return this;
     }
 
-    /**
-     * Integration Partners
-     * <p>
-     * Lineage reference object : SCRINTG_INTG_CDE
-     * (Required)
-     * 
-     */
-    @JsonProperty("intgCde")
-    public String getIntgCde() {
-        return intgCde;
+    @JsonProperty("scrintg")
+    public List<Scrintg> getScrintg() {
+        return scrintg;
     }
 
-    /**
-     * Integration Partners
-     * <p>
-     * Lineage reference object : SCRINTG_INTG_CDE
-     * (Required)
-     * 
-     */
-    @JsonProperty("intgCde")
-    public void setIntgCde(String intgCde) {
-        this.intgCde = intgCde;
+    @JsonProperty("scrintg")
+    public void setScrintg(List<Scrintg> scrintg) {
+        this.scrintg = scrintg;
     }
 
-    public CourseDetailInformationIntegrationPartners100GetResponse withIntgCde(String intgCde) {
-        this.intgCde = intgCde;
-        return this;
-    }
-
-    /**
-     * User ID
-     * <p>
-     * Lineage reference object : SCRINTG_USER_ID
-     * 
-     */
-    @JsonProperty("userId")
-    public String getUserId() {
-        return userId;
-    }
-
-    /**
-     * User ID
-     * <p>
-     * Lineage reference object : SCRINTG_USER_ID
-     * 
-     */
-    @JsonProperty("userId")
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
-
-    public CourseDetailInformationIntegrationPartners100GetResponse withUserId(String userId) {
-        this.userId = userId;
+    public CourseDetailInformationIntegrationPartners100GetResponse withScrintg(List<Scrintg> scrintg) {
+        this.scrintg = scrintg;
         return this;
     }
 
@@ -191,21 +95,17 @@ public class CourseDetailInformationIntegrationPartners100GetResponse {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(CourseDetailInformationIntegrationPartners100GetResponse.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
-        sb.append("activityDate");
+        sb.append("scacrseKeyBlock");
         sb.append('=');
-        sb.append(((this.activityDate == null)?"<null>":this.activityDate));
+        sb.append(((this.scacrseKeyBlock == null)?"<null>":this.scacrseKeyBlock));
         sb.append(',');
-        sb.append("intgDescription");
+        sb.append("intgCtlrBlock");
         sb.append('=');
-        sb.append(((this.intgDescription == null)?"<null>":this.intgDescription));
+        sb.append(((this.intgCtlrBlock == null)?"<null>":this.intgCtlrBlock));
         sb.append(',');
-        sb.append("intgCde");
+        sb.append("scrintg");
         sb.append('=');
-        sb.append(((this.intgCde == null)?"<null>":this.intgCde));
-        sb.append(',');
-        sb.append("userId");
-        sb.append('=');
-        sb.append(((this.userId == null)?"<null>":this.userId));
+        sb.append(((this.scrintg == null)?"<null>":this.scrintg));
         sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');
@@ -222,11 +122,10 @@ public class CourseDetailInformationIntegrationPartners100GetResponse {
     @Override
     public int hashCode() {
         int result = 1;
-        result = ((result* 31)+((this.intgCde == null)? 0 :this.intgCde.hashCode()));
-        result = ((result* 31)+((this.activityDate == null)? 0 :this.activityDate.hashCode()));
+        result = ((result* 31)+((this.scacrseKeyBlock == null)? 0 :this.scacrseKeyBlock.hashCode()));
+        result = ((result* 31)+((this.intgCtlrBlock == null)? 0 :this.intgCtlrBlock.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
-        result = ((result* 31)+((this.userId == null)? 0 :this.userId.hashCode()));
-        result = ((result* 31)+((this.intgDescription == null)? 0 :this.intgDescription.hashCode()));
+        result = ((result* 31)+((this.scrintg == null)? 0 :this.scrintg.hashCode()));
         return result;
     }
 
@@ -239,7 +138,7 @@ public class CourseDetailInformationIntegrationPartners100GetResponse {
             return false;
         }
         CourseDetailInformationIntegrationPartners100GetResponse rhs = ((CourseDetailInformationIntegrationPartners100GetResponse) other);
-        return ((((((this.intgCde == rhs.intgCde)||((this.intgCde!= null)&&this.intgCde.equals(rhs.intgCde)))&&((this.activityDate == rhs.activityDate)||((this.activityDate!= null)&&this.activityDate.equals(rhs.activityDate))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.userId == rhs.userId)||((this.userId!= null)&&this.userId.equals(rhs.userId))))&&((this.intgDescription == rhs.intgDescription)||((this.intgDescription!= null)&&this.intgDescription.equals(rhs.intgDescription))));
+        return (((((this.scacrseKeyBlock == rhs.scacrseKeyBlock)||((this.scacrseKeyBlock!= null)&&this.scacrseKeyBlock.equals(rhs.scacrseKeyBlock)))&&((this.intgCtlrBlock == rhs.intgCtlrBlock)||((this.intgCtlrBlock!= null)&&this.intgCtlrBlock.equals(rhs.intgCtlrBlock))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.scrintg == rhs.scrintg)||((this.scrintg!= null)&&this.scrintg.equals(rhs.scrintg))));
     }
 
 }

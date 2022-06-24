@@ -31,7 +31,7 @@ public class GeographicRegionRules100GetRequest {
      */
     @JsonProperty("georCode")
     @JsonPropertyDescription("Lineage reference object : georCode, Lookup lineage reference object : stvgeor")
-    private Object georCode;
+    private String georCode;
     /**
      * Value A
      * <p>
@@ -59,7 +59,7 @@ public class GeographicRegionRules100GetRequest {
      */
     @JsonProperty("geodCode")
     @JsonPropertyDescription("Lineage reference object : geodCode, Lookup lineage reference object : stvgeod")
-    private Object geodCode;
+    private String geodCode;
     /**
      * Type
      * <p>
@@ -80,7 +80,7 @@ public class GeographicRegionRules100GetRequest {
      * 
      */
     @JsonProperty("georCode")
-    public Object getGeorCode() {
+    public String getGeorCode() {
         return georCode;
     }
 
@@ -91,11 +91,11 @@ public class GeographicRegionRules100GetRequest {
      * 
      */
     @JsonProperty("georCode")
-    public void setGeorCode(Object georCode) {
+    public void setGeorCode(String georCode) {
         this.georCode = georCode;
     }
 
-    public GeographicRegionRules100GetRequest withGeorCode(Object georCode) {
+    public GeographicRegionRules100GetRequest withGeorCode(String georCode) {
         this.georCode = georCode;
         return this;
     }
@@ -163,7 +163,7 @@ public class GeographicRegionRules100GetRequest {
      * 
      */
     @JsonProperty("geodCode")
-    public Object getGeodCode() {
+    public String getGeodCode() {
         return geodCode;
     }
 
@@ -174,11 +174,11 @@ public class GeographicRegionRules100GetRequest {
      * 
      */
     @JsonProperty("geodCode")
-    public void setGeodCode(Object geodCode) {
+    public void setGeodCode(String geodCode) {
         this.geodCode = geodCode;
     }
 
-    public GeographicRegionRules100GetRequest withGeodCode(Object geodCode) {
+    public GeographicRegionRules100GetRequest withGeodCode(String geodCode) {
         this.geodCode = geodCode;
         return this;
     }

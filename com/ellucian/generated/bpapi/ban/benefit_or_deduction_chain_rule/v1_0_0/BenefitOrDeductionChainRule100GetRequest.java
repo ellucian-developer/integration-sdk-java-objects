@@ -52,7 +52,7 @@ public class BenefitOrDeductionChainRule100GetRequest {
      */
     @JsonProperty("dednCode")
     @JsonPropertyDescription("Lineage reference object : dednCode")
-    private Object dednCode;
+    private String dednCode;
     /**
      * Deduction Chain Code
      * <p>
@@ -132,7 +132,7 @@ public class BenefitOrDeductionChainRule100GetRequest {
      * 
      */
     @JsonProperty("dednCode")
-    public Object getDednCode() {
+    public String getDednCode() {
         return dednCode;
     }
 
@@ -144,11 +144,11 @@ public class BenefitOrDeductionChainRule100GetRequest {
      * 
      */
     @JsonProperty("dednCode")
-    public void setDednCode(Object dednCode) {
+    public void setDednCode(String dednCode) {
         this.dednCode = dednCode;
     }
 
-    public BenefitOrDeductionChainRule100GetRequest withDednCode(Object dednCode) {
+    public BenefitOrDeductionChainRule100GetRequest withDednCode(String dednCode) {
         this.dednCode = dednCode;
         return this;
     }

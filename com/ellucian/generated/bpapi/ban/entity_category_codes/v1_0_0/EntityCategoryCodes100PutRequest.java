@@ -17,7 +17,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
     "criteria.code",
     "criteria.activityDate",
-    "code",
     "criteria.desc",
     "desc"
 })
@@ -41,14 +40,6 @@ public class EntityCategoryCodes100PutRequest {
     @JsonProperty("criteria.activityDate")
     @JsonPropertyDescription("Lineage reference object : TTVECAT_ACTIVITY_DATE")
     private Date criteriaActivityDate;
-    /**
-     * Lineage reference object : TTVECAT_CODE
-     * (Required)
-     * 
-     */
-    @JsonProperty("code")
-    @JsonPropertyDescription("Lineage reference object : TTVECAT_CODE")
-    private String code;
     /**
      * Description
      * <p>
@@ -121,31 +112,6 @@ public class EntityCategoryCodes100PutRequest {
 
     public EntityCategoryCodes100PutRequest withCriteriaActivityDate(Date criteriaActivityDate) {
         this.criteriaActivityDate = criteriaActivityDate;
-        return this;
-    }
-
-    /**
-     * Lineage reference object : TTVECAT_CODE
-     * (Required)
-     * 
-     */
-    @JsonProperty("code")
-    public String getCode() {
-        return code;
-    }
-
-    /**
-     * Lineage reference object : TTVECAT_CODE
-     * (Required)
-     * 
-     */
-    @JsonProperty("code")
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public EntityCategoryCodes100PutRequest withCode(String code) {
-        this.code = code;
         return this;
     }
 
@@ -234,10 +200,6 @@ public class EntityCategoryCodes100PutRequest {
         sb.append('=');
         sb.append(((this.criteriaActivityDate == null)?"<null>":this.criteriaActivityDate));
         sb.append(',');
-        sb.append("code");
-        sb.append('=');
-        sb.append(((this.code == null)?"<null>":this.code));
-        sb.append(',');
         sb.append("criteriaDesc");
         sb.append('=');
         sb.append(((this.criteriaDesc == null)?"<null>":this.criteriaDesc));
@@ -263,7 +225,6 @@ public class EntityCategoryCodes100PutRequest {
         int result = 1;
         result = ((result* 31)+((this.criteriaActivityDate == null)? 0 :this.criteriaActivityDate.hashCode()));
         result = ((result* 31)+((this.criteriaCode == null)? 0 :this.criteriaCode.hashCode()));
-        result = ((result* 31)+((this.code == null)? 0 :this.code.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
         result = ((result* 31)+((this.criteriaDesc == null)? 0 :this.criteriaDesc.hashCode()));
         result = ((result* 31)+((this.desc == null)? 0 :this.desc.hashCode()));
@@ -279,7 +240,7 @@ public class EntityCategoryCodes100PutRequest {
             return false;
         }
         EntityCategoryCodes100PutRequest rhs = ((EntityCategoryCodes100PutRequest) other);
-        return (((((((this.criteriaActivityDate == rhs.criteriaActivityDate)||((this.criteriaActivityDate!= null)&&this.criteriaActivityDate.equals(rhs.criteriaActivityDate)))&&((this.criteriaCode == rhs.criteriaCode)||((this.criteriaCode!= null)&&this.criteriaCode.equals(rhs.criteriaCode))))&&((this.code == rhs.code)||((this.code!= null)&&this.code.equals(rhs.code))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.criteriaDesc == rhs.criteriaDesc)||((this.criteriaDesc!= null)&&this.criteriaDesc.equals(rhs.criteriaDesc))))&&((this.desc == rhs.desc)||((this.desc!= null)&&this.desc.equals(rhs.desc))));
+        return ((((((this.criteriaActivityDate == rhs.criteriaActivityDate)||((this.criteriaActivityDate!= null)&&this.criteriaActivityDate.equals(rhs.criteriaActivityDate)))&&((this.criteriaCode == rhs.criteriaCode)||((this.criteriaCode!= null)&&this.criteriaCode.equals(rhs.criteriaCode))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.criteriaDesc == rhs.criteriaDesc)||((this.criteriaDesc!= null)&&this.criteriaDesc.equals(rhs.criteriaDesc))))&&((this.desc == rhs.desc)||((this.desc!= null)&&this.desc.equals(rhs.desc))));
     }
 
 }

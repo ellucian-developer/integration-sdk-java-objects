@@ -40,7 +40,7 @@ public class PositionBudgetFringeBenefit100PostRequest {
      */
     @JsonProperty("fiscCode")
     @JsonPropertyDescription("Lineage reference object : fiscCode")
-    private Object fiscCode;
+    private String fiscCode;
     /**
      * Position
      * <p>
@@ -50,7 +50,7 @@ public class PositionBudgetFringeBenefit100PostRequest {
      */
     @JsonProperty("posn")
     @JsonPropertyDescription("Lineage reference object : posn")
-    private Object posn;
+    private String posn;
     /**
      * Budgeted Amount
      * <p>
@@ -99,7 +99,7 @@ public class PositionBudgetFringeBenefit100PostRequest {
      * 
      */
     @JsonProperty("fiscCode")
-    public Object getFiscCode() {
+    public String getFiscCode() {
         return fiscCode;
     }
 
@@ -111,11 +111,11 @@ public class PositionBudgetFringeBenefit100PostRequest {
      * 
      */
     @JsonProperty("fiscCode")
-    public void setFiscCode(Object fiscCode) {
+    public void setFiscCode(String fiscCode) {
         this.fiscCode = fiscCode;
     }
 
-    public PositionBudgetFringeBenefit100PostRequest withFiscCode(Object fiscCode) {
+    public PositionBudgetFringeBenefit100PostRequest withFiscCode(String fiscCode) {
         this.fiscCode = fiscCode;
         return this;
     }
@@ -128,7 +128,7 @@ public class PositionBudgetFringeBenefit100PostRequest {
      * 
      */
     @JsonProperty("posn")
-    public Object getPosn() {
+    public String getPosn() {
         return posn;
     }
 
@@ -140,11 +140,11 @@ public class PositionBudgetFringeBenefit100PostRequest {
      * 
      */
     @JsonProperty("posn")
-    public void setPosn(Object posn) {
+    public void setPosn(String posn) {
         this.posn = posn;
     }
 
-    public PositionBudgetFringeBenefit100PostRequest withPosn(Object posn) {
+    public PositionBudgetFringeBenefit100PostRequest withPosn(String posn) {
         this.posn = posn;
         return this;
     }

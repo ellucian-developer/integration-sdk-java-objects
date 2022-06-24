@@ -61,7 +61,7 @@ public class VendorHistoryQuery100GetRequest {
      */
     @JsonProperty("faavndhVendCode")
     @JsonPropertyDescription("Lineage reference object : faavndhVendCode, Lookup lineage reference object : ftvvend")
-    private Object faavndhVendCode;
+    private String faavndhVendCode;
     /**
      * Credit Memos Amount
      * <p>
@@ -189,7 +189,7 @@ public class VendorHistoryQuery100GetRequest {
      * 
      */
     @JsonProperty("faavndhVendCode")
-    public Object getFaavndhVendCode() {
+    public String getFaavndhVendCode() {
         return faavndhVendCode;
     }
 
@@ -200,11 +200,11 @@ public class VendorHistoryQuery100GetRequest {
      * 
      */
     @JsonProperty("faavndhVendCode")
-    public void setFaavndhVendCode(Object faavndhVendCode) {
+    public void setFaavndhVendCode(String faavndhVendCode) {
         this.faavndhVendCode = faavndhVendCode;
     }
 
-    public VendorHistoryQuery100GetRequest withFaavndhVendCode(Object faavndhVendCode) {
+    public VendorHistoryQuery100GetRequest withFaavndhVendCode(String faavndhVendCode) {
         this.faavndhVendCode = faavndhVendCode;
         return this;
     }

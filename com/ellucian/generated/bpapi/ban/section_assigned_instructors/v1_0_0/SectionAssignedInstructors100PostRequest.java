@@ -68,7 +68,7 @@ public class SectionAssignedInstructors100PostRequest {
      */
     @JsonProperty("crn")
     @JsonPropertyDescription("Lineage reference object : ssasectCrn")
-    private Object crn;
+    private String crn;
     /**
      * Percent of Session
      * <p>
@@ -86,7 +86,7 @@ public class SectionAssignedInstructors100PostRequest {
      */
     @JsonProperty("termCode")
     @JsonPropertyDescription("Lineage reference object : ssasectTermCode, Lookup lineage reference object : stvterm")
-    private Object termCode;
+    private String termCode;
     /**
      * Lineage reference object : SIRASGN_PRIMARY_IND
      * 
@@ -210,7 +210,7 @@ public class SectionAssignedInstructors100PostRequest {
      * 
      */
     @JsonProperty("crn")
-    public Object getCrn() {
+    public String getCrn() {
         return crn;
     }
 
@@ -221,11 +221,11 @@ public class SectionAssignedInstructors100PostRequest {
      * 
      */
     @JsonProperty("crn")
-    public void setCrn(Object crn) {
+    public void setCrn(String crn) {
         this.crn = crn;
     }
 
-    public SectionAssignedInstructors100PostRequest withCrn(Object crn) {
+    public SectionAssignedInstructors100PostRequest withCrn(String crn) {
         this.crn = crn;
         return this;
     }
@@ -264,7 +264,7 @@ public class SectionAssignedInstructors100PostRequest {
      * 
      */
     @JsonProperty("termCode")
-    public Object getTermCode() {
+    public String getTermCode() {
         return termCode;
     }
 
@@ -275,11 +275,11 @@ public class SectionAssignedInstructors100PostRequest {
      * 
      */
     @JsonProperty("termCode")
-    public void setTermCode(Object termCode) {
+    public void setTermCode(String termCode) {
         this.termCode = termCode;
     }
 
-    public SectionAssignedInstructors100PostRequest withTermCode(Object termCode) {
+    public SectionAssignedInstructors100PostRequest withTermCode(String termCode) {
         this.termCode = termCode;
         return this;
     }

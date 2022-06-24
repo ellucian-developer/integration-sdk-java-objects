@@ -134,7 +134,7 @@ public class PersonSkills100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Last Used
      * <p>
@@ -526,7 +526,7 @@ public class PersonSkills100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -537,11 +537,11 @@ public class PersonSkills100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public PersonSkills100PutRequest withId(Object id) {
+    public PersonSkills100PutRequest withId(String id) {
         this.id = id;
         return this;
     }

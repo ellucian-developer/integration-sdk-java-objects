@@ -81,7 +81,7 @@ public class AdmissionsDecisionHighSchoolReview100GetRequest {
      */
     @JsonProperty("keyblocTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCode;
+    private String keyblocTermCode;
     /**
      * Subject GPA
      * <p>
@@ -228,7 +228,7 @@ public class AdmissionsDecisionHighSchoolReview100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Student Type
      * <p>
@@ -366,7 +366,7 @@ public class AdmissionsDecisionHighSchoolReview100GetRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public Object getKeyblocTermCode() {
+    public String getKeyblocTermCode() {
         return keyblocTermCode;
     }
 
@@ -377,11 +377,11 @@ public class AdmissionsDecisionHighSchoolReview100GetRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public void setKeyblocTermCode(Object keyblocTermCode) {
+    public void setKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
     }
 
-    public AdmissionsDecisionHighSchoolReview100GetRequest withKeyblocTermCode(Object keyblocTermCode) {
+    public AdmissionsDecisionHighSchoolReview100GetRequest withKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
         return this;
     }
@@ -804,7 +804,7 @@ public class AdmissionsDecisionHighSchoolReview100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -815,11 +815,11 @@ public class AdmissionsDecisionHighSchoolReview100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public AdmissionsDecisionHighSchoolReview100GetRequest withId(Object id) {
+    public AdmissionsDecisionHighSchoolReview100GetRequest withId(String id) {
         this.id = id;
         return this;
     }

@@ -92,7 +92,7 @@ public class UserProfileMaintenance100PutRequest {
      */
     @JsonProperty("userId")
     @JsonPropertyDescription("Lineage reference object : keyBlockUserId, Lookup lineage reference object : all_users")
-    private Object userId;
+    private String userId;
     /**
      * Budget Master Fund
      * <p>
@@ -356,7 +356,7 @@ public class UserProfileMaintenance100PutRequest {
      * 
      */
     @JsonProperty("userId")
-    public Object getUserId() {
+    public String getUserId() {
         return userId;
     }
 
@@ -368,11 +368,11 @@ public class UserProfileMaintenance100PutRequest {
      * 
      */
     @JsonProperty("userId")
-    public void setUserId(Object userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 
-    public UserProfileMaintenance100PutRequest withUserId(Object userId) {
+    public UserProfileMaintenance100PutRequest withUserId(String userId) {
         this.userId = userId;
         return this;
     }

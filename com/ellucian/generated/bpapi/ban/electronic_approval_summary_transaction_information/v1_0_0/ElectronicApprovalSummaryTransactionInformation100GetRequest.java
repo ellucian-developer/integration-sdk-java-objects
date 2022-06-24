@@ -62,7 +62,7 @@ public class ElectronicApprovalSummaryTransactionInformation100GetRequest {
      */
     @JsonProperty("transactionStatus")
     @JsonPropertyDescription("Lineage reference object : transactionStatus")
-    private Object transactionStatus;
+    private String transactionStatus;
     /**
      * Lineage reference object : NOBTRAN_APPLY_IND
      * 
@@ -105,7 +105,7 @@ public class ElectronicApprovalSummaryTransactionInformation100GetRequest {
      */
     @JsonProperty("transactionToDate")
     @JsonPropertyDescription("Lineage reference object : transactionToDate")
-    private Object transactionToDate;
+    private Date transactionToDate;
     /**
      * Transaction Created On
      * <p>
@@ -124,7 +124,7 @@ public class ElectronicApprovalSummaryTransactionInformation100GetRequest {
      */
     @JsonProperty("queueStatus")
     @JsonPropertyDescription("Lineage reference object : queueStatus")
-    private Object queueStatus;
+    private String queueStatus;
     /**
      * Originator ID
      * <p>
@@ -166,7 +166,7 @@ public class ElectronicApprovalSummaryTransactionInformation100GetRequest {
      */
     @JsonProperty("proxyFor")
     @JsonPropertyDescription("Lineage reference object : proxyFor")
-    private Object proxyFor;
+    private String proxyFor;
     /**
      * Submitted From Date
      * <p>
@@ -175,7 +175,7 @@ public class ElectronicApprovalSummaryTransactionInformation100GetRequest {
      */
     @JsonProperty("transactionFromDate")
     @JsonPropertyDescription("Lineage reference object : transactionFromDate")
-    private Object transactionFromDate;
+    private Date transactionFromDate;
     /**
      * Application Date
      * <p>
@@ -250,7 +250,7 @@ public class ElectronicApprovalSummaryTransactionInformation100GetRequest {
      * 
      */
     @JsonProperty("transactionStatus")
-    public Object getTransactionStatus() {
+    public String getTransactionStatus() {
         return transactionStatus;
     }
 
@@ -262,11 +262,11 @@ public class ElectronicApprovalSummaryTransactionInformation100GetRequest {
      * 
      */
     @JsonProperty("transactionStatus")
-    public void setTransactionStatus(Object transactionStatus) {
+    public void setTransactionStatus(String transactionStatus) {
         this.transactionStatus = transactionStatus;
     }
 
-    public ElectronicApprovalSummaryTransactionInformation100GetRequest withTransactionStatus(Object transactionStatus) {
+    public ElectronicApprovalSummaryTransactionInformation100GetRequest withTransactionStatus(String transactionStatus) {
         this.transactionStatus = transactionStatus;
         return this;
     }
@@ -382,7 +382,7 @@ public class ElectronicApprovalSummaryTransactionInformation100GetRequest {
      * 
      */
     @JsonProperty("transactionToDate")
-    public Object getTransactionToDate() {
+    public Date getTransactionToDate() {
         return transactionToDate;
     }
 
@@ -393,11 +393,11 @@ public class ElectronicApprovalSummaryTransactionInformation100GetRequest {
      * 
      */
     @JsonProperty("transactionToDate")
-    public void setTransactionToDate(Object transactionToDate) {
+    public void setTransactionToDate(Date transactionToDate) {
         this.transactionToDate = transactionToDate;
     }
 
-    public ElectronicApprovalSummaryTransactionInformation100GetRequest withTransactionToDate(Object transactionToDate) {
+    public ElectronicApprovalSummaryTransactionInformation100GetRequest withTransactionToDate(Date transactionToDate) {
         this.transactionToDate = transactionToDate;
         return this;
     }
@@ -437,7 +437,7 @@ public class ElectronicApprovalSummaryTransactionInformation100GetRequest {
      * 
      */
     @JsonProperty("queueStatus")
-    public Object getQueueStatus() {
+    public String getQueueStatus() {
         return queueStatus;
     }
 
@@ -449,11 +449,11 @@ public class ElectronicApprovalSummaryTransactionInformation100GetRequest {
      * 
      */
     @JsonProperty("queueStatus")
-    public void setQueueStatus(Object queueStatus) {
+    public void setQueueStatus(String queueStatus) {
         this.queueStatus = queueStatus;
     }
 
-    public ElectronicApprovalSummaryTransactionInformation100GetRequest withQueueStatus(Object queueStatus) {
+    public ElectronicApprovalSummaryTransactionInformation100GetRequest withQueueStatus(String queueStatus) {
         this.queueStatus = queueStatus;
         return this;
     }
@@ -573,7 +573,7 @@ public class ElectronicApprovalSummaryTransactionInformation100GetRequest {
      * 
      */
     @JsonProperty("proxyFor")
-    public Object getProxyFor() {
+    public String getProxyFor() {
         return proxyFor;
     }
 
@@ -584,11 +584,11 @@ public class ElectronicApprovalSummaryTransactionInformation100GetRequest {
      * 
      */
     @JsonProperty("proxyFor")
-    public void setProxyFor(Object proxyFor) {
+    public void setProxyFor(String proxyFor) {
         this.proxyFor = proxyFor;
     }
 
-    public ElectronicApprovalSummaryTransactionInformation100GetRequest withProxyFor(Object proxyFor) {
+    public ElectronicApprovalSummaryTransactionInformation100GetRequest withProxyFor(String proxyFor) {
         this.proxyFor = proxyFor;
         return this;
     }
@@ -600,7 +600,7 @@ public class ElectronicApprovalSummaryTransactionInformation100GetRequest {
      * 
      */
     @JsonProperty("transactionFromDate")
-    public Object getTransactionFromDate() {
+    public Date getTransactionFromDate() {
         return transactionFromDate;
     }
 
@@ -611,11 +611,11 @@ public class ElectronicApprovalSummaryTransactionInformation100GetRequest {
      * 
      */
     @JsonProperty("transactionFromDate")
-    public void setTransactionFromDate(Object transactionFromDate) {
+    public void setTransactionFromDate(Date transactionFromDate) {
         this.transactionFromDate = transactionFromDate;
     }
 
-    public ElectronicApprovalSummaryTransactionInformation100GetRequest withTransactionFromDate(Object transactionFromDate) {
+    public ElectronicApprovalSummaryTransactionInformation100GetRequest withTransactionFromDate(Date transactionFromDate) {
         this.transactionFromDate = transactionFromDate;
         return this;
     }

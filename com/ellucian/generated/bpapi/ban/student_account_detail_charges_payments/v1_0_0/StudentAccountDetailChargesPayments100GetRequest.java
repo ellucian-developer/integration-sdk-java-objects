@@ -28,7 +28,7 @@ public class StudentAccountDetailChargesPayments100GetRequest {
      */
     @JsonProperty("holdPassword")
     @JsonPropertyDescription("Lineage reference object : holdPassword")
-    private Object holdPassword;
+    private String holdPassword;
     /**
      * ID
      * <p>
@@ -37,7 +37,7 @@ public class StudentAccountDetailChargesPayments100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -48,7 +48,7 @@ public class StudentAccountDetailChargesPayments100GetRequest {
      * 
      */
     @JsonProperty("holdPassword")
-    public Object getHoldPassword() {
+    public String getHoldPassword() {
         return holdPassword;
     }
 
@@ -59,11 +59,11 @@ public class StudentAccountDetailChargesPayments100GetRequest {
      * 
      */
     @JsonProperty("holdPassword")
-    public void setHoldPassword(Object holdPassword) {
+    public void setHoldPassword(String holdPassword) {
         this.holdPassword = holdPassword;
     }
 
-    public StudentAccountDetailChargesPayments100GetRequest withHoldPassword(Object holdPassword) {
+    public StudentAccountDetailChargesPayments100GetRequest withHoldPassword(String holdPassword) {
         this.holdPassword = holdPassword;
         return this;
     }
@@ -75,7 +75,7 @@ public class StudentAccountDetailChargesPayments100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -86,11 +86,11 @@ public class StudentAccountDetailChargesPayments100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public StudentAccountDetailChargesPayments100GetRequest withId(Object id) {
+    public StudentAccountDetailChargesPayments100GetRequest withId(String id) {
         this.id = id;
         return this;
     }

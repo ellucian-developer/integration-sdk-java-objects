@@ -27,7 +27,7 @@ public class EnrollmentStatus100GetRequest {
      */
     @JsonProperty("xxxxxxxtermcode")
     @JsonPropertyDescription("Lineage reference object : xxxxxxxTermCode")
-    private Object xxxxxxxtermcode;
+    private String xxxxxxxtermcode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -38,7 +38,7 @@ public class EnrollmentStatus100GetRequest {
      * 
      */
     @JsonProperty("xxxxxxxtermcode")
-    public Object getXxxxxxxtermcode() {
+    public String getXxxxxxxtermcode() {
         return xxxxxxxtermcode;
     }
 
@@ -49,11 +49,11 @@ public class EnrollmentStatus100GetRequest {
      * 
      */
     @JsonProperty("xxxxxxxtermcode")
-    public void setXxxxxxxtermcode(Object xxxxxxxtermcode) {
+    public void setXxxxxxxtermcode(String xxxxxxxtermcode) {
         this.xxxxxxxtermcode = xxxxxxxtermcode;
     }
 
-    public EnrollmentStatus100GetRequest withXxxxxxxtermcode(Object xxxxxxxtermcode) {
+    public EnrollmentStatus100GetRequest withXxxxxxxtermcode(String xxxxxxxtermcode) {
         this.xxxxxxxtermcode = xxxxxxxtermcode;
         return this;
     }

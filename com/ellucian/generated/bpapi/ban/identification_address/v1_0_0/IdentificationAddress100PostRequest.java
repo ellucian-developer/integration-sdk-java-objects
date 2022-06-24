@@ -236,7 +236,7 @@ public class IdentificationAddress100PostRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Address Type
      * <p>
@@ -833,7 +833,7 @@ public class IdentificationAddress100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -844,11 +844,11 @@ public class IdentificationAddress100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public IdentificationAddress100PostRequest withId(Object id) {
+    public IdentificationAddress100PostRequest withId(String id) {
         this.id = id;
         return this;
     }

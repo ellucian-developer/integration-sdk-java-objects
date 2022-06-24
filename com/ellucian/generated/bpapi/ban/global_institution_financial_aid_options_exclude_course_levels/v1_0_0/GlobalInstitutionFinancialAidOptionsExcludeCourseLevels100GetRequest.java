@@ -29,7 +29,7 @@ public class GlobalInstitutionFinancialAidOptionsExcludeCourseLevels100GetReques
      */
     @JsonProperty("keyblckAidyCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAidyCode, Lookup lineage reference object : robinst")
-    private Object keyblckAidyCode;
+    private String keyblckAidyCode;
     /**
      * Student Level
      * <p>
@@ -60,7 +60,7 @@ public class GlobalInstitutionFinancialAidOptionsExcludeCourseLevels100GetReques
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public Object getKeyblckAidyCode() {
+    public String getKeyblckAidyCode() {
         return keyblckAidyCode;
     }
 
@@ -71,11 +71,11 @@ public class GlobalInstitutionFinancialAidOptionsExcludeCourseLevels100GetReques
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public void setKeyblckAidyCode(Object keyblckAidyCode) {
+    public void setKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
     }
 
-    public GlobalInstitutionFinancialAidOptionsExcludeCourseLevels100GetRequest withKeyblckAidyCode(Object keyblckAidyCode) {
+    public GlobalInstitutionFinancialAidOptionsExcludeCourseLevels100GetRequest withKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
         return this;
     }

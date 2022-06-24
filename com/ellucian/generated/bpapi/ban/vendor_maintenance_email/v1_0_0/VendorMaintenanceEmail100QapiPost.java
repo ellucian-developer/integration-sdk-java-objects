@@ -17,6 +17,10 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
     "ftvvendVendCode",
     "emalCode",
+    "emailAddress",
+    "preferredInd",
+    "statusInd",
+    "dispWebInd",
     "userId",
     "activityDate"
 })
@@ -39,6 +43,42 @@ public class VendorMaintenanceEmail100QapiPost {
     @JsonProperty("emalCode")
     @JsonPropertyDescription("Lineage reference object : GOREMAL_EMAL_CODE, Lookup lineage reference object : gtvemal")
     private String emalCode;
+    /**
+     * E-mail Address
+     * <p>
+     * Lineage reference object : GOREMAL_EMAIL_ADDRESS
+     * 
+     */
+    @JsonProperty("emailAddress")
+    @JsonPropertyDescription("Lineage reference object : GOREMAL_EMAIL_ADDRESS")
+    private String emailAddress;
+    /**
+     * Preferred
+     * <p>
+     * Lineage reference object : GOREMAL_PREFERRED_IND
+     * 
+     */
+    @JsonProperty("preferredInd")
+    @JsonPropertyDescription("Lineage reference object : GOREMAL_PREFERRED_IND")
+    private String preferredInd;
+    /**
+     * Inactivate
+     * <p>
+     * Lineage reference object : GOREMAL_STATUS_IND
+     * 
+     */
+    @JsonProperty("statusInd")
+    @JsonPropertyDescription("Lineage reference object : GOREMAL_STATUS_IND")
+    private String statusInd;
+    /**
+     * Display on Web
+     * <p>
+     * Lineage reference object : GOREMAL_DISP_WEB_IND
+     * 
+     */
+    @JsonProperty("dispWebInd")
+    @JsonPropertyDescription("Lineage reference object : GOREMAL_DISP_WEB_IND")
+    private String dispWebInd;
     /**
      * User
      * <p>
@@ -108,6 +148,114 @@ public class VendorMaintenanceEmail100QapiPost {
 
     public VendorMaintenanceEmail100QapiPost withEmalCode(String emalCode) {
         this.emalCode = emalCode;
+        return this;
+    }
+
+    /**
+     * E-mail Address
+     * <p>
+     * Lineage reference object : GOREMAL_EMAIL_ADDRESS
+     * 
+     */
+    @JsonProperty("emailAddress")
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    /**
+     * E-mail Address
+     * <p>
+     * Lineage reference object : GOREMAL_EMAIL_ADDRESS
+     * 
+     */
+    @JsonProperty("emailAddress")
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
+    }
+
+    public VendorMaintenanceEmail100QapiPost withEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
+        return this;
+    }
+
+    /**
+     * Preferred
+     * <p>
+     * Lineage reference object : GOREMAL_PREFERRED_IND
+     * 
+     */
+    @JsonProperty("preferredInd")
+    public String getPreferredInd() {
+        return preferredInd;
+    }
+
+    /**
+     * Preferred
+     * <p>
+     * Lineage reference object : GOREMAL_PREFERRED_IND
+     * 
+     */
+    @JsonProperty("preferredInd")
+    public void setPreferredInd(String preferredInd) {
+        this.preferredInd = preferredInd;
+    }
+
+    public VendorMaintenanceEmail100QapiPost withPreferredInd(String preferredInd) {
+        this.preferredInd = preferredInd;
+        return this;
+    }
+
+    /**
+     * Inactivate
+     * <p>
+     * Lineage reference object : GOREMAL_STATUS_IND
+     * 
+     */
+    @JsonProperty("statusInd")
+    public String getStatusInd() {
+        return statusInd;
+    }
+
+    /**
+     * Inactivate
+     * <p>
+     * Lineage reference object : GOREMAL_STATUS_IND
+     * 
+     */
+    @JsonProperty("statusInd")
+    public void setStatusInd(String statusInd) {
+        this.statusInd = statusInd;
+    }
+
+    public VendorMaintenanceEmail100QapiPost withStatusInd(String statusInd) {
+        this.statusInd = statusInd;
+        return this;
+    }
+
+    /**
+     * Display on Web
+     * <p>
+     * Lineage reference object : GOREMAL_DISP_WEB_IND
+     * 
+     */
+    @JsonProperty("dispWebInd")
+    public String getDispWebInd() {
+        return dispWebInd;
+    }
+
+    /**
+     * Display on Web
+     * <p>
+     * Lineage reference object : GOREMAL_DISP_WEB_IND
+     * 
+     */
+    @JsonProperty("dispWebInd")
+    public void setDispWebInd(String dispWebInd) {
+        this.dispWebInd = dispWebInd;
+    }
+
+    public VendorMaintenanceEmail100QapiPost withDispWebInd(String dispWebInd) {
+        this.dispWebInd = dispWebInd;
         return this;
     }
 
@@ -192,6 +340,22 @@ public class VendorMaintenanceEmail100QapiPost {
         sb.append('=');
         sb.append(((this.emalCode == null)?"<null>":this.emalCode));
         sb.append(',');
+        sb.append("emailAddress");
+        sb.append('=');
+        sb.append(((this.emailAddress == null)?"<null>":this.emailAddress));
+        sb.append(',');
+        sb.append("preferredInd");
+        sb.append('=');
+        sb.append(((this.preferredInd == null)?"<null>":this.preferredInd));
+        sb.append(',');
+        sb.append("statusInd");
+        sb.append('=');
+        sb.append(((this.statusInd == null)?"<null>":this.statusInd));
+        sb.append(',');
+        sb.append("dispWebInd");
+        sb.append('=');
+        sb.append(((this.dispWebInd == null)?"<null>":this.dispWebInd));
+        sb.append(',');
         sb.append("userId");
         sb.append('=');
         sb.append(((this.userId == null)?"<null>":this.userId));
@@ -215,11 +379,15 @@ public class VendorMaintenanceEmail100QapiPost {
     @Override
     public int hashCode() {
         int result = 1;
+        result = ((result* 31)+((this.emailAddress == null)? 0 :this.emailAddress.hashCode()));
         result = ((result* 31)+((this.activityDate == null)? 0 :this.activityDate.hashCode()));
-        result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
-        result = ((result* 31)+((this.userId == null)? 0 :this.userId.hashCode()));
         result = ((result* 31)+((this.emalCode == null)? 0 :this.emalCode.hashCode()));
         result = ((result* 31)+((this.ftvvendVendCode == null)? 0 :this.ftvvendVendCode.hashCode()));
+        result = ((result* 31)+((this.statusInd == null)? 0 :this.statusInd.hashCode()));
+        result = ((result* 31)+((this.dispWebInd == null)? 0 :this.dispWebInd.hashCode()));
+        result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
+        result = ((result* 31)+((this.userId == null)? 0 :this.userId.hashCode()));
+        result = ((result* 31)+((this.preferredInd == null)? 0 :this.preferredInd.hashCode()));
         return result;
     }
 
@@ -232,7 +400,7 @@ public class VendorMaintenanceEmail100QapiPost {
             return false;
         }
         VendorMaintenanceEmail100QapiPost rhs = ((VendorMaintenanceEmail100QapiPost) other);
-        return ((((((this.activityDate == rhs.activityDate)||((this.activityDate!= null)&&this.activityDate.equals(rhs.activityDate)))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.userId == rhs.userId)||((this.userId!= null)&&this.userId.equals(rhs.userId))))&&((this.emalCode == rhs.emalCode)||((this.emalCode!= null)&&this.emalCode.equals(rhs.emalCode))))&&((this.ftvvendVendCode == rhs.ftvvendVendCode)||((this.ftvvendVendCode!= null)&&this.ftvvendVendCode.equals(rhs.ftvvendVendCode))));
+        return ((((((((((this.emailAddress == rhs.emailAddress)||((this.emailAddress!= null)&&this.emailAddress.equals(rhs.emailAddress)))&&((this.activityDate == rhs.activityDate)||((this.activityDate!= null)&&this.activityDate.equals(rhs.activityDate))))&&((this.emalCode == rhs.emalCode)||((this.emalCode!= null)&&this.emalCode.equals(rhs.emalCode))))&&((this.ftvvendVendCode == rhs.ftvvendVendCode)||((this.ftvvendVendCode!= null)&&this.ftvvendVendCode.equals(rhs.ftvvendVendCode))))&&((this.statusInd == rhs.statusInd)||((this.statusInd!= null)&&this.statusInd.equals(rhs.statusInd))))&&((this.dispWebInd == rhs.dispWebInd)||((this.dispWebInd!= null)&&this.dispWebInd.equals(rhs.dispWebInd))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.userId == rhs.userId)||((this.userId!= null)&&this.userId.equals(rhs.userId))))&&((this.preferredInd == rhs.preferredInd)||((this.preferredInd!= null)&&this.preferredInd.equals(rhs.preferredInd))));
     }
 
 }

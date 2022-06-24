@@ -69,7 +69,7 @@ public class GeneralPersonIdentification100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Legal Sex
      * <p>
@@ -196,7 +196,7 @@ public class GeneralPersonIdentification100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -207,11 +207,11 @@ public class GeneralPersonIdentification100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public GeneralPersonIdentification100GetRequest withId(Object id) {
+    public GeneralPersonIdentification100GetRequest withId(String id) {
         this.id = id;
         return this;
     }

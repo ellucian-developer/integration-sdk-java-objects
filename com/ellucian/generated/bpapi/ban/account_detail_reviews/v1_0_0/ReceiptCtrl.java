@@ -27,7 +27,7 @@ public class ReceiptCtrl {
      */
     @JsonProperty("receiptGenInd")
     @JsonPropertyDescription("Lineage reference object : receiptGenInd")
-    private Object receiptGenInd;
+    private String receiptGenInd;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -38,7 +38,7 @@ public class ReceiptCtrl {
      * 
      */
     @JsonProperty("receiptGenInd")
-    public Object getReceiptGenInd() {
+    public String getReceiptGenInd() {
         return receiptGenInd;
     }
 
@@ -49,11 +49,11 @@ public class ReceiptCtrl {
      * 
      */
     @JsonProperty("receiptGenInd")
-    public void setReceiptGenInd(Object receiptGenInd) {
+    public void setReceiptGenInd(String receiptGenInd) {
         this.receiptGenInd = receiptGenInd;
     }
 
-    public ReceiptCtrl withReceiptGenInd(Object receiptGenInd) {
+    public ReceiptCtrl withReceiptGenInd(String receiptGenInd) {
         this.receiptGenInd = receiptGenInd;
         return this;
     }

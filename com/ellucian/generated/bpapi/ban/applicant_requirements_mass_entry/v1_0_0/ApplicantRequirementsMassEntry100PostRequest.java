@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.applicant_requirements_mass_entry.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -36,7 +37,7 @@ public class ApplicantRequirementsMassEntry100PostRequest {
      */
     @JsonProperty("keyblckFundCode")
     @JsonPropertyDescription("Lineage reference object : keyblckFundCode, Lookup lineage reference object : rfrbase,rfraspc")
-    private Object keyblckFundCode;
+    private String keyblckFundCode;
     /**
      * Aid Year
      * <p>
@@ -45,7 +46,7 @@ public class ApplicantRequirementsMassEntry100PostRequest {
      */
     @JsonProperty("keyblckAidyCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAidyCode, Lookup lineage reference object : robinst")
-    private Object keyblckAidyCode;
+    private String keyblckAidyCode;
     /**
      * Requirement Code
      * <p>
@@ -54,7 +55,7 @@ public class ApplicantRequirementsMassEntry100PostRequest {
      */
     @JsonProperty("keyblckTreqCode")
     @JsonPropertyDescription("Lineage reference object : keyblckTreqCode")
-    private Object keyblckTreqCode;
+    private String keyblckTreqCode;
     /**
      * Period
      * <p>
@@ -63,7 +64,7 @@ public class ApplicantRequirementsMassEntry100PostRequest {
      */
     @JsonProperty("keyblckPeriod")
     @JsonPropertyDescription("Lineage reference object : keyblckPeriod, Lookup lineage reference object : robprds")
-    private Object keyblckPeriod;
+    private String keyblckPeriod;
     /**
      * Requirement Code
      * <p>
@@ -81,7 +82,7 @@ public class ApplicantRequirementsMassEntry100PostRequest {
      */
     @JsonProperty("keyblckTrstCode")
     @JsonPropertyDescription("Lineage reference object : keyblckTrstCode, Lookup lineage reference object : rtvtrst")
-    private Object keyblckTrstCode;
+    private String keyblckTrstCode;
     /**
      * Fund Code
      * <p>
@@ -117,7 +118,7 @@ public class ApplicantRequirementsMassEntry100PostRequest {
      */
     @JsonProperty("keyblckStatDate")
     @JsonPropertyDescription("Lineage reference object : keyblckStatDate")
-    private Object keyblckStatDate;
+    private Date keyblckStatDate;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -128,7 +129,7 @@ public class ApplicantRequirementsMassEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblckFundCode")
-    public Object getKeyblckFundCode() {
+    public String getKeyblckFundCode() {
         return keyblckFundCode;
     }
 
@@ -139,11 +140,11 @@ public class ApplicantRequirementsMassEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblckFundCode")
-    public void setKeyblckFundCode(Object keyblckFundCode) {
+    public void setKeyblckFundCode(String keyblckFundCode) {
         this.keyblckFundCode = keyblckFundCode;
     }
 
-    public ApplicantRequirementsMassEntry100PostRequest withKeyblckFundCode(Object keyblckFundCode) {
+    public ApplicantRequirementsMassEntry100PostRequest withKeyblckFundCode(String keyblckFundCode) {
         this.keyblckFundCode = keyblckFundCode;
         return this;
     }
@@ -155,7 +156,7 @@ public class ApplicantRequirementsMassEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public Object getKeyblckAidyCode() {
+    public String getKeyblckAidyCode() {
         return keyblckAidyCode;
     }
 
@@ -166,11 +167,11 @@ public class ApplicantRequirementsMassEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public void setKeyblckAidyCode(Object keyblckAidyCode) {
+    public void setKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
     }
 
-    public ApplicantRequirementsMassEntry100PostRequest withKeyblckAidyCode(Object keyblckAidyCode) {
+    public ApplicantRequirementsMassEntry100PostRequest withKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
         return this;
     }
@@ -182,7 +183,7 @@ public class ApplicantRequirementsMassEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblckTreqCode")
-    public Object getKeyblckTreqCode() {
+    public String getKeyblckTreqCode() {
         return keyblckTreqCode;
     }
 
@@ -193,11 +194,11 @@ public class ApplicantRequirementsMassEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblckTreqCode")
-    public void setKeyblckTreqCode(Object keyblckTreqCode) {
+    public void setKeyblckTreqCode(String keyblckTreqCode) {
         this.keyblckTreqCode = keyblckTreqCode;
     }
 
-    public ApplicantRequirementsMassEntry100PostRequest withKeyblckTreqCode(Object keyblckTreqCode) {
+    public ApplicantRequirementsMassEntry100PostRequest withKeyblckTreqCode(String keyblckTreqCode) {
         this.keyblckTreqCode = keyblckTreqCode;
         return this;
     }
@@ -209,7 +210,7 @@ public class ApplicantRequirementsMassEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblckPeriod")
-    public Object getKeyblckPeriod() {
+    public String getKeyblckPeriod() {
         return keyblckPeriod;
     }
 
@@ -220,11 +221,11 @@ public class ApplicantRequirementsMassEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblckPeriod")
-    public void setKeyblckPeriod(Object keyblckPeriod) {
+    public void setKeyblckPeriod(String keyblckPeriod) {
         this.keyblckPeriod = keyblckPeriod;
     }
 
-    public ApplicantRequirementsMassEntry100PostRequest withKeyblckPeriod(Object keyblckPeriod) {
+    public ApplicantRequirementsMassEntry100PostRequest withKeyblckPeriod(String keyblckPeriod) {
         this.keyblckPeriod = keyblckPeriod;
         return this;
     }
@@ -265,7 +266,7 @@ public class ApplicantRequirementsMassEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblckTrstCode")
-    public Object getKeyblckTrstCode() {
+    public String getKeyblckTrstCode() {
         return keyblckTrstCode;
     }
 
@@ -276,11 +277,11 @@ public class ApplicantRequirementsMassEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblckTrstCode")
-    public void setKeyblckTrstCode(Object keyblckTrstCode) {
+    public void setKeyblckTrstCode(String keyblckTrstCode) {
         this.keyblckTrstCode = keyblckTrstCode;
     }
 
-    public ApplicantRequirementsMassEntry100PostRequest withKeyblckTrstCode(Object keyblckTrstCode) {
+    public ApplicantRequirementsMassEntry100PostRequest withKeyblckTrstCode(String keyblckTrstCode) {
         this.keyblckTrstCode = keyblckTrstCode;
         return this;
     }
@@ -375,7 +376,7 @@ public class ApplicantRequirementsMassEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblckStatDate")
-    public Object getKeyblckStatDate() {
+    public Date getKeyblckStatDate() {
         return keyblckStatDate;
     }
 
@@ -386,11 +387,11 @@ public class ApplicantRequirementsMassEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblckStatDate")
-    public void setKeyblckStatDate(Object keyblckStatDate) {
+    public void setKeyblckStatDate(Date keyblckStatDate) {
         this.keyblckStatDate = keyblckStatDate;
     }
 
-    public ApplicantRequirementsMassEntry100PostRequest withKeyblckStatDate(Object keyblckStatDate) {
+    public ApplicantRequirementsMassEntry100PostRequest withKeyblckStatDate(Date keyblckStatDate) {
         this.keyblckStatDate = keyblckStatDate;
         return this;
     }

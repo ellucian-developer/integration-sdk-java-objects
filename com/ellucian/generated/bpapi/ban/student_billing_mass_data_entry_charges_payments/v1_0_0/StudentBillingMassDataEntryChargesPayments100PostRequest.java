@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.student_billing_mass_data_entry_charges_payments.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -49,7 +50,7 @@ public class StudentBillingMassDataEntryChargesPayments100PostRequest {
      */
     @JsonProperty("keyblocTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCode;
+    private String keyblocTermCode;
     /**
      * Document
      * <p>
@@ -67,7 +68,7 @@ public class StudentBillingMassDataEntryChargesPayments100PostRequest {
      */
     @JsonProperty("keyblocEffDate")
     @JsonPropertyDescription("Lineage reference object : keyblocEffDate")
-    private Object keyblocEffDate;
+    private Date keyblocEffDate;
     /**
      * Amount
      * <p>
@@ -76,7 +77,7 @@ public class StudentBillingMassDataEntryChargesPayments100PostRequest {
      */
     @JsonProperty("keyblocAmount")
     @JsonPropertyDescription("Lineage reference object : keyblocAmount")
-    private Object keyblocAmount;
+    private Double keyblocAmount;
     /**
      * Detail Code
      * <p>
@@ -111,7 +112,7 @@ public class StudentBillingMassDataEntryChargesPayments100PostRequest {
      */
     @JsonProperty("keyblocDocumentNumber")
     @JsonPropertyDescription("Lineage reference object : keyblocDocumentNumber")
-    private Object keyblocDocumentNumber;
+    private String keyblocDocumentNumber;
     /**
      * Detail Code
      * <p>
@@ -120,7 +121,7 @@ public class StudentBillingMassDataEntryChargesPayments100PostRequest {
      */
     @JsonProperty("keyblocDetailCode")
     @JsonPropertyDescription("Lineage reference object : keyblocDetailCode, Lookup lineage reference object : tbbdetc")
-    private Object keyblocDetailCode;
+    private String keyblocDetailCode;
     /**
      * ID
      * <p>
@@ -188,7 +189,7 @@ public class StudentBillingMassDataEntryChargesPayments100PostRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public Object getKeyblocTermCode() {
+    public String getKeyblocTermCode() {
         return keyblocTermCode;
     }
 
@@ -199,11 +200,11 @@ public class StudentBillingMassDataEntryChargesPayments100PostRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public void setKeyblocTermCode(Object keyblocTermCode) {
+    public void setKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
     }
 
-    public StudentBillingMassDataEntryChargesPayments100PostRequest withKeyblocTermCode(Object keyblocTermCode) {
+    public StudentBillingMassDataEntryChargesPayments100PostRequest withKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
         return this;
     }
@@ -242,7 +243,7 @@ public class StudentBillingMassDataEntryChargesPayments100PostRequest {
      * 
      */
     @JsonProperty("keyblocEffDate")
-    public Object getKeyblocEffDate() {
+    public Date getKeyblocEffDate() {
         return keyblocEffDate;
     }
 
@@ -253,11 +254,11 @@ public class StudentBillingMassDataEntryChargesPayments100PostRequest {
      * 
      */
     @JsonProperty("keyblocEffDate")
-    public void setKeyblocEffDate(Object keyblocEffDate) {
+    public void setKeyblocEffDate(Date keyblocEffDate) {
         this.keyblocEffDate = keyblocEffDate;
     }
 
-    public StudentBillingMassDataEntryChargesPayments100PostRequest withKeyblocEffDate(Object keyblocEffDate) {
+    public StudentBillingMassDataEntryChargesPayments100PostRequest withKeyblocEffDate(Date keyblocEffDate) {
         this.keyblocEffDate = keyblocEffDate;
         return this;
     }
@@ -269,7 +270,7 @@ public class StudentBillingMassDataEntryChargesPayments100PostRequest {
      * 
      */
     @JsonProperty("keyblocAmount")
-    public Object getKeyblocAmount() {
+    public Double getKeyblocAmount() {
         return keyblocAmount;
     }
 
@@ -280,11 +281,11 @@ public class StudentBillingMassDataEntryChargesPayments100PostRequest {
      * 
      */
     @JsonProperty("keyblocAmount")
-    public void setKeyblocAmount(Object keyblocAmount) {
+    public void setKeyblocAmount(Double keyblocAmount) {
         this.keyblocAmount = keyblocAmount;
     }
 
-    public StudentBillingMassDataEntryChargesPayments100PostRequest withKeyblocAmount(Object keyblocAmount) {
+    public StudentBillingMassDataEntryChargesPayments100PostRequest withKeyblocAmount(Double keyblocAmount) {
         this.keyblocAmount = keyblocAmount;
         return this;
     }
@@ -377,7 +378,7 @@ public class StudentBillingMassDataEntryChargesPayments100PostRequest {
      * 
      */
     @JsonProperty("keyblocDocumentNumber")
-    public Object getKeyblocDocumentNumber() {
+    public String getKeyblocDocumentNumber() {
         return keyblocDocumentNumber;
     }
 
@@ -388,11 +389,11 @@ public class StudentBillingMassDataEntryChargesPayments100PostRequest {
      * 
      */
     @JsonProperty("keyblocDocumentNumber")
-    public void setKeyblocDocumentNumber(Object keyblocDocumentNumber) {
+    public void setKeyblocDocumentNumber(String keyblocDocumentNumber) {
         this.keyblocDocumentNumber = keyblocDocumentNumber;
     }
 
-    public StudentBillingMassDataEntryChargesPayments100PostRequest withKeyblocDocumentNumber(Object keyblocDocumentNumber) {
+    public StudentBillingMassDataEntryChargesPayments100PostRequest withKeyblocDocumentNumber(String keyblocDocumentNumber) {
         this.keyblocDocumentNumber = keyblocDocumentNumber;
         return this;
     }
@@ -404,7 +405,7 @@ public class StudentBillingMassDataEntryChargesPayments100PostRequest {
      * 
      */
     @JsonProperty("keyblocDetailCode")
-    public Object getKeyblocDetailCode() {
+    public String getKeyblocDetailCode() {
         return keyblocDetailCode;
     }
 
@@ -415,11 +416,11 @@ public class StudentBillingMassDataEntryChargesPayments100PostRequest {
      * 
      */
     @JsonProperty("keyblocDetailCode")
-    public void setKeyblocDetailCode(Object keyblocDetailCode) {
+    public void setKeyblocDetailCode(String keyblocDetailCode) {
         this.keyblocDetailCode = keyblocDetailCode;
     }
 
-    public StudentBillingMassDataEntryChargesPayments100PostRequest withKeyblocDetailCode(Object keyblocDetailCode) {
+    public StudentBillingMassDataEntryChargesPayments100PostRequest withKeyblocDetailCode(String keyblocDetailCode) {
         this.keyblocDetailCode = keyblocDetailCode;
         return this;
     }

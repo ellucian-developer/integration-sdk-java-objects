@@ -42,8 +42,18 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @Generated("jsonschema2pojo")
 public class DetailTransactionActivity100QapiPost {
 
+    /**
+     * 
+     * (Required)
+     * 
+     */
     @JsonProperty("keyblckCoasCode")
     private String keyblckCoasCode;
+    /**
+     * 
+     * (Required)
+     * 
+     */
     @JsonProperty("keyblckFsyrCode")
     private String keyblckFsyrCode;
     @JsonProperty("keyblckAcciCode")
@@ -173,11 +183,21 @@ public class DetailTransactionActivity100QapiPost {
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
+    /**
+     * 
+     * (Required)
+     * 
+     */
     @JsonProperty("keyblckCoasCode")
     public String getKeyblckCoasCode() {
         return keyblckCoasCode;
     }
 
+    /**
+     * 
+     * (Required)
+     * 
+     */
     @JsonProperty("keyblckCoasCode")
     public void setKeyblckCoasCode(String keyblckCoasCode) {
         this.keyblckCoasCode = keyblckCoasCode;
@@ -188,11 +208,21 @@ public class DetailTransactionActivity100QapiPost {
         return this;
     }
 
+    /**
+     * 
+     * (Required)
+     * 
+     */
     @JsonProperty("keyblckFsyrCode")
     public String getKeyblckFsyrCode() {
         return keyblckFsyrCode;
     }
 
+    /**
+     * 
+     * (Required)
+     * 
+     */
     @JsonProperty("keyblckFsyrCode")
     public void setKeyblckFsyrCode(String keyblckFsyrCode) {
         this.keyblckFsyrCode = keyblckFsyrCode;

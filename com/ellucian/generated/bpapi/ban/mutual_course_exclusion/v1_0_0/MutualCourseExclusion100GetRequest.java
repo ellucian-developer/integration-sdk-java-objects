@@ -45,7 +45,7 @@ public class MutualCourseExclusion100GetRequest {
      */
     @JsonProperty("scacrseCrseNumb")
     @JsonPropertyDescription("Lineage reference object : scacrseCrseNumb, Lookup lineage reference object : scbcrse,scbcrky")
-    private Object scacrseCrseNumb;
+    private String scacrseCrseNumb;
     /**
      * Course
      * <p>
@@ -64,7 +64,7 @@ public class MutualCourseExclusion100GetRequest {
      */
     @JsonProperty("scacrseSubjCode")
     @JsonPropertyDescription("Lineage reference object : scacrseSubjCode, Lookup lineage reference object : stvsubj")
-    private Object scacrseSubjCode;
+    private String scacrseSubjCode;
     /**
      * Grade
      * <p>
@@ -103,7 +103,7 @@ public class MutualCourseExclusion100GetRequest {
      */
     @JsonProperty("scacrseTermCodeEff")
     @JsonPropertyDescription("Lineage reference object : scacrseTermCodeEff, Lookup lineage reference object : stvterm,scbcrky,scbcrky")
-    private Object scacrseTermCodeEff;
+    private String scacrseTermCodeEff;
     /**
      * Level
      * <p>
@@ -153,7 +153,7 @@ public class MutualCourseExclusion100GetRequest {
      * 
      */
     @JsonProperty("scacrseCrseNumb")
-    public Object getScacrseCrseNumb() {
+    public String getScacrseCrseNumb() {
         return scacrseCrseNumb;
     }
 
@@ -164,11 +164,11 @@ public class MutualCourseExclusion100GetRequest {
      * 
      */
     @JsonProperty("scacrseCrseNumb")
-    public void setScacrseCrseNumb(Object scacrseCrseNumb) {
+    public void setScacrseCrseNumb(String scacrseCrseNumb) {
         this.scacrseCrseNumb = scacrseCrseNumb;
     }
 
-    public MutualCourseExclusion100GetRequest withScacrseCrseNumb(Object scacrseCrseNumb) {
+    public MutualCourseExclusion100GetRequest withScacrseCrseNumb(String scacrseCrseNumb) {
         this.scacrseCrseNumb = scacrseCrseNumb;
         return this;
     }
@@ -209,7 +209,7 @@ public class MutualCourseExclusion100GetRequest {
      * 
      */
     @JsonProperty("scacrseSubjCode")
-    public Object getScacrseSubjCode() {
+    public String getScacrseSubjCode() {
         return scacrseSubjCode;
     }
 
@@ -220,11 +220,11 @@ public class MutualCourseExclusion100GetRequest {
      * 
      */
     @JsonProperty("scacrseSubjCode")
-    public void setScacrseSubjCode(Object scacrseSubjCode) {
+    public void setScacrseSubjCode(String scacrseSubjCode) {
         this.scacrseSubjCode = scacrseSubjCode;
     }
 
-    public MutualCourseExclusion100GetRequest withScacrseSubjCode(Object scacrseSubjCode) {
+    public MutualCourseExclusion100GetRequest withScacrseSubjCode(String scacrseSubjCode) {
         this.scacrseSubjCode = scacrseSubjCode;
         return this;
     }
@@ -323,7 +323,7 @@ public class MutualCourseExclusion100GetRequest {
      * 
      */
     @JsonProperty("scacrseTermCodeEff")
-    public Object getScacrseTermCodeEff() {
+    public String getScacrseTermCodeEff() {
         return scacrseTermCodeEff;
     }
 
@@ -334,11 +334,11 @@ public class MutualCourseExclusion100GetRequest {
      * 
      */
     @JsonProperty("scacrseTermCodeEff")
-    public void setScacrseTermCodeEff(Object scacrseTermCodeEff) {
+    public void setScacrseTermCodeEff(String scacrseTermCodeEff) {
         this.scacrseTermCodeEff = scacrseTermCodeEff;
     }
 
-    public MutualCourseExclusion100GetRequest withScacrseTermCodeEff(Object scacrseTermCodeEff) {
+    public MutualCourseExclusion100GetRequest withScacrseTermCodeEff(String scacrseTermCodeEff) {
         this.scacrseTermCodeEff = scacrseTermCodeEff;
         return this;
     }

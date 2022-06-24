@@ -111,7 +111,6 @@ public class StudentDetailCodes100PutRequest {
     private Double criteriaAmount;
     /**
      * Lookup lineage reference object : gtvcurr
-     * (Required)
      * 
      */
     @JsonProperty("currCode")
@@ -546,7 +545,6 @@ public class StudentDetailCodes100PutRequest {
     private String criteriaPayhistInd;
     /**
      * Lookup lineage reference object : gtvcurr
-     * (Required)
      * 
      */
     @JsonProperty("criteria.currCode")
@@ -705,7 +703,6 @@ public class StudentDetailCodes100PutRequest {
 
     /**
      * Lookup lineage reference object : gtvcurr
-     * (Required)
      * 
      */
     @JsonProperty("currCode")
@@ -715,7 +712,6 @@ public class StudentDetailCodes100PutRequest {
 
     /**
      * Lookup lineage reference object : gtvcurr
-     * (Required)
      * 
      */
     @JsonProperty("currCode")
@@ -2037,7 +2033,6 @@ public class StudentDetailCodes100PutRequest {
 
     /**
      * Lookup lineage reference object : gtvcurr
-     * (Required)
      * 
      */
     @JsonProperty("criteria.currCode")
@@ -2047,7 +2042,6 @@ public class StudentDetailCodes100PutRequest {
 
     /**
      * Lookup lineage reference object : gtvcurr
-     * (Required)
      * 
      */
     @JsonProperty("criteria.currCode")

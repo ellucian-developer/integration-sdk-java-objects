@@ -45,11 +45,6 @@ public class ExecutiveSummary100QapiPost {
      */
     @JsonProperty("keyblocFsyrCode")
     private String keyblocFsyrCode;
-    /**
-     * 
-     * (Required)
-     * 
-     */
     @JsonProperty("queryAcct")
     private String queryAcct;
     @JsonProperty("inclRev")
@@ -127,21 +122,11 @@ public class ExecutiveSummary100QapiPost {
         return this;
     }
 
-    /**
-     * 
-     * (Required)
-     * 
-     */
     @JsonProperty("queryAcct")
     public String getQueryAcct() {
         return queryAcct;
     }
 
-    /**
-     * 
-     * (Required)
-     * 
-     */
     @JsonProperty("queryAcct")
     public void setQueryAcct(String queryAcct) {
         this.queryAcct = queryAcct;

@@ -31,14 +31,14 @@ public class RdepCtrlBlock {
      */
     @JsonProperty("scrrdepDeptIeCde")
     @JsonPropertyDescription("Lineage reference object : scrrdepDeptIeCde")
-    private Object scrrdepDeptIeCde;
+    private String scrrdepDeptIeCde;
     /**
      * Lineage reference object : rdepCtrlEndcopy
      * 
      */
     @JsonProperty("rdepCtrlEndcopy")
     @JsonPropertyDescription("Lineage reference object : rdepCtrlEndcopy")
-    private Object rdepCtrlEndcopy;
+    private String rdepCtrlEndcopy;
     /**
      * From Term
      * <p>
@@ -47,7 +47,7 @@ public class RdepCtrlBlock {
      */
     @JsonProperty("scrrdepTermCodeFrom")
     @JsonPropertyDescription("Lineage reference object : scrrdepTermCodeFrom, Lookup lineage reference object : stvterm")
-    private Object scrrdepTermCodeFrom;
+    private String scrrdepTermCodeFrom;
     /**
      * To Term
      * <p>
@@ -56,7 +56,7 @@ public class RdepCtrlBlock {
      */
     @JsonProperty("scrrdepTermCodeTo")
     @JsonPropertyDescription("Lineage reference object : scrrdepTermCodeTo, Lookup lineage reference object : stvterm")
-    private Object scrrdepTermCodeTo;
+    private String scrrdepTermCodeTo;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -68,7 +68,7 @@ public class RdepCtrlBlock {
      * 
      */
     @JsonProperty("scrrdepDeptIeCde")
-    public Object getScrrdepDeptIeCde() {
+    public String getScrrdepDeptIeCde() {
         return scrrdepDeptIeCde;
     }
 
@@ -80,11 +80,11 @@ public class RdepCtrlBlock {
      * 
      */
     @JsonProperty("scrrdepDeptIeCde")
-    public void setScrrdepDeptIeCde(Object scrrdepDeptIeCde) {
+    public void setScrrdepDeptIeCde(String scrrdepDeptIeCde) {
         this.scrrdepDeptIeCde = scrrdepDeptIeCde;
     }
 
-    public RdepCtrlBlock withScrrdepDeptIeCde(Object scrrdepDeptIeCde) {
+    public RdepCtrlBlock withScrrdepDeptIeCde(String scrrdepDeptIeCde) {
         this.scrrdepDeptIeCde = scrrdepDeptIeCde;
         return this;
     }
@@ -94,7 +94,7 @@ public class RdepCtrlBlock {
      * 
      */
     @JsonProperty("rdepCtrlEndcopy")
-    public Object getRdepCtrlEndcopy() {
+    public String getRdepCtrlEndcopy() {
         return rdepCtrlEndcopy;
     }
 
@@ -103,11 +103,11 @@ public class RdepCtrlBlock {
      * 
      */
     @JsonProperty("rdepCtrlEndcopy")
-    public void setRdepCtrlEndcopy(Object rdepCtrlEndcopy) {
+    public void setRdepCtrlEndcopy(String rdepCtrlEndcopy) {
         this.rdepCtrlEndcopy = rdepCtrlEndcopy;
     }
 
-    public RdepCtrlBlock withRdepCtrlEndcopy(Object rdepCtrlEndcopy) {
+    public RdepCtrlBlock withRdepCtrlEndcopy(String rdepCtrlEndcopy) {
         this.rdepCtrlEndcopy = rdepCtrlEndcopy;
         return this;
     }
@@ -119,7 +119,7 @@ public class RdepCtrlBlock {
      * 
      */
     @JsonProperty("scrrdepTermCodeFrom")
-    public Object getScrrdepTermCodeFrom() {
+    public String getScrrdepTermCodeFrom() {
         return scrrdepTermCodeFrom;
     }
 
@@ -130,11 +130,11 @@ public class RdepCtrlBlock {
      * 
      */
     @JsonProperty("scrrdepTermCodeFrom")
-    public void setScrrdepTermCodeFrom(Object scrrdepTermCodeFrom) {
+    public void setScrrdepTermCodeFrom(String scrrdepTermCodeFrom) {
         this.scrrdepTermCodeFrom = scrrdepTermCodeFrom;
     }
 
-    public RdepCtrlBlock withScrrdepTermCodeFrom(Object scrrdepTermCodeFrom) {
+    public RdepCtrlBlock withScrrdepTermCodeFrom(String scrrdepTermCodeFrom) {
         this.scrrdepTermCodeFrom = scrrdepTermCodeFrom;
         return this;
     }
@@ -146,7 +146,7 @@ public class RdepCtrlBlock {
      * 
      */
     @JsonProperty("scrrdepTermCodeTo")
-    public Object getScrrdepTermCodeTo() {
+    public String getScrrdepTermCodeTo() {
         return scrrdepTermCodeTo;
     }
 
@@ -157,11 +157,11 @@ public class RdepCtrlBlock {
      * 
      */
     @JsonProperty("scrrdepTermCodeTo")
-    public void setScrrdepTermCodeTo(Object scrrdepTermCodeTo) {
+    public void setScrrdepTermCodeTo(String scrrdepTermCodeTo) {
         this.scrrdepTermCodeTo = scrrdepTermCodeTo;
     }
 
-    public RdepCtrlBlock withScrrdepTermCodeTo(Object scrrdepTermCodeTo) {
+    public RdepCtrlBlock withScrrdepTermCodeTo(String scrrdepTermCodeTo) {
         this.scrrdepTermCodeTo = scrrdepTermCodeTo;
         return this;
     }

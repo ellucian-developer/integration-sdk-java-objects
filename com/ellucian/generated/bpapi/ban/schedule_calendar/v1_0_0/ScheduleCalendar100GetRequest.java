@@ -28,7 +28,7 @@ public class ScheduleCalendar100GetRequest {
      */
     @JsonProperty("keyblckTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblckTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblckTermCode;
+    private String keyblckTermCode;
     /**
      * CRN
      * <p>
@@ -37,7 +37,7 @@ public class ScheduleCalendar100GetRequest {
      */
     @JsonProperty("keyblckCrn")
     @JsonPropertyDescription("Lineage reference object : keyblckCrn")
-    private Object keyblckCrn;
+    private String keyblckCrn;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -48,7 +48,7 @@ public class ScheduleCalendar100GetRequest {
      * 
      */
     @JsonProperty("keyblckTermCode")
-    public Object getKeyblckTermCode() {
+    public String getKeyblckTermCode() {
         return keyblckTermCode;
     }
 
@@ -59,11 +59,11 @@ public class ScheduleCalendar100GetRequest {
      * 
      */
     @JsonProperty("keyblckTermCode")
-    public void setKeyblckTermCode(Object keyblckTermCode) {
+    public void setKeyblckTermCode(String keyblckTermCode) {
         this.keyblckTermCode = keyblckTermCode;
     }
 
-    public ScheduleCalendar100GetRequest withKeyblckTermCode(Object keyblckTermCode) {
+    public ScheduleCalendar100GetRequest withKeyblckTermCode(String keyblckTermCode) {
         this.keyblckTermCode = keyblckTermCode;
         return this;
     }
@@ -75,7 +75,7 @@ public class ScheduleCalendar100GetRequest {
      * 
      */
     @JsonProperty("keyblckCrn")
-    public Object getKeyblckCrn() {
+    public String getKeyblckCrn() {
         return keyblckCrn;
     }
 
@@ -86,11 +86,11 @@ public class ScheduleCalendar100GetRequest {
      * 
      */
     @JsonProperty("keyblckCrn")
-    public void setKeyblckCrn(Object keyblckCrn) {
+    public void setKeyblckCrn(String keyblckCrn) {
         this.keyblckCrn = keyblckCrn;
     }
 
-    public ScheduleCalendar100GetRequest withKeyblckCrn(Object keyblckCrn) {
+    public ScheduleCalendar100GetRequest withKeyblckCrn(String keyblckCrn) {
         this.keyblckCrn = keyblckCrn;
         return this;
     }

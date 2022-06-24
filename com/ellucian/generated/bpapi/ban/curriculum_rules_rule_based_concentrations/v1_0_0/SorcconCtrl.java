@@ -27,7 +27,7 @@ public class SorcconCtrl {
      */
     @JsonProperty("cconMultipleMsg")
     @JsonPropertyDescription("Lineage reference object : cconMultipleMsg")
-    private Object cconMultipleMsg;
+    private String cconMultipleMsg;
     /**
      * From Term
      * <p>
@@ -36,7 +36,7 @@ public class SorcconCtrl {
      */
     @JsonProperty("concFrtermDisp")
     @JsonPropertyDescription("Lineage reference object : concFrtermDisp, Lookup lineage reference object : stvterm,sorccon")
-    private Object concFrtermDisp;
+    private String concFrtermDisp;
     /**
      * To Term
      * <p>
@@ -45,7 +45,7 @@ public class SorcconCtrl {
      */
     @JsonProperty("concTotermDisp")
     @JsonPropertyDescription("Lineage reference object : concTotermDisp")
-    private Object concTotermDisp;
+    private String concTotermDisp;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -54,7 +54,7 @@ public class SorcconCtrl {
      * 
      */
     @JsonProperty("cconMultipleMsg")
-    public Object getCconMultipleMsg() {
+    public String getCconMultipleMsg() {
         return cconMultipleMsg;
     }
 
@@ -63,11 +63,11 @@ public class SorcconCtrl {
      * 
      */
     @JsonProperty("cconMultipleMsg")
-    public void setCconMultipleMsg(Object cconMultipleMsg) {
+    public void setCconMultipleMsg(String cconMultipleMsg) {
         this.cconMultipleMsg = cconMultipleMsg;
     }
 
-    public SorcconCtrl withCconMultipleMsg(Object cconMultipleMsg) {
+    public SorcconCtrl withCconMultipleMsg(String cconMultipleMsg) {
         this.cconMultipleMsg = cconMultipleMsg;
         return this;
     }
@@ -79,7 +79,7 @@ public class SorcconCtrl {
      * 
      */
     @JsonProperty("concFrtermDisp")
-    public Object getConcFrtermDisp() {
+    public String getConcFrtermDisp() {
         return concFrtermDisp;
     }
 
@@ -90,11 +90,11 @@ public class SorcconCtrl {
      * 
      */
     @JsonProperty("concFrtermDisp")
-    public void setConcFrtermDisp(Object concFrtermDisp) {
+    public void setConcFrtermDisp(String concFrtermDisp) {
         this.concFrtermDisp = concFrtermDisp;
     }
 
-    public SorcconCtrl withConcFrtermDisp(Object concFrtermDisp) {
+    public SorcconCtrl withConcFrtermDisp(String concFrtermDisp) {
         this.concFrtermDisp = concFrtermDisp;
         return this;
     }
@@ -106,7 +106,7 @@ public class SorcconCtrl {
      * 
      */
     @JsonProperty("concTotermDisp")
-    public Object getConcTotermDisp() {
+    public String getConcTotermDisp() {
         return concTotermDisp;
     }
 
@@ -117,11 +117,11 @@ public class SorcconCtrl {
      * 
      */
     @JsonProperty("concTotermDisp")
-    public void setConcTotermDisp(Object concTotermDisp) {
+    public void setConcTotermDisp(String concTotermDisp) {
         this.concTotermDisp = concTotermDisp;
     }
 
-    public SorcconCtrl withConcTotermDisp(Object concTotermDisp) {
+    public SorcconCtrl withConcTotermDisp(String concTotermDisp) {
         this.concTotermDisp = concTotermDisp;
         return this;
     }

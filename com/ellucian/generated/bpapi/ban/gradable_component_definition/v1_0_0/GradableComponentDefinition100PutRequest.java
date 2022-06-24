@@ -234,7 +234,7 @@ public class GradableComponentDefinition100PutRequest {
      */
     @JsonProperty("crn")
     @JsonPropertyDescription("Lineage reference object : crn")
-    private Object crn;
+    private String crn;
     /**
      * Swrexam Name
      * <p>
@@ -373,7 +373,7 @@ public class GradableComponentDefinition100PutRequest {
      */
     @JsonProperty("termCode")
     @JsonPropertyDescription("Lineage reference object : termCode, Lookup lineage reference object : stvterm")
-    private Object termCode;
+    private String termCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -897,7 +897,7 @@ public class GradableComponentDefinition100PutRequest {
      * 
      */
     @JsonProperty("crn")
-    public Object getCrn() {
+    public String getCrn() {
         return crn;
     }
 
@@ -908,11 +908,11 @@ public class GradableComponentDefinition100PutRequest {
      * 
      */
     @JsonProperty("crn")
-    public void setCrn(Object crn) {
+    public void setCrn(String crn) {
         this.crn = crn;
     }
 
-    public GradableComponentDefinition100PutRequest withCrn(Object crn) {
+    public GradableComponentDefinition100PutRequest withCrn(String crn) {
         this.crn = crn;
         return this;
     }
@@ -1321,7 +1321,7 @@ public class GradableComponentDefinition100PutRequest {
      * 
      */
     @JsonProperty("termCode")
-    public Object getTermCode() {
+    public String getTermCode() {
         return termCode;
     }
 
@@ -1332,11 +1332,11 @@ public class GradableComponentDefinition100PutRequest {
      * 
      */
     @JsonProperty("termCode")
-    public void setTermCode(Object termCode) {
+    public void setTermCode(String termCode) {
         this.termCode = termCode;
     }
 
-    public GradableComponentDefinition100PutRequest withTermCode(Object termCode) {
+    public GradableComponentDefinition100PutRequest withTermCode(String termCode) {
         this.termCode = termCode;
         return this;
     }

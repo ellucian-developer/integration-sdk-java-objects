@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.employee_status_change_emcumbrance.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -30,7 +31,7 @@ public class EmployeeStatusChangeEmcumbrance100GetRequest {
      */
     @JsonProperty("allCbox")
     @JsonPropertyDescription("Lineage reference object : allCbox")
-    private Object allCbox;
+    private String allCbox;
     /**
      * Action
      * <p>
@@ -40,7 +41,7 @@ public class EmployeeStatusChangeEmcumbrance100GetRequest {
      */
     @JsonProperty("actionList")
     @JsonPropertyDescription("Lineage reference object : actionList")
-    private Object actionList;
+    private String actionList;
     /**
      * ID
      * <p>
@@ -49,7 +50,7 @@ public class EmployeeStatusChangeEmcumbrance100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Personnel Date
      * <p>
@@ -58,7 +59,7 @@ public class EmployeeStatusChangeEmcumbrance100GetRequest {
      */
     @JsonProperty("actionDate")
     @JsonPropertyDescription("Lineage reference object : actionDate")
-    private Object actionDate;
+    private Date actionDate;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -69,7 +70,7 @@ public class EmployeeStatusChangeEmcumbrance100GetRequest {
      * 
      */
     @JsonProperty("allCbox")
-    public Object getAllCbox() {
+    public String getAllCbox() {
         return allCbox;
     }
 
@@ -80,11 +81,11 @@ public class EmployeeStatusChangeEmcumbrance100GetRequest {
      * 
      */
     @JsonProperty("allCbox")
-    public void setAllCbox(Object allCbox) {
+    public void setAllCbox(String allCbox) {
         this.allCbox = allCbox;
     }
 
-    public EmployeeStatusChangeEmcumbrance100GetRequest withAllCbox(Object allCbox) {
+    public EmployeeStatusChangeEmcumbrance100GetRequest withAllCbox(String allCbox) {
         this.allCbox = allCbox;
         return this;
     }
@@ -97,7 +98,7 @@ public class EmployeeStatusChangeEmcumbrance100GetRequest {
      * 
      */
     @JsonProperty("actionList")
-    public Object getActionList() {
+    public String getActionList() {
         return actionList;
     }
 
@@ -109,11 +110,11 @@ public class EmployeeStatusChangeEmcumbrance100GetRequest {
      * 
      */
     @JsonProperty("actionList")
-    public void setActionList(Object actionList) {
+    public void setActionList(String actionList) {
         this.actionList = actionList;
     }
 
-    public EmployeeStatusChangeEmcumbrance100GetRequest withActionList(Object actionList) {
+    public EmployeeStatusChangeEmcumbrance100GetRequest withActionList(String actionList) {
         this.actionList = actionList;
         return this;
     }
@@ -125,7 +126,7 @@ public class EmployeeStatusChangeEmcumbrance100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -136,11 +137,11 @@ public class EmployeeStatusChangeEmcumbrance100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public EmployeeStatusChangeEmcumbrance100GetRequest withId(Object id) {
+    public EmployeeStatusChangeEmcumbrance100GetRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -152,7 +153,7 @@ public class EmployeeStatusChangeEmcumbrance100GetRequest {
      * 
      */
     @JsonProperty("actionDate")
-    public Object getActionDate() {
+    public Date getActionDate() {
         return actionDate;
     }
 
@@ -163,11 +164,11 @@ public class EmployeeStatusChangeEmcumbrance100GetRequest {
      * 
      */
     @JsonProperty("actionDate")
-    public void setActionDate(Object actionDate) {
+    public void setActionDate(Date actionDate) {
         this.actionDate = actionDate;
     }
 
-    public EmployeeStatusChangeEmcumbrance100GetRequest withActionDate(Object actionDate) {
+    public EmployeeStatusChangeEmcumbrance100GetRequest withActionDate(Date actionDate) {
         this.actionDate = actionDate;
         return this;
     }

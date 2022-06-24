@@ -31,7 +31,7 @@ public class PositionBudgetPremiumEarningsTotals100PostRequest {
      */
     @JsonProperty("fiscCode")
     @JsonPropertyDescription("Lineage reference object : fiscCode")
-    private Object fiscCode;
+    private String fiscCode;
     /**
      * Earnings
      * <p>
@@ -51,7 +51,7 @@ public class PositionBudgetPremiumEarningsTotals100PostRequest {
      */
     @JsonProperty("posn")
     @JsonPropertyDescription("Lineage reference object : posn")
-    private Object posn;
+    private String posn;
     /**
      * Budgeted Amount
      * <p>
@@ -73,7 +73,7 @@ public class PositionBudgetPremiumEarningsTotals100PostRequest {
      * 
      */
     @JsonProperty("fiscCode")
-    public Object getFiscCode() {
+    public String getFiscCode() {
         return fiscCode;
     }
 
@@ -85,11 +85,11 @@ public class PositionBudgetPremiumEarningsTotals100PostRequest {
      * 
      */
     @JsonProperty("fiscCode")
-    public void setFiscCode(Object fiscCode) {
+    public void setFiscCode(String fiscCode) {
         this.fiscCode = fiscCode;
     }
 
-    public PositionBudgetPremiumEarningsTotals100PostRequest withFiscCode(Object fiscCode) {
+    public PositionBudgetPremiumEarningsTotals100PostRequest withFiscCode(String fiscCode) {
         this.fiscCode = fiscCode;
         return this;
     }
@@ -131,7 +131,7 @@ public class PositionBudgetPremiumEarningsTotals100PostRequest {
      * 
      */
     @JsonProperty("posn")
-    public Object getPosn() {
+    public String getPosn() {
         return posn;
     }
 
@@ -143,11 +143,11 @@ public class PositionBudgetPremiumEarningsTotals100PostRequest {
      * 
      */
     @JsonProperty("posn")
-    public void setPosn(Object posn) {
+    public void setPosn(String posn) {
         this.posn = posn;
     }
 
-    public PositionBudgetPremiumEarningsTotals100PostRequest withPosn(Object posn) {
+    public PositionBudgetPremiumEarningsTotals100PostRequest withPosn(String posn) {
         this.posn = posn;
         return this;
     }

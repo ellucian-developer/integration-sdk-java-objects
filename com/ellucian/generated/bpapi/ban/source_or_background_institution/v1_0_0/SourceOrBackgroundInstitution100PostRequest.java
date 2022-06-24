@@ -107,7 +107,7 @@ public class SourceOrBackgroundInstitution100PostRequest {
      */
     @JsonProperty("keyblocSbgiCode")
     @JsonPropertyDescription("Lineage reference object : keyblocSbgiCode, Lookup lineage reference object : stvsbgi")
-    private Object keyblocSbgiCode;
+    private String keyblocSbgiCode;
     /**
      * City
      * <p>
@@ -398,7 +398,7 @@ public class SourceOrBackgroundInstitution100PostRequest {
      * 
      */
     @JsonProperty("keyblocSbgiCode")
-    public Object getKeyblocSbgiCode() {
+    public String getKeyblocSbgiCode() {
         return keyblocSbgiCode;
     }
 
@@ -409,11 +409,11 @@ public class SourceOrBackgroundInstitution100PostRequest {
      * 
      */
     @JsonProperty("keyblocSbgiCode")
-    public void setKeyblocSbgiCode(Object keyblocSbgiCode) {
+    public void setKeyblocSbgiCode(String keyblocSbgiCode) {
         this.keyblocSbgiCode = keyblocSbgiCode;
     }
 
-    public SourceOrBackgroundInstitution100PostRequest withKeyblocSbgiCode(Object keyblocSbgiCode) {
+    public SourceOrBackgroundInstitution100PostRequest withKeyblocSbgiCode(String keyblocSbgiCode) {
         this.keyblocSbgiCode = keyblocSbgiCode;
         return this;
     }

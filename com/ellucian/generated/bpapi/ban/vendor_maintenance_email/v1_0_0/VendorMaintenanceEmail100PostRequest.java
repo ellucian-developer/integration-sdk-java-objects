@@ -50,7 +50,7 @@ public class VendorMaintenanceEmail100PostRequest {
      */
     @JsonProperty("ftvvendVendCode")
     @JsonPropertyDescription("Lineage reference object : ftvvendVendCode, Lookup lineage reference object : ftvvend")
-    private Object ftvvendVendCode;
+    private String ftvvendVendCode;
     /**
      * Comment
      * <p>
@@ -134,7 +134,7 @@ public class VendorMaintenanceEmail100PostRequest {
      * 
      */
     @JsonProperty("ftvvendVendCode")
-    public Object getFtvvendVendCode() {
+    public String getFtvvendVendCode() {
         return ftvvendVendCode;
     }
 
@@ -146,11 +146,11 @@ public class VendorMaintenanceEmail100PostRequest {
      * 
      */
     @JsonProperty("ftvvendVendCode")
-    public void setFtvvendVendCode(Object ftvvendVendCode) {
+    public void setFtvvendVendCode(String ftvvendVendCode) {
         this.ftvvendVendCode = ftvvendVendCode;
     }
 
-    public VendorMaintenanceEmail100PostRequest withFtvvendVendCode(Object ftvvendVendCode) {
+    public VendorMaintenanceEmail100PostRequest withFtvvendVendCode(String ftvvendVendCode) {
         this.ftvvendVendCode = ftvvendVendCode;
         return this;
     }

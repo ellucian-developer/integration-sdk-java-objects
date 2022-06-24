@@ -129,7 +129,7 @@ public class CurriculumRulesModuleControl100GetRequest {
      */
     @JsonProperty("termCode")
     @JsonPropertyDescription("Lineage reference object : termCode, Lookup lineage reference object : stvterm")
-    private Object termCode;
+    private String termCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -421,7 +421,7 @@ public class CurriculumRulesModuleControl100GetRequest {
      * 
      */
     @JsonProperty("termCode")
-    public Object getTermCode() {
+    public String getTermCode() {
         return termCode;
     }
 
@@ -432,11 +432,11 @@ public class CurriculumRulesModuleControl100GetRequest {
      * 
      */
     @JsonProperty("termCode")
-    public void setTermCode(Object termCode) {
+    public void setTermCode(String termCode) {
         this.termCode = termCode;
     }
 
-    public CurriculumRulesModuleControl100GetRequest withTermCode(Object termCode) {
+    public CurriculumRulesModuleControl100GetRequest withTermCode(String termCode) {
         this.termCode = termCode;
         return this;
     }

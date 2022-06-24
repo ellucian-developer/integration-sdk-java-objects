@@ -15,8 +15,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "currCode",
     "detailCodeInd",
+    "taxMethod",
     "detcActiveInd",
     "payhistInd",
     "prebillPrintInd",
@@ -35,6 +35,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "priority",
     "detailCode",
     "receiptInd",
+    "taxProfile",
     "dcatCode",
     "abdcInd",
     "dirdInd",
@@ -49,14 +50,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class Tbbdetc {
 
     /**
-     * Lookup lineage reference object : gtvcurr
-     * (Required)
-     * 
-     */
-    @JsonProperty("currCode")
-    @JsonPropertyDescription("Lookup lineage reference object : gtvcurr")
-    private String currCode;
-    /**
      * Grant Type
      * <p>
      * Lineage reference object : TBBDETC_DETAIL_CODE_IND
@@ -65,6 +58,8 @@ public class Tbbdetc {
     @JsonProperty("detailCodeInd")
     @JsonPropertyDescription("Lineage reference object : TBBDETC_DETAIL_CODE_IND")
     private String detailCodeInd;
+    @JsonProperty("taxMethod")
+    private String taxMethod;
     /**
      * Active
      * <p>
@@ -229,6 +224,8 @@ public class Tbbdetc {
     @JsonProperty("receiptInd")
     @JsonPropertyDescription("Lineage reference object : TBBDETC_RECEIPT_IND")
     private String receiptInd;
+    @JsonProperty("taxProfile")
+    private String taxProfile;
     /**
      * Category
      * <p>
@@ -316,31 +313,6 @@ public class Tbbdetc {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
-     * Lookup lineage reference object : gtvcurr
-     * (Required)
-     * 
-     */
-    @JsonProperty("currCode")
-    public String getCurrCode() {
-        return currCode;
-    }
-
-    /**
-     * Lookup lineage reference object : gtvcurr
-     * (Required)
-     * 
-     */
-    @JsonProperty("currCode")
-    public void setCurrCode(String currCode) {
-        this.currCode = currCode;
-    }
-
-    public Tbbdetc withCurrCode(String currCode) {
-        this.currCode = currCode;
-        return this;
-    }
-
-    /**
      * Grant Type
      * <p>
      * Lineage reference object : TBBDETC_DETAIL_CODE_IND
@@ -364,6 +336,21 @@ public class Tbbdetc {
 
     public Tbbdetc withDetailCodeInd(String detailCodeInd) {
         this.detailCodeInd = detailCodeInd;
+        return this;
+    }
+
+    @JsonProperty("taxMethod")
+    public String getTaxMethod() {
+        return taxMethod;
+    }
+
+    @JsonProperty("taxMethod")
+    public void setTaxMethod(String taxMethod) {
+        this.taxMethod = taxMethod;
+    }
+
+    public Tbbdetc withTaxMethod(String taxMethod) {
+        this.taxMethod = taxMethod;
         return this;
     }
 
@@ -861,6 +848,21 @@ public class Tbbdetc {
         return this;
     }
 
+    @JsonProperty("taxProfile")
+    public String getTaxProfile() {
+        return taxProfile;
+    }
+
+    @JsonProperty("taxProfile")
+    public void setTaxProfile(String taxProfile) {
+        this.taxProfile = taxProfile;
+    }
+
+    public Tbbdetc withTaxProfile(String taxProfile) {
+        this.taxProfile = taxProfile;
+        return this;
+    }
+
     /**
      * Category
      * <p>
@@ -1127,13 +1129,13 @@ public class Tbbdetc {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(Tbbdetc.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
-        sb.append("currCode");
-        sb.append('=');
-        sb.append(((this.currCode == null)?"<null>":this.currCode));
-        sb.append(',');
         sb.append("detailCodeInd");
         sb.append('=');
         sb.append(((this.detailCodeInd == null)?"<null>":this.detailCodeInd));
+        sb.append(',');
+        sb.append("taxMethod");
+        sb.append('=');
+        sb.append(((this.taxMethod == null)?"<null>":this.taxMethod));
         sb.append(',');
         sb.append("detcActiveInd");
         sb.append('=');
@@ -1207,6 +1209,10 @@ public class Tbbdetc {
         sb.append('=');
         sb.append(((this.receiptInd == null)?"<null>":this.receiptInd));
         sb.append(',');
+        sb.append("taxProfile");
+        sb.append('=');
+        sb.append(((this.taxProfile == null)?"<null>":this.taxProfile));
+        sb.append(',');
         sb.append("dcatCode");
         sb.append('=');
         sb.append(((this.dcatCode == null)?"<null>":this.dcatCode));
@@ -1258,8 +1264,8 @@ public class Tbbdetc {
     @Override
     public int hashCode() {
         int result = 1;
-        result = ((result* 31)+((this.currCode == null)? 0 :this.currCode.hashCode()));
         result = ((result* 31)+((this.detailCodeInd == null)? 0 :this.detailCodeInd.hashCode()));
+        result = ((result* 31)+((this.taxMethod == null)? 0 :this.taxMethod.hashCode()));
         result = ((result* 31)+((this.detcActiveInd == null)? 0 :this.detcActiveInd.hashCode()));
         result = ((result* 31)+((this.payhistInd == null)? 0 :this.payhistInd.hashCode()));
         result = ((result* 31)+((this.prebillPrintInd == null)? 0 :this.prebillPrintInd.hashCode()));
@@ -1278,6 +1284,7 @@ public class Tbbdetc {
         result = ((result* 31)+((this.priority == null)? 0 :this.priority.hashCode()));
         result = ((result* 31)+((this.detailCode == null)? 0 :this.detailCode.hashCode()));
         result = ((result* 31)+((this.receiptInd == null)? 0 :this.receiptInd.hashCode()));
+        result = ((result* 31)+((this.taxProfile == null)? 0 :this.taxProfile.hashCode()));
         result = ((result* 31)+((this.dcatCode == null)? 0 :this.dcatCode.hashCode()));
         result = ((result* 31)+((this.abdcInd == null)? 0 :this.abdcInd.hashCode()));
         result = ((result* 31)+((this.dirdInd == null)? 0 :this.dirdInd.hashCode()));
@@ -1300,7 +1307,7 @@ public class Tbbdetc {
             return false;
         }
         Tbbdetc rhs = ((Tbbdetc) other);
-        return (((((((((((((((((((((((((((((((this.currCode == rhs.currCode)||((this.currCode!= null)&&this.currCode.equals(rhs.currCode)))&&((this.detailCodeInd == rhs.detailCodeInd)||((this.detailCodeInd!= null)&&this.detailCodeInd.equals(rhs.detailCodeInd))))&&((this.detcActiveInd == rhs.detcActiveInd)||((this.detcActiveInd!= null)&&this.detcActiveInd.equals(rhs.detcActiveInd))))&&((this.payhistInd == rhs.payhistInd)||((this.payhistInd!= null)&&this.payhistInd.equals(rhs.payhistInd))))&&((this.prebillPrintInd == rhs.prebillPrintInd)||((this.prebillPrintInd!= null)&&this.prebillPrintInd.equals(rhs.prebillPrintInd))))&&((this.tivInd == rhs.tivInd)||((this.tivInd!= null)&&this.tivInd.equals(rhs.tivInd))))&&((this.tbdcInd == rhs.tbdcInd)||((this.tbdcInd!= null)&&this.tbdcInd.equals(rhs.tbdcInd))))&&((this.likeTermInd == rhs.likeTermInd)||((this.likeTermInd!= null)&&this.likeTermInd.equals(rhs.likeTermInd))))&&((this.glNosEnterable == rhs.glNosEnterable)||((this.glNosEnterable!= null)&&this.glNosEnterable.equals(rhs.glNosEnterable))))&&((this.likeScpInd == rhs.likeScpInd)||((this.likeScpInd!= null)&&this.likeScpInd.equals(rhs.likeScpInd))))&&((this.tbbdectNonAllowChgInd == rhs.tbbdectNonAllowChgInd)||((this.tbbdectNonAllowChgInd!= null)&&this.tbbdectNonAllowChgInd.equals(rhs.tbbdectNonAllowChgInd))))&&((this.amount == rhs.amount)||((this.amount!= null)&&this.amount.equals(rhs.amount))))&&((this.typeInd == rhs.typeInd)||((this.typeInd!= null)&&this.typeInd.equals(rhs.typeInd))))&&((this.paytCode == rhs.paytCode)||((this.paytCode!= null)&&this.paytCode.equals(rhs.paytCode))))&&((this.refundInd == rhs.refundInd)||((this.refundInd!= null)&&this.refundInd.equals(rhs.refundInd))))&&((this.likeAidyInd == rhs.likeAidyInd)||((this.likeAidyInd!= null)&&this.likeAidyInd.equals(rhs.likeAidyInd))))&&((this.likePeriodInd == rhs.likePeriodInd)||((this.likePeriodInd!= null)&&this.likePeriodInd.equals(rhs.likePeriodInd))))&&((this.priority == rhs.priority)||((this.priority!= null)&&this.priority.equals(rhs.priority))))&&((this.detailCode == rhs.detailCode)||((this.detailCode!= null)&&this.detailCode.equals(rhs.detailCode))))&&((this.receiptInd == rhs.receiptInd)||((this.receiptInd!= null)&&this.receiptInd.equals(rhs.receiptInd))))&&((this.dcatCode == rhs.dcatCode)||((this.dcatCode!= null)&&this.dcatCode.equals(rhs.dcatCode))))&&((this.abdcInd == rhs.abdcInd)||((this.abdcInd!= null)&&this.abdcInd.equals(rhs.abdcInd))))&&((this.dirdInd == rhs.dirdInd)||((this.dirdInd!= null)&&this.dirdInd.equals(rhs.dirdInd))))&&((this.refundableInd == rhs.refundableInd)||((this.refundableInd!= null)&&this.refundableInd.equals(rhs.refundableInd))))&&((this.taxtCode == rhs.taxtCode)||((this.taxtCode!= null)&&this.taxtCode.equals(rhs.taxtCode))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.instChgInd == rhs.instChgInd)||((this.instChgInd!= null)&&this.instChgInd.equals(rhs.instChgInd))))&&((this.effectiveDate == rhs.effectiveDate)||((this.effectiveDate!= null)&&this.effectiveDate.equals(rhs.effectiveDate))))&&((this.desc == rhs.desc)||((this.desc!= null)&&this.desc.equals(rhs.desc))))&&((this.termCode == rhs.termCode)||((this.termCode!= null)&&this.termCode.equals(rhs.termCode))));
+        return ((((((((((((((((((((((((((((((((this.detailCodeInd == rhs.detailCodeInd)||((this.detailCodeInd!= null)&&this.detailCodeInd.equals(rhs.detailCodeInd)))&&((this.taxMethod == rhs.taxMethod)||((this.taxMethod!= null)&&this.taxMethod.equals(rhs.taxMethod))))&&((this.detcActiveInd == rhs.detcActiveInd)||((this.detcActiveInd!= null)&&this.detcActiveInd.equals(rhs.detcActiveInd))))&&((this.payhistInd == rhs.payhistInd)||((this.payhistInd!= null)&&this.payhistInd.equals(rhs.payhistInd))))&&((this.prebillPrintInd == rhs.prebillPrintInd)||((this.prebillPrintInd!= null)&&this.prebillPrintInd.equals(rhs.prebillPrintInd))))&&((this.tivInd == rhs.tivInd)||((this.tivInd!= null)&&this.tivInd.equals(rhs.tivInd))))&&((this.tbdcInd == rhs.tbdcInd)||((this.tbdcInd!= null)&&this.tbdcInd.equals(rhs.tbdcInd))))&&((this.likeTermInd == rhs.likeTermInd)||((this.likeTermInd!= null)&&this.likeTermInd.equals(rhs.likeTermInd))))&&((this.glNosEnterable == rhs.glNosEnterable)||((this.glNosEnterable!= null)&&this.glNosEnterable.equals(rhs.glNosEnterable))))&&((this.likeScpInd == rhs.likeScpInd)||((this.likeScpInd!= null)&&this.likeScpInd.equals(rhs.likeScpInd))))&&((this.tbbdectNonAllowChgInd == rhs.tbbdectNonAllowChgInd)||((this.tbbdectNonAllowChgInd!= null)&&this.tbbdectNonAllowChgInd.equals(rhs.tbbdectNonAllowChgInd))))&&((this.amount == rhs.amount)||((this.amount!= null)&&this.amount.equals(rhs.amount))))&&((this.typeInd == rhs.typeInd)||((this.typeInd!= null)&&this.typeInd.equals(rhs.typeInd))))&&((this.paytCode == rhs.paytCode)||((this.paytCode!= null)&&this.paytCode.equals(rhs.paytCode))))&&((this.refundInd == rhs.refundInd)||((this.refundInd!= null)&&this.refundInd.equals(rhs.refundInd))))&&((this.likeAidyInd == rhs.likeAidyInd)||((this.likeAidyInd!= null)&&this.likeAidyInd.equals(rhs.likeAidyInd))))&&((this.likePeriodInd == rhs.likePeriodInd)||((this.likePeriodInd!= null)&&this.likePeriodInd.equals(rhs.likePeriodInd))))&&((this.priority == rhs.priority)||((this.priority!= null)&&this.priority.equals(rhs.priority))))&&((this.detailCode == rhs.detailCode)||((this.detailCode!= null)&&this.detailCode.equals(rhs.detailCode))))&&((this.receiptInd == rhs.receiptInd)||((this.receiptInd!= null)&&this.receiptInd.equals(rhs.receiptInd))))&&((this.taxProfile == rhs.taxProfile)||((this.taxProfile!= null)&&this.taxProfile.equals(rhs.taxProfile))))&&((this.dcatCode == rhs.dcatCode)||((this.dcatCode!= null)&&this.dcatCode.equals(rhs.dcatCode))))&&((this.abdcInd == rhs.abdcInd)||((this.abdcInd!= null)&&this.abdcInd.equals(rhs.abdcInd))))&&((this.dirdInd == rhs.dirdInd)||((this.dirdInd!= null)&&this.dirdInd.equals(rhs.dirdInd))))&&((this.refundableInd == rhs.refundableInd)||((this.refundableInd!= null)&&this.refundableInd.equals(rhs.refundableInd))))&&((this.taxtCode == rhs.taxtCode)||((this.taxtCode!= null)&&this.taxtCode.equals(rhs.taxtCode))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.instChgInd == rhs.instChgInd)||((this.instChgInd!= null)&&this.instChgInd.equals(rhs.instChgInd))))&&((this.effectiveDate == rhs.effectiveDate)||((this.effectiveDate!= null)&&this.effectiveDate.equals(rhs.effectiveDate))))&&((this.desc == rhs.desc)||((this.desc!= null)&&this.desc.equals(rhs.desc))))&&((this.termCode == rhs.termCode)||((this.termCode!= null)&&this.termCode.equals(rhs.termCode))));
     }
 
 }

@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.course_search.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -31,7 +32,7 @@ public class ScacrseKeyBlock {
      */
     @JsonProperty("scacrseCrseNumb")
     @JsonPropertyDescription("Lineage reference object : scacrseCrseNumb, Lookup lineage reference object : scbcrse,scbcrky")
-    private Object scacrseCrseNumb;
+    private String scacrseCrseNumb;
     /**
      * Subj Description
      * <p>
@@ -40,7 +41,7 @@ public class ScacrseKeyBlock {
      */
     @JsonProperty("subjDescription")
     @JsonPropertyDescription("Lineage reference object : subjDescription")
-    private Object subjDescription;
+    private String subjDescription;
     /**
      * Subject
      * <p>
@@ -49,7 +50,7 @@ public class ScacrseKeyBlock {
      */
     @JsonProperty("scacrseSubjCode")
     @JsonPropertyDescription("Lineage reference object : scacrseSubjCode, Lookup lineage reference object : stvsubj")
-    private Object scacrseSubjCode;
+    private String scacrseSubjCode;
     /**
      * From  Date
      * <p>
@@ -58,7 +59,7 @@ public class ScacrseKeyBlock {
      */
     @JsonProperty("scacrseStartDate")
     @JsonPropertyDescription("Lineage reference object : scacrseStartDate")
-    private Object scacrseStartDate;
+    private Date scacrseStartDate;
     /**
      * To Date
      * <p>
@@ -67,7 +68,7 @@ public class ScacrseKeyBlock {
      */
     @JsonProperty("scacrseEndDate")
     @JsonPropertyDescription("Lineage reference object : scacrseEndDate")
-    private Object scacrseEndDate;
+    private Date scacrseEndDate;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -78,7 +79,7 @@ public class ScacrseKeyBlock {
      * 
      */
     @JsonProperty("scacrseCrseNumb")
-    public Object getScacrseCrseNumb() {
+    public String getScacrseCrseNumb() {
         return scacrseCrseNumb;
     }
 
@@ -89,11 +90,11 @@ public class ScacrseKeyBlock {
      * 
      */
     @JsonProperty("scacrseCrseNumb")
-    public void setScacrseCrseNumb(Object scacrseCrseNumb) {
+    public void setScacrseCrseNumb(String scacrseCrseNumb) {
         this.scacrseCrseNumb = scacrseCrseNumb;
     }
 
-    public ScacrseKeyBlock withScacrseCrseNumb(Object scacrseCrseNumb) {
+    public ScacrseKeyBlock withScacrseCrseNumb(String scacrseCrseNumb) {
         this.scacrseCrseNumb = scacrseCrseNumb;
         return this;
     }
@@ -105,7 +106,7 @@ public class ScacrseKeyBlock {
      * 
      */
     @JsonProperty("subjDescription")
-    public Object getSubjDescription() {
+    public String getSubjDescription() {
         return subjDescription;
     }
 
@@ -116,11 +117,11 @@ public class ScacrseKeyBlock {
      * 
      */
     @JsonProperty("subjDescription")
-    public void setSubjDescription(Object subjDescription) {
+    public void setSubjDescription(String subjDescription) {
         this.subjDescription = subjDescription;
     }
 
-    public ScacrseKeyBlock withSubjDescription(Object subjDescription) {
+    public ScacrseKeyBlock withSubjDescription(String subjDescription) {
         this.subjDescription = subjDescription;
         return this;
     }
@@ -132,7 +133,7 @@ public class ScacrseKeyBlock {
      * 
      */
     @JsonProperty("scacrseSubjCode")
-    public Object getScacrseSubjCode() {
+    public String getScacrseSubjCode() {
         return scacrseSubjCode;
     }
 
@@ -143,11 +144,11 @@ public class ScacrseKeyBlock {
      * 
      */
     @JsonProperty("scacrseSubjCode")
-    public void setScacrseSubjCode(Object scacrseSubjCode) {
+    public void setScacrseSubjCode(String scacrseSubjCode) {
         this.scacrseSubjCode = scacrseSubjCode;
     }
 
-    public ScacrseKeyBlock withScacrseSubjCode(Object scacrseSubjCode) {
+    public ScacrseKeyBlock withScacrseSubjCode(String scacrseSubjCode) {
         this.scacrseSubjCode = scacrseSubjCode;
         return this;
     }
@@ -159,7 +160,7 @@ public class ScacrseKeyBlock {
      * 
      */
     @JsonProperty("scacrseStartDate")
-    public Object getScacrseStartDate() {
+    public Date getScacrseStartDate() {
         return scacrseStartDate;
     }
 
@@ -170,11 +171,11 @@ public class ScacrseKeyBlock {
      * 
      */
     @JsonProperty("scacrseStartDate")
-    public void setScacrseStartDate(Object scacrseStartDate) {
+    public void setScacrseStartDate(Date scacrseStartDate) {
         this.scacrseStartDate = scacrseStartDate;
     }
 
-    public ScacrseKeyBlock withScacrseStartDate(Object scacrseStartDate) {
+    public ScacrseKeyBlock withScacrseStartDate(Date scacrseStartDate) {
         this.scacrseStartDate = scacrseStartDate;
         return this;
     }
@@ -186,7 +187,7 @@ public class ScacrseKeyBlock {
      * 
      */
     @JsonProperty("scacrseEndDate")
-    public Object getScacrseEndDate() {
+    public Date getScacrseEndDate() {
         return scacrseEndDate;
     }
 
@@ -197,11 +198,11 @@ public class ScacrseKeyBlock {
      * 
      */
     @JsonProperty("scacrseEndDate")
-    public void setScacrseEndDate(Object scacrseEndDate) {
+    public void setScacrseEndDate(Date scacrseEndDate) {
         this.scacrseEndDate = scacrseEndDate;
     }
 
-    public ScacrseKeyBlock withScacrseEndDate(Object scacrseEndDate) {
+    public ScacrseKeyBlock withScacrseEndDate(Date scacrseEndDate) {
         this.scacrseEndDate = scacrseEndDate;
         return this;
     }

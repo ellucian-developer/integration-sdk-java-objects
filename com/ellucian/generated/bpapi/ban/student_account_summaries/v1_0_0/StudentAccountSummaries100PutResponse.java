@@ -15,42 +15,27 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "acct_bal",
     "tbbacct",
-    "tbrcolc",
-    "tbristl",
-    "tbbcstu"
+    "acct_bal",
+    "tbbestu",
+    "tbbcstu",
+    "tbrcolc"
 })
 @Generated("jsonschema2pojo")
 public class StudentAccountSummaries100PutResponse {
 
-    @JsonProperty("acct_bal")
-    private List<AcctBal__1> acctBal = new ArrayList<AcctBal__1>();
     @JsonProperty("tbbacct")
     private List<Tbbacct__1> tbbacct = new ArrayList<Tbbacct__1>();
-    @JsonProperty("tbrcolc")
-    private List<Tbrcolc__1> tbrcolc = new ArrayList<Tbrcolc__1>();
-    @JsonProperty("tbristl")
-    private List<Tbristl__1> tbristl = new ArrayList<Tbristl__1>();
+    @JsonProperty("acct_bal")
+    private List<AcctBal__1> acctBal = new ArrayList<AcctBal__1>();
+    @JsonProperty("tbbestu")
+    private List<Tbbestu__1> tbbestu = new ArrayList<Tbbestu__1>();
     @JsonProperty("tbbcstu")
     private List<Tbbcstu__1> tbbcstu = new ArrayList<Tbbcstu__1>();
+    @JsonProperty("tbrcolc")
+    private List<Tbrcolc__1> tbrcolc = new ArrayList<Tbrcolc__1>();
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-
-    @JsonProperty("acct_bal")
-    public List<AcctBal__1> getAcctBal() {
-        return acctBal;
-    }
-
-    @JsonProperty("acct_bal")
-    public void setAcctBal(List<AcctBal__1> acctBal) {
-        this.acctBal = acctBal;
-    }
-
-    public StudentAccountSummaries100PutResponse withAcctBal(List<AcctBal__1> acctBal) {
-        this.acctBal = acctBal;
-        return this;
-    }
 
     @JsonProperty("tbbacct")
     public List<Tbbacct__1> getTbbacct() {
@@ -67,33 +52,33 @@ public class StudentAccountSummaries100PutResponse {
         return this;
     }
 
-    @JsonProperty("tbrcolc")
-    public List<Tbrcolc__1> getTbrcolc() {
-        return tbrcolc;
+    @JsonProperty("acct_bal")
+    public List<AcctBal__1> getAcctBal() {
+        return acctBal;
     }
 
-    @JsonProperty("tbrcolc")
-    public void setTbrcolc(List<Tbrcolc__1> tbrcolc) {
-        this.tbrcolc = tbrcolc;
+    @JsonProperty("acct_bal")
+    public void setAcctBal(List<AcctBal__1> acctBal) {
+        this.acctBal = acctBal;
     }
 
-    public StudentAccountSummaries100PutResponse withTbrcolc(List<Tbrcolc__1> tbrcolc) {
-        this.tbrcolc = tbrcolc;
+    public StudentAccountSummaries100PutResponse withAcctBal(List<AcctBal__1> acctBal) {
+        this.acctBal = acctBal;
         return this;
     }
 
-    @JsonProperty("tbristl")
-    public List<Tbristl__1> getTbristl() {
-        return tbristl;
+    @JsonProperty("tbbestu")
+    public List<Tbbestu__1> getTbbestu() {
+        return tbbestu;
     }
 
-    @JsonProperty("tbristl")
-    public void setTbristl(List<Tbristl__1> tbristl) {
-        this.tbristl = tbristl;
+    @JsonProperty("tbbestu")
+    public void setTbbestu(List<Tbbestu__1> tbbestu) {
+        this.tbbestu = tbbestu;
     }
 
-    public StudentAccountSummaries100PutResponse withTbristl(List<Tbristl__1> tbristl) {
-        this.tbristl = tbristl;
+    public StudentAccountSummaries100PutResponse withTbbestu(List<Tbbestu__1> tbbestu) {
+        this.tbbestu = tbbestu;
         return this;
     }
 
@@ -109,6 +94,21 @@ public class StudentAccountSummaries100PutResponse {
 
     public StudentAccountSummaries100PutResponse withTbbcstu(List<Tbbcstu__1> tbbcstu) {
         this.tbbcstu = tbbcstu;
+        return this;
+    }
+
+    @JsonProperty("tbrcolc")
+    public List<Tbrcolc__1> getTbrcolc() {
+        return tbrcolc;
+    }
+
+    @JsonProperty("tbrcolc")
+    public void setTbrcolc(List<Tbrcolc__1> tbrcolc) {
+        this.tbrcolc = tbrcolc;
+    }
+
+    public StudentAccountSummaries100PutResponse withTbrcolc(List<Tbrcolc__1> tbrcolc) {
+        this.tbrcolc = tbrcolc;
         return this;
     }
 
@@ -131,25 +131,25 @@ public class StudentAccountSummaries100PutResponse {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(StudentAccountSummaries100PutResponse.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
-        sb.append("acctBal");
-        sb.append('=');
-        sb.append(((this.acctBal == null)?"<null>":this.acctBal));
-        sb.append(',');
         sb.append("tbbacct");
         sb.append('=');
         sb.append(((this.tbbacct == null)?"<null>":this.tbbacct));
         sb.append(',');
-        sb.append("tbrcolc");
+        sb.append("acctBal");
         sb.append('=');
-        sb.append(((this.tbrcolc == null)?"<null>":this.tbrcolc));
+        sb.append(((this.acctBal == null)?"<null>":this.acctBal));
         sb.append(',');
-        sb.append("tbristl");
+        sb.append("tbbestu");
         sb.append('=');
-        sb.append(((this.tbristl == null)?"<null>":this.tbristl));
+        sb.append(((this.tbbestu == null)?"<null>":this.tbbestu));
         sb.append(',');
         sb.append("tbbcstu");
         sb.append('=');
         sb.append(((this.tbbcstu == null)?"<null>":this.tbbcstu));
+        sb.append(',');
+        sb.append("tbrcolc");
+        sb.append('=');
+        sb.append(((this.tbrcolc == null)?"<null>":this.tbrcolc));
         sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');
@@ -166,7 +166,7 @@ public class StudentAccountSummaries100PutResponse {
     @Override
     public int hashCode() {
         int result = 1;
-        result = ((result* 31)+((this.tbristl == null)? 0 :this.tbristl.hashCode()));
+        result = ((result* 31)+((this.tbbestu == null)? 0 :this.tbbestu.hashCode()));
         result = ((result* 31)+((this.tbbcstu == null)? 0 :this.tbbcstu.hashCode()));
         result = ((result* 31)+((this.tbrcolc == null)? 0 :this.tbrcolc.hashCode()));
         result = ((result* 31)+((this.tbbacct == null)? 0 :this.tbbacct.hashCode()));
@@ -184,7 +184,7 @@ public class StudentAccountSummaries100PutResponse {
             return false;
         }
         StudentAccountSummaries100PutResponse rhs = ((StudentAccountSummaries100PutResponse) other);
-        return (((((((this.tbristl == rhs.tbristl)||((this.tbristl!= null)&&this.tbristl.equals(rhs.tbristl)))&&((this.tbbcstu == rhs.tbbcstu)||((this.tbbcstu!= null)&&this.tbbcstu.equals(rhs.tbbcstu))))&&((this.tbrcolc == rhs.tbrcolc)||((this.tbrcolc!= null)&&this.tbrcolc.equals(rhs.tbrcolc))))&&((this.tbbacct == rhs.tbbacct)||((this.tbbacct!= null)&&this.tbbacct.equals(rhs.tbbacct))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.acctBal == rhs.acctBal)||((this.acctBal!= null)&&this.acctBal.equals(rhs.acctBal))));
+        return (((((((this.tbbestu == rhs.tbbestu)||((this.tbbestu!= null)&&this.tbbestu.equals(rhs.tbbestu)))&&((this.tbbcstu == rhs.tbbcstu)||((this.tbbcstu!= null)&&this.tbbcstu.equals(rhs.tbbcstu))))&&((this.tbrcolc == rhs.tbrcolc)||((this.tbrcolc!= null)&&this.tbrcolc.equals(rhs.tbrcolc))))&&((this.tbbacct == rhs.tbbacct)||((this.tbbacct!= null)&&this.tbbacct.equals(rhs.tbbacct))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.acctBal == rhs.acctBal)||((this.acctBal!= null)&&this.acctBal.equals(rhs.acctBal))));
     }
 
 }

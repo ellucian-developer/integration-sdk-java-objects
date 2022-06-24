@@ -28,7 +28,7 @@ public class FundHierarchyQuery100GetRequest {
      */
     @JsonProperty("ftxfndhFundCode")
     @JsonPropertyDescription("Lineage reference object : ftxfndhFundCode")
-    private Object ftxfndhFundCode;
+    private String ftxfndhFundCode;
     /**
      * COA
      * <p>
@@ -37,7 +37,7 @@ public class FundHierarchyQuery100GetRequest {
      */
     @JsonProperty("ftxfndhCoasCode")
     @JsonPropertyDescription("Lineage reference object : ftxfndhCoasCode, Lookup lineage reference object : ftvcoas")
-    private Object ftxfndhCoasCode;
+    private String ftxfndhCoasCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -48,7 +48,7 @@ public class FundHierarchyQuery100GetRequest {
      * 
      */
     @JsonProperty("ftxfndhFundCode")
-    public Object getFtxfndhFundCode() {
+    public String getFtxfndhFundCode() {
         return ftxfndhFundCode;
     }
 
@@ -59,11 +59,11 @@ public class FundHierarchyQuery100GetRequest {
      * 
      */
     @JsonProperty("ftxfndhFundCode")
-    public void setFtxfndhFundCode(Object ftxfndhFundCode) {
+    public void setFtxfndhFundCode(String ftxfndhFundCode) {
         this.ftxfndhFundCode = ftxfndhFundCode;
     }
 
-    public FundHierarchyQuery100GetRequest withFtxfndhFundCode(Object ftxfndhFundCode) {
+    public FundHierarchyQuery100GetRequest withFtxfndhFundCode(String ftxfndhFundCode) {
         this.ftxfndhFundCode = ftxfndhFundCode;
         return this;
     }
@@ -75,7 +75,7 @@ public class FundHierarchyQuery100GetRequest {
      * 
      */
     @JsonProperty("ftxfndhCoasCode")
-    public Object getFtxfndhCoasCode() {
+    public String getFtxfndhCoasCode() {
         return ftxfndhCoasCode;
     }
 
@@ -86,11 +86,11 @@ public class FundHierarchyQuery100GetRequest {
      * 
      */
     @JsonProperty("ftxfndhCoasCode")
-    public void setFtxfndhCoasCode(Object ftxfndhCoasCode) {
+    public void setFtxfndhCoasCode(String ftxfndhCoasCode) {
         this.ftxfndhCoasCode = ftxfndhCoasCode;
     }
 
-    public FundHierarchyQuery100GetRequest withFtxfndhCoasCode(Object ftxfndhCoasCode) {
+    public FundHierarchyQuery100GetRequest withFtxfndhCoasCode(String ftxfndhCoasCode) {
         this.ftxfndhCoasCode = ftxfndhCoasCode;
         return this;
     }

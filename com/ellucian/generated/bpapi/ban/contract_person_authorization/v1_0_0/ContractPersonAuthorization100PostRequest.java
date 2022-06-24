@@ -57,7 +57,7 @@ public class ContractPersonAuthorization100PostRequest {
      */
     @JsonProperty("keyblocTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCode;
+    private String keyblocTermCode;
     /**
      * Contract Number
      * <p>
@@ -75,7 +75,7 @@ public class ContractPersonAuthorization100PostRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Priority
      * <p>
@@ -173,7 +173,7 @@ public class ContractPersonAuthorization100PostRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public Object getKeyblocTermCode() {
+    public String getKeyblocTermCode() {
         return keyblocTermCode;
     }
 
@@ -184,11 +184,11 @@ public class ContractPersonAuthorization100PostRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public void setKeyblocTermCode(Object keyblocTermCode) {
+    public void setKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
     }
 
-    public ContractPersonAuthorization100PostRequest withKeyblocTermCode(Object keyblocTermCode) {
+    public ContractPersonAuthorization100PostRequest withKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
         return this;
     }
@@ -227,7 +227,7 @@ public class ContractPersonAuthorization100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -238,11 +238,11 @@ public class ContractPersonAuthorization100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public ContractPersonAuthorization100PostRequest withId(Object id) {
+    public ContractPersonAuthorization100PostRequest withId(String id) {
         this.id = id;
         return this;
     }

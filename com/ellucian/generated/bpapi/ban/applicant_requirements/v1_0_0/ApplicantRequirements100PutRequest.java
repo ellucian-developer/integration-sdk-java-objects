@@ -86,7 +86,7 @@ public class ApplicantRequirements100PutRequest {
      */
     @JsonProperty("keyblckAidyCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAidyCode, Lookup lineage reference object : robinst")
-    private Object keyblckAidyCode;
+    private String keyblckAidyCode;
     @JsonProperty("criteria.displayTreqDesc")
     private String criteriaDisplayTreqDesc;
     /**
@@ -97,7 +97,7 @@ public class ApplicantRequirements100PutRequest {
      */
     @JsonProperty("keyblckId")
     @JsonPropertyDescription("Lineage reference object : keyblckId")
-    private Object keyblckId;
+    private String keyblckId;
     /**
      * Fund
      * <p>
@@ -365,7 +365,7 @@ public class ApplicantRequirements100PutRequest {
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public Object getKeyblckAidyCode() {
+    public String getKeyblckAidyCode() {
         return keyblckAidyCode;
     }
 
@@ -376,11 +376,11 @@ public class ApplicantRequirements100PutRequest {
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public void setKeyblckAidyCode(Object keyblckAidyCode) {
+    public void setKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
     }
 
-    public ApplicantRequirements100PutRequest withKeyblckAidyCode(Object keyblckAidyCode) {
+    public ApplicantRequirements100PutRequest withKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
         return this;
     }
@@ -407,7 +407,7 @@ public class ApplicantRequirements100PutRequest {
      * 
      */
     @JsonProperty("keyblckId")
-    public Object getKeyblckId() {
+    public String getKeyblckId() {
         return keyblckId;
     }
 
@@ -418,11 +418,11 @@ public class ApplicantRequirements100PutRequest {
      * 
      */
     @JsonProperty("keyblckId")
-    public void setKeyblckId(Object keyblckId) {
+    public void setKeyblckId(String keyblckId) {
         this.keyblckId = keyblckId;
     }
 
-    public ApplicantRequirements100PutRequest withKeyblckId(Object keyblckId) {
+    public ApplicantRequirements100PutRequest withKeyblckId(String keyblckId) {
         this.keyblckId = keyblckId;
         return this;
     }

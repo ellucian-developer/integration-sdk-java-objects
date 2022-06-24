@@ -21,11 +21,9 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "natnCode",
     "certCode",
     "certDate",
-    "endsCode",
     "expireDate",
     "id",
-    "nextCertDate",
-    "endsDate"
+    "nextCertDate"
 })
 @Generated("jsonschema2pojo")
 public class CertificationInformation100PostRequest {
@@ -86,16 +84,6 @@ public class CertificationInformation100PostRequest {
     @JsonPropertyDescription("Lineage reference object : PPRCERT_CERT_DATE")
     private Date certDate;
     /**
-     * Endorsement Code
-     * <p>
-     * Lineage reference object : PPRENDS_ENDS_CODE, Lookup lineage reference object : ptvends
-     * (Required)
-     * 
-     */
-    @JsonProperty("endsCode")
-    @JsonPropertyDescription("Lineage reference object : PPRENDS_ENDS_CODE, Lookup lineage reference object : ptvends")
-    private String endsCode;
-    /**
      * Expiration Date
      * <p>
      * Lineage reference object : PPRCERT_EXPIRE_DATE
@@ -112,7 +100,7 @@ public class CertificationInformation100PostRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Next Certification Date
      * <p>
@@ -122,16 +110,6 @@ public class CertificationInformation100PostRequest {
     @JsonProperty("nextCertDate")
     @JsonPropertyDescription("Lineage reference object : PPRCERT_NEXT_CERT_DATE")
     private Date nextCertDate;
-    /**
-     * Endorsement Date
-     * <p>
-     * Lineage reference object : PPRENDS_ENDS_DATE
-     * (Required)
-     * 
-     */
-    @JsonProperty("endsDate")
-    @JsonPropertyDescription("Lineage reference object : PPRENDS_ENDS_DATE")
-    private Date endsDate;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -300,35 +278,6 @@ public class CertificationInformation100PostRequest {
     }
 
     /**
-     * Endorsement Code
-     * <p>
-     * Lineage reference object : PPRENDS_ENDS_CODE, Lookup lineage reference object : ptvends
-     * (Required)
-     * 
-     */
-    @JsonProperty("endsCode")
-    public String getEndsCode() {
-        return endsCode;
-    }
-
-    /**
-     * Endorsement Code
-     * <p>
-     * Lineage reference object : PPRENDS_ENDS_CODE, Lookup lineage reference object : ptvends
-     * (Required)
-     * 
-     */
-    @JsonProperty("endsCode")
-    public void setEndsCode(String endsCode) {
-        this.endsCode = endsCode;
-    }
-
-    public CertificationInformation100PostRequest withEndsCode(String endsCode) {
-        this.endsCode = endsCode;
-        return this;
-    }
-
-    /**
      * Expiration Date
      * <p>
      * Lineage reference object : PPRCERT_EXPIRE_DATE
@@ -362,7 +311,7 @@ public class CertificationInformation100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -373,11 +322,11 @@ public class CertificationInformation100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public CertificationInformation100PostRequest withId(Object id) {
+    public CertificationInformation100PostRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -406,35 +355,6 @@ public class CertificationInformation100PostRequest {
 
     public CertificationInformation100PostRequest withNextCertDate(Date nextCertDate) {
         this.nextCertDate = nextCertDate;
-        return this;
-    }
-
-    /**
-     * Endorsement Date
-     * <p>
-     * Lineage reference object : PPRENDS_ENDS_DATE
-     * (Required)
-     * 
-     */
-    @JsonProperty("endsDate")
-    public Date getEndsDate() {
-        return endsDate;
-    }
-
-    /**
-     * Endorsement Date
-     * <p>
-     * Lineage reference object : PPRENDS_ENDS_DATE
-     * (Required)
-     * 
-     */
-    @JsonProperty("endsDate")
-    public void setEndsDate(Date endsDate) {
-        this.endsDate = endsDate;
-    }
-
-    public CertificationInformation100PostRequest withEndsDate(Date endsDate) {
-        this.endsDate = endsDate;
         return this;
     }
 
@@ -481,10 +401,6 @@ public class CertificationInformation100PostRequest {
         sb.append('=');
         sb.append(((this.certDate == null)?"<null>":this.certDate));
         sb.append(',');
-        sb.append("endsCode");
-        sb.append('=');
-        sb.append(((this.endsCode == null)?"<null>":this.endsCode));
-        sb.append(',');
         sb.append("expireDate");
         sb.append('=');
         sb.append(((this.expireDate == null)?"<null>":this.expireDate));
@@ -496,10 +412,6 @@ public class CertificationInformation100PostRequest {
         sb.append("nextCertDate");
         sb.append('=');
         sb.append(((this.nextCertDate == null)?"<null>":this.nextCertDate));
-        sb.append(',');
-        sb.append("endsDate");
-        sb.append('=');
-        sb.append(((this.endsDate == null)?"<null>":this.endsDate));
         sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');
@@ -516,17 +428,15 @@ public class CertificationInformation100PostRequest {
     @Override
     public int hashCode() {
         int result = 1;
+        result = ((result* 31)+((this.certNo == null)? 0 :this.certNo.hashCode()));
         result = ((result* 31)+((this.lcsvCode == null)? 0 :this.lcsvCode.hashCode()));
         result = ((result* 31)+((this.statCode == null)? 0 :this.statCode.hashCode()));
         result = ((result* 31)+((this.natnCode == null)? 0 :this.natnCode.hashCode()));
         result = ((result* 31)+((this.certCode == null)? 0 :this.certCode.hashCode()));
         result = ((result* 31)+((this.certDate == null)? 0 :this.certDate.hashCode()));
-        result = ((result* 31)+((this.nextCertDate == null)? 0 :this.nextCertDate.hashCode()));
-        result = ((result* 31)+((this.certNo == null)? 0 :this.certNo.hashCode()));
-        result = ((result* 31)+((this.endsCode == null)? 0 :this.endsCode.hashCode()));
         result = ((result* 31)+((this.expireDate == null)? 0 :this.expireDate.hashCode()));
         result = ((result* 31)+((this.id == null)? 0 :this.id.hashCode()));
-        result = ((result* 31)+((this.endsDate == null)? 0 :this.endsDate.hashCode()));
+        result = ((result* 31)+((this.nextCertDate == null)? 0 :this.nextCertDate.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
         return result;
     }
@@ -540,7 +450,7 @@ public class CertificationInformation100PostRequest {
             return false;
         }
         CertificationInformation100PostRequest rhs = ((CertificationInformation100PostRequest) other);
-        return (((((((((((((this.lcsvCode == rhs.lcsvCode)||((this.lcsvCode!= null)&&this.lcsvCode.equals(rhs.lcsvCode)))&&((this.statCode == rhs.statCode)||((this.statCode!= null)&&this.statCode.equals(rhs.statCode))))&&((this.natnCode == rhs.natnCode)||((this.natnCode!= null)&&this.natnCode.equals(rhs.natnCode))))&&((this.certCode == rhs.certCode)||((this.certCode!= null)&&this.certCode.equals(rhs.certCode))))&&((this.certDate == rhs.certDate)||((this.certDate!= null)&&this.certDate.equals(rhs.certDate))))&&((this.nextCertDate == rhs.nextCertDate)||((this.nextCertDate!= null)&&this.nextCertDate.equals(rhs.nextCertDate))))&&((this.certNo == rhs.certNo)||((this.certNo!= null)&&this.certNo.equals(rhs.certNo))))&&((this.endsCode == rhs.endsCode)||((this.endsCode!= null)&&this.endsCode.equals(rhs.endsCode))))&&((this.expireDate == rhs.expireDate)||((this.expireDate!= null)&&this.expireDate.equals(rhs.expireDate))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.endsDate == rhs.endsDate)||((this.endsDate!= null)&&this.endsDate.equals(rhs.endsDate))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))));
+        return (((((((((((this.certNo == rhs.certNo)||((this.certNo!= null)&&this.certNo.equals(rhs.certNo)))&&((this.lcsvCode == rhs.lcsvCode)||((this.lcsvCode!= null)&&this.lcsvCode.equals(rhs.lcsvCode))))&&((this.statCode == rhs.statCode)||((this.statCode!= null)&&this.statCode.equals(rhs.statCode))))&&((this.natnCode == rhs.natnCode)||((this.natnCode!= null)&&this.natnCode.equals(rhs.natnCode))))&&((this.certCode == rhs.certCode)||((this.certCode!= null)&&this.certCode.equals(rhs.certCode))))&&((this.certDate == rhs.certDate)||((this.certDate!= null)&&this.certDate.equals(rhs.certDate))))&&((this.expireDate == rhs.expireDate)||((this.expireDate!= null)&&this.expireDate.equals(rhs.expireDate))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.nextCertDate == rhs.nextCertDate)||((this.nextCertDate!= null)&&this.nextCertDate.equals(rhs.nextCertDate))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))));
     }
 
 }

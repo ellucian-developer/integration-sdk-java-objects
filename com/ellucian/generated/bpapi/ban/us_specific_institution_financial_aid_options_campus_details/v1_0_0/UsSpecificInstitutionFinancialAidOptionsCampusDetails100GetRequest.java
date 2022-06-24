@@ -114,7 +114,7 @@ public class UsSpecificInstitutionFinancialAidOptionsCampusDetails100GetRequest 
      */
     @JsonProperty("keyblckAidyCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAidyCode, Lookup lineage reference object : robinst")
-    private Object keyblckAidyCode;
+    private String keyblckAidyCode;
     /**
      * Electronic School Code
      * <p>
@@ -466,7 +466,7 @@ public class UsSpecificInstitutionFinancialAidOptionsCampusDetails100GetRequest 
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public Object getKeyblckAidyCode() {
+    public String getKeyblckAidyCode() {
         return keyblckAidyCode;
     }
 
@@ -477,11 +477,11 @@ public class UsSpecificInstitutionFinancialAidOptionsCampusDetails100GetRequest 
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public void setKeyblckAidyCode(Object keyblckAidyCode) {
+    public void setKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
     }
 
-    public UsSpecificInstitutionFinancialAidOptionsCampusDetails100GetRequest withKeyblckAidyCode(Object keyblckAidyCode) {
+    public UsSpecificInstitutionFinancialAidOptionsCampusDetails100GetRequest withKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
         return this;
     }

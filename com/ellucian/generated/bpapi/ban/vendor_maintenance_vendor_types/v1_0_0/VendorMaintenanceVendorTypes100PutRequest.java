@@ -48,7 +48,7 @@ public class VendorMaintenanceVendorTypes100PutRequest {
      */
     @JsonProperty("ftvvendVendCode")
     @JsonPropertyDescription("Lineage reference object : ftvvendVendCode, Lookup lineage reference object : ftvvend")
-    private Object ftvvendVendCode;
+    private String ftvvendVendCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -114,7 +114,7 @@ public class VendorMaintenanceVendorTypes100PutRequest {
      * 
      */
     @JsonProperty("ftvvendVendCode")
-    public Object getFtvvendVendCode() {
+    public String getFtvvendVendCode() {
         return ftvvendVendCode;
     }
 
@@ -126,11 +126,11 @@ public class VendorMaintenanceVendorTypes100PutRequest {
      * 
      */
     @JsonProperty("ftvvendVendCode")
-    public void setFtvvendVendCode(Object ftvvendVendCode) {
+    public void setFtvvendVendCode(String ftvvendVendCode) {
         this.ftvvendVendCode = ftvvendVendCode;
     }
 
-    public VendorMaintenanceVendorTypes100PutRequest withFtvvendVendCode(Object ftvvendVendCode) {
+    public VendorMaintenanceVendorTypes100PutRequest withFtvvendVendCode(String ftvvendVendCode) {
         this.ftvvendVendCode = ftvvendVendCode;
         return this;
     }

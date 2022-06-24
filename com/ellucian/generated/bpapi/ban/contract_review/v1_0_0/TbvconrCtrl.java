@@ -31,14 +31,14 @@ public class TbvconrCtrl {
      */
     @JsonProperty("ctlDetailCode")
     @JsonPropertyDescription("Lineage reference object : ctlDetailCode")
-    private Object ctlDetailCode;
+    private String ctlDetailCode;
     /**
      * Lineage reference object : ctlDescription
      * 
      */
     @JsonProperty("ctlDescription")
     @JsonPropertyDescription("Lineage reference object : ctlDescription")
-    private Object ctlDescription;
+    private String ctlDescription;
     /**
      * Query Balance
      * <p>
@@ -47,7 +47,7 @@ public class TbvconrCtrl {
      */
     @JsonProperty("queryBalance")
     @JsonPropertyDescription("Lineage reference object : queryBalance")
-    private Object queryBalance;
+    private Double queryBalance;
     /**
      * Account Balance
      * <p>
@@ -56,7 +56,7 @@ public class TbvconrCtrl {
      */
     @JsonProperty("accountBalance")
     @JsonPropertyDescription("Lineage reference object : accountBalance")
-    private Object accountBalance;
+    private Double accountBalance;
     /**
      * Amount
      * <p>
@@ -65,7 +65,7 @@ public class TbvconrCtrl {
      */
     @JsonProperty("ctlAmount")
     @JsonPropertyDescription("Lineage reference object : ctlAmount")
-    private Object ctlAmount;
+    private Double ctlAmount;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -76,7 +76,7 @@ public class TbvconrCtrl {
      * 
      */
     @JsonProperty("ctlDetailCode")
-    public Object getCtlDetailCode() {
+    public String getCtlDetailCode() {
         return ctlDetailCode;
     }
 
@@ -87,11 +87,11 @@ public class TbvconrCtrl {
      * 
      */
     @JsonProperty("ctlDetailCode")
-    public void setCtlDetailCode(Object ctlDetailCode) {
+    public void setCtlDetailCode(String ctlDetailCode) {
         this.ctlDetailCode = ctlDetailCode;
     }
 
-    public TbvconrCtrl withCtlDetailCode(Object ctlDetailCode) {
+    public TbvconrCtrl withCtlDetailCode(String ctlDetailCode) {
         this.ctlDetailCode = ctlDetailCode;
         return this;
     }
@@ -101,7 +101,7 @@ public class TbvconrCtrl {
      * 
      */
     @JsonProperty("ctlDescription")
-    public Object getCtlDescription() {
+    public String getCtlDescription() {
         return ctlDescription;
     }
 
@@ -110,11 +110,11 @@ public class TbvconrCtrl {
      * 
      */
     @JsonProperty("ctlDescription")
-    public void setCtlDescription(Object ctlDescription) {
+    public void setCtlDescription(String ctlDescription) {
         this.ctlDescription = ctlDescription;
     }
 
-    public TbvconrCtrl withCtlDescription(Object ctlDescription) {
+    public TbvconrCtrl withCtlDescription(String ctlDescription) {
         this.ctlDescription = ctlDescription;
         return this;
     }
@@ -126,7 +126,7 @@ public class TbvconrCtrl {
      * 
      */
     @JsonProperty("queryBalance")
-    public Object getQueryBalance() {
+    public Double getQueryBalance() {
         return queryBalance;
     }
 
@@ -137,11 +137,11 @@ public class TbvconrCtrl {
      * 
      */
     @JsonProperty("queryBalance")
-    public void setQueryBalance(Object queryBalance) {
+    public void setQueryBalance(Double queryBalance) {
         this.queryBalance = queryBalance;
     }
 
-    public TbvconrCtrl withQueryBalance(Object queryBalance) {
+    public TbvconrCtrl withQueryBalance(Double queryBalance) {
         this.queryBalance = queryBalance;
         return this;
     }
@@ -153,7 +153,7 @@ public class TbvconrCtrl {
      * 
      */
     @JsonProperty("accountBalance")
-    public Object getAccountBalance() {
+    public Double getAccountBalance() {
         return accountBalance;
     }
 
@@ -164,11 +164,11 @@ public class TbvconrCtrl {
      * 
      */
     @JsonProperty("accountBalance")
-    public void setAccountBalance(Object accountBalance) {
+    public void setAccountBalance(Double accountBalance) {
         this.accountBalance = accountBalance;
     }
 
-    public TbvconrCtrl withAccountBalance(Object accountBalance) {
+    public TbvconrCtrl withAccountBalance(Double accountBalance) {
         this.accountBalance = accountBalance;
         return this;
     }
@@ -180,7 +180,7 @@ public class TbvconrCtrl {
      * 
      */
     @JsonProperty("ctlAmount")
-    public Object getCtlAmount() {
+    public Double getCtlAmount() {
         return ctlAmount;
     }
 
@@ -191,11 +191,11 @@ public class TbvconrCtrl {
      * 
      */
     @JsonProperty("ctlAmount")
-    public void setCtlAmount(Object ctlAmount) {
+    public void setCtlAmount(Double ctlAmount) {
         this.ctlAmount = ctlAmount;
     }
 
-    public TbvconrCtrl withCtlAmount(Object ctlAmount) {
+    public TbvconrCtrl withCtlAmount(Double ctlAmount) {
         this.ctlAmount = ctlAmount;
         return this;
     }

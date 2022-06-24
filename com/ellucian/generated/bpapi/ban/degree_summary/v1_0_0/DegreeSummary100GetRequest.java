@@ -35,7 +35,7 @@ public class DegreeSummary100GetRequest {
      */
     @JsonProperty("lfstCode")
     @JsonPropertyDescription("Lineage reference object : lfstCode, Lookup lineage reference object : gtvlfst")
-    private Object lfstCode;
+    private String lfstCode;
     /**
      * Campus
      * <p>
@@ -44,7 +44,7 @@ public class DegreeSummary100GetRequest {
      */
     @JsonProperty("campCode")
     @JsonPropertyDescription("Lineage reference object : campCode, Lookup lineage reference object : stvcamp")
-    private Object campCode;
+    private String campCode;
     /**
      * ID
      * <p>
@@ -53,7 +53,7 @@ public class DegreeSummary100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Degree
      * <p>
@@ -62,7 +62,7 @@ public class DegreeSummary100GetRequest {
      */
     @JsonProperty("degcCode")
     @JsonPropertyDescription("Lineage reference object : degcCode, Lookup lineage reference object : stvdegc")
-    private Object degcCode;
+    private String degcCode;
     /**
      * Program
      * <p>
@@ -71,7 +71,7 @@ public class DegreeSummary100GetRequest {
      */
     @JsonProperty("program")
     @JsonPropertyDescription("Lineage reference object : program, Lookup lineage reference object : smrprle")
-    private Object program;
+    private String program;
     /**
      * College
      * <p>
@@ -80,7 +80,7 @@ public class DegreeSummary100GetRequest {
      */
     @JsonProperty("collCode")
     @JsonPropertyDescription("Lineage reference object : collCode, Lookup lineage reference object : stvcoll")
-    private Object collCode;
+    private String collCode;
     /**
      * Term
      * <p>
@@ -89,7 +89,7 @@ public class DegreeSummary100GetRequest {
      */
     @JsonProperty("stvtermTermCode")
     @JsonPropertyDescription("Lineage reference object : stvtermTermCode, Lookup lineage reference object : stvterm")
-    private Object stvtermTermCode;
+    private String stvtermTermCode;
     /**
      * Field of Study Code
      * <p>
@@ -98,7 +98,7 @@ public class DegreeSummary100GetRequest {
      */
     @JsonProperty("majrCode")
     @JsonPropertyDescription("Lineage reference object : majrCode, Lookup lineage reference object : stvmajr")
-    private Object majrCode;
+    private String majrCode;
     /**
      * Level
      * <p>
@@ -107,7 +107,7 @@ public class DegreeSummary100GetRequest {
      */
     @JsonProperty("levlCode")
     @JsonPropertyDescription("Lineage reference object : levlCode, Lookup lineage reference object : stvlevl")
-    private Object levlCode;
+    private String levlCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -118,7 +118,7 @@ public class DegreeSummary100GetRequest {
      * 
      */
     @JsonProperty("lfstCode")
-    public Object getLfstCode() {
+    public String getLfstCode() {
         return lfstCode;
     }
 
@@ -129,11 +129,11 @@ public class DegreeSummary100GetRequest {
      * 
      */
     @JsonProperty("lfstCode")
-    public void setLfstCode(Object lfstCode) {
+    public void setLfstCode(String lfstCode) {
         this.lfstCode = lfstCode;
     }
 
-    public DegreeSummary100GetRequest withLfstCode(Object lfstCode) {
+    public DegreeSummary100GetRequest withLfstCode(String lfstCode) {
         this.lfstCode = lfstCode;
         return this;
     }
@@ -145,7 +145,7 @@ public class DegreeSummary100GetRequest {
      * 
      */
     @JsonProperty("campCode")
-    public Object getCampCode() {
+    public String getCampCode() {
         return campCode;
     }
 
@@ -156,11 +156,11 @@ public class DegreeSummary100GetRequest {
      * 
      */
     @JsonProperty("campCode")
-    public void setCampCode(Object campCode) {
+    public void setCampCode(String campCode) {
         this.campCode = campCode;
     }
 
-    public DegreeSummary100GetRequest withCampCode(Object campCode) {
+    public DegreeSummary100GetRequest withCampCode(String campCode) {
         this.campCode = campCode;
         return this;
     }
@@ -172,7 +172,7 @@ public class DegreeSummary100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -183,11 +183,11 @@ public class DegreeSummary100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public DegreeSummary100GetRequest withId(Object id) {
+    public DegreeSummary100GetRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -199,7 +199,7 @@ public class DegreeSummary100GetRequest {
      * 
      */
     @JsonProperty("degcCode")
-    public Object getDegcCode() {
+    public String getDegcCode() {
         return degcCode;
     }
 
@@ -210,11 +210,11 @@ public class DegreeSummary100GetRequest {
      * 
      */
     @JsonProperty("degcCode")
-    public void setDegcCode(Object degcCode) {
+    public void setDegcCode(String degcCode) {
         this.degcCode = degcCode;
     }
 
-    public DegreeSummary100GetRequest withDegcCode(Object degcCode) {
+    public DegreeSummary100GetRequest withDegcCode(String degcCode) {
         this.degcCode = degcCode;
         return this;
     }
@@ -226,7 +226,7 @@ public class DegreeSummary100GetRequest {
      * 
      */
     @JsonProperty("program")
-    public Object getProgram() {
+    public String getProgram() {
         return program;
     }
 
@@ -237,11 +237,11 @@ public class DegreeSummary100GetRequest {
      * 
      */
     @JsonProperty("program")
-    public void setProgram(Object program) {
+    public void setProgram(String program) {
         this.program = program;
     }
 
-    public DegreeSummary100GetRequest withProgram(Object program) {
+    public DegreeSummary100GetRequest withProgram(String program) {
         this.program = program;
         return this;
     }
@@ -253,7 +253,7 @@ public class DegreeSummary100GetRequest {
      * 
      */
     @JsonProperty("collCode")
-    public Object getCollCode() {
+    public String getCollCode() {
         return collCode;
     }
 
@@ -264,11 +264,11 @@ public class DegreeSummary100GetRequest {
      * 
      */
     @JsonProperty("collCode")
-    public void setCollCode(Object collCode) {
+    public void setCollCode(String collCode) {
         this.collCode = collCode;
     }
 
-    public DegreeSummary100GetRequest withCollCode(Object collCode) {
+    public DegreeSummary100GetRequest withCollCode(String collCode) {
         this.collCode = collCode;
         return this;
     }
@@ -280,7 +280,7 @@ public class DegreeSummary100GetRequest {
      * 
      */
     @JsonProperty("stvtermTermCode")
-    public Object getStvtermTermCode() {
+    public String getStvtermTermCode() {
         return stvtermTermCode;
     }
 
@@ -291,11 +291,11 @@ public class DegreeSummary100GetRequest {
      * 
      */
     @JsonProperty("stvtermTermCode")
-    public void setStvtermTermCode(Object stvtermTermCode) {
+    public void setStvtermTermCode(String stvtermTermCode) {
         this.stvtermTermCode = stvtermTermCode;
     }
 
-    public DegreeSummary100GetRequest withStvtermTermCode(Object stvtermTermCode) {
+    public DegreeSummary100GetRequest withStvtermTermCode(String stvtermTermCode) {
         this.stvtermTermCode = stvtermTermCode;
         return this;
     }
@@ -307,7 +307,7 @@ public class DegreeSummary100GetRequest {
      * 
      */
     @JsonProperty("majrCode")
-    public Object getMajrCode() {
+    public String getMajrCode() {
         return majrCode;
     }
 
@@ -318,11 +318,11 @@ public class DegreeSummary100GetRequest {
      * 
      */
     @JsonProperty("majrCode")
-    public void setMajrCode(Object majrCode) {
+    public void setMajrCode(String majrCode) {
         this.majrCode = majrCode;
     }
 
-    public DegreeSummary100GetRequest withMajrCode(Object majrCode) {
+    public DegreeSummary100GetRequest withMajrCode(String majrCode) {
         this.majrCode = majrCode;
         return this;
     }
@@ -334,7 +334,7 @@ public class DegreeSummary100GetRequest {
      * 
      */
     @JsonProperty("levlCode")
-    public Object getLevlCode() {
+    public String getLevlCode() {
         return levlCode;
     }
 
@@ -345,11 +345,11 @@ public class DegreeSummary100GetRequest {
      * 
      */
     @JsonProperty("levlCode")
-    public void setLevlCode(Object levlCode) {
+    public void setLevlCode(String levlCode) {
         this.levlCode = levlCode;
     }
 
-    public DegreeSummary100GetRequest withLevlCode(Object levlCode) {
+    public DegreeSummary100GetRequest withLevlCode(String levlCode) {
         this.levlCode = levlCode;
         return this;
     }

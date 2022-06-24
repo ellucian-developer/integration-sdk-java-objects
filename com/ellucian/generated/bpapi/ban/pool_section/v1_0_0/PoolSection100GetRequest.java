@@ -103,7 +103,7 @@ public class PoolSection100GetRequest {
      */
     @JsonProperty("poolInd")
     @JsonPropertyDescription("Lineage reference object : poolInd")
-    private Object poolInd;
+    private String poolInd;
     /**
      * Schedule Type
      * <p>
@@ -130,7 +130,7 @@ public class PoolSection100GetRequest {
      */
     @JsonProperty("keyblocTermCodeEff")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCodeEff, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCodeEff;
+    private String keyblocTermCodeEff;
     /**
      * Part of Term
      * <p>
@@ -184,7 +184,7 @@ public class PoolSection100GetRequest {
      */
     @JsonProperty("keyBlckSessCode")
     @JsonPropertyDescription("Lineage reference object : keyBlckSessCode, Lookup lineage reference object : stvsess")
-    private Object keyBlckSessCode;
+    private String keyBlckSessCode;
     /**
      * Subject
      * <p>
@@ -193,7 +193,7 @@ public class PoolSection100GetRequest {
      */
     @JsonProperty("ssbsectSubjCode")
     @JsonPropertyDescription("Lineage reference object : ssbsectSubjCode, Lookup lineage reference object : stvsubj")
-    private Object ssbsectSubjCode;
+    private String ssbsectSubjCode;
     /**
      * Duration
      * <p>
@@ -238,7 +238,7 @@ public class PoolSection100GetRequest {
      */
     @JsonProperty("scbcrkyCrseNumb")
     @JsonPropertyDescription("Lineage reference object : scbcrkyCrseNumb, Lookup lineage reference object : scbcrse,scbcrky")
-    private Object scbcrkyCrseNumb;
+    private String scbcrkyCrseNumb;
     /**
      * Block
      * <p>
@@ -247,7 +247,7 @@ public class PoolSection100GetRequest {
      */
     @JsonProperty("blckCode")
     @JsonPropertyDescription("Lineage reference object : blckCode, Lookup lineage reference object : stvblck")
-    private Object blckCode;
+    private String blckCode;
     /**
      * Campus
      * <p>
@@ -256,7 +256,7 @@ public class PoolSection100GetRequest {
      */
     @JsonProperty("keyBlckCampCode")
     @JsonPropertyDescription("Lineage reference object : keyBlckCampCode, Lookup lineage reference object : stvcamp")
-    private Object keyBlckCampCode;
+    private String keyBlckCampCode;
     /**
      * Instructional Method
      * <p>
@@ -436,7 +436,7 @@ public class PoolSection100GetRequest {
      * 
      */
     @JsonProperty("poolInd")
-    public Object getPoolInd() {
+    public String getPoolInd() {
         return poolInd;
     }
 
@@ -445,11 +445,11 @@ public class PoolSection100GetRequest {
      * 
      */
     @JsonProperty("poolInd")
-    public void setPoolInd(Object poolInd) {
+    public void setPoolInd(String poolInd) {
         this.poolInd = poolInd;
     }
 
-    public PoolSection100GetRequest withPoolInd(Object poolInd) {
+    public PoolSection100GetRequest withPoolInd(String poolInd) {
         this.poolInd = poolInd;
         return this;
     }
@@ -515,7 +515,7 @@ public class PoolSection100GetRequest {
      * 
      */
     @JsonProperty("keyblocTermCodeEff")
-    public Object getKeyblocTermCodeEff() {
+    public String getKeyblocTermCodeEff() {
         return keyblocTermCodeEff;
     }
 
@@ -526,11 +526,11 @@ public class PoolSection100GetRequest {
      * 
      */
     @JsonProperty("keyblocTermCodeEff")
-    public void setKeyblocTermCodeEff(Object keyblocTermCodeEff) {
+    public void setKeyblocTermCodeEff(String keyblocTermCodeEff) {
         this.keyblocTermCodeEff = keyblocTermCodeEff;
     }
 
-    public PoolSection100GetRequest withKeyblocTermCodeEff(Object keyblocTermCodeEff) {
+    public PoolSection100GetRequest withKeyblocTermCodeEff(String keyblocTermCodeEff) {
         this.keyblocTermCodeEff = keyblocTermCodeEff;
         return this;
     }
@@ -677,7 +677,7 @@ public class PoolSection100GetRequest {
      * 
      */
     @JsonProperty("keyBlckSessCode")
-    public Object getKeyBlckSessCode() {
+    public String getKeyBlckSessCode() {
         return keyBlckSessCode;
     }
 
@@ -688,11 +688,11 @@ public class PoolSection100GetRequest {
      * 
      */
     @JsonProperty("keyBlckSessCode")
-    public void setKeyBlckSessCode(Object keyBlckSessCode) {
+    public void setKeyBlckSessCode(String keyBlckSessCode) {
         this.keyBlckSessCode = keyBlckSessCode;
     }
 
-    public PoolSection100GetRequest withKeyBlckSessCode(Object keyBlckSessCode) {
+    public PoolSection100GetRequest withKeyBlckSessCode(String keyBlckSessCode) {
         this.keyBlckSessCode = keyBlckSessCode;
         return this;
     }
@@ -704,7 +704,7 @@ public class PoolSection100GetRequest {
      * 
      */
     @JsonProperty("ssbsectSubjCode")
-    public Object getSsbsectSubjCode() {
+    public String getSsbsectSubjCode() {
         return ssbsectSubjCode;
     }
 
@@ -715,11 +715,11 @@ public class PoolSection100GetRequest {
      * 
      */
     @JsonProperty("ssbsectSubjCode")
-    public void setSsbsectSubjCode(Object ssbsectSubjCode) {
+    public void setSsbsectSubjCode(String ssbsectSubjCode) {
         this.ssbsectSubjCode = ssbsectSubjCode;
     }
 
-    public PoolSection100GetRequest withSsbsectSubjCode(Object ssbsectSubjCode) {
+    public PoolSection100GetRequest withSsbsectSubjCode(String ssbsectSubjCode) {
         this.ssbsectSubjCode = ssbsectSubjCode;
         return this;
     }
@@ -839,7 +839,7 @@ public class PoolSection100GetRequest {
      * 
      */
     @JsonProperty("scbcrkyCrseNumb")
-    public Object getScbcrkyCrseNumb() {
+    public String getScbcrkyCrseNumb() {
         return scbcrkyCrseNumb;
     }
 
@@ -850,11 +850,11 @@ public class PoolSection100GetRequest {
      * 
      */
     @JsonProperty("scbcrkyCrseNumb")
-    public void setScbcrkyCrseNumb(Object scbcrkyCrseNumb) {
+    public void setScbcrkyCrseNumb(String scbcrkyCrseNumb) {
         this.scbcrkyCrseNumb = scbcrkyCrseNumb;
     }
 
-    public PoolSection100GetRequest withScbcrkyCrseNumb(Object scbcrkyCrseNumb) {
+    public PoolSection100GetRequest withScbcrkyCrseNumb(String scbcrkyCrseNumb) {
         this.scbcrkyCrseNumb = scbcrkyCrseNumb;
         return this;
     }
@@ -866,7 +866,7 @@ public class PoolSection100GetRequest {
      * 
      */
     @JsonProperty("blckCode")
-    public Object getBlckCode() {
+    public String getBlckCode() {
         return blckCode;
     }
 
@@ -877,11 +877,11 @@ public class PoolSection100GetRequest {
      * 
      */
     @JsonProperty("blckCode")
-    public void setBlckCode(Object blckCode) {
+    public void setBlckCode(String blckCode) {
         this.blckCode = blckCode;
     }
 
-    public PoolSection100GetRequest withBlckCode(Object blckCode) {
+    public PoolSection100GetRequest withBlckCode(String blckCode) {
         this.blckCode = blckCode;
         return this;
     }
@@ -893,7 +893,7 @@ public class PoolSection100GetRequest {
      * 
      */
     @JsonProperty("keyBlckCampCode")
-    public Object getKeyBlckCampCode() {
+    public String getKeyBlckCampCode() {
         return keyBlckCampCode;
     }
 
@@ -904,11 +904,11 @@ public class PoolSection100GetRequest {
      * 
      */
     @JsonProperty("keyBlckCampCode")
-    public void setKeyBlckCampCode(Object keyBlckCampCode) {
+    public void setKeyBlckCampCode(String keyBlckCampCode) {
         this.keyBlckCampCode = keyBlckCampCode;
     }
 
-    public PoolSection100GetRequest withKeyBlckCampCode(Object keyBlckCampCode) {
+    public PoolSection100GetRequest withKeyBlckCampCode(String keyBlckCampCode) {
         this.keyBlckCampCode = keyBlckCampCode;
         return this;
     }

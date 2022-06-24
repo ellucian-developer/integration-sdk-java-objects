@@ -38,7 +38,7 @@ public class InvoiceCreditMemoQuery100GetRequest {
      */
     @JsonProperty("faainvhDocCode")
     @JsonPropertyDescription("Lineage reference object : faainvhDocCode")
-    private Object faainvhDocCode;
+    private String faainvhDocCode;
     /**
      * Text Exists
      * <p>
@@ -78,7 +78,7 @@ public class InvoiceCreditMemoQuery100GetRequest {
      */
     @JsonProperty("invoiceChoiceDesc")
     @JsonPropertyDescription("Lineage reference object : invoiceChoiceDesc")
-    private Object invoiceChoiceDesc;
+    private String invoiceChoiceDesc;
     /**
      * House Number
      * <p>
@@ -124,7 +124,7 @@ public class InvoiceCreditMemoQuery100GetRequest {
      * 
      */
     @JsonProperty("faainvhDocCode")
-    public Object getFaainvhDocCode() {
+    public String getFaainvhDocCode() {
         return faainvhDocCode;
     }
 
@@ -136,11 +136,11 @@ public class InvoiceCreditMemoQuery100GetRequest {
      * 
      */
     @JsonProperty("faainvhDocCode")
-    public void setFaainvhDocCode(Object faainvhDocCode) {
+    public void setFaainvhDocCode(String faainvhDocCode) {
         this.faainvhDocCode = faainvhDocCode;
     }
 
-    public InvoiceCreditMemoQuery100GetRequest withFaainvhDocCode(Object faainvhDocCode) {
+    public InvoiceCreditMemoQuery100GetRequest withFaainvhDocCode(String faainvhDocCode) {
         this.faainvhDocCode = faainvhDocCode;
         return this;
     }
@@ -258,7 +258,7 @@ public class InvoiceCreditMemoQuery100GetRequest {
      * 
      */
     @JsonProperty("invoiceChoiceDesc")
-    public Object getInvoiceChoiceDesc() {
+    public String getInvoiceChoiceDesc() {
         return invoiceChoiceDesc;
     }
 
@@ -267,11 +267,11 @@ public class InvoiceCreditMemoQuery100GetRequest {
      * 
      */
     @JsonProperty("invoiceChoiceDesc")
-    public void setInvoiceChoiceDesc(Object invoiceChoiceDesc) {
+    public void setInvoiceChoiceDesc(String invoiceChoiceDesc) {
         this.invoiceChoiceDesc = invoiceChoiceDesc;
     }
 
-    public InvoiceCreditMemoQuery100GetRequest withInvoiceChoiceDesc(Object invoiceChoiceDesc) {
+    public InvoiceCreditMemoQuery100GetRequest withInvoiceChoiceDesc(String invoiceChoiceDesc) {
         this.invoiceChoiceDesc = invoiceChoiceDesc;
         return this;
     }

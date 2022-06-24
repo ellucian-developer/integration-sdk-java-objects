@@ -156,7 +156,7 @@ public class EmergencyContacts100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     @JsonProperty("reltDescription")
     private String reltDescription;
     /**
@@ -711,7 +711,7 @@ public class EmergencyContacts100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -722,11 +722,11 @@ public class EmergencyContacts100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public EmergencyContacts100PutRequest withId(Object id) {
+    public EmergencyContacts100PutRequest withId(String id) {
         this.id = id;
         return this;
     }

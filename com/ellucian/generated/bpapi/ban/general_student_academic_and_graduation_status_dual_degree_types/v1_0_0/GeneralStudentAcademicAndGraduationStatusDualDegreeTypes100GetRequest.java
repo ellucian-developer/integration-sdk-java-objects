@@ -140,7 +140,7 @@ public class GeneralStudentAcademicAndGraduationStatusDualDegreeTypes100GetReque
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Term
      * <p>
@@ -149,7 +149,7 @@ public class GeneralStudentAcademicAndGraduationStatusDualDegreeTypes100GetReque
      */
     @JsonProperty("stvtermTermCode")
     @JsonPropertyDescription("Lineage reference object : stvtermTermCode, Lookup lineage reference object : stvterm")
-    private Object stvtermTermCode;
+    private String stvtermTermCode;
     /**
      * Full or Part Time
      * <p>
@@ -578,7 +578,7 @@ public class GeneralStudentAcademicAndGraduationStatusDualDegreeTypes100GetReque
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -589,11 +589,11 @@ public class GeneralStudentAcademicAndGraduationStatusDualDegreeTypes100GetReque
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public GeneralStudentAcademicAndGraduationStatusDualDegreeTypes100GetRequest withId(Object id) {
+    public GeneralStudentAcademicAndGraduationStatusDualDegreeTypes100GetRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -605,7 +605,7 @@ public class GeneralStudentAcademicAndGraduationStatusDualDegreeTypes100GetReque
      * 
      */
     @JsonProperty("stvtermTermCode")
-    public Object getStvtermTermCode() {
+    public String getStvtermTermCode() {
         return stvtermTermCode;
     }
 
@@ -616,11 +616,11 @@ public class GeneralStudentAcademicAndGraduationStatusDualDegreeTypes100GetReque
      * 
      */
     @JsonProperty("stvtermTermCode")
-    public void setStvtermTermCode(Object stvtermTermCode) {
+    public void setStvtermTermCode(String stvtermTermCode) {
         this.stvtermTermCode = stvtermTermCode;
     }
 
-    public GeneralStudentAcademicAndGraduationStatusDualDegreeTypes100GetRequest withStvtermTermCode(Object stvtermTermCode) {
+    public GeneralStudentAcademicAndGraduationStatusDualDegreeTypes100GetRequest withStvtermTermCode(String stvtermTermCode) {
         this.stvtermTermCode = stvtermTermCode;
         return this;
     }

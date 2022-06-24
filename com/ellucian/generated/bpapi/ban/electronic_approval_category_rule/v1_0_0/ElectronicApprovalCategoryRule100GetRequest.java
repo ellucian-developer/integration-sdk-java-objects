@@ -30,7 +30,7 @@ public class ElectronicApprovalCategoryRule100GetRequest {
      */
     @JsonProperty("acatCode")
     @JsonPropertyDescription("Lineage reference object : acatCode")
-    private Object acatCode;
+    private String acatCode;
     /**
      * Approval Type Entry Sequence Number
      * <p>
@@ -62,7 +62,7 @@ public class ElectronicApprovalCategoryRule100GetRequest {
      * 
      */
     @JsonProperty("acatCode")
-    public Object getAcatCode() {
+    public String getAcatCode() {
         return acatCode;
     }
 
@@ -74,11 +74,11 @@ public class ElectronicApprovalCategoryRule100GetRequest {
      * 
      */
     @JsonProperty("acatCode")
-    public void setAcatCode(Object acatCode) {
+    public void setAcatCode(String acatCode) {
         this.acatCode = acatCode;
     }
 
-    public ElectronicApprovalCategoryRule100GetRequest withAcatCode(Object acatCode) {
+    public ElectronicApprovalCategoryRule100GetRequest withAcatCode(String acatCode) {
         this.acatCode = acatCode;
         return this;
     }

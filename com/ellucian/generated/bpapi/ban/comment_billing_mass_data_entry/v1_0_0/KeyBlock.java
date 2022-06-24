@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.comment_billing_mass_data_entry.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -34,7 +35,7 @@ public class KeyBlock {
      */
     @JsonProperty("keyblocOrigCode")
     @JsonPropertyDescription("Lineage reference object : keyblocOrigCode, Lookup lineage reference object : stvorig")
-    private Object keyblocOrigCode;
+    private String keyblocOrigCode;
     /**
      * Comment
      * <p>
@@ -52,7 +53,7 @@ public class KeyBlock {
      */
     @JsonProperty("keyblocTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCode;
+    private String keyblocTermCode;
     /**
      * Text
      * <p>
@@ -61,7 +62,7 @@ public class KeyBlock {
      */
     @JsonProperty("keyblocTextCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTextCode")
-    private Object keyblocTextCode;
+    private String keyblocTextCode;
     /**
      * Purge
      * <p>
@@ -70,7 +71,7 @@ public class KeyBlock {
      */
     @JsonProperty("keyblocPurgeInd")
     @JsonPropertyDescription("Lineage reference object : keyblocPurgeInd")
-    private Object keyblocPurgeInd;
+    private String keyblocPurgeInd;
     /**
      * Comment Type
      * <p>
@@ -79,7 +80,7 @@ public class KeyBlock {
      */
     @JsonProperty("keyblocCommentCode")
     @JsonPropertyDescription("Lineage reference object : keyblocCommentCode, Lookup lineage reference object : ttvcmnt")
-    private Object keyblocCommentCode;
+    private String keyblocCommentCode;
     /**
      * End Date
      * <p>
@@ -88,7 +89,7 @@ public class KeyBlock {
      */
     @JsonProperty("keyblocEnddate")
     @JsonPropertyDescription("Lineage reference object : keyblocEnddate")
-    private Object keyblocEnddate;
+    private Date keyblocEnddate;
     /**
      * Restrict Update
      * <p>
@@ -97,7 +98,7 @@ public class KeyBlock {
      */
     @JsonProperty("keyblocRestrictUpdateInd")
     @JsonPropertyDescription("Lineage reference object : keyblocRestrictUpdateInd")
-    private Object keyblocRestrictUpdateInd;
+    private String keyblocRestrictUpdateInd;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -108,7 +109,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyblocOrigCode")
-    public Object getKeyblocOrigCode() {
+    public String getKeyblocOrigCode() {
         return keyblocOrigCode;
     }
 
@@ -119,11 +120,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyblocOrigCode")
-    public void setKeyblocOrigCode(Object keyblocOrigCode) {
+    public void setKeyblocOrigCode(String keyblocOrigCode) {
         this.keyblocOrigCode = keyblocOrigCode;
     }
 
-    public KeyBlock withKeyblocOrigCode(Object keyblocOrigCode) {
+    public KeyBlock withKeyblocOrigCode(String keyblocOrigCode) {
         this.keyblocOrigCode = keyblocOrigCode;
         return this;
     }
@@ -162,7 +163,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public Object getKeyblocTermCode() {
+    public String getKeyblocTermCode() {
         return keyblocTermCode;
     }
 
@@ -173,11 +174,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public void setKeyblocTermCode(Object keyblocTermCode) {
+    public void setKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
     }
 
-    public KeyBlock withKeyblocTermCode(Object keyblocTermCode) {
+    public KeyBlock withKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
         return this;
     }
@@ -189,7 +190,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyblocTextCode")
-    public Object getKeyblocTextCode() {
+    public String getKeyblocTextCode() {
         return keyblocTextCode;
     }
 
@@ -200,11 +201,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyblocTextCode")
-    public void setKeyblocTextCode(Object keyblocTextCode) {
+    public void setKeyblocTextCode(String keyblocTextCode) {
         this.keyblocTextCode = keyblocTextCode;
     }
 
-    public KeyBlock withKeyblocTextCode(Object keyblocTextCode) {
+    public KeyBlock withKeyblocTextCode(String keyblocTextCode) {
         this.keyblocTextCode = keyblocTextCode;
         return this;
     }
@@ -216,7 +217,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyblocPurgeInd")
-    public Object getKeyblocPurgeInd() {
+    public String getKeyblocPurgeInd() {
         return keyblocPurgeInd;
     }
 
@@ -227,11 +228,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyblocPurgeInd")
-    public void setKeyblocPurgeInd(Object keyblocPurgeInd) {
+    public void setKeyblocPurgeInd(String keyblocPurgeInd) {
         this.keyblocPurgeInd = keyblocPurgeInd;
     }
 
-    public KeyBlock withKeyblocPurgeInd(Object keyblocPurgeInd) {
+    public KeyBlock withKeyblocPurgeInd(String keyblocPurgeInd) {
         this.keyblocPurgeInd = keyblocPurgeInd;
         return this;
     }
@@ -243,7 +244,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyblocCommentCode")
-    public Object getKeyblocCommentCode() {
+    public String getKeyblocCommentCode() {
         return keyblocCommentCode;
     }
 
@@ -254,11 +255,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyblocCommentCode")
-    public void setKeyblocCommentCode(Object keyblocCommentCode) {
+    public void setKeyblocCommentCode(String keyblocCommentCode) {
         this.keyblocCommentCode = keyblocCommentCode;
     }
 
-    public KeyBlock withKeyblocCommentCode(Object keyblocCommentCode) {
+    public KeyBlock withKeyblocCommentCode(String keyblocCommentCode) {
         this.keyblocCommentCode = keyblocCommentCode;
         return this;
     }
@@ -270,7 +271,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyblocEnddate")
-    public Object getKeyblocEnddate() {
+    public Date getKeyblocEnddate() {
         return keyblocEnddate;
     }
 
@@ -281,11 +282,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyblocEnddate")
-    public void setKeyblocEnddate(Object keyblocEnddate) {
+    public void setKeyblocEnddate(Date keyblocEnddate) {
         this.keyblocEnddate = keyblocEnddate;
     }
 
-    public KeyBlock withKeyblocEnddate(Object keyblocEnddate) {
+    public KeyBlock withKeyblocEnddate(Date keyblocEnddate) {
         this.keyblocEnddate = keyblocEnddate;
         return this;
     }
@@ -297,7 +298,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyblocRestrictUpdateInd")
-    public Object getKeyblocRestrictUpdateInd() {
+    public String getKeyblocRestrictUpdateInd() {
         return keyblocRestrictUpdateInd;
     }
 
@@ -308,11 +309,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("keyblocRestrictUpdateInd")
-    public void setKeyblocRestrictUpdateInd(Object keyblocRestrictUpdateInd) {
+    public void setKeyblocRestrictUpdateInd(String keyblocRestrictUpdateInd) {
         this.keyblocRestrictUpdateInd = keyblocRestrictUpdateInd;
     }
 
-    public KeyBlock withKeyblocRestrictUpdateInd(Object keyblocRestrictUpdateInd) {
+    public KeyBlock withKeyblocRestrictUpdateInd(String keyblocRestrictUpdateInd) {
         this.keyblocRestrictUpdateInd = keyblocRestrictUpdateInd;
         return this;
     }

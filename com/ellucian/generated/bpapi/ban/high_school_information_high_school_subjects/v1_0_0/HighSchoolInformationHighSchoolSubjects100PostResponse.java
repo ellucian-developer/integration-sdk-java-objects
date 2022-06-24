@@ -1,7 +1,9 @@
 
 package com.ellucian.generated.bpapi.ban.high_school_information_high_school_subjects.v1_0_0;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
@@ -9,202 +11,50 @@ import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "stvsbjcDesc",
-    "grade",
-    "subjGpa",
-    "sbjcCode",
-    "subjYears"
+    "sorhsch",
+    "sorhsbj"
 })
 @Generated("jsonschema2pojo")
 public class HighSchoolInformationHighSchoolSubjects100PostResponse {
 
-    /**
-     * Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("stvsbjcDesc")
-    private String stvsbjcDesc;
-    /**
-     * Subject Grade
-     * <p>
-     * Lineage reference object : SORHSBJ_GRADE
-     * 
-     */
-    @JsonProperty("grade")
-    @JsonPropertyDescription("Lineage reference object : SORHSBJ_GRADE")
-    private String grade;
-    /**
-     * Subject GPA
-     * <p>
-     * Lineage reference object : SORHSBJ_SUBJ_GPA
-     * 
-     */
-    @JsonProperty("subjGpa")
-    @JsonPropertyDescription("Lineage reference object : SORHSBJ_SUBJ_GPA")
-    private String subjGpa;
-    /**
-     * Subject
-     * <p>
-     * Lineage reference object : SORHSBJ_SBJC_CODE, Lookup lineage reference object : stvsbjc
-     * (Required)
-     * 
-     */
-    @JsonProperty("sbjcCode")
-    @JsonPropertyDescription("Lineage reference object : SORHSBJ_SBJC_CODE, Lookup lineage reference object : stvsbjc")
-    private String sbjcCode;
-    /**
-     * Years Taken
-     * <p>
-     * Lineage reference object : SORHSBJ_SUBJ_YEARS
-     * 
-     */
-    @JsonProperty("subjYears")
-    @JsonPropertyDescription("Lineage reference object : SORHSBJ_SUBJ_YEARS")
-    private Double subjYears;
+    @JsonProperty("sorhsch")
+    private List<Sorhsch__1> sorhsch = new ArrayList<Sorhsch__1>();
+    @JsonProperty("sorhsbj")
+    private List<Sorhsbj__1> sorhsbj = new ArrayList<Sorhsbj__1>();
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    /**
-     * Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("stvsbjcDesc")
-    public String getStvsbjcDesc() {
-        return stvsbjcDesc;
+    @JsonProperty("sorhsch")
+    public List<Sorhsch__1> getSorhsch() {
+        return sorhsch;
     }
 
-    /**
-     * Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("stvsbjcDesc")
-    public void setStvsbjcDesc(String stvsbjcDesc) {
-        this.stvsbjcDesc = stvsbjcDesc;
+    @JsonProperty("sorhsch")
+    public void setSorhsch(List<Sorhsch__1> sorhsch) {
+        this.sorhsch = sorhsch;
     }
 
-    public HighSchoolInformationHighSchoolSubjects100PostResponse withStvsbjcDesc(String stvsbjcDesc) {
-        this.stvsbjcDesc = stvsbjcDesc;
+    public HighSchoolInformationHighSchoolSubjects100PostResponse withSorhsch(List<Sorhsch__1> sorhsch) {
+        this.sorhsch = sorhsch;
         return this;
     }
 
-    /**
-     * Subject Grade
-     * <p>
-     * Lineage reference object : SORHSBJ_GRADE
-     * 
-     */
-    @JsonProperty("grade")
-    public String getGrade() {
-        return grade;
+    @JsonProperty("sorhsbj")
+    public List<Sorhsbj__1> getSorhsbj() {
+        return sorhsbj;
     }
 
-    /**
-     * Subject Grade
-     * <p>
-     * Lineage reference object : SORHSBJ_GRADE
-     * 
-     */
-    @JsonProperty("grade")
-    public void setGrade(String grade) {
-        this.grade = grade;
+    @JsonProperty("sorhsbj")
+    public void setSorhsbj(List<Sorhsbj__1> sorhsbj) {
+        this.sorhsbj = sorhsbj;
     }
 
-    public HighSchoolInformationHighSchoolSubjects100PostResponse withGrade(String grade) {
-        this.grade = grade;
-        return this;
-    }
-
-    /**
-     * Subject GPA
-     * <p>
-     * Lineage reference object : SORHSBJ_SUBJ_GPA
-     * 
-     */
-    @JsonProperty("subjGpa")
-    public String getSubjGpa() {
-        return subjGpa;
-    }
-
-    /**
-     * Subject GPA
-     * <p>
-     * Lineage reference object : SORHSBJ_SUBJ_GPA
-     * 
-     */
-    @JsonProperty("subjGpa")
-    public void setSubjGpa(String subjGpa) {
-        this.subjGpa = subjGpa;
-    }
-
-    public HighSchoolInformationHighSchoolSubjects100PostResponse withSubjGpa(String subjGpa) {
-        this.subjGpa = subjGpa;
-        return this;
-    }
-
-    /**
-     * Subject
-     * <p>
-     * Lineage reference object : SORHSBJ_SBJC_CODE, Lookup lineage reference object : stvsbjc
-     * (Required)
-     * 
-     */
-    @JsonProperty("sbjcCode")
-    public String getSbjcCode() {
-        return sbjcCode;
-    }
-
-    /**
-     * Subject
-     * <p>
-     * Lineage reference object : SORHSBJ_SBJC_CODE, Lookup lineage reference object : stvsbjc
-     * (Required)
-     * 
-     */
-    @JsonProperty("sbjcCode")
-    public void setSbjcCode(String sbjcCode) {
-        this.sbjcCode = sbjcCode;
-    }
-
-    public HighSchoolInformationHighSchoolSubjects100PostResponse withSbjcCode(String sbjcCode) {
-        this.sbjcCode = sbjcCode;
-        return this;
-    }
-
-    /**
-     * Years Taken
-     * <p>
-     * Lineage reference object : SORHSBJ_SUBJ_YEARS
-     * 
-     */
-    @JsonProperty("subjYears")
-    public Double getSubjYears() {
-        return subjYears;
-    }
-
-    /**
-     * Years Taken
-     * <p>
-     * Lineage reference object : SORHSBJ_SUBJ_YEARS
-     * 
-     */
-    @JsonProperty("subjYears")
-    public void setSubjYears(Double subjYears) {
-        this.subjYears = subjYears;
-    }
-
-    public HighSchoolInformationHighSchoolSubjects100PostResponse withSubjYears(Double subjYears) {
-        this.subjYears = subjYears;
+    public HighSchoolInformationHighSchoolSubjects100PostResponse withSorhsbj(List<Sorhsbj__1> sorhsbj) {
+        this.sorhsbj = sorhsbj;
         return this;
     }
 
@@ -227,25 +77,13 @@ public class HighSchoolInformationHighSchoolSubjects100PostResponse {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(HighSchoolInformationHighSchoolSubjects100PostResponse.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
-        sb.append("stvsbjcDesc");
+        sb.append("sorhsch");
         sb.append('=');
-        sb.append(((this.stvsbjcDesc == null)?"<null>":this.stvsbjcDesc));
+        sb.append(((this.sorhsch == null)?"<null>":this.sorhsch));
         sb.append(',');
-        sb.append("grade");
+        sb.append("sorhsbj");
         sb.append('=');
-        sb.append(((this.grade == null)?"<null>":this.grade));
-        sb.append(',');
-        sb.append("subjGpa");
-        sb.append('=');
-        sb.append(((this.subjGpa == null)?"<null>":this.subjGpa));
-        sb.append(',');
-        sb.append("sbjcCode");
-        sb.append('=');
-        sb.append(((this.sbjcCode == null)?"<null>":this.sbjcCode));
-        sb.append(',');
-        sb.append("subjYears");
-        sb.append('=');
-        sb.append(((this.subjYears == null)?"<null>":this.subjYears));
+        sb.append(((this.sorhsbj == null)?"<null>":this.sorhsbj));
         sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');
@@ -262,12 +100,9 @@ public class HighSchoolInformationHighSchoolSubjects100PostResponse {
     @Override
     public int hashCode() {
         int result = 1;
-        result = ((result* 31)+((this.stvsbjcDesc == null)? 0 :this.stvsbjcDesc.hashCode()));
-        result = ((result* 31)+((this.grade == null)? 0 :this.grade.hashCode()));
-        result = ((result* 31)+((this.subjGpa == null)? 0 :this.subjGpa.hashCode()));
-        result = ((result* 31)+((this.sbjcCode == null)? 0 :this.sbjcCode.hashCode()));
+        result = ((result* 31)+((this.sorhsch == null)? 0 :this.sorhsch.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
-        result = ((result* 31)+((this.subjYears == null)? 0 :this.subjYears.hashCode()));
+        result = ((result* 31)+((this.sorhsbj == null)? 0 :this.sorhsbj.hashCode()));
         return result;
     }
 
@@ -280,7 +115,7 @@ public class HighSchoolInformationHighSchoolSubjects100PostResponse {
             return false;
         }
         HighSchoolInformationHighSchoolSubjects100PostResponse rhs = ((HighSchoolInformationHighSchoolSubjects100PostResponse) other);
-        return (((((((this.stvsbjcDesc == rhs.stvsbjcDesc)||((this.stvsbjcDesc!= null)&&this.stvsbjcDesc.equals(rhs.stvsbjcDesc)))&&((this.grade == rhs.grade)||((this.grade!= null)&&this.grade.equals(rhs.grade))))&&((this.subjGpa == rhs.subjGpa)||((this.subjGpa!= null)&&this.subjGpa.equals(rhs.subjGpa))))&&((this.sbjcCode == rhs.sbjcCode)||((this.sbjcCode!= null)&&this.sbjcCode.equals(rhs.sbjcCode))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.subjYears == rhs.subjYears)||((this.subjYears!= null)&&this.subjYears.equals(rhs.subjYears))));
+        return ((((this.sorhsch == rhs.sorhsch)||((this.sorhsch!= null)&&this.sorhsch.equals(rhs.sorhsch)))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.sorhsbj == rhs.sorhsbj)||((this.sorhsbj!= null)&&this.sorhsbj.equals(rhs.sorhsbj))));
     }
 
 }

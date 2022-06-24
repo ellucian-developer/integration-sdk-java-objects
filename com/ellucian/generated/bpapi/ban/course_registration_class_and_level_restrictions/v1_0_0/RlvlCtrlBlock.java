@@ -29,7 +29,7 @@ public class RlvlCtrlBlock {
      */
     @JsonProperty("scrrlvlTermCodeFrom")
     @JsonPropertyDescription("Lineage reference object : scrrlvlTermCodeFrom, Lookup lineage reference object : stvterm")
-    private Object scrrlvlTermCodeFrom;
+    private String scrrlvlTermCodeFrom;
     /**
      * Include/Exclude (I/E)
      * <p>
@@ -39,7 +39,7 @@ public class RlvlCtrlBlock {
      */
     @JsonProperty("scrrlvlLevlInd")
     @JsonPropertyDescription("Lineage reference object : scrrlvlLevlInd")
-    private Object scrrlvlLevlInd;
+    private String scrrlvlLevlInd;
     /**
      * To Term
      * <p>
@@ -48,7 +48,7 @@ public class RlvlCtrlBlock {
      */
     @JsonProperty("scrrlvlTermCodeTo")
     @JsonPropertyDescription("Lineage reference object : scrrlvlTermCodeTo, Lookup lineage reference object : stvterm")
-    private Object scrrlvlTermCodeTo;
+    private String scrrlvlTermCodeTo;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -59,7 +59,7 @@ public class RlvlCtrlBlock {
      * 
      */
     @JsonProperty("scrrlvlTermCodeFrom")
-    public Object getScrrlvlTermCodeFrom() {
+    public String getScrrlvlTermCodeFrom() {
         return scrrlvlTermCodeFrom;
     }
 
@@ -70,11 +70,11 @@ public class RlvlCtrlBlock {
      * 
      */
     @JsonProperty("scrrlvlTermCodeFrom")
-    public void setScrrlvlTermCodeFrom(Object scrrlvlTermCodeFrom) {
+    public void setScrrlvlTermCodeFrom(String scrrlvlTermCodeFrom) {
         this.scrrlvlTermCodeFrom = scrrlvlTermCodeFrom;
     }
 
-    public RlvlCtrlBlock withScrrlvlTermCodeFrom(Object scrrlvlTermCodeFrom) {
+    public RlvlCtrlBlock withScrrlvlTermCodeFrom(String scrrlvlTermCodeFrom) {
         this.scrrlvlTermCodeFrom = scrrlvlTermCodeFrom;
         return this;
     }
@@ -87,7 +87,7 @@ public class RlvlCtrlBlock {
      * 
      */
     @JsonProperty("scrrlvlLevlInd")
-    public Object getScrrlvlLevlInd() {
+    public String getScrrlvlLevlInd() {
         return scrrlvlLevlInd;
     }
 
@@ -99,11 +99,11 @@ public class RlvlCtrlBlock {
      * 
      */
     @JsonProperty("scrrlvlLevlInd")
-    public void setScrrlvlLevlInd(Object scrrlvlLevlInd) {
+    public void setScrrlvlLevlInd(String scrrlvlLevlInd) {
         this.scrrlvlLevlInd = scrrlvlLevlInd;
     }
 
-    public RlvlCtrlBlock withScrrlvlLevlInd(Object scrrlvlLevlInd) {
+    public RlvlCtrlBlock withScrrlvlLevlInd(String scrrlvlLevlInd) {
         this.scrrlvlLevlInd = scrrlvlLevlInd;
         return this;
     }
@@ -115,7 +115,7 @@ public class RlvlCtrlBlock {
      * 
      */
     @JsonProperty("scrrlvlTermCodeTo")
-    public Object getScrrlvlTermCodeTo() {
+    public String getScrrlvlTermCodeTo() {
         return scrrlvlTermCodeTo;
     }
 
@@ -126,11 +126,11 @@ public class RlvlCtrlBlock {
      * 
      */
     @JsonProperty("scrrlvlTermCodeTo")
-    public void setScrrlvlTermCodeTo(Object scrrlvlTermCodeTo) {
+    public void setScrrlvlTermCodeTo(String scrrlvlTermCodeTo) {
         this.scrrlvlTermCodeTo = scrrlvlTermCodeTo;
     }
 
-    public RlvlCtrlBlock withScrrlvlTermCodeTo(Object scrrlvlTermCodeTo) {
+    public RlvlCtrlBlock withScrrlvlTermCodeTo(String scrrlvlTermCodeTo) {
         this.scrrlvlTermCodeTo = scrrlvlTermCodeTo;
         return this;
     }

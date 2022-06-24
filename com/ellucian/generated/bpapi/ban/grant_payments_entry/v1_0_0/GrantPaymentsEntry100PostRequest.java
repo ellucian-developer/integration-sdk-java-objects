@@ -51,7 +51,7 @@ public class GrantPaymentsEntry100PostRequest {
      */
     @JsonProperty("keyblckAgencyCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAgencyCode")
-    private Object keyblckAgencyCode;
+    private String keyblckAgencyCode;
     /**
      * Trraccd Grnt Code
      * <p>
@@ -77,7 +77,7 @@ public class GrantPaymentsEntry100PostRequest {
      */
     @JsonProperty("keyblckGrntCode")
     @JsonPropertyDescription("Lineage reference object : keyblckGrntCode")
-    private Object keyblckGrntCode;
+    private String keyblckGrntCode;
     /**
      * Trraccd Detail Code
      * <p>
@@ -152,7 +152,7 @@ public class GrantPaymentsEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblckAgencyCode")
-    public Object getKeyblckAgencyCode() {
+    public String getKeyblckAgencyCode() {
         return keyblckAgencyCode;
     }
 
@@ -163,11 +163,11 @@ public class GrantPaymentsEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblckAgencyCode")
-    public void setKeyblckAgencyCode(Object keyblckAgencyCode) {
+    public void setKeyblckAgencyCode(String keyblckAgencyCode) {
         this.keyblckAgencyCode = keyblckAgencyCode;
     }
 
-    public GrantPaymentsEntry100PostRequest withKeyblckAgencyCode(Object keyblckAgencyCode) {
+    public GrantPaymentsEntry100PostRequest withKeyblckAgencyCode(String keyblckAgencyCode) {
         this.keyblckAgencyCode = keyblckAgencyCode;
         return this;
     }
@@ -233,7 +233,7 @@ public class GrantPaymentsEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblckGrntCode")
-    public Object getKeyblckGrntCode() {
+    public String getKeyblckGrntCode() {
         return keyblckGrntCode;
     }
 
@@ -244,11 +244,11 @@ public class GrantPaymentsEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblckGrntCode")
-    public void setKeyblckGrntCode(Object keyblckGrntCode) {
+    public void setKeyblckGrntCode(String keyblckGrntCode) {
         this.keyblckGrntCode = keyblckGrntCode;
     }
 
-    public GrantPaymentsEntry100PostRequest withKeyblckGrntCode(Object keyblckGrntCode) {
+    public GrantPaymentsEntry100PostRequest withKeyblckGrntCode(String keyblckGrntCode) {
         this.keyblckGrntCode = keyblckGrntCode;
         return this;
     }

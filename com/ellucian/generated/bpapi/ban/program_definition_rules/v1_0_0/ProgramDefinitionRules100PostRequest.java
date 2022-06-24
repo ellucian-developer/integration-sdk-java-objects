@@ -18,6 +18,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "levlCodeStu",
     "campCode",
     "webInd",
+    "currInd",
+    "currRuleInd",
     "program",
     "lockedInd",
     "degcCode",
@@ -65,6 +67,24 @@ public class ProgramDefinitionRules100PostRequest {
     @JsonProperty("webInd")
     @JsonPropertyDescription("Lineage reference object : SMRPRLE_WEB_IND")
     private String webInd;
+    /**
+     * Curriculum Dependent
+     * <p>
+     * Lineage reference object : SMRPRLE_CURR_IND
+     * 
+     */
+    @JsonProperty("currInd")
+    @JsonPropertyDescription("Lineage reference object : SMRPRLE_CURR_IND")
+    private String currInd;
+    /**
+     * Curriculum Rules
+     * <p>
+     * Lineage reference object : SMRPRLE_CURR_RULE_IND
+     * 
+     */
+    @JsonProperty("currRuleInd")
+    @JsonPropertyDescription("Lineage reference object : SMRPRLE_CURR_RULE_IND")
+    private String currRuleInd;
     /**
      * Program
      * <p>
@@ -224,6 +244,60 @@ public class ProgramDefinitionRules100PostRequest {
 
     public ProgramDefinitionRules100PostRequest withWebInd(String webInd) {
         this.webInd = webInd;
+        return this;
+    }
+
+    /**
+     * Curriculum Dependent
+     * <p>
+     * Lineage reference object : SMRPRLE_CURR_IND
+     * 
+     */
+    @JsonProperty("currInd")
+    public String getCurrInd() {
+        return currInd;
+    }
+
+    /**
+     * Curriculum Dependent
+     * <p>
+     * Lineage reference object : SMRPRLE_CURR_IND
+     * 
+     */
+    @JsonProperty("currInd")
+    public void setCurrInd(String currInd) {
+        this.currInd = currInd;
+    }
+
+    public ProgramDefinitionRules100PostRequest withCurrInd(String currInd) {
+        this.currInd = currInd;
+        return this;
+    }
+
+    /**
+     * Curriculum Rules
+     * <p>
+     * Lineage reference object : SMRPRLE_CURR_RULE_IND
+     * 
+     */
+    @JsonProperty("currRuleInd")
+    public String getCurrRuleInd() {
+        return currRuleInd;
+    }
+
+    /**
+     * Curriculum Rules
+     * <p>
+     * Lineage reference object : SMRPRLE_CURR_RULE_IND
+     * 
+     */
+    @JsonProperty("currRuleInd")
+    public void setCurrRuleInd(String currRuleInd) {
+        this.currRuleInd = currRuleInd;
+    }
+
+    public ProgramDefinitionRules100PostRequest withCurrRuleInd(String currRuleInd) {
+        this.currRuleInd = currRuleInd;
         return this;
     }
 
@@ -401,6 +475,14 @@ public class ProgramDefinitionRules100PostRequest {
         sb.append('=');
         sb.append(((this.webInd == null)?"<null>":this.webInd));
         sb.append(',');
+        sb.append("currInd");
+        sb.append('=');
+        sb.append(((this.currInd == null)?"<null>":this.currInd));
+        sb.append(',');
+        sb.append("currRuleInd");
+        sb.append('=');
+        sb.append(((this.currRuleInd == null)?"<null>":this.currRuleInd));
+        sb.append(',');
         sb.append("program");
         sb.append('=');
         sb.append(((this.program == null)?"<null>":this.program));
@@ -438,11 +520,13 @@ public class ProgramDefinitionRules100PostRequest {
         int result = 1;
         result = ((result* 31)+((this.programDesc == null)? 0 :this.programDesc.hashCode()));
         result = ((result* 31)+((this.levlCodeStu == null)? 0 :this.levlCodeStu.hashCode()));
-        result = ((result* 31)+((this.campCode == null)? 0 :this.campCode.hashCode()));
         result = ((result* 31)+((this.webInd == null)? 0 :this.webInd.hashCode()));
+        result = ((result* 31)+((this.currInd == null)? 0 :this.currInd.hashCode()));
         result = ((result* 31)+((this.program == null)? 0 :this.program.hashCode()));
         result = ((result* 31)+((this.lockedInd == null)? 0 :this.lockedInd.hashCode()));
         result = ((result* 31)+((this.degcCode == null)? 0 :this.degcCode.hashCode()));
+        result = ((result* 31)+((this.campCode == null)? 0 :this.campCode.hashCode()));
+        result = ((result* 31)+((this.currRuleInd == null)? 0 :this.currRuleInd.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
         result = ((result* 31)+((this.collCode == null)? 0 :this.collCode.hashCode()));
         result = ((result* 31)+((this.levlCode == null)? 0 :this.levlCode.hashCode()));
@@ -458,7 +542,7 @@ public class ProgramDefinitionRules100PostRequest {
             return false;
         }
         ProgramDefinitionRules100PostRequest rhs = ((ProgramDefinitionRules100PostRequest) other);
-        return (((((((((((this.programDesc == rhs.programDesc)||((this.programDesc!= null)&&this.programDesc.equals(rhs.programDesc)))&&((this.levlCodeStu == rhs.levlCodeStu)||((this.levlCodeStu!= null)&&this.levlCodeStu.equals(rhs.levlCodeStu))))&&((this.campCode == rhs.campCode)||((this.campCode!= null)&&this.campCode.equals(rhs.campCode))))&&((this.webInd == rhs.webInd)||((this.webInd!= null)&&this.webInd.equals(rhs.webInd))))&&((this.program == rhs.program)||((this.program!= null)&&this.program.equals(rhs.program))))&&((this.lockedInd == rhs.lockedInd)||((this.lockedInd!= null)&&this.lockedInd.equals(rhs.lockedInd))))&&((this.degcCode == rhs.degcCode)||((this.degcCode!= null)&&this.degcCode.equals(rhs.degcCode))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.collCode == rhs.collCode)||((this.collCode!= null)&&this.collCode.equals(rhs.collCode))))&&((this.levlCode == rhs.levlCode)||((this.levlCode!= null)&&this.levlCode.equals(rhs.levlCode))));
+        return (((((((((((((this.programDesc == rhs.programDesc)||((this.programDesc!= null)&&this.programDesc.equals(rhs.programDesc)))&&((this.levlCodeStu == rhs.levlCodeStu)||((this.levlCodeStu!= null)&&this.levlCodeStu.equals(rhs.levlCodeStu))))&&((this.webInd == rhs.webInd)||((this.webInd!= null)&&this.webInd.equals(rhs.webInd))))&&((this.currInd == rhs.currInd)||((this.currInd!= null)&&this.currInd.equals(rhs.currInd))))&&((this.program == rhs.program)||((this.program!= null)&&this.program.equals(rhs.program))))&&((this.lockedInd == rhs.lockedInd)||((this.lockedInd!= null)&&this.lockedInd.equals(rhs.lockedInd))))&&((this.degcCode == rhs.degcCode)||((this.degcCode!= null)&&this.degcCode.equals(rhs.degcCode))))&&((this.campCode == rhs.campCode)||((this.campCode!= null)&&this.campCode.equals(rhs.campCode))))&&((this.currRuleInd == rhs.currRuleInd)||((this.currRuleInd!= null)&&this.currRuleInd.equals(rhs.currRuleInd))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.collCode == rhs.collCode)||((this.collCode!= null)&&this.collCode.equals(rhs.collCode))))&&((this.levlCode == rhs.levlCode)||((this.levlCode!= null)&&this.levlCode.equals(rhs.levlCode))));
     }
 
 }

@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.employee_status_change_emcumbrance.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -36,7 +37,7 @@ public class FormHeader {
      */
     @JsonProperty("salaryEncumbrance")
     @JsonPropertyDescription("Lineage reference object : salaryEncumbrance")
-    private Object salaryEncumbrance;
+    private Double salaryEncumbrance;
     /**
      * Encumbrance Hours
      * <p>
@@ -45,14 +46,14 @@ public class FormHeader {
      */
     @JsonProperty("detailEncumbranceHrs")
     @JsonPropertyDescription("Lineage reference object : detailEncumbranceHrs")
-    private Object detailEncumbranceHrs;
+    private Double detailEncumbranceHrs;
     /**
      * Lineage reference object : dataSeparatorLine1
      * 
      */
     @JsonProperty("dataSeparatorLine1")
     @JsonPropertyDescription("Lineage reference object : dataSeparatorLine1")
-    private Object dataSeparatorLine1;
+    private String dataSeparatorLine1;
     /**
      * Start Date
      * <p>
@@ -61,7 +62,7 @@ public class FormHeader {
      */
     @JsonProperty("contractBeginDate")
     @JsonPropertyDescription("Lineage reference object : contractBeginDate")
-    private Object contractBeginDate;
+    private Date contractBeginDate;
     /**
      * Total Encumbrance
      * <p>
@@ -70,14 +71,14 @@ public class FormHeader {
      */
     @JsonProperty("totalSalaryEnc")
     @JsonPropertyDescription("Lineage reference object : totalSalaryEnc")
-    private Object totalSalaryEnc;
+    private Double totalSalaryEnc;
     /**
      * Lineage reference object : dataSeparatorLine0
      * 
      */
     @JsonProperty("dataSeparatorLine0")
     @JsonPropertyDescription("Lineage reference object : dataSeparatorLine0")
-    private Object dataSeparatorLine0;
+    private String dataSeparatorLine0;
     /**
      * End Date
      * <p>
@@ -86,7 +87,7 @@ public class FormHeader {
      */
     @JsonProperty("contractEndDate")
     @JsonPropertyDescription("Lineage reference object : contractEndDate")
-    private Object contractEndDate;
+    private Date contractEndDate;
     /**
      * Total Contract Hours
      * <p>
@@ -95,7 +96,7 @@ public class FormHeader {
      */
     @JsonProperty("totalContractHrs")
     @JsonPropertyDescription("Lineage reference object : totalContractHrs")
-    private Object totalContractHrs;
+    private Double totalContractHrs;
     /**
      * Future Years
      * <p>
@@ -104,7 +105,7 @@ public class FormHeader {
      */
     @JsonProperty("futureSalaryEnc")
     @JsonPropertyDescription("Lineage reference object : futureSalaryEnc")
-    private Object futureSalaryEnc;
+    private Double futureSalaryEnc;
     /**
      * Total Encumbrance Hours
      * <p>
@@ -113,7 +114,7 @@ public class FormHeader {
      */
     @JsonProperty("totalEncumbranceHrs")
     @JsonPropertyDescription("Lineage reference object : totalEncumbranceHrs")
-    private Object totalEncumbranceHrs;
+    private Double totalEncumbranceHrs;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -124,7 +125,7 @@ public class FormHeader {
      * 
      */
     @JsonProperty("salaryEncumbrance")
-    public Object getSalaryEncumbrance() {
+    public Double getSalaryEncumbrance() {
         return salaryEncumbrance;
     }
 
@@ -135,11 +136,11 @@ public class FormHeader {
      * 
      */
     @JsonProperty("salaryEncumbrance")
-    public void setSalaryEncumbrance(Object salaryEncumbrance) {
+    public void setSalaryEncumbrance(Double salaryEncumbrance) {
         this.salaryEncumbrance = salaryEncumbrance;
     }
 
-    public FormHeader withSalaryEncumbrance(Object salaryEncumbrance) {
+    public FormHeader withSalaryEncumbrance(Double salaryEncumbrance) {
         this.salaryEncumbrance = salaryEncumbrance;
         return this;
     }
@@ -151,7 +152,7 @@ public class FormHeader {
      * 
      */
     @JsonProperty("detailEncumbranceHrs")
-    public Object getDetailEncumbranceHrs() {
+    public Double getDetailEncumbranceHrs() {
         return detailEncumbranceHrs;
     }
 
@@ -162,11 +163,11 @@ public class FormHeader {
      * 
      */
     @JsonProperty("detailEncumbranceHrs")
-    public void setDetailEncumbranceHrs(Object detailEncumbranceHrs) {
+    public void setDetailEncumbranceHrs(Double detailEncumbranceHrs) {
         this.detailEncumbranceHrs = detailEncumbranceHrs;
     }
 
-    public FormHeader withDetailEncumbranceHrs(Object detailEncumbranceHrs) {
+    public FormHeader withDetailEncumbranceHrs(Double detailEncumbranceHrs) {
         this.detailEncumbranceHrs = detailEncumbranceHrs;
         return this;
     }
@@ -176,7 +177,7 @@ public class FormHeader {
      * 
      */
     @JsonProperty("dataSeparatorLine1")
-    public Object getDataSeparatorLine1() {
+    public String getDataSeparatorLine1() {
         return dataSeparatorLine1;
     }
 
@@ -185,11 +186,11 @@ public class FormHeader {
      * 
      */
     @JsonProperty("dataSeparatorLine1")
-    public void setDataSeparatorLine1(Object dataSeparatorLine1) {
+    public void setDataSeparatorLine1(String dataSeparatorLine1) {
         this.dataSeparatorLine1 = dataSeparatorLine1;
     }
 
-    public FormHeader withDataSeparatorLine1(Object dataSeparatorLine1) {
+    public FormHeader withDataSeparatorLine1(String dataSeparatorLine1) {
         this.dataSeparatorLine1 = dataSeparatorLine1;
         return this;
     }
@@ -201,7 +202,7 @@ public class FormHeader {
      * 
      */
     @JsonProperty("contractBeginDate")
-    public Object getContractBeginDate() {
+    public Date getContractBeginDate() {
         return contractBeginDate;
     }
 
@@ -212,11 +213,11 @@ public class FormHeader {
      * 
      */
     @JsonProperty("contractBeginDate")
-    public void setContractBeginDate(Object contractBeginDate) {
+    public void setContractBeginDate(Date contractBeginDate) {
         this.contractBeginDate = contractBeginDate;
     }
 
-    public FormHeader withContractBeginDate(Object contractBeginDate) {
+    public FormHeader withContractBeginDate(Date contractBeginDate) {
         this.contractBeginDate = contractBeginDate;
         return this;
     }
@@ -228,7 +229,7 @@ public class FormHeader {
      * 
      */
     @JsonProperty("totalSalaryEnc")
-    public Object getTotalSalaryEnc() {
+    public Double getTotalSalaryEnc() {
         return totalSalaryEnc;
     }
 
@@ -239,11 +240,11 @@ public class FormHeader {
      * 
      */
     @JsonProperty("totalSalaryEnc")
-    public void setTotalSalaryEnc(Object totalSalaryEnc) {
+    public void setTotalSalaryEnc(Double totalSalaryEnc) {
         this.totalSalaryEnc = totalSalaryEnc;
     }
 
-    public FormHeader withTotalSalaryEnc(Object totalSalaryEnc) {
+    public FormHeader withTotalSalaryEnc(Double totalSalaryEnc) {
         this.totalSalaryEnc = totalSalaryEnc;
         return this;
     }
@@ -253,7 +254,7 @@ public class FormHeader {
      * 
      */
     @JsonProperty("dataSeparatorLine0")
-    public Object getDataSeparatorLine0() {
+    public String getDataSeparatorLine0() {
         return dataSeparatorLine0;
     }
 
@@ -262,11 +263,11 @@ public class FormHeader {
      * 
      */
     @JsonProperty("dataSeparatorLine0")
-    public void setDataSeparatorLine0(Object dataSeparatorLine0) {
+    public void setDataSeparatorLine0(String dataSeparatorLine0) {
         this.dataSeparatorLine0 = dataSeparatorLine0;
     }
 
-    public FormHeader withDataSeparatorLine0(Object dataSeparatorLine0) {
+    public FormHeader withDataSeparatorLine0(String dataSeparatorLine0) {
         this.dataSeparatorLine0 = dataSeparatorLine0;
         return this;
     }
@@ -278,7 +279,7 @@ public class FormHeader {
      * 
      */
     @JsonProperty("contractEndDate")
-    public Object getContractEndDate() {
+    public Date getContractEndDate() {
         return contractEndDate;
     }
 
@@ -289,11 +290,11 @@ public class FormHeader {
      * 
      */
     @JsonProperty("contractEndDate")
-    public void setContractEndDate(Object contractEndDate) {
+    public void setContractEndDate(Date contractEndDate) {
         this.contractEndDate = contractEndDate;
     }
 
-    public FormHeader withContractEndDate(Object contractEndDate) {
+    public FormHeader withContractEndDate(Date contractEndDate) {
         this.contractEndDate = contractEndDate;
         return this;
     }
@@ -305,7 +306,7 @@ public class FormHeader {
      * 
      */
     @JsonProperty("totalContractHrs")
-    public Object getTotalContractHrs() {
+    public Double getTotalContractHrs() {
         return totalContractHrs;
     }
 
@@ -316,11 +317,11 @@ public class FormHeader {
      * 
      */
     @JsonProperty("totalContractHrs")
-    public void setTotalContractHrs(Object totalContractHrs) {
+    public void setTotalContractHrs(Double totalContractHrs) {
         this.totalContractHrs = totalContractHrs;
     }
 
-    public FormHeader withTotalContractHrs(Object totalContractHrs) {
+    public FormHeader withTotalContractHrs(Double totalContractHrs) {
         this.totalContractHrs = totalContractHrs;
         return this;
     }
@@ -332,7 +333,7 @@ public class FormHeader {
      * 
      */
     @JsonProperty("futureSalaryEnc")
-    public Object getFutureSalaryEnc() {
+    public Double getFutureSalaryEnc() {
         return futureSalaryEnc;
     }
 
@@ -343,11 +344,11 @@ public class FormHeader {
      * 
      */
     @JsonProperty("futureSalaryEnc")
-    public void setFutureSalaryEnc(Object futureSalaryEnc) {
+    public void setFutureSalaryEnc(Double futureSalaryEnc) {
         this.futureSalaryEnc = futureSalaryEnc;
     }
 
-    public FormHeader withFutureSalaryEnc(Object futureSalaryEnc) {
+    public FormHeader withFutureSalaryEnc(Double futureSalaryEnc) {
         this.futureSalaryEnc = futureSalaryEnc;
         return this;
     }
@@ -359,7 +360,7 @@ public class FormHeader {
      * 
      */
     @JsonProperty("totalEncumbranceHrs")
-    public Object getTotalEncumbranceHrs() {
+    public Double getTotalEncumbranceHrs() {
         return totalEncumbranceHrs;
     }
 
@@ -370,11 +371,11 @@ public class FormHeader {
      * 
      */
     @JsonProperty("totalEncumbranceHrs")
-    public void setTotalEncumbranceHrs(Object totalEncumbranceHrs) {
+    public void setTotalEncumbranceHrs(Double totalEncumbranceHrs) {
         this.totalEncumbranceHrs = totalEncumbranceHrs;
     }
 
-    public FormHeader withTotalEncumbranceHrs(Object totalEncumbranceHrs) {
+    public FormHeader withTotalEncumbranceHrs(Double totalEncumbranceHrs) {
         this.totalEncumbranceHrs = totalEncumbranceHrs;
         return this;
     }

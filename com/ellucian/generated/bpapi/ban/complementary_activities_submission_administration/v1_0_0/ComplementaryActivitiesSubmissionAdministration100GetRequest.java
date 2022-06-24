@@ -98,7 +98,7 @@ public class ComplementaryActivitiesSubmissionAdministration100GetRequest {
      */
     @JsonProperty("program")
     @JsonPropertyDescription("Lineage reference object : program")
-    private Object program;
+    private String program;
     /**
      * Lineage reference object : SORCASA_USER_ID
      * 
@@ -165,7 +165,7 @@ public class ComplementaryActivitiesSubmissionAdministration100GetRequest {
      */
     @JsonProperty("termCode")
     @JsonPropertyDescription("Lineage reference object : termCode, Lookup lineage reference object : stvterm")
-    private Object termCode;
+    private String termCode;
     /**
      * Approved Hours
      * <p>
@@ -349,7 +349,7 @@ public class ComplementaryActivitiesSubmissionAdministration100GetRequest {
      * 
      */
     @JsonProperty("program")
-    public Object getProgram() {
+    public String getProgram() {
         return program;
     }
 
@@ -360,11 +360,11 @@ public class ComplementaryActivitiesSubmissionAdministration100GetRequest {
      * 
      */
     @JsonProperty("program")
-    public void setProgram(Object program) {
+    public void setProgram(String program) {
         this.program = program;
     }
 
-    public ComplementaryActivitiesSubmissionAdministration100GetRequest withProgram(Object program) {
+    public ComplementaryActivitiesSubmissionAdministration100GetRequest withProgram(String program) {
         this.program = program;
         return this;
     }
@@ -557,7 +557,7 @@ public class ComplementaryActivitiesSubmissionAdministration100GetRequest {
      * 
      */
     @JsonProperty("termCode")
-    public Object getTermCode() {
+    public String getTermCode() {
         return termCode;
     }
 
@@ -568,11 +568,11 @@ public class ComplementaryActivitiesSubmissionAdministration100GetRequest {
      * 
      */
     @JsonProperty("termCode")
-    public void setTermCode(Object termCode) {
+    public void setTermCode(String termCode) {
         this.termCode = termCode;
     }
 
-    public ComplementaryActivitiesSubmissionAdministration100GetRequest withTermCode(Object termCode) {
+    public ComplementaryActivitiesSubmissionAdministration100GetRequest withTermCode(String termCode) {
         this.termCode = termCode;
         return this;
     }

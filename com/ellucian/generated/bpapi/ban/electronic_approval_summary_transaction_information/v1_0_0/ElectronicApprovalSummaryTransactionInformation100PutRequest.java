@@ -63,7 +63,7 @@ public class ElectronicApprovalSummaryTransactionInformation100PutRequest {
      */
     @JsonProperty("transactionStatus")
     @JsonPropertyDescription("Lineage reference object : transactionStatus")
-    private Object transactionStatus;
+    private String transactionStatus;
     /**
      * Required Action Indicator
      * <p>
@@ -124,7 +124,7 @@ public class ElectronicApprovalSummaryTransactionInformation100PutRequest {
      */
     @JsonProperty("transactionToDate")
     @JsonPropertyDescription("Lineage reference object : transactionToDate")
-    private Object transactionToDate;
+    private Date transactionToDate;
     /**
      * Lineage reference object : NOBTRAN_APPLY_IND
      * 
@@ -159,7 +159,7 @@ public class ElectronicApprovalSummaryTransactionInformation100PutRequest {
      */
     @JsonProperty("queueStatus")
     @JsonPropertyDescription("Lineage reference object : queueStatus")
-    private Object queueStatus;
+    private String queueStatus;
     /**
      * ID
      * <p>
@@ -185,7 +185,7 @@ public class ElectronicApprovalSummaryTransactionInformation100PutRequest {
      */
     @JsonProperty("proxyFor")
     @JsonPropertyDescription("Lineage reference object : proxyFor")
-    private Object proxyFor;
+    private String proxyFor;
     /**
      * Submitted From Date
      * <p>
@@ -194,7 +194,7 @@ public class ElectronicApprovalSummaryTransactionInformation100PutRequest {
      */
     @JsonProperty("transactionFromDate")
     @JsonPropertyDescription("Lineage reference object : transactionFromDate")
-    private Object transactionFromDate;
+    private Date transactionFromDate;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -260,7 +260,7 @@ public class ElectronicApprovalSummaryTransactionInformation100PutRequest {
      * 
      */
     @JsonProperty("transactionStatus")
-    public Object getTransactionStatus() {
+    public String getTransactionStatus() {
         return transactionStatus;
     }
 
@@ -272,11 +272,11 @@ public class ElectronicApprovalSummaryTransactionInformation100PutRequest {
      * 
      */
     @JsonProperty("transactionStatus")
-    public void setTransactionStatus(Object transactionStatus) {
+    public void setTransactionStatus(String transactionStatus) {
         this.transactionStatus = transactionStatus;
     }
 
-    public ElectronicApprovalSummaryTransactionInformation100PutRequest withTransactionStatus(Object transactionStatus) {
+    public ElectronicApprovalSummaryTransactionInformation100PutRequest withTransactionStatus(String transactionStatus) {
         this.transactionStatus = transactionStatus;
         return this;
     }
@@ -450,7 +450,7 @@ public class ElectronicApprovalSummaryTransactionInformation100PutRequest {
      * 
      */
     @JsonProperty("transactionToDate")
-    public Object getTransactionToDate() {
+    public Date getTransactionToDate() {
         return transactionToDate;
     }
 
@@ -461,11 +461,11 @@ public class ElectronicApprovalSummaryTransactionInformation100PutRequest {
      * 
      */
     @JsonProperty("transactionToDate")
-    public void setTransactionToDate(Object transactionToDate) {
+    public void setTransactionToDate(Date transactionToDate) {
         this.transactionToDate = transactionToDate;
     }
 
-    public ElectronicApprovalSummaryTransactionInformation100PutRequest withTransactionToDate(Object transactionToDate) {
+    public ElectronicApprovalSummaryTransactionInformation100PutRequest withTransactionToDate(Date transactionToDate) {
         this.transactionToDate = transactionToDate;
         return this;
     }
@@ -555,7 +555,7 @@ public class ElectronicApprovalSummaryTransactionInformation100PutRequest {
      * 
      */
     @JsonProperty("queueStatus")
-    public Object getQueueStatus() {
+    public String getQueueStatus() {
         return queueStatus;
     }
 
@@ -567,11 +567,11 @@ public class ElectronicApprovalSummaryTransactionInformation100PutRequest {
      * 
      */
     @JsonProperty("queueStatus")
-    public void setQueueStatus(Object queueStatus) {
+    public void setQueueStatus(String queueStatus) {
         this.queueStatus = queueStatus;
     }
 
-    public ElectronicApprovalSummaryTransactionInformation100PutRequest withQueueStatus(Object queueStatus) {
+    public ElectronicApprovalSummaryTransactionInformation100PutRequest withQueueStatus(String queueStatus) {
         this.queueStatus = queueStatus;
         return this;
     }
@@ -639,7 +639,7 @@ public class ElectronicApprovalSummaryTransactionInformation100PutRequest {
      * 
      */
     @JsonProperty("proxyFor")
-    public Object getProxyFor() {
+    public String getProxyFor() {
         return proxyFor;
     }
 
@@ -650,11 +650,11 @@ public class ElectronicApprovalSummaryTransactionInformation100PutRequest {
      * 
      */
     @JsonProperty("proxyFor")
-    public void setProxyFor(Object proxyFor) {
+    public void setProxyFor(String proxyFor) {
         this.proxyFor = proxyFor;
     }
 
-    public ElectronicApprovalSummaryTransactionInformation100PutRequest withProxyFor(Object proxyFor) {
+    public ElectronicApprovalSummaryTransactionInformation100PutRequest withProxyFor(String proxyFor) {
         this.proxyFor = proxyFor;
         return this;
     }
@@ -666,7 +666,7 @@ public class ElectronicApprovalSummaryTransactionInformation100PutRequest {
      * 
      */
     @JsonProperty("transactionFromDate")
-    public Object getTransactionFromDate() {
+    public Date getTransactionFromDate() {
         return transactionFromDate;
     }
 
@@ -677,11 +677,11 @@ public class ElectronicApprovalSummaryTransactionInformation100PutRequest {
      * 
      */
     @JsonProperty("transactionFromDate")
-    public void setTransactionFromDate(Object transactionFromDate) {
+    public void setTransactionFromDate(Date transactionFromDate) {
         this.transactionFromDate = transactionFromDate;
     }
 
-    public ElectronicApprovalSummaryTransactionInformation100PutRequest withTransactionFromDate(Object transactionFromDate) {
+    public ElectronicApprovalSummaryTransactionInformation100PutRequest withTransactionFromDate(Date transactionFromDate) {
         this.transactionFromDate = transactionFromDate;
         return this;
     }

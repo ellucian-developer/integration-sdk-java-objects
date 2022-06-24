@@ -33,7 +33,7 @@ public class BatchCheckPrint100GetRequest {
      */
     @JsonProperty("bankCode")
     @JsonPropertyDescription("Lineage reference object : faabatcBankCode, Lookup lineage reference object : gxvbank")
-    private Object bankCode;
+    private String bankCode;
     /**
      * Check Date
      * <p>
@@ -78,7 +78,7 @@ public class BatchCheckPrint100GetRequest {
      * 
      */
     @JsonProperty("bankCode")
-    public Object getBankCode() {
+    public String getBankCode() {
         return bankCode;
     }
 
@@ -90,11 +90,11 @@ public class BatchCheckPrint100GetRequest {
      * 
      */
     @JsonProperty("bankCode")
-    public void setBankCode(Object bankCode) {
+    public void setBankCode(String bankCode) {
         this.bankCode = bankCode;
     }
 
-    public BatchCheckPrint100GetRequest withBankCode(Object bankCode) {
+    public BatchCheckPrint100GetRequest withBankCode(String bankCode) {
         this.bankCode = bankCode;
         return this;
     }

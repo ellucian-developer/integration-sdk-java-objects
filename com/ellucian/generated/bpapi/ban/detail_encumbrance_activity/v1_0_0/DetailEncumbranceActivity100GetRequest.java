@@ -28,7 +28,7 @@ public class DetailEncumbranceActivity100GetRequest {
      */
     @JsonProperty("encumbranceNumber")
     @JsonPropertyDescription("Lineage reference object : encumbranceNumber")
-    private Object encumbranceNumber;
+    private String encumbranceNumber;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -40,7 +40,7 @@ public class DetailEncumbranceActivity100GetRequest {
      * 
      */
     @JsonProperty("encumbranceNumber")
-    public Object getEncumbranceNumber() {
+    public String getEncumbranceNumber() {
         return encumbranceNumber;
     }
 
@@ -52,11 +52,11 @@ public class DetailEncumbranceActivity100GetRequest {
      * 
      */
     @JsonProperty("encumbranceNumber")
-    public void setEncumbranceNumber(Object encumbranceNumber) {
+    public void setEncumbranceNumber(String encumbranceNumber) {
         this.encumbranceNumber = encumbranceNumber;
     }
 
-    public DetailEncumbranceActivity100GetRequest withEncumbranceNumber(Object encumbranceNumber) {
+    public DetailEncumbranceActivity100GetRequest withEncumbranceNumber(String encumbranceNumber) {
         this.encumbranceNumber = encumbranceNumber;
         return this;
     }

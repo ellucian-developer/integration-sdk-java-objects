@@ -28,7 +28,7 @@ public class EarningsCodeRule100GetRequest {
      */
     @JsonProperty("earnCode")
     @JsonPropertyDescription("Lineage reference object : earnCode")
-    private Object earnCode;
+    private String earnCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -40,7 +40,7 @@ public class EarningsCodeRule100GetRequest {
      * 
      */
     @JsonProperty("earnCode")
-    public Object getEarnCode() {
+    public String getEarnCode() {
         return earnCode;
     }
 
@@ -52,11 +52,11 @@ public class EarningsCodeRule100GetRequest {
      * 
      */
     @JsonProperty("earnCode")
-    public void setEarnCode(Object earnCode) {
+    public void setEarnCode(String earnCode) {
         this.earnCode = earnCode;
     }
 
-    public EarningsCodeRule100GetRequest withEarnCode(Object earnCode) {
+    public EarningsCodeRule100GetRequest withEarnCode(String earnCode) {
         this.earnCode = earnCode;
         return this;
     }

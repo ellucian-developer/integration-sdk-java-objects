@@ -134,7 +134,7 @@ public class InvoiceCreditMemo100GetRequest {
      */
     @JsonProperty("faainvhDocCode")
     @JsonPropertyDescription("Lineage reference object : faainvhDocCode")
-    private Object faainvhDocCode;
+    private String faainvhDocCode;
     /**
      * Lineage reference object : FABINVH_ACTIVITY_DATE
      * 
@@ -158,7 +158,7 @@ public class InvoiceCreditMemo100GetRequest {
      */
     @JsonProperty("vendor")
     @JsonPropertyDescription("Lineage reference object : keyBlockVendor")
-    private Object vendor;
+    private String vendor;
     /**
      * Transaction Date
      * <p>
@@ -213,7 +213,7 @@ public class InvoiceCreditMemo100GetRequest {
      */
     @JsonProperty("invoiceChoice")
     @JsonPropertyDescription("Lineage reference object : invoiceChoice")
-    private Object invoiceChoice;
+    private String invoiceChoice;
     /**
      * Credit Memo
      * <p>
@@ -501,7 +501,7 @@ public class InvoiceCreditMemo100GetRequest {
      * 
      */
     @JsonProperty("faainvhDocCode")
-    public Object getFaainvhDocCode() {
+    public String getFaainvhDocCode() {
         return faainvhDocCode;
     }
 
@@ -512,11 +512,11 @@ public class InvoiceCreditMemo100GetRequest {
      * 
      */
     @JsonProperty("faainvhDocCode")
-    public void setFaainvhDocCode(Object faainvhDocCode) {
+    public void setFaainvhDocCode(String faainvhDocCode) {
         this.faainvhDocCode = faainvhDocCode;
     }
 
-    public InvoiceCreditMemo100GetRequest withFaainvhDocCode(Object faainvhDocCode) {
+    public InvoiceCreditMemo100GetRequest withFaainvhDocCode(String faainvhDocCode) {
         this.faainvhDocCode = faainvhDocCode;
         return this;
     }
@@ -578,7 +578,7 @@ public class InvoiceCreditMemo100GetRequest {
      * 
      */
     @JsonProperty("vendor")
-    public Object getVendor() {
+    public String getVendor() {
         return vendor;
     }
 
@@ -589,11 +589,11 @@ public class InvoiceCreditMemo100GetRequest {
      * 
      */
     @JsonProperty("vendor")
-    public void setVendor(Object vendor) {
+    public void setVendor(String vendor) {
         this.vendor = vendor;
     }
 
-    public InvoiceCreditMemo100GetRequest withVendor(Object vendor) {
+    public InvoiceCreditMemo100GetRequest withVendor(String vendor) {
         this.vendor = vendor;
         return this;
     }
@@ -743,7 +743,7 @@ public class InvoiceCreditMemo100GetRequest {
      * 
      */
     @JsonProperty("invoiceChoice")
-    public Object getInvoiceChoice() {
+    public String getInvoiceChoice() {
         return invoiceChoice;
     }
 
@@ -755,11 +755,11 @@ public class InvoiceCreditMemo100GetRequest {
      * 
      */
     @JsonProperty("invoiceChoice")
-    public void setInvoiceChoice(Object invoiceChoice) {
+    public void setInvoiceChoice(String invoiceChoice) {
         this.invoiceChoice = invoiceChoice;
     }
 
-    public InvoiceCreditMemo100GetRequest withInvoiceChoice(Object invoiceChoice) {
+    public InvoiceCreditMemo100GetRequest withInvoiceChoice(String invoiceChoice) {
         this.invoiceChoice = invoiceChoice;
         return this;
     }

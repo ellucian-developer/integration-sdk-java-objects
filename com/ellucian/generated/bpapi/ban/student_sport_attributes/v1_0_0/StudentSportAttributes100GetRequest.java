@@ -49,7 +49,7 @@ public class StudentSportAttributes100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * User ID
      * <p>
@@ -123,7 +123,7 @@ public class StudentSportAttributes100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -134,11 +134,11 @@ public class StudentSportAttributes100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public StudentSportAttributes100GetRequest withId(Object id) {
+    public StudentSportAttributes100GetRequest withId(String id) {
         this.id = id;
         return this;
     }

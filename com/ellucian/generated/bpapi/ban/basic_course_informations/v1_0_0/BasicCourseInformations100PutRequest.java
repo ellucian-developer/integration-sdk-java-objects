@@ -81,7 +81,7 @@ public class BasicCourseInformations100PutRequest {
      */
     @JsonProperty("scacrseCrseNumb")
     @JsonPropertyDescription("Lineage reference object : scacrseCrseNumb, Lookup lineage reference object : stvsubj")
-    private Object scacrseCrseNumb;
+    private String scacrseCrseNumb;
     /**
      * Additional Fees
      * <p>
@@ -109,7 +109,7 @@ public class BasicCourseInformations100PutRequest {
      */
     @JsonProperty("scacrseSubjCode")
     @JsonPropertyDescription("Lineage reference object : scacrseSubjCode, Lookup lineage reference object : stvsubj")
-    private Object scacrseSubjCode;
+    private String scacrseSubjCode;
     /**
      * Contact None/Or/To
      * <p>
@@ -390,7 +390,7 @@ public class BasicCourseInformations100PutRequest {
      */
     @JsonProperty("scacrseTermCodeEff")
     @JsonPropertyDescription("Lineage reference object : scacrseTermCodeEff")
-    private Object scacrseTermCodeEff;
+    private String scacrseTermCodeEff;
     /**
      * Department
      * <p>
@@ -462,7 +462,7 @@ public class BasicCourseInformations100PutRequest {
      * 
      */
     @JsonProperty("scacrseCrseNumb")
-    public Object getScacrseCrseNumb() {
+    public String getScacrseCrseNumb() {
         return scacrseCrseNumb;
     }
 
@@ -473,11 +473,11 @@ public class BasicCourseInformations100PutRequest {
      * 
      */
     @JsonProperty("scacrseCrseNumb")
-    public void setScacrseCrseNumb(Object scacrseCrseNumb) {
+    public void setScacrseCrseNumb(String scacrseCrseNumb) {
         this.scacrseCrseNumb = scacrseCrseNumb;
     }
 
-    public BasicCourseInformations100PutRequest withScacrseCrseNumb(Object scacrseCrseNumb) {
+    public BasicCourseInformations100PutRequest withScacrseCrseNumb(String scacrseCrseNumb) {
         this.scacrseCrseNumb = scacrseCrseNumb;
         return this;
     }
@@ -545,7 +545,7 @@ public class BasicCourseInformations100PutRequest {
      * 
      */
     @JsonProperty("scacrseSubjCode")
-    public Object getScacrseSubjCode() {
+    public String getScacrseSubjCode() {
         return scacrseSubjCode;
     }
 
@@ -556,11 +556,11 @@ public class BasicCourseInformations100PutRequest {
      * 
      */
     @JsonProperty("scacrseSubjCode")
-    public void setScacrseSubjCode(Object scacrseSubjCode) {
+    public void setScacrseSubjCode(String scacrseSubjCode) {
         this.scacrseSubjCode = scacrseSubjCode;
     }
 
-    public BasicCourseInformations100PutRequest withScacrseSubjCode(Object scacrseSubjCode) {
+    public BasicCourseInformations100PutRequest withScacrseSubjCode(String scacrseSubjCode) {
         this.scacrseSubjCode = scacrseSubjCode;
         return this;
     }
@@ -1386,7 +1386,7 @@ public class BasicCourseInformations100PutRequest {
      * 
      */
     @JsonProperty("scacrseTermCodeEff")
-    public Object getScacrseTermCodeEff() {
+    public String getScacrseTermCodeEff() {
         return scacrseTermCodeEff;
     }
 
@@ -1397,11 +1397,11 @@ public class BasicCourseInformations100PutRequest {
      * 
      */
     @JsonProperty("scacrseTermCodeEff")
-    public void setScacrseTermCodeEff(Object scacrseTermCodeEff) {
+    public void setScacrseTermCodeEff(String scacrseTermCodeEff) {
         this.scacrseTermCodeEff = scacrseTermCodeEff;
     }
 
-    public BasicCourseInformations100PutRequest withScacrseTermCodeEff(Object scacrseTermCodeEff) {
+    public BasicCourseInformations100PutRequest withScacrseTermCodeEff(String scacrseTermCodeEff) {
         this.scacrseTermCodeEff = scacrseTermCodeEff;
         return this;
     }

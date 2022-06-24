@@ -74,7 +74,7 @@ public class GrantEventsAssignment100PostRequest {
      */
     @JsonProperty("keyblckAgencyCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAgencyCode")
-    private Object keyblckAgencyCode;
+    private String keyblckAgencyCode;
     /**
      * Frbevnp Date To
      * <p>
@@ -101,7 +101,7 @@ public class GrantEventsAssignment100PostRequest {
      */
     @JsonProperty("displayGrntCode")
     @JsonPropertyDescription("Lineage reference object : displayGrntCode")
-    private Object displayGrntCode;
+    private String displayGrntCode;
     /**
      * Alternate Description
      * <p>
@@ -257,7 +257,7 @@ public class GrantEventsAssignment100PostRequest {
      * 
      */
     @JsonProperty("keyblckAgencyCode")
-    public Object getKeyblckAgencyCode() {
+    public String getKeyblckAgencyCode() {
         return keyblckAgencyCode;
     }
 
@@ -268,11 +268,11 @@ public class GrantEventsAssignment100PostRequest {
      * 
      */
     @JsonProperty("keyblckAgencyCode")
-    public void setKeyblckAgencyCode(Object keyblckAgencyCode) {
+    public void setKeyblckAgencyCode(String keyblckAgencyCode) {
         this.keyblckAgencyCode = keyblckAgencyCode;
     }
 
-    public GrantEventsAssignment100PostRequest withKeyblckAgencyCode(Object keyblckAgencyCode) {
+    public GrantEventsAssignment100PostRequest withKeyblckAgencyCode(String keyblckAgencyCode) {
         this.keyblckAgencyCode = keyblckAgencyCode;
         return this;
     }
@@ -338,7 +338,7 @@ public class GrantEventsAssignment100PostRequest {
      * 
      */
     @JsonProperty("displayGrntCode")
-    public Object getDisplayGrntCode() {
+    public String getDisplayGrntCode() {
         return displayGrntCode;
     }
 
@@ -349,11 +349,11 @@ public class GrantEventsAssignment100PostRequest {
      * 
      */
     @JsonProperty("displayGrntCode")
-    public void setDisplayGrntCode(Object displayGrntCode) {
+    public void setDisplayGrntCode(String displayGrntCode) {
         this.displayGrntCode = displayGrntCode;
     }
 
-    public GrantEventsAssignment100PostRequest withDisplayGrntCode(Object displayGrntCode) {
+    public GrantEventsAssignment100PostRequest withDisplayGrntCode(String displayGrntCode) {
         this.displayGrntCode = displayGrntCode;
         return this;
     }

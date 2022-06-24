@@ -106,7 +106,7 @@ public class ApplicantRequirementsPerkinsMpnDetail100GetRequest {
      */
     @JsonProperty("keyblckAidyCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAidyCode, Lookup lineage reference object : robinst")
-    private Object keyblckAidyCode;
+    private String keyblckAidyCode;
     /**
      * ID
      * <p>
@@ -115,7 +115,7 @@ public class ApplicantRequirementsPerkinsMpnDetail100GetRequest {
      */
     @JsonProperty("keyblckId")
     @JsonPropertyDescription("Lineage reference object : keyblckId")
-    private Object keyblckId;
+    private String keyblckId;
     @JsonProperty("rfrbaseFundTitle")
     private String rfrbaseFundTitle;
     /**
@@ -368,7 +368,7 @@ public class ApplicantRequirementsPerkinsMpnDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public Object getKeyblckAidyCode() {
+    public String getKeyblckAidyCode() {
         return keyblckAidyCode;
     }
 
@@ -379,11 +379,11 @@ public class ApplicantRequirementsPerkinsMpnDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public void setKeyblckAidyCode(Object keyblckAidyCode) {
+    public void setKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
     }
 
-    public ApplicantRequirementsPerkinsMpnDetail100GetRequest withKeyblckAidyCode(Object keyblckAidyCode) {
+    public ApplicantRequirementsPerkinsMpnDetail100GetRequest withKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
         return this;
     }
@@ -395,7 +395,7 @@ public class ApplicantRequirementsPerkinsMpnDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckId")
-    public Object getKeyblckId() {
+    public String getKeyblckId() {
         return keyblckId;
     }
 
@@ -406,11 +406,11 @@ public class ApplicantRequirementsPerkinsMpnDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckId")
-    public void setKeyblckId(Object keyblckId) {
+    public void setKeyblckId(String keyblckId) {
         this.keyblckId = keyblckId;
     }
 
-    public ApplicantRequirementsPerkinsMpnDetail100GetRequest withKeyblckId(Object keyblckId) {
+    public ApplicantRequirementsPerkinsMpnDetail100GetRequest withKeyblckId(String keyblckId) {
         this.keyblckId = keyblckId;
         return this;
     }

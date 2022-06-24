@@ -28,7 +28,7 @@ public class KeyBlock {
      */
     @JsonProperty("nname")
     @JsonPropertyDescription("Lineage reference object : nname")
-    private Object nname;
+    private String nname;
     /**
      * ID
      * <p>
@@ -37,21 +37,21 @@ public class KeyBlock {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Lineage reference object : confidInfo
      * 
      */
     @JsonProperty("confidInfo")
     @JsonPropertyDescription("Lineage reference object : confidInfo")
-    private Object confidInfo;
+    private String confidInfo;
     /**
      * Lineage reference object : deceasedInd
      * 
      */
     @JsonProperty("deceasedInd")
     @JsonPropertyDescription("Lineage reference object : deceasedInd")
-    private Object deceasedInd;
+    private String deceasedInd;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -60,7 +60,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("nname")
-    public Object getNname() {
+    public String getNname() {
         return nname;
     }
 
@@ -69,11 +69,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("nname")
-    public void setNname(Object nname) {
+    public void setNname(String nname) {
         this.nname = nname;
     }
 
-    public KeyBlock withNname(Object nname) {
+    public KeyBlock withNname(String nname) {
         this.nname = nname;
         return this;
     }
@@ -85,7 +85,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -96,11 +96,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public KeyBlock withId(Object id) {
+    public KeyBlock withId(String id) {
         this.id = id;
         return this;
     }
@@ -110,7 +110,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("confidInfo")
-    public Object getConfidInfo() {
+    public String getConfidInfo() {
         return confidInfo;
     }
 
@@ -119,11 +119,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("confidInfo")
-    public void setConfidInfo(Object confidInfo) {
+    public void setConfidInfo(String confidInfo) {
         this.confidInfo = confidInfo;
     }
 
-    public KeyBlock withConfidInfo(Object confidInfo) {
+    public KeyBlock withConfidInfo(String confidInfo) {
         this.confidInfo = confidInfo;
         return this;
     }
@@ -133,7 +133,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("deceasedInd")
-    public Object getDeceasedInd() {
+    public String getDeceasedInd() {
         return deceasedInd;
     }
 
@@ -142,11 +142,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("deceasedInd")
-    public void setDeceasedInd(Object deceasedInd) {
+    public void setDeceasedInd(String deceasedInd) {
         this.deceasedInd = deceasedInd;
     }
 
-    public KeyBlock withDeceasedInd(Object deceasedInd) {
+    public KeyBlock withDeceasedInd(String deceasedInd) {
         this.deceasedInd = deceasedInd;
         return this;
     }

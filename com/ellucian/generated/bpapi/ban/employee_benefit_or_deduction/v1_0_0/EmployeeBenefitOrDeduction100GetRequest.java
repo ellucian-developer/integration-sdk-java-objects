@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.employee_benefit_or_deduction.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -29,7 +30,7 @@ public class EmployeeBenefitOrDeduction100GetRequest {
      */
     @JsonProperty("queryDate")
     @JsonPropertyDescription("Lineage reference object : queryDate")
-    private Object queryDate;
+    private Date queryDate;
     /**
      * Deduction
      * <p>
@@ -38,7 +39,7 @@ public class EmployeeBenefitOrDeduction100GetRequest {
      */
     @JsonProperty("dbca_code")
     @JsonPropertyDescription("Lineage reference object : bdcaCode")
-    private Object dbcaCode;
+    private String dbcaCode;
     /**
      * ID
      * <p>
@@ -47,7 +48,7 @@ public class EmployeeBenefitOrDeduction100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -58,7 +59,7 @@ public class EmployeeBenefitOrDeduction100GetRequest {
      * 
      */
     @JsonProperty("queryDate")
-    public Object getQueryDate() {
+    public Date getQueryDate() {
         return queryDate;
     }
 
@@ -69,11 +70,11 @@ public class EmployeeBenefitOrDeduction100GetRequest {
      * 
      */
     @JsonProperty("queryDate")
-    public void setQueryDate(Object queryDate) {
+    public void setQueryDate(Date queryDate) {
         this.queryDate = queryDate;
     }
 
-    public EmployeeBenefitOrDeduction100GetRequest withQueryDate(Object queryDate) {
+    public EmployeeBenefitOrDeduction100GetRequest withQueryDate(Date queryDate) {
         this.queryDate = queryDate;
         return this;
     }
@@ -85,7 +86,7 @@ public class EmployeeBenefitOrDeduction100GetRequest {
      * 
      */
     @JsonProperty("dbca_code")
-    public Object getDbcaCode() {
+    public String getDbcaCode() {
         return dbcaCode;
     }
 
@@ -96,11 +97,11 @@ public class EmployeeBenefitOrDeduction100GetRequest {
      * 
      */
     @JsonProperty("dbca_code")
-    public void setDbcaCode(Object dbcaCode) {
+    public void setDbcaCode(String dbcaCode) {
         this.dbcaCode = dbcaCode;
     }
 
-    public EmployeeBenefitOrDeduction100GetRequest withDbcaCode(Object dbcaCode) {
+    public EmployeeBenefitOrDeduction100GetRequest withDbcaCode(String dbcaCode) {
         this.dbcaCode = dbcaCode;
         return this;
     }
@@ -112,7 +113,7 @@ public class EmployeeBenefitOrDeduction100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -123,11 +124,11 @@ public class EmployeeBenefitOrDeduction100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public EmployeeBenefitOrDeduction100GetRequest withId(Object id) {
+    public EmployeeBenefitOrDeduction100GetRequest withId(String id) {
         this.id = id;
         return this;
     }

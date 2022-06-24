@@ -28,7 +28,7 @@ public class Display {
      */
     @JsonProperty("origUserId")
     @JsonPropertyDescription("Lineage reference object : origUserId")
-    private Object origUserId;
+    private String origUserId;
     /**
      * Name
      * <p>
@@ -37,7 +37,7 @@ public class Display {
      */
     @JsonProperty("origUserName")
     @JsonPropertyDescription("Lineage reference object : origUserName")
-    private Object origUserName;
+    private String origUserName;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -48,7 +48,7 @@ public class Display {
      * 
      */
     @JsonProperty("origUserId")
-    public Object getOrigUserId() {
+    public String getOrigUserId() {
         return origUserId;
     }
 
@@ -59,11 +59,11 @@ public class Display {
      * 
      */
     @JsonProperty("origUserId")
-    public void setOrigUserId(Object origUserId) {
+    public void setOrigUserId(String origUserId) {
         this.origUserId = origUserId;
     }
 
-    public Display withOrigUserId(Object origUserId) {
+    public Display withOrigUserId(String origUserId) {
         this.origUserId = origUserId;
         return this;
     }
@@ -75,7 +75,7 @@ public class Display {
      * 
      */
     @JsonProperty("origUserName")
-    public Object getOrigUserName() {
+    public String getOrigUserName() {
         return origUserName;
     }
 
@@ -86,11 +86,11 @@ public class Display {
      * 
      */
     @JsonProperty("origUserName")
-    public void setOrigUserName(Object origUserName) {
+    public void setOrigUserName(String origUserName) {
         this.origUserName = origUserName;
     }
 
-    public Display withOrigUserName(Object origUserName) {
+    public Display withOrigUserName(String origUserName) {
         this.origUserName = origUserName;
         return this;
     }

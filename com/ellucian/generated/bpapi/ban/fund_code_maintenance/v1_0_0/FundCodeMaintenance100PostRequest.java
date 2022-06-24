@@ -35,7 +35,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "expendEndDate",
     "orgnCodeDef",
     "locnCodeDef",
-    "ftvfundEffCertRequiredInd",
     "acctCodeAccr",
     "fmgrNm",
     "fundCodePlant",
@@ -229,15 +228,6 @@ public class FundCodeMaintenance100PostRequest {
     @JsonProperty("locnCodeDef")
     @JsonPropertyDescription("Lineage reference object : FTVFUND_LOCN_CODE_DEF")
     private String locnCodeDef;
-    /**
-     * Fund Requires Effort Certification
-     * <p>
-     * Lineage reference object : FTVFUND_EFF_CERT_REQUIRED_IND
-     * 
-     */
-    @JsonProperty("ftvfundEffCertRequiredInd")
-    @JsonPropertyDescription("Lineage reference object : FTVFUND_EFF_CERT_REQUIRED_IND")
-    private String ftvfundEffCertRequiredInd;
     /**
      * Unbilled AR Account
      * <p>
@@ -852,33 +842,6 @@ public class FundCodeMaintenance100PostRequest {
     }
 
     /**
-     * Fund Requires Effort Certification
-     * <p>
-     * Lineage reference object : FTVFUND_EFF_CERT_REQUIRED_IND
-     * 
-     */
-    @JsonProperty("ftvfundEffCertRequiredInd")
-    public String getFtvfundEffCertRequiredInd() {
-        return ftvfundEffCertRequiredInd;
-    }
-
-    /**
-     * Fund Requires Effort Certification
-     * <p>
-     * Lineage reference object : FTVFUND_EFF_CERT_REQUIRED_IND
-     * 
-     */
-    @JsonProperty("ftvfundEffCertRequiredInd")
-    public void setFtvfundEffCertRequiredInd(String ftvfundEffCertRequiredInd) {
-        this.ftvfundEffCertRequiredInd = ftvfundEffCertRequiredInd;
-    }
-
-    public FundCodeMaintenance100PostRequest withFtvfundEffCertRequiredInd(String ftvfundEffCertRequiredInd) {
-        this.ftvfundEffCertRequiredInd = ftvfundEffCertRequiredInd;
-        return this;
-    }
-
-    /**
      * Unbilled AR Account
      * <p>
      * Lineage reference object : FTVFUND_ACCT_CODE_ACCR
@@ -1183,10 +1146,6 @@ public class FundCodeMaintenance100PostRequest {
         sb.append('=');
         sb.append(((this.locnCodeDef == null)?"<null>":this.locnCodeDef));
         sb.append(',');
-        sb.append("ftvfundEffCertRequiredInd");
-        sb.append('=');
-        sb.append(((this.ftvfundEffCertRequiredInd == null)?"<null>":this.ftvfundEffCertRequiredInd));
-        sb.append(',');
         sb.append("acctCodeAccr");
         sb.append('=');
         sb.append(((this.acctCodeAccr == null)?"<null>":this.acctCodeAccr));
@@ -1254,7 +1213,6 @@ public class FundCodeMaintenance100PostRequest {
         result = ((result* 31)+((this.expendEndDate == null)? 0 :this.expendEndDate.hashCode()));
         result = ((result* 31)+((this.orgnCodeDef == null)? 0 :this.orgnCodeDef.hashCode()));
         result = ((result* 31)+((this.locnCodeDef == null)? 0 :this.locnCodeDef.hashCode()));
-        result = ((result* 31)+((this.ftvfundEffCertRequiredInd == null)? 0 :this.ftvfundEffCertRequiredInd.hashCode()));
         result = ((result* 31)+((this.acctCodeAccr == null)? 0 :this.acctCodeAccr.hashCode()));
         result = ((result* 31)+((this.fmgrNm == null)? 0 :this.fmgrNm.hashCode()));
         result = ((result* 31)+((this.fundCodePlant == null)? 0 :this.fundCodePlant.hashCode()));
@@ -1276,7 +1234,7 @@ public class FundCodeMaintenance100PostRequest {
             return false;
         }
         FundCodeMaintenance100PostRequest rhs = ((FundCodeMaintenance100PostRequest) other);
-        return (((((((((((((((((((((((((((((((this.restInd == rhs.restInd)||((this.restInd!= null)&&this.restInd.equals(rhs.restInd)))&&((this.srcCapSameInd == rhs.srcCapSameInd)||((this.srcCapSameInd!= null)&&this.srcCapSameInd.equals(rhs.srcCapSameInd))))&&((this.dataEntryInd == rhs.dataEntryInd)||((this.dataEntryInd!= null)&&this.dataEntryInd.equals(rhs.dataEntryInd))))&&((this.fbalInd == rhs.fbalInd)||((this.fbalInd!= null)&&this.fbalInd.equals(rhs.fbalInd))))&&((this.coasCode == rhs.coasCode)||((this.coasCode!= null)&&this.coasCode.equals(rhs.coasCode))))&&((this.acctCodeRev == rhs.acctCodeRev)||((this.acctCodeRev!= null)&&this.acctCodeRev.equals(rhs.acctCodeRev))))&&((this.title == rhs.title)||((this.title!= null)&&this.title.equals(rhs.title))))&&((this.effDate == rhs.effDate)||((this.effDate!= null)&&this.effDate.equals(rhs.effDate))))&&((this.fundCode == rhs.fundCode)||((this.fundCode!= null)&&this.fundCode.equals(rhs.fundCode))))&&((this.acctCodePlant == rhs.acctCodePlant)||((this.acctCodePlant!= null)&&this.acctCodePlant.equals(rhs.acctCodePlant))))&&((this.statusInd == rhs.statusInd)||((this.statusInd!= null)&&this.statusInd.equals(rhs.statusInd))))&&((this.cashReceiptBankCode == rhs.cashReceiptBankCode)||((this.cashReceiptBankCode!= null)&&this.cashReceiptBankCode.equals(rhs.cashReceiptBankCode))))&&((this.netAssetClass == rhs.netAssetClass)||((this.netAssetClass!= null)&&this.netAssetClass.equals(rhs.netAssetClass))))&&((this.fundCodePred == rhs.fundCodePred)||((this.fundCodePred!= null)&&this.fundCodePred.equals(rhs.fundCodePred))))&&((this.bankCode == rhs.bankCode)||((this.bankCode!= null)&&this.bankCode.equals(rhs.bankCode))))&&((this.actvCodeDef == rhs.actvCodeDef)||((this.actvCodeDef!= null)&&this.actvCodeDef.equals(rhs.actvCodeDef))))&&((this.grntCode == rhs.grntCode)||((this.grntCode!= null)&&this.grntCode.equals(rhs.grntCode))))&&((this.expendEndDate == rhs.expendEndDate)||((this.expendEndDate!= null)&&this.expendEndDate.equals(rhs.expendEndDate))))&&((this.orgnCodeDef == rhs.orgnCodeDef)||((this.orgnCodeDef!= null)&&this.orgnCodeDef.equals(rhs.orgnCodeDef))))&&((this.locnCodeDef == rhs.locnCodeDef)||((this.locnCodeDef!= null)&&this.locnCodeDef.equals(rhs.locnCodeDef))))&&((this.ftvfundEffCertRequiredInd == rhs.ftvfundEffCertRequiredInd)||((this.ftvfundEffCertRequiredInd!= null)&&this.ftvfundEffCertRequiredInd.equals(rhs.ftvfundEffCertRequiredInd))))&&((this.acctCodeAccr == rhs.acctCodeAccr)||((this.acctCodeAccr!= null)&&this.acctCodeAccr.equals(rhs.acctCodeAccr))))&&((this.fmgrNm == rhs.fmgrNm)||((this.fmgrNm!= null)&&this.fmgrNm.equals(rhs.fmgrNm))))&&((this.fundCodePlant == rhs.fundCodePlant)||((this.fundCodePlant!= null)&&this.fundCodePlant.equals(rhs.fundCodePlant))))&&((this.ftvfmgrFmgrCode == rhs.ftvfmgrFmgrCode)||((this.ftvfmgrFmgrCode!= null)&&this.ftvfmgrFmgrCode.equals(rhs.ftvfmgrFmgrCode))))&&((this.effCertRequiredInd == rhs.effCertRequiredInd)||((this.effCertRequiredInd!= null)&&this.effCertRequiredInd.equals(rhs.effCertRequiredInd))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.termDate == rhs.termDate)||((this.termDate!= null)&&this.termDate.equals(rhs.termDate))))&&((this.ftypCode == rhs.ftypCode)||((this.ftypCode!= null)&&this.ftypCode.equals(rhs.ftypCode))))&&((this.progCodeDef == rhs.progCodeDef)||((this.progCodeDef!= null)&&this.progCodeDef.equals(rhs.progCodeDef))));
+        return ((((((((((((((((((((((((((((((this.restInd == rhs.restInd)||((this.restInd!= null)&&this.restInd.equals(rhs.restInd)))&&((this.srcCapSameInd == rhs.srcCapSameInd)||((this.srcCapSameInd!= null)&&this.srcCapSameInd.equals(rhs.srcCapSameInd))))&&((this.dataEntryInd == rhs.dataEntryInd)||((this.dataEntryInd!= null)&&this.dataEntryInd.equals(rhs.dataEntryInd))))&&((this.fbalInd == rhs.fbalInd)||((this.fbalInd!= null)&&this.fbalInd.equals(rhs.fbalInd))))&&((this.coasCode == rhs.coasCode)||((this.coasCode!= null)&&this.coasCode.equals(rhs.coasCode))))&&((this.acctCodeRev == rhs.acctCodeRev)||((this.acctCodeRev!= null)&&this.acctCodeRev.equals(rhs.acctCodeRev))))&&((this.title == rhs.title)||((this.title!= null)&&this.title.equals(rhs.title))))&&((this.effDate == rhs.effDate)||((this.effDate!= null)&&this.effDate.equals(rhs.effDate))))&&((this.fundCode == rhs.fundCode)||((this.fundCode!= null)&&this.fundCode.equals(rhs.fundCode))))&&((this.acctCodePlant == rhs.acctCodePlant)||((this.acctCodePlant!= null)&&this.acctCodePlant.equals(rhs.acctCodePlant))))&&((this.statusInd == rhs.statusInd)||((this.statusInd!= null)&&this.statusInd.equals(rhs.statusInd))))&&((this.cashReceiptBankCode == rhs.cashReceiptBankCode)||((this.cashReceiptBankCode!= null)&&this.cashReceiptBankCode.equals(rhs.cashReceiptBankCode))))&&((this.netAssetClass == rhs.netAssetClass)||((this.netAssetClass!= null)&&this.netAssetClass.equals(rhs.netAssetClass))))&&((this.fundCodePred == rhs.fundCodePred)||((this.fundCodePred!= null)&&this.fundCodePred.equals(rhs.fundCodePred))))&&((this.bankCode == rhs.bankCode)||((this.bankCode!= null)&&this.bankCode.equals(rhs.bankCode))))&&((this.actvCodeDef == rhs.actvCodeDef)||((this.actvCodeDef!= null)&&this.actvCodeDef.equals(rhs.actvCodeDef))))&&((this.grntCode == rhs.grntCode)||((this.grntCode!= null)&&this.grntCode.equals(rhs.grntCode))))&&((this.expendEndDate == rhs.expendEndDate)||((this.expendEndDate!= null)&&this.expendEndDate.equals(rhs.expendEndDate))))&&((this.orgnCodeDef == rhs.orgnCodeDef)||((this.orgnCodeDef!= null)&&this.orgnCodeDef.equals(rhs.orgnCodeDef))))&&((this.locnCodeDef == rhs.locnCodeDef)||((this.locnCodeDef!= null)&&this.locnCodeDef.equals(rhs.locnCodeDef))))&&((this.acctCodeAccr == rhs.acctCodeAccr)||((this.acctCodeAccr!= null)&&this.acctCodeAccr.equals(rhs.acctCodeAccr))))&&((this.fmgrNm == rhs.fmgrNm)||((this.fmgrNm!= null)&&this.fmgrNm.equals(rhs.fmgrNm))))&&((this.fundCodePlant == rhs.fundCodePlant)||((this.fundCodePlant!= null)&&this.fundCodePlant.equals(rhs.fundCodePlant))))&&((this.ftvfmgrFmgrCode == rhs.ftvfmgrFmgrCode)||((this.ftvfmgrFmgrCode!= null)&&this.ftvfmgrFmgrCode.equals(rhs.ftvfmgrFmgrCode))))&&((this.effCertRequiredInd == rhs.effCertRequiredInd)||((this.effCertRequiredInd!= null)&&this.effCertRequiredInd.equals(rhs.effCertRequiredInd))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.termDate == rhs.termDate)||((this.termDate!= null)&&this.termDate.equals(rhs.termDate))))&&((this.ftypCode == rhs.ftypCode)||((this.ftypCode!= null)&&this.ftypCode.equals(rhs.ftypCode))))&&((this.progCodeDef == rhs.progCodeDef)||((this.progCodeDef!= null)&&this.progCodeDef.equals(rhs.progCodeDef))));
     }
 
 }

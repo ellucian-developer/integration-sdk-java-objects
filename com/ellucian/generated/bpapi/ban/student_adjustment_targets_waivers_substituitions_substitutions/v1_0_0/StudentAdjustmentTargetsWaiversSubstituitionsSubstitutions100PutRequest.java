@@ -77,7 +77,7 @@ public class StudentAdjustmentTargetsWaiversSubstituitionsSubstitutions100PutReq
      */
     @JsonProperty("keyblckTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblckTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblckTermCode;
+    private String keyblckTermCode;
     /**
      * Program
      * <p>
@@ -217,7 +217,7 @@ public class StudentAdjustmentTargetsWaiversSubstituitionsSubstitutions100PutReq
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Smrssub Subj Code Sub
      * <p>
@@ -357,7 +357,7 @@ public class StudentAdjustmentTargetsWaiversSubstituitionsSubstitutions100PutReq
      * 
      */
     @JsonProperty("keyblckTermCode")
-    public Object getKeyblckTermCode() {
+    public String getKeyblckTermCode() {
         return keyblckTermCode;
     }
 
@@ -368,11 +368,11 @@ public class StudentAdjustmentTargetsWaiversSubstituitionsSubstitutions100PutReq
      * 
      */
     @JsonProperty("keyblckTermCode")
-    public void setKeyblckTermCode(Object keyblckTermCode) {
+    public void setKeyblckTermCode(String keyblckTermCode) {
         this.keyblckTermCode = keyblckTermCode;
     }
 
-    public StudentAdjustmentTargetsWaiversSubstituitionsSubstitutions100PutRequest withKeyblckTermCode(Object keyblckTermCode) {
+    public StudentAdjustmentTargetsWaiversSubstituitionsSubstitutions100PutRequest withKeyblckTermCode(String keyblckTermCode) {
         this.keyblckTermCode = keyblckTermCode;
         return this;
     }
@@ -772,7 +772,7 @@ public class StudentAdjustmentTargetsWaiversSubstituitionsSubstitutions100PutReq
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -783,11 +783,11 @@ public class StudentAdjustmentTargetsWaiversSubstituitionsSubstitutions100PutReq
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public StudentAdjustmentTargetsWaiversSubstituitionsSubstitutions100PutRequest withId(Object id) {
+    public StudentAdjustmentTargetsWaiversSubstituitionsSubstitutions100PutRequest withId(String id) {
         this.id = id;
         return this;
     }

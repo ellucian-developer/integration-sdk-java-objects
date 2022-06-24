@@ -30,7 +30,7 @@ public class DocumentHistory100GetRequest {
      */
     @JsonProperty("displayDtypCode")
     @JsonPropertyDescription("Lineage reference object : displayDtypCode, Lookup lineage reference object : ftvdtyp")
-    private Object displayDtypCode;
+    private String displayDtypCode;
     /**
      * Status
      * <p>
@@ -48,7 +48,7 @@ public class DocumentHistory100GetRequest {
      */
     @JsonProperty("displayDocCode")
     @JsonPropertyDescription("Lineage reference object : displayDocCode")
-    private Object displayDocCode;
+    private String displayDocCode;
     /**
      * Document Number
      * <p>
@@ -68,7 +68,7 @@ public class DocumentHistory100GetRequest {
      * 
      */
     @JsonProperty("displayDtypCode")
-    public Object getDisplayDtypCode() {
+    public String getDisplayDtypCode() {
         return displayDtypCode;
     }
 
@@ -79,11 +79,11 @@ public class DocumentHistory100GetRequest {
      * 
      */
     @JsonProperty("displayDtypCode")
-    public void setDisplayDtypCode(Object displayDtypCode) {
+    public void setDisplayDtypCode(String displayDtypCode) {
         this.displayDtypCode = displayDtypCode;
     }
 
-    public DocumentHistory100GetRequest withDisplayDtypCode(Object displayDtypCode) {
+    public DocumentHistory100GetRequest withDisplayDtypCode(String displayDtypCode) {
         this.displayDtypCode = displayDtypCode;
         return this;
     }
@@ -122,7 +122,7 @@ public class DocumentHistory100GetRequest {
      * 
      */
     @JsonProperty("displayDocCode")
-    public Object getDisplayDocCode() {
+    public String getDisplayDocCode() {
         return displayDocCode;
     }
 
@@ -133,11 +133,11 @@ public class DocumentHistory100GetRequest {
      * 
      */
     @JsonProperty("displayDocCode")
-    public void setDisplayDocCode(Object displayDocCode) {
+    public void setDisplayDocCode(String displayDocCode) {
         this.displayDocCode = displayDocCode;
     }
 
-    public DocumentHistory100GetRequest withDisplayDocCode(Object displayDocCode) {
+    public DocumentHistory100GetRequest withDisplayDocCode(String displayDocCode) {
         this.displayDocCode = displayDocCode;
         return this;
     }

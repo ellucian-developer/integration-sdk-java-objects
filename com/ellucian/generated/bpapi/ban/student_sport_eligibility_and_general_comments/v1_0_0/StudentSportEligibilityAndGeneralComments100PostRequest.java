@@ -60,7 +60,7 @@ public class StudentSportEligibilityAndGeneralComments100PostRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -158,7 +158,7 @@ public class StudentSportEligibilityAndGeneralComments100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -169,11 +169,11 @@ public class StudentSportEligibilityAndGeneralComments100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public StudentSportEligibilityAndGeneralComments100PostRequest withId(Object id) {
+    public StudentSportEligibilityAndGeneralComments100PostRequest withId(String id) {
         this.id = id;
         return this;
     }

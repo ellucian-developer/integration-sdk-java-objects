@@ -27,7 +27,7 @@ public class TaxIdSearch100GetRequest {
      */
     @JsonProperty("keyblckStudentId")
     @JsonPropertyDescription("Lineage reference object : keyblckStudentId")
-    private Object keyblckStudentId;
+    private String keyblckStudentId;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -38,7 +38,7 @@ public class TaxIdSearch100GetRequest {
      * 
      */
     @JsonProperty("keyblckStudentId")
-    public Object getKeyblckStudentId() {
+    public String getKeyblckStudentId() {
         return keyblckStudentId;
     }
 
@@ -49,11 +49,11 @@ public class TaxIdSearch100GetRequest {
      * 
      */
     @JsonProperty("keyblckStudentId")
-    public void setKeyblckStudentId(Object keyblckStudentId) {
+    public void setKeyblckStudentId(String keyblckStudentId) {
         this.keyblckStudentId = keyblckStudentId;
     }
 
-    public TaxIdSearch100GetRequest withKeyblckStudentId(Object keyblckStudentId) {
+    public TaxIdSearch100GetRequest withKeyblckStudentId(String keyblckStudentId) {
         this.keyblckStudentId = keyblckStudentId;
         return this;
     }

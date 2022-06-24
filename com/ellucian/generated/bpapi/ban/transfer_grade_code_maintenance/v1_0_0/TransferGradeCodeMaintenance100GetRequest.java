@@ -157,7 +157,7 @@ public class TransferGradeCodeMaintenance100GetRequest {
      */
     @JsonProperty("shatgrdSbgiCode")
     @JsonPropertyDescription("Lineage reference object : shatgrdSbgiCode")
-    private Object shatgrdSbgiCode;
+    private String shatgrdSbgiCode;
     /**
      * Level
      * <p>
@@ -520,7 +520,7 @@ public class TransferGradeCodeMaintenance100GetRequest {
      * 
      */
     @JsonProperty("shatgrdSbgiCode")
-    public Object getShatgrdSbgiCode() {
+    public String getShatgrdSbgiCode() {
         return shatgrdSbgiCode;
     }
 
@@ -531,11 +531,11 @@ public class TransferGradeCodeMaintenance100GetRequest {
      * 
      */
     @JsonProperty("shatgrdSbgiCode")
-    public void setShatgrdSbgiCode(Object shatgrdSbgiCode) {
+    public void setShatgrdSbgiCode(String shatgrdSbgiCode) {
         this.shatgrdSbgiCode = shatgrdSbgiCode;
     }
 
-    public TransferGradeCodeMaintenance100GetRequest withShatgrdSbgiCode(Object shatgrdSbgiCode) {
+    public TransferGradeCodeMaintenance100GetRequest withShatgrdSbgiCode(String shatgrdSbgiCode) {
         this.shatgrdSbgiCode = shatgrdSbgiCode;
         return this;
     }

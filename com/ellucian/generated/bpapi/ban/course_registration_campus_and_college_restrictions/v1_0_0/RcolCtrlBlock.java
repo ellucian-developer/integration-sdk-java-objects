@@ -30,7 +30,7 @@ public class RcolCtrlBlock {
      */
     @JsonProperty("scrrcolTermCodeTo")
     @JsonPropertyDescription("Lineage reference object : scrrcolTermCodeTo, Lookup lineage reference object : stvterm")
-    private Object scrrcolTermCodeTo;
+    private String scrrcolTermCodeTo;
     /**
      * Include/Exclude (I/E)
      * <p>
@@ -40,14 +40,14 @@ public class RcolCtrlBlock {
      */
     @JsonProperty("scrrcolCollInd")
     @JsonPropertyDescription("Lineage reference object : scrrcolCollInd")
-    private Object scrrcolCollInd;
+    private String scrrcolCollInd;
     /**
      * Lineage reference object : rcolCtrlEndcopy
      * 
      */
     @JsonProperty("rcolCtrlEndcopy")
     @JsonPropertyDescription("Lineage reference object : rcolCtrlEndcopy")
-    private Object rcolCtrlEndcopy;
+    private String rcolCtrlEndcopy;
     /**
      * From Term
      * <p>
@@ -56,7 +56,7 @@ public class RcolCtrlBlock {
      */
     @JsonProperty("scrrcolTermCodeFrom")
     @JsonPropertyDescription("Lineage reference object : scrrcolTermCodeFrom, Lookup lineage reference object : stvterm")
-    private Object scrrcolTermCodeFrom;
+    private String scrrcolTermCodeFrom;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -67,7 +67,7 @@ public class RcolCtrlBlock {
      * 
      */
     @JsonProperty("scrrcolTermCodeTo")
-    public Object getScrrcolTermCodeTo() {
+    public String getScrrcolTermCodeTo() {
         return scrrcolTermCodeTo;
     }
 
@@ -78,11 +78,11 @@ public class RcolCtrlBlock {
      * 
      */
     @JsonProperty("scrrcolTermCodeTo")
-    public void setScrrcolTermCodeTo(Object scrrcolTermCodeTo) {
+    public void setScrrcolTermCodeTo(String scrrcolTermCodeTo) {
         this.scrrcolTermCodeTo = scrrcolTermCodeTo;
     }
 
-    public RcolCtrlBlock withScrrcolTermCodeTo(Object scrrcolTermCodeTo) {
+    public RcolCtrlBlock withScrrcolTermCodeTo(String scrrcolTermCodeTo) {
         this.scrrcolTermCodeTo = scrrcolTermCodeTo;
         return this;
     }
@@ -95,7 +95,7 @@ public class RcolCtrlBlock {
      * 
      */
     @JsonProperty("scrrcolCollInd")
-    public Object getScrrcolCollInd() {
+    public String getScrrcolCollInd() {
         return scrrcolCollInd;
     }
 
@@ -107,11 +107,11 @@ public class RcolCtrlBlock {
      * 
      */
     @JsonProperty("scrrcolCollInd")
-    public void setScrrcolCollInd(Object scrrcolCollInd) {
+    public void setScrrcolCollInd(String scrrcolCollInd) {
         this.scrrcolCollInd = scrrcolCollInd;
     }
 
-    public RcolCtrlBlock withScrrcolCollInd(Object scrrcolCollInd) {
+    public RcolCtrlBlock withScrrcolCollInd(String scrrcolCollInd) {
         this.scrrcolCollInd = scrrcolCollInd;
         return this;
     }
@@ -121,7 +121,7 @@ public class RcolCtrlBlock {
      * 
      */
     @JsonProperty("rcolCtrlEndcopy")
-    public Object getRcolCtrlEndcopy() {
+    public String getRcolCtrlEndcopy() {
         return rcolCtrlEndcopy;
     }
 
@@ -130,11 +130,11 @@ public class RcolCtrlBlock {
      * 
      */
     @JsonProperty("rcolCtrlEndcopy")
-    public void setRcolCtrlEndcopy(Object rcolCtrlEndcopy) {
+    public void setRcolCtrlEndcopy(String rcolCtrlEndcopy) {
         this.rcolCtrlEndcopy = rcolCtrlEndcopy;
     }
 
-    public RcolCtrlBlock withRcolCtrlEndcopy(Object rcolCtrlEndcopy) {
+    public RcolCtrlBlock withRcolCtrlEndcopy(String rcolCtrlEndcopy) {
         this.rcolCtrlEndcopy = rcolCtrlEndcopy;
         return this;
     }
@@ -146,7 +146,7 @@ public class RcolCtrlBlock {
      * 
      */
     @JsonProperty("scrrcolTermCodeFrom")
-    public Object getScrrcolTermCodeFrom() {
+    public String getScrrcolTermCodeFrom() {
         return scrrcolTermCodeFrom;
     }
 
@@ -157,11 +157,11 @@ public class RcolCtrlBlock {
      * 
      */
     @JsonProperty("scrrcolTermCodeFrom")
-    public void setScrrcolTermCodeFrom(Object scrrcolTermCodeFrom) {
+    public void setScrrcolTermCodeFrom(String scrrcolTermCodeFrom) {
         this.scrrcolTermCodeFrom = scrrcolTermCodeFrom;
     }
 
-    public RcolCtrlBlock withScrrcolTermCodeFrom(Object scrrcolTermCodeFrom) {
+    public RcolCtrlBlock withScrrcolTermCodeFrom(String scrrcolTermCodeFrom) {
         this.scrrcolTermCodeFrom = scrrcolTermCodeFrom;
         return this;
     }

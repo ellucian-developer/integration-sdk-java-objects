@@ -92,7 +92,7 @@ public class StudentAccountDetailChargesPayments100PostRequest {
      */
     @JsonProperty("receiptGenInd")
     @JsonPropertyDescription("Lineage reference object : receiptGenInd")
-    private Object receiptGenInd;
+    private String receiptGenInd;
     /**
      * Detail Code
      * <p>
@@ -120,7 +120,7 @@ public class StudentAccountDetailChargesPayments100PostRequest {
      */
     @JsonProperty("holdPassword")
     @JsonPropertyDescription("Lineage reference object : holdPassword")
-    private Object holdPassword;
+    private String holdPassword;
     /**
      * Pay Num
      * <p>
@@ -158,7 +158,7 @@ public class StudentAccountDetailChargesPayments100PostRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Trans Paid
      * <p>
@@ -356,7 +356,7 @@ public class StudentAccountDetailChargesPayments100PostRequest {
      * 
      */
     @JsonProperty("receiptGenInd")
-    public Object getReceiptGenInd() {
+    public String getReceiptGenInd() {
         return receiptGenInd;
     }
 
@@ -367,11 +367,11 @@ public class StudentAccountDetailChargesPayments100PostRequest {
      * 
      */
     @JsonProperty("receiptGenInd")
-    public void setReceiptGenInd(Object receiptGenInd) {
+    public void setReceiptGenInd(String receiptGenInd) {
         this.receiptGenInd = receiptGenInd;
     }
 
-    public StudentAccountDetailChargesPayments100PostRequest withReceiptGenInd(Object receiptGenInd) {
+    public StudentAccountDetailChargesPayments100PostRequest withReceiptGenInd(String receiptGenInd) {
         this.receiptGenInd = receiptGenInd;
         return this;
     }
@@ -439,7 +439,7 @@ public class StudentAccountDetailChargesPayments100PostRequest {
      * 
      */
     @JsonProperty("holdPassword")
-    public Object getHoldPassword() {
+    public String getHoldPassword() {
         return holdPassword;
     }
 
@@ -450,11 +450,11 @@ public class StudentAccountDetailChargesPayments100PostRequest {
      * 
      */
     @JsonProperty("holdPassword")
-    public void setHoldPassword(Object holdPassword) {
+    public void setHoldPassword(String holdPassword) {
         this.holdPassword = holdPassword;
     }
 
-    public StudentAccountDetailChargesPayments100PostRequest withHoldPassword(Object holdPassword) {
+    public StudentAccountDetailChargesPayments100PostRequest withHoldPassword(String holdPassword) {
         this.holdPassword = holdPassword;
         return this;
     }
@@ -551,7 +551,7 @@ public class StudentAccountDetailChargesPayments100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -562,11 +562,11 @@ public class StudentAccountDetailChargesPayments100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public StudentAccountDetailChargesPayments100PostRequest withId(Object id) {
+    public StudentAccountDetailChargesPayments100PostRequest withId(String id) {
         this.id = id;
         return this;
     }

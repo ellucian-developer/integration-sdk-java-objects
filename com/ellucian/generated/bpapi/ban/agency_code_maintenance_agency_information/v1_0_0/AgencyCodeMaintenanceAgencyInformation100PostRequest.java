@@ -98,7 +98,7 @@ public class AgencyCodeMaintenanceAgencyInformation100PostRequest {
      */
     @JsonProperty("ftvagcyName")
     @JsonPropertyDescription("Lineage reference object : ftvagcyName")
-    private Object ftvagcyName;
+    private String ftvagcyName;
     /**
      * Extension
      * <p>
@@ -323,7 +323,7 @@ public class AgencyCodeMaintenanceAgencyInformation100PostRequest {
      * 
      */
     @JsonProperty("ftvagcyName")
-    public Object getFtvagcyName() {
+    public String getFtvagcyName() {
         return ftvagcyName;
     }
 
@@ -332,11 +332,11 @@ public class AgencyCodeMaintenanceAgencyInformation100PostRequest {
      * 
      */
     @JsonProperty("ftvagcyName")
-    public void setFtvagcyName(Object ftvagcyName) {
+    public void setFtvagcyName(String ftvagcyName) {
         this.ftvagcyName = ftvagcyName;
     }
 
-    public AgencyCodeMaintenanceAgencyInformation100PostRequest withFtvagcyName(Object ftvagcyName) {
+    public AgencyCodeMaintenanceAgencyInformation100PostRequest withFtvagcyName(String ftvagcyName) {
         this.ftvagcyName = ftvagcyName;
         return this;
     }

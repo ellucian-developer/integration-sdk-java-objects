@@ -56,7 +56,7 @@ public class AdmissionsApplicationSourcesInterestsComments100PutRequest {
      */
     @JsonProperty("kbentryTermCode")
     @JsonPropertyDescription("Lineage reference object : kbentryTermCode, Lookup lineage reference object : stvterm")
-    private Object kbentryTermCode;
+    private String kbentryTermCode;
     /**
      * Lineage reference object : SARRSRC_PRIMARY_SRCE_IND
      * 
@@ -90,7 +90,7 @@ public class AdmissionsApplicationSourcesInterestsComments100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Comment
      * <p>
@@ -193,7 +193,7 @@ public class AdmissionsApplicationSourcesInterestsComments100PutRequest {
      * 
      */
     @JsonProperty("kbentryTermCode")
-    public Object getKbentryTermCode() {
+    public String getKbentryTermCode() {
         return kbentryTermCode;
     }
 
@@ -204,11 +204,11 @@ public class AdmissionsApplicationSourcesInterestsComments100PutRequest {
      * 
      */
     @JsonProperty("kbentryTermCode")
-    public void setKbentryTermCode(Object kbentryTermCode) {
+    public void setKbentryTermCode(String kbentryTermCode) {
         this.kbentryTermCode = kbentryTermCode;
     }
 
-    public AdmissionsApplicationSourcesInterestsComments100PutRequest withKbentryTermCode(Object kbentryTermCode) {
+    public AdmissionsApplicationSourcesInterestsComments100PutRequest withKbentryTermCode(String kbentryTermCode) {
         this.kbentryTermCode = kbentryTermCode;
         return this;
     }
@@ -299,7 +299,7 @@ public class AdmissionsApplicationSourcesInterestsComments100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -310,11 +310,11 @@ public class AdmissionsApplicationSourcesInterestsComments100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public AdmissionsApplicationSourcesInterestsComments100PutRequest withId(Object id) {
+    public AdmissionsApplicationSourcesInterestsComments100PutRequest withId(String id) {
         this.id = id;
         return this;
     }

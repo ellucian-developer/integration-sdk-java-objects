@@ -29,7 +29,7 @@ public class ReceiptPrintCtl {
      */
     @JsonProperty("printReceipt")
     @JsonPropertyDescription("Lineage reference object : printReceipt")
-    private Object printReceipt;
+    private String printReceipt;
     /**
      * Print Duplicate
      * <p>
@@ -38,14 +38,14 @@ public class ReceiptPrintCtl {
      */
     @JsonProperty("dupReceiptInd")
     @JsonPropertyDescription("Lineage reference object : dupReceiptInd")
-    private Object dupReceiptInd;
+    private String dupReceiptInd;
     /**
      * Lineage reference object : dummyNum3
      * 
      */
     @JsonProperty("dummyNum3")
     @JsonPropertyDescription("Lineage reference object : dummyNum3")
-    private Object dummyNum3;
+    private String dummyNum3;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -56,7 +56,7 @@ public class ReceiptPrintCtl {
      * 
      */
     @JsonProperty("printReceipt")
-    public Object getPrintReceipt() {
+    public String getPrintReceipt() {
         return printReceipt;
     }
 
@@ -67,11 +67,11 @@ public class ReceiptPrintCtl {
      * 
      */
     @JsonProperty("printReceipt")
-    public void setPrintReceipt(Object printReceipt) {
+    public void setPrintReceipt(String printReceipt) {
         this.printReceipt = printReceipt;
     }
 
-    public ReceiptPrintCtl withPrintReceipt(Object printReceipt) {
+    public ReceiptPrintCtl withPrintReceipt(String printReceipt) {
         this.printReceipt = printReceipt;
         return this;
     }
@@ -83,7 +83,7 @@ public class ReceiptPrintCtl {
      * 
      */
     @JsonProperty("dupReceiptInd")
-    public Object getDupReceiptInd() {
+    public String getDupReceiptInd() {
         return dupReceiptInd;
     }
 
@@ -94,11 +94,11 @@ public class ReceiptPrintCtl {
      * 
      */
     @JsonProperty("dupReceiptInd")
-    public void setDupReceiptInd(Object dupReceiptInd) {
+    public void setDupReceiptInd(String dupReceiptInd) {
         this.dupReceiptInd = dupReceiptInd;
     }
 
-    public ReceiptPrintCtl withDupReceiptInd(Object dupReceiptInd) {
+    public ReceiptPrintCtl withDupReceiptInd(String dupReceiptInd) {
         this.dupReceiptInd = dupReceiptInd;
         return this;
     }
@@ -108,7 +108,7 @@ public class ReceiptPrintCtl {
      * 
      */
     @JsonProperty("dummyNum3")
-    public Object getDummyNum3() {
+    public String getDummyNum3() {
         return dummyNum3;
     }
 
@@ -117,11 +117,11 @@ public class ReceiptPrintCtl {
      * 
      */
     @JsonProperty("dummyNum3")
-    public void setDummyNum3(Object dummyNum3) {
+    public void setDummyNum3(String dummyNum3) {
         this.dummyNum3 = dummyNum3;
     }
 
-    public ReceiptPrintCtl withDummyNum3(Object dummyNum3) {
+    public ReceiptPrintCtl withDummyNum3(String dummyNum3) {
         this.dummyNum3 = dummyNum3;
         return this;
     }

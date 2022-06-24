@@ -60,7 +60,7 @@ public class DormRoomAndMealApplication100PutRequest {
      */
     @JsonProperty("keyblocTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCode;
+    private String keyblocTermCode;
     /**
      * Room
      * <p>
@@ -163,7 +163,7 @@ public class DormRoomAndMealApplication100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -230,7 +230,7 @@ public class DormRoomAndMealApplication100PutRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public Object getKeyblocTermCode() {
+    public String getKeyblocTermCode() {
         return keyblocTermCode;
     }
 
@@ -241,11 +241,11 @@ public class DormRoomAndMealApplication100PutRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public void setKeyblocTermCode(Object keyblocTermCode) {
+    public void setKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
     }
 
-    public DormRoomAndMealApplication100PutRequest withKeyblocTermCode(Object keyblocTermCode) {
+    public DormRoomAndMealApplication100PutRequest withKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
         return this;
     }
@@ -537,7 +537,7 @@ public class DormRoomAndMealApplication100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -548,11 +548,11 @@ public class DormRoomAndMealApplication100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public DormRoomAndMealApplication100PutRequest withId(Object id) {
+    public DormRoomAndMealApplication100PutRequest withId(String id) {
         this.id = id;
         return this;
     }

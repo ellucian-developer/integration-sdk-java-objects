@@ -9,13 +9,15 @@ import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "scacrseSubjCode",
     "scacrseCrseNumb",
-    "scacrseTermCodeEff"
+    "scacrseTermCodeEff",
+    "attrCode"
 })
 @Generated("jsonschema2pojo")
 public class CourseDetailInformationDegreeAttributes100QapiPost {
@@ -26,6 +28,15 @@ public class CourseDetailInformationDegreeAttributes100QapiPost {
     private String scacrseCrseNumb;
     @JsonProperty("scacrseTermCodeEff")
     private String scacrseTermCodeEff;
+    /**
+     * Attribute
+     * <p>
+     * Lineage reference object : SCRATTR_ATTR_CODE, Lookup lineage reference object : stvattr
+     * 
+     */
+    @JsonProperty("attrCode")
+    @JsonPropertyDescription("Lineage reference object : SCRATTR_ATTR_CODE, Lookup lineage reference object : stvattr")
+    private String attrCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -74,6 +85,33 @@ public class CourseDetailInformationDegreeAttributes100QapiPost {
         return this;
     }
 
+    /**
+     * Attribute
+     * <p>
+     * Lineage reference object : SCRATTR_ATTR_CODE, Lookup lineage reference object : stvattr
+     * 
+     */
+    @JsonProperty("attrCode")
+    public String getAttrCode() {
+        return attrCode;
+    }
+
+    /**
+     * Attribute
+     * <p>
+     * Lineage reference object : SCRATTR_ATTR_CODE, Lookup lineage reference object : stvattr
+     * 
+     */
+    @JsonProperty("attrCode")
+    public void setAttrCode(String attrCode) {
+        this.attrCode = attrCode;
+    }
+
+    public CourseDetailInformationDegreeAttributes100QapiPost withAttrCode(String attrCode) {
+        this.attrCode = attrCode;
+        return this;
+    }
+
     @JsonAnyGetter
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;
@@ -105,6 +143,10 @@ public class CourseDetailInformationDegreeAttributes100QapiPost {
         sb.append('=');
         sb.append(((this.scacrseTermCodeEff == null)?"<null>":this.scacrseTermCodeEff));
         sb.append(',');
+        sb.append("attrCode");
+        sb.append('=');
+        sb.append(((this.attrCode == null)?"<null>":this.attrCode));
+        sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');
         sb.append(((this.additionalProperties == null)?"<null>":this.additionalProperties));
@@ -120,6 +162,7 @@ public class CourseDetailInformationDegreeAttributes100QapiPost {
     @Override
     public int hashCode() {
         int result = 1;
+        result = ((result* 31)+((this.attrCode == null)? 0 :this.attrCode.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
         result = ((result* 31)+((this.scacrseCrseNumb == null)? 0 :this.scacrseCrseNumb.hashCode()));
         result = ((result* 31)+((this.scacrseTermCodeEff == null)? 0 :this.scacrseTermCodeEff.hashCode()));
@@ -136,7 +179,7 @@ public class CourseDetailInformationDegreeAttributes100QapiPost {
             return false;
         }
         CourseDetailInformationDegreeAttributes100QapiPost rhs = ((CourseDetailInformationDegreeAttributes100QapiPost) other);
-        return (((((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties)))&&((this.scacrseCrseNumb == rhs.scacrseCrseNumb)||((this.scacrseCrseNumb!= null)&&this.scacrseCrseNumb.equals(rhs.scacrseCrseNumb))))&&((this.scacrseTermCodeEff == rhs.scacrseTermCodeEff)||((this.scacrseTermCodeEff!= null)&&this.scacrseTermCodeEff.equals(rhs.scacrseTermCodeEff))))&&((this.scacrseSubjCode == rhs.scacrseSubjCode)||((this.scacrseSubjCode!= null)&&this.scacrseSubjCode.equals(rhs.scacrseSubjCode))));
+        return ((((((this.attrCode == rhs.attrCode)||((this.attrCode!= null)&&this.attrCode.equals(rhs.attrCode)))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.scacrseCrseNumb == rhs.scacrseCrseNumb)||((this.scacrseCrseNumb!= null)&&this.scacrseCrseNumb.equals(rhs.scacrseCrseNumb))))&&((this.scacrseTermCodeEff == rhs.scacrseTermCodeEff)||((this.scacrseTermCodeEff!= null)&&this.scacrseTermCodeEff.equals(rhs.scacrseTermCodeEff))))&&((this.scacrseSubjCode == rhs.scacrseSubjCode)||((this.scacrseSubjCode!= null)&&this.scacrseSubjCode.equals(rhs.scacrseSubjCode))));
     }
 
 }

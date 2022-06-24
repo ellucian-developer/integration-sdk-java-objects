@@ -28,7 +28,7 @@ public class RlvlCtrlBlock {
      */
     @JsonProperty("ssrrlvlLevlInd")
     @JsonPropertyDescription("Lineage reference object : ssrrlvlLevlInd")
-    private Object ssrrlvlLevlInd;
+    private String ssrrlvlLevlInd;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -40,7 +40,7 @@ public class RlvlCtrlBlock {
      * 
      */
     @JsonProperty("ssrrlvlLevlInd")
-    public Object getSsrrlvlLevlInd() {
+    public String getSsrrlvlLevlInd() {
         return ssrrlvlLevlInd;
     }
 
@@ -52,11 +52,11 @@ public class RlvlCtrlBlock {
      * 
      */
     @JsonProperty("ssrrlvlLevlInd")
-    public void setSsrrlvlLevlInd(Object ssrrlvlLevlInd) {
+    public void setSsrrlvlLevlInd(String ssrrlvlLevlInd) {
         this.ssrrlvlLevlInd = ssrrlvlLevlInd;
     }
 
-    public RlvlCtrlBlock withSsrrlvlLevlInd(Object ssrrlvlLevlInd) {
+    public RlvlCtrlBlock withSsrrlvlLevlInd(String ssrrlvlLevlInd) {
         this.ssrrlvlLevlInd = ssrrlvlLevlInd;
         return this;
     }

@@ -15,14 +15,18 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "value6",
+    "label29",
     "value51",
     "value5",
+    "label28",
     "number49",
     "value50",
     "value8",
+    "label27",
     "number48",
     "value53",
     "value7",
+    "label26",
     "number47",
     "value52",
     "value2",
@@ -33,31 +37,53 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "number44",
     "value3",
     "number43",
+    "label21",
     "number42",
+    "label20",
     "number41",
     "number40",
+    "label25",
     "value9",
+    "label24",
+    "label23",
+    "label22",
+    "label4",
+    "label5",
+    "label6",
+    "label7",
+    "label8",
+    "label9",
     "value59",
     "value58",
     "value55",
     "value54",
     "value57",
     "value56",
+    "label18",
     "value62",
+    "label17",
     "value61",
+    "label16",
     "number59",
     "value64",
+    "label15",
     "number58",
     "value63",
     "number57",
     "number56",
     "number55",
     "value60",
+    "label19",
     "number54",
+    "label10",
     "number53",
     "number52",
     "number51",
     "number50",
+    "label14",
+    "label13",
+    "label12",
+    "label11",
     "displayPrntCode",
     "displayStorageDays",
     "value69",
@@ -66,18 +92,28 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "value68",
     "value67",
     "value31",
+    "label49",
     "value30",
+    "label48",
     "number69",
     "number68",
     "number67",
     "number66",
     "submitJprmCode",
     "number65",
+    "label43",
     "number64",
+    "label42",
     "number63",
+    "label41",
     "number62",
+    "label40",
     "number61",
+    "label47",
     "number60",
+    "label46",
+    "label45",
+    "label44",
     "value37",
     "value36",
     "value39",
@@ -87,18 +123,31 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "value35",
     "value34",
     "value40",
+    "label39",
+    "label38",
     "value42",
+    "label37",
     "value41",
     "number79",
     "number78",
     "number77",
     "number76",
+    "label32",
     "number75",
+    "label31",
     "number74",
+    "label30",
     "number73",
     "number72",
+    "label36",
     "number71",
+    "label1",
+    "label35",
     "number70",
+    "label2",
+    "label34",
+    "label3",
+    "label33",
     "displaySubmitInd",
     "value48",
     "value47",
@@ -107,8 +156,18 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "value43",
     "value46",
     "value45",
+    "label65",
+    "label64",
+    "label63",
+    "label62",
+    "label69",
+    "label68",
+    "label67",
+    "label66",
     "value19",
+    "label61",
     "value18",
+    "label60",
     "value15",
     "value14",
     "value17",
@@ -122,10 +181,20 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "number15",
     "value20",
     "number14",
+    "label59",
     "number13",
     "number12",
     "number11",
     "number10",
+    "label54",
+    "label53",
+    "label52",
+    "label51",
+    "label58",
+    "label57",
+    "label56",
+    "label55",
+    "label50",
     "value29",
     "displaySaveDefaults",
     "value26",
@@ -148,15 +217,25 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "number21",
     "number3",
     "number20",
+    "label87",
     "number4",
+    "label86",
     "number1",
+    "label85",
     "number2",
+    "label84",
     "number7",
     "number8",
     "number5",
+    "label89",
     "number6",
+    "label88",
     "number9",
+    "label83",
+    "label82",
     "displayPdfFont",
+    "label81",
+    "label80",
     "number29",
     "number39",
     "number38",
@@ -167,10 +246,30 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "number33",
     "number32",
     "number31",
+    "label76",
     "number30",
+    "label75",
+    "label74",
+    "label73",
+    "label79",
+    "label78",
+    "label77",
+    "label72",
+    "label71",
+    "label70",
     "displayPrntForm",
     "jprmCode",
     "displaySubmitTime",
+    "label98",
+    "label97",
+    "label96",
+    "label95",
+    "label99",
+    "label90",
+    "label94",
+    "label93",
+    "label92",
+    "label91",
     "displayFontSize",
     "value96",
     "value97",
@@ -240,6 +339,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval")
     private String value6;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label29")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label29;
+    /**
      * Values
      * <p>
      * Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval
@@ -257,6 +365,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonProperty("value5")
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval")
     private String value5;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label28")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label28;
     /**
      * Number
      * <p>
@@ -286,6 +403,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval")
     private String value8;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label27")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label27;
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -313,6 +439,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonProperty("value7")
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval")
     private String value7;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label26")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label26;
     /**
      * Number
      * <p>
@@ -409,6 +544,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number43;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label21")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label21;
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -418,6 +562,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonProperty("number42")
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number42;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label20")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label20;
     /**
      * Number
      * <p>
@@ -439,6 +592,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number40;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label25")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label25;
+    /**
      * Values
      * <p>
      * Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval
@@ -447,6 +609,87 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonProperty("value9")
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval")
     private String value9;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label24")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label24;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label23")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label23;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label22")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label22;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label4")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label4;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label5")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label5;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label6")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label6;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label7")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label7;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label8")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label8;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label9")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label9;
     /**
      * Values
      * <p>
@@ -502,6 +745,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval")
     private String value56;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label18")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label18;
+    /**
      * Values
      * <p>
      * Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval
@@ -511,6 +763,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval")
     private String value62;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label17")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label17;
+    /**
      * Values
      * <p>
      * Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval
@@ -519,6 +780,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonProperty("value61")
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval")
     private String value61;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label16")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label16;
     /**
      * Number
      * <p>
@@ -538,6 +808,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonProperty("value64")
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval")
     private String value64;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label15")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label15;
     /**
      * Number
      * <p>
@@ -597,6 +876,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval")
     private String value60;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label19")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label19;
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -606,6 +894,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonProperty("number54")
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number54;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label10")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label10;
     /**
      * Number
      * <p>
@@ -647,6 +944,42 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number50;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label14")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label14;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label13")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label13;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label12")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label12;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label11")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label11;
+    /**
      * Printer
      * <p>
      * Lineage reference object : displayPrntCode, Lookup lineage reference object : gtvprnt
@@ -654,7 +987,7 @@ public class ProcessSubmissionControl100PostRequest {
      */
     @JsonProperty("displayPrntCode")
     @JsonPropertyDescription("Lineage reference object : displayPrntCode, Lookup lineage reference object : gtvprnt")
-    private Object displayPrntCode;
+    private String displayPrntCode;
     /**
      * Delete After Days
      * <p>
@@ -719,6 +1052,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval")
     private String value31;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label49")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label49;
+    /**
      * Values
      * <p>
      * Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval
@@ -727,6 +1069,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonProperty("value30")
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval")
     private String value30;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label48")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label48;
     /**
      * Number
      * <p>
@@ -775,7 +1126,7 @@ public class ProcessSubmissionControl100PostRequest {
      */
     @JsonProperty("submitJprmCode")
     @JsonPropertyDescription("Lineage reference object : submitJprmCode")
-    private Object submitJprmCode;
+    private String submitJprmCode;
     /**
      * Number
      * <p>
@@ -787,6 +1138,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number65;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label43")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label43;
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -796,6 +1156,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonProperty("number64")
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number64;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label42")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label42;
     /**
      * Number
      * <p>
@@ -807,6 +1176,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number63;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label41")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label41;
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -816,6 +1194,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonProperty("number62")
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number62;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label40")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label40;
     /**
      * Number
      * <p>
@@ -827,6 +1214,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number61;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label47")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label47;
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -836,6 +1232,33 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonProperty("number60")
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number60;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label46")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label46;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label45")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label45;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label44")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label44;
     /**
      * Values
      * <p>
@@ -918,6 +1341,24 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval")
     private String value40;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label39")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label39;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label38")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label38;
+    /**
      * Values
      * <p>
      * Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval
@@ -926,6 +1367,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonProperty("value42")
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval")
     private String value42;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label37")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label37;
     /**
      * Values
      * <p>
@@ -976,6 +1426,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number76;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label32")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label32;
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -986,6 +1445,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number75;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label31")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label31;
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -995,6 +1463,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonProperty("number74")
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number74;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label30")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label30;
     /**
      * Number
      * <p>
@@ -1016,6 +1493,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number72;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label36")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label36;
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -1025,6 +1511,24 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonProperty("number71")
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number71;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label1")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label1;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label35")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label35;
     /**
      * Number
      * <p>
@@ -1036,12 +1540,48 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number70;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label2")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label2;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label34")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label34;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label3")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label3;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label33")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label33;
+    /**
      * Lineage reference object : displaySubmitInd
      * 
      */
     @JsonProperty("displaySubmitInd")
     @JsonPropertyDescription("Lineage reference object : displaySubmitInd")
-    private Object displaySubmitInd;
+    private String displaySubmitInd;
     /**
      * Values
      * <p>
@@ -1106,6 +1646,78 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval")
     private String value45;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label65")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label65;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label64")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label64;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label63")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label63;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label62")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label62;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label69")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label69;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label68")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label68;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label67")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label67;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label66")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label66;
+    /**
      * Values
      * <p>
      * Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval
@@ -1115,6 +1727,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval")
     private String value19;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label61")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label61;
+    /**
      * Values
      * <p>
      * Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval
@@ -1123,6 +1744,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonProperty("value18")
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval")
     private String value18;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label60")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label60;
     /**
      * Values
      * <p>
@@ -1245,6 +1875,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number14;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label59")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label59;
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -1285,6 +1924,87 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number10;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label54")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label54;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label53")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label53;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label52")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label52;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label51")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label51;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label58")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label58;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label57")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label57;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label56")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label56;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label55")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label55;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label50")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label50;
+    /**
      * Values
      * <p>
      * Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval
@@ -1301,7 +2021,7 @@ public class ProcessSubmissionControl100PostRequest {
      */
     @JsonProperty("displaySaveDefaults")
     @JsonPropertyDescription("Lineage reference object : displaySaveDefaults")
-    private Object displaySaveDefaults;
+    private String displaySaveDefaults;
     /**
      * Values
      * <p>
@@ -1495,6 +2215,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number20;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label87")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label87;
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -1504,6 +2233,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonProperty("number4")
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number4;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label86")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label86;
     /**
      * Number
      * <p>
@@ -1515,6 +2253,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number1;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label85")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label85;
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -1524,6 +2271,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonProperty("number2")
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number2;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label84")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label84;
     /**
      * Number
      * <p>
@@ -1555,6 +2311,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number5;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label89")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label89;
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -1564,6 +2329,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonProperty("number6")
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number6;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label88")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label88;
     /**
      * Number
      * <p>
@@ -1575,6 +2349,24 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number9;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label83")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label83;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label82")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label82;
+    /**
      * PDF Font
      * <p>
      * Lineage reference object : displayPdfFont, Lookup lineage reference object : gtvpdft
@@ -1582,7 +2374,25 @@ public class ProcessSubmissionControl100PostRequest {
      */
     @JsonProperty("displayPdfFont")
     @JsonPropertyDescription("Lineage reference object : displayPdfFont, Lookup lineage reference object : gtvpdft")
-    private Object displayPdfFont;
+    private String displayPdfFont;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label81")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label81;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label80")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label80;
     /**
      * Number
      * <p>
@@ -1684,6 +2494,15 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number31;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label76")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label76;
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -1694,6 +2513,87 @@ public class ProcessSubmissionControl100PostRequest {
     @JsonPropertyDescription("Lineage reference object : GJBPRUN_NUMBER")
     private String number30;
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label75")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label75;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label74")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label74;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label73")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label73;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label79")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label79;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label78")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label78;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label77")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label77;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label72")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label72;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label71")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label71;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label70")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label70;
+    /**
      * Special Print
      * <p>
      * Lineage reference object : displayPrntForm
@@ -1701,7 +2601,7 @@ public class ProcessSubmissionControl100PostRequest {
      */
     @JsonProperty("displayPrntForm")
     @JsonPropertyDescription("Lineage reference object : displayPrntForm")
-    private Object displayPrntForm;
+    private String displayPrntForm;
     /**
      * Parameter Set
      * <p>
@@ -1710,7 +2610,7 @@ public class ProcessSubmissionControl100PostRequest {
      */
     @JsonProperty("jprmCode")
     @JsonPropertyDescription("Lineage reference object : jprmCode")
-    private Object jprmCode;
+    private String jprmCode;
     /**
      * Submit Time
      * <p>
@@ -1719,7 +2619,97 @@ public class ProcessSubmissionControl100PostRequest {
      */
     @JsonProperty("displaySubmitTime")
     @JsonPropertyDescription("Lineage reference object : displaySubmitTime")
-    private Object displaySubmitTime;
+    private String displaySubmitTime;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label98")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label98;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label97")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label97;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label96")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label96;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label95")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label95;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label99")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label99;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label90")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label90;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label94")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label94;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label93")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label93;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label92")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label92;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label91")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label91;
     /**
      * PDF Font Size
      * <p>
@@ -2027,7 +3017,7 @@ public class ProcessSubmissionControl100PostRequest {
      */
     @JsonProperty("displayMimeType")
     @JsonPropertyDescription("Lineage reference object : displayMimeType")
-    private Object displayMimeType;
+    private String displayMimeType;
     /**
      * Values
      * <p>
@@ -2126,7 +3116,7 @@ public class ProcessSubmissionControl100PostRequest {
      */
     @JsonProperty("keyblckJob")
     @JsonPropertyDescription("Lineage reference object : keyblckJob")
-    private Object keyblckJob;
+    private String keyblckJob;
     /**
      * Values
      * <p>
@@ -2207,7 +3197,7 @@ public class ProcessSubmissionControl100PostRequest {
      */
     @JsonProperty("submitJprmDesc")
     @JsonPropertyDescription("Lineage reference object : submitJprmDesc")
-    private Object submitJprmDesc;
+    private String submitJprmDesc;
     /**
      * Values
      * <p>
@@ -2266,6 +3256,33 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label29")
+    public String getLabel29() {
+        return label29;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label29")
+    public void setLabel29(String label29) {
+        this.label29 = label29;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel29(String label29) {
+        this.label29 = label29;
+        return this;
+    }
+
+    /**
      * Values
      * <p>
      * Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval
@@ -2316,6 +3333,33 @@ public class ProcessSubmissionControl100PostRequest {
 
     public ProcessSubmissionControl100PostRequest withValue5(String value5) {
         this.value5 = value5;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label28")
+    public String getLabel28() {
+        return label28;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label28")
+    public void setLabel28(String label28) {
+        this.label28 = label28;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel28(String label28) {
+        this.label28 = label28;
         return this;
     }
 
@@ -2403,6 +3447,33 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label27")
+    public String getLabel27() {
+        return label27;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label27")
+    public void setLabel27(String label27) {
+        this.label27 = label27;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel27(String label27) {
+        this.label27 = label27;
+        return this;
+    }
+
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -2482,6 +3553,33 @@ public class ProcessSubmissionControl100PostRequest {
 
     public ProcessSubmissionControl100PostRequest withValue7(String value7) {
         this.value7 = value7;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label26")
+    public String getLabel26() {
+        return label26;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label26")
+    public void setLabel26(String label26) {
+        this.label26 = label26;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel26(String label26) {
+        this.label26 = label26;
         return this;
     }
 
@@ -2766,6 +3864,33 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label21")
+    public String getLabel21() {
+        return label21;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label21")
+    public void setLabel21(String label21) {
+        this.label21 = label21;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel21(String label21) {
+        this.label21 = label21;
+        return this;
+    }
+
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -2791,6 +3916,33 @@ public class ProcessSubmissionControl100PostRequest {
 
     public ProcessSubmissionControl100PostRequest withNumber42(String number42) {
         this.number42 = number42;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label20")
+    public String getLabel20() {
+        return label20;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label20")
+    public void setLabel20(String label20) {
+        this.label20 = label20;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel20(String label20) {
+        this.label20 = label20;
         return this;
     }
 
@@ -2853,6 +4005,33 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label25")
+    public String getLabel25() {
+        return label25;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label25")
+    public void setLabel25(String label25) {
+        this.label25 = label25;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel25(String label25) {
+        this.label25 = label25;
+        return this;
+    }
+
+    /**
      * Values
      * <p>
      * Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval
@@ -2876,6 +4055,249 @@ public class ProcessSubmissionControl100PostRequest {
 
     public ProcessSubmissionControl100PostRequest withValue9(String value9) {
         this.value9 = value9;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label24")
+    public String getLabel24() {
+        return label24;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label24")
+    public void setLabel24(String label24) {
+        this.label24 = label24;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel24(String label24) {
+        this.label24 = label24;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label23")
+    public String getLabel23() {
+        return label23;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label23")
+    public void setLabel23(String label23) {
+        this.label23 = label23;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel23(String label23) {
+        this.label23 = label23;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label22")
+    public String getLabel22() {
+        return label22;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label22")
+    public void setLabel22(String label22) {
+        this.label22 = label22;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel22(String label22) {
+        this.label22 = label22;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label4")
+    public String getLabel4() {
+        return label4;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label4")
+    public void setLabel4(String label4) {
+        this.label4 = label4;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel4(String label4) {
+        this.label4 = label4;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label5")
+    public String getLabel5() {
+        return label5;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label5")
+    public void setLabel5(String label5) {
+        this.label5 = label5;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel5(String label5) {
+        this.label5 = label5;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label6")
+    public String getLabel6() {
+        return label6;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label6")
+    public void setLabel6(String label6) {
+        this.label6 = label6;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel6(String label6) {
+        this.label6 = label6;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label7")
+    public String getLabel7() {
+        return label7;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label7")
+    public void setLabel7(String label7) {
+        this.label7 = label7;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel7(String label7) {
+        this.label7 = label7;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label8")
+    public String getLabel8() {
+        return label8;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label8")
+    public void setLabel8(String label8) {
+        this.label8 = label8;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel8(String label8) {
+        this.label8 = label8;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label9")
+    public String getLabel9() {
+        return label9;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label9")
+    public void setLabel9(String label9) {
+        this.label9 = label9;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel9(String label9) {
+        this.label9 = label9;
         return this;
     }
 
@@ -3042,6 +4464,33 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label18")
+    public String getLabel18() {
+        return label18;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label18")
+    public void setLabel18(String label18) {
+        this.label18 = label18;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel18(String label18) {
+        this.label18 = label18;
+        return this;
+    }
+
+    /**
      * Values
      * <p>
      * Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval
@@ -3069,6 +4518,33 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label17")
+    public String getLabel17() {
+        return label17;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label17")
+    public void setLabel17(String label17) {
+        this.label17 = label17;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel17(String label17) {
+        this.label17 = label17;
+        return this;
+    }
+
+    /**
      * Values
      * <p>
      * Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval
@@ -3092,6 +4568,33 @@ public class ProcessSubmissionControl100PostRequest {
 
     public ProcessSubmissionControl100PostRequest withValue61(String value61) {
         this.value61 = value61;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label16")
+    public String getLabel16() {
+        return label16;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label16")
+    public void setLabel16(String label16) {
+        this.label16 = label16;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel16(String label16) {
+        this.label16 = label16;
         return this;
     }
 
@@ -3148,6 +4651,33 @@ public class ProcessSubmissionControl100PostRequest {
 
     public ProcessSubmissionControl100PostRequest withValue64(String value64) {
         this.value64 = value64;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label15")
+    public String getLabel15() {
+        return label15;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label15")
+    public void setLabel15(String label15) {
+        this.label15 = label15;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel15(String label15) {
+        this.label15 = label15;
         return this;
     }
 
@@ -3322,6 +4852,33 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label19")
+    public String getLabel19() {
+        return label19;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label19")
+    public void setLabel19(String label19) {
+        this.label19 = label19;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel19(String label19) {
+        this.label19 = label19;
+        return this;
+    }
+
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -3347,6 +4904,33 @@ public class ProcessSubmissionControl100PostRequest {
 
     public ProcessSubmissionControl100PostRequest withNumber54(String number54) {
         this.number54 = number54;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label10")
+    public String getLabel10() {
+        return label10;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label10")
+    public void setLabel10(String label10) {
+        this.label10 = label10;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel10(String label10) {
+        this.label10 = label10;
         return this;
     }
 
@@ -3467,13 +5051,121 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label14")
+    public String getLabel14() {
+        return label14;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label14")
+    public void setLabel14(String label14) {
+        this.label14 = label14;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel14(String label14) {
+        this.label14 = label14;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label13")
+    public String getLabel13() {
+        return label13;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label13")
+    public void setLabel13(String label13) {
+        this.label13 = label13;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel13(String label13) {
+        this.label13 = label13;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label12")
+    public String getLabel12() {
+        return label12;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label12")
+    public void setLabel12(String label12) {
+        this.label12 = label12;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel12(String label12) {
+        this.label12 = label12;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label11")
+    public String getLabel11() {
+        return label11;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label11")
+    public void setLabel11(String label11) {
+        this.label11 = label11;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel11(String label11) {
+        this.label11 = label11;
+        return this;
+    }
+
+    /**
      * Printer
      * <p>
      * Lineage reference object : displayPrntCode, Lookup lineage reference object : gtvprnt
      * 
      */
     @JsonProperty("displayPrntCode")
-    public Object getDisplayPrntCode() {
+    public String getDisplayPrntCode() {
         return displayPrntCode;
     }
 
@@ -3484,11 +5176,11 @@ public class ProcessSubmissionControl100PostRequest {
      * 
      */
     @JsonProperty("displayPrntCode")
-    public void setDisplayPrntCode(Object displayPrntCode) {
+    public void setDisplayPrntCode(String displayPrntCode) {
         this.displayPrntCode = displayPrntCode;
     }
 
-    public ProcessSubmissionControl100PostRequest withDisplayPrntCode(Object displayPrntCode) {
+    public ProcessSubmissionControl100PostRequest withDisplayPrntCode(String displayPrntCode) {
         this.displayPrntCode = displayPrntCode;
         return this;
     }
@@ -3683,6 +5375,33 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label49")
+    public String getLabel49() {
+        return label49;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label49")
+    public void setLabel49(String label49) {
+        this.label49 = label49;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel49(String label49) {
+        this.label49 = label49;
+        return this;
+    }
+
+    /**
      * Values
      * <p>
      * Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval
@@ -3706,6 +5425,33 @@ public class ProcessSubmissionControl100PostRequest {
 
     public ProcessSubmissionControl100PostRequest withValue30(String value30) {
         this.value30 = value30;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label48")
+    public String getLabel48() {
+        return label48;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label48")
+    public void setLabel48(String label48) {
+        this.label48 = label48;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel48(String label48) {
+        this.label48 = label48;
         return this;
     }
 
@@ -3832,7 +5578,7 @@ public class ProcessSubmissionControl100PostRequest {
      * 
      */
     @JsonProperty("submitJprmCode")
-    public Object getSubmitJprmCode() {
+    public String getSubmitJprmCode() {
         return submitJprmCode;
     }
 
@@ -3843,11 +5589,11 @@ public class ProcessSubmissionControl100PostRequest {
      * 
      */
     @JsonProperty("submitJprmCode")
-    public void setSubmitJprmCode(Object submitJprmCode) {
+    public void setSubmitJprmCode(String submitJprmCode) {
         this.submitJprmCode = submitJprmCode;
     }
 
-    public ProcessSubmissionControl100PostRequest withSubmitJprmCode(Object submitJprmCode) {
+    public ProcessSubmissionControl100PostRequest withSubmitJprmCode(String submitJprmCode) {
         this.submitJprmCode = submitJprmCode;
         return this;
     }
@@ -3882,6 +5628,33 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label43")
+    public String getLabel43() {
+        return label43;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label43")
+    public void setLabel43(String label43) {
+        this.label43 = label43;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel43(String label43) {
+        this.label43 = label43;
+        return this;
+    }
+
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -3907,6 +5680,33 @@ public class ProcessSubmissionControl100PostRequest {
 
     public ProcessSubmissionControl100PostRequest withNumber64(String number64) {
         this.number64 = number64;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label42")
+    public String getLabel42() {
+        return label42;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label42")
+    public void setLabel42(String label42) {
+        this.label42 = label42;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel42(String label42) {
+        this.label42 = label42;
         return this;
     }
 
@@ -3940,6 +5740,33 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label41")
+    public String getLabel41() {
+        return label41;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label41")
+    public void setLabel41(String label41) {
+        this.label41 = label41;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel41(String label41) {
+        this.label41 = label41;
+        return this;
+    }
+
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -3965,6 +5792,33 @@ public class ProcessSubmissionControl100PostRequest {
 
     public ProcessSubmissionControl100PostRequest withNumber62(String number62) {
         this.number62 = number62;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label40")
+    public String getLabel40() {
+        return label40;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label40")
+    public void setLabel40(String label40) {
+        this.label40 = label40;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel40(String label40) {
+        this.label40 = label40;
         return this;
     }
 
@@ -3998,6 +5852,33 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label47")
+    public String getLabel47() {
+        return label47;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label47")
+    public void setLabel47(String label47) {
+        this.label47 = label47;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel47(String label47) {
+        this.label47 = label47;
+        return this;
+    }
+
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -4023,6 +5904,87 @@ public class ProcessSubmissionControl100PostRequest {
 
     public ProcessSubmissionControl100PostRequest withNumber60(String number60) {
         this.number60 = number60;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label46")
+    public String getLabel46() {
+        return label46;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label46")
+    public void setLabel46(String label46) {
+        this.label46 = label46;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel46(String label46) {
+        this.label46 = label46;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label45")
+    public String getLabel45() {
+        return label45;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label45")
+    public void setLabel45(String label45) {
+        this.label45 = label45;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel45(String label45) {
+        this.label45 = label45;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label44")
+    public String getLabel44() {
+        return label44;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label44")
+    public void setLabel44(String label44) {
+        this.label44 = label44;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel44(String label44) {
+        this.label44 = label44;
         return this;
     }
 
@@ -4270,6 +6232,60 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label39")
+    public String getLabel39() {
+        return label39;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label39")
+    public void setLabel39(String label39) {
+        this.label39 = label39;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel39(String label39) {
+        this.label39 = label39;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label38")
+    public String getLabel38() {
+        return label38;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label38")
+    public void setLabel38(String label38) {
+        this.label38 = label38;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel38(String label38) {
+        this.label38 = label38;
+        return this;
+    }
+
+    /**
      * Values
      * <p>
      * Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval
@@ -4293,6 +6309,33 @@ public class ProcessSubmissionControl100PostRequest {
 
     public ProcessSubmissionControl100PostRequest withValue42(String value42) {
         this.value42 = value42;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label37")
+    public String getLabel37() {
+        return label37;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label37")
+    public void setLabel37(String label37) {
+        this.label37 = label37;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel37(String label37) {
+        this.label37 = label37;
         return this;
     }
 
@@ -4440,6 +6483,33 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label32")
+    public String getLabel32() {
+        return label32;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label32")
+    public void setLabel32(String label32) {
+        this.label32 = label32;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel32(String label32) {
+        this.label32 = label32;
+        return this;
+    }
+
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -4469,6 +6539,33 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label31")
+    public String getLabel31() {
+        return label31;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label31")
+    public void setLabel31(String label31) {
+        this.label31 = label31;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel31(String label31) {
+        this.label31 = label31;
+        return this;
+    }
+
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -4494,6 +6591,33 @@ public class ProcessSubmissionControl100PostRequest {
 
     public ProcessSubmissionControl100PostRequest withNumber74(String number74) {
         this.number74 = number74;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label30")
+    public String getLabel30() {
+        return label30;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label30")
+    public void setLabel30(String label30) {
+        this.label30 = label30;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel30(String label30) {
+        this.label30 = label30;
         return this;
     }
 
@@ -4556,6 +6680,33 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label36")
+    public String getLabel36() {
+        return label36;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label36")
+    public void setLabel36(String label36) {
+        this.label36 = label36;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel36(String label36) {
+        this.label36 = label36;
+        return this;
+    }
+
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -4581,6 +6732,60 @@ public class ProcessSubmissionControl100PostRequest {
 
     public ProcessSubmissionControl100PostRequest withNumber71(String number71) {
         this.number71 = number71;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label1")
+    public String getLabel1() {
+        return label1;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label1")
+    public void setLabel1(String label1) {
+        this.label1 = label1;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel1(String label1) {
+        this.label1 = label1;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label35")
+    public String getLabel35() {
+        return label35;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label35")
+    public void setLabel35(String label35) {
+        this.label35 = label35;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel35(String label35) {
+        this.label35 = label35;
         return this;
     }
 
@@ -4614,11 +6819,119 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label2")
+    public String getLabel2() {
+        return label2;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label2")
+    public void setLabel2(String label2) {
+        this.label2 = label2;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel2(String label2) {
+        this.label2 = label2;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label34")
+    public String getLabel34() {
+        return label34;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label34")
+    public void setLabel34(String label34) {
+        this.label34 = label34;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel34(String label34) {
+        this.label34 = label34;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label3")
+    public String getLabel3() {
+        return label3;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label3")
+    public void setLabel3(String label3) {
+        this.label3 = label3;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel3(String label3) {
+        this.label3 = label3;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label33")
+    public String getLabel33() {
+        return label33;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label33")
+    public void setLabel33(String label33) {
+        this.label33 = label33;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel33(String label33) {
+        this.label33 = label33;
+        return this;
+    }
+
+    /**
      * Lineage reference object : displaySubmitInd
      * 
      */
     @JsonProperty("displaySubmitInd")
-    public Object getDisplaySubmitInd() {
+    public String getDisplaySubmitInd() {
         return displaySubmitInd;
     }
 
@@ -4627,11 +6940,11 @@ public class ProcessSubmissionControl100PostRequest {
      * 
      */
     @JsonProperty("displaySubmitInd")
-    public void setDisplaySubmitInd(Object displaySubmitInd) {
+    public void setDisplaySubmitInd(String displaySubmitInd) {
         this.displaySubmitInd = displaySubmitInd;
     }
 
-    public ProcessSubmissionControl100PostRequest withDisplaySubmitInd(Object displaySubmitInd) {
+    public ProcessSubmissionControl100PostRequest withDisplaySubmitInd(String displaySubmitInd) {
         this.displaySubmitInd = displaySubmitInd;
         return this;
     }
@@ -4826,6 +7139,222 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label65")
+    public String getLabel65() {
+        return label65;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label65")
+    public void setLabel65(String label65) {
+        this.label65 = label65;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel65(String label65) {
+        this.label65 = label65;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label64")
+    public String getLabel64() {
+        return label64;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label64")
+    public void setLabel64(String label64) {
+        this.label64 = label64;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel64(String label64) {
+        this.label64 = label64;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label63")
+    public String getLabel63() {
+        return label63;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label63")
+    public void setLabel63(String label63) {
+        this.label63 = label63;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel63(String label63) {
+        this.label63 = label63;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label62")
+    public String getLabel62() {
+        return label62;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label62")
+    public void setLabel62(String label62) {
+        this.label62 = label62;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel62(String label62) {
+        this.label62 = label62;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label69")
+    public String getLabel69() {
+        return label69;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label69")
+    public void setLabel69(String label69) {
+        this.label69 = label69;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel69(String label69) {
+        this.label69 = label69;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label68")
+    public String getLabel68() {
+        return label68;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label68")
+    public void setLabel68(String label68) {
+        this.label68 = label68;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel68(String label68) {
+        this.label68 = label68;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label67")
+    public String getLabel67() {
+        return label67;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label67")
+    public void setLabel67(String label67) {
+        this.label67 = label67;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel67(String label67) {
+        this.label67 = label67;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label66")
+    public String getLabel66() {
+        return label66;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label66")
+    public void setLabel66(String label66) {
+        this.label66 = label66;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel66(String label66) {
+        this.label66 = label66;
+        return this;
+    }
+
+    /**
      * Values
      * <p>
      * Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval
@@ -4853,6 +7382,33 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label61")
+    public String getLabel61() {
+        return label61;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label61")
+    public void setLabel61(String label61) {
+        this.label61 = label61;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel61(String label61) {
+        this.label61 = label61;
+        return this;
+    }
+
+    /**
      * Values
      * <p>
      * Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval
@@ -4876,6 +7432,33 @@ public class ProcessSubmissionControl100PostRequest {
 
     public ProcessSubmissionControl100PostRequest withValue18(String value18) {
         this.value18 = value18;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label60")
+    public String getLabel60() {
+        return label60;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label60")
+    public void setLabel60(String label60) {
+        this.label60 = label60;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel60(String label60) {
+        this.label60 = label60;
         return this;
     }
 
@@ -5239,6 +7822,33 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label59")
+    public String getLabel59() {
+        return label59;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label59")
+    public void setLabel59(String label59) {
+        this.label59 = label59;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel59(String label59) {
+        this.label59 = label59;
+        return this;
+    }
+
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -5355,6 +7965,249 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label54")
+    public String getLabel54() {
+        return label54;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label54")
+    public void setLabel54(String label54) {
+        this.label54 = label54;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel54(String label54) {
+        this.label54 = label54;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label53")
+    public String getLabel53() {
+        return label53;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label53")
+    public void setLabel53(String label53) {
+        this.label53 = label53;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel53(String label53) {
+        this.label53 = label53;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label52")
+    public String getLabel52() {
+        return label52;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label52")
+    public void setLabel52(String label52) {
+        this.label52 = label52;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel52(String label52) {
+        this.label52 = label52;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label51")
+    public String getLabel51() {
+        return label51;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label51")
+    public void setLabel51(String label51) {
+        this.label51 = label51;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel51(String label51) {
+        this.label51 = label51;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label58")
+    public String getLabel58() {
+        return label58;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label58")
+    public void setLabel58(String label58) {
+        this.label58 = label58;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel58(String label58) {
+        this.label58 = label58;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label57")
+    public String getLabel57() {
+        return label57;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label57")
+    public void setLabel57(String label57) {
+        this.label57 = label57;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel57(String label57) {
+        this.label57 = label57;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label56")
+    public String getLabel56() {
+        return label56;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label56")
+    public void setLabel56(String label56) {
+        this.label56 = label56;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel56(String label56) {
+        this.label56 = label56;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label55")
+    public String getLabel55() {
+        return label55;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label55")
+    public void setLabel55(String label55) {
+        this.label55 = label55;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel55(String label55) {
+        this.label55 = label55;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label50")
+    public String getLabel50() {
+        return label50;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label50")
+    public void setLabel50(String label50) {
+        this.label50 = label50;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel50(String label50) {
+        this.label50 = label50;
+        return this;
+    }
+
+    /**
      * Values
      * <p>
      * Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval
@@ -5388,7 +8241,7 @@ public class ProcessSubmissionControl100PostRequest {
      * 
      */
     @JsonProperty("displaySaveDefaults")
-    public Object getDisplaySaveDefaults() {
+    public String getDisplaySaveDefaults() {
         return displaySaveDefaults;
     }
 
@@ -5399,11 +8252,11 @@ public class ProcessSubmissionControl100PostRequest {
      * 
      */
     @JsonProperty("displaySaveDefaults")
-    public void setDisplaySaveDefaults(Object displaySaveDefaults) {
+    public void setDisplaySaveDefaults(String displaySaveDefaults) {
         this.displaySaveDefaults = displaySaveDefaults;
     }
 
-    public ProcessSubmissionControl100PostRequest withDisplaySaveDefaults(Object displaySaveDefaults) {
+    public ProcessSubmissionControl100PostRequest withDisplaySaveDefaults(String displaySaveDefaults) {
         this.displaySaveDefaults = displaySaveDefaults;
         return this;
     }
@@ -5973,6 +8826,33 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label87")
+    public String getLabel87() {
+        return label87;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label87")
+    public void setLabel87(String label87) {
+        this.label87 = label87;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel87(String label87) {
+        this.label87 = label87;
+        return this;
+    }
+
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -5998,6 +8878,33 @@ public class ProcessSubmissionControl100PostRequest {
 
     public ProcessSubmissionControl100PostRequest withNumber4(String number4) {
         this.number4 = number4;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label86")
+    public String getLabel86() {
+        return label86;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label86")
+    public void setLabel86(String label86) {
+        this.label86 = label86;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel86(String label86) {
+        this.label86 = label86;
         return this;
     }
 
@@ -6031,6 +8938,33 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label85")
+    public String getLabel85() {
+        return label85;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label85")
+    public void setLabel85(String label85) {
+        this.label85 = label85;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel85(String label85) {
+        this.label85 = label85;
+        return this;
+    }
+
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -6056,6 +8990,33 @@ public class ProcessSubmissionControl100PostRequest {
 
     public ProcessSubmissionControl100PostRequest withNumber2(String number2) {
         this.number2 = number2;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label84")
+    public String getLabel84() {
+        return label84;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label84")
+    public void setLabel84(String label84) {
+        this.label84 = label84;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel84(String label84) {
+        this.label84 = label84;
         return this;
     }
 
@@ -6147,6 +9108,33 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label89")
+    public String getLabel89() {
+        return label89;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label89")
+    public void setLabel89(String label89) {
+        this.label89 = label89;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel89(String label89) {
+        this.label89 = label89;
+        return this;
+    }
+
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -6172,6 +9160,33 @@ public class ProcessSubmissionControl100PostRequest {
 
     public ProcessSubmissionControl100PostRequest withNumber6(String number6) {
         this.number6 = number6;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label88")
+    public String getLabel88() {
+        return label88;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label88")
+    public void setLabel88(String label88) {
+        this.label88 = label88;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel88(String label88) {
+        this.label88 = label88;
         return this;
     }
 
@@ -6205,13 +9220,67 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label83")
+    public String getLabel83() {
+        return label83;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label83")
+    public void setLabel83(String label83) {
+        this.label83 = label83;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel83(String label83) {
+        this.label83 = label83;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label82")
+    public String getLabel82() {
+        return label82;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label82")
+    public void setLabel82(String label82) {
+        this.label82 = label82;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel82(String label82) {
+        this.label82 = label82;
+        return this;
+    }
+
+    /**
      * PDF Font
      * <p>
      * Lineage reference object : displayPdfFont, Lookup lineage reference object : gtvpdft
      * 
      */
     @JsonProperty("displayPdfFont")
-    public Object getDisplayPdfFont() {
+    public String getDisplayPdfFont() {
         return displayPdfFont;
     }
 
@@ -6222,12 +9291,66 @@ public class ProcessSubmissionControl100PostRequest {
      * 
      */
     @JsonProperty("displayPdfFont")
-    public void setDisplayPdfFont(Object displayPdfFont) {
+    public void setDisplayPdfFont(String displayPdfFont) {
         this.displayPdfFont = displayPdfFont;
     }
 
-    public ProcessSubmissionControl100PostRequest withDisplayPdfFont(Object displayPdfFont) {
+    public ProcessSubmissionControl100PostRequest withDisplayPdfFont(String displayPdfFont) {
         this.displayPdfFont = displayPdfFont;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label81")
+    public String getLabel81() {
+        return label81;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label81")
+    public void setLabel81(String label81) {
+        this.label81 = label81;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel81(String label81) {
+        this.label81 = label81;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label80")
+    public String getLabel80() {
+        return label80;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label80")
+    public void setLabel80(String label80) {
+        this.label80 = label80;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel80(String label80) {
+        this.label80 = label80;
         return this;
     }
 
@@ -6522,6 +9645,33 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label76")
+    public String getLabel76() {
+        return label76;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label76")
+    public void setLabel76(String label76) {
+        this.label76 = label76;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel76(String label76) {
+        this.label76 = label76;
+        return this;
+    }
+
+    /**
      * Number
      * <p>
      * Lineage reference object : GJBPRUN_NUMBER
@@ -6551,13 +9701,256 @@ public class ProcessSubmissionControl100PostRequest {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label75")
+    public String getLabel75() {
+        return label75;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label75")
+    public void setLabel75(String label75) {
+        this.label75 = label75;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel75(String label75) {
+        this.label75 = label75;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label74")
+    public String getLabel74() {
+        return label74;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label74")
+    public void setLabel74(String label74) {
+        this.label74 = label74;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel74(String label74) {
+        this.label74 = label74;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label73")
+    public String getLabel73() {
+        return label73;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label73")
+    public void setLabel73(String label73) {
+        this.label73 = label73;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel73(String label73) {
+        this.label73 = label73;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label79")
+    public String getLabel79() {
+        return label79;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label79")
+    public void setLabel79(String label79) {
+        this.label79 = label79;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel79(String label79) {
+        this.label79 = label79;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label78")
+    public String getLabel78() {
+        return label78;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label78")
+    public void setLabel78(String label78) {
+        this.label78 = label78;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel78(String label78) {
+        this.label78 = label78;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label77")
+    public String getLabel77() {
+        return label77;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label77")
+    public void setLabel77(String label77) {
+        this.label77 = label77;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel77(String label77) {
+        this.label77 = label77;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label72")
+    public String getLabel72() {
+        return label72;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label72")
+    public void setLabel72(String label72) {
+        this.label72 = label72;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel72(String label72) {
+        this.label72 = label72;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label71")
+    public String getLabel71() {
+        return label71;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label71")
+    public void setLabel71(String label71) {
+        this.label71 = label71;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel71(String label71) {
+        this.label71 = label71;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label70")
+    public String getLabel70() {
+        return label70;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label70")
+    public void setLabel70(String label70) {
+        this.label70 = label70;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel70(String label70) {
+        this.label70 = label70;
+        return this;
+    }
+
+    /**
      * Special Print
      * <p>
      * Lineage reference object : displayPrntForm
      * 
      */
     @JsonProperty("displayPrntForm")
-    public Object getDisplayPrntForm() {
+    public String getDisplayPrntForm() {
         return displayPrntForm;
     }
 
@@ -6568,11 +9961,11 @@ public class ProcessSubmissionControl100PostRequest {
      * 
      */
     @JsonProperty("displayPrntForm")
-    public void setDisplayPrntForm(Object displayPrntForm) {
+    public void setDisplayPrntForm(String displayPrntForm) {
         this.displayPrntForm = displayPrntForm;
     }
 
-    public ProcessSubmissionControl100PostRequest withDisplayPrntForm(Object displayPrntForm) {
+    public ProcessSubmissionControl100PostRequest withDisplayPrntForm(String displayPrntForm) {
         this.displayPrntForm = displayPrntForm;
         return this;
     }
@@ -6584,7 +9977,7 @@ public class ProcessSubmissionControl100PostRequest {
      * 
      */
     @JsonProperty("jprmCode")
-    public Object getJprmCode() {
+    public String getJprmCode() {
         return jprmCode;
     }
 
@@ -6595,11 +9988,11 @@ public class ProcessSubmissionControl100PostRequest {
      * 
      */
     @JsonProperty("jprmCode")
-    public void setJprmCode(Object jprmCode) {
+    public void setJprmCode(String jprmCode) {
         this.jprmCode = jprmCode;
     }
 
-    public ProcessSubmissionControl100PostRequest withJprmCode(Object jprmCode) {
+    public ProcessSubmissionControl100PostRequest withJprmCode(String jprmCode) {
         this.jprmCode = jprmCode;
         return this;
     }
@@ -6611,7 +10004,7 @@ public class ProcessSubmissionControl100PostRequest {
      * 
      */
     @JsonProperty("displaySubmitTime")
-    public Object getDisplaySubmitTime() {
+    public String getDisplaySubmitTime() {
         return displaySubmitTime;
     }
 
@@ -6622,12 +10015,282 @@ public class ProcessSubmissionControl100PostRequest {
      * 
      */
     @JsonProperty("displaySubmitTime")
-    public void setDisplaySubmitTime(Object displaySubmitTime) {
+    public void setDisplaySubmitTime(String displaySubmitTime) {
         this.displaySubmitTime = displaySubmitTime;
     }
 
-    public ProcessSubmissionControl100PostRequest withDisplaySubmitTime(Object displaySubmitTime) {
+    public ProcessSubmissionControl100PostRequest withDisplaySubmitTime(String displaySubmitTime) {
         this.displaySubmitTime = displaySubmitTime;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label98")
+    public String getLabel98() {
+        return label98;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label98")
+    public void setLabel98(String label98) {
+        this.label98 = label98;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel98(String label98) {
+        this.label98 = label98;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label97")
+    public String getLabel97() {
+        return label97;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label97")
+    public void setLabel97(String label97) {
+        this.label97 = label97;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel97(String label97) {
+        this.label97 = label97;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label96")
+    public String getLabel96() {
+        return label96;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label96")
+    public void setLabel96(String label96) {
+        this.label96 = label96;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel96(String label96) {
+        this.label96 = label96;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label95")
+    public String getLabel95() {
+        return label95;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label95")
+    public void setLabel95(String label95) {
+        this.label95 = label95;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel95(String label95) {
+        this.label95 = label95;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label99")
+    public String getLabel99() {
+        return label99;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label99")
+    public void setLabel99(String label99) {
+        this.label99 = label99;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel99(String label99) {
+        this.label99 = label99;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label90")
+    public String getLabel90() {
+        return label90;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label90")
+    public void setLabel90(String label90) {
+        this.label90 = label90;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel90(String label90) {
+        this.label90 = label90;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label94")
+    public String getLabel94() {
+        return label94;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label94")
+    public void setLabel94(String label94) {
+        this.label94 = label94;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel94(String label94) {
+        this.label94 = label94;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label93")
+    public String getLabel93() {
+        return label93;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label93")
+    public void setLabel93(String label93) {
+        this.label93 = label93;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel93(String label93) {
+        this.label93 = label93;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label92")
+    public String getLabel92() {
+        return label92;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label92")
+    public void setLabel92(String label92) {
+        this.label92 = label92;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel92(String label92) {
+        this.label92 = label92;
+        return this;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label91")
+    public String getLabel91() {
+        return label91;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label91")
+    public void setLabel91(String label91) {
+        this.label91 = label91;
+    }
+
+    public ProcessSubmissionControl100PostRequest withLabel91(String label91) {
+        this.label91 = label91;
         return this;
     }
 
@@ -7515,7 +11178,7 @@ public class ProcessSubmissionControl100PostRequest {
      * 
      */
     @JsonProperty("displayMimeType")
-    public Object getDisplayMimeType() {
+    public String getDisplayMimeType() {
         return displayMimeType;
     }
 
@@ -7526,11 +11189,11 @@ public class ProcessSubmissionControl100PostRequest {
      * 
      */
     @JsonProperty("displayMimeType")
-    public void setDisplayMimeType(Object displayMimeType) {
+    public void setDisplayMimeType(String displayMimeType) {
         this.displayMimeType = displayMimeType;
     }
 
-    public ProcessSubmissionControl100PostRequest withDisplayMimeType(Object displayMimeType) {
+    public ProcessSubmissionControl100PostRequest withDisplayMimeType(String displayMimeType) {
         this.displayMimeType = displayMimeType;
         return this;
     }
@@ -7812,7 +11475,7 @@ public class ProcessSubmissionControl100PostRequest {
      * 
      */
     @JsonProperty("keyblckJob")
-    public Object getKeyblckJob() {
+    public String getKeyblckJob() {
         return keyblckJob;
     }
 
@@ -7823,11 +11486,11 @@ public class ProcessSubmissionControl100PostRequest {
      * 
      */
     @JsonProperty("keyblckJob")
-    public void setKeyblckJob(Object keyblckJob) {
+    public void setKeyblckJob(String keyblckJob) {
         this.keyblckJob = keyblckJob;
     }
 
-    public ProcessSubmissionControl100PostRequest withKeyblckJob(Object keyblckJob) {
+    public ProcessSubmissionControl100PostRequest withKeyblckJob(String keyblckJob) {
         this.keyblckJob = keyblckJob;
         return this;
     }
@@ -8055,7 +11718,7 @@ public class ProcessSubmissionControl100PostRequest {
      * 
      */
     @JsonProperty("submitJprmDesc")
-    public Object getSubmitJprmDesc() {
+    public String getSubmitJprmDesc() {
         return submitJprmDesc;
     }
 
@@ -8066,11 +11729,11 @@ public class ProcessSubmissionControl100PostRequest {
      * 
      */
     @JsonProperty("submitJprmDesc")
-    public void setSubmitJprmDesc(Object submitJprmDesc) {
+    public void setSubmitJprmDesc(String submitJprmDesc) {
         this.submitJprmDesc = submitJprmDesc;
     }
 
-    public ProcessSubmissionControl100PostRequest withSubmitJprmDesc(Object submitJprmDesc) {
+    public ProcessSubmissionControl100PostRequest withSubmitJprmDesc(String submitJprmDesc) {
         this.submitJprmDesc = submitJprmDesc;
         return this;
     }
@@ -8179,6 +11842,10 @@ public class ProcessSubmissionControl100PostRequest {
         sb.append('=');
         sb.append(((this.value6 == null)?"<null>":this.value6));
         sb.append(',');
+        sb.append("label29");
+        sb.append('=');
+        sb.append(((this.label29 == null)?"<null>":this.label29));
+        sb.append(',');
         sb.append("value51");
         sb.append('=');
         sb.append(((this.value51 == null)?"<null>":this.value51));
@@ -8186,6 +11853,10 @@ public class ProcessSubmissionControl100PostRequest {
         sb.append("value5");
         sb.append('=');
         sb.append(((this.value5 == null)?"<null>":this.value5));
+        sb.append(',');
+        sb.append("label28");
+        sb.append('=');
+        sb.append(((this.label28 == null)?"<null>":this.label28));
         sb.append(',');
         sb.append("number49");
         sb.append('=');
@@ -8199,6 +11870,10 @@ public class ProcessSubmissionControl100PostRequest {
         sb.append('=');
         sb.append(((this.value8 == null)?"<null>":this.value8));
         sb.append(',');
+        sb.append("label27");
+        sb.append('=');
+        sb.append(((this.label27 == null)?"<null>":this.label27));
+        sb.append(',');
         sb.append("number48");
         sb.append('=');
         sb.append(((this.number48 == null)?"<null>":this.number48));
@@ -8210,6 +11885,10 @@ public class ProcessSubmissionControl100PostRequest {
         sb.append("value7");
         sb.append('=');
         sb.append(((this.value7 == null)?"<null>":this.value7));
+        sb.append(',');
+        sb.append("label26");
+        sb.append('=');
+        sb.append(((this.label26 == null)?"<null>":this.label26));
         sb.append(',');
         sb.append("number47");
         sb.append('=');
@@ -8251,9 +11930,17 @@ public class ProcessSubmissionControl100PostRequest {
         sb.append('=');
         sb.append(((this.number43 == null)?"<null>":this.number43));
         sb.append(',');
+        sb.append("label21");
+        sb.append('=');
+        sb.append(((this.label21 == null)?"<null>":this.label21));
+        sb.append(',');
         sb.append("number42");
         sb.append('=');
         sb.append(((this.number42 == null)?"<null>":this.number42));
+        sb.append(',');
+        sb.append("label20");
+        sb.append('=');
+        sb.append(((this.label20 == null)?"<null>":this.label20));
         sb.append(',');
         sb.append("number41");
         sb.append('=');
@@ -8263,9 +11950,49 @@ public class ProcessSubmissionControl100PostRequest {
         sb.append('=');
         sb.append(((this.number40 == null)?"<null>":this.number40));
         sb.append(',');
+        sb.append("label25");
+        sb.append('=');
+        sb.append(((this.label25 == null)?"<null>":this.label25));
+        sb.append(',');
         sb.append("value9");
         sb.append('=');
         sb.append(((this.value9 == null)?"<null>":this.value9));
+        sb.append(',');
+        sb.append("label24");
+        sb.append('=');
+        sb.append(((this.label24 == null)?"<null>":this.label24));
+        sb.append(',');
+        sb.append("label23");
+        sb.append('=');
+        sb.append(((this.label23 == null)?"<null>":this.label23));
+        sb.append(',');
+        sb.append("label22");
+        sb.append('=');
+        sb.append(((this.label22 == null)?"<null>":this.label22));
+        sb.append(',');
+        sb.append("label4");
+        sb.append('=');
+        sb.append(((this.label4 == null)?"<null>":this.label4));
+        sb.append(',');
+        sb.append("label5");
+        sb.append('=');
+        sb.append(((this.label5 == null)?"<null>":this.label5));
+        sb.append(',');
+        sb.append("label6");
+        sb.append('=');
+        sb.append(((this.label6 == null)?"<null>":this.label6));
+        sb.append(',');
+        sb.append("label7");
+        sb.append('=');
+        sb.append(((this.label7 == null)?"<null>":this.label7));
+        sb.append(',');
+        sb.append("label8");
+        sb.append('=');
+        sb.append(((this.label8 == null)?"<null>":this.label8));
+        sb.append(',');
+        sb.append("label9");
+        sb.append('=');
+        sb.append(((this.label9 == null)?"<null>":this.label9));
         sb.append(',');
         sb.append("value59");
         sb.append('=');
@@ -8291,13 +12018,25 @@ public class ProcessSubmissionControl100PostRequest {
         sb.append('=');
         sb.append(((this.value56 == null)?"<null>":this.value56));
         sb.append(',');
+        sb.append("label18");
+        sb.append('=');
+        sb.append(((this.label18 == null)?"<null>":this.label18));
+        sb.append(',');
         sb.append("value62");
         sb.append('=');
         sb.append(((this.value62 == null)?"<null>":this.value62));
         sb.append(',');
+        sb.append("label17");
+        sb.append('=');
+        sb.append(((this.label17 == null)?"<null>":this.label17));
+        sb.append(',');
         sb.append("value61");
         sb.append('=');
         sb.append(((this.value61 == null)?"<null>":this.value61));
+        sb.append(',');
+        sb.append("label16");
+        sb.append('=');
+        sb.append(((this.label16 == null)?"<null>":this.label16));
         sb.append(',');
         sb.append("number59");
         sb.append('=');
@@ -8306,6 +12045,10 @@ public class ProcessSubmissionControl100PostRequest {
         sb.append("value64");
         sb.append('=');
         sb.append(((this.value64 == null)?"<null>":this.value64));
+        sb.append(',');
+        sb.append("label15");
+        sb.append('=');
+        sb.append(((this.label15 == null)?"<null>":this.label15));
         sb.append(',');
         sb.append("number58");
         sb.append('=');
@@ -8331,9 +12074,17 @@ public class ProcessSubmissionControl100PostRequest {
         sb.append('=');
         sb.append(((this.value60 == null)?"<null>":this.value60));
         sb.append(',');
+        sb.append("label19");
+        sb.append('=');
+        sb.append(((this.label19 == null)?"<null>":this.label19));
+        sb.append(',');
         sb.append("number54");
         sb.append('=');
         sb.append(((this.number54 == null)?"<null>":this.number54));
+        sb.append(',');
+        sb.append("label10");
+        sb.append('=');
+        sb.append(((this.label10 == null)?"<null>":this.label10));
         sb.append(',');
         sb.append("number53");
         sb.append('=');
@@ -8350,6 +12101,22 @@ public class ProcessSubmissionControl100PostRequest {
         sb.append("number50");
         sb.append('=');
         sb.append(((this.number50 == null)?"<null>":this.number50));
+        sb.append(',');
+        sb.append("label14");
+        sb.append('=');
+        sb.append(((this.label14 == null)?"<null>":this.label14));
+        sb.append(',');
+        sb.append("label13");
+        sb.append('=');
+        sb.append(((this.label13 == null)?"<null>":this.label13));
+        sb.append(',');
+        sb.append("label12");
+        sb.append('=');
+        sb.append(((this.label12 == null)?"<null>":this.label12));
+        sb.append(',');
+        sb.append("label11");
+        sb.append('=');
+        sb.append(((this.label11 == null)?"<null>":this.label11));
         sb.append(',');
         sb.append("displayPrntCode");
         sb.append('=');
@@ -8383,9 +12150,17 @@ public class ProcessSubmissionControl100PostRequest {
         sb.append('=');
         sb.append(((this.value31 == null)?"<null>":this.value31));
         sb.append(',');
+        sb.append("label49");
+        sb.append('=');
+        sb.append(((this.label49 == null)?"<null>":this.label49));
+        sb.append(',');
         sb.append("value30");
         sb.append('=');
         sb.append(((this.value30 == null)?"<null>":this.value30));
+        sb.append(',');
+        sb.append("label48");
+        sb.append('=');
+        sb.append(((this.label48 == null)?"<null>":this.label48));
         sb.append(',');
         sb.append("number69");
         sb.append('=');
@@ -8411,25 +12186,57 @@ public class ProcessSubmissionControl100PostRequest {
         sb.append('=');
         sb.append(((this.number65 == null)?"<null>":this.number65));
         sb.append(',');
+        sb.append("label43");
+        sb.append('=');
+        sb.append(((this.label43 == null)?"<null>":this.label43));
+        sb.append(',');
         sb.append("number64");
         sb.append('=');
         sb.append(((this.number64 == null)?"<null>":this.number64));
+        sb.append(',');
+        sb.append("label42");
+        sb.append('=');
+        sb.append(((this.label42 == null)?"<null>":this.label42));
         sb.append(',');
         sb.append("number63");
         sb.append('=');
         sb.append(((this.number63 == null)?"<null>":this.number63));
         sb.append(',');
+        sb.append("label41");
+        sb.append('=');
+        sb.append(((this.label41 == null)?"<null>":this.label41));
+        sb.append(',');
         sb.append("number62");
         sb.append('=');
         sb.append(((this.number62 == null)?"<null>":this.number62));
+        sb.append(',');
+        sb.append("label40");
+        sb.append('=');
+        sb.append(((this.label40 == null)?"<null>":this.label40));
         sb.append(',');
         sb.append("number61");
         sb.append('=');
         sb.append(((this.number61 == null)?"<null>":this.number61));
         sb.append(',');
+        sb.append("label47");
+        sb.append('=');
+        sb.append(((this.label47 == null)?"<null>":this.label47));
+        sb.append(',');
         sb.append("number60");
         sb.append('=');
         sb.append(((this.number60 == null)?"<null>":this.number60));
+        sb.append(',');
+        sb.append("label46");
+        sb.append('=');
+        sb.append(((this.label46 == null)?"<null>":this.label46));
+        sb.append(',');
+        sb.append("label45");
+        sb.append('=');
+        sb.append(((this.label45 == null)?"<null>":this.label45));
+        sb.append(',');
+        sb.append("label44");
+        sb.append('=');
+        sb.append(((this.label44 == null)?"<null>":this.label44));
         sb.append(',');
         sb.append("value37");
         sb.append('=');
@@ -8467,9 +12274,21 @@ public class ProcessSubmissionControl100PostRequest {
         sb.append('=');
         sb.append(((this.value40 == null)?"<null>":this.value40));
         sb.append(',');
+        sb.append("label39");
+        sb.append('=');
+        sb.append(((this.label39 == null)?"<null>":this.label39));
+        sb.append(',');
+        sb.append("label38");
+        sb.append('=');
+        sb.append(((this.label38 == null)?"<null>":this.label38));
+        sb.append(',');
         sb.append("value42");
         sb.append('=');
         sb.append(((this.value42 == null)?"<null>":this.value42));
+        sb.append(',');
+        sb.append("label37");
+        sb.append('=');
+        sb.append(((this.label37 == null)?"<null>":this.label37));
         sb.append(',');
         sb.append("value41");
         sb.append('=');
@@ -8491,13 +12310,25 @@ public class ProcessSubmissionControl100PostRequest {
         sb.append('=');
         sb.append(((this.number76 == null)?"<null>":this.number76));
         sb.append(',');
+        sb.append("label32");
+        sb.append('=');
+        sb.append(((this.label32 == null)?"<null>":this.label32));
+        sb.append(',');
         sb.append("number75");
         sb.append('=');
         sb.append(((this.number75 == null)?"<null>":this.number75));
         sb.append(',');
+        sb.append("label31");
+        sb.append('=');
+        sb.append(((this.label31 == null)?"<null>":this.label31));
+        sb.append(',');
         sb.append("number74");
         sb.append('=');
         sb.append(((this.number74 == null)?"<null>":this.number74));
+        sb.append(',');
+        sb.append("label30");
+        sb.append('=');
+        sb.append(((this.label30 == null)?"<null>":this.label30));
         sb.append(',');
         sb.append("number73");
         sb.append('=');
@@ -8507,13 +12338,41 @@ public class ProcessSubmissionControl100PostRequest {
         sb.append('=');
         sb.append(((this.number72 == null)?"<null>":this.number72));
         sb.append(',');
+        sb.append("label36");
+        sb.append('=');
+        sb.append(((this.label36 == null)?"<null>":this.label36));
+        sb.append(',');
         sb.append("number71");
         sb.append('=');
         sb.append(((this.number71 == null)?"<null>":this.number71));
         sb.append(',');
+        sb.append("label1");
+        sb.append('=');
+        sb.append(((this.label1 == null)?"<null>":this.label1));
+        sb.append(',');
+        sb.append("label35");
+        sb.append('=');
+        sb.append(((this.label35 == null)?"<null>":this.label35));
+        sb.append(',');
         sb.append("number70");
         sb.append('=');
         sb.append(((this.number70 == null)?"<null>":this.number70));
+        sb.append(',');
+        sb.append("label2");
+        sb.append('=');
+        sb.append(((this.label2 == null)?"<null>":this.label2));
+        sb.append(',');
+        sb.append("label34");
+        sb.append('=');
+        sb.append(((this.label34 == null)?"<null>":this.label34));
+        sb.append(',');
+        sb.append("label3");
+        sb.append('=');
+        sb.append(((this.label3 == null)?"<null>":this.label3));
+        sb.append(',');
+        sb.append("label33");
+        sb.append('=');
+        sb.append(((this.label33 == null)?"<null>":this.label33));
         sb.append(',');
         sb.append("displaySubmitInd");
         sb.append('=');
@@ -8547,13 +12406,53 @@ public class ProcessSubmissionControl100PostRequest {
         sb.append('=');
         sb.append(((this.value45 == null)?"<null>":this.value45));
         sb.append(',');
+        sb.append("label65");
+        sb.append('=');
+        sb.append(((this.label65 == null)?"<null>":this.label65));
+        sb.append(',');
+        sb.append("label64");
+        sb.append('=');
+        sb.append(((this.label64 == null)?"<null>":this.label64));
+        sb.append(',');
+        sb.append("label63");
+        sb.append('=');
+        sb.append(((this.label63 == null)?"<null>":this.label63));
+        sb.append(',');
+        sb.append("label62");
+        sb.append('=');
+        sb.append(((this.label62 == null)?"<null>":this.label62));
+        sb.append(',');
+        sb.append("label69");
+        sb.append('=');
+        sb.append(((this.label69 == null)?"<null>":this.label69));
+        sb.append(',');
+        sb.append("label68");
+        sb.append('=');
+        sb.append(((this.label68 == null)?"<null>":this.label68));
+        sb.append(',');
+        sb.append("label67");
+        sb.append('=');
+        sb.append(((this.label67 == null)?"<null>":this.label67));
+        sb.append(',');
+        sb.append("label66");
+        sb.append('=');
+        sb.append(((this.label66 == null)?"<null>":this.label66));
+        sb.append(',');
         sb.append("value19");
         sb.append('=');
         sb.append(((this.value19 == null)?"<null>":this.value19));
         sb.append(',');
+        sb.append("label61");
+        sb.append('=');
+        sb.append(((this.label61 == null)?"<null>":this.label61));
+        sb.append(',');
         sb.append("value18");
         sb.append('=');
         sb.append(((this.value18 == null)?"<null>":this.value18));
+        sb.append(',');
+        sb.append("label60");
+        sb.append('=');
+        sb.append(((this.label60 == null)?"<null>":this.label60));
         sb.append(',');
         sb.append("value15");
         sb.append('=');
@@ -8607,6 +12506,10 @@ public class ProcessSubmissionControl100PostRequest {
         sb.append('=');
         sb.append(((this.number14 == null)?"<null>":this.number14));
         sb.append(',');
+        sb.append("label59");
+        sb.append('=');
+        sb.append(((this.label59 == null)?"<null>":this.label59));
+        sb.append(',');
         sb.append("number13");
         sb.append('=');
         sb.append(((this.number13 == null)?"<null>":this.number13));
@@ -8622,6 +12525,42 @@ public class ProcessSubmissionControl100PostRequest {
         sb.append("number10");
         sb.append('=');
         sb.append(((this.number10 == null)?"<null>":this.number10));
+        sb.append(',');
+        sb.append("label54");
+        sb.append('=');
+        sb.append(((this.label54 == null)?"<null>":this.label54));
+        sb.append(',');
+        sb.append("label53");
+        sb.append('=');
+        sb.append(((this.label53 == null)?"<null>":this.label53));
+        sb.append(',');
+        sb.append("label52");
+        sb.append('=');
+        sb.append(((this.label52 == null)?"<null>":this.label52));
+        sb.append(',');
+        sb.append("label51");
+        sb.append('=');
+        sb.append(((this.label51 == null)?"<null>":this.label51));
+        sb.append(',');
+        sb.append("label58");
+        sb.append('=');
+        sb.append(((this.label58 == null)?"<null>":this.label58));
+        sb.append(',');
+        sb.append("label57");
+        sb.append('=');
+        sb.append(((this.label57 == null)?"<null>":this.label57));
+        sb.append(',');
+        sb.append("label56");
+        sb.append('=');
+        sb.append(((this.label56 == null)?"<null>":this.label56));
+        sb.append(',');
+        sb.append("label55");
+        sb.append('=');
+        sb.append(((this.label55 == null)?"<null>":this.label55));
+        sb.append(',');
+        sb.append("label50");
+        sb.append('=');
+        sb.append(((this.label50 == null)?"<null>":this.label50));
         sb.append(',');
         sb.append("value29");
         sb.append('=');
@@ -8711,17 +12650,33 @@ public class ProcessSubmissionControl100PostRequest {
         sb.append('=');
         sb.append(((this.number20 == null)?"<null>":this.number20));
         sb.append(',');
+        sb.append("label87");
+        sb.append('=');
+        sb.append(((this.label87 == null)?"<null>":this.label87));
+        sb.append(',');
         sb.append("number4");
         sb.append('=');
         sb.append(((this.number4 == null)?"<null>":this.number4));
+        sb.append(',');
+        sb.append("label86");
+        sb.append('=');
+        sb.append(((this.label86 == null)?"<null>":this.label86));
         sb.append(',');
         sb.append("number1");
         sb.append('=');
         sb.append(((this.number1 == null)?"<null>":this.number1));
         sb.append(',');
+        sb.append("label85");
+        sb.append('=');
+        sb.append(((this.label85 == null)?"<null>":this.label85));
+        sb.append(',');
         sb.append("number2");
         sb.append('=');
         sb.append(((this.number2 == null)?"<null>":this.number2));
+        sb.append(',');
+        sb.append("label84");
+        sb.append('=');
+        sb.append(((this.label84 == null)?"<null>":this.label84));
         sb.append(',');
         sb.append("number7");
         sb.append('=');
@@ -8735,17 +12690,41 @@ public class ProcessSubmissionControl100PostRequest {
         sb.append('=');
         sb.append(((this.number5 == null)?"<null>":this.number5));
         sb.append(',');
+        sb.append("label89");
+        sb.append('=');
+        sb.append(((this.label89 == null)?"<null>":this.label89));
+        sb.append(',');
         sb.append("number6");
         sb.append('=');
         sb.append(((this.number6 == null)?"<null>":this.number6));
+        sb.append(',');
+        sb.append("label88");
+        sb.append('=');
+        sb.append(((this.label88 == null)?"<null>":this.label88));
         sb.append(',');
         sb.append("number9");
         sb.append('=');
         sb.append(((this.number9 == null)?"<null>":this.number9));
         sb.append(',');
+        sb.append("label83");
+        sb.append('=');
+        sb.append(((this.label83 == null)?"<null>":this.label83));
+        sb.append(',');
+        sb.append("label82");
+        sb.append('=');
+        sb.append(((this.label82 == null)?"<null>":this.label82));
+        sb.append(',');
         sb.append("displayPdfFont");
         sb.append('=');
         sb.append(((this.displayPdfFont == null)?"<null>":this.displayPdfFont));
+        sb.append(',');
+        sb.append("label81");
+        sb.append('=');
+        sb.append(((this.label81 == null)?"<null>":this.label81));
+        sb.append(',');
+        sb.append("label80");
+        sb.append('=');
+        sb.append(((this.label80 == null)?"<null>":this.label80));
         sb.append(',');
         sb.append("number29");
         sb.append('=');
@@ -8787,9 +12766,49 @@ public class ProcessSubmissionControl100PostRequest {
         sb.append('=');
         sb.append(((this.number31 == null)?"<null>":this.number31));
         sb.append(',');
+        sb.append("label76");
+        sb.append('=');
+        sb.append(((this.label76 == null)?"<null>":this.label76));
+        sb.append(',');
         sb.append("number30");
         sb.append('=');
         sb.append(((this.number30 == null)?"<null>":this.number30));
+        sb.append(',');
+        sb.append("label75");
+        sb.append('=');
+        sb.append(((this.label75 == null)?"<null>":this.label75));
+        sb.append(',');
+        sb.append("label74");
+        sb.append('=');
+        sb.append(((this.label74 == null)?"<null>":this.label74));
+        sb.append(',');
+        sb.append("label73");
+        sb.append('=');
+        sb.append(((this.label73 == null)?"<null>":this.label73));
+        sb.append(',');
+        sb.append("label79");
+        sb.append('=');
+        sb.append(((this.label79 == null)?"<null>":this.label79));
+        sb.append(',');
+        sb.append("label78");
+        sb.append('=');
+        sb.append(((this.label78 == null)?"<null>":this.label78));
+        sb.append(',');
+        sb.append("label77");
+        sb.append('=');
+        sb.append(((this.label77 == null)?"<null>":this.label77));
+        sb.append(',');
+        sb.append("label72");
+        sb.append('=');
+        sb.append(((this.label72 == null)?"<null>":this.label72));
+        sb.append(',');
+        sb.append("label71");
+        sb.append('=');
+        sb.append(((this.label71 == null)?"<null>":this.label71));
+        sb.append(',');
+        sb.append("label70");
+        sb.append('=');
+        sb.append(((this.label70 == null)?"<null>":this.label70));
         sb.append(',');
         sb.append("displayPrntForm");
         sb.append('=');
@@ -8802,6 +12821,46 @@ public class ProcessSubmissionControl100PostRequest {
         sb.append("displaySubmitTime");
         sb.append('=');
         sb.append(((this.displaySubmitTime == null)?"<null>":this.displaySubmitTime));
+        sb.append(',');
+        sb.append("label98");
+        sb.append('=');
+        sb.append(((this.label98 == null)?"<null>":this.label98));
+        sb.append(',');
+        sb.append("label97");
+        sb.append('=');
+        sb.append(((this.label97 == null)?"<null>":this.label97));
+        sb.append(',');
+        sb.append("label96");
+        sb.append('=');
+        sb.append(((this.label96 == null)?"<null>":this.label96));
+        sb.append(',');
+        sb.append("label95");
+        sb.append('=');
+        sb.append(((this.label95 == null)?"<null>":this.label95));
+        sb.append(',');
+        sb.append("label99");
+        sb.append('=');
+        sb.append(((this.label99 == null)?"<null>":this.label99));
+        sb.append(',');
+        sb.append("label90");
+        sb.append('=');
+        sb.append(((this.label90 == null)?"<null>":this.label90));
+        sb.append(',');
+        sb.append("label94");
+        sb.append('=');
+        sb.append(((this.label94 == null)?"<null>":this.label94));
+        sb.append(',');
+        sb.append("label93");
+        sb.append('=');
+        sb.append(((this.label93 == null)?"<null>":this.label93));
+        sb.append(',');
+        sb.append("label92");
+        sb.append('=');
+        sb.append(((this.label92 == null)?"<null>":this.label92));
+        sb.append(',');
+        sb.append("label91");
+        sb.append('=');
+        sb.append(((this.label91 == null)?"<null>":this.label91));
         sb.append(',');
         sb.append("displayFontSize");
         sb.append('=');
@@ -9039,14 +13098,18 @@ public class ProcessSubmissionControl100PostRequest {
     public int hashCode() {
         int result = 1;
         result = ((result* 31)+((this.value6 == null)? 0 :this.value6 .hashCode()));
+        result = ((result* 31)+((this.label29 == null)? 0 :this.label29 .hashCode()));
         result = ((result* 31)+((this.value51 == null)? 0 :this.value51 .hashCode()));
         result = ((result* 31)+((this.value5 == null)? 0 :this.value5 .hashCode()));
+        result = ((result* 31)+((this.label28 == null)? 0 :this.label28 .hashCode()));
         result = ((result* 31)+((this.number49 == null)? 0 :this.number49 .hashCode()));
         result = ((result* 31)+((this.value50 == null)? 0 :this.value50 .hashCode()));
         result = ((result* 31)+((this.value8 == null)? 0 :this.value8 .hashCode()));
+        result = ((result* 31)+((this.label27 == null)? 0 :this.label27 .hashCode()));
         result = ((result* 31)+((this.number48 == null)? 0 :this.number48 .hashCode()));
         result = ((result* 31)+((this.value53 == null)? 0 :this.value53 .hashCode()));
         result = ((result* 31)+((this.value7 == null)? 0 :this.value7 .hashCode()));
+        result = ((result* 31)+((this.label26 == null)? 0 :this.label26 .hashCode()));
         result = ((result* 31)+((this.number47 == null)? 0 :this.number47 .hashCode()));
         result = ((result* 31)+((this.value52 == null)? 0 :this.value52 .hashCode()));
         result = ((result* 31)+((this.value2 == null)? 0 :this.value2 .hashCode()));
@@ -9057,31 +13120,53 @@ public class ProcessSubmissionControl100PostRequest {
         result = ((result* 31)+((this.number44 == null)? 0 :this.number44 .hashCode()));
         result = ((result* 31)+((this.value3 == null)? 0 :this.value3 .hashCode()));
         result = ((result* 31)+((this.number43 == null)? 0 :this.number43 .hashCode()));
+        result = ((result* 31)+((this.label21 == null)? 0 :this.label21 .hashCode()));
         result = ((result* 31)+((this.number42 == null)? 0 :this.number42 .hashCode()));
+        result = ((result* 31)+((this.label20 == null)? 0 :this.label20 .hashCode()));
         result = ((result* 31)+((this.number41 == null)? 0 :this.number41 .hashCode()));
         result = ((result* 31)+((this.number40 == null)? 0 :this.number40 .hashCode()));
+        result = ((result* 31)+((this.label25 == null)? 0 :this.label25 .hashCode()));
         result = ((result* 31)+((this.value9 == null)? 0 :this.value9 .hashCode()));
+        result = ((result* 31)+((this.label24 == null)? 0 :this.label24 .hashCode()));
+        result = ((result* 31)+((this.label23 == null)? 0 :this.label23 .hashCode()));
+        result = ((result* 31)+((this.label22 == null)? 0 :this.label22 .hashCode()));
+        result = ((result* 31)+((this.label4 == null)? 0 :this.label4 .hashCode()));
+        result = ((result* 31)+((this.label5 == null)? 0 :this.label5 .hashCode()));
+        result = ((result* 31)+((this.label6 == null)? 0 :this.label6 .hashCode()));
+        result = ((result* 31)+((this.label7 == null)? 0 :this.label7 .hashCode()));
+        result = ((result* 31)+((this.label8 == null)? 0 :this.label8 .hashCode()));
+        result = ((result* 31)+((this.label9 == null)? 0 :this.label9 .hashCode()));
         result = ((result* 31)+((this.value59 == null)? 0 :this.value59 .hashCode()));
         result = ((result* 31)+((this.value58 == null)? 0 :this.value58 .hashCode()));
         result = ((result* 31)+((this.value55 == null)? 0 :this.value55 .hashCode()));
         result = ((result* 31)+((this.value54 == null)? 0 :this.value54 .hashCode()));
         result = ((result* 31)+((this.value57 == null)? 0 :this.value57 .hashCode()));
         result = ((result* 31)+((this.value56 == null)? 0 :this.value56 .hashCode()));
+        result = ((result* 31)+((this.label18 == null)? 0 :this.label18 .hashCode()));
         result = ((result* 31)+((this.value62 == null)? 0 :this.value62 .hashCode()));
+        result = ((result* 31)+((this.label17 == null)? 0 :this.label17 .hashCode()));
         result = ((result* 31)+((this.value61 == null)? 0 :this.value61 .hashCode()));
+        result = ((result* 31)+((this.label16 == null)? 0 :this.label16 .hashCode()));
         result = ((result* 31)+((this.number59 == null)? 0 :this.number59 .hashCode()));
         result = ((result* 31)+((this.value64 == null)? 0 :this.value64 .hashCode()));
+        result = ((result* 31)+((this.label15 == null)? 0 :this.label15 .hashCode()));
         result = ((result* 31)+((this.number58 == null)? 0 :this.number58 .hashCode()));
         result = ((result* 31)+((this.value63 == null)? 0 :this.value63 .hashCode()));
         result = ((result* 31)+((this.number57 == null)? 0 :this.number57 .hashCode()));
         result = ((result* 31)+((this.number56 == null)? 0 :this.number56 .hashCode()));
         result = ((result* 31)+((this.number55 == null)? 0 :this.number55 .hashCode()));
         result = ((result* 31)+((this.value60 == null)? 0 :this.value60 .hashCode()));
+        result = ((result* 31)+((this.label19 == null)? 0 :this.label19 .hashCode()));
         result = ((result* 31)+((this.number54 == null)? 0 :this.number54 .hashCode()));
+        result = ((result* 31)+((this.label10 == null)? 0 :this.label10 .hashCode()));
         result = ((result* 31)+((this.number53 == null)? 0 :this.number53 .hashCode()));
         result = ((result* 31)+((this.number52 == null)? 0 :this.number52 .hashCode()));
         result = ((result* 31)+((this.number51 == null)? 0 :this.number51 .hashCode()));
         result = ((result* 31)+((this.number50 == null)? 0 :this.number50 .hashCode()));
+        result = ((result* 31)+((this.label14 == null)? 0 :this.label14 .hashCode()));
+        result = ((result* 31)+((this.label13 == null)? 0 :this.label13 .hashCode()));
+        result = ((result* 31)+((this.label12 == null)? 0 :this.label12 .hashCode()));
+        result = ((result* 31)+((this.label11 == null)? 0 :this.label11 .hashCode()));
         result = ((result* 31)+((this.displayPrntCode == null)? 0 :this.displayPrntCode.hashCode()));
         result = ((result* 31)+((this.displayStorageDays == null)? 0 :this.displayStorageDays.hashCode()));
         result = ((result* 31)+((this.value69 == null)? 0 :this.value69 .hashCode()));
@@ -9091,18 +13176,28 @@ public class ProcessSubmissionControl100PostRequest {
         result = ((result* 31)+((this.value68 == null)? 0 :this.value68 .hashCode()));
         result = ((result* 31)+((this.value67 == null)? 0 :this.value67 .hashCode()));
         result = ((result* 31)+((this.value31 == null)? 0 :this.value31 .hashCode()));
+        result = ((result* 31)+((this.label49 == null)? 0 :this.label49 .hashCode()));
         result = ((result* 31)+((this.value30 == null)? 0 :this.value30 .hashCode()));
+        result = ((result* 31)+((this.label48 == null)? 0 :this.label48 .hashCode()));
         result = ((result* 31)+((this.number69 == null)? 0 :this.number69 .hashCode()));
         result = ((result* 31)+((this.number68 == null)? 0 :this.number68 .hashCode()));
         result = ((result* 31)+((this.number67 == null)? 0 :this.number67 .hashCode()));
         result = ((result* 31)+((this.number66 == null)? 0 :this.number66 .hashCode()));
         result = ((result* 31)+((this.submitJprmCode == null)? 0 :this.submitJprmCode.hashCode()));
         result = ((result* 31)+((this.number65 == null)? 0 :this.number65 .hashCode()));
+        result = ((result* 31)+((this.label43 == null)? 0 :this.label43 .hashCode()));
         result = ((result* 31)+((this.number64 == null)? 0 :this.number64 .hashCode()));
+        result = ((result* 31)+((this.label42 == null)? 0 :this.label42 .hashCode()));
         result = ((result* 31)+((this.number63 == null)? 0 :this.number63 .hashCode()));
+        result = ((result* 31)+((this.label41 == null)? 0 :this.label41 .hashCode()));
         result = ((result* 31)+((this.number62 == null)? 0 :this.number62 .hashCode()));
+        result = ((result* 31)+((this.label40 == null)? 0 :this.label40 .hashCode()));
         result = ((result* 31)+((this.number61 == null)? 0 :this.number61 .hashCode()));
+        result = ((result* 31)+((this.label47 == null)? 0 :this.label47 .hashCode()));
         result = ((result* 31)+((this.number60 == null)? 0 :this.number60 .hashCode()));
+        result = ((result* 31)+((this.label46 == null)? 0 :this.label46 .hashCode()));
+        result = ((result* 31)+((this.label45 == null)? 0 :this.label45 .hashCode()));
+        result = ((result* 31)+((this.label44 == null)? 0 :this.label44 .hashCode()));
         result = ((result* 31)+((this.value37 == null)? 0 :this.value37 .hashCode()));
         result = ((result* 31)+((this.value36 == null)? 0 :this.value36 .hashCode()));
         result = ((result* 31)+((this.value39 == null)? 0 :this.value39 .hashCode()));
@@ -9112,18 +13207,31 @@ public class ProcessSubmissionControl100PostRequest {
         result = ((result* 31)+((this.value35 == null)? 0 :this.value35 .hashCode()));
         result = ((result* 31)+((this.value34 == null)? 0 :this.value34 .hashCode()));
         result = ((result* 31)+((this.value40 == null)? 0 :this.value40 .hashCode()));
+        result = ((result* 31)+((this.label39 == null)? 0 :this.label39 .hashCode()));
+        result = ((result* 31)+((this.label38 == null)? 0 :this.label38 .hashCode()));
         result = ((result* 31)+((this.value42 == null)? 0 :this.value42 .hashCode()));
+        result = ((result* 31)+((this.label37 == null)? 0 :this.label37 .hashCode()));
         result = ((result* 31)+((this.value41 == null)? 0 :this.value41 .hashCode()));
         result = ((result* 31)+((this.number79 == null)? 0 :this.number79 .hashCode()));
         result = ((result* 31)+((this.number78 == null)? 0 :this.number78 .hashCode()));
         result = ((result* 31)+((this.number77 == null)? 0 :this.number77 .hashCode()));
         result = ((result* 31)+((this.number76 == null)? 0 :this.number76 .hashCode()));
+        result = ((result* 31)+((this.label32 == null)? 0 :this.label32 .hashCode()));
         result = ((result* 31)+((this.number75 == null)? 0 :this.number75 .hashCode()));
+        result = ((result* 31)+((this.label31 == null)? 0 :this.label31 .hashCode()));
         result = ((result* 31)+((this.number74 == null)? 0 :this.number74 .hashCode()));
+        result = ((result* 31)+((this.label30 == null)? 0 :this.label30 .hashCode()));
         result = ((result* 31)+((this.number73 == null)? 0 :this.number73 .hashCode()));
         result = ((result* 31)+((this.number72 == null)? 0 :this.number72 .hashCode()));
+        result = ((result* 31)+((this.label36 == null)? 0 :this.label36 .hashCode()));
         result = ((result* 31)+((this.number71 == null)? 0 :this.number71 .hashCode()));
+        result = ((result* 31)+((this.label1 == null)? 0 :this.label1 .hashCode()));
+        result = ((result* 31)+((this.label35 == null)? 0 :this.label35 .hashCode()));
         result = ((result* 31)+((this.number70 == null)? 0 :this.number70 .hashCode()));
+        result = ((result* 31)+((this.label2 == null)? 0 :this.label2 .hashCode()));
+        result = ((result* 31)+((this.label34 == null)? 0 :this.label34 .hashCode()));
+        result = ((result* 31)+((this.label3 == null)? 0 :this.label3 .hashCode()));
+        result = ((result* 31)+((this.label33 == null)? 0 :this.label33 .hashCode()));
         result = ((result* 31)+((this.displaySubmitInd == null)? 0 :this.displaySubmitInd.hashCode()));
         result = ((result* 31)+((this.value48 == null)? 0 :this.value48 .hashCode()));
         result = ((result* 31)+((this.value47 == null)? 0 :this.value47 .hashCode()));
@@ -9132,8 +13240,18 @@ public class ProcessSubmissionControl100PostRequest {
         result = ((result* 31)+((this.value43 == null)? 0 :this.value43 .hashCode()));
         result = ((result* 31)+((this.value46 == null)? 0 :this.value46 .hashCode()));
         result = ((result* 31)+((this.value45 == null)? 0 :this.value45 .hashCode()));
+        result = ((result* 31)+((this.label65 == null)? 0 :this.label65 .hashCode()));
+        result = ((result* 31)+((this.label64 == null)? 0 :this.label64 .hashCode()));
+        result = ((result* 31)+((this.label63 == null)? 0 :this.label63 .hashCode()));
+        result = ((result* 31)+((this.label62 == null)? 0 :this.label62 .hashCode()));
+        result = ((result* 31)+((this.label69 == null)? 0 :this.label69 .hashCode()));
+        result = ((result* 31)+((this.label68 == null)? 0 :this.label68 .hashCode()));
+        result = ((result* 31)+((this.label67 == null)? 0 :this.label67 .hashCode()));
+        result = ((result* 31)+((this.label66 == null)? 0 :this.label66 .hashCode()));
         result = ((result* 31)+((this.value19 == null)? 0 :this.value19 .hashCode()));
+        result = ((result* 31)+((this.label61 == null)? 0 :this.label61 .hashCode()));
         result = ((result* 31)+((this.value18 == null)? 0 :this.value18 .hashCode()));
+        result = ((result* 31)+((this.label60 == null)? 0 :this.label60 .hashCode()));
         result = ((result* 31)+((this.value15 == null)? 0 :this.value15 .hashCode()));
         result = ((result* 31)+((this.value14 == null)? 0 :this.value14 .hashCode()));
         result = ((result* 31)+((this.value17 == null)? 0 :this.value17 .hashCode()));
@@ -9147,10 +13265,20 @@ public class ProcessSubmissionControl100PostRequest {
         result = ((result* 31)+((this.number15 == null)? 0 :this.number15 .hashCode()));
         result = ((result* 31)+((this.value20 == null)? 0 :this.value20 .hashCode()));
         result = ((result* 31)+((this.number14 == null)? 0 :this.number14 .hashCode()));
+        result = ((result* 31)+((this.label59 == null)? 0 :this.label59 .hashCode()));
         result = ((result* 31)+((this.number13 == null)? 0 :this.number13 .hashCode()));
         result = ((result* 31)+((this.number12 == null)? 0 :this.number12 .hashCode()));
         result = ((result* 31)+((this.number11 == null)? 0 :this.number11 .hashCode()));
         result = ((result* 31)+((this.number10 == null)? 0 :this.number10 .hashCode()));
+        result = ((result* 31)+((this.label54 == null)? 0 :this.label54 .hashCode()));
+        result = ((result* 31)+((this.label53 == null)? 0 :this.label53 .hashCode()));
+        result = ((result* 31)+((this.label52 == null)? 0 :this.label52 .hashCode()));
+        result = ((result* 31)+((this.label51 == null)? 0 :this.label51 .hashCode()));
+        result = ((result* 31)+((this.label58 == null)? 0 :this.label58 .hashCode()));
+        result = ((result* 31)+((this.label57 == null)? 0 :this.label57 .hashCode()));
+        result = ((result* 31)+((this.label56 == null)? 0 :this.label56 .hashCode()));
+        result = ((result* 31)+((this.label55 == null)? 0 :this.label55 .hashCode()));
+        result = ((result* 31)+((this.label50 == null)? 0 :this.label50 .hashCode()));
         result = ((result* 31)+((this.value29 == null)? 0 :this.value29 .hashCode()));
         result = ((result* 31)+((this.displaySaveDefaults == null)? 0 :this.displaySaveDefaults.hashCode()));
         result = ((result* 31)+((this.value26 == null)? 0 :this.value26 .hashCode()));
@@ -9173,15 +13301,25 @@ public class ProcessSubmissionControl100PostRequest {
         result = ((result* 31)+((this.number21 == null)? 0 :this.number21 .hashCode()));
         result = ((result* 31)+((this.number3 == null)? 0 :this.number3 .hashCode()));
         result = ((result* 31)+((this.number20 == null)? 0 :this.number20 .hashCode()));
+        result = ((result* 31)+((this.label87 == null)? 0 :this.label87 .hashCode()));
         result = ((result* 31)+((this.number4 == null)? 0 :this.number4 .hashCode()));
+        result = ((result* 31)+((this.label86 == null)? 0 :this.label86 .hashCode()));
         result = ((result* 31)+((this.number1 == null)? 0 :this.number1 .hashCode()));
+        result = ((result* 31)+((this.label85 == null)? 0 :this.label85 .hashCode()));
         result = ((result* 31)+((this.number2 == null)? 0 :this.number2 .hashCode()));
+        result = ((result* 31)+((this.label84 == null)? 0 :this.label84 .hashCode()));
         result = ((result* 31)+((this.number7 == null)? 0 :this.number7 .hashCode()));
         result = ((result* 31)+((this.number8 == null)? 0 :this.number8 .hashCode()));
         result = ((result* 31)+((this.number5 == null)? 0 :this.number5 .hashCode()));
+        result = ((result* 31)+((this.label89 == null)? 0 :this.label89 .hashCode()));
         result = ((result* 31)+((this.number6 == null)? 0 :this.number6 .hashCode()));
+        result = ((result* 31)+((this.label88 == null)? 0 :this.label88 .hashCode()));
         result = ((result* 31)+((this.number9 == null)? 0 :this.number9 .hashCode()));
+        result = ((result* 31)+((this.label83 == null)? 0 :this.label83 .hashCode()));
+        result = ((result* 31)+((this.label82 == null)? 0 :this.label82 .hashCode()));
         result = ((result* 31)+((this.displayPdfFont == null)? 0 :this.displayPdfFont.hashCode()));
+        result = ((result* 31)+((this.label81 == null)? 0 :this.label81 .hashCode()));
+        result = ((result* 31)+((this.label80 == null)? 0 :this.label80 .hashCode()));
         result = ((result* 31)+((this.number29 == null)? 0 :this.number29 .hashCode()));
         result = ((result* 31)+((this.number39 == null)? 0 :this.number39 .hashCode()));
         result = ((result* 31)+((this.number38 == null)? 0 :this.number38 .hashCode()));
@@ -9192,10 +13330,30 @@ public class ProcessSubmissionControl100PostRequest {
         result = ((result* 31)+((this.number33 == null)? 0 :this.number33 .hashCode()));
         result = ((result* 31)+((this.number32 == null)? 0 :this.number32 .hashCode()));
         result = ((result* 31)+((this.number31 == null)? 0 :this.number31 .hashCode()));
+        result = ((result* 31)+((this.label76 == null)? 0 :this.label76 .hashCode()));
         result = ((result* 31)+((this.number30 == null)? 0 :this.number30 .hashCode()));
+        result = ((result* 31)+((this.label75 == null)? 0 :this.label75 .hashCode()));
+        result = ((result* 31)+((this.label74 == null)? 0 :this.label74 .hashCode()));
+        result = ((result* 31)+((this.label73 == null)? 0 :this.label73 .hashCode()));
+        result = ((result* 31)+((this.label79 == null)? 0 :this.label79 .hashCode()));
+        result = ((result* 31)+((this.label78 == null)? 0 :this.label78 .hashCode()));
+        result = ((result* 31)+((this.label77 == null)? 0 :this.label77 .hashCode()));
+        result = ((result* 31)+((this.label72 == null)? 0 :this.label72 .hashCode()));
+        result = ((result* 31)+((this.label71 == null)? 0 :this.label71 .hashCode()));
+        result = ((result* 31)+((this.label70 == null)? 0 :this.label70 .hashCode()));
         result = ((result* 31)+((this.displayPrntForm == null)? 0 :this.displayPrntForm.hashCode()));
         result = ((result* 31)+((this.jprmCode == null)? 0 :this.jprmCode.hashCode()));
         result = ((result* 31)+((this.displaySubmitTime == null)? 0 :this.displaySubmitTime.hashCode()));
+        result = ((result* 31)+((this.label98 == null)? 0 :this.label98 .hashCode()));
+        result = ((result* 31)+((this.label97 == null)? 0 :this.label97 .hashCode()));
+        result = ((result* 31)+((this.label96 == null)? 0 :this.label96 .hashCode()));
+        result = ((result* 31)+((this.label95 == null)? 0 :this.label95 .hashCode()));
+        result = ((result* 31)+((this.label99 == null)? 0 :this.label99 .hashCode()));
+        result = ((result* 31)+((this.label90 == null)? 0 :this.label90 .hashCode()));
+        result = ((result* 31)+((this.label94 == null)? 0 :this.label94 .hashCode()));
+        result = ((result* 31)+((this.label93 == null)? 0 :this.label93 .hashCode()));
+        result = ((result* 31)+((this.label92 == null)? 0 :this.label92 .hashCode()));
+        result = ((result* 31)+((this.label91 == null)? 0 :this.label91 .hashCode()));
         result = ((result* 31)+((this.displayFontSize == null)? 0 :this.displayFontSize.hashCode()));
         result = ((result* 31)+((this.value96 == null)? 0 :this.value96 .hashCode()));
         result = ((result* 31)+((this.value97 == null)? 0 :this.value97 .hashCode()));
@@ -9263,7 +13421,7 @@ public class ProcessSubmissionControl100PostRequest {
             return false;
         }
         ProcessSubmissionControl100PostRequest rhs = ((ProcessSubmissionControl100PostRequest) other);
-        return ((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((this.value6 == rhs.value6)||((this.value6 != null)&&this.value6 .equals(rhs.value6)))&&((this.value51 == rhs.value51)||((this.value51 != null)&&this.value51 .equals(rhs.value51))))&&((this.value5 == rhs.value5)||((this.value5 != null)&&this.value5 .equals(rhs.value5))))&&((this.number49 == rhs.number49)||((this.number49 != null)&&this.number49 .equals(rhs.number49))))&&((this.value50 == rhs.value50)||((this.value50 != null)&&this.value50 .equals(rhs.value50))))&&((this.value8 == rhs.value8)||((this.value8 != null)&&this.value8 .equals(rhs.value8))))&&((this.number48 == rhs.number48)||((this.number48 != null)&&this.number48 .equals(rhs.number48))))&&((this.value53 == rhs.value53)||((this.value53 != null)&&this.value53 .equals(rhs.value53))))&&((this.value7 == rhs.value7)||((this.value7 != null)&&this.value7 .equals(rhs.value7))))&&((this.number47 == rhs.number47)||((this.number47 != null)&&this.number47 .equals(rhs.number47))))&&((this.value52 == rhs.value52)||((this.value52 != null)&&this.value52 .equals(rhs.value52))))&&((this.value2 == rhs.value2)||((this.value2 != null)&&this.value2 .equals(rhs.value2))))&&((this.number46 == rhs.number46)||((this.number46 != null)&&this.number46 .equals(rhs.number46))))&&((this.value1 == rhs.value1)||((this.value1 != null)&&this.value1 .equals(rhs.value1))))&&((this.number45 == rhs.number45)||((this.number45 != null)&&this.number45 .equals(rhs.number45))))&&((this.value4 == rhs.value4)||((this.value4 != null)&&this.value4 .equals(rhs.value4))))&&((this.number44 == rhs.number44)||((this.number44 != null)&&this.number44 .equals(rhs.number44))))&&((this.value3 == rhs.value3)||((this.value3 != null)&&this.value3 .equals(rhs.value3))))&&((this.number43 == rhs.number43)||((this.number43 != null)&&this.number43 .equals(rhs.number43))))&&((this.number42 == rhs.number42)||((this.number42 != null)&&this.number42 .equals(rhs.number42))))&&((this.number41 == rhs.number41)||((this.number41 != null)&&this.number41 .equals(rhs.number41))))&&((this.number40 == rhs.number40)||((this.number40 != null)&&this.number40 .equals(rhs.number40))))&&((this.value9 == rhs.value9)||((this.value9 != null)&&this.value9 .equals(rhs.value9))))&&((this.value59 == rhs.value59)||((this.value59 != null)&&this.value59 .equals(rhs.value59))))&&((this.value58 == rhs.value58)||((this.value58 != null)&&this.value58 .equals(rhs.value58))))&&((this.value55 == rhs.value55)||((this.value55 != null)&&this.value55 .equals(rhs.value55))))&&((this.value54 == rhs.value54)||((this.value54 != null)&&this.value54 .equals(rhs.value54))))&&((this.value57 == rhs.value57)||((this.value57 != null)&&this.value57 .equals(rhs.value57))))&&((this.value56 == rhs.value56)||((this.value56 != null)&&this.value56 .equals(rhs.value56))))&&((this.value62 == rhs.value62)||((this.value62 != null)&&this.value62 .equals(rhs.value62))))&&((this.value61 == rhs.value61)||((this.value61 != null)&&this.value61 .equals(rhs.value61))))&&((this.number59 == rhs.number59)||((this.number59 != null)&&this.number59 .equals(rhs.number59))))&&((this.value64 == rhs.value64)||((this.value64 != null)&&this.value64 .equals(rhs.value64))))&&((this.number58 == rhs.number58)||((this.number58 != null)&&this.number58 .equals(rhs.number58))))&&((this.value63 == rhs.value63)||((this.value63 != null)&&this.value63 .equals(rhs.value63))))&&((this.number57 == rhs.number57)||((this.number57 != null)&&this.number57 .equals(rhs.number57))))&&((this.number56 == rhs.number56)||((this.number56 != null)&&this.number56 .equals(rhs.number56))))&&((this.number55 == rhs.number55)||((this.number55 != null)&&this.number55 .equals(rhs.number55))))&&((this.value60 == rhs.value60)||((this.value60 != null)&&this.value60 .equals(rhs.value60))))&&((this.number54 == rhs.number54)||((this.number54 != null)&&this.number54 .equals(rhs.number54))))&&((this.number53 == rhs.number53)||((this.number53 != null)&&this.number53 .equals(rhs.number53))))&&((this.number52 == rhs.number52)||((this.number52 != null)&&this.number52 .equals(rhs.number52))))&&((this.number51 == rhs.number51)||((this.number51 != null)&&this.number51 .equals(rhs.number51))))&&((this.number50 == rhs.number50)||((this.number50 != null)&&this.number50 .equals(rhs.number50))))&&((this.displayPrntCode == rhs.displayPrntCode)||((this.displayPrntCode!= null)&&this.displayPrntCode.equals(rhs.displayPrntCode))))&&((this.displayStorageDays == rhs.displayStorageDays)||((this.displayStorageDays!= null)&&this.displayStorageDays.equals(rhs.displayStorageDays))))&&((this.value69 == rhs.value69)||((this.value69 != null)&&this.value69 .equals(rhs.value69))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.value66 == rhs.value66)||((this.value66 != null)&&this.value66 .equals(rhs.value66))))&&((this.value65 == rhs.value65)||((this.value65 != null)&&this.value65 .equals(rhs.value65))))&&((this.value68 == rhs.value68)||((this.value68 != null)&&this.value68 .equals(rhs.value68))))&&((this.value67 == rhs.value67)||((this.value67 != null)&&this.value67 .equals(rhs.value67))))&&((this.value31 == rhs.value31)||((this.value31 != null)&&this.value31 .equals(rhs.value31))))&&((this.value30 == rhs.value30)||((this.value30 != null)&&this.value30 .equals(rhs.value30))))&&((this.number69 == rhs.number69)||((this.number69 != null)&&this.number69 .equals(rhs.number69))))&&((this.number68 == rhs.number68)||((this.number68 != null)&&this.number68 .equals(rhs.number68))))&&((this.number67 == rhs.number67)||((this.number67 != null)&&this.number67 .equals(rhs.number67))))&&((this.number66 == rhs.number66)||((this.number66 != null)&&this.number66 .equals(rhs.number66))))&&((this.submitJprmCode == rhs.submitJprmCode)||((this.submitJprmCode!= null)&&this.submitJprmCode.equals(rhs.submitJprmCode))))&&((this.number65 == rhs.number65)||((this.number65 != null)&&this.number65 .equals(rhs.number65))))&&((this.number64 == rhs.number64)||((this.number64 != null)&&this.number64 .equals(rhs.number64))))&&((this.number63 == rhs.number63)||((this.number63 != null)&&this.number63 .equals(rhs.number63))))&&((this.number62 == rhs.number62)||((this.number62 != null)&&this.number62 .equals(rhs.number62))))&&((this.number61 == rhs.number61)||((this.number61 != null)&&this.number61 .equals(rhs.number61))))&&((this.number60 == rhs.number60)||((this.number60 != null)&&this.number60 .equals(rhs.number60))))&&((this.value37 == rhs.value37)||((this.value37 != null)&&this.value37 .equals(rhs.value37))))&&((this.value36 == rhs.value36)||((this.value36 != null)&&this.value36 .equals(rhs.value36))))&&((this.value39 == rhs.value39)||((this.value39 != null)&&this.value39 .equals(rhs.value39))))&&((this.value38 == rhs.value38)||((this.value38 != null)&&this.value38 .equals(rhs.value38))))&&((this.value33 == rhs.value33)||((this.value33 != null)&&this.value33 .equals(rhs.value33))))&&((this.value32 == rhs.value32)||((this.value32 != null)&&this.value32 .equals(rhs.value32))))&&((this.value35 == rhs.value35)||((this.value35 != null)&&this.value35 .equals(rhs.value35))))&&((this.value34 == rhs.value34)||((this.value34 != null)&&this.value34 .equals(rhs.value34))))&&((this.value40 == rhs.value40)||((this.value40 != null)&&this.value40 .equals(rhs.value40))))&&((this.value42 == rhs.value42)||((this.value42 != null)&&this.value42 .equals(rhs.value42))))&&((this.value41 == rhs.value41)||((this.value41 != null)&&this.value41 .equals(rhs.value41))))&&((this.number79 == rhs.number79)||((this.number79 != null)&&this.number79 .equals(rhs.number79))))&&((this.number78 == rhs.number78)||((this.number78 != null)&&this.number78 .equals(rhs.number78))))&&((this.number77 == rhs.number77)||((this.number77 != null)&&this.number77 .equals(rhs.number77))))&&((this.number76 == rhs.number76)||((this.number76 != null)&&this.number76 .equals(rhs.number76))))&&((this.number75 == rhs.number75)||((this.number75 != null)&&this.number75 .equals(rhs.number75))))&&((this.number74 == rhs.number74)||((this.number74 != null)&&this.number74 .equals(rhs.number74))))&&((this.number73 == rhs.number73)||((this.number73 != null)&&this.number73 .equals(rhs.number73))))&&((this.number72 == rhs.number72)||((this.number72 != null)&&this.number72 .equals(rhs.number72))))&&((this.number71 == rhs.number71)||((this.number71 != null)&&this.number71 .equals(rhs.number71))))&&((this.number70 == rhs.number70)||((this.number70 != null)&&this.number70 .equals(rhs.number70))))&&((this.displaySubmitInd == rhs.displaySubmitInd)||((this.displaySubmitInd!= null)&&this.displaySubmitInd.equals(rhs.displaySubmitInd))))&&((this.value48 == rhs.value48)||((this.value48 != null)&&this.value48 .equals(rhs.value48))))&&((this.value47 == rhs.value47)||((this.value47 != null)&&this.value47 .equals(rhs.value47))))&&((this.value49 == rhs.value49)||((this.value49 != null)&&this.value49 .equals(rhs.value49))))&&((this.value44 == rhs.value44)||((this.value44 != null)&&this.value44 .equals(rhs.value44))))&&((this.value43 == rhs.value43)||((this.value43 != null)&&this.value43 .equals(rhs.value43))))&&((this.value46 == rhs.value46)||((this.value46 != null)&&this.value46 .equals(rhs.value46))))&&((this.value45 == rhs.value45)||((this.value45 != null)&&this.value45 .equals(rhs.value45))))&&((this.value19 == rhs.value19)||((this.value19 != null)&&this.value19 .equals(rhs.value19))))&&((this.value18 == rhs.value18)||((this.value18 != null)&&this.value18 .equals(rhs.value18))))&&((this.value15 == rhs.value15)||((this.value15 != null)&&this.value15 .equals(rhs.value15))))&&((this.value14 == rhs.value14)||((this.value14 != null)&&this.value14 .equals(rhs.value14))))&&((this.value17 == rhs.value17)||((this.value17 != null)&&this.value17 .equals(rhs.value17))))&&((this.value16 == rhs.value16)||((this.value16 != null)&&this.value16 .equals(rhs.value16))))&&((this.value11 == rhs.value11)||((this.value11 != null)&&this.value11 .equals(rhs.value11))))&&((this.value10 == rhs.value10)||((this.value10 != null)&&this.value10 .equals(rhs.value10))))&&((this.value13 == rhs.value13)||((this.value13 != null)&&this.value13 .equals(rhs.value13))))&&((this.value12 == rhs.value12)||((this.value12 != null)&&this.value12 .equals(rhs.value12))))&&((this.number17 == rhs.number17)||((this.number17 != null)&&this.number17 .equals(rhs.number17))))&&((this.number16 == rhs.number16)||((this.number16 != null)&&this.number16 .equals(rhs.number16))))&&((this.number15 == rhs.number15)||((this.number15 != null)&&this.number15 .equals(rhs.number15))))&&((this.value20 == rhs.value20)||((this.value20 != null)&&this.value20 .equals(rhs.value20))))&&((this.number14 == rhs.number14)||((this.number14 != null)&&this.number14 .equals(rhs.number14))))&&((this.number13 == rhs.number13)||((this.number13 != null)&&this.number13 .equals(rhs.number13))))&&((this.number12 == rhs.number12)||((this.number12 != null)&&this.number12 .equals(rhs.number12))))&&((this.number11 == rhs.number11)||((this.number11 != null)&&this.number11 .equals(rhs.number11))))&&((this.number10 == rhs.number10)||((this.number10 != null)&&this.number10 .equals(rhs.number10))))&&((this.value29 == rhs.value29)||((this.value29 != null)&&this.value29 .equals(rhs.value29))))&&((this.displaySaveDefaults == rhs.displaySaveDefaults)||((this.displaySaveDefaults!= null)&&this.displaySaveDefaults.equals(rhs.displaySaveDefaults))))&&((this.value26 == rhs.value26)||((this.value26 != null)&&this.value26 .equals(rhs.value26))))&&((this.value25 == rhs.value25)||((this.value25 != null)&&this.value25 .equals(rhs.value25))))&&((this.value28 == rhs.value28)||((this.value28 != null)&&this.value28 .equals(rhs.value28))))&&((this.value27 == rhs.value27)||((this.value27 != null)&&this.value27 .equals(rhs.value27))))&&((this.value22 == rhs.value22)||((this.value22 != null)&&this.value22 .equals(rhs.value22))))&&((this.value21 == rhs.value21)||((this.value21 != null)&&this.value21 .equals(rhs.value21))))&&((this.number19 == rhs.number19)||((this.number19 != null)&&this.number19 .equals(rhs.number19))))&&((this.value24 == rhs.value24)||((this.value24 != null)&&this.value24 .equals(rhs.value24))))&&((this.number18 == rhs.number18)||((this.number18 != null)&&this.number18 .equals(rhs.number18))))&&((this.value23 == rhs.value23)||((this.value23 != null)&&this.value23 .equals(rhs.value23))))&&((this.number28 == rhs.number28)||((this.number28 != null)&&this.number28 .equals(rhs.number28))))&&((this.number27 == rhs.number27)||((this.number27 != null)&&this.number27 .equals(rhs.number27))))&&((this.number26 == rhs.number26)||((this.number26 != null)&&this.number26 .equals(rhs.number26))))&&((this.number25 == rhs.number25)||((this.number25 != null)&&this.number25 .equals(rhs.number25))))&&((this.number24 == rhs.number24)||((this.number24 != null)&&this.number24 .equals(rhs.number24))))&&((this.number23 == rhs.number23)||((this.number23 != null)&&this.number23 .equals(rhs.number23))))&&((this.number22 == rhs.number22)||((this.number22 != null)&&this.number22 .equals(rhs.number22))))&&((this.number21 == rhs.number21)||((this.number21 != null)&&this.number21 .equals(rhs.number21))))&&((this.number3 == rhs.number3)||((this.number3 != null)&&this.number3 .equals(rhs.number3))))&&((this.number20 == rhs.number20)||((this.number20 != null)&&this.number20 .equals(rhs.number20))))&&((this.number4 == rhs.number4)||((this.number4 != null)&&this.number4 .equals(rhs.number4))))&&((this.number1 == rhs.number1)||((this.number1 != null)&&this.number1 .equals(rhs.number1))))&&((this.number2 == rhs.number2)||((this.number2 != null)&&this.number2 .equals(rhs.number2))))&&((this.number7 == rhs.number7)||((this.number7 != null)&&this.number7 .equals(rhs.number7))))&&((this.number8 == rhs.number8)||((this.number8 != null)&&this.number8 .equals(rhs.number8))))&&((this.number5 == rhs.number5)||((this.number5 != null)&&this.number5 .equals(rhs.number5))))&&((this.number6 == rhs.number6)||((this.number6 != null)&&this.number6 .equals(rhs.number6))))&&((this.number9 == rhs.number9)||((this.number9 != null)&&this.number9 .equals(rhs.number9))))&&((this.displayPdfFont == rhs.displayPdfFont)||((this.displayPdfFont!= null)&&this.displayPdfFont.equals(rhs.displayPdfFont))))&&((this.number29 == rhs.number29)||((this.number29 != null)&&this.number29 .equals(rhs.number29))))&&((this.number39 == rhs.number39)||((this.number39 != null)&&this.number39 .equals(rhs.number39))))&&((this.number38 == rhs.number38)||((this.number38 != null)&&this.number38 .equals(rhs.number38))))&&((this.number37 == rhs.number37)||((this.number37 != null)&&this.number37 .equals(rhs.number37))))&&((this.number36 == rhs.number36)||((this.number36 != null)&&this.number36 .equals(rhs.number36))))&&((this.number35 == rhs.number35)||((this.number35 != null)&&this.number35 .equals(rhs.number35))))&&((this.number34 == rhs.number34)||((this.number34 != null)&&this.number34 .equals(rhs.number34))))&&((this.number33 == rhs.number33)||((this.number33 != null)&&this.number33 .equals(rhs.number33))))&&((this.number32 == rhs.number32)||((this.number32 != null)&&this.number32 .equals(rhs.number32))))&&((this.number31 == rhs.number31)||((this.number31 != null)&&this.number31 .equals(rhs.number31))))&&((this.number30 == rhs.number30)||((this.number30 != null)&&this.number30 .equals(rhs.number30))))&&((this.displayPrntForm == rhs.displayPrntForm)||((this.displayPrntForm!= null)&&this.displayPrntForm.equals(rhs.displayPrntForm))))&&((this.jprmCode == rhs.jprmCode)||((this.jprmCode!= null)&&this.jprmCode.equals(rhs.jprmCode))))&&((this.displaySubmitTime == rhs.displaySubmitTime)||((this.displaySubmitTime!= null)&&this.displaySubmitTime.equals(rhs.displaySubmitTime))))&&((this.displayFontSize == rhs.displayFontSize)||((this.displayFontSize!= null)&&this.displayFontSize.equals(rhs.displayFontSize))))&&((this.value96 == rhs.value96)||((this.value96 != null)&&this.value96 .equals(rhs.value96))))&&((this.value97 == rhs.value97)||((this.value97 != null)&&this.value97 .equals(rhs.value97))))&&((this.value94 == rhs.value94)||((this.value94 != null)&&this.value94 .equals(rhs.value94))))&&((this.value95 == rhs.value95)||((this.value95 != null)&&this.value95 .equals(rhs.value95))))&&((this.value92 == rhs.value92)||((this.value92 != null)&&this.value92 .equals(rhs.value92))))&&((this.number89 == rhs.number89)||((this.number89 != null)&&this.number89 .equals(rhs.number89))))&&((this.value93 == rhs.value93)||((this.value93 != null)&&this.value93 .equals(rhs.value93))))&&((this.number88 == rhs.number88)||((this.number88 != null)&&this.number88 .equals(rhs.number88))))&&((this.value90 == rhs.value90)||((this.value90 != null)&&this.value90 .equals(rhs.value90))))&&((this.number87 == rhs.number87)||((this.number87 != null)&&this.number87 .equals(rhs.number87))))&&((this.value91 == rhs.value91)||((this.value91 != null)&&this.value91 .equals(rhs.value91))))&&((this.number86 == rhs.number86)||((this.number86 != null)&&this.number86 .equals(rhs.number86))))&&((this.number85 == rhs.number85)||((this.number85 != null)&&this.number85 .equals(rhs.number85))))&&((this.number84 == rhs.number84)||((this.number84 != null)&&this.number84 .equals(rhs.number84))))&&((this.number83 == rhs.number83)||((this.number83 != null)&&this.number83 .equals(rhs.number83))))&&((this.number82 == rhs.number82)||((this.number82 != null)&&this.number82 .equals(rhs.number82))))&&((this.number81 == rhs.number81)||((this.number81 != null)&&this.number81 .equals(rhs.number81))))&&((this.number80 == rhs.number80)||((this.number80 != null)&&this.number80 .equals(rhs.number80))))&&((this.value98 == rhs.value98)||((this.value98 != null)&&this.value98 .equals(rhs.value98))))&&((this.value99 == rhs.value99)||((this.value99 != null)&&this.value99 .equals(rhs.value99))))&&((this.number99 == rhs.number99)||((this.number99 != null)&&this.number99 .equals(rhs.number99))))&&((this.number98 == rhs.number98)||((this.number98 != null)&&this.number98 .equals(rhs.number98))))&&((this.number97 == rhs.number97)||((this.number97 != null)&&this.number97 .equals(rhs.number97))))&&((this.number96 == rhs.number96)||((this.number96 != null)&&this.number96 .equals(rhs.number96))))&&((this.number95 == rhs.number95)||((this.number95 != null)&&this.number95 .equals(rhs.number95))))&&((this.number94 == rhs.number94)||((this.number94 != null)&&this.number94 .equals(rhs.number94))))&&((this.number93 == rhs.number93)||((this.number93 != null)&&this.number93 .equals(rhs.number93))))&&((this.number92 == rhs.number92)||((this.number92 != null)&&this.number92 .equals(rhs.number92))))&&((this.number91 == rhs.number91)||((this.number91 != null)&&this.number91 .equals(rhs.number91))))&&((this.number90 == rhs.number90)||((this.number90 != null)&&this.number90 .equals(rhs.number90))))&&((this.displayMimeType == rhs.displayMimeType)||((this.displayMimeType!= null)&&this.displayMimeType.equals(rhs.displayMimeType))))&&((this.value74 == rhs.value74)||((this.value74 != null)&&this.value74 .equals(rhs.value74))))&&((this.value75 == rhs.value75)||((this.value75 != null)&&this.value75 .equals(rhs.value75))))&&((this.value72 == rhs.value72)||((this.value72 != null)&&this.value72 .equals(rhs.value72))))&&((this.value73 == rhs.value73)||((this.value73 != null)&&this.value73 .equals(rhs.value73))))&&((this.value70 == rhs.value70)||((this.value70 != null)&&this.value70 .equals(rhs.value70))))&&((this.value71 == rhs.value71)||((this.value71 != null)&&this.value71 .equals(rhs.value71))))&&((this.displayLineCount == rhs.displayLineCount)||((this.displayLineCount!= null)&&this.displayLineCount.equals(rhs.displayLineCount))))&&((this.value78 == rhs.value78)||((this.value78 != null)&&this.value78 .equals(rhs.value78))))&&((this.value79 == rhs.value79)||((this.value79 != null)&&this.value79 .equals(rhs.value79))))&&((this.value76 == rhs.value76)||((this.value76 != null)&&this.value76 .equals(rhs.value76))))&&((this.keyblckJob == rhs.keyblckJob)||((this.keyblckJob!= null)&&this.keyblckJob.equals(rhs.keyblckJob))))&&((this.value77 == rhs.value77)||((this.value77 != null)&&this.value77 .equals(rhs.value77))))&&((this.value85 == rhs.value85)||((this.value85 != null)&&this.value85 .equals(rhs.value85))))&&((this.value86 == rhs.value86)||((this.value86 != null)&&this.value86 .equals(rhs.value86))))&&((this.value83 == rhs.value83)||((this.value83 != null)&&this.value83 .equals(rhs.value83))))&&((this.value84 == rhs.value84)||((this.value84 != null)&&this.value84 .equals(rhs.value84))))&&((this.value81 == rhs.value81)||((this.value81 != null)&&this.value81 .equals(rhs.value81))))&&((this.value82 == rhs.value82)||((this.value82 != null)&&this.value82 .equals(rhs.value82))))&&((this.value80 == rhs.value80)||((this.value80 != null)&&this.value80 .equals(rhs.value80))))&&((this.submitJprmDesc == rhs.submitJprmDesc)||((this.submitJprmDesc!= null)&&this.submitJprmDesc.equals(rhs.submitJprmDesc))))&&((this.value89 == rhs.value89)||((this.value89 != null)&&this.value89 .equals(rhs.value89))))&&((this.value87 == rhs.value87)||((this.value87 != null)&&this.value87 .equals(rhs.value87))))&&((this.value88 == rhs.value88)||((this.value88 != null)&&this.value88 .equals(rhs.value88))));
+        return (((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((this.value6 == rhs.value6)||((this.value6 != null)&&this.value6 .equals(rhs.value6)))&&((this.label29 == rhs.label29)||((this.label29 != null)&&this.label29 .equals(rhs.label29))))&&((this.value51 == rhs.value51)||((this.value51 != null)&&this.value51 .equals(rhs.value51))))&&((this.value5 == rhs.value5)||((this.value5 != null)&&this.value5 .equals(rhs.value5))))&&((this.label28 == rhs.label28)||((this.label28 != null)&&this.label28 .equals(rhs.label28))))&&((this.number49 == rhs.number49)||((this.number49 != null)&&this.number49 .equals(rhs.number49))))&&((this.value50 == rhs.value50)||((this.value50 != null)&&this.value50 .equals(rhs.value50))))&&((this.value8 == rhs.value8)||((this.value8 != null)&&this.value8 .equals(rhs.value8))))&&((this.label27 == rhs.label27)||((this.label27 != null)&&this.label27 .equals(rhs.label27))))&&((this.number48 == rhs.number48)||((this.number48 != null)&&this.number48 .equals(rhs.number48))))&&((this.value53 == rhs.value53)||((this.value53 != null)&&this.value53 .equals(rhs.value53))))&&((this.value7 == rhs.value7)||((this.value7 != null)&&this.value7 .equals(rhs.value7))))&&((this.label26 == rhs.label26)||((this.label26 != null)&&this.label26 .equals(rhs.label26))))&&((this.number47 == rhs.number47)||((this.number47 != null)&&this.number47 .equals(rhs.number47))))&&((this.value52 == rhs.value52)||((this.value52 != null)&&this.value52 .equals(rhs.value52))))&&((this.value2 == rhs.value2)||((this.value2 != null)&&this.value2 .equals(rhs.value2))))&&((this.number46 == rhs.number46)||((this.number46 != null)&&this.number46 .equals(rhs.number46))))&&((this.value1 == rhs.value1)||((this.value1 != null)&&this.value1 .equals(rhs.value1))))&&((this.number45 == rhs.number45)||((this.number45 != null)&&this.number45 .equals(rhs.number45))))&&((this.value4 == rhs.value4)||((this.value4 != null)&&this.value4 .equals(rhs.value4))))&&((this.number44 == rhs.number44)||((this.number44 != null)&&this.number44 .equals(rhs.number44))))&&((this.value3 == rhs.value3)||((this.value3 != null)&&this.value3 .equals(rhs.value3))))&&((this.number43 == rhs.number43)||((this.number43 != null)&&this.number43 .equals(rhs.number43))))&&((this.label21 == rhs.label21)||((this.label21 != null)&&this.label21 .equals(rhs.label21))))&&((this.number42 == rhs.number42)||((this.number42 != null)&&this.number42 .equals(rhs.number42))))&&((this.label20 == rhs.label20)||((this.label20 != null)&&this.label20 .equals(rhs.label20))))&&((this.number41 == rhs.number41)||((this.number41 != null)&&this.number41 .equals(rhs.number41))))&&((this.number40 == rhs.number40)||((this.number40 != null)&&this.number40 .equals(rhs.number40))))&&((this.label25 == rhs.label25)||((this.label25 != null)&&this.label25 .equals(rhs.label25))))&&((this.value9 == rhs.value9)||((this.value9 != null)&&this.value9 .equals(rhs.value9))))&&((this.label24 == rhs.label24)||((this.label24 != null)&&this.label24 .equals(rhs.label24))))&&((this.label23 == rhs.label23)||((this.label23 != null)&&this.label23 .equals(rhs.label23))))&&((this.label22 == rhs.label22)||((this.label22 != null)&&this.label22 .equals(rhs.label22))))&&((this.label4 == rhs.label4)||((this.label4 != null)&&this.label4 .equals(rhs.label4))))&&((this.label5 == rhs.label5)||((this.label5 != null)&&this.label5 .equals(rhs.label5))))&&((this.label6 == rhs.label6)||((this.label6 != null)&&this.label6 .equals(rhs.label6))))&&((this.label7 == rhs.label7)||((this.label7 != null)&&this.label7 .equals(rhs.label7))))&&((this.label8 == rhs.label8)||((this.label8 != null)&&this.label8 .equals(rhs.label8))))&&((this.label9 == rhs.label9)||((this.label9 != null)&&this.label9 .equals(rhs.label9))))&&((this.value59 == rhs.value59)||((this.value59 != null)&&this.value59 .equals(rhs.value59))))&&((this.value58 == rhs.value58)||((this.value58 != null)&&this.value58 .equals(rhs.value58))))&&((this.value55 == rhs.value55)||((this.value55 != null)&&this.value55 .equals(rhs.value55))))&&((this.value54 == rhs.value54)||((this.value54 != null)&&this.value54 .equals(rhs.value54))))&&((this.value57 == rhs.value57)||((this.value57 != null)&&this.value57 .equals(rhs.value57))))&&((this.value56 == rhs.value56)||((this.value56 != null)&&this.value56 .equals(rhs.value56))))&&((this.label18 == rhs.label18)||((this.label18 != null)&&this.label18 .equals(rhs.label18))))&&((this.value62 == rhs.value62)||((this.value62 != null)&&this.value62 .equals(rhs.value62))))&&((this.label17 == rhs.label17)||((this.label17 != null)&&this.label17 .equals(rhs.label17))))&&((this.value61 == rhs.value61)||((this.value61 != null)&&this.value61 .equals(rhs.value61))))&&((this.label16 == rhs.label16)||((this.label16 != null)&&this.label16 .equals(rhs.label16))))&&((this.number59 == rhs.number59)||((this.number59 != null)&&this.number59 .equals(rhs.number59))))&&((this.value64 == rhs.value64)||((this.value64 != null)&&this.value64 .equals(rhs.value64))))&&((this.label15 == rhs.label15)||((this.label15 != null)&&this.label15 .equals(rhs.label15))))&&((this.number58 == rhs.number58)||((this.number58 != null)&&this.number58 .equals(rhs.number58))))&&((this.value63 == rhs.value63)||((this.value63 != null)&&this.value63 .equals(rhs.value63))))&&((this.number57 == rhs.number57)||((this.number57 != null)&&this.number57 .equals(rhs.number57))))&&((this.number56 == rhs.number56)||((this.number56 != null)&&this.number56 .equals(rhs.number56))))&&((this.number55 == rhs.number55)||((this.number55 != null)&&this.number55 .equals(rhs.number55))))&&((this.value60 == rhs.value60)||((this.value60 != null)&&this.value60 .equals(rhs.value60))))&&((this.label19 == rhs.label19)||((this.label19 != null)&&this.label19 .equals(rhs.label19))))&&((this.number54 == rhs.number54)||((this.number54 != null)&&this.number54 .equals(rhs.number54))))&&((this.label10 == rhs.label10)||((this.label10 != null)&&this.label10 .equals(rhs.label10))))&&((this.number53 == rhs.number53)||((this.number53 != null)&&this.number53 .equals(rhs.number53))))&&((this.number52 == rhs.number52)||((this.number52 != null)&&this.number52 .equals(rhs.number52))))&&((this.number51 == rhs.number51)||((this.number51 != null)&&this.number51 .equals(rhs.number51))))&&((this.number50 == rhs.number50)||((this.number50 != null)&&this.number50 .equals(rhs.number50))))&&((this.label14 == rhs.label14)||((this.label14 != null)&&this.label14 .equals(rhs.label14))))&&((this.label13 == rhs.label13)||((this.label13 != null)&&this.label13 .equals(rhs.label13))))&&((this.label12 == rhs.label12)||((this.label12 != null)&&this.label12 .equals(rhs.label12))))&&((this.label11 == rhs.label11)||((this.label11 != null)&&this.label11 .equals(rhs.label11))))&&((this.displayPrntCode == rhs.displayPrntCode)||((this.displayPrntCode!= null)&&this.displayPrntCode.equals(rhs.displayPrntCode))))&&((this.displayStorageDays == rhs.displayStorageDays)||((this.displayStorageDays!= null)&&this.displayStorageDays.equals(rhs.displayStorageDays))))&&((this.value69 == rhs.value69)||((this.value69 != null)&&this.value69 .equals(rhs.value69))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.value66 == rhs.value66)||((this.value66 != null)&&this.value66 .equals(rhs.value66))))&&((this.value65 == rhs.value65)||((this.value65 != null)&&this.value65 .equals(rhs.value65))))&&((this.value68 == rhs.value68)||((this.value68 != null)&&this.value68 .equals(rhs.value68))))&&((this.value67 == rhs.value67)||((this.value67 != null)&&this.value67 .equals(rhs.value67))))&&((this.value31 == rhs.value31)||((this.value31 != null)&&this.value31 .equals(rhs.value31))))&&((this.label49 == rhs.label49)||((this.label49 != null)&&this.label49 .equals(rhs.label49))))&&((this.value30 == rhs.value30)||((this.value30 != null)&&this.value30 .equals(rhs.value30))))&&((this.label48 == rhs.label48)||((this.label48 != null)&&this.label48 .equals(rhs.label48))))&&((this.number69 == rhs.number69)||((this.number69 != null)&&this.number69 .equals(rhs.number69))))&&((this.number68 == rhs.number68)||((this.number68 != null)&&this.number68 .equals(rhs.number68))))&&((this.number67 == rhs.number67)||((this.number67 != null)&&this.number67 .equals(rhs.number67))))&&((this.number66 == rhs.number66)||((this.number66 != null)&&this.number66 .equals(rhs.number66))))&&((this.submitJprmCode == rhs.submitJprmCode)||((this.submitJprmCode!= null)&&this.submitJprmCode.equals(rhs.submitJprmCode))))&&((this.number65 == rhs.number65)||((this.number65 != null)&&this.number65 .equals(rhs.number65))))&&((this.label43 == rhs.label43)||((this.label43 != null)&&this.label43 .equals(rhs.label43))))&&((this.number64 == rhs.number64)||((this.number64 != null)&&this.number64 .equals(rhs.number64))))&&((this.label42 == rhs.label42)||((this.label42 != null)&&this.label42 .equals(rhs.label42))))&&((this.number63 == rhs.number63)||((this.number63 != null)&&this.number63 .equals(rhs.number63))))&&((this.label41 == rhs.label41)||((this.label41 != null)&&this.label41 .equals(rhs.label41))))&&((this.number62 == rhs.number62)||((this.number62 != null)&&this.number62 .equals(rhs.number62))))&&((this.label40 == rhs.label40)||((this.label40 != null)&&this.label40 .equals(rhs.label40))))&&((this.number61 == rhs.number61)||((this.number61 != null)&&this.number61 .equals(rhs.number61))))&&((this.label47 == rhs.label47)||((this.label47 != null)&&this.label47 .equals(rhs.label47))))&&((this.number60 == rhs.number60)||((this.number60 != null)&&this.number60 .equals(rhs.number60))))&&((this.label46 == rhs.label46)||((this.label46 != null)&&this.label46 .equals(rhs.label46))))&&((this.label45 == rhs.label45)||((this.label45 != null)&&this.label45 .equals(rhs.label45))))&&((this.label44 == rhs.label44)||((this.label44 != null)&&this.label44 .equals(rhs.label44))))&&((this.value37 == rhs.value37)||((this.value37 != null)&&this.value37 .equals(rhs.value37))))&&((this.value36 == rhs.value36)||((this.value36 != null)&&this.value36 .equals(rhs.value36))))&&((this.value39 == rhs.value39)||((this.value39 != null)&&this.value39 .equals(rhs.value39))))&&((this.value38 == rhs.value38)||((this.value38 != null)&&this.value38 .equals(rhs.value38))))&&((this.value33 == rhs.value33)||((this.value33 != null)&&this.value33 .equals(rhs.value33))))&&((this.value32 == rhs.value32)||((this.value32 != null)&&this.value32 .equals(rhs.value32))))&&((this.value35 == rhs.value35)||((this.value35 != null)&&this.value35 .equals(rhs.value35))))&&((this.value34 == rhs.value34)||((this.value34 != null)&&this.value34 .equals(rhs.value34))))&&((this.value40 == rhs.value40)||((this.value40 != null)&&this.value40 .equals(rhs.value40))))&&((this.label39 == rhs.label39)||((this.label39 != null)&&this.label39 .equals(rhs.label39))))&&((this.label38 == rhs.label38)||((this.label38 != null)&&this.label38 .equals(rhs.label38))))&&((this.value42 == rhs.value42)||((this.value42 != null)&&this.value42 .equals(rhs.value42))))&&((this.label37 == rhs.label37)||((this.label37 != null)&&this.label37 .equals(rhs.label37))))&&((this.value41 == rhs.value41)||((this.value41 != null)&&this.value41 .equals(rhs.value41))))&&((this.number79 == rhs.number79)||((this.number79 != null)&&this.number79 .equals(rhs.number79))))&&((this.number78 == rhs.number78)||((this.number78 != null)&&this.number78 .equals(rhs.number78))))&&((this.number77 == rhs.number77)||((this.number77 != null)&&this.number77 .equals(rhs.number77))))&&((this.number76 == rhs.number76)||((this.number76 != null)&&this.number76 .equals(rhs.number76))))&&((this.label32 == rhs.label32)||((this.label32 != null)&&this.label32 .equals(rhs.label32))))&&((this.number75 == rhs.number75)||((this.number75 != null)&&this.number75 .equals(rhs.number75))))&&((this.label31 == rhs.label31)||((this.label31 != null)&&this.label31 .equals(rhs.label31))))&&((this.number74 == rhs.number74)||((this.number74 != null)&&this.number74 .equals(rhs.number74))))&&((this.label30 == rhs.label30)||((this.label30 != null)&&this.label30 .equals(rhs.label30))))&&((this.number73 == rhs.number73)||((this.number73 != null)&&this.number73 .equals(rhs.number73))))&&((this.number72 == rhs.number72)||((this.number72 != null)&&this.number72 .equals(rhs.number72))))&&((this.label36 == rhs.label36)||((this.label36 != null)&&this.label36 .equals(rhs.label36))))&&((this.number71 == rhs.number71)||((this.number71 != null)&&this.number71 .equals(rhs.number71))))&&((this.label1 == rhs.label1)||((this.label1 != null)&&this.label1 .equals(rhs.label1))))&&((this.label35 == rhs.label35)||((this.label35 != null)&&this.label35 .equals(rhs.label35))))&&((this.number70 == rhs.number70)||((this.number70 != null)&&this.number70 .equals(rhs.number70))))&&((this.label2 == rhs.label2)||((this.label2 != null)&&this.label2 .equals(rhs.label2))))&&((this.label34 == rhs.label34)||((this.label34 != null)&&this.label34 .equals(rhs.label34))))&&((this.label3 == rhs.label3)||((this.label3 != null)&&this.label3 .equals(rhs.label3))))&&((this.label33 == rhs.label33)||((this.label33 != null)&&this.label33 .equals(rhs.label33))))&&((this.displaySubmitInd == rhs.displaySubmitInd)||((this.displaySubmitInd!= null)&&this.displaySubmitInd.equals(rhs.displaySubmitInd))))&&((this.value48 == rhs.value48)||((this.value48 != null)&&this.value48 .equals(rhs.value48))))&&((this.value47 == rhs.value47)||((this.value47 != null)&&this.value47 .equals(rhs.value47))))&&((this.value49 == rhs.value49)||((this.value49 != null)&&this.value49 .equals(rhs.value49))))&&((this.value44 == rhs.value44)||((this.value44 != null)&&this.value44 .equals(rhs.value44))))&&((this.value43 == rhs.value43)||((this.value43 != null)&&this.value43 .equals(rhs.value43))))&&((this.value46 == rhs.value46)||((this.value46 != null)&&this.value46 .equals(rhs.value46))))&&((this.value45 == rhs.value45)||((this.value45 != null)&&this.value45 .equals(rhs.value45))))&&((this.label65 == rhs.label65)||((this.label65 != null)&&this.label65 .equals(rhs.label65))))&&((this.label64 == rhs.label64)||((this.label64 != null)&&this.label64 .equals(rhs.label64))))&&((this.label63 == rhs.label63)||((this.label63 != null)&&this.label63 .equals(rhs.label63))))&&((this.label62 == rhs.label62)||((this.label62 != null)&&this.label62 .equals(rhs.label62))))&&((this.label69 == rhs.label69)||((this.label69 != null)&&this.label69 .equals(rhs.label69))))&&((this.label68 == rhs.label68)||((this.label68 != null)&&this.label68 .equals(rhs.label68))))&&((this.label67 == rhs.label67)||((this.label67 != null)&&this.label67 .equals(rhs.label67))))&&((this.label66 == rhs.label66)||((this.label66 != null)&&this.label66 .equals(rhs.label66))))&&((this.value19 == rhs.value19)||((this.value19 != null)&&this.value19 .equals(rhs.value19))))&&((this.label61 == rhs.label61)||((this.label61 != null)&&this.label61 .equals(rhs.label61))))&&((this.value18 == rhs.value18)||((this.value18 != null)&&this.value18 .equals(rhs.value18))))&&((this.label60 == rhs.label60)||((this.label60 != null)&&this.label60 .equals(rhs.label60))))&&((this.value15 == rhs.value15)||((this.value15 != null)&&this.value15 .equals(rhs.value15))))&&((this.value14 == rhs.value14)||((this.value14 != null)&&this.value14 .equals(rhs.value14))))&&((this.value17 == rhs.value17)||((this.value17 != null)&&this.value17 .equals(rhs.value17))))&&((this.value16 == rhs.value16)||((this.value16 != null)&&this.value16 .equals(rhs.value16))))&&((this.value11 == rhs.value11)||((this.value11 != null)&&this.value11 .equals(rhs.value11))))&&((this.value10 == rhs.value10)||((this.value10 != null)&&this.value10 .equals(rhs.value10))))&&((this.value13 == rhs.value13)||((this.value13 != null)&&this.value13 .equals(rhs.value13))))&&((this.value12 == rhs.value12)||((this.value12 != null)&&this.value12 .equals(rhs.value12))))&&((this.number17 == rhs.number17)||((this.number17 != null)&&this.number17 .equals(rhs.number17))))&&((this.number16 == rhs.number16)||((this.number16 != null)&&this.number16 .equals(rhs.number16))))&&((this.number15 == rhs.number15)||((this.number15 != null)&&this.number15 .equals(rhs.number15))))&&((this.value20 == rhs.value20)||((this.value20 != null)&&this.value20 .equals(rhs.value20))))&&((this.number14 == rhs.number14)||((this.number14 != null)&&this.number14 .equals(rhs.number14))))&&((this.label59 == rhs.label59)||((this.label59 != null)&&this.label59 .equals(rhs.label59))))&&((this.number13 == rhs.number13)||((this.number13 != null)&&this.number13 .equals(rhs.number13))))&&((this.number12 == rhs.number12)||((this.number12 != null)&&this.number12 .equals(rhs.number12))))&&((this.number11 == rhs.number11)||((this.number11 != null)&&this.number11 .equals(rhs.number11))))&&((this.number10 == rhs.number10)||((this.number10 != null)&&this.number10 .equals(rhs.number10))))&&((this.label54 == rhs.label54)||((this.label54 != null)&&this.label54 .equals(rhs.label54))))&&((this.label53 == rhs.label53)||((this.label53 != null)&&this.label53 .equals(rhs.label53))))&&((this.label52 == rhs.label52)||((this.label52 != null)&&this.label52 .equals(rhs.label52))))&&((this.label51 == rhs.label51)||((this.label51 != null)&&this.label51 .equals(rhs.label51))))&&((this.label58 == rhs.label58)||((this.label58 != null)&&this.label58 .equals(rhs.label58))))&&((this.label57 == rhs.label57)||((this.label57 != null)&&this.label57 .equals(rhs.label57))))&&((this.label56 == rhs.label56)||((this.label56 != null)&&this.label56 .equals(rhs.label56))))&&((this.label55 == rhs.label55)||((this.label55 != null)&&this.label55 .equals(rhs.label55))))&&((this.label50 == rhs.label50)||((this.label50 != null)&&this.label50 .equals(rhs.label50))))&&((this.value29 == rhs.value29)||((this.value29 != null)&&this.value29 .equals(rhs.value29))))&&((this.displaySaveDefaults == rhs.displaySaveDefaults)||((this.displaySaveDefaults!= null)&&this.displaySaveDefaults.equals(rhs.displaySaveDefaults))))&&((this.value26 == rhs.value26)||((this.value26 != null)&&this.value26 .equals(rhs.value26))))&&((this.value25 == rhs.value25)||((this.value25 != null)&&this.value25 .equals(rhs.value25))))&&((this.value28 == rhs.value28)||((this.value28 != null)&&this.value28 .equals(rhs.value28))))&&((this.value27 == rhs.value27)||((this.value27 != null)&&this.value27 .equals(rhs.value27))))&&((this.value22 == rhs.value22)||((this.value22 != null)&&this.value22 .equals(rhs.value22))))&&((this.value21 == rhs.value21)||((this.value21 != null)&&this.value21 .equals(rhs.value21))))&&((this.number19 == rhs.number19)||((this.number19 != null)&&this.number19 .equals(rhs.number19))))&&((this.value24 == rhs.value24)||((this.value24 != null)&&this.value24 .equals(rhs.value24))))&&((this.number18 == rhs.number18)||((this.number18 != null)&&this.number18 .equals(rhs.number18))))&&((this.value23 == rhs.value23)||((this.value23 != null)&&this.value23 .equals(rhs.value23))))&&((this.number28 == rhs.number28)||((this.number28 != null)&&this.number28 .equals(rhs.number28))))&&((this.number27 == rhs.number27)||((this.number27 != null)&&this.number27 .equals(rhs.number27))))&&((this.number26 == rhs.number26)||((this.number26 != null)&&this.number26 .equals(rhs.number26))))&&((this.number25 == rhs.number25)||((this.number25 != null)&&this.number25 .equals(rhs.number25))))&&((this.number24 == rhs.number24)||((this.number24 != null)&&this.number24 .equals(rhs.number24))))&&((this.number23 == rhs.number23)||((this.number23 != null)&&this.number23 .equals(rhs.number23))))&&((this.number22 == rhs.number22)||((this.number22 != null)&&this.number22 .equals(rhs.number22))))&&((this.number21 == rhs.number21)||((this.number21 != null)&&this.number21 .equals(rhs.number21))))&&((this.number3 == rhs.number3)||((this.number3 != null)&&this.number3 .equals(rhs.number3))))&&((this.number20 == rhs.number20)||((this.number20 != null)&&this.number20 .equals(rhs.number20))))&&((this.label87 == rhs.label87)||((this.label87 != null)&&this.label87 .equals(rhs.label87))))&&((this.number4 == rhs.number4)||((this.number4 != null)&&this.number4 .equals(rhs.number4))))&&((this.label86 == rhs.label86)||((this.label86 != null)&&this.label86 .equals(rhs.label86))))&&((this.number1 == rhs.number1)||((this.number1 != null)&&this.number1 .equals(rhs.number1))))&&((this.label85 == rhs.label85)||((this.label85 != null)&&this.label85 .equals(rhs.label85))))&&((this.number2 == rhs.number2)||((this.number2 != null)&&this.number2 .equals(rhs.number2))))&&((this.label84 == rhs.label84)||((this.label84 != null)&&this.label84 .equals(rhs.label84))))&&((this.number7 == rhs.number7)||((this.number7 != null)&&this.number7 .equals(rhs.number7))))&&((this.number8 == rhs.number8)||((this.number8 != null)&&this.number8 .equals(rhs.number8))))&&((this.number5 == rhs.number5)||((this.number5 != null)&&this.number5 .equals(rhs.number5))))&&((this.label89 == rhs.label89)||((this.label89 != null)&&this.label89 .equals(rhs.label89))))&&((this.number6 == rhs.number6)||((this.number6 != null)&&this.number6 .equals(rhs.number6))))&&((this.label88 == rhs.label88)||((this.label88 != null)&&this.label88 .equals(rhs.label88))))&&((this.number9 == rhs.number9)||((this.number9 != null)&&this.number9 .equals(rhs.number9))))&&((this.label83 == rhs.label83)||((this.label83 != null)&&this.label83 .equals(rhs.label83))))&&((this.label82 == rhs.label82)||((this.label82 != null)&&this.label82 .equals(rhs.label82))))&&((this.displayPdfFont == rhs.displayPdfFont)||((this.displayPdfFont!= null)&&this.displayPdfFont.equals(rhs.displayPdfFont))))&&((this.label81 == rhs.label81)||((this.label81 != null)&&this.label81 .equals(rhs.label81))))&&((this.label80 == rhs.label80)||((this.label80 != null)&&this.label80 .equals(rhs.label80))))&&((this.number29 == rhs.number29)||((this.number29 != null)&&this.number29 .equals(rhs.number29))))&&((this.number39 == rhs.number39)||((this.number39 != null)&&this.number39 .equals(rhs.number39))))&&((this.number38 == rhs.number38)||((this.number38 != null)&&this.number38 .equals(rhs.number38))))&&((this.number37 == rhs.number37)||((this.number37 != null)&&this.number37 .equals(rhs.number37))))&&((this.number36 == rhs.number36)||((this.number36 != null)&&this.number36 .equals(rhs.number36))))&&((this.number35 == rhs.number35)||((this.number35 != null)&&this.number35 .equals(rhs.number35))))&&((this.number34 == rhs.number34)||((this.number34 != null)&&this.number34 .equals(rhs.number34))))&&((this.number33 == rhs.number33)||((this.number33 != null)&&this.number33 .equals(rhs.number33))))&&((this.number32 == rhs.number32)||((this.number32 != null)&&this.number32 .equals(rhs.number32))))&&((this.number31 == rhs.number31)||((this.number31 != null)&&this.number31 .equals(rhs.number31))))&&((this.label76 == rhs.label76)||((this.label76 != null)&&this.label76 .equals(rhs.label76))))&&((this.number30 == rhs.number30)||((this.number30 != null)&&this.number30 .equals(rhs.number30))))&&((this.label75 == rhs.label75)||((this.label75 != null)&&this.label75 .equals(rhs.label75))))&&((this.label74 == rhs.label74)||((this.label74 != null)&&this.label74 .equals(rhs.label74))))&&((this.label73 == rhs.label73)||((this.label73 != null)&&this.label73 .equals(rhs.label73))))&&((this.label79 == rhs.label79)||((this.label79 != null)&&this.label79 .equals(rhs.label79))))&&((this.label78 == rhs.label78)||((this.label78 != null)&&this.label78 .equals(rhs.label78))))&&((this.label77 == rhs.label77)||((this.label77 != null)&&this.label77 .equals(rhs.label77))))&&((this.label72 == rhs.label72)||((this.label72 != null)&&this.label72 .equals(rhs.label72))))&&((this.label71 == rhs.label71)||((this.label71 != null)&&this.label71 .equals(rhs.label71))))&&((this.label70 == rhs.label70)||((this.label70 != null)&&this.label70 .equals(rhs.label70))))&&((this.displayPrntForm == rhs.displayPrntForm)||((this.displayPrntForm!= null)&&this.displayPrntForm.equals(rhs.displayPrntForm))))&&((this.jprmCode == rhs.jprmCode)||((this.jprmCode!= null)&&this.jprmCode.equals(rhs.jprmCode))))&&((this.displaySubmitTime == rhs.displaySubmitTime)||((this.displaySubmitTime!= null)&&this.displaySubmitTime.equals(rhs.displaySubmitTime))))&&((this.label98 == rhs.label98)||((this.label98 != null)&&this.label98 .equals(rhs.label98))))&&((this.label97 == rhs.label97)||((this.label97 != null)&&this.label97 .equals(rhs.label97))))&&((this.label96 == rhs.label96)||((this.label96 != null)&&this.label96 .equals(rhs.label96))))&&((this.label95 == rhs.label95)||((this.label95 != null)&&this.label95 .equals(rhs.label95))))&&((this.label99 == rhs.label99)||((this.label99 != null)&&this.label99 .equals(rhs.label99))))&&((this.label90 == rhs.label90)||((this.label90 != null)&&this.label90 .equals(rhs.label90))))&&((this.label94 == rhs.label94)||((this.label94 != null)&&this.label94 .equals(rhs.label94))))&&((this.label93 == rhs.label93)||((this.label93 != null)&&this.label93 .equals(rhs.label93))))&&((this.label92 == rhs.label92)||((this.label92 != null)&&this.label92 .equals(rhs.label92))))&&((this.label91 == rhs.label91)||((this.label91 != null)&&this.label91 .equals(rhs.label91))))&&((this.displayFontSize == rhs.displayFontSize)||((this.displayFontSize!= null)&&this.displayFontSize.equals(rhs.displayFontSize))))&&((this.value96 == rhs.value96)||((this.value96 != null)&&this.value96 .equals(rhs.value96))))&&((this.value97 == rhs.value97)||((this.value97 != null)&&this.value97 .equals(rhs.value97))))&&((this.value94 == rhs.value94)||((this.value94 != null)&&this.value94 .equals(rhs.value94))))&&((this.value95 == rhs.value95)||((this.value95 != null)&&this.value95 .equals(rhs.value95))))&&((this.value92 == rhs.value92)||((this.value92 != null)&&this.value92 .equals(rhs.value92))))&&((this.number89 == rhs.number89)||((this.number89 != null)&&this.number89 .equals(rhs.number89))))&&((this.value93 == rhs.value93)||((this.value93 != null)&&this.value93 .equals(rhs.value93))))&&((this.number88 == rhs.number88)||((this.number88 != null)&&this.number88 .equals(rhs.number88))))&&((this.value90 == rhs.value90)||((this.value90 != null)&&this.value90 .equals(rhs.value90))))&&((this.number87 == rhs.number87)||((this.number87 != null)&&this.number87 .equals(rhs.number87))))&&((this.value91 == rhs.value91)||((this.value91 != null)&&this.value91 .equals(rhs.value91))))&&((this.number86 == rhs.number86)||((this.number86 != null)&&this.number86 .equals(rhs.number86))))&&((this.number85 == rhs.number85)||((this.number85 != null)&&this.number85 .equals(rhs.number85))))&&((this.number84 == rhs.number84)||((this.number84 != null)&&this.number84 .equals(rhs.number84))))&&((this.number83 == rhs.number83)||((this.number83 != null)&&this.number83 .equals(rhs.number83))))&&((this.number82 == rhs.number82)||((this.number82 != null)&&this.number82 .equals(rhs.number82))))&&((this.number81 == rhs.number81)||((this.number81 != null)&&this.number81 .equals(rhs.number81))))&&((this.number80 == rhs.number80)||((this.number80 != null)&&this.number80 .equals(rhs.number80))))&&((this.value98 == rhs.value98)||((this.value98 != null)&&this.value98 .equals(rhs.value98))))&&((this.value99 == rhs.value99)||((this.value99 != null)&&this.value99 .equals(rhs.value99))))&&((this.number99 == rhs.number99)||((this.number99 != null)&&this.number99 .equals(rhs.number99))))&&((this.number98 == rhs.number98)||((this.number98 != null)&&this.number98 .equals(rhs.number98))))&&((this.number97 == rhs.number97)||((this.number97 != null)&&this.number97 .equals(rhs.number97))))&&((this.number96 == rhs.number96)||((this.number96 != null)&&this.number96 .equals(rhs.number96))))&&((this.number95 == rhs.number95)||((this.number95 != null)&&this.number95 .equals(rhs.number95))))&&((this.number94 == rhs.number94)||((this.number94 != null)&&this.number94 .equals(rhs.number94))))&&((this.number93 == rhs.number93)||((this.number93 != null)&&this.number93 .equals(rhs.number93))))&&((this.number92 == rhs.number92)||((this.number92 != null)&&this.number92 .equals(rhs.number92))))&&((this.number91 == rhs.number91)||((this.number91 != null)&&this.number91 .equals(rhs.number91))))&&((this.number90 == rhs.number90)||((this.number90 != null)&&this.number90 .equals(rhs.number90))))&&((this.displayMimeType == rhs.displayMimeType)||((this.displayMimeType!= null)&&this.displayMimeType.equals(rhs.displayMimeType))))&&((this.value74 == rhs.value74)||((this.value74 != null)&&this.value74 .equals(rhs.value74))))&&((this.value75 == rhs.value75)||((this.value75 != null)&&this.value75 .equals(rhs.value75))))&&((this.value72 == rhs.value72)||((this.value72 != null)&&this.value72 .equals(rhs.value72))))&&((this.value73 == rhs.value73)||((this.value73 != null)&&this.value73 .equals(rhs.value73))))&&((this.value70 == rhs.value70)||((this.value70 != null)&&this.value70 .equals(rhs.value70))))&&((this.value71 == rhs.value71)||((this.value71 != null)&&this.value71 .equals(rhs.value71))))&&((this.displayLineCount == rhs.displayLineCount)||((this.displayLineCount!= null)&&this.displayLineCount.equals(rhs.displayLineCount))))&&((this.value78 == rhs.value78)||((this.value78 != null)&&this.value78 .equals(rhs.value78))))&&((this.value79 == rhs.value79)||((this.value79 != null)&&this.value79 .equals(rhs.value79))))&&((this.value76 == rhs.value76)||((this.value76 != null)&&this.value76 .equals(rhs.value76))))&&((this.keyblckJob == rhs.keyblckJob)||((this.keyblckJob!= null)&&this.keyblckJob.equals(rhs.keyblckJob))))&&((this.value77 == rhs.value77)||((this.value77 != null)&&this.value77 .equals(rhs.value77))))&&((this.value85 == rhs.value85)||((this.value85 != null)&&this.value85 .equals(rhs.value85))))&&((this.value86 == rhs.value86)||((this.value86 != null)&&this.value86 .equals(rhs.value86))))&&((this.value83 == rhs.value83)||((this.value83 != null)&&this.value83 .equals(rhs.value83))))&&((this.value84 == rhs.value84)||((this.value84 != null)&&this.value84 .equals(rhs.value84))))&&((this.value81 == rhs.value81)||((this.value81 != null)&&this.value81 .equals(rhs.value81))))&&((this.value82 == rhs.value82)||((this.value82 != null)&&this.value82 .equals(rhs.value82))))&&((this.value80 == rhs.value80)||((this.value80 != null)&&this.value80 .equals(rhs.value80))))&&((this.submitJprmDesc == rhs.submitJprmDesc)||((this.submitJprmDesc!= null)&&this.submitJprmDesc.equals(rhs.submitJprmDesc))))&&((this.value89 == rhs.value89)||((this.value89 != null)&&this.value89 .equals(rhs.value89))))&&((this.value87 == rhs.value87)||((this.value87 != null)&&this.value87 .equals(rhs.value87))))&&((this.value88 == rhs.value88)||((this.value88 != null)&&this.value88 .equals(rhs.value88))));
     }
 
 }

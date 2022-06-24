@@ -27,7 +27,7 @@ public class BuildingDefinition100GetRequest {
      */
     @JsonProperty("slabldgBldgCode")
     @JsonPropertyDescription("Lineage reference object : slabldgBldgCode, Lookup lineage reference object : stvbldg")
-    private Object slabldgBldgCode;
+    private String slabldgBldgCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -38,7 +38,7 @@ public class BuildingDefinition100GetRequest {
      * 
      */
     @JsonProperty("slabldgBldgCode")
-    public Object getSlabldgBldgCode() {
+    public String getSlabldgBldgCode() {
         return slabldgBldgCode;
     }
 
@@ -49,11 +49,11 @@ public class BuildingDefinition100GetRequest {
      * 
      */
     @JsonProperty("slabldgBldgCode")
-    public void setSlabldgBldgCode(Object slabldgBldgCode) {
+    public void setSlabldgBldgCode(String slabldgBldgCode) {
         this.slabldgBldgCode = slabldgBldgCode;
     }
 
-    public BuildingDefinition100GetRequest withSlabldgBldgCode(Object slabldgBldgCode) {
+    public BuildingDefinition100GetRequest withSlabldgBldgCode(String slabldgBldgCode) {
         this.slabldgBldgCode = slabldgBldgCode;
         return this;
     }

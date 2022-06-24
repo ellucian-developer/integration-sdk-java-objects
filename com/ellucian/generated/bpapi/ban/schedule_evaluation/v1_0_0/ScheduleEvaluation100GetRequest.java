@@ -28,7 +28,7 @@ public class ScheduleEvaluation100GetRequest {
      */
     @JsonProperty("ssaevalCrn")
     @JsonPropertyDescription("Lineage reference object : ssaevalCrn")
-    private Object ssaevalCrn;
+    private String ssaevalCrn;
     /**
      * Term
      * <p>
@@ -37,7 +37,7 @@ public class ScheduleEvaluation100GetRequest {
      */
     @JsonProperty("ssaevalTermCode")
     @JsonPropertyDescription("Lineage reference object : ssaevalTermCode, Lookup lineage reference object : stvterm")
-    private Object ssaevalTermCode;
+    private String ssaevalTermCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -48,7 +48,7 @@ public class ScheduleEvaluation100GetRequest {
      * 
      */
     @JsonProperty("ssaevalCrn")
-    public Object getSsaevalCrn() {
+    public String getSsaevalCrn() {
         return ssaevalCrn;
     }
 
@@ -59,11 +59,11 @@ public class ScheduleEvaluation100GetRequest {
      * 
      */
     @JsonProperty("ssaevalCrn")
-    public void setSsaevalCrn(Object ssaevalCrn) {
+    public void setSsaevalCrn(String ssaevalCrn) {
         this.ssaevalCrn = ssaevalCrn;
     }
 
-    public ScheduleEvaluation100GetRequest withSsaevalCrn(Object ssaevalCrn) {
+    public ScheduleEvaluation100GetRequest withSsaevalCrn(String ssaevalCrn) {
         this.ssaevalCrn = ssaevalCrn;
         return this;
     }
@@ -75,7 +75,7 @@ public class ScheduleEvaluation100GetRequest {
      * 
      */
     @JsonProperty("ssaevalTermCode")
-    public Object getSsaevalTermCode() {
+    public String getSsaevalTermCode() {
         return ssaevalTermCode;
     }
 
@@ -86,11 +86,11 @@ public class ScheduleEvaluation100GetRequest {
      * 
      */
     @JsonProperty("ssaevalTermCode")
-    public void setSsaevalTermCode(Object ssaevalTermCode) {
+    public void setSsaevalTermCode(String ssaevalTermCode) {
         this.ssaevalTermCode = ssaevalTermCode;
     }
 
-    public ScheduleEvaluation100GetRequest withSsaevalTermCode(Object ssaevalTermCode) {
+    public ScheduleEvaluation100GetRequest withSsaevalTermCode(String ssaevalTermCode) {
         this.ssaevalTermCode = ssaevalTermCode;
         return this;
     }

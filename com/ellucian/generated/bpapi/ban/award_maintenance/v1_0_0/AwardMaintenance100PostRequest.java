@@ -132,7 +132,7 @@ public class AwardMaintenance100PostRequest {
      */
     @JsonProperty("keyblckAidyCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAidyCode, Lookup lineage reference object : robinst")
-    private Object keyblckAidyCode;
+    private String keyblckAidyCode;
     /**
      * Replace EFC Override
      * <p>
@@ -179,7 +179,7 @@ public class AwardMaintenance100PostRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Lock
      * <p>
@@ -483,7 +483,7 @@ public class AwardMaintenance100PostRequest {
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public Object getKeyblckAidyCode() {
+    public String getKeyblckAidyCode() {
         return keyblckAidyCode;
     }
 
@@ -494,11 +494,11 @@ public class AwardMaintenance100PostRequest {
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public void setKeyblckAidyCode(Object keyblckAidyCode) {
+    public void setKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
     }
 
-    public AwardMaintenance100PostRequest withKeyblckAidyCode(Object keyblckAidyCode) {
+    public AwardMaintenance100PostRequest withKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
         return this;
     }
@@ -633,7 +633,7 @@ public class AwardMaintenance100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -644,11 +644,11 @@ public class AwardMaintenance100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public AwardMaintenance100PostRequest withId(Object id) {
+    public AwardMaintenance100PostRequest withId(String id) {
         this.id = id;
         return this;
     }

@@ -123,7 +123,7 @@ public class EmployeeJobsBaseJob100GetRequest {
      */
     @JsonProperty("posn")
     @JsonPropertyDescription("Lineage reference object : posn")
-    private Object posn;
+    private String posn;
     /**
      * Civil Service
      * <p>
@@ -161,7 +161,7 @@ public class EmployeeJobsBaseJob100GetRequest {
      */
     @JsonProperty("queryDate")
     @JsonPropertyDescription("Lineage reference object : queryDate")
-    private Object queryDate;
+    private Date queryDate;
     /**
      * Suffix
      * <p>
@@ -170,7 +170,7 @@ public class EmployeeJobsBaseJob100GetRequest {
      */
     @JsonProperty("suff")
     @JsonPropertyDescription("Lineage reference object : suff")
-    private Object suff;
+    private String suff;
     /**
      * Start Date
      * <p>
@@ -213,7 +213,7 @@ public class EmployeeJobsBaseJob100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Accrue Leave
      * <p>
@@ -478,7 +478,7 @@ public class EmployeeJobsBaseJob100GetRequest {
      * 
      */
     @JsonProperty("posn")
-    public Object getPosn() {
+    public String getPosn() {
         return posn;
     }
 
@@ -489,11 +489,11 @@ public class EmployeeJobsBaseJob100GetRequest {
      * 
      */
     @JsonProperty("posn")
-    public void setPosn(Object posn) {
+    public void setPosn(String posn) {
         this.posn = posn;
     }
 
-    public EmployeeJobsBaseJob100GetRequest withPosn(Object posn) {
+    public EmployeeJobsBaseJob100GetRequest withPosn(String posn) {
         this.posn = posn;
         return this;
     }
@@ -589,7 +589,7 @@ public class EmployeeJobsBaseJob100GetRequest {
      * 
      */
     @JsonProperty("queryDate")
-    public Object getQueryDate() {
+    public Date getQueryDate() {
         return queryDate;
     }
 
@@ -601,11 +601,11 @@ public class EmployeeJobsBaseJob100GetRequest {
      * 
      */
     @JsonProperty("queryDate")
-    public void setQueryDate(Object queryDate) {
+    public void setQueryDate(Date queryDate) {
         this.queryDate = queryDate;
     }
 
-    public EmployeeJobsBaseJob100GetRequest withQueryDate(Object queryDate) {
+    public EmployeeJobsBaseJob100GetRequest withQueryDate(Date queryDate) {
         this.queryDate = queryDate;
         return this;
     }
@@ -617,7 +617,7 @@ public class EmployeeJobsBaseJob100GetRequest {
      * 
      */
     @JsonProperty("suff")
-    public Object getSuff() {
+    public String getSuff() {
         return suff;
     }
 
@@ -628,11 +628,11 @@ public class EmployeeJobsBaseJob100GetRequest {
      * 
      */
     @JsonProperty("suff")
-    public void setSuff(Object suff) {
+    public void setSuff(String suff) {
         this.suff = suff;
     }
 
-    public EmployeeJobsBaseJob100GetRequest withSuff(Object suff) {
+    public EmployeeJobsBaseJob100GetRequest withSuff(String suff) {
         this.suff = suff;
         return this;
     }
@@ -748,7 +748,7 @@ public class EmployeeJobsBaseJob100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -759,11 +759,11 @@ public class EmployeeJobsBaseJob100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public EmployeeJobsBaseJob100GetRequest withId(Object id) {
+    public EmployeeJobsBaseJob100GetRequest withId(String id) {
         this.id = id;
         return this;
     }

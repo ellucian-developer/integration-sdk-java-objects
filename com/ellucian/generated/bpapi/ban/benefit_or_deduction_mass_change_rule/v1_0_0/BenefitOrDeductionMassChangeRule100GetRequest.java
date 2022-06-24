@@ -89,7 +89,7 @@ public class BenefitOrDeductionMassChangeRule100GetRequest {
      */
     @JsonProperty("bcat_code")
     @JsonPropertyDescription("Lineage reference object : bcatCode, Lookup lineage reference object : ptrbcat")
-    private Object bcatCode;
+    private String bcatCode;
     /**
      * Lineage reference object : PTRBDMC_OPT_CODE4
      * 
@@ -326,7 +326,7 @@ public class BenefitOrDeductionMassChangeRule100GetRequest {
      * 
      */
     @JsonProperty("bcat_code")
-    public Object getBcatCode() {
+    public String getBcatCode() {
         return bcatCode;
     }
 
@@ -338,11 +338,11 @@ public class BenefitOrDeductionMassChangeRule100GetRequest {
      * 
      */
     @JsonProperty("bcat_code")
-    public void setBcatCode(Object bcatCode) {
+    public void setBcatCode(String bcatCode) {
         this.bcatCode = bcatCode;
     }
 
-    public BenefitOrDeductionMassChangeRule100GetRequest withBcatCode(Object bcatCode) {
+    public BenefitOrDeductionMassChangeRule100GetRequest withBcatCode(String bcatCode) {
         this.bcatCode = bcatCode;
         return this;
     }

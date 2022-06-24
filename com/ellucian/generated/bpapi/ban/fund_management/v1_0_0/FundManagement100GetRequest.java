@@ -28,7 +28,7 @@ public class FundManagement100GetRequest {
      */
     @JsonProperty("fund")
     @JsonPropertyDescription("Lineage reference object : keyblckFundCode")
-    private Object fund;
+    private String fund;
     /**
      * Aid Year
      * <p>
@@ -37,7 +37,7 @@ public class FundManagement100GetRequest {
      */
     @JsonProperty("yearCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAidyCode, Lookup lineage reference object : robinst")
-    private Object yearCode;
+    private String yearCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -48,7 +48,7 @@ public class FundManagement100GetRequest {
      * 
      */
     @JsonProperty("fund")
-    public Object getFund() {
+    public String getFund() {
         return fund;
     }
 
@@ -59,11 +59,11 @@ public class FundManagement100GetRequest {
      * 
      */
     @JsonProperty("fund")
-    public void setFund(Object fund) {
+    public void setFund(String fund) {
         this.fund = fund;
     }
 
-    public FundManagement100GetRequest withFund(Object fund) {
+    public FundManagement100GetRequest withFund(String fund) {
         this.fund = fund;
         return this;
     }
@@ -75,7 +75,7 @@ public class FundManagement100GetRequest {
      * 
      */
     @JsonProperty("yearCode")
-    public Object getYearCode() {
+    public String getYearCode() {
         return yearCode;
     }
 
@@ -86,11 +86,11 @@ public class FundManagement100GetRequest {
      * 
      */
     @JsonProperty("yearCode")
-    public void setYearCode(Object yearCode) {
+    public void setYearCode(String yearCode) {
         this.yearCode = yearCode;
     }
 
-    public FundManagement100GetRequest withYearCode(Object yearCode) {
+    public FundManagement100GetRequest withYearCode(String yearCode) {
         this.yearCode = yearCode;
         return this;
     }

@@ -53,7 +53,7 @@ public class ContractAuthorizationAccountLevelAuthorization100GetRequest {
      */
     @JsonProperty("keyblocTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCode;
+    private String keyblocTermCode;
     /**
      * Contract Number
      * <p>
@@ -62,7 +62,7 @@ public class ContractAuthorizationAccountLevelAuthorization100GetRequest {
      */
     @JsonProperty("contractNumber")
     @JsonPropertyDescription("Lineage reference object : contractNumber")
-    private Object contractNumber;
+    private Double contractNumber;
     /**
      * Contract ID
      * <p>
@@ -71,7 +71,7 @@ public class ContractAuthorizationAccountLevelAuthorization100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Maximum Amount
      * <p>
@@ -167,7 +167,7 @@ public class ContractAuthorizationAccountLevelAuthorization100GetRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public Object getKeyblocTermCode() {
+    public String getKeyblocTermCode() {
         return keyblocTermCode;
     }
 
@@ -178,11 +178,11 @@ public class ContractAuthorizationAccountLevelAuthorization100GetRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public void setKeyblocTermCode(Object keyblocTermCode) {
+    public void setKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
     }
 
-    public ContractAuthorizationAccountLevelAuthorization100GetRequest withKeyblocTermCode(Object keyblocTermCode) {
+    public ContractAuthorizationAccountLevelAuthorization100GetRequest withKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
         return this;
     }
@@ -194,7 +194,7 @@ public class ContractAuthorizationAccountLevelAuthorization100GetRequest {
      * 
      */
     @JsonProperty("contractNumber")
-    public Object getContractNumber() {
+    public Double getContractNumber() {
         return contractNumber;
     }
 
@@ -205,11 +205,11 @@ public class ContractAuthorizationAccountLevelAuthorization100GetRequest {
      * 
      */
     @JsonProperty("contractNumber")
-    public void setContractNumber(Object contractNumber) {
+    public void setContractNumber(Double contractNumber) {
         this.contractNumber = contractNumber;
     }
 
-    public ContractAuthorizationAccountLevelAuthorization100GetRequest withContractNumber(Object contractNumber) {
+    public ContractAuthorizationAccountLevelAuthorization100GetRequest withContractNumber(Double contractNumber) {
         this.contractNumber = contractNumber;
         return this;
     }
@@ -221,7 +221,7 @@ public class ContractAuthorizationAccountLevelAuthorization100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -232,11 +232,11 @@ public class ContractAuthorizationAccountLevelAuthorization100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public ContractAuthorizationAccountLevelAuthorization100GetRequest withId(Object id) {
+    public ContractAuthorizationAccountLevelAuthorization100GetRequest withId(String id) {
         this.id = id;
         return this;
     }

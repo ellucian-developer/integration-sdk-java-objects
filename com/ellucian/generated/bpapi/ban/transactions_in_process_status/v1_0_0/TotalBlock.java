@@ -28,7 +28,7 @@ public class TotalBlock {
      */
     @JsonProperty("totalBudgetRsvrtn")
     @JsonPropertyDescription("Lineage reference object : totalBudgetRsvrtn")
-    private Object totalBudgetRsvrtn;
+    private Double totalBudgetRsvrtn;
     /**
      * Available Balance In Process
      * <p>
@@ -37,14 +37,14 @@ public class TotalBlock {
      */
     @JsonProperty("displayAvailBal")
     @JsonPropertyDescription("Lineage reference object : displayAvailBal")
-    private Object displayAvailBal;
+    private Double displayAvailBal;
     /**
      * Lineage reference object : totalYtdActivity
      * 
      */
     @JsonProperty("totalYtdActivity")
     @JsonPropertyDescription("Lineage reference object : totalYtdActivity")
-    private Object totalYtdActivity;
+    private Double totalYtdActivity;
     /**
      * Total
      * <p>
@@ -53,7 +53,7 @@ public class TotalBlock {
      */
     @JsonProperty("totalAdjustedBudget")
     @JsonPropertyDescription("Lineage reference object : totalAdjustedBudget")
-    private Object totalAdjustedBudget;
+    private Double totalAdjustedBudget;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -62,7 +62,7 @@ public class TotalBlock {
      * 
      */
     @JsonProperty("totalBudgetRsvrtn")
-    public Object getTotalBudgetRsvrtn() {
+    public Double getTotalBudgetRsvrtn() {
         return totalBudgetRsvrtn;
     }
 
@@ -71,11 +71,11 @@ public class TotalBlock {
      * 
      */
     @JsonProperty("totalBudgetRsvrtn")
-    public void setTotalBudgetRsvrtn(Object totalBudgetRsvrtn) {
+    public void setTotalBudgetRsvrtn(Double totalBudgetRsvrtn) {
         this.totalBudgetRsvrtn = totalBudgetRsvrtn;
     }
 
-    public TotalBlock withTotalBudgetRsvrtn(Object totalBudgetRsvrtn) {
+    public TotalBlock withTotalBudgetRsvrtn(Double totalBudgetRsvrtn) {
         this.totalBudgetRsvrtn = totalBudgetRsvrtn;
         return this;
     }
@@ -87,7 +87,7 @@ public class TotalBlock {
      * 
      */
     @JsonProperty("displayAvailBal")
-    public Object getDisplayAvailBal() {
+    public Double getDisplayAvailBal() {
         return displayAvailBal;
     }
 
@@ -98,11 +98,11 @@ public class TotalBlock {
      * 
      */
     @JsonProperty("displayAvailBal")
-    public void setDisplayAvailBal(Object displayAvailBal) {
+    public void setDisplayAvailBal(Double displayAvailBal) {
         this.displayAvailBal = displayAvailBal;
     }
 
-    public TotalBlock withDisplayAvailBal(Object displayAvailBal) {
+    public TotalBlock withDisplayAvailBal(Double displayAvailBal) {
         this.displayAvailBal = displayAvailBal;
         return this;
     }
@@ -112,7 +112,7 @@ public class TotalBlock {
      * 
      */
     @JsonProperty("totalYtdActivity")
-    public Object getTotalYtdActivity() {
+    public Double getTotalYtdActivity() {
         return totalYtdActivity;
     }
 
@@ -121,11 +121,11 @@ public class TotalBlock {
      * 
      */
     @JsonProperty("totalYtdActivity")
-    public void setTotalYtdActivity(Object totalYtdActivity) {
+    public void setTotalYtdActivity(Double totalYtdActivity) {
         this.totalYtdActivity = totalYtdActivity;
     }
 
-    public TotalBlock withTotalYtdActivity(Object totalYtdActivity) {
+    public TotalBlock withTotalYtdActivity(Double totalYtdActivity) {
         this.totalYtdActivity = totalYtdActivity;
         return this;
     }
@@ -137,7 +137,7 @@ public class TotalBlock {
      * 
      */
     @JsonProperty("totalAdjustedBudget")
-    public Object getTotalAdjustedBudget() {
+    public Double getTotalAdjustedBudget() {
         return totalAdjustedBudget;
     }
 
@@ -148,11 +148,11 @@ public class TotalBlock {
      * 
      */
     @JsonProperty("totalAdjustedBudget")
-    public void setTotalAdjustedBudget(Object totalAdjustedBudget) {
+    public void setTotalAdjustedBudget(Double totalAdjustedBudget) {
         this.totalAdjustedBudget = totalAdjustedBudget;
     }
 
-    public TotalBlock withTotalAdjustedBudget(Object totalAdjustedBudget) {
+    public TotalBlock withTotalAdjustedBudget(Double totalAdjustedBudget) {
         this.totalAdjustedBudget = totalAdjustedBudget;
         return this;
     }

@@ -52,7 +52,7 @@ public class GrantInceptionToDate100GetRequest {
      */
     @JsonProperty("keyblocYearTo")
     @JsonPropertyDescription("Lineage reference object : keyblocYearTo")
-    private Object keyblocYearTo;
+    private Double keyblocYearTo;
     /**
      * Account Type
      * <p>
@@ -61,7 +61,7 @@ public class GrantInceptionToDate100GetRequest {
      */
     @JsonProperty("keyblocAtypCode")
     @JsonPropertyDescription("Lineage reference object : keyblocAtypCode, Lookup lineage reference object : ftvatyp")
-    private Object keyblocAtypCode;
+    private String keyblocAtypCode;
     /**
      * Date To (MM/YY)
      * <p>
@@ -70,7 +70,7 @@ public class GrantInceptionToDate100GetRequest {
      */
     @JsonProperty("keyblocMonthTo")
     @JsonPropertyDescription("Lineage reference object : keyblocMonthTo")
-    private Object keyblocMonthTo;
+    private Double keyblocMonthTo;
     /**
      * Frvgbal Title
      * <p>
@@ -88,7 +88,7 @@ public class GrantInceptionToDate100GetRequest {
      */
     @JsonProperty("keyblocProgCode")
     @JsonPropertyDescription("Lineage reference object : keyblocProgCode")
-    private Object keyblocProgCode;
+    private String keyblocProgCode;
     /**
      * Index
      * <p>
@@ -97,7 +97,7 @@ public class GrantInceptionToDate100GetRequest {
      */
     @JsonProperty("keyblocAcciCode")
     @JsonPropertyDescription("Lineage reference object : keyblocAcciCode, Lookup lineage reference object : ftvacci")
-    private Object keyblocAcciCode;
+    private String keyblocAcciCode;
     /**
      * Organization
      * <p>
@@ -106,7 +106,7 @@ public class GrantInceptionToDate100GetRequest {
      */
     @JsonProperty("keyblocOrgnCode")
     @JsonPropertyDescription("Lineage reference object : keyblocOrgnCode")
-    private Object keyblocOrgnCode;
+    private String keyblocOrgnCode;
     /**
      * Exclude Indirect Costs
      * <p>
@@ -115,7 +115,7 @@ public class GrantInceptionToDate100GetRequest {
      */
     @JsonProperty("excludeAcctInd")
     @JsonPropertyDescription("Lineage reference object : excludeAcctInd")
-    private Object excludeAcctInd;
+    private String excludeAcctInd;
     /**
      * Include Revenue Accounts
      * <p>
@@ -124,7 +124,7 @@ public class GrantInceptionToDate100GetRequest {
      */
     @JsonProperty("revenueAcctInd")
     @JsonPropertyDescription("Lineage reference object : revenueAcctInd")
-    private Object revenueAcctInd;
+    private String revenueAcctInd;
     /**
      * Hierarchy
      * <p>
@@ -133,14 +133,14 @@ public class GrantInceptionToDate100GetRequest {
      */
     @JsonProperty("hier")
     @JsonPropertyDescription("Lineage reference object : hier")
-    private Object hier;
+    private String hier;
     /**
      * Lineage reference object : keyblocYearFrom
      * 
      */
     @JsonProperty("keyblocYearFrom")
     @JsonPropertyDescription("Lineage reference object : keyblocYearFrom")
-    private Object keyblocYearFrom;
+    private Double keyblocYearFrom;
     /**
      * Location
      * <p>
@@ -149,7 +149,7 @@ public class GrantInceptionToDate100GetRequest {
      */
     @JsonProperty("keyblocLocnCode")
     @JsonPropertyDescription("Lineage reference object : keyblocLocnCode")
-    private Object keyblocLocnCode;
+    private String keyblocLocnCode;
     /**
      * Chart of Accounts
      * <p>
@@ -158,7 +158,7 @@ public class GrantInceptionToDate100GetRequest {
      */
     @JsonProperty("keyblocCoasCode")
     @JsonPropertyDescription("Lineage reference object : keyblocCoasCode, Lookup lineage reference object : ftvcoas")
-    private Object keyblocCoasCode;
+    private String keyblocCoasCode;
     /**
      * Frvgbal Int Atyp Desc
      * <p>
@@ -185,7 +185,7 @@ public class GrantInceptionToDate100GetRequest {
      */
     @JsonProperty("keyblocAcctCode")
     @JsonPropertyDescription("Lineage reference object : keyblocAcctCode")
-    private Object keyblocAcctCode;
+    private String keyblocAcctCode;
     /**
      * Fund Summary
      * <p>
@@ -194,7 +194,7 @@ public class GrantInceptionToDate100GetRequest {
      */
     @JsonProperty("fundSummary")
     @JsonPropertyDescription("Lineage reference object : fundSummary")
-    private Object fundSummary;
+    private String fundSummary;
     /**
      * Frvgbal Acct Code
      * <p>
@@ -212,7 +212,7 @@ public class GrantInceptionToDate100GetRequest {
      */
     @JsonProperty("keyblocAcctSummary")
     @JsonPropertyDescription("Lineage reference object : keyblocAcctSummary")
-    private Object keyblocAcctSummary;
+    private String keyblocAcctSummary;
     /**
      * By Sponsor Account
      * <p>
@@ -221,7 +221,7 @@ public class GrantInceptionToDate100GetRequest {
      */
     @JsonProperty("sponsorAcctInd")
     @JsonPropertyDescription("Lineage reference object : sponsorAcctInd")
-    private Object sponsorAcctInd;
+    private String sponsorAcctInd;
     /**
      * Frvgbal Avail Bal
      * <p>
@@ -239,7 +239,7 @@ public class GrantInceptionToDate100GetRequest {
      */
     @JsonProperty("keyblocMonthFrom")
     @JsonPropertyDescription("Lineage reference object : keyblocMonthFrom")
-    private Object keyblocMonthFrom;
+    private Double keyblocMonthFrom;
     /**
      * Frvgbal Ytd Actv Amt
      * <p>
@@ -257,7 +257,7 @@ public class GrantInceptionToDate100GetRequest {
      */
     @JsonProperty("keyblocActvCode")
     @JsonPropertyDescription("Lineage reference object : keyblocActvCode")
-    private Object keyblocActvCode;
+    private String keyblocActvCode;
     /**
      * Grant
      * <p>
@@ -266,7 +266,7 @@ public class GrantInceptionToDate100GetRequest {
      */
     @JsonProperty("keyblocGrntCode")
     @JsonPropertyDescription("Lineage reference object : keyblocGrntCode")
-    private Object keyblocGrntCode;
+    private String keyblocGrntCode;
     /**
      * Grant Year
      * <p>
@@ -275,7 +275,7 @@ public class GrantInceptionToDate100GetRequest {
      */
     @JsonProperty("keyblocGrntYr")
     @JsonPropertyDescription("Lineage reference object : keyblocGrntYr")
-    private Object keyblocGrntYr;
+    private String keyblocGrntYr;
     /**
      * Frvgbal Cmt Amt
      * <p>
@@ -293,7 +293,7 @@ public class GrantInceptionToDate100GetRequest {
      */
     @JsonProperty("keyblocFundCode")
     @JsonPropertyDescription("Lineage reference object : keyblocFundCode")
-    private Object keyblocFundCode;
+    private String keyblocFundCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -302,7 +302,7 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocYearTo")
-    public Object getKeyblocYearTo() {
+    public Double getKeyblocYearTo() {
         return keyblocYearTo;
     }
 
@@ -311,11 +311,11 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocYearTo")
-    public void setKeyblocYearTo(Object keyblocYearTo) {
+    public void setKeyblocYearTo(Double keyblocYearTo) {
         this.keyblocYearTo = keyblocYearTo;
     }
 
-    public GrantInceptionToDate100GetRequest withKeyblocYearTo(Object keyblocYearTo) {
+    public GrantInceptionToDate100GetRequest withKeyblocYearTo(Double keyblocYearTo) {
         this.keyblocYearTo = keyblocYearTo;
         return this;
     }
@@ -327,7 +327,7 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocAtypCode")
-    public Object getKeyblocAtypCode() {
+    public String getKeyblocAtypCode() {
         return keyblocAtypCode;
     }
 
@@ -338,11 +338,11 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocAtypCode")
-    public void setKeyblocAtypCode(Object keyblocAtypCode) {
+    public void setKeyblocAtypCode(String keyblocAtypCode) {
         this.keyblocAtypCode = keyblocAtypCode;
     }
 
-    public GrantInceptionToDate100GetRequest withKeyblocAtypCode(Object keyblocAtypCode) {
+    public GrantInceptionToDate100GetRequest withKeyblocAtypCode(String keyblocAtypCode) {
         this.keyblocAtypCode = keyblocAtypCode;
         return this;
     }
@@ -354,7 +354,7 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocMonthTo")
-    public Object getKeyblocMonthTo() {
+    public Double getKeyblocMonthTo() {
         return keyblocMonthTo;
     }
 
@@ -365,11 +365,11 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocMonthTo")
-    public void setKeyblocMonthTo(Object keyblocMonthTo) {
+    public void setKeyblocMonthTo(Double keyblocMonthTo) {
         this.keyblocMonthTo = keyblocMonthTo;
     }
 
-    public GrantInceptionToDate100GetRequest withKeyblocMonthTo(Object keyblocMonthTo) {
+    public GrantInceptionToDate100GetRequest withKeyblocMonthTo(Double keyblocMonthTo) {
         this.keyblocMonthTo = keyblocMonthTo;
         return this;
     }
@@ -408,7 +408,7 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocProgCode")
-    public Object getKeyblocProgCode() {
+    public String getKeyblocProgCode() {
         return keyblocProgCode;
     }
 
@@ -419,11 +419,11 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocProgCode")
-    public void setKeyblocProgCode(Object keyblocProgCode) {
+    public void setKeyblocProgCode(String keyblocProgCode) {
         this.keyblocProgCode = keyblocProgCode;
     }
 
-    public GrantInceptionToDate100GetRequest withKeyblocProgCode(Object keyblocProgCode) {
+    public GrantInceptionToDate100GetRequest withKeyblocProgCode(String keyblocProgCode) {
         this.keyblocProgCode = keyblocProgCode;
         return this;
     }
@@ -435,7 +435,7 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocAcciCode")
-    public Object getKeyblocAcciCode() {
+    public String getKeyblocAcciCode() {
         return keyblocAcciCode;
     }
 
@@ -446,11 +446,11 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocAcciCode")
-    public void setKeyblocAcciCode(Object keyblocAcciCode) {
+    public void setKeyblocAcciCode(String keyblocAcciCode) {
         this.keyblocAcciCode = keyblocAcciCode;
     }
 
-    public GrantInceptionToDate100GetRequest withKeyblocAcciCode(Object keyblocAcciCode) {
+    public GrantInceptionToDate100GetRequest withKeyblocAcciCode(String keyblocAcciCode) {
         this.keyblocAcciCode = keyblocAcciCode;
         return this;
     }
@@ -462,7 +462,7 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocOrgnCode")
-    public Object getKeyblocOrgnCode() {
+    public String getKeyblocOrgnCode() {
         return keyblocOrgnCode;
     }
 
@@ -473,11 +473,11 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocOrgnCode")
-    public void setKeyblocOrgnCode(Object keyblocOrgnCode) {
+    public void setKeyblocOrgnCode(String keyblocOrgnCode) {
         this.keyblocOrgnCode = keyblocOrgnCode;
     }
 
-    public GrantInceptionToDate100GetRequest withKeyblocOrgnCode(Object keyblocOrgnCode) {
+    public GrantInceptionToDate100GetRequest withKeyblocOrgnCode(String keyblocOrgnCode) {
         this.keyblocOrgnCode = keyblocOrgnCode;
         return this;
     }
@@ -489,7 +489,7 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("excludeAcctInd")
-    public Object getExcludeAcctInd() {
+    public String getExcludeAcctInd() {
         return excludeAcctInd;
     }
 
@@ -500,11 +500,11 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("excludeAcctInd")
-    public void setExcludeAcctInd(Object excludeAcctInd) {
+    public void setExcludeAcctInd(String excludeAcctInd) {
         this.excludeAcctInd = excludeAcctInd;
     }
 
-    public GrantInceptionToDate100GetRequest withExcludeAcctInd(Object excludeAcctInd) {
+    public GrantInceptionToDate100GetRequest withExcludeAcctInd(String excludeAcctInd) {
         this.excludeAcctInd = excludeAcctInd;
         return this;
     }
@@ -516,7 +516,7 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("revenueAcctInd")
-    public Object getRevenueAcctInd() {
+    public String getRevenueAcctInd() {
         return revenueAcctInd;
     }
 
@@ -527,11 +527,11 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("revenueAcctInd")
-    public void setRevenueAcctInd(Object revenueAcctInd) {
+    public void setRevenueAcctInd(String revenueAcctInd) {
         this.revenueAcctInd = revenueAcctInd;
     }
 
-    public GrantInceptionToDate100GetRequest withRevenueAcctInd(Object revenueAcctInd) {
+    public GrantInceptionToDate100GetRequest withRevenueAcctInd(String revenueAcctInd) {
         this.revenueAcctInd = revenueAcctInd;
         return this;
     }
@@ -543,7 +543,7 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("hier")
-    public Object getHier() {
+    public String getHier() {
         return hier;
     }
 
@@ -554,11 +554,11 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("hier")
-    public void setHier(Object hier) {
+    public void setHier(String hier) {
         this.hier = hier;
     }
 
-    public GrantInceptionToDate100GetRequest withHier(Object hier) {
+    public GrantInceptionToDate100GetRequest withHier(String hier) {
         this.hier = hier;
         return this;
     }
@@ -568,7 +568,7 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocYearFrom")
-    public Object getKeyblocYearFrom() {
+    public Double getKeyblocYearFrom() {
         return keyblocYearFrom;
     }
 
@@ -577,11 +577,11 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocYearFrom")
-    public void setKeyblocYearFrom(Object keyblocYearFrom) {
+    public void setKeyblocYearFrom(Double keyblocYearFrom) {
         this.keyblocYearFrom = keyblocYearFrom;
     }
 
-    public GrantInceptionToDate100GetRequest withKeyblocYearFrom(Object keyblocYearFrom) {
+    public GrantInceptionToDate100GetRequest withKeyblocYearFrom(Double keyblocYearFrom) {
         this.keyblocYearFrom = keyblocYearFrom;
         return this;
     }
@@ -593,7 +593,7 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocLocnCode")
-    public Object getKeyblocLocnCode() {
+    public String getKeyblocLocnCode() {
         return keyblocLocnCode;
     }
 
@@ -604,11 +604,11 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocLocnCode")
-    public void setKeyblocLocnCode(Object keyblocLocnCode) {
+    public void setKeyblocLocnCode(String keyblocLocnCode) {
         this.keyblocLocnCode = keyblocLocnCode;
     }
 
-    public GrantInceptionToDate100GetRequest withKeyblocLocnCode(Object keyblocLocnCode) {
+    public GrantInceptionToDate100GetRequest withKeyblocLocnCode(String keyblocLocnCode) {
         this.keyblocLocnCode = keyblocLocnCode;
         return this;
     }
@@ -620,7 +620,7 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocCoasCode")
-    public Object getKeyblocCoasCode() {
+    public String getKeyblocCoasCode() {
         return keyblocCoasCode;
     }
 
@@ -631,11 +631,11 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocCoasCode")
-    public void setKeyblocCoasCode(Object keyblocCoasCode) {
+    public void setKeyblocCoasCode(String keyblocCoasCode) {
         this.keyblocCoasCode = keyblocCoasCode;
     }
 
-    public GrantInceptionToDate100GetRequest withKeyblocCoasCode(Object keyblocCoasCode) {
+    public GrantInceptionToDate100GetRequest withKeyblocCoasCode(String keyblocCoasCode) {
         this.keyblocCoasCode = keyblocCoasCode;
         return this;
     }
@@ -701,7 +701,7 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocAcctCode")
-    public Object getKeyblocAcctCode() {
+    public String getKeyblocAcctCode() {
         return keyblocAcctCode;
     }
 
@@ -712,11 +712,11 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocAcctCode")
-    public void setKeyblocAcctCode(Object keyblocAcctCode) {
+    public void setKeyblocAcctCode(String keyblocAcctCode) {
         this.keyblocAcctCode = keyblocAcctCode;
     }
 
-    public GrantInceptionToDate100GetRequest withKeyblocAcctCode(Object keyblocAcctCode) {
+    public GrantInceptionToDate100GetRequest withKeyblocAcctCode(String keyblocAcctCode) {
         this.keyblocAcctCode = keyblocAcctCode;
         return this;
     }
@@ -728,7 +728,7 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("fundSummary")
-    public Object getFundSummary() {
+    public String getFundSummary() {
         return fundSummary;
     }
 
@@ -739,11 +739,11 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("fundSummary")
-    public void setFundSummary(Object fundSummary) {
+    public void setFundSummary(String fundSummary) {
         this.fundSummary = fundSummary;
     }
 
-    public GrantInceptionToDate100GetRequest withFundSummary(Object fundSummary) {
+    public GrantInceptionToDate100GetRequest withFundSummary(String fundSummary) {
         this.fundSummary = fundSummary;
         return this;
     }
@@ -782,7 +782,7 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocAcctSummary")
-    public Object getKeyblocAcctSummary() {
+    public String getKeyblocAcctSummary() {
         return keyblocAcctSummary;
     }
 
@@ -793,11 +793,11 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocAcctSummary")
-    public void setKeyblocAcctSummary(Object keyblocAcctSummary) {
+    public void setKeyblocAcctSummary(String keyblocAcctSummary) {
         this.keyblocAcctSummary = keyblocAcctSummary;
     }
 
-    public GrantInceptionToDate100GetRequest withKeyblocAcctSummary(Object keyblocAcctSummary) {
+    public GrantInceptionToDate100GetRequest withKeyblocAcctSummary(String keyblocAcctSummary) {
         this.keyblocAcctSummary = keyblocAcctSummary;
         return this;
     }
@@ -809,7 +809,7 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("sponsorAcctInd")
-    public Object getSponsorAcctInd() {
+    public String getSponsorAcctInd() {
         return sponsorAcctInd;
     }
 
@@ -820,11 +820,11 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("sponsorAcctInd")
-    public void setSponsorAcctInd(Object sponsorAcctInd) {
+    public void setSponsorAcctInd(String sponsorAcctInd) {
         this.sponsorAcctInd = sponsorAcctInd;
     }
 
-    public GrantInceptionToDate100GetRequest withSponsorAcctInd(Object sponsorAcctInd) {
+    public GrantInceptionToDate100GetRequest withSponsorAcctInd(String sponsorAcctInd) {
         this.sponsorAcctInd = sponsorAcctInd;
         return this;
     }
@@ -863,7 +863,7 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocMonthFrom")
-    public Object getKeyblocMonthFrom() {
+    public Double getKeyblocMonthFrom() {
         return keyblocMonthFrom;
     }
 
@@ -874,11 +874,11 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocMonthFrom")
-    public void setKeyblocMonthFrom(Object keyblocMonthFrom) {
+    public void setKeyblocMonthFrom(Double keyblocMonthFrom) {
         this.keyblocMonthFrom = keyblocMonthFrom;
     }
 
-    public GrantInceptionToDate100GetRequest withKeyblocMonthFrom(Object keyblocMonthFrom) {
+    public GrantInceptionToDate100GetRequest withKeyblocMonthFrom(Double keyblocMonthFrom) {
         this.keyblocMonthFrom = keyblocMonthFrom;
         return this;
     }
@@ -917,7 +917,7 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocActvCode")
-    public Object getKeyblocActvCode() {
+    public String getKeyblocActvCode() {
         return keyblocActvCode;
     }
 
@@ -928,11 +928,11 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocActvCode")
-    public void setKeyblocActvCode(Object keyblocActvCode) {
+    public void setKeyblocActvCode(String keyblocActvCode) {
         this.keyblocActvCode = keyblocActvCode;
     }
 
-    public GrantInceptionToDate100GetRequest withKeyblocActvCode(Object keyblocActvCode) {
+    public GrantInceptionToDate100GetRequest withKeyblocActvCode(String keyblocActvCode) {
         this.keyblocActvCode = keyblocActvCode;
         return this;
     }
@@ -944,7 +944,7 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocGrntCode")
-    public Object getKeyblocGrntCode() {
+    public String getKeyblocGrntCode() {
         return keyblocGrntCode;
     }
 
@@ -955,11 +955,11 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocGrntCode")
-    public void setKeyblocGrntCode(Object keyblocGrntCode) {
+    public void setKeyblocGrntCode(String keyblocGrntCode) {
         this.keyblocGrntCode = keyblocGrntCode;
     }
 
-    public GrantInceptionToDate100GetRequest withKeyblocGrntCode(Object keyblocGrntCode) {
+    public GrantInceptionToDate100GetRequest withKeyblocGrntCode(String keyblocGrntCode) {
         this.keyblocGrntCode = keyblocGrntCode;
         return this;
     }
@@ -971,7 +971,7 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocGrntYr")
-    public Object getKeyblocGrntYr() {
+    public String getKeyblocGrntYr() {
         return keyblocGrntYr;
     }
 
@@ -982,11 +982,11 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocGrntYr")
-    public void setKeyblocGrntYr(Object keyblocGrntYr) {
+    public void setKeyblocGrntYr(String keyblocGrntYr) {
         this.keyblocGrntYr = keyblocGrntYr;
     }
 
-    public GrantInceptionToDate100GetRequest withKeyblocGrntYr(Object keyblocGrntYr) {
+    public GrantInceptionToDate100GetRequest withKeyblocGrntYr(String keyblocGrntYr) {
         this.keyblocGrntYr = keyblocGrntYr;
         return this;
     }
@@ -1025,7 +1025,7 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocFundCode")
-    public Object getKeyblocFundCode() {
+    public String getKeyblocFundCode() {
         return keyblocFundCode;
     }
 
@@ -1036,11 +1036,11 @@ public class GrantInceptionToDate100GetRequest {
      * 
      */
     @JsonProperty("keyblocFundCode")
-    public void setKeyblocFundCode(Object keyblocFundCode) {
+    public void setKeyblocFundCode(String keyblocFundCode) {
         this.keyblocFundCode = keyblocFundCode;
     }
 
-    public GrantInceptionToDate100GetRequest withKeyblocFundCode(Object keyblocFundCode) {
+    public GrantInceptionToDate100GetRequest withKeyblocFundCode(String keyblocFundCode) {
         this.keyblocFundCode = keyblocFundCode;
         return this;
     }

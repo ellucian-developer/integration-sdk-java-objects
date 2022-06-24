@@ -52,7 +52,6 @@ public class StudentDetailCodes100GetRequest {
 
     /**
      * Lookup lineage reference object : gtvcurr
-     * (Required)
      * 
      */
     @JsonProperty("currCode")
@@ -323,7 +322,6 @@ public class StudentDetailCodes100GetRequest {
 
     /**
      * Lookup lineage reference object : gtvcurr
-     * (Required)
      * 
      */
     @JsonProperty("currCode")
@@ -333,7 +331,6 @@ public class StudentDetailCodes100GetRequest {
 
     /**
      * Lookup lineage reference object : gtvcurr
-     * (Required)
      * 
      */
     @JsonProperty("currCode")

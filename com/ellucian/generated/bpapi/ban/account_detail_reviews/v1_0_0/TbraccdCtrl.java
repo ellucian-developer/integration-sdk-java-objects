@@ -32,7 +32,7 @@ public class TbraccdCtrl {
      */
     @JsonProperty("amountDue")
     @JsonPropertyDescription("Lineage reference object : amountDue")
-    private Object amountDue;
+    private Double amountDue;
     /**
      * Memo Balance
      * <p>
@@ -41,7 +41,7 @@ public class TbraccdCtrl {
      */
     @JsonProperty("memoBalance")
     @JsonPropertyDescription("Lineage reference object : memoBalance")
-    private Object memoBalance;
+    private Double memoBalance;
     /**
      * Query Balance
      * <p>
@@ -50,7 +50,7 @@ public class TbraccdCtrl {
      */
     @JsonProperty("queryBalance")
     @JsonPropertyDescription("Lineage reference object : queryBalance")
-    private Object queryBalance;
+    private Double queryBalance;
     /**
      * Authorized Aid Balance
      * <p>
@@ -59,7 +59,7 @@ public class TbraccdCtrl {
      */
     @JsonProperty("authAidBalance")
     @JsonPropertyDescription("Lineage reference object : authAidBalance")
-    private Object authAidBalance;
+    private Double authAidBalance;
     /**
      * Account Balance
      * <p>
@@ -68,7 +68,7 @@ public class TbraccdCtrl {
      */
     @JsonProperty("accountBalance")
     @JsonPropertyDescription("Lineage reference object : accountBalance")
-    private Object accountBalance;
+    private Double accountBalance;
     /**
      * NSF
      * <p>
@@ -77,7 +77,7 @@ public class TbraccdCtrl {
      */
     @JsonProperty("nsfCount")
     @JsonPropertyDescription("Lineage reference object : nsfCount")
-    private Object nsfCount;
+    private Double nsfCount;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -88,7 +88,7 @@ public class TbraccdCtrl {
      * 
      */
     @JsonProperty("amountDue")
-    public Object getAmountDue() {
+    public Double getAmountDue() {
         return amountDue;
     }
 
@@ -99,11 +99,11 @@ public class TbraccdCtrl {
      * 
      */
     @JsonProperty("amountDue")
-    public void setAmountDue(Object amountDue) {
+    public void setAmountDue(Double amountDue) {
         this.amountDue = amountDue;
     }
 
-    public TbraccdCtrl withAmountDue(Object amountDue) {
+    public TbraccdCtrl withAmountDue(Double amountDue) {
         this.amountDue = amountDue;
         return this;
     }
@@ -115,7 +115,7 @@ public class TbraccdCtrl {
      * 
      */
     @JsonProperty("memoBalance")
-    public Object getMemoBalance() {
+    public Double getMemoBalance() {
         return memoBalance;
     }
 
@@ -126,11 +126,11 @@ public class TbraccdCtrl {
      * 
      */
     @JsonProperty("memoBalance")
-    public void setMemoBalance(Object memoBalance) {
+    public void setMemoBalance(Double memoBalance) {
         this.memoBalance = memoBalance;
     }
 
-    public TbraccdCtrl withMemoBalance(Object memoBalance) {
+    public TbraccdCtrl withMemoBalance(Double memoBalance) {
         this.memoBalance = memoBalance;
         return this;
     }
@@ -142,7 +142,7 @@ public class TbraccdCtrl {
      * 
      */
     @JsonProperty("queryBalance")
-    public Object getQueryBalance() {
+    public Double getQueryBalance() {
         return queryBalance;
     }
 
@@ -153,11 +153,11 @@ public class TbraccdCtrl {
      * 
      */
     @JsonProperty("queryBalance")
-    public void setQueryBalance(Object queryBalance) {
+    public void setQueryBalance(Double queryBalance) {
         this.queryBalance = queryBalance;
     }
 
-    public TbraccdCtrl withQueryBalance(Object queryBalance) {
+    public TbraccdCtrl withQueryBalance(Double queryBalance) {
         this.queryBalance = queryBalance;
         return this;
     }
@@ -169,7 +169,7 @@ public class TbraccdCtrl {
      * 
      */
     @JsonProperty("authAidBalance")
-    public Object getAuthAidBalance() {
+    public Double getAuthAidBalance() {
         return authAidBalance;
     }
 
@@ -180,11 +180,11 @@ public class TbraccdCtrl {
      * 
      */
     @JsonProperty("authAidBalance")
-    public void setAuthAidBalance(Object authAidBalance) {
+    public void setAuthAidBalance(Double authAidBalance) {
         this.authAidBalance = authAidBalance;
     }
 
-    public TbraccdCtrl withAuthAidBalance(Object authAidBalance) {
+    public TbraccdCtrl withAuthAidBalance(Double authAidBalance) {
         this.authAidBalance = authAidBalance;
         return this;
     }
@@ -196,7 +196,7 @@ public class TbraccdCtrl {
      * 
      */
     @JsonProperty("accountBalance")
-    public Object getAccountBalance() {
+    public Double getAccountBalance() {
         return accountBalance;
     }
 
@@ -207,11 +207,11 @@ public class TbraccdCtrl {
      * 
      */
     @JsonProperty("accountBalance")
-    public void setAccountBalance(Object accountBalance) {
+    public void setAccountBalance(Double accountBalance) {
         this.accountBalance = accountBalance;
     }
 
-    public TbraccdCtrl withAccountBalance(Object accountBalance) {
+    public TbraccdCtrl withAccountBalance(Double accountBalance) {
         this.accountBalance = accountBalance;
         return this;
     }
@@ -223,7 +223,7 @@ public class TbraccdCtrl {
      * 
      */
     @JsonProperty("nsfCount")
-    public Object getNsfCount() {
+    public Double getNsfCount() {
         return nsfCount;
     }
 
@@ -234,11 +234,11 @@ public class TbraccdCtrl {
      * 
      */
     @JsonProperty("nsfCount")
-    public void setNsfCount(Object nsfCount) {
+    public void setNsfCount(Double nsfCount) {
         this.nsfCount = nsfCount;
     }
 
-    public TbraccdCtrl withNsfCount(Object nsfCount) {
+    public TbraccdCtrl withNsfCount(Double nsfCount) {
         this.nsfCount = nsfCount;
         return this;
     }

@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.employee_benefit_or_deduction_setup.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -28,7 +29,7 @@ public class EmployeeBenefitOrDeductionSetup100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Default Begin Date
      * <p>
@@ -37,7 +38,7 @@ public class EmployeeBenefitOrDeductionSetup100GetRequest {
      */
     @JsonProperty("defaultBeginDate")
     @JsonPropertyDescription("Lineage reference object : defaultBeginDate")
-    private Object defaultBeginDate;
+    private Date defaultBeginDate;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -48,7 +49,7 @@ public class EmployeeBenefitOrDeductionSetup100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -59,11 +60,11 @@ public class EmployeeBenefitOrDeductionSetup100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public EmployeeBenefitOrDeductionSetup100GetRequest withId(Object id) {
+    public EmployeeBenefitOrDeductionSetup100GetRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -75,7 +76,7 @@ public class EmployeeBenefitOrDeductionSetup100GetRequest {
      * 
      */
     @JsonProperty("defaultBeginDate")
-    public Object getDefaultBeginDate() {
+    public Date getDefaultBeginDate() {
         return defaultBeginDate;
     }
 
@@ -86,11 +87,11 @@ public class EmployeeBenefitOrDeductionSetup100GetRequest {
      * 
      */
     @JsonProperty("defaultBeginDate")
-    public void setDefaultBeginDate(Object defaultBeginDate) {
+    public void setDefaultBeginDate(Date defaultBeginDate) {
         this.defaultBeginDate = defaultBeginDate;
     }
 
-    public EmployeeBenefitOrDeductionSetup100GetRequest withDefaultBeginDate(Object defaultBeginDate) {
+    public EmployeeBenefitOrDeductionSetup100GetRequest withDefaultBeginDate(Date defaultBeginDate) {
         this.defaultBeginDate = defaultBeginDate;
         return this;
     }

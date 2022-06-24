@@ -59,7 +59,7 @@ public class PersonSocialEconomicIdentityDetails100GetRequest {
      */
     @JsonProperty("gtvseirCode")
     @JsonPropertyDescription("Lineage reference object : gtvseirCode")
-    private Object gtvseirCode;
+    private String gtvseirCode;
     /**
      * ID
      * <p>
@@ -68,7 +68,7 @@ public class PersonSocialEconomicIdentityDetails100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Gorpsid User Id
      * <p>
@@ -169,7 +169,7 @@ public class PersonSocialEconomicIdentityDetails100GetRequest {
      * 
      */
     @JsonProperty("gtvseirCode")
-    public Object getGtvseirCode() {
+    public String getGtvseirCode() {
         return gtvseirCode;
     }
 
@@ -178,11 +178,11 @@ public class PersonSocialEconomicIdentityDetails100GetRequest {
      * 
      */
     @JsonProperty("gtvseirCode")
-    public void setGtvseirCode(Object gtvseirCode) {
+    public void setGtvseirCode(String gtvseirCode) {
         this.gtvseirCode = gtvseirCode;
     }
 
-    public PersonSocialEconomicIdentityDetails100GetRequest withGtvseirCode(Object gtvseirCode) {
+    public PersonSocialEconomicIdentityDetails100GetRequest withGtvseirCode(String gtvseirCode) {
         this.gtvseirCode = gtvseirCode;
         return this;
     }
@@ -194,7 +194,7 @@ public class PersonSocialEconomicIdentityDetails100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -205,11 +205,11 @@ public class PersonSocialEconomicIdentityDetails100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public PersonSocialEconomicIdentityDetails100GetRequest withId(Object id) {
+    public PersonSocialEconomicIdentityDetails100GetRequest withId(String id) {
         this.id = id;
         return this;
     }

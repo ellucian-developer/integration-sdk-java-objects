@@ -106,7 +106,7 @@ public class ElectronicGradeBookConfiguration100PutRequest {
      */
     @JsonProperty("ssasectCrn")
     @JsonPropertyDescription("Lineage reference object : ssasectCrn")
-    private Object ssasectCrn;
+    private String ssasectCrn;
     /**
      * Reassessment Score Cutoff Date
      * <p>
@@ -296,7 +296,7 @@ public class ElectronicGradeBookConfiguration100PutRequest {
      */
     @JsonProperty("ssasectTermCode")
     @JsonPropertyDescription("Lineage reference object : ssasectTermCode, Lookup lineage reference object : stvterm")
-    private Object ssasectTermCode;
+    private String ssasectTermCode;
     /**
      * Reassessment Score Cutoff Date
      * <p>
@@ -505,7 +505,7 @@ public class ElectronicGradeBookConfiguration100PutRequest {
      * 
      */
     @JsonProperty("ssasectCrn")
-    public Object getSsasectCrn() {
+    public String getSsasectCrn() {
         return ssasectCrn;
     }
 
@@ -516,11 +516,11 @@ public class ElectronicGradeBookConfiguration100PutRequest {
      * 
      */
     @JsonProperty("ssasectCrn")
-    public void setSsasectCrn(Object ssasectCrn) {
+    public void setSsasectCrn(String ssasectCrn) {
         this.ssasectCrn = ssasectCrn;
     }
 
-    public ElectronicGradeBookConfiguration100PutRequest withSsasectCrn(Object ssasectCrn) {
+    public ElectronicGradeBookConfiguration100PutRequest withSsasectCrn(String ssasectCrn) {
         this.ssasectCrn = ssasectCrn;
         return this;
     }
@@ -1074,7 +1074,7 @@ public class ElectronicGradeBookConfiguration100PutRequest {
      * 
      */
     @JsonProperty("ssasectTermCode")
-    public Object getSsasectTermCode() {
+    public String getSsasectTermCode() {
         return ssasectTermCode;
     }
 
@@ -1085,11 +1085,11 @@ public class ElectronicGradeBookConfiguration100PutRequest {
      * 
      */
     @JsonProperty("ssasectTermCode")
-    public void setSsasectTermCode(Object ssasectTermCode) {
+    public void setSsasectTermCode(String ssasectTermCode) {
         this.ssasectTermCode = ssasectTermCode;
     }
 
-    public ElectronicGradeBookConfiguration100PutRequest withSsasectTermCode(Object ssasectTermCode) {
+    public ElectronicGradeBookConfiguration100PutRequest withSsasectTermCode(String ssasectTermCode) {
         this.ssasectTermCode = ssasectTermCode;
         return this;
     }

@@ -86,7 +86,7 @@ public class GrantMaintenancePersonnel100GetRequest {
      */
     @JsonProperty("displayFrbgrntCode")
     @JsonPropertyDescription("Lineage reference object : displayFrbgrntCode")
-    private Object displayFrbgrntCode;
+    private String displayFrbgrntCode;
     /**
      * Indicator
      * <p>
@@ -104,7 +104,7 @@ public class GrantMaintenancePersonnel100GetRequest {
      */
     @JsonProperty("displayPropCode")
     @JsonPropertyDescription("Lineage reference object : displayPropCode")
-    private Object displayPropCode;
+    private String displayPropCode;
     /**
      * Address Sequence Number
      * <p>
@@ -312,7 +312,7 @@ public class GrantMaintenancePersonnel100GetRequest {
      * 
      */
     @JsonProperty("displayFrbgrntCode")
-    public Object getDisplayFrbgrntCode() {
+    public String getDisplayFrbgrntCode() {
         return displayFrbgrntCode;
     }
 
@@ -323,11 +323,11 @@ public class GrantMaintenancePersonnel100GetRequest {
      * 
      */
     @JsonProperty("displayFrbgrntCode")
-    public void setDisplayFrbgrntCode(Object displayFrbgrntCode) {
+    public void setDisplayFrbgrntCode(String displayFrbgrntCode) {
         this.displayFrbgrntCode = displayFrbgrntCode;
     }
 
-    public GrantMaintenancePersonnel100GetRequest withDisplayFrbgrntCode(Object displayFrbgrntCode) {
+    public GrantMaintenancePersonnel100GetRequest withDisplayFrbgrntCode(String displayFrbgrntCode) {
         this.displayFrbgrntCode = displayFrbgrntCode;
         return this;
     }
@@ -366,7 +366,7 @@ public class GrantMaintenancePersonnel100GetRequest {
      * 
      */
     @JsonProperty("displayPropCode")
-    public Object getDisplayPropCode() {
+    public String getDisplayPropCode() {
         return displayPropCode;
     }
 
@@ -377,11 +377,11 @@ public class GrantMaintenancePersonnel100GetRequest {
      * 
      */
     @JsonProperty("displayPropCode")
-    public void setDisplayPropCode(Object displayPropCode) {
+    public void setDisplayPropCode(String displayPropCode) {
         this.displayPropCode = displayPropCode;
     }
 
-    public GrantMaintenancePersonnel100GetRequest withDisplayPropCode(Object displayPropCode) {
+    public GrantMaintenancePersonnel100GetRequest withDisplayPropCode(String displayPropCode) {
         this.displayPropCode = displayPropCode;
         return this;
     }

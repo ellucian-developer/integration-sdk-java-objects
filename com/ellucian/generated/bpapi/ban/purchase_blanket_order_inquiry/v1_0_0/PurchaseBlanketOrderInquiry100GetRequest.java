@@ -29,7 +29,7 @@ public class PurchaseBlanketOrderInquiry100GetRequest {
      */
     @JsonProperty("displayBordCode")
     @JsonPropertyDescription("Lineage reference object : displayBordCode")
-    private Object displayBordCode;
+    private String displayBordCode;
     /**
      * Change Sequence Number
      * <p>
@@ -38,7 +38,7 @@ public class PurchaseBlanketOrderInquiry100GetRequest {
      */
     @JsonProperty("displayChangeSeqNum")
     @JsonPropertyDescription("Lineage reference object : displayChangeSeqNum")
-    private Object displayChangeSeqNum;
+    private Double displayChangeSeqNum;
     /**
      * Purchase Order
      * <p>
@@ -47,7 +47,7 @@ public class PurchaseBlanketOrderInquiry100GetRequest {
      */
     @JsonProperty("displayPohdCode")
     @JsonPropertyDescription("Lineage reference object : displayPohdCode")
-    private Object displayPohdCode;
+    private String displayPohdCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -58,7 +58,7 @@ public class PurchaseBlanketOrderInquiry100GetRequest {
      * 
      */
     @JsonProperty("displayBordCode")
-    public Object getDisplayBordCode() {
+    public String getDisplayBordCode() {
         return displayBordCode;
     }
 
@@ -69,11 +69,11 @@ public class PurchaseBlanketOrderInquiry100GetRequest {
      * 
      */
     @JsonProperty("displayBordCode")
-    public void setDisplayBordCode(Object displayBordCode) {
+    public void setDisplayBordCode(String displayBordCode) {
         this.displayBordCode = displayBordCode;
     }
 
-    public PurchaseBlanketOrderInquiry100GetRequest withDisplayBordCode(Object displayBordCode) {
+    public PurchaseBlanketOrderInquiry100GetRequest withDisplayBordCode(String displayBordCode) {
         this.displayBordCode = displayBordCode;
         return this;
     }
@@ -85,7 +85,7 @@ public class PurchaseBlanketOrderInquiry100GetRequest {
      * 
      */
     @JsonProperty("displayChangeSeqNum")
-    public Object getDisplayChangeSeqNum() {
+    public Double getDisplayChangeSeqNum() {
         return displayChangeSeqNum;
     }
 
@@ -96,11 +96,11 @@ public class PurchaseBlanketOrderInquiry100GetRequest {
      * 
      */
     @JsonProperty("displayChangeSeqNum")
-    public void setDisplayChangeSeqNum(Object displayChangeSeqNum) {
+    public void setDisplayChangeSeqNum(Double displayChangeSeqNum) {
         this.displayChangeSeqNum = displayChangeSeqNum;
     }
 
-    public PurchaseBlanketOrderInquiry100GetRequest withDisplayChangeSeqNum(Object displayChangeSeqNum) {
+    public PurchaseBlanketOrderInquiry100GetRequest withDisplayChangeSeqNum(Double displayChangeSeqNum) {
         this.displayChangeSeqNum = displayChangeSeqNum;
         return this;
     }
@@ -112,7 +112,7 @@ public class PurchaseBlanketOrderInquiry100GetRequest {
      * 
      */
     @JsonProperty("displayPohdCode")
-    public Object getDisplayPohdCode() {
+    public String getDisplayPohdCode() {
         return displayPohdCode;
     }
 
@@ -123,11 +123,11 @@ public class PurchaseBlanketOrderInquiry100GetRequest {
      * 
      */
     @JsonProperty("displayPohdCode")
-    public void setDisplayPohdCode(Object displayPohdCode) {
+    public void setDisplayPohdCode(String displayPohdCode) {
         this.displayPohdCode = displayPohdCode;
     }
 
-    public PurchaseBlanketOrderInquiry100GetRequest withDisplayPohdCode(Object displayPohdCode) {
+    public PurchaseBlanketOrderInquiry100GetRequest withDisplayPohdCode(String displayPohdCode) {
         this.displayPohdCode = displayPohdCode;
         return this;
     }

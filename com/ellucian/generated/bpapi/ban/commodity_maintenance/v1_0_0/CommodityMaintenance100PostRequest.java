@@ -29,7 +29,7 @@ public class CommodityMaintenance100PostRequest {
      */
     @JsonProperty("displayCommCode")
     @JsonPropertyDescription("Lineage reference object : displayCommCode")
-    private Object displayCommCode;
+    private String displayCommCode;
     /**
      * Chart of Accounts
      * <p>
@@ -59,7 +59,7 @@ public class CommodityMaintenance100PostRequest {
      * 
      */
     @JsonProperty("displayCommCode")
-    public Object getDisplayCommCode() {
+    public String getDisplayCommCode() {
         return displayCommCode;
     }
 
@@ -70,11 +70,11 @@ public class CommodityMaintenance100PostRequest {
      * 
      */
     @JsonProperty("displayCommCode")
-    public void setDisplayCommCode(Object displayCommCode) {
+    public void setDisplayCommCode(String displayCommCode) {
         this.displayCommCode = displayCommCode;
     }
 
-    public CommodityMaintenance100PostRequest withDisplayCommCode(Object displayCommCode) {
+    public CommodityMaintenance100PostRequest withDisplayCommCode(String displayCommCode) {
         this.displayCommCode = displayCommCode;
         return this;
     }

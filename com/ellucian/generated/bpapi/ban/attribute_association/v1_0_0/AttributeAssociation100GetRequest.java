@@ -32,14 +32,14 @@ public class AttributeAssociation100GetRequest {
      */
     @JsonProperty("coas")
     @JsonPropertyDescription("Lineage reference object : coasCode, Lookup lineage reference object : ftvcoas")
-    private Object coas;
+    private String coas;
     /**
      * Lineage reference object : foapalCode
      * 
      */
     @JsonProperty("foapalCode")
     @JsonPropertyDescription("Lineage reference object : foapalCode")
-    private Object foapalCode;
+    private String foapalCode;
     /**
      * Ftrfnda Attv Code
      * <p>
@@ -55,7 +55,7 @@ public class AttributeAssociation100GetRequest {
      */
     @JsonProperty("foapalType")
     @JsonPropertyDescription("Lineage reference object : foapalType")
-    private Object foapalType;
+    private String foapalType;
     /**
      * Ftrfnda Attt Code
      * <p>
@@ -76,7 +76,7 @@ public class AttributeAssociation100GetRequest {
      * 
      */
     @JsonProperty("coas")
-    public Object getCoas() {
+    public String getCoas() {
         return coas;
     }
 
@@ -88,11 +88,11 @@ public class AttributeAssociation100GetRequest {
      * 
      */
     @JsonProperty("coas")
-    public void setCoas(Object coas) {
+    public void setCoas(String coas) {
         this.coas = coas;
     }
 
-    public AttributeAssociation100GetRequest withCoas(Object coas) {
+    public AttributeAssociation100GetRequest withCoas(String coas) {
         this.coas = coas;
         return this;
     }
@@ -102,7 +102,7 @@ public class AttributeAssociation100GetRequest {
      * 
      */
     @JsonProperty("foapalCode")
-    public Object getFoapalCode() {
+    public String getFoapalCode() {
         return foapalCode;
     }
 
@@ -111,11 +111,11 @@ public class AttributeAssociation100GetRequest {
      * 
      */
     @JsonProperty("foapalCode")
-    public void setFoapalCode(Object foapalCode) {
+    public void setFoapalCode(String foapalCode) {
         this.foapalCode = foapalCode;
     }
 
-    public AttributeAssociation100GetRequest withFoapalCode(Object foapalCode) {
+    public AttributeAssociation100GetRequest withFoapalCode(String foapalCode) {
         this.foapalCode = foapalCode;
         return this;
     }
@@ -152,7 +152,7 @@ public class AttributeAssociation100GetRequest {
      * 
      */
     @JsonProperty("foapalType")
-    public Object getFoapalType() {
+    public String getFoapalType() {
         return foapalType;
     }
 
@@ -161,11 +161,11 @@ public class AttributeAssociation100GetRequest {
      * 
      */
     @JsonProperty("foapalType")
-    public void setFoapalType(Object foapalType) {
+    public void setFoapalType(String foapalType) {
         this.foapalType = foapalType;
     }
 
-    public AttributeAssociation100GetRequest withFoapalType(Object foapalType) {
+    public AttributeAssociation100GetRequest withFoapalType(String foapalType) {
         this.foapalType = foapalType;
         return this;
     }

@@ -115,7 +115,7 @@ public class ElectronicAdmissionsApplicantRules100PutRequest {
      */
     @JsonProperty("keyblckEgrpCode")
     @JsonPropertyDescription("Lineage reference object : keyblckEgrpCode, Lookup lineage reference object : stvegrp")
-    private Object keyblckEgrpCode;
+    private String keyblckEgrpCode;
     /**
      * Value
      * <p>
@@ -382,7 +382,7 @@ public class ElectronicAdmissionsApplicantRules100PutRequest {
      * 
      */
     @JsonProperty("keyblckEgrpCode")
-    public Object getKeyblckEgrpCode() {
+    public String getKeyblckEgrpCode() {
         return keyblckEgrpCode;
     }
 
@@ -393,11 +393,11 @@ public class ElectronicAdmissionsApplicantRules100PutRequest {
      * 
      */
     @JsonProperty("keyblckEgrpCode")
-    public void setKeyblckEgrpCode(Object keyblckEgrpCode) {
+    public void setKeyblckEgrpCode(String keyblckEgrpCode) {
         this.keyblckEgrpCode = keyblckEgrpCode;
     }
 
-    public ElectronicAdmissionsApplicantRules100PutRequest withKeyblckEgrpCode(Object keyblckEgrpCode) {
+    public ElectronicAdmissionsApplicantRules100PutRequest withKeyblckEgrpCode(String keyblckEgrpCode) {
         this.keyblckEgrpCode = keyblckEgrpCode;
         return this;
     }

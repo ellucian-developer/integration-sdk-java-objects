@@ -44,14 +44,14 @@ public class ProgramHierarchy100GetResponse {
      */
     @JsonProperty("level5")
     @JsonPropertyDescription("Lineage reference object : level5")
-    private Object level5;
+    private String level5;
     /**
      * Lineage reference object : level4
      * 
      */
     @JsonProperty("level4")
     @JsonPropertyDescription("Lineage reference object : level4")
-    private Object level4;
+    private String level4;
     /**
      * Predecessor Program
      * <p>
@@ -60,14 +60,14 @@ public class ProgramHierarchy100GetResponse {
      */
     @JsonProperty("hpPredProgCode")
     @JsonPropertyDescription("Lineage reference object : hpPredProgCode")
-    private Object hpPredProgCode;
+    private String hpPredProgCode;
     /**
      * Lineage reference object : hpTitle
      * 
      */
     @JsonProperty("hpTitle")
     @JsonPropertyDescription("Lineage reference object : hpTitle")
-    private Object hpTitle;
+    private String hpTitle;
     /**
      * Program
      * <p>
@@ -76,7 +76,7 @@ public class ProgramHierarchy100GetResponse {
      */
     @JsonProperty("hpProgCode")
     @JsonPropertyDescription("Lineage reference object : hpProgCode")
-    private Object hpProgCode;
+    private String hpProgCode;
     /**
      * Chart of Accounts
      * <p>
@@ -85,105 +85,105 @@ public class ProgramHierarchy100GetResponse {
      */
     @JsonProperty("hpCoasCode")
     @JsonPropertyDescription("Lineage reference object : hpCoasCode")
-    private Object hpCoasCode;
+    private String hpCoasCode;
     /**
      * Lineage reference object : titl1
      * 
      */
     @JsonProperty("titl1")
     @JsonPropertyDescription("Lineage reference object : titl1")
-    private Object titl1;
+    private String titl1;
     /**
      * Lineage reference object : titl2
      * 
      */
     @JsonProperty("titl2")
     @JsonPropertyDescription("Lineage reference object : titl2")
-    private Object titl2;
+    private String titl2;
     /**
      * Lineage reference object : titl3
      * 
      */
     @JsonProperty("titl3")
     @JsonPropertyDescription("Lineage reference object : titl3")
-    private Object titl3;
+    private String titl3;
     /**
      * Lineage reference object : titl4
      * 
      */
     @JsonProperty("titl4")
     @JsonPropertyDescription("Lineage reference object : titl4")
-    private Object titl4;
+    private String titl4;
     /**
      * Lineage reference object : predTitle
      * 
      */
     @JsonProperty("predTitle")
     @JsonPropertyDescription("Lineage reference object : predTitle")
-    private Object predTitle;
+    private String predTitle;
     /**
      * Lineage reference object : head1
      * 
      */
     @JsonProperty("head1")
     @JsonPropertyDescription("Lineage reference object : head1")
-    private Object head1;
+    private String head1;
     /**
      * Lineage reference object : head2
      * 
      */
     @JsonProperty("head2")
     @JsonPropertyDescription("Lineage reference object : head2")
-    private Object head2;
+    private String head2;
     /**
      * Lineage reference object : head3
      * 
      */
     @JsonProperty("head3")
     @JsonPropertyDescription("Lineage reference object : head3")
-    private Object head3;
+    private String head3;
     /**
      * Lineage reference object : head4
      * 
      */
     @JsonProperty("head4")
     @JsonPropertyDescription("Lineage reference object : head4")
-    private Object head4;
+    private String head4;
     /**
      * Lineage reference object : level1
      * 
      */
     @JsonProperty("level1")
     @JsonPropertyDescription("Lineage reference object : level1")
-    private Object level1;
+    private String level1;
     /**
      * Lineage reference object : titl5
      * 
      */
     @JsonProperty("titl5")
     @JsonPropertyDescription("Lineage reference object : titl5")
-    private Object titl5;
+    private String titl5;
     /**
      * Lineage reference object : head5
      * 
      */
     @JsonProperty("head5")
     @JsonPropertyDescription("Lineage reference object : head5")
-    private Object head5;
+    private String head5;
     /**
      * Lineage reference object : level3
      * 
      */
     @JsonProperty("level3")
     @JsonPropertyDescription("Lineage reference object : level3")
-    private Object level3;
+    private String level3;
     /**
      * Lineage reference object : level2
      * 
      */
     @JsonProperty("level2")
     @JsonPropertyDescription("Lineage reference object : level2")
-    private Object level2;
+    private String level2;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -192,7 +192,7 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("level5")
-    public Object getLevel5() {
+    public String getLevel5() {
         return level5;
     }
 
@@ -201,11 +201,11 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("level5")
-    public void setLevel5(Object level5) {
+    public void setLevel5(String level5) {
         this.level5 = level5;
     }
 
-    public ProgramHierarchy100GetResponse withLevel5(Object level5) {
+    public ProgramHierarchy100GetResponse withLevel5(String level5) {
         this.level5 = level5;
         return this;
     }
@@ -215,7 +215,7 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("level4")
-    public Object getLevel4() {
+    public String getLevel4() {
         return level4;
     }
 
@@ -224,11 +224,11 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("level4")
-    public void setLevel4(Object level4) {
+    public void setLevel4(String level4) {
         this.level4 = level4;
     }
 
-    public ProgramHierarchy100GetResponse withLevel4(Object level4) {
+    public ProgramHierarchy100GetResponse withLevel4(String level4) {
         this.level4 = level4;
         return this;
     }
@@ -240,7 +240,7 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("hpPredProgCode")
-    public Object getHpPredProgCode() {
+    public String getHpPredProgCode() {
         return hpPredProgCode;
     }
 
@@ -251,11 +251,11 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("hpPredProgCode")
-    public void setHpPredProgCode(Object hpPredProgCode) {
+    public void setHpPredProgCode(String hpPredProgCode) {
         this.hpPredProgCode = hpPredProgCode;
     }
 
-    public ProgramHierarchy100GetResponse withHpPredProgCode(Object hpPredProgCode) {
+    public ProgramHierarchy100GetResponse withHpPredProgCode(String hpPredProgCode) {
         this.hpPredProgCode = hpPredProgCode;
         return this;
     }
@@ -265,7 +265,7 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("hpTitle")
-    public Object getHpTitle() {
+    public String getHpTitle() {
         return hpTitle;
     }
 
@@ -274,11 +274,11 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("hpTitle")
-    public void setHpTitle(Object hpTitle) {
+    public void setHpTitle(String hpTitle) {
         this.hpTitle = hpTitle;
     }
 
-    public ProgramHierarchy100GetResponse withHpTitle(Object hpTitle) {
+    public ProgramHierarchy100GetResponse withHpTitle(String hpTitle) {
         this.hpTitle = hpTitle;
         return this;
     }
@@ -290,7 +290,7 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("hpProgCode")
-    public Object getHpProgCode() {
+    public String getHpProgCode() {
         return hpProgCode;
     }
 
@@ -301,11 +301,11 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("hpProgCode")
-    public void setHpProgCode(Object hpProgCode) {
+    public void setHpProgCode(String hpProgCode) {
         this.hpProgCode = hpProgCode;
     }
 
-    public ProgramHierarchy100GetResponse withHpProgCode(Object hpProgCode) {
+    public ProgramHierarchy100GetResponse withHpProgCode(String hpProgCode) {
         this.hpProgCode = hpProgCode;
         return this;
     }
@@ -317,7 +317,7 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("hpCoasCode")
-    public Object getHpCoasCode() {
+    public String getHpCoasCode() {
         return hpCoasCode;
     }
 
@@ -328,11 +328,11 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("hpCoasCode")
-    public void setHpCoasCode(Object hpCoasCode) {
+    public void setHpCoasCode(String hpCoasCode) {
         this.hpCoasCode = hpCoasCode;
     }
 
-    public ProgramHierarchy100GetResponse withHpCoasCode(Object hpCoasCode) {
+    public ProgramHierarchy100GetResponse withHpCoasCode(String hpCoasCode) {
         this.hpCoasCode = hpCoasCode;
         return this;
     }
@@ -342,7 +342,7 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("titl1")
-    public Object getTitl1() {
+    public String getTitl1() {
         return titl1;
     }
 
@@ -351,11 +351,11 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("titl1")
-    public void setTitl1(Object titl1) {
+    public void setTitl1(String titl1) {
         this.titl1 = titl1;
     }
 
-    public ProgramHierarchy100GetResponse withTitl1(Object titl1) {
+    public ProgramHierarchy100GetResponse withTitl1(String titl1) {
         this.titl1 = titl1;
         return this;
     }
@@ -365,7 +365,7 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("titl2")
-    public Object getTitl2() {
+    public String getTitl2() {
         return titl2;
     }
 
@@ -374,11 +374,11 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("titl2")
-    public void setTitl2(Object titl2) {
+    public void setTitl2(String titl2) {
         this.titl2 = titl2;
     }
 
-    public ProgramHierarchy100GetResponse withTitl2(Object titl2) {
+    public ProgramHierarchy100GetResponse withTitl2(String titl2) {
         this.titl2 = titl2;
         return this;
     }
@@ -388,7 +388,7 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("titl3")
-    public Object getTitl3() {
+    public String getTitl3() {
         return titl3;
     }
 
@@ -397,11 +397,11 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("titl3")
-    public void setTitl3(Object titl3) {
+    public void setTitl3(String titl3) {
         this.titl3 = titl3;
     }
 
-    public ProgramHierarchy100GetResponse withTitl3(Object titl3) {
+    public ProgramHierarchy100GetResponse withTitl3(String titl3) {
         this.titl3 = titl3;
         return this;
     }
@@ -411,7 +411,7 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("titl4")
-    public Object getTitl4() {
+    public String getTitl4() {
         return titl4;
     }
 
@@ -420,11 +420,11 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("titl4")
-    public void setTitl4(Object titl4) {
+    public void setTitl4(String titl4) {
         this.titl4 = titl4;
     }
 
-    public ProgramHierarchy100GetResponse withTitl4(Object titl4) {
+    public ProgramHierarchy100GetResponse withTitl4(String titl4) {
         this.titl4 = titl4;
         return this;
     }
@@ -434,7 +434,7 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("predTitle")
-    public Object getPredTitle() {
+    public String getPredTitle() {
         return predTitle;
     }
 
@@ -443,11 +443,11 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("predTitle")
-    public void setPredTitle(Object predTitle) {
+    public void setPredTitle(String predTitle) {
         this.predTitle = predTitle;
     }
 
-    public ProgramHierarchy100GetResponse withPredTitle(Object predTitle) {
+    public ProgramHierarchy100GetResponse withPredTitle(String predTitle) {
         this.predTitle = predTitle;
         return this;
     }
@@ -457,7 +457,7 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("head1")
-    public Object getHead1() {
+    public String getHead1() {
         return head1;
     }
 
@@ -466,11 +466,11 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("head1")
-    public void setHead1(Object head1) {
+    public void setHead1(String head1) {
         this.head1 = head1;
     }
 
-    public ProgramHierarchy100GetResponse withHead1(Object head1) {
+    public ProgramHierarchy100GetResponse withHead1(String head1) {
         this.head1 = head1;
         return this;
     }
@@ -480,7 +480,7 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("head2")
-    public Object getHead2() {
+    public String getHead2() {
         return head2;
     }
 
@@ -489,11 +489,11 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("head2")
-    public void setHead2(Object head2) {
+    public void setHead2(String head2) {
         this.head2 = head2;
     }
 
-    public ProgramHierarchy100GetResponse withHead2(Object head2) {
+    public ProgramHierarchy100GetResponse withHead2(String head2) {
         this.head2 = head2;
         return this;
     }
@@ -503,7 +503,7 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("head3")
-    public Object getHead3() {
+    public String getHead3() {
         return head3;
     }
 
@@ -512,11 +512,11 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("head3")
-    public void setHead3(Object head3) {
+    public void setHead3(String head3) {
         this.head3 = head3;
     }
 
-    public ProgramHierarchy100GetResponse withHead3(Object head3) {
+    public ProgramHierarchy100GetResponse withHead3(String head3) {
         this.head3 = head3;
         return this;
     }
@@ -526,7 +526,7 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("head4")
-    public Object getHead4() {
+    public String getHead4() {
         return head4;
     }
 
@@ -535,11 +535,11 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("head4")
-    public void setHead4(Object head4) {
+    public void setHead4(String head4) {
         this.head4 = head4;
     }
 
-    public ProgramHierarchy100GetResponse withHead4(Object head4) {
+    public ProgramHierarchy100GetResponse withHead4(String head4) {
         this.head4 = head4;
         return this;
     }
@@ -549,7 +549,7 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("level1")
-    public Object getLevel1() {
+    public String getLevel1() {
         return level1;
     }
 
@@ -558,11 +558,11 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("level1")
-    public void setLevel1(Object level1) {
+    public void setLevel1(String level1) {
         this.level1 = level1;
     }
 
-    public ProgramHierarchy100GetResponse withLevel1(Object level1) {
+    public ProgramHierarchy100GetResponse withLevel1(String level1) {
         this.level1 = level1;
         return this;
     }
@@ -572,7 +572,7 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("titl5")
-    public Object getTitl5() {
+    public String getTitl5() {
         return titl5;
     }
 
@@ -581,11 +581,11 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("titl5")
-    public void setTitl5(Object titl5) {
+    public void setTitl5(String titl5) {
         this.titl5 = titl5;
     }
 
-    public ProgramHierarchy100GetResponse withTitl5(Object titl5) {
+    public ProgramHierarchy100GetResponse withTitl5(String titl5) {
         this.titl5 = titl5;
         return this;
     }
@@ -595,7 +595,7 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("head5")
-    public Object getHead5() {
+    public String getHead5() {
         return head5;
     }
 
@@ -604,11 +604,11 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("head5")
-    public void setHead5(Object head5) {
+    public void setHead5(String head5) {
         this.head5 = head5;
     }
 
-    public ProgramHierarchy100GetResponse withHead5(Object head5) {
+    public ProgramHierarchy100GetResponse withHead5(String head5) {
         this.head5 = head5;
         return this;
     }
@@ -618,7 +618,7 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("level3")
-    public Object getLevel3() {
+    public String getLevel3() {
         return level3;
     }
 
@@ -627,11 +627,11 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("level3")
-    public void setLevel3(Object level3) {
+    public void setLevel3(String level3) {
         this.level3 = level3;
     }
 
-    public ProgramHierarchy100GetResponse withLevel3(Object level3) {
+    public ProgramHierarchy100GetResponse withLevel3(String level3) {
         this.level3 = level3;
         return this;
     }
@@ -641,7 +641,7 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("level2")
-    public Object getLevel2() {
+    public String getLevel2() {
         return level2;
     }
 
@@ -650,11 +650,11 @@ public class ProgramHierarchy100GetResponse {
      * 
      */
     @JsonProperty("level2")
-    public void setLevel2(Object level2) {
+    public void setLevel2(String level2) {
         this.level2 = level2;
     }
 
-    public ProgramHierarchy100GetResponse withLevel2(Object level2) {
+    public ProgramHierarchy100GetResponse withLevel2(String level2) {
         this.level2 = level2;
         return this;
     }

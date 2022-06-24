@@ -48,11 +48,6 @@ public class OrganizationBudgetStatus100QapiPost {
     private String keyblocFsyrCode;
     @JsonProperty("keyblocAcciCode")
     private String keyblocAcciCode;
-    /**
-     * 
-     * (Required)
-     * 
-     */
     @JsonProperty("queryAcct")
     private String queryAcct;
     @JsonProperty("inclRev")
@@ -150,21 +145,11 @@ public class OrganizationBudgetStatus100QapiPost {
         return this;
     }
 
-    /**
-     * 
-     * (Required)
-     * 
-     */
     @JsonProperty("queryAcct")
     public String getQueryAcct() {
         return queryAcct;
     }
 
-    /**
-     * 
-     * (Required)
-     * 
-     */
     @JsonProperty("queryAcct")
     public void setQueryAcct(String queryAcct) {
         this.queryAcct = queryAcct;

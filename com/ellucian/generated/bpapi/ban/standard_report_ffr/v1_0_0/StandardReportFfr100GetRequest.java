@@ -54,7 +54,7 @@ public class StandardReportFfr100GetRequest {
      */
     @JsonProperty("displayGrantCode")
     @JsonPropertyDescription("Lineage reference object : displayGrantCode")
-    private Object displayGrantCode;
+    private String displayGrantCode;
     /**
      * Frequency
      * <p>
@@ -72,7 +72,7 @@ public class StandardReportFfr100GetRequest {
      */
     @JsonProperty("displayPmsCode")
     @JsonPropertyDescription("Lineage reference object : displayPmsCode")
-    private Object displayPmsCode;
+    private String displayPmsCode;
     /**
      * Final Report
      * <p>
@@ -159,7 +159,7 @@ public class StandardReportFfr100GetRequest {
      * 
      */
     @JsonProperty("displayGrantCode")
-    public Object getDisplayGrantCode() {
+    public String getDisplayGrantCode() {
         return displayGrantCode;
     }
 
@@ -170,11 +170,11 @@ public class StandardReportFfr100GetRequest {
      * 
      */
     @JsonProperty("displayGrantCode")
-    public void setDisplayGrantCode(Object displayGrantCode) {
+    public void setDisplayGrantCode(String displayGrantCode) {
         this.displayGrantCode = displayGrantCode;
     }
 
-    public StandardReportFfr100GetRequest withDisplayGrantCode(Object displayGrantCode) {
+    public StandardReportFfr100GetRequest withDisplayGrantCode(String displayGrantCode) {
         this.displayGrantCode = displayGrantCode;
         return this;
     }
@@ -213,7 +213,7 @@ public class StandardReportFfr100GetRequest {
      * 
      */
     @JsonProperty("displayPmsCode")
-    public Object getDisplayPmsCode() {
+    public String getDisplayPmsCode() {
         return displayPmsCode;
     }
 
@@ -224,11 +224,11 @@ public class StandardReportFfr100GetRequest {
      * 
      */
     @JsonProperty("displayPmsCode")
-    public void setDisplayPmsCode(Object displayPmsCode) {
+    public void setDisplayPmsCode(String displayPmsCode) {
         this.displayPmsCode = displayPmsCode;
     }
 
-    public StandardReportFfr100GetRequest withDisplayPmsCode(Object displayPmsCode) {
+    public StandardReportFfr100GetRequest withDisplayPmsCode(String displayPmsCode) {
         this.displayPmsCode = displayPmsCode;
         return this;
     }

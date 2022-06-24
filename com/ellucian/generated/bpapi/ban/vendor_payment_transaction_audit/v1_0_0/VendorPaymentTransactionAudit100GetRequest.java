@@ -54,7 +54,7 @@ public class VendorPaymentTransactionAudit100GetRequest {
      */
     @JsonProperty("payTransId")
     @JsonPropertyDescription("Lineage reference object : payTransId")
-    private Object payTransId;
+    private String payTransId;
     /**
      * Auth Code
      * <p>
@@ -72,7 +72,7 @@ public class VendorPaymentTransactionAudit100GetRequest {
      */
     @JsonProperty("referNo")
     @JsonPropertyDescription("Lineage reference object : referNo")
-    private Object referNo;
+    private String referNo;
     /**
      * Failure URL
      * <p>
@@ -135,7 +135,7 @@ public class VendorPaymentTransactionAudit100GetRequest {
      */
     @JsonProperty("transDate")
     @JsonPropertyDescription("Lineage reference object : transDate")
-    private Object transDate;
+    private Date transDate;
     /**
      * Vendor Status
      * <p>
@@ -153,7 +153,7 @@ public class VendorPaymentTransactionAudit100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * ID
      * <p>
@@ -299,7 +299,7 @@ public class VendorPaymentTransactionAudit100GetRequest {
      * 
      */
     @JsonProperty("payTransId")
-    public Object getPayTransId() {
+    public String getPayTransId() {
         return payTransId;
     }
 
@@ -310,11 +310,11 @@ public class VendorPaymentTransactionAudit100GetRequest {
      * 
      */
     @JsonProperty("payTransId")
-    public void setPayTransId(Object payTransId) {
+    public void setPayTransId(String payTransId) {
         this.payTransId = payTransId;
     }
 
-    public VendorPaymentTransactionAudit100GetRequest withPayTransId(Object payTransId) {
+    public VendorPaymentTransactionAudit100GetRequest withPayTransId(String payTransId) {
         this.payTransId = payTransId;
         return this;
     }
@@ -353,7 +353,7 @@ public class VendorPaymentTransactionAudit100GetRequest {
      * 
      */
     @JsonProperty("referNo")
-    public Object getReferNo() {
+    public String getReferNo() {
         return referNo;
     }
 
@@ -364,11 +364,11 @@ public class VendorPaymentTransactionAudit100GetRequest {
      * 
      */
     @JsonProperty("referNo")
-    public void setReferNo(Object referNo) {
+    public void setReferNo(String referNo) {
         this.referNo = referNo;
     }
 
-    public VendorPaymentTransactionAudit100GetRequest withReferNo(Object referNo) {
+    public VendorPaymentTransactionAudit100GetRequest withReferNo(String referNo) {
         this.referNo = referNo;
         return this;
     }
@@ -542,7 +542,7 @@ public class VendorPaymentTransactionAudit100GetRequest {
      * 
      */
     @JsonProperty("transDate")
-    public Object getTransDate() {
+    public Date getTransDate() {
         return transDate;
     }
 
@@ -553,11 +553,11 @@ public class VendorPaymentTransactionAudit100GetRequest {
      * 
      */
     @JsonProperty("transDate")
-    public void setTransDate(Object transDate) {
+    public void setTransDate(Date transDate) {
         this.transDate = transDate;
     }
 
-    public VendorPaymentTransactionAudit100GetRequest withTransDate(Object transDate) {
+    public VendorPaymentTransactionAudit100GetRequest withTransDate(Date transDate) {
         this.transDate = transDate;
         return this;
     }
@@ -596,7 +596,7 @@ public class VendorPaymentTransactionAudit100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -607,11 +607,11 @@ public class VendorPaymentTransactionAudit100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public VendorPaymentTransactionAudit100GetRequest withId(Object id) {
+    public VendorPaymentTransactionAudit100GetRequest withId(String id) {
         this.id = id;
         return this;
     }

@@ -176,7 +176,7 @@ public class AdmissionsApplicationCurricula100PostRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Status
      * <p>
@@ -239,7 +239,7 @@ public class AdmissionsApplicationCurricula100PostRequest {
      */
     @JsonProperty("kbentryTermCode")
     @JsonPropertyDescription("Lineage reference object : kbentryTermCode, Lookup lineage reference object : stvterm")
-    private Object kbentryTermCode;
+    private String kbentryTermCode;
     /**
      * Residence
      * <p>
@@ -700,7 +700,7 @@ public class AdmissionsApplicationCurricula100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -711,11 +711,11 @@ public class AdmissionsApplicationCurricula100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public AdmissionsApplicationCurricula100PostRequest withId(Object id) {
+    public AdmissionsApplicationCurricula100PostRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -889,7 +889,7 @@ public class AdmissionsApplicationCurricula100PostRequest {
      * 
      */
     @JsonProperty("kbentryTermCode")
-    public Object getKbentryTermCode() {
+    public String getKbentryTermCode() {
         return kbentryTermCode;
     }
 
@@ -900,11 +900,11 @@ public class AdmissionsApplicationCurricula100PostRequest {
      * 
      */
     @JsonProperty("kbentryTermCode")
-    public void setKbentryTermCode(Object kbentryTermCode) {
+    public void setKbentryTermCode(String kbentryTermCode) {
         this.kbentryTermCode = kbentryTermCode;
     }
 
-    public AdmissionsApplicationCurricula100PostRequest withKbentryTermCode(Object kbentryTermCode) {
+    public AdmissionsApplicationCurricula100PostRequest withKbentryTermCode(String kbentryTermCode) {
         this.kbentryTermCode = kbentryTermCode;
         return this;
     }

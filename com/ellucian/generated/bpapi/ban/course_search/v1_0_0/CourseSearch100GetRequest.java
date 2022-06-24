@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.course_search.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -30,7 +31,7 @@ public class CourseSearch100GetRequest {
      */
     @JsonProperty("scacrseCrseNumb")
     @JsonPropertyDescription("Lineage reference object : scacrseCrseNumb, Lookup lineage reference object : scbcrse,scbcrky")
-    private Object scacrseCrseNumb;
+    private String scacrseCrseNumb;
     /**
      * Subject
      * <p>
@@ -39,7 +40,7 @@ public class CourseSearch100GetRequest {
      */
     @JsonProperty("scacrseSubjCode")
     @JsonPropertyDescription("Lineage reference object : scacrseSubjCode, Lookup lineage reference object : stvsubj")
-    private Object scacrseSubjCode;
+    private String scacrseSubjCode;
     /**
      * From  Date
      * <p>
@@ -48,7 +49,7 @@ public class CourseSearch100GetRequest {
      */
     @JsonProperty("scacrseStartDate")
     @JsonPropertyDescription("Lineage reference object : scacrseStartDate")
-    private Object scacrseStartDate;
+    private Date scacrseStartDate;
     /**
      * To Date
      * <p>
@@ -57,7 +58,7 @@ public class CourseSearch100GetRequest {
      */
     @JsonProperty("scacrseEndDate")
     @JsonPropertyDescription("Lineage reference object : scacrseEndDate")
-    private Object scacrseEndDate;
+    private Date scacrseEndDate;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -68,7 +69,7 @@ public class CourseSearch100GetRequest {
      * 
      */
     @JsonProperty("scacrseCrseNumb")
-    public Object getScacrseCrseNumb() {
+    public String getScacrseCrseNumb() {
         return scacrseCrseNumb;
     }
 
@@ -79,11 +80,11 @@ public class CourseSearch100GetRequest {
      * 
      */
     @JsonProperty("scacrseCrseNumb")
-    public void setScacrseCrseNumb(Object scacrseCrseNumb) {
+    public void setScacrseCrseNumb(String scacrseCrseNumb) {
         this.scacrseCrseNumb = scacrseCrseNumb;
     }
 
-    public CourseSearch100GetRequest withScacrseCrseNumb(Object scacrseCrseNumb) {
+    public CourseSearch100GetRequest withScacrseCrseNumb(String scacrseCrseNumb) {
         this.scacrseCrseNumb = scacrseCrseNumb;
         return this;
     }
@@ -95,7 +96,7 @@ public class CourseSearch100GetRequest {
      * 
      */
     @JsonProperty("scacrseSubjCode")
-    public Object getScacrseSubjCode() {
+    public String getScacrseSubjCode() {
         return scacrseSubjCode;
     }
 
@@ -106,11 +107,11 @@ public class CourseSearch100GetRequest {
      * 
      */
     @JsonProperty("scacrseSubjCode")
-    public void setScacrseSubjCode(Object scacrseSubjCode) {
+    public void setScacrseSubjCode(String scacrseSubjCode) {
         this.scacrseSubjCode = scacrseSubjCode;
     }
 
-    public CourseSearch100GetRequest withScacrseSubjCode(Object scacrseSubjCode) {
+    public CourseSearch100GetRequest withScacrseSubjCode(String scacrseSubjCode) {
         this.scacrseSubjCode = scacrseSubjCode;
         return this;
     }
@@ -122,7 +123,7 @@ public class CourseSearch100GetRequest {
      * 
      */
     @JsonProperty("scacrseStartDate")
-    public Object getScacrseStartDate() {
+    public Date getScacrseStartDate() {
         return scacrseStartDate;
     }
 
@@ -133,11 +134,11 @@ public class CourseSearch100GetRequest {
      * 
      */
     @JsonProperty("scacrseStartDate")
-    public void setScacrseStartDate(Object scacrseStartDate) {
+    public void setScacrseStartDate(Date scacrseStartDate) {
         this.scacrseStartDate = scacrseStartDate;
     }
 
-    public CourseSearch100GetRequest withScacrseStartDate(Object scacrseStartDate) {
+    public CourseSearch100GetRequest withScacrseStartDate(Date scacrseStartDate) {
         this.scacrseStartDate = scacrseStartDate;
         return this;
     }
@@ -149,7 +150,7 @@ public class CourseSearch100GetRequest {
      * 
      */
     @JsonProperty("scacrseEndDate")
-    public Object getScacrseEndDate() {
+    public Date getScacrseEndDate() {
         return scacrseEndDate;
     }
 
@@ -160,11 +161,11 @@ public class CourseSearch100GetRequest {
      * 
      */
     @JsonProperty("scacrseEndDate")
-    public void setScacrseEndDate(Object scacrseEndDate) {
+    public void setScacrseEndDate(Date scacrseEndDate) {
         this.scacrseEndDate = scacrseEndDate;
     }
 
-    public CourseSearch100GetRequest withScacrseEndDate(Object scacrseEndDate) {
+    public CourseSearch100GetRequest withScacrseEndDate(Date scacrseEndDate) {
         this.scacrseEndDate = scacrseEndDate;
         return this;
     }

@@ -73,7 +73,7 @@ public class CommitteeServiceInformation100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Date Dissolved
      * <p>
@@ -92,7 +92,7 @@ public class CommitteeServiceInformation100GetRequest {
      */
     @JsonProperty("shacomiComtCode")
     @JsonPropertyDescription("Lineage reference object : shacomiComtCode, Lookup lineage reference object : stvcomt")
-    private Object shacomiComtCode;
+    private String shacomiComtCode;
     /**
      * Home College
      * <p>
@@ -238,7 +238,7 @@ public class CommitteeServiceInformation100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -249,11 +249,11 @@ public class CommitteeServiceInformation100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public CommitteeServiceInformation100GetRequest withId(Object id) {
+    public CommitteeServiceInformation100GetRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -293,7 +293,7 @@ public class CommitteeServiceInformation100GetRequest {
      * 
      */
     @JsonProperty("shacomiComtCode")
-    public Object getShacomiComtCode() {
+    public String getShacomiComtCode() {
         return shacomiComtCode;
     }
 
@@ -305,11 +305,11 @@ public class CommitteeServiceInformation100GetRequest {
      * 
      */
     @JsonProperty("shacomiComtCode")
-    public void setShacomiComtCode(Object shacomiComtCode) {
+    public void setShacomiComtCode(String shacomiComtCode) {
         this.shacomiComtCode = shacomiComtCode;
     }
 
-    public CommitteeServiceInformation100GetRequest withShacomiComtCode(Object shacomiComtCode) {
+    public CommitteeServiceInformation100GetRequest withShacomiComtCode(String shacomiComtCode) {
         this.shacomiComtCode = shacomiComtCode;
         return this;
     }

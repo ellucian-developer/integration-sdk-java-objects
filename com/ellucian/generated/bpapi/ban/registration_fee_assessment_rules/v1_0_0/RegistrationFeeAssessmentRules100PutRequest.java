@@ -382,7 +382,7 @@ public class RegistrationFeeAssessmentRules100PutRequest {
      */
     @JsonProperty("setCopyIndEnMassInd")
     @JsonPropertyDescription("Lineage reference object : setCopyIndEnMassInd")
-    private Object setCopyIndEnMassInd;
+    private String setCopyIndEnMassInd;
     /**
      * Type
      * <p>
@@ -506,7 +506,7 @@ public class RegistrationFeeAssessmentRules100PutRequest {
      */
     @JsonProperty("blockKeyEntryType")
     @JsonPropertyDescription("Lineage reference object : entryType")
-    private Object blockKeyEntryType;
+    private String blockKeyEntryType;
     /**
      * Activity Date
      * <p>
@@ -606,7 +606,7 @@ public class RegistrationFeeAssessmentRules100PutRequest {
      */
     @JsonProperty("ruleType")
     @JsonPropertyDescription("Lineage reference object : ruleType")
-    private Object ruleType;
+    private String ruleType;
     /**
      * Detail Code
      * <p>
@@ -759,7 +759,7 @@ public class RegistrationFeeAssessmentRules100PutRequest {
      */
     @JsonProperty("termCode")
     @JsonPropertyDescription("Lineage reference object : termCode, Lookup lineage reference object : stvterm")
-    private Object termCode;
+    private String termCode;
     /**
      * Lineage reference object : SFRRGFE_COPY_IND
      * 
@@ -1623,7 +1623,7 @@ public class RegistrationFeeAssessmentRules100PutRequest {
      * 
      */
     @JsonProperty("setCopyIndEnMassInd")
-    public Object getSetCopyIndEnMassInd() {
+    public String getSetCopyIndEnMassInd() {
         return setCopyIndEnMassInd;
     }
 
@@ -1634,11 +1634,11 @@ public class RegistrationFeeAssessmentRules100PutRequest {
      * 
      */
     @JsonProperty("setCopyIndEnMassInd")
-    public void setSetCopyIndEnMassInd(Object setCopyIndEnMassInd) {
+    public void setSetCopyIndEnMassInd(String setCopyIndEnMassInd) {
         this.setCopyIndEnMassInd = setCopyIndEnMassInd;
     }
 
-    public RegistrationFeeAssessmentRules100PutRequest withSetCopyIndEnMassInd(Object setCopyIndEnMassInd) {
+    public RegistrationFeeAssessmentRules100PutRequest withSetCopyIndEnMassInd(String setCopyIndEnMassInd) {
         this.setCopyIndEnMassInd = setCopyIndEnMassInd;
         return this;
     }
@@ -1999,7 +1999,7 @@ public class RegistrationFeeAssessmentRules100PutRequest {
      * 
      */
     @JsonProperty("blockKeyEntryType")
-    public Object getBlockKeyEntryType() {
+    public String getBlockKeyEntryType() {
         return blockKeyEntryType;
     }
 
@@ -2010,11 +2010,11 @@ public class RegistrationFeeAssessmentRules100PutRequest {
      * 
      */
     @JsonProperty("blockKeyEntryType")
-    public void setBlockKeyEntryType(Object blockKeyEntryType) {
+    public void setBlockKeyEntryType(String blockKeyEntryType) {
         this.blockKeyEntryType = blockKeyEntryType;
     }
 
-    public RegistrationFeeAssessmentRules100PutRequest withBlockKeyEntryType(Object blockKeyEntryType) {
+    public RegistrationFeeAssessmentRules100PutRequest withBlockKeyEntryType(String blockKeyEntryType) {
         this.blockKeyEntryType = blockKeyEntryType;
         return this;
     }
@@ -2298,7 +2298,7 @@ public class RegistrationFeeAssessmentRules100PutRequest {
      * 
      */
     @JsonProperty("ruleType")
-    public Object getRuleType() {
+    public String getRuleType() {
         return ruleType;
     }
 
@@ -2309,11 +2309,11 @@ public class RegistrationFeeAssessmentRules100PutRequest {
      * 
      */
     @JsonProperty("ruleType")
-    public void setRuleType(Object ruleType) {
+    public void setRuleType(String ruleType) {
         this.ruleType = ruleType;
     }
 
-    public RegistrationFeeAssessmentRules100PutRequest withRuleType(Object ruleType) {
+    public RegistrationFeeAssessmentRules100PutRequest withRuleType(String ruleType) {
         this.ruleType = ruleType;
         return this;
     }
@@ -2757,7 +2757,7 @@ public class RegistrationFeeAssessmentRules100PutRequest {
      * 
      */
     @JsonProperty("termCode")
-    public Object getTermCode() {
+    public String getTermCode() {
         return termCode;
     }
 
@@ -2768,11 +2768,11 @@ public class RegistrationFeeAssessmentRules100PutRequest {
      * 
      */
     @JsonProperty("termCode")
-    public void setTermCode(Object termCode) {
+    public void setTermCode(String termCode) {
         this.termCode = termCode;
     }
 
-    public RegistrationFeeAssessmentRules100PutRequest withTermCode(Object termCode) {
+    public RegistrationFeeAssessmentRules100PutRequest withTermCode(String termCode) {
         this.termCode = termCode;
         return this;
     }

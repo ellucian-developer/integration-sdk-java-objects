@@ -158,7 +158,7 @@ public class StudentAccountDetailChargesPayments100PutRequest {
      */
     @JsonProperty("holdPassword")
     @JsonPropertyDescription("Lineage reference object : holdPassword")
-    private Object holdPassword;
+    private String holdPassword;
     /**
      * Tax Method
      * <p>
@@ -221,7 +221,7 @@ public class StudentAccountDetailChargesPayments100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Currency
      * <p>
@@ -676,7 +676,7 @@ public class StudentAccountDetailChargesPayments100PutRequest {
      * 
      */
     @JsonProperty("holdPassword")
-    public Object getHoldPassword() {
+    public String getHoldPassword() {
         return holdPassword;
     }
 
@@ -687,11 +687,11 @@ public class StudentAccountDetailChargesPayments100PutRequest {
      * 
      */
     @JsonProperty("holdPassword")
-    public void setHoldPassword(Object holdPassword) {
+    public void setHoldPassword(String holdPassword) {
         this.holdPassword = holdPassword;
     }
 
-    public StudentAccountDetailChargesPayments100PutRequest withHoldPassword(Object holdPassword) {
+    public StudentAccountDetailChargesPayments100PutRequest withHoldPassword(String holdPassword) {
         this.holdPassword = holdPassword;
         return this;
     }
@@ -867,7 +867,7 @@ public class StudentAccountDetailChargesPayments100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -878,11 +878,11 @@ public class StudentAccountDetailChargesPayments100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public StudentAccountDetailChargesPayments100PutRequest withId(Object id) {
+    public StudentAccountDetailChargesPayments100PutRequest withId(String id) {
         this.id = id;
         return this;
     }

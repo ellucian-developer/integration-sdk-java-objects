@@ -228,7 +228,7 @@ public class CourseSectionInformation100PutRequest {
      */
     @JsonProperty("crn")
     @JsonPropertyDescription("Lineage reference object : ssasectCrn")
-    private Object crn;
+    private String crn;
     /**
      * Term
      * <p>
@@ -237,7 +237,7 @@ public class CourseSectionInformation100PutRequest {
      */
     @JsonProperty("termCode")
     @JsonPropertyDescription("Lineage reference object : ssasectTermCode, Lookup lineage reference object : stvterm")
-    private Object termCode;
+    private String termCode;
     /**
      * Lineage reference object : SSBSECT_OTH_HR
      * 
@@ -804,7 +804,7 @@ public class CourseSectionInformation100PutRequest {
      * 
      */
     @JsonProperty("crn")
-    public Object getCrn() {
+    public String getCrn() {
         return crn;
     }
 
@@ -815,11 +815,11 @@ public class CourseSectionInformation100PutRequest {
      * 
      */
     @JsonProperty("crn")
-    public void setCrn(Object crn) {
+    public void setCrn(String crn) {
         this.crn = crn;
     }
 
-    public CourseSectionInformation100PutRequest withCrn(Object crn) {
+    public CourseSectionInformation100PutRequest withCrn(String crn) {
         this.crn = crn;
         return this;
     }
@@ -831,7 +831,7 @@ public class CourseSectionInformation100PutRequest {
      * 
      */
     @JsonProperty("termCode")
-    public Object getTermCode() {
+    public String getTermCode() {
         return termCode;
     }
 
@@ -842,11 +842,11 @@ public class CourseSectionInformation100PutRequest {
      * 
      */
     @JsonProperty("termCode")
-    public void setTermCode(Object termCode) {
+    public void setTermCode(String termCode) {
         this.termCode = termCode;
     }
 
-    public CourseSectionInformation100PutRequest withTermCode(Object termCode) {
+    public CourseSectionInformation100PutRequest withTermCode(String termCode) {
         this.termCode = termCode;
         return this;
     }

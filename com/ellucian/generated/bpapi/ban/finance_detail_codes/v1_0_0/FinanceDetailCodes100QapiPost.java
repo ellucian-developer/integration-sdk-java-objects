@@ -9,6 +9,7 @@ import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -33,7 +34,11 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "taxMethod",
     "amount",
     "effectiveDate",
-    "tbbdetcDetailCode"
+    "tbbeactDetailCode",
+    "effDate",
+    "accountA",
+    "accountB",
+    "accountPercent"
 })
 @Generated("jsonschema2pojo")
 public class FinanceDetailCodes100QapiPost {
@@ -78,13 +83,36 @@ public class FinanceDetailCodes100QapiPost {
     private String amount;
     @JsonProperty("effectiveDate")
     private String effectiveDate;
+    @JsonProperty("tbbeactDetailCode")
+    private String tbbeactDetailCode;
+    @JsonProperty("effDate")
+    private String effDate;
     /**
-     * 
-     * (Required)
+     * Account A
+     * <p>
+     * Lineage reference object : TBRACCT_ACCOUNT_A
      * 
      */
-    @JsonProperty("tbbdetcDetailCode")
-    private String tbbdetcDetailCode;
+    @JsonProperty("accountA")
+    @JsonPropertyDescription("Lineage reference object : TBRACCT_ACCOUNT_A")
+    private String accountA;
+    /**
+     * Account B
+     * <p>
+     * Lineage reference object : TBRACCT_ACCOUNT_B
+     * 
+     */
+    @JsonProperty("accountB")
+    @JsonPropertyDescription("Lineage reference object : TBRACCT_ACCOUNT_B")
+    private String accountB;
+    /**
+     * Percent
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("accountPercent")
+    private Double accountPercent;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -388,28 +416,114 @@ public class FinanceDetailCodes100QapiPost {
         return this;
     }
 
-    /**
-     * 
-     * (Required)
-     * 
-     */
-    @JsonProperty("tbbdetcDetailCode")
-    public String getTbbdetcDetailCode() {
-        return tbbdetcDetailCode;
+    @JsonProperty("tbbeactDetailCode")
+    public String getTbbeactDetailCode() {
+        return tbbeactDetailCode;
+    }
+
+    @JsonProperty("tbbeactDetailCode")
+    public void setTbbeactDetailCode(String tbbeactDetailCode) {
+        this.tbbeactDetailCode = tbbeactDetailCode;
+    }
+
+    public FinanceDetailCodes100QapiPost withTbbeactDetailCode(String tbbeactDetailCode) {
+        this.tbbeactDetailCode = tbbeactDetailCode;
+        return this;
+    }
+
+    @JsonProperty("effDate")
+    public String getEffDate() {
+        return effDate;
+    }
+
+    @JsonProperty("effDate")
+    public void setEffDate(String effDate) {
+        this.effDate = effDate;
+    }
+
+    public FinanceDetailCodes100QapiPost withEffDate(String effDate) {
+        this.effDate = effDate;
+        return this;
     }
 
     /**
-     * 
-     * (Required)
+     * Account A
+     * <p>
+     * Lineage reference object : TBRACCT_ACCOUNT_A
      * 
      */
-    @JsonProperty("tbbdetcDetailCode")
-    public void setTbbdetcDetailCode(String tbbdetcDetailCode) {
-        this.tbbdetcDetailCode = tbbdetcDetailCode;
+    @JsonProperty("accountA")
+    public String getAccountA() {
+        return accountA;
     }
 
-    public FinanceDetailCodes100QapiPost withTbbdetcDetailCode(String tbbdetcDetailCode) {
-        this.tbbdetcDetailCode = tbbdetcDetailCode;
+    /**
+     * Account A
+     * <p>
+     * Lineage reference object : TBRACCT_ACCOUNT_A
+     * 
+     */
+    @JsonProperty("accountA")
+    public void setAccountA(String accountA) {
+        this.accountA = accountA;
+    }
+
+    public FinanceDetailCodes100QapiPost withAccountA(String accountA) {
+        this.accountA = accountA;
+        return this;
+    }
+
+    /**
+     * Account B
+     * <p>
+     * Lineage reference object : TBRACCT_ACCOUNT_B
+     * 
+     */
+    @JsonProperty("accountB")
+    public String getAccountB() {
+        return accountB;
+    }
+
+    /**
+     * Account B
+     * <p>
+     * Lineage reference object : TBRACCT_ACCOUNT_B
+     * 
+     */
+    @JsonProperty("accountB")
+    public void setAccountB(String accountB) {
+        this.accountB = accountB;
+    }
+
+    public FinanceDetailCodes100QapiPost withAccountB(String accountB) {
+        this.accountB = accountB;
+        return this;
+    }
+
+    /**
+     * Percent
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("accountPercent")
+    public Double getAccountPercent() {
+        return accountPercent;
+    }
+
+    /**
+     * Percent
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("accountPercent")
+    public void setAccountPercent(Double accountPercent) {
+        this.accountPercent = accountPercent;
+    }
+
+    public FinanceDetailCodes100QapiPost withAccountPercent(Double accountPercent) {
+        this.accountPercent = accountPercent;
         return this;
     }
 
@@ -512,9 +626,25 @@ public class FinanceDetailCodes100QapiPost {
         sb.append('=');
         sb.append(((this.effectiveDate == null)?"<null>":this.effectiveDate));
         sb.append(',');
-        sb.append("tbbdetcDetailCode");
+        sb.append("tbbeactDetailCode");
         sb.append('=');
-        sb.append(((this.tbbdetcDetailCode == null)?"<null>":this.tbbdetcDetailCode));
+        sb.append(((this.tbbeactDetailCode == null)?"<null>":this.tbbeactDetailCode));
+        sb.append(',');
+        sb.append("effDate");
+        sb.append('=');
+        sb.append(((this.effDate == null)?"<null>":this.effDate));
+        sb.append(',');
+        sb.append("accountA");
+        sb.append('=');
+        sb.append(((this.accountA == null)?"<null>":this.accountA));
+        sb.append(',');
+        sb.append("accountB");
+        sb.append('=');
+        sb.append(((this.accountB == null)?"<null>":this.accountB));
+        sb.append(',');
+        sb.append("accountPercent");
+        sb.append('=');
+        sb.append(((this.accountPercent == null)?"<null>":this.accountPercent));
         sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');
@@ -531,24 +661,28 @@ public class FinanceDetailCodes100QapiPost {
     @Override
     public int hashCode() {
         int result = 1;
-        result = ((result* 31)+((this.amount == null)? 0 :this.amount.hashCode()));
-        result = ((result* 31)+((this.typeInd == null)? 0 :this.typeInd.hashCode()));
         result = ((result* 31)+((this.currCode == null)? 0 :this.currCode.hashCode()));
         result = ((result* 31)+((this.detailCodeInd == null)? 0 :this.detailCodeInd.hashCode()));
-        result = ((result* 31)+((this.paytCode == null)? 0 :this.paytCode.hashCode()));
         result = ((result* 31)+((this.taxMethod == null)? 0 :this.taxMethod.hashCode()));
         result = ((result* 31)+((this.detcActiveInd == null)? 0 :this.detcActiveInd.hashCode()));
-        result = ((result* 31)+((this.refundInd == null)? 0 :this.refundInd.hashCode()));
         result = ((result* 31)+((this.payhistInd == null)? 0 :this.payhistInd.hashCode()));
+        result = ((result* 31)+((this.accountPercent == null)? 0 :this.accountPercent.hashCode()));
+        result = ((result* 31)+((this.effDate == null)? 0 :this.effDate.hashCode()));
+        result = ((result* 31)+((this.glNosEnterable == null)? 0 :this.glNosEnterable.hashCode()));
+        result = ((result* 31)+((this.amount == null)? 0 :this.amount.hashCode()));
+        result = ((result* 31)+((this.typeInd == null)? 0 :this.typeInd.hashCode()));
+        result = ((result* 31)+((this.paytCode == null)? 0 :this.paytCode.hashCode()));
+        result = ((result* 31)+((this.refundInd == null)? 0 :this.refundInd.hashCode()));
+        result = ((result* 31)+((this.accountB == null)? 0 :this.accountB.hashCode()));
+        result = ((result* 31)+((this.accountA == null)? 0 :this.accountA.hashCode()));
         result = ((result* 31)+((this.priority == null)? 0 :this.priority.hashCode()));
         result = ((result* 31)+((this.detailCode == null)? 0 :this.detailCode.hashCode()));
         result = ((result* 31)+((this.receiptInd == null)? 0 :this.receiptInd.hashCode()));
+        result = ((result* 31)+((this.tbbeactDetailCode == null)? 0 :this.tbbeactDetailCode.hashCode()));
         result = ((result* 31)+((this.taxProfile == null)? 0 :this.taxProfile.hashCode()));
         result = ((result* 31)+((this.dcatCode == null)? 0 :this.dcatCode.hashCode()));
         result = ((result* 31)+((this.dirdInd == null)? 0 :this.dirdInd.hashCode()));
         result = ((result* 31)+((this.refundableInd == null)? 0 :this.refundableInd.hashCode()));
-        result = ((result* 31)+((this.tbbdetcDetailCode == null)? 0 :this.tbbdetcDetailCode.hashCode()));
-        result = ((result* 31)+((this.glNosEnterable == null)? 0 :this.glNosEnterable.hashCode()));
         result = ((result* 31)+((this.taxtCode == null)? 0 :this.taxtCode.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
         result = ((result* 31)+((this.effectiveDate == null)? 0 :this.effectiveDate.hashCode()));
@@ -565,7 +699,7 @@ public class FinanceDetailCodes100QapiPost {
             return false;
         }
         FinanceDetailCodes100QapiPost rhs = ((FinanceDetailCodes100QapiPost) other);
-        return (((((((((((((((((((((((this.amount == rhs.amount)||((this.amount!= null)&&this.amount.equals(rhs.amount)))&&((this.typeInd == rhs.typeInd)||((this.typeInd!= null)&&this.typeInd.equals(rhs.typeInd))))&&((this.currCode == rhs.currCode)||((this.currCode!= null)&&this.currCode.equals(rhs.currCode))))&&((this.detailCodeInd == rhs.detailCodeInd)||((this.detailCodeInd!= null)&&this.detailCodeInd.equals(rhs.detailCodeInd))))&&((this.paytCode == rhs.paytCode)||((this.paytCode!= null)&&this.paytCode.equals(rhs.paytCode))))&&((this.taxMethod == rhs.taxMethod)||((this.taxMethod!= null)&&this.taxMethod.equals(rhs.taxMethod))))&&((this.detcActiveInd == rhs.detcActiveInd)||((this.detcActiveInd!= null)&&this.detcActiveInd.equals(rhs.detcActiveInd))))&&((this.refundInd == rhs.refundInd)||((this.refundInd!= null)&&this.refundInd.equals(rhs.refundInd))))&&((this.payhistInd == rhs.payhistInd)||((this.payhistInd!= null)&&this.payhistInd.equals(rhs.payhistInd))))&&((this.priority == rhs.priority)||((this.priority!= null)&&this.priority.equals(rhs.priority))))&&((this.detailCode == rhs.detailCode)||((this.detailCode!= null)&&this.detailCode.equals(rhs.detailCode))))&&((this.receiptInd == rhs.receiptInd)||((this.receiptInd!= null)&&this.receiptInd.equals(rhs.receiptInd))))&&((this.taxProfile == rhs.taxProfile)||((this.taxProfile!= null)&&this.taxProfile.equals(rhs.taxProfile))))&&((this.dcatCode == rhs.dcatCode)||((this.dcatCode!= null)&&this.dcatCode.equals(rhs.dcatCode))))&&((this.dirdInd == rhs.dirdInd)||((this.dirdInd!= null)&&this.dirdInd.equals(rhs.dirdInd))))&&((this.refundableInd == rhs.refundableInd)||((this.refundableInd!= null)&&this.refundableInd.equals(rhs.refundableInd))))&&((this.tbbdetcDetailCode == rhs.tbbdetcDetailCode)||((this.tbbdetcDetailCode!= null)&&this.tbbdetcDetailCode.equals(rhs.tbbdetcDetailCode))))&&((this.glNosEnterable == rhs.glNosEnterable)||((this.glNosEnterable!= null)&&this.glNosEnterable.equals(rhs.glNosEnterable))))&&((this.taxtCode == rhs.taxtCode)||((this.taxtCode!= null)&&this.taxtCode.equals(rhs.taxtCode))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.effectiveDate == rhs.effectiveDate)||((this.effectiveDate!= null)&&this.effectiveDate.equals(rhs.effectiveDate))))&&((this.desc == rhs.desc)||((this.desc!= null)&&this.desc.equals(rhs.desc))));
+        return (((((((((((((((((((((((((((this.currCode == rhs.currCode)||((this.currCode!= null)&&this.currCode.equals(rhs.currCode)))&&((this.detailCodeInd == rhs.detailCodeInd)||((this.detailCodeInd!= null)&&this.detailCodeInd.equals(rhs.detailCodeInd))))&&((this.taxMethod == rhs.taxMethod)||((this.taxMethod!= null)&&this.taxMethod.equals(rhs.taxMethod))))&&((this.detcActiveInd == rhs.detcActiveInd)||((this.detcActiveInd!= null)&&this.detcActiveInd.equals(rhs.detcActiveInd))))&&((this.payhistInd == rhs.payhistInd)||((this.payhistInd!= null)&&this.payhistInd.equals(rhs.payhistInd))))&&((this.accountPercent == rhs.accountPercent)||((this.accountPercent!= null)&&this.accountPercent.equals(rhs.accountPercent))))&&((this.effDate == rhs.effDate)||((this.effDate!= null)&&this.effDate.equals(rhs.effDate))))&&((this.glNosEnterable == rhs.glNosEnterable)||((this.glNosEnterable!= null)&&this.glNosEnterable.equals(rhs.glNosEnterable))))&&((this.amount == rhs.amount)||((this.amount!= null)&&this.amount.equals(rhs.amount))))&&((this.typeInd == rhs.typeInd)||((this.typeInd!= null)&&this.typeInd.equals(rhs.typeInd))))&&((this.paytCode == rhs.paytCode)||((this.paytCode!= null)&&this.paytCode.equals(rhs.paytCode))))&&((this.refundInd == rhs.refundInd)||((this.refundInd!= null)&&this.refundInd.equals(rhs.refundInd))))&&((this.accountB == rhs.accountB)||((this.accountB!= null)&&this.accountB.equals(rhs.accountB))))&&((this.accountA == rhs.accountA)||((this.accountA!= null)&&this.accountA.equals(rhs.accountA))))&&((this.priority == rhs.priority)||((this.priority!= null)&&this.priority.equals(rhs.priority))))&&((this.detailCode == rhs.detailCode)||((this.detailCode!= null)&&this.detailCode.equals(rhs.detailCode))))&&((this.receiptInd == rhs.receiptInd)||((this.receiptInd!= null)&&this.receiptInd.equals(rhs.receiptInd))))&&((this.tbbeactDetailCode == rhs.tbbeactDetailCode)||((this.tbbeactDetailCode!= null)&&this.tbbeactDetailCode.equals(rhs.tbbeactDetailCode))))&&((this.taxProfile == rhs.taxProfile)||((this.taxProfile!= null)&&this.taxProfile.equals(rhs.taxProfile))))&&((this.dcatCode == rhs.dcatCode)||((this.dcatCode!= null)&&this.dcatCode.equals(rhs.dcatCode))))&&((this.dirdInd == rhs.dirdInd)||((this.dirdInd!= null)&&this.dirdInd.equals(rhs.dirdInd))))&&((this.refundableInd == rhs.refundableInd)||((this.refundableInd!= null)&&this.refundableInd.equals(rhs.refundableInd))))&&((this.taxtCode == rhs.taxtCode)||((this.taxtCode!= null)&&this.taxtCode.equals(rhs.taxtCode))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.effectiveDate == rhs.effectiveDate)||((this.effectiveDate!= null)&&this.effectiveDate.equals(rhs.effectiveDate))))&&((this.desc == rhs.desc)||((this.desc!= null)&&this.desc.equals(rhs.desc))));
     }
 
 }

@@ -88,7 +88,7 @@ public class PositionRequisition100PutRequest {
      */
     @JsonProperty("reqNo")
     @JsonPropertyDescription("Lineage reference object : reqNo")
-    private Object reqNo;
+    private String reqNo;
     /**
      * COA
      * <p>
@@ -319,7 +319,7 @@ public class PositionRequisition100PutRequest {
      * 
      */
     @JsonProperty("reqNo")
-    public Object getReqNo() {
+    public String getReqNo() {
         return reqNo;
     }
 
@@ -330,11 +330,11 @@ public class PositionRequisition100PutRequest {
      * 
      */
     @JsonProperty("reqNo")
-    public void setReqNo(Object reqNo) {
+    public void setReqNo(String reqNo) {
         this.reqNo = reqNo;
     }
 
-    public PositionRequisition100PutRequest withReqNo(Object reqNo) {
+    public PositionRequisition100PutRequest withReqNo(String reqNo) {
         this.reqNo = reqNo;
         return this;
     }

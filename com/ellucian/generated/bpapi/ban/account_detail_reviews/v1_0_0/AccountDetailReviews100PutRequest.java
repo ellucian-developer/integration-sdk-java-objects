@@ -16,27 +16,31 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "criteria.detailCode",
+    "documentNumber",
     "criteria.sessionNumber",
     "criteria.origChgInd",
     "criteria.termCode",
     "criteria.desc",
     "criteria.paymentAmount",
     "criteria.tranNumber",
+    "holdPassword",
     "criteria.taxMethod",
     "criteria.srceCode",
     "criteria.cpdtInd",
+    "acctFeedInd",
     "criteria.tranNumberPaid",
     "criteria.acctFeedInd",
     "id",
     "criteria.currCodeV",
+    "tranNumberPaid",
     "criteria.effectiveDate",
     "criteria.period",
     "criteria.chargeAmount",
     "criteria.balance",
     "criteria.transDate",
+    "invNumberPaid",
     "criteria.taxAmount",
     "criteria.invNumberPaid",
-    "detailCode",
     "criteria.stspKeySequence",
     "criteria.user",
     "criteria.documentNumber",
@@ -46,8 +50,11 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "criteria.aidyCode",
     "criteria.feedDocCode",
     "criteria.invoiceNumber",
+    "cpdtInd",
     "criteria.feedDate",
-    "criteria.receiptNumber"
+    "effectiveDate",
+    "criteria.receiptNumber",
+    "desc"
 })
 @Generated("jsonschema2pojo")
 public class AccountDetailReviews100PutRequest {
@@ -62,6 +69,15 @@ public class AccountDetailReviews100PutRequest {
     @JsonProperty("criteria.detailCode")
     @JsonPropertyDescription("Lineage reference object : TBRACCD_DETAIL_CODE, Lookup lineage reference object : tbbdetc")
     private String criteriaDetailCode;
+    /**
+     * Document
+     * <p>
+     * Lineage reference object : TBRACCD_DOCUMENT_NUMBER
+     * 
+     */
+    @JsonProperty("documentNumber")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_DOCUMENT_NUMBER")
+    private String documentNumber;
     /**
      * Session Number
      * <p>
@@ -116,6 +132,15 @@ public class AccountDetailReviews100PutRequest {
     @JsonPropertyDescription("Lineage reference object : TBRACCD_TRAN_NUMBER")
     private Double criteriaTranNumber;
     /**
+     * Holds
+     * <p>
+     * Lineage reference object : holdPassword
+     * 
+     */
+    @JsonProperty("holdPassword")
+    @JsonPropertyDescription("Lineage reference object : holdPassword")
+    private String holdPassword;
+    /**
      * Tax Method
      * <p>
      * 
@@ -140,6 +165,15 @@ public class AccountDetailReviews100PutRequest {
     @JsonProperty("criteria.cpdtInd")
     @JsonPropertyDescription("Lineage reference object : TBRACCD_CPDT_IND")
     private String criteriaCpdtInd;
+    /**
+     * Feed
+     * <p>
+     * Lineage reference object : TBRACCD_ACCT_FEED_IND
+     * 
+     */
+    @JsonProperty("acctFeedInd")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_ACCT_FEED_IND")
+    private String acctFeedInd;
     /**
      * Trans Paid
      * <p>
@@ -166,17 +200,25 @@ public class AccountDetailReviews100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Currency
      * <p>
      * Lookup lineage reference object : gtvcurr
-     * (Required)
      * 
      */
     @JsonProperty("criteria.currCodeV")
     @JsonPropertyDescription("Lookup lineage reference object : gtvcurr")
     private String criteriaCurrCodeV;
+    /**
+     * Trans Paid
+     * <p>
+     * Lineage reference object : TBRACCD_TRAN_NUMBER_PAID
+     * 
+     */
+    @JsonProperty("tranNumberPaid")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_TRAN_NUMBER_PAID")
+    private Double tranNumberPaid;
     /**
      * Effective Date
      * <p>
@@ -223,6 +265,15 @@ public class AccountDetailReviews100PutRequest {
     @JsonPropertyDescription("Lineage reference object : TBRACCD_TRANS_DATE")
     private Date criteriaTransDate;
     /**
+     * Invoice Paid
+     * <p>
+     * Lineage reference object : TBRACCD_INV_NUMBER_PAID
+     * 
+     */
+    @JsonProperty("invNumberPaid")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_INV_NUMBER_PAID")
+    private String invNumberPaid;
+    /**
      * Tax
      * <p>
      * 
@@ -239,16 +290,6 @@ public class AccountDetailReviews100PutRequest {
     @JsonProperty("criteria.invNumberPaid")
     @JsonPropertyDescription("Lineage reference object : TBRACCD_INV_NUMBER_PAID")
     private String criteriaInvNumberPaid;
-    /**
-     * Detail Code
-     * <p>
-     * Lineage reference object : TBRACCD_DETAIL_CODE, Lookup lineage reference object : tbbdetc
-     * (Required)
-     * 
-     */
-    @JsonProperty("detailCode")
-    @JsonPropertyDescription("Lineage reference object : TBRACCD_DETAIL_CODE, Lookup lineage reference object : tbbdetc")
-    private String detailCode;
     /**
      * Study Path
      * <p>
@@ -329,6 +370,13 @@ public class AccountDetailReviews100PutRequest {
     @JsonPropertyDescription("Lineage reference object : TBRACCD_INVOICE_NUMBER")
     private String criteriaInvoiceNumber;
     /**
+     * Lineage reference object : TBRACCD_CPDT_IND
+     * 
+     */
+    @JsonProperty("cpdtInd")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_CPDT_IND")
+    private String cpdtInd;
+    /**
      * Feed Date
      * <p>
      * Lineage reference object : TBRACCD_FEED_DATE
@@ -338,6 +386,16 @@ public class AccountDetailReviews100PutRequest {
     @JsonPropertyDescription("Lineage reference object : TBRACCD_FEED_DATE")
     private Date criteriaFeedDate;
     /**
+     * Effective Date
+     * <p>
+     * Lineage reference object : TBRACCD_EFFECTIVE_DATE
+     * (Required)
+     * 
+     */
+    @JsonProperty("effectiveDate")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_EFFECTIVE_DATE")
+    private Date effectiveDate;
+    /**
      * Receipt
      * <p>
      * Lineage reference object : TBRACCD_RECEIPT_NUMBER
@@ -346,6 +404,16 @@ public class AccountDetailReviews100PutRequest {
     @JsonProperty("criteria.receiptNumber")
     @JsonPropertyDescription("Lineage reference object : TBRACCD_RECEIPT_NUMBER")
     private Double criteriaReceiptNumber;
+    /**
+     * Description
+     * <p>
+     * Lineage reference object : TBRACCD_DESC
+     * (Required)
+     * 
+     */
+    @JsonProperty("desc")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_DESC")
+    private String desc;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -375,6 +443,33 @@ public class AccountDetailReviews100PutRequest {
 
     public AccountDetailReviews100PutRequest withCriteriaDetailCode(String criteriaDetailCode) {
         this.criteriaDetailCode = criteriaDetailCode;
+        return this;
+    }
+
+    /**
+     * Document
+     * <p>
+     * Lineage reference object : TBRACCD_DOCUMENT_NUMBER
+     * 
+     */
+    @JsonProperty("documentNumber")
+    public String getDocumentNumber() {
+        return documentNumber;
+    }
+
+    /**
+     * Document
+     * <p>
+     * Lineage reference object : TBRACCD_DOCUMENT_NUMBER
+     * 
+     */
+    @JsonProperty("documentNumber")
+    public void setDocumentNumber(String documentNumber) {
+        this.documentNumber = documentNumber;
+    }
+
+    public AccountDetailReviews100PutRequest withDocumentNumber(String documentNumber) {
+        this.documentNumber = documentNumber;
         return this;
     }
 
@@ -541,6 +636,33 @@ public class AccountDetailReviews100PutRequest {
     }
 
     /**
+     * Holds
+     * <p>
+     * Lineage reference object : holdPassword
+     * 
+     */
+    @JsonProperty("holdPassword")
+    public String getHoldPassword() {
+        return holdPassword;
+    }
+
+    /**
+     * Holds
+     * <p>
+     * Lineage reference object : holdPassword
+     * 
+     */
+    @JsonProperty("holdPassword")
+    public void setHoldPassword(String holdPassword) {
+        this.holdPassword = holdPassword;
+    }
+
+    public AccountDetailReviews100PutRequest withHoldPassword(String holdPassword) {
+        this.holdPassword = holdPassword;
+        return this;
+    }
+
+    /**
      * Tax Method
      * <p>
      * 
@@ -620,6 +742,33 @@ public class AccountDetailReviews100PutRequest {
     }
 
     /**
+     * Feed
+     * <p>
+     * Lineage reference object : TBRACCD_ACCT_FEED_IND
+     * 
+     */
+    @JsonProperty("acctFeedInd")
+    public String getAcctFeedInd() {
+        return acctFeedInd;
+    }
+
+    /**
+     * Feed
+     * <p>
+     * Lineage reference object : TBRACCD_ACCT_FEED_IND
+     * 
+     */
+    @JsonProperty("acctFeedInd")
+    public void setAcctFeedInd(String acctFeedInd) {
+        this.acctFeedInd = acctFeedInd;
+    }
+
+    public AccountDetailReviews100PutRequest withAcctFeedInd(String acctFeedInd) {
+        this.acctFeedInd = acctFeedInd;
+        return this;
+    }
+
+    /**
      * Trans Paid
      * <p>
      * Lineage reference object : TBRACCD_TRAN_NUMBER_PAID
@@ -680,7 +829,7 @@ public class AccountDetailReviews100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -691,11 +840,11 @@ public class AccountDetailReviews100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public AccountDetailReviews100PutRequest withId(Object id) {
+    public AccountDetailReviews100PutRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -704,7 +853,6 @@ public class AccountDetailReviews100PutRequest {
      * Currency
      * <p>
      * Lookup lineage reference object : gtvcurr
-     * (Required)
      * 
      */
     @JsonProperty("criteria.currCodeV")
@@ -716,7 +864,6 @@ public class AccountDetailReviews100PutRequest {
      * Currency
      * <p>
      * Lookup lineage reference object : gtvcurr
-     * (Required)
      * 
      */
     @JsonProperty("criteria.currCodeV")
@@ -726,6 +873,33 @@ public class AccountDetailReviews100PutRequest {
 
     public AccountDetailReviews100PutRequest withCriteriaCurrCodeV(String criteriaCurrCodeV) {
         this.criteriaCurrCodeV = criteriaCurrCodeV;
+        return this;
+    }
+
+    /**
+     * Trans Paid
+     * <p>
+     * Lineage reference object : TBRACCD_TRAN_NUMBER_PAID
+     * 
+     */
+    @JsonProperty("tranNumberPaid")
+    public Double getTranNumberPaid() {
+        return tranNumberPaid;
+    }
+
+    /**
+     * Trans Paid
+     * <p>
+     * Lineage reference object : TBRACCD_TRAN_NUMBER_PAID
+     * 
+     */
+    @JsonProperty("tranNumberPaid")
+    public void setTranNumberPaid(Double tranNumberPaid) {
+        this.tranNumberPaid = tranNumberPaid;
+    }
+
+    public AccountDetailReviews100PutRequest withTranNumberPaid(Double tranNumberPaid) {
+        this.tranNumberPaid = tranNumberPaid;
         return this;
     }
 
@@ -867,6 +1041,33 @@ public class AccountDetailReviews100PutRequest {
     }
 
     /**
+     * Invoice Paid
+     * <p>
+     * Lineage reference object : TBRACCD_INV_NUMBER_PAID
+     * 
+     */
+    @JsonProperty("invNumberPaid")
+    public String getInvNumberPaid() {
+        return invNumberPaid;
+    }
+
+    /**
+     * Invoice Paid
+     * <p>
+     * Lineage reference object : TBRACCD_INV_NUMBER_PAID
+     * 
+     */
+    @JsonProperty("invNumberPaid")
+    public void setInvNumberPaid(String invNumberPaid) {
+        this.invNumberPaid = invNumberPaid;
+    }
+
+    public AccountDetailReviews100PutRequest withInvNumberPaid(String invNumberPaid) {
+        this.invNumberPaid = invNumberPaid;
+        return this;
+    }
+
+    /**
      * Tax
      * <p>
      * 
@@ -917,35 +1118,6 @@ public class AccountDetailReviews100PutRequest {
 
     public AccountDetailReviews100PutRequest withCriteriaInvNumberPaid(String criteriaInvNumberPaid) {
         this.criteriaInvNumberPaid = criteriaInvNumberPaid;
-        return this;
-    }
-
-    /**
-     * Detail Code
-     * <p>
-     * Lineage reference object : TBRACCD_DETAIL_CODE, Lookup lineage reference object : tbbdetc
-     * (Required)
-     * 
-     */
-    @JsonProperty("detailCode")
-    public String getDetailCode() {
-        return detailCode;
-    }
-
-    /**
-     * Detail Code
-     * <p>
-     * Lineage reference object : TBRACCD_DETAIL_CODE, Lookup lineage reference object : tbbdetc
-     * (Required)
-     * 
-     */
-    @JsonProperty("detailCode")
-    public void setDetailCode(String detailCode) {
-        this.detailCode = detailCode;
-    }
-
-    public AccountDetailReviews100PutRequest withDetailCode(String detailCode) {
-        this.detailCode = detailCode;
         return this;
     }
 
@@ -1189,6 +1361,29 @@ public class AccountDetailReviews100PutRequest {
     }
 
     /**
+     * Lineage reference object : TBRACCD_CPDT_IND
+     * 
+     */
+    @JsonProperty("cpdtInd")
+    public String getCpdtInd() {
+        return cpdtInd;
+    }
+
+    /**
+     * Lineage reference object : TBRACCD_CPDT_IND
+     * 
+     */
+    @JsonProperty("cpdtInd")
+    public void setCpdtInd(String cpdtInd) {
+        this.cpdtInd = cpdtInd;
+    }
+
+    public AccountDetailReviews100PutRequest withCpdtInd(String cpdtInd) {
+        this.cpdtInd = cpdtInd;
+        return this;
+    }
+
+    /**
      * Feed Date
      * <p>
      * Lineage reference object : TBRACCD_FEED_DATE
@@ -1212,6 +1407,35 @@ public class AccountDetailReviews100PutRequest {
 
     public AccountDetailReviews100PutRequest withCriteriaFeedDate(Date criteriaFeedDate) {
         this.criteriaFeedDate = criteriaFeedDate;
+        return this;
+    }
+
+    /**
+     * Effective Date
+     * <p>
+     * Lineage reference object : TBRACCD_EFFECTIVE_DATE
+     * (Required)
+     * 
+     */
+    @JsonProperty("effectiveDate")
+    public Date getEffectiveDate() {
+        return effectiveDate;
+    }
+
+    /**
+     * Effective Date
+     * <p>
+     * Lineage reference object : TBRACCD_EFFECTIVE_DATE
+     * (Required)
+     * 
+     */
+    @JsonProperty("effectiveDate")
+    public void setEffectiveDate(Date effectiveDate) {
+        this.effectiveDate = effectiveDate;
+    }
+
+    public AccountDetailReviews100PutRequest withEffectiveDate(Date effectiveDate) {
+        this.effectiveDate = effectiveDate;
         return this;
     }
 
@@ -1242,6 +1466,35 @@ public class AccountDetailReviews100PutRequest {
         return this;
     }
 
+    /**
+     * Description
+     * <p>
+     * Lineage reference object : TBRACCD_DESC
+     * (Required)
+     * 
+     */
+    @JsonProperty("desc")
+    public String getDesc() {
+        return desc;
+    }
+
+    /**
+     * Description
+     * <p>
+     * Lineage reference object : TBRACCD_DESC
+     * (Required)
+     * 
+     */
+    @JsonProperty("desc")
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public AccountDetailReviews100PutRequest withDesc(String desc) {
+        this.desc = desc;
+        return this;
+    }
+
     @JsonAnyGetter
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;
@@ -1264,6 +1517,10 @@ public class AccountDetailReviews100PutRequest {
         sb.append("criteriaDetailCode");
         sb.append('=');
         sb.append(((this.criteriaDetailCode == null)?"<null>":this.criteriaDetailCode));
+        sb.append(',');
+        sb.append("documentNumber");
+        sb.append('=');
+        sb.append(((this.documentNumber == null)?"<null>":this.documentNumber));
         sb.append(',');
         sb.append("criteriaSessionNumber");
         sb.append('=');
@@ -1289,6 +1546,10 @@ public class AccountDetailReviews100PutRequest {
         sb.append('=');
         sb.append(((this.criteriaTranNumber == null)?"<null>":this.criteriaTranNumber));
         sb.append(',');
+        sb.append("holdPassword");
+        sb.append('=');
+        sb.append(((this.holdPassword == null)?"<null>":this.holdPassword));
+        sb.append(',');
         sb.append("criteriaTaxMethod");
         sb.append('=');
         sb.append(((this.criteriaTaxMethod == null)?"<null>":this.criteriaTaxMethod));
@@ -1300,6 +1561,10 @@ public class AccountDetailReviews100PutRequest {
         sb.append("criteriaCpdtInd");
         sb.append('=');
         sb.append(((this.criteriaCpdtInd == null)?"<null>":this.criteriaCpdtInd));
+        sb.append(',');
+        sb.append("acctFeedInd");
+        sb.append('=');
+        sb.append(((this.acctFeedInd == null)?"<null>":this.acctFeedInd));
         sb.append(',');
         sb.append("criteriaTranNumberPaid");
         sb.append('=');
@@ -1316,6 +1581,10 @@ public class AccountDetailReviews100PutRequest {
         sb.append("criteriaCurrCodeV");
         sb.append('=');
         sb.append(((this.criteriaCurrCodeV == null)?"<null>":this.criteriaCurrCodeV));
+        sb.append(',');
+        sb.append("tranNumberPaid");
+        sb.append('=');
+        sb.append(((this.tranNumberPaid == null)?"<null>":this.tranNumberPaid));
         sb.append(',');
         sb.append("criteriaEffectiveDate");
         sb.append('=');
@@ -1337,6 +1606,10 @@ public class AccountDetailReviews100PutRequest {
         sb.append('=');
         sb.append(((this.criteriaTransDate == null)?"<null>":this.criteriaTransDate));
         sb.append(',');
+        sb.append("invNumberPaid");
+        sb.append('=');
+        sb.append(((this.invNumberPaid == null)?"<null>":this.invNumberPaid));
+        sb.append(',');
         sb.append("criteriaTaxAmount");
         sb.append('=');
         sb.append(((this.criteriaTaxAmount == null)?"<null>":this.criteriaTaxAmount));
@@ -1344,10 +1617,6 @@ public class AccountDetailReviews100PutRequest {
         sb.append("criteriaInvNumberPaid");
         sb.append('=');
         sb.append(((this.criteriaInvNumberPaid == null)?"<null>":this.criteriaInvNumberPaid));
-        sb.append(',');
-        sb.append("detailCode");
-        sb.append('=');
-        sb.append(((this.detailCode == null)?"<null>":this.detailCode));
         sb.append(',');
         sb.append("criteriaStspKeySequence");
         sb.append('=');
@@ -1385,13 +1654,25 @@ public class AccountDetailReviews100PutRequest {
         sb.append('=');
         sb.append(((this.criteriaInvoiceNumber == null)?"<null>":this.criteriaInvoiceNumber));
         sb.append(',');
+        sb.append("cpdtInd");
+        sb.append('=');
+        sb.append(((this.cpdtInd == null)?"<null>":this.cpdtInd));
+        sb.append(',');
         sb.append("criteriaFeedDate");
         sb.append('=');
         sb.append(((this.criteriaFeedDate == null)?"<null>":this.criteriaFeedDate));
         sb.append(',');
+        sb.append("effectiveDate");
+        sb.append('=');
+        sb.append(((this.effectiveDate == null)?"<null>":this.effectiveDate));
+        sb.append(',');
         sb.append("criteriaReceiptNumber");
         sb.append('=');
         sb.append(((this.criteriaReceiptNumber == null)?"<null>":this.criteriaReceiptNumber));
+        sb.append(',');
+        sb.append("desc");
+        sb.append('=');
+        sb.append(((this.desc == null)?"<null>":this.desc));
         sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');
@@ -1410,6 +1691,7 @@ public class AccountDetailReviews100PutRequest {
         int result = 1;
         result = ((result* 31)+((this.criteriaSessionNumber == null)? 0 :this.criteriaSessionNumber.hashCode()));
         result = ((result* 31)+((this.criteriaStspKeySequence == null)? 0 :this.criteriaStspKeySequence.hashCode()));
+        result = ((result* 31)+((this.documentNumber == null)? 0 :this.documentNumber.hashCode()));
         result = ((result* 31)+((this.criteriaCpdtInd == null)? 0 :this.criteriaCpdtInd.hashCode()));
         result = ((result* 31)+((this.criteriaTranNumberPaid == null)? 0 :this.criteriaTranNumberPaid.hashCode()));
         result = ((result* 31)+((this.criteriaEntryDate == null)? 0 :this.criteriaEntryDate.hashCode()));
@@ -1417,10 +1699,13 @@ public class AccountDetailReviews100PutRequest {
         result = ((result* 31)+((this.criteriaChargeAmount == null)? 0 :this.criteriaChargeAmount.hashCode()));
         result = ((result* 31)+((this.criteriaBalance == null)? 0 :this.criteriaBalance.hashCode()));
         result = ((result* 31)+((this.criteriaInvoiceNumber == null)? 0 :this.criteriaInvoiceNumber.hashCode()));
+        result = ((result* 31)+((this.holdPassword == null)? 0 :this.holdPassword.hashCode()));
         result = ((result* 31)+((this.criteriaPaymentAmount == null)? 0 :this.criteriaPaymentAmount.hashCode()));
+        result = ((result* 31)+((this.acctFeedInd == null)? 0 :this.acctFeedInd.hashCode()));
         result = ((result* 31)+((this.criteriaReceiptNumber == null)? 0 :this.criteriaReceiptNumber.hashCode()));
         result = ((result* 31)+((this.criteriaSrceCode == null)? 0 :this.criteriaSrceCode.hashCode()));
         result = ((result* 31)+((this.id == null)? 0 :this.id.hashCode()));
+        result = ((result* 31)+((this.tranNumberPaid == null)? 0 :this.tranNumberPaid.hashCode()));
         result = ((result* 31)+((this.criteriaDocumentNumber == null)? 0 :this.criteriaDocumentNumber.hashCode()));
         result = ((result* 31)+((this.criteriaCshrEndDate == null)? 0 :this.criteriaCshrEndDate.hashCode()));
         result = ((result* 31)+((this.criteriaTaxMethod == null)? 0 :this.criteriaTaxMethod.hashCode()));
@@ -1428,8 +1713,8 @@ public class AccountDetailReviews100PutRequest {
         result = ((result* 31)+((this.criteriaInvNumberPaid == null)? 0 :this.criteriaInvNumberPaid.hashCode()));
         result = ((result* 31)+((this.criteriaTaxAmount == null)? 0 :this.criteriaTaxAmount.hashCode()));
         result = ((result* 31)+((this.criteriaTermCode == null)? 0 :this.criteriaTermCode.hashCode()));
+        result = ((result* 31)+((this.invNumberPaid == null)? 0 :this.invNumberPaid.hashCode()));
         result = ((result* 31)+((this.criteriaAcctFeedInd == null)? 0 :this.criteriaAcctFeedInd.hashCode()));
-        result = ((result* 31)+((this.detailCode == null)? 0 :this.detailCode.hashCode()));
         result = ((result* 31)+((this.criteriaTranNumber == null)? 0 :this.criteriaTranNumber.hashCode()));
         result = ((result* 31)+((this.criteriaPeriod == null)? 0 :this.criteriaPeriod.hashCode()));
         result = ((result* 31)+((this.criteriaDetailCode == null)? 0 :this.criteriaDetailCode.hashCode()));
@@ -1440,8 +1725,11 @@ public class AccountDetailReviews100PutRequest {
         result = ((result* 31)+((this.criteriaEffectiveDate == null)? 0 :this.criteriaEffectiveDate.hashCode()));
         result = ((result* 31)+((this.criteriaFeedDate == null)? 0 :this.criteriaFeedDate.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
+        result = ((result* 31)+((this.cpdtInd == null)? 0 :this.cpdtInd.hashCode()));
         result = ((result* 31)+((this.criteriaDesc == null)? 0 :this.criteriaDesc.hashCode()));
+        result = ((result* 31)+((this.effectiveDate == null)? 0 :this.effectiveDate.hashCode()));
         result = ((result* 31)+((this.criteriaUser == null)? 0 :this.criteriaUser.hashCode()));
+        result = ((result* 31)+((this.desc == null)? 0 :this.desc.hashCode()));
         return result;
     }
 
@@ -1454,7 +1742,7 @@ public class AccountDetailReviews100PutRequest {
             return false;
         }
         AccountDetailReviews100PutRequest rhs = ((AccountDetailReviews100PutRequest) other);
-        return (((((((((((((((((((((((((((((((((((this.criteriaSessionNumber == rhs.criteriaSessionNumber)||((this.criteriaSessionNumber!= null)&&this.criteriaSessionNumber.equals(rhs.criteriaSessionNumber)))&&((this.criteriaStspKeySequence == rhs.criteriaStspKeySequence)||((this.criteriaStspKeySequence!= null)&&this.criteriaStspKeySequence.equals(rhs.criteriaStspKeySequence))))&&((this.criteriaCpdtInd == rhs.criteriaCpdtInd)||((this.criteriaCpdtInd!= null)&&this.criteriaCpdtInd.equals(rhs.criteriaCpdtInd))))&&((this.criteriaTranNumberPaid == rhs.criteriaTranNumberPaid)||((this.criteriaTranNumberPaid!= null)&&this.criteriaTranNumberPaid.equals(rhs.criteriaTranNumberPaid))))&&((this.criteriaEntryDate == rhs.criteriaEntryDate)||((this.criteriaEntryDate!= null)&&this.criteriaEntryDate.equals(rhs.criteriaEntryDate))))&&((this.criteriaCurrCodeV == rhs.criteriaCurrCodeV)||((this.criteriaCurrCodeV!= null)&&this.criteriaCurrCodeV.equals(rhs.criteriaCurrCodeV))))&&((this.criteriaChargeAmount == rhs.criteriaChargeAmount)||((this.criteriaChargeAmount!= null)&&this.criteriaChargeAmount.equals(rhs.criteriaChargeAmount))))&&((this.criteriaBalance == rhs.criteriaBalance)||((this.criteriaBalance!= null)&&this.criteriaBalance.equals(rhs.criteriaBalance))))&&((this.criteriaInvoiceNumber == rhs.criteriaInvoiceNumber)||((this.criteriaInvoiceNumber!= null)&&this.criteriaInvoiceNumber.equals(rhs.criteriaInvoiceNumber))))&&((this.criteriaPaymentAmount == rhs.criteriaPaymentAmount)||((this.criteriaPaymentAmount!= null)&&this.criteriaPaymentAmount.equals(rhs.criteriaPaymentAmount))))&&((this.criteriaReceiptNumber == rhs.criteriaReceiptNumber)||((this.criteriaReceiptNumber!= null)&&this.criteriaReceiptNumber.equals(rhs.criteriaReceiptNumber))))&&((this.criteriaSrceCode == rhs.criteriaSrceCode)||((this.criteriaSrceCode!= null)&&this.criteriaSrceCode.equals(rhs.criteriaSrceCode))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.criteriaDocumentNumber == rhs.criteriaDocumentNumber)||((this.criteriaDocumentNumber!= null)&&this.criteriaDocumentNumber.equals(rhs.criteriaDocumentNumber))))&&((this.criteriaCshrEndDate == rhs.criteriaCshrEndDate)||((this.criteriaCshrEndDate!= null)&&this.criteriaCshrEndDate.equals(rhs.criteriaCshrEndDate))))&&((this.criteriaTaxMethod == rhs.criteriaTaxMethod)||((this.criteriaTaxMethod!= null)&&this.criteriaTaxMethod.equals(rhs.criteriaTaxMethod))))&&((this.criteriaTransDate == rhs.criteriaTransDate)||((this.criteriaTransDate!= null)&&this.criteriaTransDate.equals(rhs.criteriaTransDate))))&&((this.criteriaInvNumberPaid == rhs.criteriaInvNumberPaid)||((this.criteriaInvNumberPaid!= null)&&this.criteriaInvNumberPaid.equals(rhs.criteriaInvNumberPaid))))&&((this.criteriaTaxAmount == rhs.criteriaTaxAmount)||((this.criteriaTaxAmount!= null)&&this.criteriaTaxAmount.equals(rhs.criteriaTaxAmount))))&&((this.criteriaTermCode == rhs.criteriaTermCode)||((this.criteriaTermCode!= null)&&this.criteriaTermCode.equals(rhs.criteriaTermCode))))&&((this.criteriaAcctFeedInd == rhs.criteriaAcctFeedInd)||((this.criteriaAcctFeedInd!= null)&&this.criteriaAcctFeedInd.equals(rhs.criteriaAcctFeedInd))))&&((this.detailCode == rhs.detailCode)||((this.detailCode!= null)&&this.detailCode.equals(rhs.detailCode))))&&((this.criteriaTranNumber == rhs.criteriaTranNumber)||((this.criteriaTranNumber!= null)&&this.criteriaTranNumber.equals(rhs.criteriaTranNumber))))&&((this.criteriaPeriod == rhs.criteriaPeriod)||((this.criteriaPeriod!= null)&&this.criteriaPeriod.equals(rhs.criteriaPeriod))))&&((this.criteriaDetailCode == rhs.criteriaDetailCode)||((this.criteriaDetailCode!= null)&&this.criteriaDetailCode.equals(rhs.criteriaDetailCode))))&&((this.criteriaOrigChgInd == rhs.criteriaOrigChgInd)||((this.criteriaOrigChgInd!= null)&&this.criteriaOrigChgInd.equals(rhs.criteriaOrigChgInd))))&&((this.criteriaAidyCode == rhs.criteriaAidyCode)||((this.criteriaAidyCode!= null)&&this.criteriaAidyCode.equals(rhs.criteriaAidyCode))))&&((this.origChgInd == rhs.origChgInd)||((this.origChgInd!= null)&&this.origChgInd.equals(rhs.origChgInd))))&&((this.criteriaFeedDocCode == rhs.criteriaFeedDocCode)||((this.criteriaFeedDocCode!= null)&&this.criteriaFeedDocCode.equals(rhs.criteriaFeedDocCode))))&&((this.criteriaEffectiveDate == rhs.criteriaEffectiveDate)||((this.criteriaEffectiveDate!= null)&&this.criteriaEffectiveDate.equals(rhs.criteriaEffectiveDate))))&&((this.criteriaFeedDate == rhs.criteriaFeedDate)||((this.criteriaFeedDate!= null)&&this.criteriaFeedDate.equals(rhs.criteriaFeedDate))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.criteriaDesc == rhs.criteriaDesc)||((this.criteriaDesc!= null)&&this.criteriaDesc.equals(rhs.criteriaDesc))))&&((this.criteriaUser == rhs.criteriaUser)||((this.criteriaUser!= null)&&this.criteriaUser.equals(rhs.criteriaUser))));
+        return ((((((((((((((((((((((((((((((((((((((((((this.criteriaSessionNumber == rhs.criteriaSessionNumber)||((this.criteriaSessionNumber!= null)&&this.criteriaSessionNumber.equals(rhs.criteriaSessionNumber)))&&((this.criteriaStspKeySequence == rhs.criteriaStspKeySequence)||((this.criteriaStspKeySequence!= null)&&this.criteriaStspKeySequence.equals(rhs.criteriaStspKeySequence))))&&((this.documentNumber == rhs.documentNumber)||((this.documentNumber!= null)&&this.documentNumber.equals(rhs.documentNumber))))&&((this.criteriaCpdtInd == rhs.criteriaCpdtInd)||((this.criteriaCpdtInd!= null)&&this.criteriaCpdtInd.equals(rhs.criteriaCpdtInd))))&&((this.criteriaTranNumberPaid == rhs.criteriaTranNumberPaid)||((this.criteriaTranNumberPaid!= null)&&this.criteriaTranNumberPaid.equals(rhs.criteriaTranNumberPaid))))&&((this.criteriaEntryDate == rhs.criteriaEntryDate)||((this.criteriaEntryDate!= null)&&this.criteriaEntryDate.equals(rhs.criteriaEntryDate))))&&((this.criteriaCurrCodeV == rhs.criteriaCurrCodeV)||((this.criteriaCurrCodeV!= null)&&this.criteriaCurrCodeV.equals(rhs.criteriaCurrCodeV))))&&((this.criteriaChargeAmount == rhs.criteriaChargeAmount)||((this.criteriaChargeAmount!= null)&&this.criteriaChargeAmount.equals(rhs.criteriaChargeAmount))))&&((this.criteriaBalance == rhs.criteriaBalance)||((this.criteriaBalance!= null)&&this.criteriaBalance.equals(rhs.criteriaBalance))))&&((this.criteriaInvoiceNumber == rhs.criteriaInvoiceNumber)||((this.criteriaInvoiceNumber!= null)&&this.criteriaInvoiceNumber.equals(rhs.criteriaInvoiceNumber))))&&((this.holdPassword == rhs.holdPassword)||((this.holdPassword!= null)&&this.holdPassword.equals(rhs.holdPassword))))&&((this.criteriaPaymentAmount == rhs.criteriaPaymentAmount)||((this.criteriaPaymentAmount!= null)&&this.criteriaPaymentAmount.equals(rhs.criteriaPaymentAmount))))&&((this.acctFeedInd == rhs.acctFeedInd)||((this.acctFeedInd!= null)&&this.acctFeedInd.equals(rhs.acctFeedInd))))&&((this.criteriaReceiptNumber == rhs.criteriaReceiptNumber)||((this.criteriaReceiptNumber!= null)&&this.criteriaReceiptNumber.equals(rhs.criteriaReceiptNumber))))&&((this.criteriaSrceCode == rhs.criteriaSrceCode)||((this.criteriaSrceCode!= null)&&this.criteriaSrceCode.equals(rhs.criteriaSrceCode))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.tranNumberPaid == rhs.tranNumberPaid)||((this.tranNumberPaid!= null)&&this.tranNumberPaid.equals(rhs.tranNumberPaid))))&&((this.criteriaDocumentNumber == rhs.criteriaDocumentNumber)||((this.criteriaDocumentNumber!= null)&&this.criteriaDocumentNumber.equals(rhs.criteriaDocumentNumber))))&&((this.criteriaCshrEndDate == rhs.criteriaCshrEndDate)||((this.criteriaCshrEndDate!= null)&&this.criteriaCshrEndDate.equals(rhs.criteriaCshrEndDate))))&&((this.criteriaTaxMethod == rhs.criteriaTaxMethod)||((this.criteriaTaxMethod!= null)&&this.criteriaTaxMethod.equals(rhs.criteriaTaxMethod))))&&((this.criteriaTransDate == rhs.criteriaTransDate)||((this.criteriaTransDate!= null)&&this.criteriaTransDate.equals(rhs.criteriaTransDate))))&&((this.criteriaInvNumberPaid == rhs.criteriaInvNumberPaid)||((this.criteriaInvNumberPaid!= null)&&this.criteriaInvNumberPaid.equals(rhs.criteriaInvNumberPaid))))&&((this.criteriaTaxAmount == rhs.criteriaTaxAmount)||((this.criteriaTaxAmount!= null)&&this.criteriaTaxAmount.equals(rhs.criteriaTaxAmount))))&&((this.criteriaTermCode == rhs.criteriaTermCode)||((this.criteriaTermCode!= null)&&this.criteriaTermCode.equals(rhs.criteriaTermCode))))&&((this.invNumberPaid == rhs.invNumberPaid)||((this.invNumberPaid!= null)&&this.invNumberPaid.equals(rhs.invNumberPaid))))&&((this.criteriaAcctFeedInd == rhs.criteriaAcctFeedInd)||((this.criteriaAcctFeedInd!= null)&&this.criteriaAcctFeedInd.equals(rhs.criteriaAcctFeedInd))))&&((this.criteriaTranNumber == rhs.criteriaTranNumber)||((this.criteriaTranNumber!= null)&&this.criteriaTranNumber.equals(rhs.criteriaTranNumber))))&&((this.criteriaPeriod == rhs.criteriaPeriod)||((this.criteriaPeriod!= null)&&this.criteriaPeriod.equals(rhs.criteriaPeriod))))&&((this.criteriaDetailCode == rhs.criteriaDetailCode)||((this.criteriaDetailCode!= null)&&this.criteriaDetailCode.equals(rhs.criteriaDetailCode))))&&((this.criteriaOrigChgInd == rhs.criteriaOrigChgInd)||((this.criteriaOrigChgInd!= null)&&this.criteriaOrigChgInd.equals(rhs.criteriaOrigChgInd))))&&((this.criteriaAidyCode == rhs.criteriaAidyCode)||((this.criteriaAidyCode!= null)&&this.criteriaAidyCode.equals(rhs.criteriaAidyCode))))&&((this.origChgInd == rhs.origChgInd)||((this.origChgInd!= null)&&this.origChgInd.equals(rhs.origChgInd))))&&((this.criteriaFeedDocCode == rhs.criteriaFeedDocCode)||((this.criteriaFeedDocCode!= null)&&this.criteriaFeedDocCode.equals(rhs.criteriaFeedDocCode))))&&((this.criteriaEffectiveDate == rhs.criteriaEffectiveDate)||((this.criteriaEffectiveDate!= null)&&this.criteriaEffectiveDate.equals(rhs.criteriaEffectiveDate))))&&((this.criteriaFeedDate == rhs.criteriaFeedDate)||((this.criteriaFeedDate!= null)&&this.criteriaFeedDate.equals(rhs.criteriaFeedDate))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.cpdtInd == rhs.cpdtInd)||((this.cpdtInd!= null)&&this.cpdtInd.equals(rhs.cpdtInd))))&&((this.criteriaDesc == rhs.criteriaDesc)||((this.criteriaDesc!= null)&&this.criteriaDesc.equals(rhs.criteriaDesc))))&&((this.effectiveDate == rhs.effectiveDate)||((this.effectiveDate!= null)&&this.effectiveDate.equals(rhs.effectiveDate))))&&((this.criteriaUser == rhs.criteriaUser)||((this.criteriaUser!= null)&&this.criteriaUser.equals(rhs.criteriaUser))))&&((this.desc == rhs.desc)||((this.desc!= null)&&this.desc.equals(rhs.desc))));
     }
 
 }

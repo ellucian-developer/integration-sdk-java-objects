@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.student_course_registrations_student_term.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -61,7 +62,7 @@ public class StudentCourseRegistrationsStudentTerm100PutRequest {
      */
     @JsonProperty("printBill")
     @JsonPropertyDescription("Lineage reference object : printBill")
-    private Object printBill;
+    private String printBill;
     /**
      * Residence
      * <p>
@@ -80,7 +81,7 @@ public class StudentCourseRegistrationsStudentTerm100PutRequest {
      */
     @JsonProperty("printSchedule")
     @JsonPropertyDescription("Lineage reference object : printSchedule")
-    private Object printSchedule;
+    private String printSchedule;
     /**
      * Progress Evaluation
      * <p>
@@ -98,7 +99,7 @@ public class StudentCourseRegistrationsStudentTerm100PutRequest {
      */
     @JsonProperty("keyStudypath")
     @JsonPropertyDescription("Lineage reference object : keyStudypath, Lookup lineage reference object : sovlcur,stvastd,stvcast,sgvstsp,sgrstsp,stvastd,stvcast,sgvstsp,sgrstsp,sovlcur")
-    private Object keyStudypath;
+    private Double keyStudypath;
     /**
      * View Current/Active Curricula
      * <p>
@@ -107,7 +108,7 @@ public class StudentCourseRegistrationsStudentTerm100PutRequest {
      */
     @JsonProperty("viewCurrent")
     @JsonPropertyDescription("Lineage reference object : viewCurrent")
-    private Object viewCurrent;
+    private String viewCurrent;
     /**
      * Fee Assessment Rate
      * <p>
@@ -134,7 +135,7 @@ public class StudentCourseRegistrationsStudentTerm100PutRequest {
      */
     @JsonProperty("holdPassword")
     @JsonPropertyDescription("Lineage reference object : holdPassword")
-    private Object holdPassword;
+    private String holdPassword;
     /**
      * Student Status
      * <p>
@@ -162,7 +163,7 @@ public class StudentCourseRegistrationsStudentTerm100PutRequest {
      */
     @JsonProperty("term")
     @JsonPropertyDescription("Lineage reference object : term, Lookup lineage reference object : stvterm")
-    private Object term;
+    private String term;
     /**
      * Date
      * <p>
@@ -171,7 +172,7 @@ public class StudentCourseRegistrationsStudentTerm100PutRequest {
      */
     @JsonProperty("rstsEstsDate")
     @JsonPropertyDescription("Lineage reference object : rstsEstsDate")
-    private Object rstsEstsDate;
+    private Date rstsEstsDate;
     /**
      * ID
      * <p>
@@ -180,7 +181,7 @@ public class StudentCourseRegistrationsStudentTerm100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Student Type
      * <p>
@@ -255,7 +256,7 @@ public class StudentCourseRegistrationsStudentTerm100PutRequest {
      * 
      */
     @JsonProperty("printBill")
-    public Object getPrintBill() {
+    public String getPrintBill() {
         return printBill;
     }
 
@@ -266,11 +267,11 @@ public class StudentCourseRegistrationsStudentTerm100PutRequest {
      * 
      */
     @JsonProperty("printBill")
-    public void setPrintBill(Object printBill) {
+    public void setPrintBill(String printBill) {
         this.printBill = printBill;
     }
 
-    public StudentCourseRegistrationsStudentTerm100PutRequest withPrintBill(Object printBill) {
+    public StudentCourseRegistrationsStudentTerm100PutRequest withPrintBill(String printBill) {
         this.printBill = printBill;
         return this;
     }
@@ -311,7 +312,7 @@ public class StudentCourseRegistrationsStudentTerm100PutRequest {
      * 
      */
     @JsonProperty("printSchedule")
-    public Object getPrintSchedule() {
+    public String getPrintSchedule() {
         return printSchedule;
     }
 
@@ -322,11 +323,11 @@ public class StudentCourseRegistrationsStudentTerm100PutRequest {
      * 
      */
     @JsonProperty("printSchedule")
-    public void setPrintSchedule(Object printSchedule) {
+    public void setPrintSchedule(String printSchedule) {
         this.printSchedule = printSchedule;
     }
 
-    public StudentCourseRegistrationsStudentTerm100PutRequest withPrintSchedule(Object printSchedule) {
+    public StudentCourseRegistrationsStudentTerm100PutRequest withPrintSchedule(String printSchedule) {
         this.printSchedule = printSchedule;
         return this;
     }
@@ -365,7 +366,7 @@ public class StudentCourseRegistrationsStudentTerm100PutRequest {
      * 
      */
     @JsonProperty("keyStudypath")
-    public Object getKeyStudypath() {
+    public Double getKeyStudypath() {
         return keyStudypath;
     }
 
@@ -376,11 +377,11 @@ public class StudentCourseRegistrationsStudentTerm100PutRequest {
      * 
      */
     @JsonProperty("keyStudypath")
-    public void setKeyStudypath(Object keyStudypath) {
+    public void setKeyStudypath(Double keyStudypath) {
         this.keyStudypath = keyStudypath;
     }
 
-    public StudentCourseRegistrationsStudentTerm100PutRequest withKeyStudypath(Object keyStudypath) {
+    public StudentCourseRegistrationsStudentTerm100PutRequest withKeyStudypath(Double keyStudypath) {
         this.keyStudypath = keyStudypath;
         return this;
     }
@@ -392,7 +393,7 @@ public class StudentCourseRegistrationsStudentTerm100PutRequest {
      * 
      */
     @JsonProperty("viewCurrent")
-    public Object getViewCurrent() {
+    public String getViewCurrent() {
         return viewCurrent;
     }
 
@@ -403,11 +404,11 @@ public class StudentCourseRegistrationsStudentTerm100PutRequest {
      * 
      */
     @JsonProperty("viewCurrent")
-    public void setViewCurrent(Object viewCurrent) {
+    public void setViewCurrent(String viewCurrent) {
         this.viewCurrent = viewCurrent;
     }
 
-    public StudentCourseRegistrationsStudentTerm100PutRequest withViewCurrent(Object viewCurrent) {
+    public StudentCourseRegistrationsStudentTerm100PutRequest withViewCurrent(String viewCurrent) {
         this.viewCurrent = viewCurrent;
         return this;
     }
@@ -473,7 +474,7 @@ public class StudentCourseRegistrationsStudentTerm100PutRequest {
      * 
      */
     @JsonProperty("holdPassword")
-    public Object getHoldPassword() {
+    public String getHoldPassword() {
         return holdPassword;
     }
 
@@ -484,11 +485,11 @@ public class StudentCourseRegistrationsStudentTerm100PutRequest {
      * 
      */
     @JsonProperty("holdPassword")
-    public void setHoldPassword(Object holdPassword) {
+    public void setHoldPassword(String holdPassword) {
         this.holdPassword = holdPassword;
     }
 
-    public StudentCourseRegistrationsStudentTerm100PutRequest withHoldPassword(Object holdPassword) {
+    public StudentCourseRegistrationsStudentTerm100PutRequest withHoldPassword(String holdPassword) {
         this.holdPassword = holdPassword;
         return this;
     }
@@ -556,7 +557,7 @@ public class StudentCourseRegistrationsStudentTerm100PutRequest {
      * 
      */
     @JsonProperty("term")
-    public Object getTerm() {
+    public String getTerm() {
         return term;
     }
 
@@ -567,11 +568,11 @@ public class StudentCourseRegistrationsStudentTerm100PutRequest {
      * 
      */
     @JsonProperty("term")
-    public void setTerm(Object term) {
+    public void setTerm(String term) {
         this.term = term;
     }
 
-    public StudentCourseRegistrationsStudentTerm100PutRequest withTerm(Object term) {
+    public StudentCourseRegistrationsStudentTerm100PutRequest withTerm(String term) {
         this.term = term;
         return this;
     }
@@ -583,7 +584,7 @@ public class StudentCourseRegistrationsStudentTerm100PutRequest {
      * 
      */
     @JsonProperty("rstsEstsDate")
-    public Object getRstsEstsDate() {
+    public Date getRstsEstsDate() {
         return rstsEstsDate;
     }
 
@@ -594,11 +595,11 @@ public class StudentCourseRegistrationsStudentTerm100PutRequest {
      * 
      */
     @JsonProperty("rstsEstsDate")
-    public void setRstsEstsDate(Object rstsEstsDate) {
+    public void setRstsEstsDate(Date rstsEstsDate) {
         this.rstsEstsDate = rstsEstsDate;
     }
 
-    public StudentCourseRegistrationsStudentTerm100PutRequest withRstsEstsDate(Object rstsEstsDate) {
+    public StudentCourseRegistrationsStudentTerm100PutRequest withRstsEstsDate(Date rstsEstsDate) {
         this.rstsEstsDate = rstsEstsDate;
         return this;
     }
@@ -610,7 +611,7 @@ public class StudentCourseRegistrationsStudentTerm100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -621,11 +622,11 @@ public class StudentCourseRegistrationsStudentTerm100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public StudentCourseRegistrationsStudentTerm100PutRequest withId(Object id) {
+    public StudentCourseRegistrationsStudentTerm100PutRequest withId(String id) {
         this.id = id;
         return this;
     }

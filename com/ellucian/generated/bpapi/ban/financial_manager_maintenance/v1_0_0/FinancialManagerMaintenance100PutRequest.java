@@ -159,7 +159,7 @@ public class FinancialManagerMaintenance100PutRequest {
      */
     @JsonProperty("lastNamePrefix")
     @JsonPropertyDescription("Lineage reference object : finMgrSurnamePrefix")
-    private Object lastNamePrefix;
+    private String lastNamePrefix;
     /**
      * Chart of Accounts
      * <p>
@@ -286,7 +286,7 @@ public class FinancialManagerMaintenance100PutRequest {
      */
     @JsonProperty("firstName")
     @JsonPropertyDescription("Lineage reference object : finMgrFirstName")
-    private Object firstName;
+    private String firstName;
     /**
      * ZIP or Postal Code
      * <p>
@@ -365,7 +365,7 @@ public class FinancialManagerMaintenance100PutRequest {
      */
     @JsonProperty("lastName")
     @JsonPropertyDescription("Lineage reference object : finMgrName")
-    private Object lastName;
+    private String lastName;
     /**
      * Last Activity Date
      * <p>
@@ -446,7 +446,7 @@ public class FinancialManagerMaintenance100PutRequest {
      */
     @JsonProperty("displayFmgrCode")
     @JsonPropertyDescription("Lineage reference object : displayFmgrCode, Lookup lineage reference object : spriden,ftvfmgr")
-    private Object displayFmgrCode;
+    private String displayFmgrCode;
     /**
      * Name Type
      * <p>
@@ -626,7 +626,7 @@ public class FinancialManagerMaintenance100PutRequest {
      */
     @JsonProperty("middleName")
     @JsonPropertyDescription("Lineage reference object : finMgrMi")
-    private Object middleName;
+    private String middleName;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -851,7 +851,7 @@ public class FinancialManagerMaintenance100PutRequest {
      * 
      */
     @JsonProperty("lastNamePrefix")
-    public Object getLastNamePrefix() {
+    public String getLastNamePrefix() {
         return lastNamePrefix;
     }
 
@@ -862,11 +862,11 @@ public class FinancialManagerMaintenance100PutRequest {
      * 
      */
     @JsonProperty("lastNamePrefix")
-    public void setLastNamePrefix(Object lastNamePrefix) {
+    public void setLastNamePrefix(String lastNamePrefix) {
         this.lastNamePrefix = lastNamePrefix;
     }
 
-    public FinancialManagerMaintenance100PutRequest withLastNamePrefix(Object lastNamePrefix) {
+    public FinancialManagerMaintenance100PutRequest withLastNamePrefix(String lastNamePrefix) {
         this.lastNamePrefix = lastNamePrefix;
         return this;
     }
@@ -1233,7 +1233,7 @@ public class FinancialManagerMaintenance100PutRequest {
      * 
      */
     @JsonProperty("firstName")
-    public Object getFirstName() {
+    public String getFirstName() {
         return firstName;
     }
 
@@ -1244,11 +1244,11 @@ public class FinancialManagerMaintenance100PutRequest {
      * 
      */
     @JsonProperty("firstName")
-    public void setFirstName(Object firstName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
-    public FinancialManagerMaintenance100PutRequest withFirstName(Object firstName) {
+    public FinancialManagerMaintenance100PutRequest withFirstName(String firstName) {
         this.firstName = firstName;
         return this;
     }
@@ -1476,7 +1476,7 @@ public class FinancialManagerMaintenance100PutRequest {
      * 
      */
     @JsonProperty("lastName")
-    public Object getLastName() {
+    public String getLastName() {
         return lastName;
     }
 
@@ -1487,11 +1487,11 @@ public class FinancialManagerMaintenance100PutRequest {
      * 
      */
     @JsonProperty("lastName")
-    public void setLastName(Object lastName) {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    public FinancialManagerMaintenance100PutRequest withLastName(Object lastName) {
+    public FinancialManagerMaintenance100PutRequest withLastName(String lastName) {
         this.lastName = lastName;
         return this;
     }
@@ -1721,7 +1721,7 @@ public class FinancialManagerMaintenance100PutRequest {
      * 
      */
     @JsonProperty("displayFmgrCode")
-    public Object getDisplayFmgrCode() {
+    public String getDisplayFmgrCode() {
         return displayFmgrCode;
     }
 
@@ -1732,11 +1732,11 @@ public class FinancialManagerMaintenance100PutRequest {
      * 
      */
     @JsonProperty("displayFmgrCode")
-    public void setDisplayFmgrCode(Object displayFmgrCode) {
+    public void setDisplayFmgrCode(String displayFmgrCode) {
         this.displayFmgrCode = displayFmgrCode;
     }
 
-    public FinancialManagerMaintenance100PutRequest withDisplayFmgrCode(Object displayFmgrCode) {
+    public FinancialManagerMaintenance100PutRequest withDisplayFmgrCode(String displayFmgrCode) {
         this.displayFmgrCode = displayFmgrCode;
         return this;
     }
@@ -2261,7 +2261,7 @@ public class FinancialManagerMaintenance100PutRequest {
      * 
      */
     @JsonProperty("middleName")
-    public Object getMiddleName() {
+    public String getMiddleName() {
         return middleName;
     }
 
@@ -2272,11 +2272,11 @@ public class FinancialManagerMaintenance100PutRequest {
      * 
      */
     @JsonProperty("middleName")
-    public void setMiddleName(Object middleName) {
+    public void setMiddleName(String middleName) {
         this.middleName = middleName;
     }
 
-    public FinancialManagerMaintenance100PutRequest withMiddleName(Object middleName) {
+    public FinancialManagerMaintenance100PutRequest withMiddleName(String middleName) {
         this.middleName = middleName;
         return this;
     }

@@ -29,7 +29,7 @@ public class TransferCourseArticulation100GetRequest {
      */
     @JsonProperty("sbgiCode")
     @JsonPropertyDescription("Lineage reference object : keyblocSbgiCode, Lookup lineage reference object : stvsbgi")
-    private Object sbgiCode;
+    private String sbgiCode;
     /**
      * Program
      * <p>
@@ -38,7 +38,7 @@ public class TransferCourseArticulation100GetRequest {
      */
     @JsonProperty("program")
     @JsonPropertyDescription("Lineage reference object : keyblocProgram, Lookup lineage reference object : smrprle")
-    private Object program;
+    private String program;
     /**
      * Default Institution
      * <p>
@@ -47,7 +47,7 @@ public class TransferCourseArticulation100GetRequest {
      */
     @JsonProperty("sbgiCodeDef")
     @JsonPropertyDescription("Lineage reference object : keyblocSbgiCodeDef")
-    private Object sbgiCodeDef;
+    private String sbgiCodeDef;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -58,7 +58,7 @@ public class TransferCourseArticulation100GetRequest {
      * 
      */
     @JsonProperty("sbgiCode")
-    public Object getSbgiCode() {
+    public String getSbgiCode() {
         return sbgiCode;
     }
 
@@ -69,11 +69,11 @@ public class TransferCourseArticulation100GetRequest {
      * 
      */
     @JsonProperty("sbgiCode")
-    public void setSbgiCode(Object sbgiCode) {
+    public void setSbgiCode(String sbgiCode) {
         this.sbgiCode = sbgiCode;
     }
 
-    public TransferCourseArticulation100GetRequest withSbgiCode(Object sbgiCode) {
+    public TransferCourseArticulation100GetRequest withSbgiCode(String sbgiCode) {
         this.sbgiCode = sbgiCode;
         return this;
     }
@@ -85,7 +85,7 @@ public class TransferCourseArticulation100GetRequest {
      * 
      */
     @JsonProperty("program")
-    public Object getProgram() {
+    public String getProgram() {
         return program;
     }
 
@@ -96,11 +96,11 @@ public class TransferCourseArticulation100GetRequest {
      * 
      */
     @JsonProperty("program")
-    public void setProgram(Object program) {
+    public void setProgram(String program) {
         this.program = program;
     }
 
-    public TransferCourseArticulation100GetRequest withProgram(Object program) {
+    public TransferCourseArticulation100GetRequest withProgram(String program) {
         this.program = program;
         return this;
     }
@@ -112,7 +112,7 @@ public class TransferCourseArticulation100GetRequest {
      * 
      */
     @JsonProperty("sbgiCodeDef")
-    public Object getSbgiCodeDef() {
+    public String getSbgiCodeDef() {
         return sbgiCodeDef;
     }
 
@@ -123,11 +123,11 @@ public class TransferCourseArticulation100GetRequest {
      * 
      */
     @JsonProperty("sbgiCodeDef")
-    public void setSbgiCodeDef(Object sbgiCodeDef) {
+    public void setSbgiCodeDef(String sbgiCodeDef) {
         this.sbgiCodeDef = sbgiCodeDef;
     }
 
-    public TransferCourseArticulation100GetRequest withSbgiCodeDef(Object sbgiCodeDef) {
+    public TransferCourseArticulation100GetRequest withSbgiCodeDef(String sbgiCodeDef) {
         this.sbgiCodeDef = sbgiCodeDef;
         return this;
     }

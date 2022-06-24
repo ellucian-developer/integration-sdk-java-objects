@@ -27,7 +27,7 @@ public class DeferPayPeriodRule100GetRequest {
      */
     @JsonProperty("dfprCode")
     @JsonPropertyDescription("Lineage reference object : dfprCode")
-    private Object dfprCode;
+    private String dfprCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -38,7 +38,7 @@ public class DeferPayPeriodRule100GetRequest {
      * 
      */
     @JsonProperty("dfprCode")
-    public Object getDfprCode() {
+    public String getDfprCode() {
         return dfprCode;
     }
 
@@ -49,11 +49,11 @@ public class DeferPayPeriodRule100GetRequest {
      * 
      */
     @JsonProperty("dfprCode")
-    public void setDfprCode(Object dfprCode) {
+    public void setDfprCode(String dfprCode) {
         this.dfprCode = dfprCode;
     }
 
-    public DeferPayPeriodRule100GetRequest withDfprCode(Object dfprCode) {
+    public DeferPayPeriodRule100GetRequest withDfprCode(String dfprCode) {
         this.dfprCode = dfprCode;
         return this;
     }

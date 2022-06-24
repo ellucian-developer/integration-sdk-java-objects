@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.student_course_registration_audit.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -30,7 +31,7 @@ public class StudentCourseRegistrationAudit100GetRequest {
      */
     @JsonProperty("fromDate")
     @JsonPropertyDescription("Lineage reference object : fromDate")
-    private Object fromDate;
+    private Date fromDate;
     /**
      * Registration To Date
      * <p>
@@ -39,7 +40,7 @@ public class StudentCourseRegistrationAudit100GetRequest {
      */
     @JsonProperty("toDate")
     @JsonPropertyDescription("Lineage reference object : toDate")
-    private Object toDate;
+    private Date toDate;
     /**
      * ID
      * <p>
@@ -48,7 +49,7 @@ public class StudentCourseRegistrationAudit100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Term Code
      * <p>
@@ -57,7 +58,7 @@ public class StudentCourseRegistrationAudit100GetRequest {
      */
     @JsonProperty("termCode")
     @JsonPropertyDescription("Lineage reference object : termCode, Lookup lineage reference object : stvterm")
-    private Object termCode;
+    private String termCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -68,7 +69,7 @@ public class StudentCourseRegistrationAudit100GetRequest {
      * 
      */
     @JsonProperty("fromDate")
-    public Object getFromDate() {
+    public Date getFromDate() {
         return fromDate;
     }
 
@@ -79,11 +80,11 @@ public class StudentCourseRegistrationAudit100GetRequest {
      * 
      */
     @JsonProperty("fromDate")
-    public void setFromDate(Object fromDate) {
+    public void setFromDate(Date fromDate) {
         this.fromDate = fromDate;
     }
 
-    public StudentCourseRegistrationAudit100GetRequest withFromDate(Object fromDate) {
+    public StudentCourseRegistrationAudit100GetRequest withFromDate(Date fromDate) {
         this.fromDate = fromDate;
         return this;
     }
@@ -95,7 +96,7 @@ public class StudentCourseRegistrationAudit100GetRequest {
      * 
      */
     @JsonProperty("toDate")
-    public Object getToDate() {
+    public Date getToDate() {
         return toDate;
     }
 
@@ -106,11 +107,11 @@ public class StudentCourseRegistrationAudit100GetRequest {
      * 
      */
     @JsonProperty("toDate")
-    public void setToDate(Object toDate) {
+    public void setToDate(Date toDate) {
         this.toDate = toDate;
     }
 
-    public StudentCourseRegistrationAudit100GetRequest withToDate(Object toDate) {
+    public StudentCourseRegistrationAudit100GetRequest withToDate(Date toDate) {
         this.toDate = toDate;
         return this;
     }
@@ -122,7 +123,7 @@ public class StudentCourseRegistrationAudit100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -133,11 +134,11 @@ public class StudentCourseRegistrationAudit100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public StudentCourseRegistrationAudit100GetRequest withId(Object id) {
+    public StudentCourseRegistrationAudit100GetRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -149,7 +150,7 @@ public class StudentCourseRegistrationAudit100GetRequest {
      * 
      */
     @JsonProperty("termCode")
-    public Object getTermCode() {
+    public String getTermCode() {
         return termCode;
     }
 
@@ -160,11 +161,11 @@ public class StudentCourseRegistrationAudit100GetRequest {
      * 
      */
     @JsonProperty("termCode")
-    public void setTermCode(Object termCode) {
+    public void setTermCode(String termCode) {
         this.termCode = termCode;
     }
 
-    public StudentCourseRegistrationAudit100GetRequest withTermCode(Object termCode) {
+    public StudentCourseRegistrationAudit100GetRequest withTermCode(String termCode) {
         this.termCode = termCode;
         return this;
     }

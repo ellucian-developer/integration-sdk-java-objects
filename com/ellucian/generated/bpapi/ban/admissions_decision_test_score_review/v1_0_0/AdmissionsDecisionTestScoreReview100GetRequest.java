@@ -67,7 +67,7 @@ public class AdmissionsDecisionTestScoreReview100GetRequest {
      */
     @JsonProperty("keyblocTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCode;
+    private String keyblocTermCode;
     /**
      * Application Number
      * <p>
@@ -169,7 +169,7 @@ public class AdmissionsDecisionTestScoreReview100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Student Type
      * <p>
@@ -289,7 +289,7 @@ public class AdmissionsDecisionTestScoreReview100GetRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public Object getKeyblocTermCode() {
+    public String getKeyblocTermCode() {
         return keyblocTermCode;
     }
 
@@ -300,11 +300,11 @@ public class AdmissionsDecisionTestScoreReview100GetRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public void setKeyblocTermCode(Object keyblocTermCode) {
+    public void setKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
     }
 
-    public AdmissionsDecisionTestScoreReview100GetRequest withKeyblocTermCode(Object keyblocTermCode) {
+    public AdmissionsDecisionTestScoreReview100GetRequest withKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
         return this;
     }
@@ -592,7 +592,7 @@ public class AdmissionsDecisionTestScoreReview100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -603,11 +603,11 @@ public class AdmissionsDecisionTestScoreReview100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public AdmissionsDecisionTestScoreReview100GetRequest withId(Object id) {
+    public AdmissionsDecisionTestScoreReview100GetRequest withId(String id) {
         this.id = id;
         return this;
     }

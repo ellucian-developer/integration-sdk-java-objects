@@ -1,9 +1,8 @@
 
 package com.ellucian.generated.bpapi.ban.certification_information.v1_0_0;
 
-import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import javax.annotation.processing.Generated;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
@@ -11,50 +10,495 @@ import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "pprends",
-    "pprcert"
+    "certDesc",
+    "natnDesc",
+    "comments",
+    "lcsvCode",
+    "statCode",
+    "natnCode",
+    "certCode",
+    "statDesc",
+    "certDate",
+    "nextCertDate",
+    "lcsvDesc",
+    "certNo",
+    "expireDate"
 })
 @Generated("jsonschema2pojo")
 public class CertificationInformation100PutResponse {
 
-    @JsonProperty("pprends")
-    private List<Pprend__2> pprends = new ArrayList<Pprend__2>();
-    @JsonProperty("pprcert")
-    private List<Pprcert__2> pprcert = new ArrayList<Pprcert__2>();
+    /**
+     * Description
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("certDesc")
+    private String certDesc;
+    /**
+     * Description
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("natnDesc")
+    private String natnDesc;
+    /**
+     * Comments
+     * <p>
+     * Lineage reference object : PPRCERT_COMMENTS
+     * 
+     */
+    @JsonProperty("comments")
+    @JsonPropertyDescription("Lineage reference object : PPRCERT_COMMENTS")
+    private String comments;
+    /**
+     * License or Certification Status
+     * <p>
+     * Lineage reference object : PPRCERT_LCSV_CODE, Lookup lineage reference object : ptvlcsv
+     * 
+     */
+    @JsonProperty("lcsvCode")
+    @JsonPropertyDescription("Lineage reference object : PPRCERT_LCSV_CODE, Lookup lineage reference object : ptvlcsv")
+    private String lcsvCode;
+    /**
+     * State or Province
+     * <p>
+     * Lineage reference object : PPRCERT_STAT_CODE, Lookup lineage reference object : stvstat
+     * 
+     */
+    @JsonProperty("statCode")
+    @JsonPropertyDescription("Lineage reference object : PPRCERT_STAT_CODE, Lookup lineage reference object : stvstat")
+    private String statCode;
+    /**
+     * Nation or Country
+     * <p>
+     * Lineage reference object : PPRCERT_NATN_CODE, Lookup lineage reference object : stvnatn
+     * 
+     */
+    @JsonProperty("natnCode")
+    @JsonPropertyDescription("Lineage reference object : PPRCERT_NATN_CODE, Lookup lineage reference object : stvnatn")
+    private String natnCode;
+    /**
+     * Certification Code
+     * <p>
+     * Lineage reference object : PPRCERT_CERT_CODE
+     * (Required)
+     * 
+     */
+    @JsonProperty("certCode")
+    @JsonPropertyDescription("Lineage reference object : PPRCERT_CERT_CODE")
+    private String certCode;
+    /**
+     * Description
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("statDesc")
+    private String statDesc;
+    /**
+     * Certification Date
+     * <p>
+     * Lineage reference object : PPRCERT_CERT_DATE
+     * 
+     */
+    @JsonProperty("certDate")
+    @JsonPropertyDescription("Lineage reference object : PPRCERT_CERT_DATE")
+    private Date certDate;
+    /**
+     * Next Certification Date
+     * <p>
+     * Lineage reference object : PPRCERT_NEXT_CERT_DATE
+     * 
+     */
+    @JsonProperty("nextCertDate")
+    @JsonPropertyDescription("Lineage reference object : PPRCERT_NEXT_CERT_DATE")
+    private Date nextCertDate;
+    /**
+     * Description
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("lcsvDesc")
+    private String lcsvDesc;
+    /**
+     * Certification Number
+     * <p>
+     * Lineage reference object : PPRCERT_CERT_NO
+     * 
+     */
+    @JsonProperty("certNo")
+    @JsonPropertyDescription("Lineage reference object : PPRCERT_CERT_NO")
+    private String certNo;
+    /**
+     * Expiration Date
+     * <p>
+     * Lineage reference object : PPRCERT_EXPIRE_DATE
+     * 
+     */
+    @JsonProperty("expireDate")
+    @JsonPropertyDescription("Lineage reference object : PPRCERT_EXPIRE_DATE")
+    private Date expireDate;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    @JsonProperty("pprends")
-    public List<Pprend__2> getPprends() {
-        return pprends;
+    /**
+     * Description
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("certDesc")
+    public String getCertDesc() {
+        return certDesc;
     }
 
-    @JsonProperty("pprends")
-    public void setPprends(List<Pprend__2> pprends) {
-        this.pprends = pprends;
+    /**
+     * Description
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("certDesc")
+    public void setCertDesc(String certDesc) {
+        this.certDesc = certDesc;
     }
 
-    public CertificationInformation100PutResponse withPprends(List<Pprend__2> pprends) {
-        this.pprends = pprends;
+    public CertificationInformation100PutResponse withCertDesc(String certDesc) {
+        this.certDesc = certDesc;
         return this;
     }
 
-    @JsonProperty("pprcert")
-    public List<Pprcert__2> getPprcert() {
-        return pprcert;
+    /**
+     * Description
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("natnDesc")
+    public String getNatnDesc() {
+        return natnDesc;
     }
 
-    @JsonProperty("pprcert")
-    public void setPprcert(List<Pprcert__2> pprcert) {
-        this.pprcert = pprcert;
+    /**
+     * Description
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("natnDesc")
+    public void setNatnDesc(String natnDesc) {
+        this.natnDesc = natnDesc;
     }
 
-    public CertificationInformation100PutResponse withPprcert(List<Pprcert__2> pprcert) {
-        this.pprcert = pprcert;
+    public CertificationInformation100PutResponse withNatnDesc(String natnDesc) {
+        this.natnDesc = natnDesc;
+        return this;
+    }
+
+    /**
+     * Comments
+     * <p>
+     * Lineage reference object : PPRCERT_COMMENTS
+     * 
+     */
+    @JsonProperty("comments")
+    public String getComments() {
+        return comments;
+    }
+
+    /**
+     * Comments
+     * <p>
+     * Lineage reference object : PPRCERT_COMMENTS
+     * 
+     */
+    @JsonProperty("comments")
+    public void setComments(String comments) {
+        this.comments = comments;
+    }
+
+    public CertificationInformation100PutResponse withComments(String comments) {
+        this.comments = comments;
+        return this;
+    }
+
+    /**
+     * License or Certification Status
+     * <p>
+     * Lineage reference object : PPRCERT_LCSV_CODE, Lookup lineage reference object : ptvlcsv
+     * 
+     */
+    @JsonProperty("lcsvCode")
+    public String getLcsvCode() {
+        return lcsvCode;
+    }
+
+    /**
+     * License or Certification Status
+     * <p>
+     * Lineage reference object : PPRCERT_LCSV_CODE, Lookup lineage reference object : ptvlcsv
+     * 
+     */
+    @JsonProperty("lcsvCode")
+    public void setLcsvCode(String lcsvCode) {
+        this.lcsvCode = lcsvCode;
+    }
+
+    public CertificationInformation100PutResponse withLcsvCode(String lcsvCode) {
+        this.lcsvCode = lcsvCode;
+        return this;
+    }
+
+    /**
+     * State or Province
+     * <p>
+     * Lineage reference object : PPRCERT_STAT_CODE, Lookup lineage reference object : stvstat
+     * 
+     */
+    @JsonProperty("statCode")
+    public String getStatCode() {
+        return statCode;
+    }
+
+    /**
+     * State or Province
+     * <p>
+     * Lineage reference object : PPRCERT_STAT_CODE, Lookup lineage reference object : stvstat
+     * 
+     */
+    @JsonProperty("statCode")
+    public void setStatCode(String statCode) {
+        this.statCode = statCode;
+    }
+
+    public CertificationInformation100PutResponse withStatCode(String statCode) {
+        this.statCode = statCode;
+        return this;
+    }
+
+    /**
+     * Nation or Country
+     * <p>
+     * Lineage reference object : PPRCERT_NATN_CODE, Lookup lineage reference object : stvnatn
+     * 
+     */
+    @JsonProperty("natnCode")
+    public String getNatnCode() {
+        return natnCode;
+    }
+
+    /**
+     * Nation or Country
+     * <p>
+     * Lineage reference object : PPRCERT_NATN_CODE, Lookup lineage reference object : stvnatn
+     * 
+     */
+    @JsonProperty("natnCode")
+    public void setNatnCode(String natnCode) {
+        this.natnCode = natnCode;
+    }
+
+    public CertificationInformation100PutResponse withNatnCode(String natnCode) {
+        this.natnCode = natnCode;
+        return this;
+    }
+
+    /**
+     * Certification Code
+     * <p>
+     * Lineage reference object : PPRCERT_CERT_CODE
+     * (Required)
+     * 
+     */
+    @JsonProperty("certCode")
+    public String getCertCode() {
+        return certCode;
+    }
+
+    /**
+     * Certification Code
+     * <p>
+     * Lineage reference object : PPRCERT_CERT_CODE
+     * (Required)
+     * 
+     */
+    @JsonProperty("certCode")
+    public void setCertCode(String certCode) {
+        this.certCode = certCode;
+    }
+
+    public CertificationInformation100PutResponse withCertCode(String certCode) {
+        this.certCode = certCode;
+        return this;
+    }
+
+    /**
+     * Description
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("statDesc")
+    public String getStatDesc() {
+        return statDesc;
+    }
+
+    /**
+     * Description
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("statDesc")
+    public void setStatDesc(String statDesc) {
+        this.statDesc = statDesc;
+    }
+
+    public CertificationInformation100PutResponse withStatDesc(String statDesc) {
+        this.statDesc = statDesc;
+        return this;
+    }
+
+    /**
+     * Certification Date
+     * <p>
+     * Lineage reference object : PPRCERT_CERT_DATE
+     * 
+     */
+    @JsonProperty("certDate")
+    public Date getCertDate() {
+        return certDate;
+    }
+
+    /**
+     * Certification Date
+     * <p>
+     * Lineage reference object : PPRCERT_CERT_DATE
+     * 
+     */
+    @JsonProperty("certDate")
+    public void setCertDate(Date certDate) {
+        this.certDate = certDate;
+    }
+
+    public CertificationInformation100PutResponse withCertDate(Date certDate) {
+        this.certDate = certDate;
+        return this;
+    }
+
+    /**
+     * Next Certification Date
+     * <p>
+     * Lineage reference object : PPRCERT_NEXT_CERT_DATE
+     * 
+     */
+    @JsonProperty("nextCertDate")
+    public Date getNextCertDate() {
+        return nextCertDate;
+    }
+
+    /**
+     * Next Certification Date
+     * <p>
+     * Lineage reference object : PPRCERT_NEXT_CERT_DATE
+     * 
+     */
+    @JsonProperty("nextCertDate")
+    public void setNextCertDate(Date nextCertDate) {
+        this.nextCertDate = nextCertDate;
+    }
+
+    public CertificationInformation100PutResponse withNextCertDate(Date nextCertDate) {
+        this.nextCertDate = nextCertDate;
+        return this;
+    }
+
+    /**
+     * Description
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("lcsvDesc")
+    public String getLcsvDesc() {
+        return lcsvDesc;
+    }
+
+    /**
+     * Description
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("lcsvDesc")
+    public void setLcsvDesc(String lcsvDesc) {
+        this.lcsvDesc = lcsvDesc;
+    }
+
+    public CertificationInformation100PutResponse withLcsvDesc(String lcsvDesc) {
+        this.lcsvDesc = lcsvDesc;
+        return this;
+    }
+
+    /**
+     * Certification Number
+     * <p>
+     * Lineage reference object : PPRCERT_CERT_NO
+     * 
+     */
+    @JsonProperty("certNo")
+    public String getCertNo() {
+        return certNo;
+    }
+
+    /**
+     * Certification Number
+     * <p>
+     * Lineage reference object : PPRCERT_CERT_NO
+     * 
+     */
+    @JsonProperty("certNo")
+    public void setCertNo(String certNo) {
+        this.certNo = certNo;
+    }
+
+    public CertificationInformation100PutResponse withCertNo(String certNo) {
+        this.certNo = certNo;
+        return this;
+    }
+
+    /**
+     * Expiration Date
+     * <p>
+     * Lineage reference object : PPRCERT_EXPIRE_DATE
+     * 
+     */
+    @JsonProperty("expireDate")
+    public Date getExpireDate() {
+        return expireDate;
+    }
+
+    /**
+     * Expiration Date
+     * <p>
+     * Lineage reference object : PPRCERT_EXPIRE_DATE
+     * 
+     */
+    @JsonProperty("expireDate")
+    public void setExpireDate(Date expireDate) {
+        this.expireDate = expireDate;
+    }
+
+    public CertificationInformation100PutResponse withExpireDate(Date expireDate) {
+        this.expireDate = expireDate;
         return this;
     }
 
@@ -77,13 +521,57 @@ public class CertificationInformation100PutResponse {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(CertificationInformation100PutResponse.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
-        sb.append("pprends");
+        sb.append("certDesc");
         sb.append('=');
-        sb.append(((this.pprends == null)?"<null>":this.pprends));
+        sb.append(((this.certDesc == null)?"<null>":this.certDesc));
         sb.append(',');
-        sb.append("pprcert");
+        sb.append("natnDesc");
         sb.append('=');
-        sb.append(((this.pprcert == null)?"<null>":this.pprcert));
+        sb.append(((this.natnDesc == null)?"<null>":this.natnDesc));
+        sb.append(',');
+        sb.append("comments");
+        sb.append('=');
+        sb.append(((this.comments == null)?"<null>":this.comments));
+        sb.append(',');
+        sb.append("lcsvCode");
+        sb.append('=');
+        sb.append(((this.lcsvCode == null)?"<null>":this.lcsvCode));
+        sb.append(',');
+        sb.append("statCode");
+        sb.append('=');
+        sb.append(((this.statCode == null)?"<null>":this.statCode));
+        sb.append(',');
+        sb.append("natnCode");
+        sb.append('=');
+        sb.append(((this.natnCode == null)?"<null>":this.natnCode));
+        sb.append(',');
+        sb.append("certCode");
+        sb.append('=');
+        sb.append(((this.certCode == null)?"<null>":this.certCode));
+        sb.append(',');
+        sb.append("statDesc");
+        sb.append('=');
+        sb.append(((this.statDesc == null)?"<null>":this.statDesc));
+        sb.append(',');
+        sb.append("certDate");
+        sb.append('=');
+        sb.append(((this.certDate == null)?"<null>":this.certDate));
+        sb.append(',');
+        sb.append("nextCertDate");
+        sb.append('=');
+        sb.append(((this.nextCertDate == null)?"<null>":this.nextCertDate));
+        sb.append(',');
+        sb.append("lcsvDesc");
+        sb.append('=');
+        sb.append(((this.lcsvDesc == null)?"<null>":this.lcsvDesc));
+        sb.append(',');
+        sb.append("certNo");
+        sb.append('=');
+        sb.append(((this.certNo == null)?"<null>":this.certNo));
+        sb.append(',');
+        sb.append("expireDate");
+        sb.append('=');
+        sb.append(((this.expireDate == null)?"<null>":this.expireDate));
         sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');
@@ -100,9 +588,20 @@ public class CertificationInformation100PutResponse {
     @Override
     public int hashCode() {
         int result = 1;
-        result = ((result* 31)+((this.pprcert == null)? 0 :this.pprcert.hashCode()));
+        result = ((result* 31)+((this.certDesc == null)? 0 :this.certDesc.hashCode()));
+        result = ((result* 31)+((this.natnDesc == null)? 0 :this.natnDesc.hashCode()));
+        result = ((result* 31)+((this.comments == null)? 0 :this.comments.hashCode()));
+        result = ((result* 31)+((this.lcsvCode == null)? 0 :this.lcsvCode.hashCode()));
+        result = ((result* 31)+((this.statCode == null)? 0 :this.statCode.hashCode()));
+        result = ((result* 31)+((this.natnCode == null)? 0 :this.natnCode.hashCode()));
+        result = ((result* 31)+((this.certCode == null)? 0 :this.certCode.hashCode()));
+        result = ((result* 31)+((this.statDesc == null)? 0 :this.statDesc.hashCode()));
+        result = ((result* 31)+((this.certDate == null)? 0 :this.certDate.hashCode()));
+        result = ((result* 31)+((this.nextCertDate == null)? 0 :this.nextCertDate.hashCode()));
+        result = ((result* 31)+((this.lcsvDesc == null)? 0 :this.lcsvDesc.hashCode()));
+        result = ((result* 31)+((this.certNo == null)? 0 :this.certNo.hashCode()));
+        result = ((result* 31)+((this.expireDate == null)? 0 :this.expireDate.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
-        result = ((result* 31)+((this.pprends == null)? 0 :this.pprends.hashCode()));
         return result;
     }
 
@@ -115,7 +614,7 @@ public class CertificationInformation100PutResponse {
             return false;
         }
         CertificationInformation100PutResponse rhs = ((CertificationInformation100PutResponse) other);
-        return ((((this.pprcert == rhs.pprcert)||((this.pprcert!= null)&&this.pprcert.equals(rhs.pprcert)))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.pprends == rhs.pprends)||((this.pprends!= null)&&this.pprends.equals(rhs.pprends))));
+        return (((((((((((((((this.certDesc == rhs.certDesc)||((this.certDesc!= null)&&this.certDesc.equals(rhs.certDesc)))&&((this.natnDesc == rhs.natnDesc)||((this.natnDesc!= null)&&this.natnDesc.equals(rhs.natnDesc))))&&((this.comments == rhs.comments)||((this.comments!= null)&&this.comments.equals(rhs.comments))))&&((this.lcsvCode == rhs.lcsvCode)||((this.lcsvCode!= null)&&this.lcsvCode.equals(rhs.lcsvCode))))&&((this.statCode == rhs.statCode)||((this.statCode!= null)&&this.statCode.equals(rhs.statCode))))&&((this.natnCode == rhs.natnCode)||((this.natnCode!= null)&&this.natnCode.equals(rhs.natnCode))))&&((this.certCode == rhs.certCode)||((this.certCode!= null)&&this.certCode.equals(rhs.certCode))))&&((this.statDesc == rhs.statDesc)||((this.statDesc!= null)&&this.statDesc.equals(rhs.statDesc))))&&((this.certDate == rhs.certDate)||((this.certDate!= null)&&this.certDate.equals(rhs.certDate))))&&((this.nextCertDate == rhs.nextCertDate)||((this.nextCertDate!= null)&&this.nextCertDate.equals(rhs.nextCertDate))))&&((this.lcsvDesc == rhs.lcsvDesc)||((this.lcsvDesc!= null)&&this.lcsvDesc.equals(rhs.lcsvDesc))))&&((this.certNo == rhs.certNo)||((this.certNo!= null)&&this.certNo.equals(rhs.certNo))))&&((this.expireDate == rhs.expireDate)||((this.expireDate!= null)&&this.expireDate.equals(rhs.expireDate))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))));
     }
 
 }

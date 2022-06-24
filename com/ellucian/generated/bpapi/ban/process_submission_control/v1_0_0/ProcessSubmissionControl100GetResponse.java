@@ -16,6 +16,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
     "number",
     "displayDesc",
+    "label",
     "value"
 })
 @Generated("jsonschema2pojo")
@@ -39,6 +40,15 @@ public class ProcessSubmissionControl100GetResponse {
      */
     @JsonProperty("displayDesc")
     private String displayDesc;
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label")
+    @JsonPropertyDescription("Lineage reference object : GJBPRUN_LABEL")
+    private String label;
     /**
      * Values
      * <p>
@@ -108,6 +118,33 @@ public class ProcessSubmissionControl100GetResponse {
     }
 
     /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label")
+    public String getLabel() {
+        return label;
+    }
+
+    /**
+     * Label
+     * <p>
+     * Lineage reference object : GJBPRUN_LABEL
+     * 
+     */
+    @JsonProperty("label")
+    public void setLabel(String label) {
+        this.label = label;
+    }
+
+    public ProcessSubmissionControl100GetResponse withLabel(String label) {
+        this.label = label;
+        return this;
+    }
+
+    /**
      * Values
      * <p>
      * Lineage reference object : GJBPRUN_VALUE, Lookup lineage reference object : gjbpval
@@ -161,6 +198,10 @@ public class ProcessSubmissionControl100GetResponse {
         sb.append('=');
         sb.append(((this.displayDesc == null)?"<null>":this.displayDesc));
         sb.append(',');
+        sb.append("label");
+        sb.append('=');
+        sb.append(((this.label == null)?"<null>":this.label));
+        sb.append(',');
         sb.append("value");
         sb.append('=');
         sb.append(((this.value == null)?"<null>":this.value));
@@ -181,6 +222,7 @@ public class ProcessSubmissionControl100GetResponse {
     public int hashCode() {
         int result = 1;
         result = ((result* 31)+((this.number == null)? 0 :this.number.hashCode()));
+        result = ((result* 31)+((this.label == null)? 0 :this.label.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
         result = ((result* 31)+((this.displayDesc == null)? 0 :this.displayDesc.hashCode()));
         result = ((result* 31)+((this.value == null)? 0 :this.value.hashCode()));
@@ -196,7 +238,7 @@ public class ProcessSubmissionControl100GetResponse {
             return false;
         }
         ProcessSubmissionControl100GetResponse rhs = ((ProcessSubmissionControl100GetResponse) other);
-        return (((((this.number == rhs.number)||((this.number!= null)&&this.number.equals(rhs.number)))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.displayDesc == rhs.displayDesc)||((this.displayDesc!= null)&&this.displayDesc.equals(rhs.displayDesc))))&&((this.value == rhs.value)||((this.value!= null)&&this.value.equals(rhs.value))));
+        return ((((((this.number == rhs.number)||((this.number!= null)&&this.number.equals(rhs.number)))&&((this.label == rhs.label)||((this.label!= null)&&this.label.equals(rhs.label))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.displayDesc == rhs.displayDesc)||((this.displayDesc!= null)&&this.displayDesc.equals(rhs.displayDesc))))&&((this.value == rhs.value)||((this.value!= null)&&this.value.equals(rhs.value))));
     }
 
 }

@@ -43,7 +43,7 @@ public class StudentCohort100GetRequest {
      */
     @JsonProperty("chrtCode")
     @JsonPropertyDescription("Lineage reference object : chrtCode, Lookup lineage reference object : stvchrt")
-    private Object chrtCode;
+    private String chrtCode;
     /**
      * Term
      * <p>
@@ -52,7 +52,7 @@ public class StudentCohort100GetRequest {
      */
     @JsonProperty("termCodeEff")
     @JsonPropertyDescription("Lineage reference object : termCodeEff, Lookup lineage reference object : stvterm")
-    private Object termCodeEff;
+    private String termCodeEff;
     /**
      * Reason
      * <p>
@@ -139,7 +139,7 @@ public class StudentCohort100GetRequest {
      * 
      */
     @JsonProperty("chrtCode")
-    public Object getChrtCode() {
+    public String getChrtCode() {
         return chrtCode;
     }
 
@@ -150,11 +150,11 @@ public class StudentCohort100GetRequest {
      * 
      */
     @JsonProperty("chrtCode")
-    public void setChrtCode(Object chrtCode) {
+    public void setChrtCode(String chrtCode) {
         this.chrtCode = chrtCode;
     }
 
-    public StudentCohort100GetRequest withChrtCode(Object chrtCode) {
+    public StudentCohort100GetRequest withChrtCode(String chrtCode) {
         this.chrtCode = chrtCode;
         return this;
     }
@@ -166,7 +166,7 @@ public class StudentCohort100GetRequest {
      * 
      */
     @JsonProperty("termCodeEff")
-    public Object getTermCodeEff() {
+    public String getTermCodeEff() {
         return termCodeEff;
     }
 
@@ -177,11 +177,11 @@ public class StudentCohort100GetRequest {
      * 
      */
     @JsonProperty("termCodeEff")
-    public void setTermCodeEff(Object termCodeEff) {
+    public void setTermCodeEff(String termCodeEff) {
         this.termCodeEff = termCodeEff;
     }
 
-    public StudentCohort100GetRequest withTermCodeEff(Object termCodeEff) {
+    public StudentCohort100GetRequest withTermCodeEff(String termCodeEff) {
         this.termCodeEff = termCodeEff;
         return this;
     }

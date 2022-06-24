@@ -28,7 +28,7 @@ public class AccountHierarchyQuery100GetRequest {
      */
     @JsonProperty("ftxacthCoasCode")
     @JsonPropertyDescription("Lineage reference object : ftxacthCoasCode, Lookup lineage reference object : ftvcoas")
-    private Object ftxacthCoasCode;
+    private String ftxacthCoasCode;
     /**
      * Account
      * <p>
@@ -37,7 +37,7 @@ public class AccountHierarchyQuery100GetRequest {
      */
     @JsonProperty("ftxacthAcctCode")
     @JsonPropertyDescription("Lineage reference object : ftxacthAcctCode")
-    private Object ftxacthAcctCode;
+    private String ftxacthAcctCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -48,7 +48,7 @@ public class AccountHierarchyQuery100GetRequest {
      * 
      */
     @JsonProperty("ftxacthCoasCode")
-    public Object getFtxacthCoasCode() {
+    public String getFtxacthCoasCode() {
         return ftxacthCoasCode;
     }
 
@@ -59,11 +59,11 @@ public class AccountHierarchyQuery100GetRequest {
      * 
      */
     @JsonProperty("ftxacthCoasCode")
-    public void setFtxacthCoasCode(Object ftxacthCoasCode) {
+    public void setFtxacthCoasCode(String ftxacthCoasCode) {
         this.ftxacthCoasCode = ftxacthCoasCode;
     }
 
-    public AccountHierarchyQuery100GetRequest withFtxacthCoasCode(Object ftxacthCoasCode) {
+    public AccountHierarchyQuery100GetRequest withFtxacthCoasCode(String ftxacthCoasCode) {
         this.ftxacthCoasCode = ftxacthCoasCode;
         return this;
     }
@@ -75,7 +75,7 @@ public class AccountHierarchyQuery100GetRequest {
      * 
      */
     @JsonProperty("ftxacthAcctCode")
-    public Object getFtxacthAcctCode() {
+    public String getFtxacthAcctCode() {
         return ftxacthAcctCode;
     }
 
@@ -86,11 +86,11 @@ public class AccountHierarchyQuery100GetRequest {
      * 
      */
     @JsonProperty("ftxacthAcctCode")
-    public void setFtxacthAcctCode(Object ftxacthAcctCode) {
+    public void setFtxacthAcctCode(String ftxacthAcctCode) {
         this.ftxacthAcctCode = ftxacthAcctCode;
     }
 
-    public AccountHierarchyQuery100GetRequest withFtxacthAcctCode(Object ftxacthAcctCode) {
+    public AccountHierarchyQuery100GetRequest withFtxacthAcctCode(String ftxacthAcctCode) {
         this.ftxacthAcctCode = ftxacthAcctCode;
         return this;
     }

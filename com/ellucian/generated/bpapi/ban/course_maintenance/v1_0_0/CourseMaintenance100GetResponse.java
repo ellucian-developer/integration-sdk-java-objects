@@ -17,10 +17,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
     "shrtckl",
     "shrtckg",
-    "shrtckn",
-    "shrattr",
-    "shrattc",
-    "shrinst"
+    "shrtckn"
 })
 @Generated("jsonschema2pojo")
 public class CourseMaintenance100GetResponse {
@@ -31,12 +28,6 @@ public class CourseMaintenance100GetResponse {
     private List<Shrtckg> shrtckg = new ArrayList<Shrtckg>();
     @JsonProperty("shrtckn")
     private List<Shrtckn> shrtckn = new ArrayList<Shrtckn>();
-    @JsonProperty("shrattr")
-    private List<Shrattr> shrattr = new ArrayList<Shrattr>();
-    @JsonProperty("shrattc")
-    private List<Shrattc> shrattc = new ArrayList<Shrattc>();
-    @JsonProperty("shrinst")
-    private List<Shrinst> shrinst = new ArrayList<Shrinst>();
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -85,51 +76,6 @@ public class CourseMaintenance100GetResponse {
         return this;
     }
 
-    @JsonProperty("shrattr")
-    public List<Shrattr> getShrattr() {
-        return shrattr;
-    }
-
-    @JsonProperty("shrattr")
-    public void setShrattr(List<Shrattr> shrattr) {
-        this.shrattr = shrattr;
-    }
-
-    public CourseMaintenance100GetResponse withShrattr(List<Shrattr> shrattr) {
-        this.shrattr = shrattr;
-        return this;
-    }
-
-    @JsonProperty("shrattc")
-    public List<Shrattc> getShrattc() {
-        return shrattc;
-    }
-
-    @JsonProperty("shrattc")
-    public void setShrattc(List<Shrattc> shrattc) {
-        this.shrattc = shrattc;
-    }
-
-    public CourseMaintenance100GetResponse withShrattc(List<Shrattc> shrattc) {
-        this.shrattc = shrattc;
-        return this;
-    }
-
-    @JsonProperty("shrinst")
-    public List<Shrinst> getShrinst() {
-        return shrinst;
-    }
-
-    @JsonProperty("shrinst")
-    public void setShrinst(List<Shrinst> shrinst) {
-        this.shrinst = shrinst;
-    }
-
-    public CourseMaintenance100GetResponse withShrinst(List<Shrinst> shrinst) {
-        this.shrinst = shrinst;
-        return this;
-    }
-
     @JsonAnyGetter
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;
@@ -161,18 +107,6 @@ public class CourseMaintenance100GetResponse {
         sb.append('=');
         sb.append(((this.shrtckn == null)?"<null>":this.shrtckn));
         sb.append(',');
-        sb.append("shrattr");
-        sb.append('=');
-        sb.append(((this.shrattr == null)?"<null>":this.shrattr));
-        sb.append(',');
-        sb.append("shrattc");
-        sb.append('=');
-        sb.append(((this.shrattc == null)?"<null>":this.shrattc));
-        sb.append(',');
-        sb.append("shrinst");
-        sb.append('=');
-        sb.append(((this.shrinst == null)?"<null>":this.shrinst));
-        sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');
         sb.append(((this.additionalProperties == null)?"<null>":this.additionalProperties));
@@ -188,13 +122,10 @@ public class CourseMaintenance100GetResponse {
     @Override
     public int hashCode() {
         int result = 1;
-        result = ((result* 31)+((this.shrattr == null)? 0 :this.shrattr.hashCode()));
-        result = ((result* 31)+((this.shrattc == null)? 0 :this.shrattc.hashCode()));
         result = ((result* 31)+((this.shrtckg == null)? 0 :this.shrtckg.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
         result = ((result* 31)+((this.shrtckl == null)? 0 :this.shrtckl.hashCode()));
         result = ((result* 31)+((this.shrtckn == null)? 0 :this.shrtckn.hashCode()));
-        result = ((result* 31)+((this.shrinst == null)? 0 :this.shrinst.hashCode()));
         return result;
     }
 
@@ -207,7 +138,7 @@ public class CourseMaintenance100GetResponse {
             return false;
         }
         CourseMaintenance100GetResponse rhs = ((CourseMaintenance100GetResponse) other);
-        return ((((((((this.shrattr == rhs.shrattr)||((this.shrattr!= null)&&this.shrattr.equals(rhs.shrattr)))&&((this.shrattc == rhs.shrattc)||((this.shrattc!= null)&&this.shrattc.equals(rhs.shrattc))))&&((this.shrtckg == rhs.shrtckg)||((this.shrtckg!= null)&&this.shrtckg.equals(rhs.shrtckg))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.shrtckl == rhs.shrtckl)||((this.shrtckl!= null)&&this.shrtckl.equals(rhs.shrtckl))))&&((this.shrtckn == rhs.shrtckn)||((this.shrtckn!= null)&&this.shrtckn.equals(rhs.shrtckn))))&&((this.shrinst == rhs.shrinst)||((this.shrinst!= null)&&this.shrinst.equals(rhs.shrinst))));
+        return (((((this.shrtckg == rhs.shrtckg)||((this.shrtckg!= null)&&this.shrtckg.equals(rhs.shrtckg)))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.shrtckl == rhs.shrtckl)||((this.shrtckl!= null)&&this.shrtckl.equals(rhs.shrtckl))))&&((this.shrtckn == rhs.shrtckn)||((this.shrtckn!= null)&&this.shrtckn.equals(rhs.shrtckn))));
     }
 
 }

@@ -28,7 +28,7 @@ public class ProcessSubmissionControl100GetRequest {
      */
     @JsonProperty("jprmCode")
     @JsonPropertyDescription("Lineage reference object : jprmCode")
-    private Object jprmCode;
+    private String jprmCode;
     /**
      * Process
      * <p>
@@ -37,7 +37,7 @@ public class ProcessSubmissionControl100GetRequest {
      */
     @JsonProperty("keyblckJob")
     @JsonPropertyDescription("Lineage reference object : keyblckJob")
-    private Object keyblckJob;
+    private String keyblckJob;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -48,7 +48,7 @@ public class ProcessSubmissionControl100GetRequest {
      * 
      */
     @JsonProperty("jprmCode")
-    public Object getJprmCode() {
+    public String getJprmCode() {
         return jprmCode;
     }
 
@@ -59,11 +59,11 @@ public class ProcessSubmissionControl100GetRequest {
      * 
      */
     @JsonProperty("jprmCode")
-    public void setJprmCode(Object jprmCode) {
+    public void setJprmCode(String jprmCode) {
         this.jprmCode = jprmCode;
     }
 
-    public ProcessSubmissionControl100GetRequest withJprmCode(Object jprmCode) {
+    public ProcessSubmissionControl100GetRequest withJprmCode(String jprmCode) {
         this.jprmCode = jprmCode;
         return this;
     }
@@ -75,7 +75,7 @@ public class ProcessSubmissionControl100GetRequest {
      * 
      */
     @JsonProperty("keyblckJob")
-    public Object getKeyblckJob() {
+    public String getKeyblckJob() {
         return keyblckJob;
     }
 
@@ -86,11 +86,11 @@ public class ProcessSubmissionControl100GetRequest {
      * 
      */
     @JsonProperty("keyblckJob")
-    public void setKeyblckJob(Object keyblckJob) {
+    public void setKeyblckJob(String keyblckJob) {
         this.keyblckJob = keyblckJob;
     }
 
-    public ProcessSubmissionControl100GetRequest withKeyblckJob(Object keyblckJob) {
+    public ProcessSubmissionControl100GetRequest withKeyblckJob(String keyblckJob) {
         this.keyblckJob = keyblckJob;
         return this;
     }

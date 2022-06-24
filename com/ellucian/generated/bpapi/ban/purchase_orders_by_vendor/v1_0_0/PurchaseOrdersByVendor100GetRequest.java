@@ -43,7 +43,7 @@ public class PurchaseOrdersByVendor100GetRequest {
      */
     @JsonProperty("displayOrgnCode")
     @JsonPropertyDescription("Lineage reference object : displayOrgnCode")
-    private Object displayOrgnCode;
+    private String displayOrgnCode;
     /**
      * Purchase Order
      * <p>
@@ -59,7 +59,7 @@ public class PurchaseOrdersByVendor100GetRequest {
      */
     @JsonProperty("statusGrp")
     @JsonPropertyDescription("Lineage reference object : statusGrp")
-    private Object statusGrp;
+    private String statusGrp;
     /**
      * COA
      * <p>
@@ -68,7 +68,7 @@ public class PurchaseOrdersByVendor100GetRequest {
      */
     @JsonProperty("displayCoasCode")
     @JsonPropertyDescription("Lineage reference object : displayCoasCode, Lookup lineage reference object : ftvcoas")
-    private Object displayCoasCode;
+    private String displayCoasCode;
     /**
      * Fiscal Year
      * <p>
@@ -77,7 +77,7 @@ public class PurchaseOrdersByVendor100GetRequest {
      */
     @JsonProperty("displayFsyrCode")
     @JsonPropertyDescription("Lineage reference object : displayFsyrCode, Lookup lineage reference object : ftvfspd,ftvfsyr,ftvfspd")
-    private Object displayFsyrCode;
+    private String displayFsyrCode;
     /**
      * Vendor
      * <p>
@@ -86,7 +86,7 @@ public class PurchaseOrdersByVendor100GetRequest {
      */
     @JsonProperty("displayVendCode")
     @JsonPropertyDescription("Lineage reference object : displayVendCode")
-    private Object displayVendCode;
+    private String displayVendCode;
     /**
      * U/M
      * <p>
@@ -133,7 +133,7 @@ public class PurchaseOrdersByVendor100GetRequest {
      * 
      */
     @JsonProperty("displayOrgnCode")
-    public Object getDisplayOrgnCode() {
+    public String getDisplayOrgnCode() {
         return displayOrgnCode;
     }
 
@@ -144,11 +144,11 @@ public class PurchaseOrdersByVendor100GetRequest {
      * 
      */
     @JsonProperty("displayOrgnCode")
-    public void setDisplayOrgnCode(Object displayOrgnCode) {
+    public void setDisplayOrgnCode(String displayOrgnCode) {
         this.displayOrgnCode = displayOrgnCode;
     }
 
-    public PurchaseOrdersByVendor100GetRequest withDisplayOrgnCode(Object displayOrgnCode) {
+    public PurchaseOrdersByVendor100GetRequest withDisplayOrgnCode(String displayOrgnCode) {
         this.displayOrgnCode = displayOrgnCode;
         return this;
     }
@@ -185,7 +185,7 @@ public class PurchaseOrdersByVendor100GetRequest {
      * 
      */
     @JsonProperty("statusGrp")
-    public Object getStatusGrp() {
+    public String getStatusGrp() {
         return statusGrp;
     }
 
@@ -194,11 +194,11 @@ public class PurchaseOrdersByVendor100GetRequest {
      * 
      */
     @JsonProperty("statusGrp")
-    public void setStatusGrp(Object statusGrp) {
+    public void setStatusGrp(String statusGrp) {
         this.statusGrp = statusGrp;
     }
 
-    public PurchaseOrdersByVendor100GetRequest withStatusGrp(Object statusGrp) {
+    public PurchaseOrdersByVendor100GetRequest withStatusGrp(String statusGrp) {
         this.statusGrp = statusGrp;
         return this;
     }
@@ -210,7 +210,7 @@ public class PurchaseOrdersByVendor100GetRequest {
      * 
      */
     @JsonProperty("displayCoasCode")
-    public Object getDisplayCoasCode() {
+    public String getDisplayCoasCode() {
         return displayCoasCode;
     }
 
@@ -221,11 +221,11 @@ public class PurchaseOrdersByVendor100GetRequest {
      * 
      */
     @JsonProperty("displayCoasCode")
-    public void setDisplayCoasCode(Object displayCoasCode) {
+    public void setDisplayCoasCode(String displayCoasCode) {
         this.displayCoasCode = displayCoasCode;
     }
 
-    public PurchaseOrdersByVendor100GetRequest withDisplayCoasCode(Object displayCoasCode) {
+    public PurchaseOrdersByVendor100GetRequest withDisplayCoasCode(String displayCoasCode) {
         this.displayCoasCode = displayCoasCode;
         return this;
     }
@@ -237,7 +237,7 @@ public class PurchaseOrdersByVendor100GetRequest {
      * 
      */
     @JsonProperty("displayFsyrCode")
-    public Object getDisplayFsyrCode() {
+    public String getDisplayFsyrCode() {
         return displayFsyrCode;
     }
 
@@ -248,11 +248,11 @@ public class PurchaseOrdersByVendor100GetRequest {
      * 
      */
     @JsonProperty("displayFsyrCode")
-    public void setDisplayFsyrCode(Object displayFsyrCode) {
+    public void setDisplayFsyrCode(String displayFsyrCode) {
         this.displayFsyrCode = displayFsyrCode;
     }
 
-    public PurchaseOrdersByVendor100GetRequest withDisplayFsyrCode(Object displayFsyrCode) {
+    public PurchaseOrdersByVendor100GetRequest withDisplayFsyrCode(String displayFsyrCode) {
         this.displayFsyrCode = displayFsyrCode;
         return this;
     }
@@ -264,7 +264,7 @@ public class PurchaseOrdersByVendor100GetRequest {
      * 
      */
     @JsonProperty("displayVendCode")
-    public Object getDisplayVendCode() {
+    public String getDisplayVendCode() {
         return displayVendCode;
     }
 
@@ -275,11 +275,11 @@ public class PurchaseOrdersByVendor100GetRequest {
      * 
      */
     @JsonProperty("displayVendCode")
-    public void setDisplayVendCode(Object displayVendCode) {
+    public void setDisplayVendCode(String displayVendCode) {
         this.displayVendCode = displayVendCode;
     }
 
-    public PurchaseOrdersByVendor100GetRequest withDisplayVendCode(Object displayVendCode) {
+    public PurchaseOrdersByVendor100GetRequest withDisplayVendCode(String displayVendCode) {
         this.displayVendCode = displayVendCode;
         return this;
     }

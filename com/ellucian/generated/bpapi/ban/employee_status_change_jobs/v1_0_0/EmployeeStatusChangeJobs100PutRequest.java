@@ -16,16 +16,11 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "allCbox",
-    "effDate",
     "actionList",
-    "nbrjobsPersonnelDate",
     "lreaCode",
     "id",
-    "nbrjobsStatus",
     "actionDate",
-    "actionJobCbox",
-    "loaBegDate",
-    "nbrjobsJcreCode"
+    "loaBegDate"
 })
 @Generated("jsonschema2pojo")
 public class EmployeeStatusChangeJobs100PutRequest {
@@ -38,15 +33,7 @@ public class EmployeeStatusChangeJobs100PutRequest {
      */
     @JsonProperty("allCbox")
     @JsonPropertyDescription("Lineage reference object : allCbox")
-    private Object allCbox;
-    /**
-     * Effective Date
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("effDate")
-    private Date effDate;
+    private String allCbox;
     /**
      * Action
      * <p>
@@ -56,15 +43,7 @@ public class EmployeeStatusChangeJobs100PutRequest {
      */
     @JsonProperty("actionList")
     @JsonPropertyDescription("Lineage reference object : actionList")
-    private Object actionList;
-    /**
-     * Personnel Date
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("nbrjobsPersonnelDate")
-    private Date nbrjobsPersonnelDate;
+    private String actionList;
     /**
      * Leave Reason
      * <p>
@@ -82,15 +61,7 @@ public class EmployeeStatusChangeJobs100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
-    /**
-     * Status
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("nbrjobsStatus")
-    private String nbrjobsStatus;
+    private String id;
     /**
      * Personnel Date
      * <p>
@@ -99,15 +70,7 @@ public class EmployeeStatusChangeJobs100PutRequest {
      */
     @JsonProperty("actionDate")
     @JsonPropertyDescription("Lineage reference object : actionDate")
-    private Object actionDate;
-    /**
-     * Job Assignment Change
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("actionJobCbox")
-    private String actionJobCbox;
+    private Date actionDate;
     /**
      * Leave Begin Date
      * <p>
@@ -117,14 +80,6 @@ public class EmployeeStatusChangeJobs100PutRequest {
     @JsonProperty("loaBegDate")
     @JsonPropertyDescription("Lineage reference object : PEBEMPL_LOA_BEG_DATE")
     private Date loaBegDate;
-    /**
-     * Reason
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("nbrjobsJcreCode")
-    private String nbrjobsJcreCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -135,7 +90,7 @@ public class EmployeeStatusChangeJobs100PutRequest {
      * 
      */
     @JsonProperty("allCbox")
-    public Object getAllCbox() {
+    public String getAllCbox() {
         return allCbox;
     }
 
@@ -146,39 +101,12 @@ public class EmployeeStatusChangeJobs100PutRequest {
      * 
      */
     @JsonProperty("allCbox")
-    public void setAllCbox(Object allCbox) {
+    public void setAllCbox(String allCbox) {
         this.allCbox = allCbox;
     }
 
-    public EmployeeStatusChangeJobs100PutRequest withAllCbox(Object allCbox) {
+    public EmployeeStatusChangeJobs100PutRequest withAllCbox(String allCbox) {
         this.allCbox = allCbox;
-        return this;
-    }
-
-    /**
-     * Effective Date
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("effDate")
-    public Date getEffDate() {
-        return effDate;
-    }
-
-    /**
-     * Effective Date
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("effDate")
-    public void setEffDate(Date effDate) {
-        this.effDate = effDate;
-    }
-
-    public EmployeeStatusChangeJobs100PutRequest withEffDate(Date effDate) {
-        this.effDate = effDate;
         return this;
     }
 
@@ -190,7 +118,7 @@ public class EmployeeStatusChangeJobs100PutRequest {
      * 
      */
     @JsonProperty("actionList")
-    public Object getActionList() {
+    public String getActionList() {
         return actionList;
     }
 
@@ -202,39 +130,12 @@ public class EmployeeStatusChangeJobs100PutRequest {
      * 
      */
     @JsonProperty("actionList")
-    public void setActionList(Object actionList) {
+    public void setActionList(String actionList) {
         this.actionList = actionList;
     }
 
-    public EmployeeStatusChangeJobs100PutRequest withActionList(Object actionList) {
+    public EmployeeStatusChangeJobs100PutRequest withActionList(String actionList) {
         this.actionList = actionList;
-        return this;
-    }
-
-    /**
-     * Personnel Date
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("nbrjobsPersonnelDate")
-    public Date getNbrjobsPersonnelDate() {
-        return nbrjobsPersonnelDate;
-    }
-
-    /**
-     * Personnel Date
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("nbrjobsPersonnelDate")
-    public void setNbrjobsPersonnelDate(Date nbrjobsPersonnelDate) {
-        this.nbrjobsPersonnelDate = nbrjobsPersonnelDate;
-    }
-
-    public EmployeeStatusChangeJobs100PutRequest withNbrjobsPersonnelDate(Date nbrjobsPersonnelDate) {
-        this.nbrjobsPersonnelDate = nbrjobsPersonnelDate;
         return this;
     }
 
@@ -272,7 +173,7 @@ public class EmployeeStatusChangeJobs100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -283,39 +184,12 @@ public class EmployeeStatusChangeJobs100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public EmployeeStatusChangeJobs100PutRequest withId(Object id) {
+    public EmployeeStatusChangeJobs100PutRequest withId(String id) {
         this.id = id;
-        return this;
-    }
-
-    /**
-     * Status
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("nbrjobsStatus")
-    public String getNbrjobsStatus() {
-        return nbrjobsStatus;
-    }
-
-    /**
-     * Status
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("nbrjobsStatus")
-    public void setNbrjobsStatus(String nbrjobsStatus) {
-        this.nbrjobsStatus = nbrjobsStatus;
-    }
-
-    public EmployeeStatusChangeJobs100PutRequest withNbrjobsStatus(String nbrjobsStatus) {
-        this.nbrjobsStatus = nbrjobsStatus;
         return this;
     }
 
@@ -326,7 +200,7 @@ public class EmployeeStatusChangeJobs100PutRequest {
      * 
      */
     @JsonProperty("actionDate")
-    public Object getActionDate() {
+    public Date getActionDate() {
         return actionDate;
     }
 
@@ -337,39 +211,12 @@ public class EmployeeStatusChangeJobs100PutRequest {
      * 
      */
     @JsonProperty("actionDate")
-    public void setActionDate(Object actionDate) {
+    public void setActionDate(Date actionDate) {
         this.actionDate = actionDate;
     }
 
-    public EmployeeStatusChangeJobs100PutRequest withActionDate(Object actionDate) {
+    public EmployeeStatusChangeJobs100PutRequest withActionDate(Date actionDate) {
         this.actionDate = actionDate;
-        return this;
-    }
-
-    /**
-     * Job Assignment Change
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("actionJobCbox")
-    public String getActionJobCbox() {
-        return actionJobCbox;
-    }
-
-    /**
-     * Job Assignment Change
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("actionJobCbox")
-    public void setActionJobCbox(String actionJobCbox) {
-        this.actionJobCbox = actionJobCbox;
-    }
-
-    public EmployeeStatusChangeJobs100PutRequest withActionJobCbox(String actionJobCbox) {
-        this.actionJobCbox = actionJobCbox;
         return this;
     }
 
@@ -400,33 +247,6 @@ public class EmployeeStatusChangeJobs100PutRequest {
         return this;
     }
 
-    /**
-     * Reason
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("nbrjobsJcreCode")
-    public String getNbrjobsJcreCode() {
-        return nbrjobsJcreCode;
-    }
-
-    /**
-     * Reason
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("nbrjobsJcreCode")
-    public void setNbrjobsJcreCode(String nbrjobsJcreCode) {
-        this.nbrjobsJcreCode = nbrjobsJcreCode;
-    }
-
-    public EmployeeStatusChangeJobs100PutRequest withNbrjobsJcreCode(String nbrjobsJcreCode) {
-        this.nbrjobsJcreCode = nbrjobsJcreCode;
-        return this;
-    }
-
     @JsonAnyGetter
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;
@@ -450,17 +270,9 @@ public class EmployeeStatusChangeJobs100PutRequest {
         sb.append('=');
         sb.append(((this.allCbox == null)?"<null>":this.allCbox));
         sb.append(',');
-        sb.append("effDate");
-        sb.append('=');
-        sb.append(((this.effDate == null)?"<null>":this.effDate));
-        sb.append(',');
         sb.append("actionList");
         sb.append('=');
         sb.append(((this.actionList == null)?"<null>":this.actionList));
-        sb.append(',');
-        sb.append("nbrjobsPersonnelDate");
-        sb.append('=');
-        sb.append(((this.nbrjobsPersonnelDate == null)?"<null>":this.nbrjobsPersonnelDate));
         sb.append(',');
         sb.append("lreaCode");
         sb.append('=');
@@ -470,25 +282,13 @@ public class EmployeeStatusChangeJobs100PutRequest {
         sb.append('=');
         sb.append(((this.id == null)?"<null>":this.id));
         sb.append(',');
-        sb.append("nbrjobsStatus");
-        sb.append('=');
-        sb.append(((this.nbrjobsStatus == null)?"<null>":this.nbrjobsStatus));
-        sb.append(',');
         sb.append("actionDate");
         sb.append('=');
         sb.append(((this.actionDate == null)?"<null>":this.actionDate));
         sb.append(',');
-        sb.append("actionJobCbox");
-        sb.append('=');
-        sb.append(((this.actionJobCbox == null)?"<null>":this.actionJobCbox));
-        sb.append(',');
         sb.append("loaBegDate");
         sb.append('=');
         sb.append(((this.loaBegDate == null)?"<null>":this.loaBegDate));
-        sb.append(',');
-        sb.append("nbrjobsJcreCode");
-        sb.append('=');
-        sb.append(((this.nbrjobsJcreCode == null)?"<null>":this.nbrjobsJcreCode));
         sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');
@@ -505,18 +305,13 @@ public class EmployeeStatusChangeJobs100PutRequest {
     @Override
     public int hashCode() {
         int result = 1;
-        result = ((result* 31)+((this.actionList == null)? 0 :this.actionList.hashCode()));
-        result = ((result* 31)+((this.nbrjobsPersonnelDate == null)? 0 :this.nbrjobsPersonnelDate.hashCode()));
-        result = ((result* 31)+((this.nbrjobsStatus == null)? 0 :this.nbrjobsStatus.hashCode()));
-        result = ((result* 31)+((this.actionJobCbox == null)? 0 :this.actionJobCbox.hashCode()));
-        result = ((result* 31)+((this.loaBegDate == null)? 0 :this.loaBegDate.hashCode()));
         result = ((result* 31)+((this.allCbox == null)? 0 :this.allCbox.hashCode()));
-        result = ((result* 31)+((this.effDate == null)? 0 :this.effDate.hashCode()));
+        result = ((result* 31)+((this.actionList == null)? 0 :this.actionList.hashCode()));
         result = ((result* 31)+((this.lreaCode == null)? 0 :this.lreaCode.hashCode()));
         result = ((result* 31)+((this.id == null)? 0 :this.id.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
         result = ((result* 31)+((this.actionDate == null)? 0 :this.actionDate.hashCode()));
-        result = ((result* 31)+((this.nbrjobsJcreCode == null)? 0 :this.nbrjobsJcreCode.hashCode()));
+        result = ((result* 31)+((this.loaBegDate == null)? 0 :this.loaBegDate.hashCode()));
         return result;
     }
 
@@ -529,7 +324,7 @@ public class EmployeeStatusChangeJobs100PutRequest {
             return false;
         }
         EmployeeStatusChangeJobs100PutRequest rhs = ((EmployeeStatusChangeJobs100PutRequest) other);
-        return (((((((((((((this.actionList == rhs.actionList)||((this.actionList!= null)&&this.actionList.equals(rhs.actionList)))&&((this.nbrjobsPersonnelDate == rhs.nbrjobsPersonnelDate)||((this.nbrjobsPersonnelDate!= null)&&this.nbrjobsPersonnelDate.equals(rhs.nbrjobsPersonnelDate))))&&((this.nbrjobsStatus == rhs.nbrjobsStatus)||((this.nbrjobsStatus!= null)&&this.nbrjobsStatus.equals(rhs.nbrjobsStatus))))&&((this.actionJobCbox == rhs.actionJobCbox)||((this.actionJobCbox!= null)&&this.actionJobCbox.equals(rhs.actionJobCbox))))&&((this.loaBegDate == rhs.loaBegDate)||((this.loaBegDate!= null)&&this.loaBegDate.equals(rhs.loaBegDate))))&&((this.allCbox == rhs.allCbox)||((this.allCbox!= null)&&this.allCbox.equals(rhs.allCbox))))&&((this.effDate == rhs.effDate)||((this.effDate!= null)&&this.effDate.equals(rhs.effDate))))&&((this.lreaCode == rhs.lreaCode)||((this.lreaCode!= null)&&this.lreaCode.equals(rhs.lreaCode))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.actionDate == rhs.actionDate)||((this.actionDate!= null)&&this.actionDate.equals(rhs.actionDate))))&&((this.nbrjobsJcreCode == rhs.nbrjobsJcreCode)||((this.nbrjobsJcreCode!= null)&&this.nbrjobsJcreCode.equals(rhs.nbrjobsJcreCode))));
+        return ((((((((this.allCbox == rhs.allCbox)||((this.allCbox!= null)&&this.allCbox.equals(rhs.allCbox)))&&((this.actionList == rhs.actionList)||((this.actionList!= null)&&this.actionList.equals(rhs.actionList))))&&((this.lreaCode == rhs.lreaCode)||((this.lreaCode!= null)&&this.lreaCode.equals(rhs.lreaCode))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.actionDate == rhs.actionDate)||((this.actionDate!= null)&&this.actionDate.equals(rhs.actionDate))))&&((this.loaBegDate == rhs.loaBegDate)||((this.loaBegDate!= null)&&this.loaBegDate.equals(rhs.loaBegDate))));
     }
 
 }

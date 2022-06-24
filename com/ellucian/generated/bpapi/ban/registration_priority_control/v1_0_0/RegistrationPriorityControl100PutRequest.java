@@ -109,7 +109,7 @@ public class RegistrationPriorityControl100PutRequest {
      */
     @JsonProperty("keyblocTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCode;
+    private String keyblocTermCode;
     /**
      * Start Time
      * <p>
@@ -361,7 +361,7 @@ public class RegistrationPriorityControl100PutRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public Object getKeyblocTermCode() {
+    public String getKeyblocTermCode() {
         return keyblocTermCode;
     }
 
@@ -372,11 +372,11 @@ public class RegistrationPriorityControl100PutRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public void setKeyblocTermCode(Object keyblocTermCode) {
+    public void setKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
     }
 
-    public RegistrationPriorityControl100PutRequest withKeyblocTermCode(Object keyblocTermCode) {
+    public RegistrationPriorityControl100PutRequest withKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
         return this;
     }

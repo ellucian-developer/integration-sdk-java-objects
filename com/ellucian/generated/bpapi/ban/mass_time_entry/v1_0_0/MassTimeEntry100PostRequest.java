@@ -69,7 +69,7 @@ public class MassTimeEntry100PostRequest {
      */
     @JsonProperty("year")
     @JsonPropertyDescription("Lineage reference object : year")
-    private Object year;
+    private String year;
     /**
      * End Date
      * <p>
@@ -173,7 +173,7 @@ public class MassTimeEntry100PostRequest {
      */
     @JsonProperty("payno")
     @JsonPropertyDescription("Lineage reference object : payno")
-    private Object payno;
+    private Double payno;
     /**
      * Begin Date
      * <p>
@@ -192,7 +192,7 @@ public class MassTimeEntry100PostRequest {
      */
     @JsonProperty("pictCode")
     @JsonPropertyDescription("Lineage reference object : pictCode")
-    private Object pictCode;
+    private String pictCode;
     /**
      * Suffix
      * <p>
@@ -322,7 +322,7 @@ public class MassTimeEntry100PostRequest {
      * 
      */
     @JsonProperty("year")
-    public Object getYear() {
+    public String getYear() {
         return year;
     }
 
@@ -333,11 +333,11 @@ public class MassTimeEntry100PostRequest {
      * 
      */
     @JsonProperty("year")
-    public void setYear(Object year) {
+    public void setYear(String year) {
         this.year = year;
     }
 
-    public MassTimeEntry100PostRequest withYear(Object year) {
+    public MassTimeEntry100PostRequest withYear(String year) {
         this.year = year;
         return this;
     }
@@ -640,7 +640,7 @@ public class MassTimeEntry100PostRequest {
      * 
      */
     @JsonProperty("payno")
-    public Object getPayno() {
+    public Double getPayno() {
         return payno;
     }
 
@@ -651,11 +651,11 @@ public class MassTimeEntry100PostRequest {
      * 
      */
     @JsonProperty("payno")
-    public void setPayno(Object payno) {
+    public void setPayno(Double payno) {
         this.payno = payno;
     }
 
-    public MassTimeEntry100PostRequest withPayno(Object payno) {
+    public MassTimeEntry100PostRequest withPayno(Double payno) {
         this.payno = payno;
         return this;
     }
@@ -696,7 +696,7 @@ public class MassTimeEntry100PostRequest {
      * 
      */
     @JsonProperty("pictCode")
-    public Object getPictCode() {
+    public String getPictCode() {
         return pictCode;
     }
 
@@ -707,11 +707,11 @@ public class MassTimeEntry100PostRequest {
      * 
      */
     @JsonProperty("pictCode")
-    public void setPictCode(Object pictCode) {
+    public void setPictCode(String pictCode) {
         this.pictCode = pictCode;
     }
 
-    public MassTimeEntry100PostRequest withPictCode(Object pictCode) {
+    public MassTimeEntry100PostRequest withPictCode(String pictCode) {
         this.pictCode = pictCode;
         return this;
     }

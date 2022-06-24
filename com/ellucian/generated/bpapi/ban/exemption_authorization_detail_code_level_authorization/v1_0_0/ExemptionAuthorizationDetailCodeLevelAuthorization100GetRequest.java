@@ -36,7 +36,7 @@ public class ExemptionAuthorizationDetailCodeLevelAuthorization100GetRequest {
      */
     @JsonProperty("exemptionCode")
     @JsonPropertyDescription("Lineage reference object : exemptionCode")
-    private Object exemptionCode;
+    private String exemptionCode;
     /**
      * Minimum Amount
      * <p>
@@ -62,7 +62,7 @@ public class ExemptionAuthorizationDetailCodeLevelAuthorization100GetRequest {
      */
     @JsonProperty("keyblocTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCode;
+    private String keyblocTermCode;
     /**
      * Source Indicator
      * <p>
@@ -132,7 +132,7 @@ public class ExemptionAuthorizationDetailCodeLevelAuthorization100GetRequest {
      * 
      */
     @JsonProperty("exemptionCode")
-    public Object getExemptionCode() {
+    public String getExemptionCode() {
         return exemptionCode;
     }
 
@@ -143,11 +143,11 @@ public class ExemptionAuthorizationDetailCodeLevelAuthorization100GetRequest {
      * 
      */
     @JsonProperty("exemptionCode")
-    public void setExemptionCode(Object exemptionCode) {
+    public void setExemptionCode(String exemptionCode) {
         this.exemptionCode = exemptionCode;
     }
 
-    public ExemptionAuthorizationDetailCodeLevelAuthorization100GetRequest withExemptionCode(Object exemptionCode) {
+    public ExemptionAuthorizationDetailCodeLevelAuthorization100GetRequest withExemptionCode(String exemptionCode) {
         this.exemptionCode = exemptionCode;
         return this;
     }
@@ -213,7 +213,7 @@ public class ExemptionAuthorizationDetailCodeLevelAuthorization100GetRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public Object getKeyblocTermCode() {
+    public String getKeyblocTermCode() {
         return keyblocTermCode;
     }
 
@@ -224,11 +224,11 @@ public class ExemptionAuthorizationDetailCodeLevelAuthorization100GetRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public void setKeyblocTermCode(Object keyblocTermCode) {
+    public void setKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
     }
 
-    public ExemptionAuthorizationDetailCodeLevelAuthorization100GetRequest withKeyblocTermCode(Object keyblocTermCode) {
+    public ExemptionAuthorizationDetailCodeLevelAuthorization100GetRequest withKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
         return this;
     }

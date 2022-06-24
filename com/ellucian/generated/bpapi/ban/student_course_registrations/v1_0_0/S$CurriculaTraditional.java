@@ -56,14 +56,14 @@ public class S$CurriculaTraditional {
      */
     @JsonProperty("lcurCollegeDisplay")
     @JsonPropertyDescription("Lineage reference object : lcurCollegeDisplay")
-    private Object lcurCollegeDisplay;
+    private String lcurCollegeDisplay;
     /**
      * Lineage reference object : dataSeparatorLine2a
      * 
      */
     @JsonProperty("dataSeparatorLine2a")
     @JsonPropertyDescription("Lineage reference object : dataSeparatorLine2a")
-    private Object dataSeparatorLine2a;
+    private String dataSeparatorLine2a;
     /**
      * Module
      * <p>
@@ -72,7 +72,7 @@ public class S$CurriculaTraditional {
      */
     @JsonProperty("lcurLmodCodeDisplay")
     @JsonPropertyDescription("Lineage reference object : lcurLmodCodeDisplay, Lookup lineage reference object : stvlmod")
-    private Object lcurLmodCodeDisplay;
+    private String lcurLmodCodeDisplay;
     /**
      * Record
      * <p>
@@ -90,7 +90,7 @@ public class S$CurriculaTraditional {
      */
     @JsonProperty("lcurSeqnoDisplay")
     @JsonPropertyDescription("Lineage reference object : lcurSeqnoDisplay")
-    private Object lcurSeqnoDisplay;
+    private Double lcurSeqnoDisplay;
     /**
      * Campus
      * <p>
@@ -99,7 +99,7 @@ public class S$CurriculaTraditional {
      */
     @JsonProperty("lcurCampusDisplay")
     @JsonPropertyDescription("Lineage reference object : lcurCampusDisplay")
-    private Object lcurCampusDisplay;
+    private String lcurCampusDisplay;
     /**
      * Priority
      * <p>
@@ -108,7 +108,7 @@ public class S$CurriculaTraditional {
      */
     @JsonProperty("lcurPriorityDisplay")
     @JsonPropertyDescription("Lineage reference object : lcurPriorityDisplay")
-    private Object lcurPriorityDisplay;
+    private String lcurPriorityDisplay;
     /**
      * Degree
      * <p>
@@ -117,7 +117,7 @@ public class S$CurriculaTraditional {
      */
     @JsonProperty("lcurDegreeDisplay")
     @JsonPropertyDescription("Lineage reference object : lcurDegreeDisplay")
-    private Object lcurDegreeDisplay;
+    private String lcurDegreeDisplay;
     /**
      * Key Seq
      * <p>
@@ -126,14 +126,14 @@ public class S$CurriculaTraditional {
      */
     @JsonProperty("lcurKeySeqnoDisplay")
     @JsonPropertyDescription("Lineage reference object : lcurKeySeqnoDisplay")
-    private Object lcurKeySeqnoDisplay;
+    private Double lcurKeySeqnoDisplay;
     /**
      * Lineage reference object : dataSeparatorLine1
      * 
      */
     @JsonProperty("dataSeparatorLine1")
     @JsonPropertyDescription("Lineage reference object : dataSeparatorLine1")
-    private Object dataSeparatorLine1;
+    private String dataSeparatorLine1;
     /**
      * Activity
      * <p>
@@ -142,7 +142,7 @@ public class S$CurriculaTraditional {
      */
     @JsonProperty("lcurCactCodeDisplay")
     @JsonPropertyDescription("Lineage reference object : lcurCactCodeDisplay, Lookup lineage reference object : stvcact,sobcact")
-    private Object lcurCactCodeDisplay;
+    private String lcurCactCodeDisplay;
     /**
      * Term
      * <p>
@@ -151,14 +151,14 @@ public class S$CurriculaTraditional {
      */
     @JsonProperty("lcurTermCodeDisplay")
     @JsonPropertyDescription("Lineage reference object : lcurTermCodeDisplay, Lookup lineage reference object : stvterm")
-    private Object lcurTermCodeDisplay;
+    private String lcurTermCodeDisplay;
     /**
      * Lineage reference object : dataSeparatorLine2
      * 
      */
     @JsonProperty("dataSeparatorLine2")
     @JsonPropertyDescription("Lineage reference object : dataSeparatorLine2")
-    private Object dataSeparatorLine2;
+    private String dataSeparatorLine2;
     /**
      * Level
      * <p>
@@ -167,14 +167,14 @@ public class S$CurriculaTraditional {
      */
     @JsonProperty("lcurLevelDisplay")
     @JsonPropertyDescription("Lineage reference object : lcurLevelDisplay")
-    private Object lcurLevelDisplay;
+    private String lcurLevelDisplay;
     /**
      * Lineage reference object : lcurCurrentIndDisplay
      * 
      */
     @JsonProperty("lcurCurrentIndDisplay")
     @JsonPropertyDescription("Lineage reference object : lcurCurrentIndDisplay")
-    private Object lcurCurrentIndDisplay;
+    private String lcurCurrentIndDisplay;
     /**
      * of
      * <p>
@@ -201,7 +201,7 @@ public class S$CurriculaTraditional {
      */
     @JsonProperty("lcurCatlgDisplay")
     @JsonPropertyDescription("Lineage reference object : lcurCatlgDisplay")
-    private Object lcurCatlgDisplay;
+    private String lcurCatlgDisplay;
     /**
      * End Term
      * <p>
@@ -210,7 +210,7 @@ public class S$CurriculaTraditional {
      */
     @JsonProperty("lcurTermCodeEndDisplay")
     @JsonPropertyDescription("Lineage reference object : lcurTermCodeEndDisplay, Lookup lineage reference object : stvterm")
-    private Object lcurTermCodeEndDisplay;
+    private String lcurTermCodeEndDisplay;
     /**
      * Program
      * <p>
@@ -219,7 +219,7 @@ public class S$CurriculaTraditional {
      */
     @JsonProperty("lcurProgramDisplay")
     @JsonPropertyDescription("Lineage reference object : lcurProgramDisplay")
-    private Object lcurProgramDisplay;
+    private String lcurProgramDisplay;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -257,7 +257,7 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurCollegeDisplay")
-    public Object getLcurCollegeDisplay() {
+    public String getLcurCollegeDisplay() {
         return lcurCollegeDisplay;
     }
 
@@ -268,11 +268,11 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurCollegeDisplay")
-    public void setLcurCollegeDisplay(Object lcurCollegeDisplay) {
+    public void setLcurCollegeDisplay(String lcurCollegeDisplay) {
         this.lcurCollegeDisplay = lcurCollegeDisplay;
     }
 
-    public S$CurriculaTraditional withLcurCollegeDisplay(Object lcurCollegeDisplay) {
+    public S$CurriculaTraditional withLcurCollegeDisplay(String lcurCollegeDisplay) {
         this.lcurCollegeDisplay = lcurCollegeDisplay;
         return this;
     }
@@ -282,7 +282,7 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("dataSeparatorLine2a")
-    public Object getDataSeparatorLine2a() {
+    public String getDataSeparatorLine2a() {
         return dataSeparatorLine2a;
     }
 
@@ -291,11 +291,11 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("dataSeparatorLine2a")
-    public void setDataSeparatorLine2a(Object dataSeparatorLine2a) {
+    public void setDataSeparatorLine2a(String dataSeparatorLine2a) {
         this.dataSeparatorLine2a = dataSeparatorLine2a;
     }
 
-    public S$CurriculaTraditional withDataSeparatorLine2a(Object dataSeparatorLine2a) {
+    public S$CurriculaTraditional withDataSeparatorLine2a(String dataSeparatorLine2a) {
         this.dataSeparatorLine2a = dataSeparatorLine2a;
         return this;
     }
@@ -307,7 +307,7 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurLmodCodeDisplay")
-    public Object getLcurLmodCodeDisplay() {
+    public String getLcurLmodCodeDisplay() {
         return lcurLmodCodeDisplay;
     }
 
@@ -318,11 +318,11 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurLmodCodeDisplay")
-    public void setLcurLmodCodeDisplay(Object lcurLmodCodeDisplay) {
+    public void setLcurLmodCodeDisplay(String lcurLmodCodeDisplay) {
         this.lcurLmodCodeDisplay = lcurLmodCodeDisplay;
     }
 
-    public S$CurriculaTraditional withLcurLmodCodeDisplay(Object lcurLmodCodeDisplay) {
+    public S$CurriculaTraditional withLcurLmodCodeDisplay(String lcurLmodCodeDisplay) {
         this.lcurLmodCodeDisplay = lcurLmodCodeDisplay;
         return this;
     }
@@ -361,7 +361,7 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurSeqnoDisplay")
-    public Object getLcurSeqnoDisplay() {
+    public Double getLcurSeqnoDisplay() {
         return lcurSeqnoDisplay;
     }
 
@@ -372,11 +372,11 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurSeqnoDisplay")
-    public void setLcurSeqnoDisplay(Object lcurSeqnoDisplay) {
+    public void setLcurSeqnoDisplay(Double lcurSeqnoDisplay) {
         this.lcurSeqnoDisplay = lcurSeqnoDisplay;
     }
 
-    public S$CurriculaTraditional withLcurSeqnoDisplay(Object lcurSeqnoDisplay) {
+    public S$CurriculaTraditional withLcurSeqnoDisplay(Double lcurSeqnoDisplay) {
         this.lcurSeqnoDisplay = lcurSeqnoDisplay;
         return this;
     }
@@ -388,7 +388,7 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurCampusDisplay")
-    public Object getLcurCampusDisplay() {
+    public String getLcurCampusDisplay() {
         return lcurCampusDisplay;
     }
 
@@ -399,11 +399,11 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurCampusDisplay")
-    public void setLcurCampusDisplay(Object lcurCampusDisplay) {
+    public void setLcurCampusDisplay(String lcurCampusDisplay) {
         this.lcurCampusDisplay = lcurCampusDisplay;
     }
 
-    public S$CurriculaTraditional withLcurCampusDisplay(Object lcurCampusDisplay) {
+    public S$CurriculaTraditional withLcurCampusDisplay(String lcurCampusDisplay) {
         this.lcurCampusDisplay = lcurCampusDisplay;
         return this;
     }
@@ -415,7 +415,7 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurPriorityDisplay")
-    public Object getLcurPriorityDisplay() {
+    public String getLcurPriorityDisplay() {
         return lcurPriorityDisplay;
     }
 
@@ -426,11 +426,11 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurPriorityDisplay")
-    public void setLcurPriorityDisplay(Object lcurPriorityDisplay) {
+    public void setLcurPriorityDisplay(String lcurPriorityDisplay) {
         this.lcurPriorityDisplay = lcurPriorityDisplay;
     }
 
-    public S$CurriculaTraditional withLcurPriorityDisplay(Object lcurPriorityDisplay) {
+    public S$CurriculaTraditional withLcurPriorityDisplay(String lcurPriorityDisplay) {
         this.lcurPriorityDisplay = lcurPriorityDisplay;
         return this;
     }
@@ -442,7 +442,7 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurDegreeDisplay")
-    public Object getLcurDegreeDisplay() {
+    public String getLcurDegreeDisplay() {
         return lcurDegreeDisplay;
     }
 
@@ -453,11 +453,11 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurDegreeDisplay")
-    public void setLcurDegreeDisplay(Object lcurDegreeDisplay) {
+    public void setLcurDegreeDisplay(String lcurDegreeDisplay) {
         this.lcurDegreeDisplay = lcurDegreeDisplay;
     }
 
-    public S$CurriculaTraditional withLcurDegreeDisplay(Object lcurDegreeDisplay) {
+    public S$CurriculaTraditional withLcurDegreeDisplay(String lcurDegreeDisplay) {
         this.lcurDegreeDisplay = lcurDegreeDisplay;
         return this;
     }
@@ -469,7 +469,7 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurKeySeqnoDisplay")
-    public Object getLcurKeySeqnoDisplay() {
+    public Double getLcurKeySeqnoDisplay() {
         return lcurKeySeqnoDisplay;
     }
 
@@ -480,11 +480,11 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurKeySeqnoDisplay")
-    public void setLcurKeySeqnoDisplay(Object lcurKeySeqnoDisplay) {
+    public void setLcurKeySeqnoDisplay(Double lcurKeySeqnoDisplay) {
         this.lcurKeySeqnoDisplay = lcurKeySeqnoDisplay;
     }
 
-    public S$CurriculaTraditional withLcurKeySeqnoDisplay(Object lcurKeySeqnoDisplay) {
+    public S$CurriculaTraditional withLcurKeySeqnoDisplay(Double lcurKeySeqnoDisplay) {
         this.lcurKeySeqnoDisplay = lcurKeySeqnoDisplay;
         return this;
     }
@@ -494,7 +494,7 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("dataSeparatorLine1")
-    public Object getDataSeparatorLine1() {
+    public String getDataSeparatorLine1() {
         return dataSeparatorLine1;
     }
 
@@ -503,11 +503,11 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("dataSeparatorLine1")
-    public void setDataSeparatorLine1(Object dataSeparatorLine1) {
+    public void setDataSeparatorLine1(String dataSeparatorLine1) {
         this.dataSeparatorLine1 = dataSeparatorLine1;
     }
 
-    public S$CurriculaTraditional withDataSeparatorLine1(Object dataSeparatorLine1) {
+    public S$CurriculaTraditional withDataSeparatorLine1(String dataSeparatorLine1) {
         this.dataSeparatorLine1 = dataSeparatorLine1;
         return this;
     }
@@ -519,7 +519,7 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurCactCodeDisplay")
-    public Object getLcurCactCodeDisplay() {
+    public String getLcurCactCodeDisplay() {
         return lcurCactCodeDisplay;
     }
 
@@ -530,11 +530,11 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurCactCodeDisplay")
-    public void setLcurCactCodeDisplay(Object lcurCactCodeDisplay) {
+    public void setLcurCactCodeDisplay(String lcurCactCodeDisplay) {
         this.lcurCactCodeDisplay = lcurCactCodeDisplay;
     }
 
-    public S$CurriculaTraditional withLcurCactCodeDisplay(Object lcurCactCodeDisplay) {
+    public S$CurriculaTraditional withLcurCactCodeDisplay(String lcurCactCodeDisplay) {
         this.lcurCactCodeDisplay = lcurCactCodeDisplay;
         return this;
     }
@@ -546,7 +546,7 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurTermCodeDisplay")
-    public Object getLcurTermCodeDisplay() {
+    public String getLcurTermCodeDisplay() {
         return lcurTermCodeDisplay;
     }
 
@@ -557,11 +557,11 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurTermCodeDisplay")
-    public void setLcurTermCodeDisplay(Object lcurTermCodeDisplay) {
+    public void setLcurTermCodeDisplay(String lcurTermCodeDisplay) {
         this.lcurTermCodeDisplay = lcurTermCodeDisplay;
     }
 
-    public S$CurriculaTraditional withLcurTermCodeDisplay(Object lcurTermCodeDisplay) {
+    public S$CurriculaTraditional withLcurTermCodeDisplay(String lcurTermCodeDisplay) {
         this.lcurTermCodeDisplay = lcurTermCodeDisplay;
         return this;
     }
@@ -571,7 +571,7 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("dataSeparatorLine2")
-    public Object getDataSeparatorLine2() {
+    public String getDataSeparatorLine2() {
         return dataSeparatorLine2;
     }
 
@@ -580,11 +580,11 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("dataSeparatorLine2")
-    public void setDataSeparatorLine2(Object dataSeparatorLine2) {
+    public void setDataSeparatorLine2(String dataSeparatorLine2) {
         this.dataSeparatorLine2 = dataSeparatorLine2;
     }
 
-    public S$CurriculaTraditional withDataSeparatorLine2(Object dataSeparatorLine2) {
+    public S$CurriculaTraditional withDataSeparatorLine2(String dataSeparatorLine2) {
         this.dataSeparatorLine2 = dataSeparatorLine2;
         return this;
     }
@@ -596,7 +596,7 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurLevelDisplay")
-    public Object getLcurLevelDisplay() {
+    public String getLcurLevelDisplay() {
         return lcurLevelDisplay;
     }
 
@@ -607,11 +607,11 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurLevelDisplay")
-    public void setLcurLevelDisplay(Object lcurLevelDisplay) {
+    public void setLcurLevelDisplay(String lcurLevelDisplay) {
         this.lcurLevelDisplay = lcurLevelDisplay;
     }
 
-    public S$CurriculaTraditional withLcurLevelDisplay(Object lcurLevelDisplay) {
+    public S$CurriculaTraditional withLcurLevelDisplay(String lcurLevelDisplay) {
         this.lcurLevelDisplay = lcurLevelDisplay;
         return this;
     }
@@ -621,7 +621,7 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurCurrentIndDisplay")
-    public Object getLcurCurrentIndDisplay() {
+    public String getLcurCurrentIndDisplay() {
         return lcurCurrentIndDisplay;
     }
 
@@ -630,11 +630,11 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurCurrentIndDisplay")
-    public void setLcurCurrentIndDisplay(Object lcurCurrentIndDisplay) {
+    public void setLcurCurrentIndDisplay(String lcurCurrentIndDisplay) {
         this.lcurCurrentIndDisplay = lcurCurrentIndDisplay;
     }
 
-    public S$CurriculaTraditional withLcurCurrentIndDisplay(Object lcurCurrentIndDisplay) {
+    public S$CurriculaTraditional withLcurCurrentIndDisplay(String lcurCurrentIndDisplay) {
         this.lcurCurrentIndDisplay = lcurCurrentIndDisplay;
         return this;
     }
@@ -700,7 +700,7 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurCatlgDisplay")
-    public Object getLcurCatlgDisplay() {
+    public String getLcurCatlgDisplay() {
         return lcurCatlgDisplay;
     }
 
@@ -711,11 +711,11 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurCatlgDisplay")
-    public void setLcurCatlgDisplay(Object lcurCatlgDisplay) {
+    public void setLcurCatlgDisplay(String lcurCatlgDisplay) {
         this.lcurCatlgDisplay = lcurCatlgDisplay;
     }
 
-    public S$CurriculaTraditional withLcurCatlgDisplay(Object lcurCatlgDisplay) {
+    public S$CurriculaTraditional withLcurCatlgDisplay(String lcurCatlgDisplay) {
         this.lcurCatlgDisplay = lcurCatlgDisplay;
         return this;
     }
@@ -727,7 +727,7 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurTermCodeEndDisplay")
-    public Object getLcurTermCodeEndDisplay() {
+    public String getLcurTermCodeEndDisplay() {
         return lcurTermCodeEndDisplay;
     }
 
@@ -738,11 +738,11 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurTermCodeEndDisplay")
-    public void setLcurTermCodeEndDisplay(Object lcurTermCodeEndDisplay) {
+    public void setLcurTermCodeEndDisplay(String lcurTermCodeEndDisplay) {
         this.lcurTermCodeEndDisplay = lcurTermCodeEndDisplay;
     }
 
-    public S$CurriculaTraditional withLcurTermCodeEndDisplay(Object lcurTermCodeEndDisplay) {
+    public S$CurriculaTraditional withLcurTermCodeEndDisplay(String lcurTermCodeEndDisplay) {
         this.lcurTermCodeEndDisplay = lcurTermCodeEndDisplay;
         return this;
     }
@@ -754,7 +754,7 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurProgramDisplay")
-    public Object getLcurProgramDisplay() {
+    public String getLcurProgramDisplay() {
         return lcurProgramDisplay;
     }
 
@@ -765,11 +765,11 @@ public class S$CurriculaTraditional {
      * 
      */
     @JsonProperty("lcurProgramDisplay")
-    public void setLcurProgramDisplay(Object lcurProgramDisplay) {
+    public void setLcurProgramDisplay(String lcurProgramDisplay) {
         this.lcurProgramDisplay = lcurProgramDisplay;
     }
 
-    public S$CurriculaTraditional withLcurProgramDisplay(Object lcurProgramDisplay) {
+    public S$CurriculaTraditional withLcurProgramDisplay(String lcurProgramDisplay) {
         this.lcurProgramDisplay = lcurProgramDisplay;
         return this;
     }

@@ -100,7 +100,7 @@ public class ContractPaymentDetail100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Name
      * <p>
@@ -117,7 +117,7 @@ public class ContractPaymentDetail100GetRequest {
      */
     @JsonProperty("contTranNumber")
     @JsonPropertyDescription("Lineage reference object : contTranNumber")
-    private Object contTranNumber;
+    private Double contTranNumber;
     /**
      * Lineage reference object : TBRCPDT_FINAL_IND
      * 
@@ -337,7 +337,7 @@ public class ContractPaymentDetail100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -348,11 +348,11 @@ public class ContractPaymentDetail100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public ContractPaymentDetail100GetRequest withId(Object id) {
+    public ContractPaymentDetail100GetRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -391,7 +391,7 @@ public class ContractPaymentDetail100GetRequest {
      * 
      */
     @JsonProperty("contTranNumber")
-    public Object getContTranNumber() {
+    public Double getContTranNumber() {
         return contTranNumber;
     }
 
@@ -402,11 +402,11 @@ public class ContractPaymentDetail100GetRequest {
      * 
      */
     @JsonProperty("contTranNumber")
-    public void setContTranNumber(Object contTranNumber) {
+    public void setContTranNumber(Double contTranNumber) {
         this.contTranNumber = contTranNumber;
     }
 
-    public ContractPaymentDetail100GetRequest withContTranNumber(Object contTranNumber) {
+    public ContractPaymentDetail100GetRequest withContTranNumber(Double contTranNumber) {
         this.contTranNumber = contTranNumber;
         return this;
     }

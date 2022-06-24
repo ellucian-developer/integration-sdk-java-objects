@@ -224,7 +224,7 @@ public class VendorMaintenanceAddress100PutRequest {
      */
     @JsonProperty("ftvvendVendCode")
     @JsonPropertyDescription("Lineage reference object : ftvvendVendCode, Lookup lineage reference object : ftvvend")
-    private Object ftvvendVendCode;
+    private String ftvvendVendCode;
     /**
      * Inactivate Address
      * <p>
@@ -900,7 +900,7 @@ public class VendorMaintenanceAddress100PutRequest {
      * 
      */
     @JsonProperty("ftvvendVendCode")
-    public Object getFtvvendVendCode() {
+    public String getFtvvendVendCode() {
         return ftvvendVendCode;
     }
 
@@ -912,11 +912,11 @@ public class VendorMaintenanceAddress100PutRequest {
      * 
      */
     @JsonProperty("ftvvendVendCode")
-    public void setFtvvendVendCode(Object ftvvendVendCode) {
+    public void setFtvvendVendCode(String ftvvendVendCode) {
         this.ftvvendVendCode = ftvvendVendCode;
     }
 
-    public VendorMaintenanceAddress100PutRequest withFtvvendVendCode(Object ftvvendVendCode) {
+    public VendorMaintenanceAddress100PutRequest withFtvvendVendCode(String ftvvendVendCode) {
         this.ftvvendVendCode = ftvvendVendCode;
         return this;
     }

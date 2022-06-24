@@ -51,7 +51,7 @@ public class ElectronicApprovalTypeRule100GetRequest {
      */
     @JsonProperty("aptyCode")
     @JsonPropertyDescription("Lineage reference object : aptyCode, Lookup lineage reference object : ntvapty")
-    private Object aptyCode;
+    private String aptyCode;
     /**
      * Update Databaseb Sequence Number
      * <p>
@@ -131,7 +131,7 @@ public class ElectronicApprovalTypeRule100GetRequest {
      * 
      */
     @JsonProperty("aptyCode")
-    public Object getAptyCode() {
+    public String getAptyCode() {
         return aptyCode;
     }
 
@@ -143,11 +143,11 @@ public class ElectronicApprovalTypeRule100GetRequest {
      * 
      */
     @JsonProperty("aptyCode")
-    public void setAptyCode(Object aptyCode) {
+    public void setAptyCode(String aptyCode) {
         this.aptyCode = aptyCode;
     }
 
-    public ElectronicApprovalTypeRule100GetRequest withAptyCode(Object aptyCode) {
+    public ElectronicApprovalTypeRule100GetRequest withAptyCode(String aptyCode) {
         this.aptyCode = aptyCode;
         return this;
     }

@@ -84,7 +84,7 @@ public class CrossReferenceRules100PostRequest {
      */
     @JsonProperty("keyblckXlblCode")
     @JsonPropertyDescription("Lineage reference object : keyblckXlblCode, Lookup lineage reference object : stvxlbl")
-    private Object keyblckXlblCode;
+    private String keyblckXlblCode;
     /**
      * Electronic Value
      * <p>
@@ -266,7 +266,7 @@ public class CrossReferenceRules100PostRequest {
      * 
      */
     @JsonProperty("keyblckXlblCode")
-    public Object getKeyblckXlblCode() {
+    public String getKeyblckXlblCode() {
         return keyblckXlblCode;
     }
 
@@ -277,11 +277,11 @@ public class CrossReferenceRules100PostRequest {
      * 
      */
     @JsonProperty("keyblckXlblCode")
-    public void setKeyblckXlblCode(Object keyblckXlblCode) {
+    public void setKeyblckXlblCode(String keyblckXlblCode) {
         this.keyblckXlblCode = keyblckXlblCode;
     }
 
-    public CrossReferenceRules100PostRequest withKeyblckXlblCode(Object keyblckXlblCode) {
+    public CrossReferenceRules100PostRequest withKeyblckXlblCode(String keyblckXlblCode) {
         this.keyblckXlblCode = keyblckXlblCode;
         return this;
     }

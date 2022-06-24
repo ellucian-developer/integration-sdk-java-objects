@@ -78,7 +78,7 @@ public class IdentificationEmail100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Preferred
      * <p>
@@ -233,7 +233,7 @@ public class IdentificationEmail100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -244,11 +244,11 @@ public class IdentificationEmail100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public IdentificationEmail100PutRequest withId(Object id) {
+    public IdentificationEmail100PutRequest withId(String id) {
         this.id = id;
         return this;
     }

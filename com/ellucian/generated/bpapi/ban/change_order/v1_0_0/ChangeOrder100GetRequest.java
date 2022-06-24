@@ -28,7 +28,7 @@ public class ChangeOrder100GetRequest {
      */
     @JsonProperty("displayChangeSeqNum")
     @JsonPropertyDescription("Lineage reference object : displayChangeSeqNum")
-    private Object displayChangeSeqNum;
+    private String displayChangeSeqNum;
     /**
      * Purchase Order
      * <p>
@@ -37,7 +37,7 @@ public class ChangeOrder100GetRequest {
      */
     @JsonProperty("displayPohdCode")
     @JsonPropertyDescription("Lineage reference object : displayPohdCode")
-    private Object displayPohdCode;
+    private String displayPohdCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -48,7 +48,7 @@ public class ChangeOrder100GetRequest {
      * 
      */
     @JsonProperty("displayChangeSeqNum")
-    public Object getDisplayChangeSeqNum() {
+    public String getDisplayChangeSeqNum() {
         return displayChangeSeqNum;
     }
 
@@ -59,11 +59,11 @@ public class ChangeOrder100GetRequest {
      * 
      */
     @JsonProperty("displayChangeSeqNum")
-    public void setDisplayChangeSeqNum(Object displayChangeSeqNum) {
+    public void setDisplayChangeSeqNum(String displayChangeSeqNum) {
         this.displayChangeSeqNum = displayChangeSeqNum;
     }
 
-    public ChangeOrder100GetRequest withDisplayChangeSeqNum(Object displayChangeSeqNum) {
+    public ChangeOrder100GetRequest withDisplayChangeSeqNum(String displayChangeSeqNum) {
         this.displayChangeSeqNum = displayChangeSeqNum;
         return this;
     }
@@ -75,7 +75,7 @@ public class ChangeOrder100GetRequest {
      * 
      */
     @JsonProperty("displayPohdCode")
-    public Object getDisplayPohdCode() {
+    public String getDisplayPohdCode() {
         return displayPohdCode;
     }
 
@@ -86,11 +86,11 @@ public class ChangeOrder100GetRequest {
      * 
      */
     @JsonProperty("displayPohdCode")
-    public void setDisplayPohdCode(Object displayPohdCode) {
+    public void setDisplayPohdCode(String displayPohdCode) {
         this.displayPohdCode = displayPohdCode;
     }
 
-    public ChangeOrder100GetRequest withDisplayPohdCode(Object displayPohdCode) {
+    public ChangeOrder100GetRequest withDisplayPohdCode(String displayPohdCode) {
         this.displayPohdCode = displayPohdCode;
         return this;
     }

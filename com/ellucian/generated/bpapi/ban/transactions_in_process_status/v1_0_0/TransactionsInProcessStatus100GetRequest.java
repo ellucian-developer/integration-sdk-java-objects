@@ -18,6 +18,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "docNum",
     "displaySumRsvr",
     "progTran",
+    "keyblocCoasCode",
     "displaySumAdjt",
     "keyblocAcctCode",
     "displayStatus",
@@ -70,6 +71,16 @@ public class TransactionsInProcessStatus100GetRequest {
     @JsonPropertyDescription("Lineage reference object : FGRBAKO_PROG_TRAN")
     private String progTran;
     /**
+     * Chart
+     * <p>
+     * Lineage reference object : keyblocCoasCode, Lookup lineage reference object : ftvcoas
+     * (Required)
+     * 
+     */
+    @JsonProperty("keyblocCoasCode")
+    @JsonPropertyDescription("Lineage reference object : keyblocCoasCode, Lookup lineage reference object : ftvcoas")
+    private String keyblocCoasCode;
+    /**
      * Adjusted Budget
      * <p>
      * 
@@ -85,7 +96,7 @@ public class TransactionsInProcessStatus100GetRequest {
      */
     @JsonProperty("keyblocAcctCode")
     @JsonPropertyDescription("Lineage reference object : keyblocAcctCode")
-    private Object keyblocAcctCode;
+    private String keyblocAcctCode;
     /**
      * Status
      * <p>
@@ -111,7 +122,7 @@ public class TransactionsInProcessStatus100GetRequest {
      */
     @JsonProperty("keyblocProgCode")
     @JsonPropertyDescription("Lineage reference object : keyblocProgCode")
-    private Object keyblocProgCode;
+    private String keyblocProgCode;
     /**
      * Index
      * <p>
@@ -120,7 +131,7 @@ public class TransactionsInProcessStatus100GetRequest {
      */
     @JsonProperty("keyblocAcciCode")
     @JsonPropertyDescription("Lineage reference object : keyblocAcciCode, Lookup lineage reference object : ftvacci")
-    private Object keyblocAcciCode;
+    private String keyblocAcciCode;
     /**
      * Organization
      * <p>
@@ -129,7 +140,7 @@ public class TransactionsInProcessStatus100GetRequest {
      */
     @JsonProperty("keyblocOrgnCode")
     @JsonPropertyDescription("Lineage reference object : keyblocOrgnCode")
-    private Object keyblocOrgnCode;
+    private String keyblocOrgnCode;
     /**
      * YTD Activity
      * <p>
@@ -147,7 +158,7 @@ public class TransactionsInProcessStatus100GetRequest {
      */
     @JsonProperty("keyblocCmtType")
     @JsonPropertyDescription("Lineage reference object : keyblocCmtType")
-    private Object keyblocCmtType;
+    private String keyblocCmtType;
     /**
      * Organization
      * <p>
@@ -165,7 +176,7 @@ public class TransactionsInProcessStatus100GetRequest {
      */
     @JsonProperty("keyblocFundCode")
     @JsonPropertyDescription("Lineage reference object : keyblocFundCode")
-    private Object keyblocFundCode;
+    private String keyblocFundCode;
     /**
      * Fiscal Year
      * <p>
@@ -175,7 +186,7 @@ public class TransactionsInProcessStatus100GetRequest {
      */
     @JsonProperty("keyblocFsyrCode")
     @JsonPropertyDescription("Lineage reference object : keyblocFsyrCode, Lookup lineage reference object : ftvfspd,ftvfsyr,ftvfspd")
-    private Object keyblocFsyrCode;
+    private String keyblocFsyrCode;
     /**
      * Fund
      * <p>
@@ -297,6 +308,35 @@ public class TransactionsInProcessStatus100GetRequest {
     }
 
     /**
+     * Chart
+     * <p>
+     * Lineage reference object : keyblocCoasCode, Lookup lineage reference object : ftvcoas
+     * (Required)
+     * 
+     */
+    @JsonProperty("keyblocCoasCode")
+    public String getKeyblocCoasCode() {
+        return keyblocCoasCode;
+    }
+
+    /**
+     * Chart
+     * <p>
+     * Lineage reference object : keyblocCoasCode, Lookup lineage reference object : ftvcoas
+     * (Required)
+     * 
+     */
+    @JsonProperty("keyblocCoasCode")
+    public void setKeyblocCoasCode(String keyblocCoasCode) {
+        this.keyblocCoasCode = keyblocCoasCode;
+    }
+
+    public TransactionsInProcessStatus100GetRequest withKeyblocCoasCode(String keyblocCoasCode) {
+        this.keyblocCoasCode = keyblocCoasCode;
+        return this;
+    }
+
+    /**
      * Adjusted Budget
      * <p>
      * 
@@ -330,7 +370,7 @@ public class TransactionsInProcessStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocAcctCode")
-    public Object getKeyblocAcctCode() {
+    public String getKeyblocAcctCode() {
         return keyblocAcctCode;
     }
 
@@ -341,11 +381,11 @@ public class TransactionsInProcessStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocAcctCode")
-    public void setKeyblocAcctCode(Object keyblocAcctCode) {
+    public void setKeyblocAcctCode(String keyblocAcctCode) {
         this.keyblocAcctCode = keyblocAcctCode;
     }
 
-    public TransactionsInProcessStatus100GetRequest withKeyblocAcctCode(Object keyblocAcctCode) {
+    public TransactionsInProcessStatus100GetRequest withKeyblocAcctCode(String keyblocAcctCode) {
         this.keyblocAcctCode = keyblocAcctCode;
         return this;
     }
@@ -411,7 +451,7 @@ public class TransactionsInProcessStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocProgCode")
-    public Object getKeyblocProgCode() {
+    public String getKeyblocProgCode() {
         return keyblocProgCode;
     }
 
@@ -422,11 +462,11 @@ public class TransactionsInProcessStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocProgCode")
-    public void setKeyblocProgCode(Object keyblocProgCode) {
+    public void setKeyblocProgCode(String keyblocProgCode) {
         this.keyblocProgCode = keyblocProgCode;
     }
 
-    public TransactionsInProcessStatus100GetRequest withKeyblocProgCode(Object keyblocProgCode) {
+    public TransactionsInProcessStatus100GetRequest withKeyblocProgCode(String keyblocProgCode) {
         this.keyblocProgCode = keyblocProgCode;
         return this;
     }
@@ -438,7 +478,7 @@ public class TransactionsInProcessStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocAcciCode")
-    public Object getKeyblocAcciCode() {
+    public String getKeyblocAcciCode() {
         return keyblocAcciCode;
     }
 
@@ -449,11 +489,11 @@ public class TransactionsInProcessStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocAcciCode")
-    public void setKeyblocAcciCode(Object keyblocAcciCode) {
+    public void setKeyblocAcciCode(String keyblocAcciCode) {
         this.keyblocAcciCode = keyblocAcciCode;
     }
 
-    public TransactionsInProcessStatus100GetRequest withKeyblocAcciCode(Object keyblocAcciCode) {
+    public TransactionsInProcessStatus100GetRequest withKeyblocAcciCode(String keyblocAcciCode) {
         this.keyblocAcciCode = keyblocAcciCode;
         return this;
     }
@@ -465,7 +505,7 @@ public class TransactionsInProcessStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocOrgnCode")
-    public Object getKeyblocOrgnCode() {
+    public String getKeyblocOrgnCode() {
         return keyblocOrgnCode;
     }
 
@@ -476,11 +516,11 @@ public class TransactionsInProcessStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocOrgnCode")
-    public void setKeyblocOrgnCode(Object keyblocOrgnCode) {
+    public void setKeyblocOrgnCode(String keyblocOrgnCode) {
         this.keyblocOrgnCode = keyblocOrgnCode;
     }
 
-    public TransactionsInProcessStatus100GetRequest withKeyblocOrgnCode(Object keyblocOrgnCode) {
+    public TransactionsInProcessStatus100GetRequest withKeyblocOrgnCode(String keyblocOrgnCode) {
         this.keyblocOrgnCode = keyblocOrgnCode;
         return this;
     }
@@ -519,7 +559,7 @@ public class TransactionsInProcessStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocCmtType")
-    public Object getKeyblocCmtType() {
+    public String getKeyblocCmtType() {
         return keyblocCmtType;
     }
 
@@ -530,11 +570,11 @@ public class TransactionsInProcessStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocCmtType")
-    public void setKeyblocCmtType(Object keyblocCmtType) {
+    public void setKeyblocCmtType(String keyblocCmtType) {
         this.keyblocCmtType = keyblocCmtType;
     }
 
-    public TransactionsInProcessStatus100GetRequest withKeyblocCmtType(Object keyblocCmtType) {
+    public TransactionsInProcessStatus100GetRequest withKeyblocCmtType(String keyblocCmtType) {
         this.keyblocCmtType = keyblocCmtType;
         return this;
     }
@@ -573,7 +613,7 @@ public class TransactionsInProcessStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocFundCode")
-    public Object getKeyblocFundCode() {
+    public String getKeyblocFundCode() {
         return keyblocFundCode;
     }
 
@@ -584,11 +624,11 @@ public class TransactionsInProcessStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocFundCode")
-    public void setKeyblocFundCode(Object keyblocFundCode) {
+    public void setKeyblocFundCode(String keyblocFundCode) {
         this.keyblocFundCode = keyblocFundCode;
     }
 
-    public TransactionsInProcessStatus100GetRequest withKeyblocFundCode(Object keyblocFundCode) {
+    public TransactionsInProcessStatus100GetRequest withKeyblocFundCode(String keyblocFundCode) {
         this.keyblocFundCode = keyblocFundCode;
         return this;
     }
@@ -601,7 +641,7 @@ public class TransactionsInProcessStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocFsyrCode")
-    public Object getKeyblocFsyrCode() {
+    public String getKeyblocFsyrCode() {
         return keyblocFsyrCode;
     }
 
@@ -613,11 +653,11 @@ public class TransactionsInProcessStatus100GetRequest {
      * 
      */
     @JsonProperty("keyblocFsyrCode")
-    public void setKeyblocFsyrCode(Object keyblocFsyrCode) {
+    public void setKeyblocFsyrCode(String keyblocFsyrCode) {
         this.keyblocFsyrCode = keyblocFsyrCode;
     }
 
-    public TransactionsInProcessStatus100GetRequest withKeyblocFsyrCode(Object keyblocFsyrCode) {
+    public TransactionsInProcessStatus100GetRequest withKeyblocFsyrCode(String keyblocFsyrCode) {
         this.keyblocFsyrCode = keyblocFsyrCode;
         return this;
     }
@@ -683,6 +723,10 @@ public class TransactionsInProcessStatus100GetRequest {
         sb.append("progTran");
         sb.append('=');
         sb.append(((this.progTran == null)?"<null>":this.progTran));
+        sb.append(',');
+        sb.append("keyblocCoasCode");
+        sb.append('=');
+        sb.append(((this.keyblocCoasCode == null)?"<null>":this.keyblocCoasCode));
         sb.append(',');
         sb.append("displaySumAdjt");
         sb.append('=');
@@ -755,6 +799,7 @@ public class TransactionsInProcessStatus100GetRequest {
         result = ((result* 31)+((this.docNum == null)? 0 :this.docNum.hashCode()));
         result = ((result* 31)+((this.displaySumRsvr == null)? 0 :this.displaySumRsvr.hashCode()));
         result = ((result* 31)+((this.progTran == null)? 0 :this.progTran.hashCode()));
+        result = ((result* 31)+((this.keyblocCoasCode == null)? 0 :this.keyblocCoasCode.hashCode()));
         result = ((result* 31)+((this.displaySumAdjt == null)? 0 :this.displaySumAdjt.hashCode()));
         result = ((result* 31)+((this.keyblocAcctCode == null)? 0 :this.keyblocAcctCode.hashCode()));
         result = ((result* 31)+((this.displayStatus == null)? 0 :this.displayStatus.hashCode()));
@@ -781,7 +826,7 @@ public class TransactionsInProcessStatus100GetRequest {
             return false;
         }
         TransactionsInProcessStatus100GetRequest rhs = ((TransactionsInProcessStatus100GetRequest) other);
-        return (((((((((((((((((((this.displayDescription == rhs.displayDescription)||((this.displayDescription!= null)&&this.displayDescription.equals(rhs.displayDescription)))&&((this.docNum == rhs.docNum)||((this.docNum!= null)&&this.docNum.equals(rhs.docNum))))&&((this.displaySumRsvr == rhs.displaySumRsvr)||((this.displaySumRsvr!= null)&&this.displaySumRsvr.equals(rhs.displaySumRsvr))))&&((this.progTran == rhs.progTran)||((this.progTran!= null)&&this.progTran.equals(rhs.progTran))))&&((this.displaySumAdjt == rhs.displaySumAdjt)||((this.displaySumAdjt!= null)&&this.displaySumAdjt.equals(rhs.displaySumAdjt))))&&((this.keyblocAcctCode == rhs.keyblocAcctCode)||((this.keyblocAcctCode!= null)&&this.keyblocAcctCode.equals(rhs.keyblocAcctCode))))&&((this.displayStatus == rhs.displayStatus)||((this.displayStatus!= null)&&this.displayStatus.equals(rhs.displayStatus))))&&((this.acctTran == rhs.acctTran)||((this.acctTran!= null)&&this.acctTran.equals(rhs.acctTran))))&&((this.keyblocProgCode == rhs.keyblocProgCode)||((this.keyblocProgCode!= null)&&this.keyblocProgCode.equals(rhs.keyblocProgCode))))&&((this.keyblocAcciCode == rhs.keyblocAcciCode)||((this.keyblocAcciCode!= null)&&this.keyblocAcciCode.equals(rhs.keyblocAcciCode))))&&((this.keyblocOrgnCode == rhs.keyblocOrgnCode)||((this.keyblocOrgnCode!= null)&&this.keyblocOrgnCode.equals(rhs.keyblocOrgnCode))))&&((this.ytdAmt == rhs.ytdAmt)||((this.ytdAmt!= null)&&this.ytdAmt.equals(rhs.ytdAmt))))&&((this.keyblocCmtType == rhs.keyblocCmtType)||((this.keyblocCmtType!= null)&&this.keyblocCmtType.equals(rhs.keyblocCmtType))))&&((this.orgnTran == rhs.orgnTran)||((this.orgnTran!= null)&&this.orgnTran.equals(rhs.orgnTran))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.keyblocFundCode == rhs.keyblocFundCode)||((this.keyblocFundCode!= null)&&this.keyblocFundCode.equals(rhs.keyblocFundCode))))&&((this.keyblocFsyrCode == rhs.keyblocFsyrCode)||((this.keyblocFsyrCode!= null)&&this.keyblocFsyrCode.equals(rhs.keyblocFsyrCode))))&&((this.fundTran == rhs.fundTran)||((this.fundTran!= null)&&this.fundTran.equals(rhs.fundTran))));
+        return ((((((((((((((((((((this.displayDescription == rhs.displayDescription)||((this.displayDescription!= null)&&this.displayDescription.equals(rhs.displayDescription)))&&((this.docNum == rhs.docNum)||((this.docNum!= null)&&this.docNum.equals(rhs.docNum))))&&((this.displaySumRsvr == rhs.displaySumRsvr)||((this.displaySumRsvr!= null)&&this.displaySumRsvr.equals(rhs.displaySumRsvr))))&&((this.progTran == rhs.progTran)||((this.progTran!= null)&&this.progTran.equals(rhs.progTran))))&&((this.keyblocCoasCode == rhs.keyblocCoasCode)||((this.keyblocCoasCode!= null)&&this.keyblocCoasCode.equals(rhs.keyblocCoasCode))))&&((this.displaySumAdjt == rhs.displaySumAdjt)||((this.displaySumAdjt!= null)&&this.displaySumAdjt.equals(rhs.displaySumAdjt))))&&((this.keyblocAcctCode == rhs.keyblocAcctCode)||((this.keyblocAcctCode!= null)&&this.keyblocAcctCode.equals(rhs.keyblocAcctCode))))&&((this.displayStatus == rhs.displayStatus)||((this.displayStatus!= null)&&this.displayStatus.equals(rhs.displayStatus))))&&((this.acctTran == rhs.acctTran)||((this.acctTran!= null)&&this.acctTran.equals(rhs.acctTran))))&&((this.keyblocProgCode == rhs.keyblocProgCode)||((this.keyblocProgCode!= null)&&this.keyblocProgCode.equals(rhs.keyblocProgCode))))&&((this.keyblocAcciCode == rhs.keyblocAcciCode)||((this.keyblocAcciCode!= null)&&this.keyblocAcciCode.equals(rhs.keyblocAcciCode))))&&((this.keyblocOrgnCode == rhs.keyblocOrgnCode)||((this.keyblocOrgnCode!= null)&&this.keyblocOrgnCode.equals(rhs.keyblocOrgnCode))))&&((this.ytdAmt == rhs.ytdAmt)||((this.ytdAmt!= null)&&this.ytdAmt.equals(rhs.ytdAmt))))&&((this.keyblocCmtType == rhs.keyblocCmtType)||((this.keyblocCmtType!= null)&&this.keyblocCmtType.equals(rhs.keyblocCmtType))))&&((this.orgnTran == rhs.orgnTran)||((this.orgnTran!= null)&&this.orgnTran.equals(rhs.orgnTran))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.keyblocFundCode == rhs.keyblocFundCode)||((this.keyblocFundCode!= null)&&this.keyblocFundCode.equals(rhs.keyblocFundCode))))&&((this.keyblocFsyrCode == rhs.keyblocFsyrCode)||((this.keyblocFsyrCode!= null)&&this.keyblocFsyrCode.equals(rhs.keyblocFsyrCode))))&&((this.fundTran == rhs.fundTran)||((this.fundTran!= null)&&this.fundTran.equals(rhs.fundTran))));
     }
 
 }

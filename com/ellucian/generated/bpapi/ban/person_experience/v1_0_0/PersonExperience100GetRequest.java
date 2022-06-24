@@ -28,7 +28,7 @@ public class PersonExperience100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Employer Name
      * <p>
@@ -48,7 +48,7 @@ public class PersonExperience100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -59,11 +59,11 @@ public class PersonExperience100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public PersonExperience100GetRequest withId(Object id) {
+    public PersonExperience100GetRequest withId(String id) {
         this.id = id;
         return this;
     }

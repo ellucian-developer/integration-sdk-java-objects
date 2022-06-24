@@ -67,7 +67,7 @@ public class ContractReview100GetRequest {
      */
     @JsonProperty("idstudent")
     @JsonPropertyDescription("Lineage reference object : idstudent")
-    private Object idstudent;
+    private String idstudent;
     /**
      * Detail Code
      * <p>
@@ -85,7 +85,7 @@ public class ContractReview100GetRequest {
      */
     @JsonProperty("keyblocTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCode;
+    private String keyblocTermCode;
     /**
      * Credit Student
      * <p>
@@ -103,7 +103,7 @@ public class ContractReview100GetRequest {
      */
     @JsonProperty("contractNumber")
     @JsonPropertyDescription("Lineage reference object : contractNumber")
-    private Object contractNumber;
+    private Double contractNumber;
     /**
      * Tran Number
      * <p>
@@ -191,7 +191,7 @@ public class ContractReview100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Pay Detail
      * <p>
@@ -299,7 +299,7 @@ public class ContractReview100GetRequest {
      * 
      */
     @JsonProperty("idstudent")
-    public Object getIdstudent() {
+    public String getIdstudent() {
         return idstudent;
     }
 
@@ -310,11 +310,11 @@ public class ContractReview100GetRequest {
      * 
      */
     @JsonProperty("idstudent")
-    public void setIdstudent(Object idstudent) {
+    public void setIdstudent(String idstudent) {
         this.idstudent = idstudent;
     }
 
-    public ContractReview100GetRequest withIdstudent(Object idstudent) {
+    public ContractReview100GetRequest withIdstudent(String idstudent) {
         this.idstudent = idstudent;
         return this;
     }
@@ -353,7 +353,7 @@ public class ContractReview100GetRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public Object getKeyblocTermCode() {
+    public String getKeyblocTermCode() {
         return keyblocTermCode;
     }
 
@@ -364,11 +364,11 @@ public class ContractReview100GetRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public void setKeyblocTermCode(Object keyblocTermCode) {
+    public void setKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
     }
 
-    public ContractReview100GetRequest withKeyblocTermCode(Object keyblocTermCode) {
+    public ContractReview100GetRequest withKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
         return this;
     }
@@ -407,7 +407,7 @@ public class ContractReview100GetRequest {
      * 
      */
     @JsonProperty("contractNumber")
-    public Object getContractNumber() {
+    public Double getContractNumber() {
         return contractNumber;
     }
 
@@ -418,11 +418,11 @@ public class ContractReview100GetRequest {
      * 
      */
     @JsonProperty("contractNumber")
-    public void setContractNumber(Object contractNumber) {
+    public void setContractNumber(Double contractNumber) {
         this.contractNumber = contractNumber;
     }
 
-    public ContractReview100GetRequest withContractNumber(Object contractNumber) {
+    public ContractReview100GetRequest withContractNumber(Double contractNumber) {
         this.contractNumber = contractNumber;
         return this;
     }
@@ -673,7 +673,7 @@ public class ContractReview100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -684,11 +684,11 @@ public class ContractReview100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public ContractReview100GetRequest withId(Object id) {
+    public ContractReview100GetRequest withId(String id) {
         this.id = id;
         return this;
     }

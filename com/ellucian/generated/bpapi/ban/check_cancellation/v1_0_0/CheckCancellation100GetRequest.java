@@ -29,7 +29,7 @@ public class CheckCancellation100GetRequest {
      */
     @JsonProperty("bankCode")
     @JsonPropertyDescription("Lineage reference object : faachksBankCode, Lookup lineage reference object : gxvbank")
-    private Object bankCode;
+    private String bankCode;
     /**
      * Check
      * <p>
@@ -39,7 +39,7 @@ public class CheckCancellation100GetRequest {
      */
     @JsonProperty("faachksCheckNum")
     @JsonPropertyDescription("Lineage reference object : faachksCheckNum")
-    private Object faachksCheckNum;
+    private String faachksCheckNum;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -51,7 +51,7 @@ public class CheckCancellation100GetRequest {
      * 
      */
     @JsonProperty("bankCode")
-    public Object getBankCode() {
+    public String getBankCode() {
         return bankCode;
     }
 
@@ -63,11 +63,11 @@ public class CheckCancellation100GetRequest {
      * 
      */
     @JsonProperty("bankCode")
-    public void setBankCode(Object bankCode) {
+    public void setBankCode(String bankCode) {
         this.bankCode = bankCode;
     }
 
-    public CheckCancellation100GetRequest withBankCode(Object bankCode) {
+    public CheckCancellation100GetRequest withBankCode(String bankCode) {
         this.bankCode = bankCode;
         return this;
     }
@@ -80,7 +80,7 @@ public class CheckCancellation100GetRequest {
      * 
      */
     @JsonProperty("faachksCheckNum")
-    public Object getFaachksCheckNum() {
+    public String getFaachksCheckNum() {
         return faachksCheckNum;
     }
 
@@ -92,11 +92,11 @@ public class CheckCancellation100GetRequest {
      * 
      */
     @JsonProperty("faachksCheckNum")
-    public void setFaachksCheckNum(Object faachksCheckNum) {
+    public void setFaachksCheckNum(String faachksCheckNum) {
         this.faachksCheckNum = faachksCheckNum;
     }
 
-    public CheckCancellation100GetRequest withFaachksCheckNum(Object faachksCheckNum) {
+    public CheckCancellation100GetRequest withFaachksCheckNum(String faachksCheckNum) {
         this.faachksCheckNum = faachksCheckNum;
         return this;
     }

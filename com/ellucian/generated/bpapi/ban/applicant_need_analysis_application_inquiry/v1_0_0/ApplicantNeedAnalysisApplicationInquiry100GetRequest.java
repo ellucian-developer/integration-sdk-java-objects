@@ -85,7 +85,7 @@ public class ApplicantNeedAnalysisApplicationInquiry100GetRequest {
      */
     @JsonProperty("keyblckAidyCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAidyCode, Lookup lineage reference object : robinst")
-    private Object keyblckAidyCode;
+    private String keyblckAidyCode;
     /**
      * Primary Pell EFC
      * <p>
@@ -112,7 +112,7 @@ public class ApplicantNeedAnalysisApplicationInquiry100GetRequest {
      */
     @JsonProperty("keyblckStudentId")
     @JsonPropertyDescription("Lineage reference object : keyblckStudentId")
-    private Object keyblckStudentId;
+    private String keyblckStudentId;
     /**
      * CSS Active
      * <p>
@@ -294,7 +294,7 @@ public class ApplicantNeedAnalysisApplicationInquiry100GetRequest {
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public Object getKeyblckAidyCode() {
+    public String getKeyblckAidyCode() {
         return keyblckAidyCode;
     }
 
@@ -305,11 +305,11 @@ public class ApplicantNeedAnalysisApplicationInquiry100GetRequest {
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public void setKeyblckAidyCode(Object keyblckAidyCode) {
+    public void setKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
     }
 
-    public ApplicantNeedAnalysisApplicationInquiry100GetRequest withKeyblckAidyCode(Object keyblckAidyCode) {
+    public ApplicantNeedAnalysisApplicationInquiry100GetRequest withKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
         return this;
     }
@@ -375,7 +375,7 @@ public class ApplicantNeedAnalysisApplicationInquiry100GetRequest {
      * 
      */
     @JsonProperty("keyblckStudentId")
-    public Object getKeyblckStudentId() {
+    public String getKeyblckStudentId() {
         return keyblckStudentId;
     }
 
@@ -386,11 +386,11 @@ public class ApplicantNeedAnalysisApplicationInquiry100GetRequest {
      * 
      */
     @JsonProperty("keyblckStudentId")
-    public void setKeyblckStudentId(Object keyblckStudentId) {
+    public void setKeyblckStudentId(String keyblckStudentId) {
         this.keyblckStudentId = keyblckStudentId;
     }
 
-    public ApplicantNeedAnalysisApplicationInquiry100GetRequest withKeyblckStudentId(Object keyblckStudentId) {
+    public ApplicantNeedAnalysisApplicationInquiry100GetRequest withKeyblckStudentId(String keyblckStudentId) {
         this.keyblckStudentId = keyblckStudentId;
         return this;
     }

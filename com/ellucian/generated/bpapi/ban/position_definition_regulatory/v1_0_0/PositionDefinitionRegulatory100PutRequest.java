@@ -242,7 +242,7 @@ public class PositionDefinitionRegulatory100PutRequest {
      */
     @JsonProperty("posn")
     @JsonPropertyDescription("Lineage reference object : posn")
-    private Object posn;
+    private String posn;
     /**
      * Salary Step
      * <p>
@@ -1033,7 +1033,7 @@ public class PositionDefinitionRegulatory100PutRequest {
      * 
      */
     @JsonProperty("posn")
-    public Object getPosn() {
+    public String getPosn() {
         return posn;
     }
 
@@ -1045,11 +1045,11 @@ public class PositionDefinitionRegulatory100PutRequest {
      * 
      */
     @JsonProperty("posn")
-    public void setPosn(Object posn) {
+    public void setPosn(String posn) {
         this.posn = posn;
     }
 
-    public PositionDefinitionRegulatory100PutRequest withPosn(Object posn) {
+    public PositionDefinitionRegulatory100PutRequest withPosn(String posn) {
         this.posn = posn;
         return this;
     }

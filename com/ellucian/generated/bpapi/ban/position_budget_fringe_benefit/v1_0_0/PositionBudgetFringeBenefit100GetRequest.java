@@ -29,7 +29,7 @@ public class PositionBudgetFringeBenefit100GetRequest {
      */
     @JsonProperty("fiscCode")
     @JsonPropertyDescription("Lineage reference object : fiscCode")
-    private Object fiscCode;
+    private String fiscCode;
     /**
      * Position
      * <p>
@@ -39,7 +39,7 @@ public class PositionBudgetFringeBenefit100GetRequest {
      */
     @JsonProperty("posn")
     @JsonPropertyDescription("Lineage reference object : posn")
-    private Object posn;
+    private String posn;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -51,7 +51,7 @@ public class PositionBudgetFringeBenefit100GetRequest {
      * 
      */
     @JsonProperty("fiscCode")
-    public Object getFiscCode() {
+    public String getFiscCode() {
         return fiscCode;
     }
 
@@ -63,11 +63,11 @@ public class PositionBudgetFringeBenefit100GetRequest {
      * 
      */
     @JsonProperty("fiscCode")
-    public void setFiscCode(Object fiscCode) {
+    public void setFiscCode(String fiscCode) {
         this.fiscCode = fiscCode;
     }
 
-    public PositionBudgetFringeBenefit100GetRequest withFiscCode(Object fiscCode) {
+    public PositionBudgetFringeBenefit100GetRequest withFiscCode(String fiscCode) {
         this.fiscCode = fiscCode;
         return this;
     }
@@ -80,7 +80,7 @@ public class PositionBudgetFringeBenefit100GetRequest {
      * 
      */
     @JsonProperty("posn")
-    public Object getPosn() {
+    public String getPosn() {
         return posn;
     }
 
@@ -92,11 +92,11 @@ public class PositionBudgetFringeBenefit100GetRequest {
      * 
      */
     @JsonProperty("posn")
-    public void setPosn(Object posn) {
+    public void setPosn(String posn) {
         this.posn = posn;
     }
 
-    public PositionBudgetFringeBenefit100GetRequest withPosn(Object posn) {
+    public PositionBudgetFringeBenefit100GetRequest withPosn(String posn) {
         this.posn = posn;
         return this;
     }

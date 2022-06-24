@@ -28,7 +28,7 @@ public class PositionDefinitionPosition100GetRequest {
      */
     @JsonProperty("posn")
     @JsonPropertyDescription("Lineage reference object : posn")
-    private Object posn;
+    private String posn;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -40,7 +40,7 @@ public class PositionDefinitionPosition100GetRequest {
      * 
      */
     @JsonProperty("posn")
-    public Object getPosn() {
+    public String getPosn() {
         return posn;
     }
 
@@ -52,11 +52,11 @@ public class PositionDefinitionPosition100GetRequest {
      * 
      */
     @JsonProperty("posn")
-    public void setPosn(Object posn) {
+    public void setPosn(String posn) {
         this.posn = posn;
     }
 
-    public PositionDefinitionPosition100GetRequest withPosn(Object posn) {
+    public PositionDefinitionPosition100GetRequest withPosn(String posn) {
         this.posn = posn;
         return this;
     }

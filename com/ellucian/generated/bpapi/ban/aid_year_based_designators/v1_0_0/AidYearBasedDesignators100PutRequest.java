@@ -16,6 +16,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
     "criteria.code",
     "criteria.shortDesc",
+    "shortDesc",
     "comment",
     "criteria.comment"
 })
@@ -42,6 +43,16 @@ public class AidYearBasedDesignators100PutRequest {
     @JsonProperty("criteria.shortDesc")
     @JsonPropertyDescription("Lineage reference object : TTVTEXT_SHORT_DESC")
     private String criteriaShortDesc;
+    /**
+     * Description
+     * <p>
+     * Lineage reference object : TTVTEXT_SHORT_DESC
+     * (Required)
+     * 
+     */
+    @JsonProperty("shortDesc")
+    @JsonPropertyDescription("Lineage reference object : TTVTEXT_SHORT_DESC")
+    private String shortDesc;
     /**
      * Comment
      * <p>
@@ -120,6 +131,35 @@ public class AidYearBasedDesignators100PutRequest {
 
     public AidYearBasedDesignators100PutRequest withCriteriaShortDesc(String criteriaShortDesc) {
         this.criteriaShortDesc = criteriaShortDesc;
+        return this;
+    }
+
+    /**
+     * Description
+     * <p>
+     * Lineage reference object : TTVTEXT_SHORT_DESC
+     * (Required)
+     * 
+     */
+    @JsonProperty("shortDesc")
+    public String getShortDesc() {
+        return shortDesc;
+    }
+
+    /**
+     * Description
+     * <p>
+     * Lineage reference object : TTVTEXT_SHORT_DESC
+     * (Required)
+     * 
+     */
+    @JsonProperty("shortDesc")
+    public void setShortDesc(String shortDesc) {
+        this.shortDesc = shortDesc;
+    }
+
+    public AidYearBasedDesignators100PutRequest withShortDesc(String shortDesc) {
+        this.shortDesc = shortDesc;
         return this;
     }
 
@@ -208,6 +248,10 @@ public class AidYearBasedDesignators100PutRequest {
         sb.append('=');
         sb.append(((this.criteriaShortDesc == null)?"<null>":this.criteriaShortDesc));
         sb.append(',');
+        sb.append("shortDesc");
+        sb.append('=');
+        sb.append(((this.shortDesc == null)?"<null>":this.shortDesc));
+        sb.append(',');
         sb.append("comment");
         sb.append('=');
         sb.append(((this.comment == null)?"<null>":this.comment));
@@ -232,10 +276,11 @@ public class AidYearBasedDesignators100PutRequest {
     public int hashCode() {
         int result = 1;
         result = ((result* 31)+((this.criteriaCode == null)? 0 :this.criteriaCode.hashCode()));
+        result = ((result* 31)+((this.criteriaShortDesc == null)? 0 :this.criteriaShortDesc.hashCode()));
+        result = ((result* 31)+((this.shortDesc == null)? 0 :this.shortDesc.hashCode()));
         result = ((result* 31)+((this.comment == null)? 0 :this.comment.hashCode()));
         result = ((result* 31)+((this.criteriaComment == null)? 0 :this.criteriaComment.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
-        result = ((result* 31)+((this.criteriaShortDesc == null)? 0 :this.criteriaShortDesc.hashCode()));
         return result;
     }
 
@@ -248,7 +293,7 @@ public class AidYearBasedDesignators100PutRequest {
             return false;
         }
         AidYearBasedDesignators100PutRequest rhs = ((AidYearBasedDesignators100PutRequest) other);
-        return ((((((this.criteriaCode == rhs.criteriaCode)||((this.criteriaCode!= null)&&this.criteriaCode.equals(rhs.criteriaCode)))&&((this.comment == rhs.comment)||((this.comment!= null)&&this.comment.equals(rhs.comment))))&&((this.criteriaComment == rhs.criteriaComment)||((this.criteriaComment!= null)&&this.criteriaComment.equals(rhs.criteriaComment))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.criteriaShortDesc == rhs.criteriaShortDesc)||((this.criteriaShortDesc!= null)&&this.criteriaShortDesc.equals(rhs.criteriaShortDesc))));
+        return (((((((this.criteriaCode == rhs.criteriaCode)||((this.criteriaCode!= null)&&this.criteriaCode.equals(rhs.criteriaCode)))&&((this.criteriaShortDesc == rhs.criteriaShortDesc)||((this.criteriaShortDesc!= null)&&this.criteriaShortDesc.equals(rhs.criteriaShortDesc))))&&((this.shortDesc == rhs.shortDesc)||((this.shortDesc!= null)&&this.shortDesc.equals(rhs.shortDesc))))&&((this.comment == rhs.comment)||((this.comment!= null)&&this.comment.equals(rhs.comment))))&&((this.criteriaComment == rhs.criteriaComment)||((this.criteriaComment!= null)&&this.criteriaComment.equals(rhs.criteriaComment))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))));
     }
 
 }

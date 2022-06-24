@@ -28,7 +28,7 @@ public class StudentTaxNotifications100GetRequest {
      */
     @JsonProperty("taxYear")
     @JsonPropertyDescription("Lineage reference object : taxYear")
-    private Object taxYear;
+    private Double taxYear;
     /**
      * ID
      * <p>
@@ -37,7 +37,7 @@ public class StudentTaxNotifications100GetRequest {
      */
     @JsonProperty("keyblckStudentId")
     @JsonPropertyDescription("Lineage reference object : keyblckStudentId")
-    private Object keyblckStudentId;
+    private String keyblckStudentId;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -48,7 +48,7 @@ public class StudentTaxNotifications100GetRequest {
      * 
      */
     @JsonProperty("taxYear")
-    public Object getTaxYear() {
+    public Double getTaxYear() {
         return taxYear;
     }
 
@@ -59,11 +59,11 @@ public class StudentTaxNotifications100GetRequest {
      * 
      */
     @JsonProperty("taxYear")
-    public void setTaxYear(Object taxYear) {
+    public void setTaxYear(Double taxYear) {
         this.taxYear = taxYear;
     }
 
-    public StudentTaxNotifications100GetRequest withTaxYear(Object taxYear) {
+    public StudentTaxNotifications100GetRequest withTaxYear(Double taxYear) {
         this.taxYear = taxYear;
         return this;
     }
@@ -75,7 +75,7 @@ public class StudentTaxNotifications100GetRequest {
      * 
      */
     @JsonProperty("keyblckStudentId")
-    public Object getKeyblckStudentId() {
+    public String getKeyblckStudentId() {
         return keyblckStudentId;
     }
 
@@ -86,11 +86,11 @@ public class StudentTaxNotifications100GetRequest {
      * 
      */
     @JsonProperty("keyblckStudentId")
-    public void setKeyblckStudentId(Object keyblckStudentId) {
+    public void setKeyblckStudentId(String keyblckStudentId) {
         this.keyblckStudentId = keyblckStudentId;
     }
 
-    public StudentTaxNotifications100GetRequest withKeyblckStudentId(Object keyblckStudentId) {
+    public StudentTaxNotifications100GetRequest withKeyblckStudentId(String keyblckStudentId) {
         this.keyblckStudentId = keyblckStudentId;
         return this;
     }

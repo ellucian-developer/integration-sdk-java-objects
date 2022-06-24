@@ -42,7 +42,7 @@ public class CommentBillingMassDataEntry100PostRequest {
      */
     @JsonProperty("keyblocOrigCode")
     @JsonPropertyDescription("Lineage reference object : keyblocOrigCode, Lookup lineage reference object : stvorig")
-    private Object keyblocOrigCode;
+    private String keyblocOrigCode;
     /**
      * Comment
      * <p>
@@ -60,7 +60,7 @@ public class CommentBillingMassDataEntry100PostRequest {
      */
     @JsonProperty("keyblocTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCode;
+    private String keyblocTermCode;
     /**
      * Text
      * <p>
@@ -69,7 +69,7 @@ public class CommentBillingMassDataEntry100PostRequest {
      */
     @JsonProperty("keyblocTextCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTextCode")
-    private Object keyblocTextCode;
+    private String keyblocTextCode;
     /**
      * Restrict Update
      * <p>
@@ -87,7 +87,7 @@ public class CommentBillingMassDataEntry100PostRequest {
      */
     @JsonProperty("keyblocCommentCode")
     @JsonPropertyDescription("Lineage reference object : keyblocCommentCode, Lookup lineage reference object : ttvcmnt")
-    private Object keyblocCommentCode;
+    private String keyblocCommentCode;
     /**
      * Purge
      * <p>
@@ -114,7 +114,7 @@ public class CommentBillingMassDataEntry100PostRequest {
      */
     @JsonProperty("keyblocUpdateInd")
     @JsonPropertyDescription("Lineage reference object : keyblocRestrictUpdateInd")
-    private Object keyblocUpdateInd;
+    private String keyblocUpdateInd;
     /**
      * End Date
      * <p>
@@ -142,7 +142,7 @@ public class CommentBillingMassDataEntry100PostRequest {
      */
     @JsonProperty("keyblocPurgeInd")
     @JsonPropertyDescription("Lineage reference object : keyblocPurgeInd")
-    private Object keyblocPurgeInd;
+    private String keyblocPurgeInd;
     /**
      * End Date
      * <p>
@@ -151,7 +151,7 @@ public class CommentBillingMassDataEntry100PostRequest {
      */
     @JsonProperty("keyblocEnddate")
     @JsonPropertyDescription("Lineage reference object : keyblocEnddate")
-    private Object keyblocEnddate;
+    private Date keyblocEnddate;
     /**
      * ID
      * <p>
@@ -179,7 +179,7 @@ public class CommentBillingMassDataEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblocOrigCode")
-    public Object getKeyblocOrigCode() {
+    public String getKeyblocOrigCode() {
         return keyblocOrigCode;
     }
 
@@ -190,11 +190,11 @@ public class CommentBillingMassDataEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblocOrigCode")
-    public void setKeyblocOrigCode(Object keyblocOrigCode) {
+    public void setKeyblocOrigCode(String keyblocOrigCode) {
         this.keyblocOrigCode = keyblocOrigCode;
     }
 
-    public CommentBillingMassDataEntry100PostRequest withKeyblocOrigCode(Object keyblocOrigCode) {
+    public CommentBillingMassDataEntry100PostRequest withKeyblocOrigCode(String keyblocOrigCode) {
         this.keyblocOrigCode = keyblocOrigCode;
         return this;
     }
@@ -233,7 +233,7 @@ public class CommentBillingMassDataEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public Object getKeyblocTermCode() {
+    public String getKeyblocTermCode() {
         return keyblocTermCode;
     }
 
@@ -244,11 +244,11 @@ public class CommentBillingMassDataEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public void setKeyblocTermCode(Object keyblocTermCode) {
+    public void setKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
     }
 
-    public CommentBillingMassDataEntry100PostRequest withKeyblocTermCode(Object keyblocTermCode) {
+    public CommentBillingMassDataEntry100PostRequest withKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
         return this;
     }
@@ -260,7 +260,7 @@ public class CommentBillingMassDataEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblocTextCode")
-    public Object getKeyblocTextCode() {
+    public String getKeyblocTextCode() {
         return keyblocTextCode;
     }
 
@@ -271,11 +271,11 @@ public class CommentBillingMassDataEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblocTextCode")
-    public void setKeyblocTextCode(Object keyblocTextCode) {
+    public void setKeyblocTextCode(String keyblocTextCode) {
         this.keyblocTextCode = keyblocTextCode;
     }
 
-    public CommentBillingMassDataEntry100PostRequest withKeyblocTextCode(Object keyblocTextCode) {
+    public CommentBillingMassDataEntry100PostRequest withKeyblocTextCode(String keyblocTextCode) {
         this.keyblocTextCode = keyblocTextCode;
         return this;
     }
@@ -314,7 +314,7 @@ public class CommentBillingMassDataEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblocCommentCode")
-    public Object getKeyblocCommentCode() {
+    public String getKeyblocCommentCode() {
         return keyblocCommentCode;
     }
 
@@ -325,11 +325,11 @@ public class CommentBillingMassDataEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblocCommentCode")
-    public void setKeyblocCommentCode(Object keyblocCommentCode) {
+    public void setKeyblocCommentCode(String keyblocCommentCode) {
         this.keyblocCommentCode = keyblocCommentCode;
     }
 
-    public CommentBillingMassDataEntry100PostRequest withKeyblocCommentCode(Object keyblocCommentCode) {
+    public CommentBillingMassDataEntry100PostRequest withKeyblocCommentCode(String keyblocCommentCode) {
         this.keyblocCommentCode = keyblocCommentCode;
         return this;
     }
@@ -395,7 +395,7 @@ public class CommentBillingMassDataEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblocUpdateInd")
-    public Object getKeyblocUpdateInd() {
+    public String getKeyblocUpdateInd() {
         return keyblocUpdateInd;
     }
 
@@ -406,11 +406,11 @@ public class CommentBillingMassDataEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblocUpdateInd")
-    public void setKeyblocUpdateInd(Object keyblocUpdateInd) {
+    public void setKeyblocUpdateInd(String keyblocUpdateInd) {
         this.keyblocUpdateInd = keyblocUpdateInd;
     }
 
-    public CommentBillingMassDataEntry100PostRequest withKeyblocUpdateInd(Object keyblocUpdateInd) {
+    public CommentBillingMassDataEntry100PostRequest withKeyblocUpdateInd(String keyblocUpdateInd) {
         this.keyblocUpdateInd = keyblocUpdateInd;
         return this;
     }
@@ -478,7 +478,7 @@ public class CommentBillingMassDataEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblocPurgeInd")
-    public Object getKeyblocPurgeInd() {
+    public String getKeyblocPurgeInd() {
         return keyblocPurgeInd;
     }
 
@@ -489,11 +489,11 @@ public class CommentBillingMassDataEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblocPurgeInd")
-    public void setKeyblocPurgeInd(Object keyblocPurgeInd) {
+    public void setKeyblocPurgeInd(String keyblocPurgeInd) {
         this.keyblocPurgeInd = keyblocPurgeInd;
     }
 
-    public CommentBillingMassDataEntry100PostRequest withKeyblocPurgeInd(Object keyblocPurgeInd) {
+    public CommentBillingMassDataEntry100PostRequest withKeyblocPurgeInd(String keyblocPurgeInd) {
         this.keyblocPurgeInd = keyblocPurgeInd;
         return this;
     }
@@ -505,7 +505,7 @@ public class CommentBillingMassDataEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblocEnddate")
-    public Object getKeyblocEnddate() {
+    public Date getKeyblocEnddate() {
         return keyblocEnddate;
     }
 
@@ -516,11 +516,11 @@ public class CommentBillingMassDataEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblocEnddate")
-    public void setKeyblocEnddate(Object keyblocEnddate) {
+    public void setKeyblocEnddate(Date keyblocEnddate) {
         this.keyblocEnddate = keyblocEnddate;
     }
 
-    public CommentBillingMassDataEntry100PostRequest withKeyblocEnddate(Object keyblocEnddate) {
+    public CommentBillingMassDataEntry100PostRequest withKeyblocEnddate(Date keyblocEnddate) {
         this.keyblocEnddate = keyblocEnddate;
         return this;
     }

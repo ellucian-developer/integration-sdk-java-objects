@@ -38,7 +38,7 @@ public class GeneralLedgerActivity100GetRequest {
      */
     @JsonProperty("keyblckFundCode")
     @JsonPropertyDescription("Lineage reference object : keyblckFundCode")
-    private Object keyblckFundCode;
+    private String keyblckFundCode;
     /**
      * Chart
      * <p>
@@ -48,7 +48,7 @@ public class GeneralLedgerActivity100GetRequest {
      */
     @JsonProperty("keyblckCoasCode")
     @JsonPropertyDescription("Lineage reference object : keyblckCoasCode, Lookup lineage reference object : ftvcoas")
-    private Object keyblckCoasCode;
+    private String keyblckCoasCode;
     /**
      * Lineage reference object : FGVTRND_DOC_CODE
      * 
@@ -64,7 +64,7 @@ public class GeneralLedgerActivity100GetRequest {
      */
     @JsonProperty("keyblckPeriod")
     @JsonPropertyDescription("Lineage reference object : keyblckPeriod")
-    private Object keyblckPeriod;
+    private String keyblckPeriod;
     /**
      * Fiscal Year
      * <p>
@@ -74,7 +74,7 @@ public class GeneralLedgerActivity100GetRequest {
      */
     @JsonProperty("keyblckFsyrCode")
     @JsonPropertyDescription("Lineage reference object : keyblckFsyrCode, Lookup lineage reference object : ftvfspd,ftvfsyr,ftvfspd")
-    private Object keyblckFsyrCode;
+    private String keyblckFsyrCode;
     /**
      * Index
      * <p>
@@ -83,7 +83,7 @@ public class GeneralLedgerActivity100GetRequest {
      */
     @JsonProperty("keyblckAcciCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAcciCode, Lookup lineage reference object : ftvacci")
-    private Object keyblckAcciCode;
+    private String keyblckAcciCode;
     /**
      * Account
      * <p>
@@ -92,7 +92,7 @@ public class GeneralLedgerActivity100GetRequest {
      */
     @JsonProperty("keyblckAcctCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAcctCode")
-    private Object keyblckAcctCode;
+    private String keyblckAcctCode;
     /**
      * Lineage reference object : FGVTRND_TRANS_AMT
      * 
@@ -132,7 +132,7 @@ public class GeneralLedgerActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckFundCode")
-    public Object getKeyblckFundCode() {
+    public String getKeyblckFundCode() {
         return keyblckFundCode;
     }
 
@@ -144,11 +144,11 @@ public class GeneralLedgerActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckFundCode")
-    public void setKeyblckFundCode(Object keyblckFundCode) {
+    public void setKeyblckFundCode(String keyblckFundCode) {
         this.keyblckFundCode = keyblckFundCode;
     }
 
-    public GeneralLedgerActivity100GetRequest withKeyblckFundCode(Object keyblckFundCode) {
+    public GeneralLedgerActivity100GetRequest withKeyblckFundCode(String keyblckFundCode) {
         this.keyblckFundCode = keyblckFundCode;
         return this;
     }
@@ -161,7 +161,7 @@ public class GeneralLedgerActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckCoasCode")
-    public Object getKeyblckCoasCode() {
+    public String getKeyblckCoasCode() {
         return keyblckCoasCode;
     }
 
@@ -173,11 +173,11 @@ public class GeneralLedgerActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckCoasCode")
-    public void setKeyblckCoasCode(Object keyblckCoasCode) {
+    public void setKeyblckCoasCode(String keyblckCoasCode) {
         this.keyblckCoasCode = keyblckCoasCode;
     }
 
-    public GeneralLedgerActivity100GetRequest withKeyblckCoasCode(Object keyblckCoasCode) {
+    public GeneralLedgerActivity100GetRequest withKeyblckCoasCode(String keyblckCoasCode) {
         this.keyblckCoasCode = keyblckCoasCode;
         return this;
     }
@@ -212,7 +212,7 @@ public class GeneralLedgerActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckPeriod")
-    public Object getKeyblckPeriod() {
+    public String getKeyblckPeriod() {
         return keyblckPeriod;
     }
 
@@ -223,11 +223,11 @@ public class GeneralLedgerActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckPeriod")
-    public void setKeyblckPeriod(Object keyblckPeriod) {
+    public void setKeyblckPeriod(String keyblckPeriod) {
         this.keyblckPeriod = keyblckPeriod;
     }
 
-    public GeneralLedgerActivity100GetRequest withKeyblckPeriod(Object keyblckPeriod) {
+    public GeneralLedgerActivity100GetRequest withKeyblckPeriod(String keyblckPeriod) {
         this.keyblckPeriod = keyblckPeriod;
         return this;
     }
@@ -240,7 +240,7 @@ public class GeneralLedgerActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckFsyrCode")
-    public Object getKeyblckFsyrCode() {
+    public String getKeyblckFsyrCode() {
         return keyblckFsyrCode;
     }
 
@@ -252,11 +252,11 @@ public class GeneralLedgerActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckFsyrCode")
-    public void setKeyblckFsyrCode(Object keyblckFsyrCode) {
+    public void setKeyblckFsyrCode(String keyblckFsyrCode) {
         this.keyblckFsyrCode = keyblckFsyrCode;
     }
 
-    public GeneralLedgerActivity100GetRequest withKeyblckFsyrCode(Object keyblckFsyrCode) {
+    public GeneralLedgerActivity100GetRequest withKeyblckFsyrCode(String keyblckFsyrCode) {
         this.keyblckFsyrCode = keyblckFsyrCode;
         return this;
     }
@@ -268,7 +268,7 @@ public class GeneralLedgerActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckAcciCode")
-    public Object getKeyblckAcciCode() {
+    public String getKeyblckAcciCode() {
         return keyblckAcciCode;
     }
 
@@ -279,11 +279,11 @@ public class GeneralLedgerActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckAcciCode")
-    public void setKeyblckAcciCode(Object keyblckAcciCode) {
+    public void setKeyblckAcciCode(String keyblckAcciCode) {
         this.keyblckAcciCode = keyblckAcciCode;
     }
 
-    public GeneralLedgerActivity100GetRequest withKeyblckAcciCode(Object keyblckAcciCode) {
+    public GeneralLedgerActivity100GetRequest withKeyblckAcciCode(String keyblckAcciCode) {
         this.keyblckAcciCode = keyblckAcciCode;
         return this;
     }
@@ -295,7 +295,7 @@ public class GeneralLedgerActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckAcctCode")
-    public Object getKeyblckAcctCode() {
+    public String getKeyblckAcctCode() {
         return keyblckAcctCode;
     }
 
@@ -306,11 +306,11 @@ public class GeneralLedgerActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckAcctCode")
-    public void setKeyblckAcctCode(Object keyblckAcctCode) {
+    public void setKeyblckAcctCode(String keyblckAcctCode) {
         this.keyblckAcctCode = keyblckAcctCode;
     }
 
-    public GeneralLedgerActivity100GetRequest withKeyblckAcctCode(Object keyblckAcctCode) {
+    public GeneralLedgerActivity100GetRequest withKeyblckAcctCode(String keyblckAcctCode) {
         this.keyblckAcctCode = keyblckAcctCode;
         return this;
     }

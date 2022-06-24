@@ -67,7 +67,7 @@ public class GrantBudget100PutRequest {
      */
     @JsonProperty("displayGrntBudgCode")
     @JsonPropertyDescription("Lineage reference object : displayGrntBudgCode, Lookup lineage reference object : frbbudg")
-    private Object displayGrntBudgCode;
+    private String displayGrntBudgCode;
     /**
      * Transaction Date
      * <p>
@@ -105,7 +105,7 @@ public class GrantBudget100PutRequest {
      */
     @JsonProperty("displayGrntCode")
     @JsonPropertyDescription("Lineage reference object : displayGrntCode")
-    private Object displayGrntCode;
+    private String displayGrntCode;
     /**
      * Fund
      * <p>
@@ -236,7 +236,7 @@ public class GrantBudget100PutRequest {
      * 
      */
     @JsonProperty("displayGrntBudgCode")
-    public Object getDisplayGrntBudgCode() {
+    public String getDisplayGrntBudgCode() {
         return displayGrntBudgCode;
     }
 
@@ -247,11 +247,11 @@ public class GrantBudget100PutRequest {
      * 
      */
     @JsonProperty("displayGrntBudgCode")
-    public void setDisplayGrntBudgCode(Object displayGrntBudgCode) {
+    public void setDisplayGrntBudgCode(String displayGrntBudgCode) {
         this.displayGrntBudgCode = displayGrntBudgCode;
     }
 
-    public GrantBudget100PutRequest withDisplayGrntBudgCode(Object displayGrntBudgCode) {
+    public GrantBudget100PutRequest withDisplayGrntBudgCode(String displayGrntBudgCode) {
         this.displayGrntBudgCode = displayGrntBudgCode;
         return this;
     }
@@ -348,7 +348,7 @@ public class GrantBudget100PutRequest {
      * 
      */
     @JsonProperty("displayGrntCode")
-    public Object getDisplayGrntCode() {
+    public String getDisplayGrntCode() {
         return displayGrntCode;
     }
 
@@ -359,11 +359,11 @@ public class GrantBudget100PutRequest {
      * 
      */
     @JsonProperty("displayGrntCode")
-    public void setDisplayGrntCode(Object displayGrntCode) {
+    public void setDisplayGrntCode(String displayGrntCode) {
         this.displayGrntCode = displayGrntCode;
     }
 
-    public GrantBudget100PutRequest withDisplayGrntCode(Object displayGrntCode) {
+    public GrantBudget100PutRequest withDisplayGrntCode(String displayGrntCode) {
         this.displayGrntCode = displayGrntCode;
         return this;
     }

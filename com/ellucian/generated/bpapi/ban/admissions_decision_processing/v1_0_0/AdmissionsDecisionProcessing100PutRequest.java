@@ -31,7 +31,7 @@ public class AdmissionsDecisionProcessing100PutRequest {
      */
     @JsonProperty("keyblocTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCode;
+    private String keyblocTermCode;
     /**
      * Decision Date
      * <p>
@@ -50,7 +50,7 @@ public class AdmissionsDecisionProcessing100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Decision Code
      * <p>
@@ -71,7 +71,7 @@ public class AdmissionsDecisionProcessing100PutRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public Object getKeyblocTermCode() {
+    public String getKeyblocTermCode() {
         return keyblocTermCode;
     }
 
@@ -82,11 +82,11 @@ public class AdmissionsDecisionProcessing100PutRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public void setKeyblocTermCode(Object keyblocTermCode) {
+    public void setKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
     }
 
-    public AdmissionsDecisionProcessing100PutRequest withKeyblocTermCode(Object keyblocTermCode) {
+    public AdmissionsDecisionProcessing100PutRequest withKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
         return this;
     }
@@ -127,7 +127,7 @@ public class AdmissionsDecisionProcessing100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -138,11 +138,11 @@ public class AdmissionsDecisionProcessing100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public AdmissionsDecisionProcessing100PutRequest withId(Object id) {
+    public AdmissionsDecisionProcessing100PutRequest withId(String id) {
         this.id = id;
         return this;
     }

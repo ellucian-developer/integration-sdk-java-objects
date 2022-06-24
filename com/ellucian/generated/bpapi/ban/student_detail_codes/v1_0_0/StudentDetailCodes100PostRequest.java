@@ -92,7 +92,6 @@ public class StudentDetailCodes100PostRequest {
     private String bFundCode;
     /**
      * Lookup lineage reference object : gtvcurr
-     * (Required)
      * 
      */
     @JsonProperty("currCode")
@@ -660,7 +659,6 @@ public class StudentDetailCodes100PostRequest {
 
     /**
      * Lookup lineage reference object : gtvcurr
-     * (Required)
      * 
      */
     @JsonProperty("currCode")
@@ -670,7 +668,6 @@ public class StudentDetailCodes100PostRequest {
 
     /**
      * Lookup lineage reference object : gtvcurr
-     * (Required)
      * 
      */
     @JsonProperty("currCode")

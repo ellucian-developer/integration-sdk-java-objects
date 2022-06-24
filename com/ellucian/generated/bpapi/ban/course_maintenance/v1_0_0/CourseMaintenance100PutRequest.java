@@ -21,68 +21,50 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "crseTitle",
     "criteria.seqNumb",
     "criteria.crseNumb",
-    "criteria.campCodeDesc",
-    "divsDesc",
     "criteria.subjCode",
-    "criteria.subjCodeDesc",
     "criteria.collCode",
+    "gchgCode",
     "criteria.regStartDate",
-    "schdCode",
     "sessCode",
-    "criteria.repeatDesc",
-    "campCode",
-    "campCodeDesc",
-    "numberOfExtensions",
-    "deptDesc",
+    "criteria.grdeCodeIncmpFinal",
     "id",
     "courseComment",
-    "criteria.schdCodeDesc",
-    "criteria.sessDesc",
-    "regStartDate",
-    "criteria.repeatSysInd",
+    "criteria.grdeCodeFinal",
     "stspKeySequence",
-    "criteria.ptrmCodeDesc",
     "criteria.ptrmCode",
-    "subjCode",
     "keyblckTermCode",
     "criteria.divsCode",
     "criteria.schdCode",
-    "crseNumb",
-    "ptrmCode",
-    "subjCodeDesc",
+    "criteria.creditHours",
+    "primaryLevlInd",
+    "gcmtCode",
+    "incompleteExtDate",
     "repeatCourseInd",
     "criteria.courseComment",
-    "seqNumb",
     "longCourseTitle",
-    "ceuInd",
-    "ptrmCodeDesc",
     "criteria.crseTitle",
     "criteria.ceuInd",
     "divsCode",
     "collCode",
-    "criteria.numberOfExtensions",
+    "criteria.gcmtCode",
     "deptCode",
     "criteria.ptrmStartDate",
+    "keyblckValidationCheck",
     "criteria.campCode",
     "criteria.deptCode",
-    "sessDesc",
     "criteria.regCompletionDate",
-    "regCompletionDate",
-    "repeatSysInd",
-    "collDesc",
-    "repeatDesc",
-    "crn",
+    "criteria.gchgCode",
+    "criteria.incompleteExtDate",
+    "criteria.finalGrdeChgDate",
     "ptrmStartDate",
+    "criteria.hoursAttempted",
     "criteria.sessCode",
     "contHr",
-    "schdCodeDesc",
     "criteria.stspKeySequence",
-    "criteria.collDesc",
-    "criteria.deptDesc",
-    "criteria.divsDesc",
     "criteria.crn",
     "criteria.ptrmEndDate",
-    "ptrmEndDate"
+    "ptrmEndDate",
+    "criteria.gmodCode"
 })
 @Generated("jsonschema2pojo")
 public class CourseMaintenance100PutRequest {
@@ -142,22 +124,6 @@ public class CourseMaintenance100PutRequest {
     @JsonPropertyDescription("Lineage reference object : SHRTCKN_CRSE_NUMB, Lookup lineage reference object : scbcrky")
     private String criteriaCrseNumb;
     /**
-     * Campus Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.campCodeDesc")
-    private String criteriaCampCodeDesc;
-    /**
-     * Division Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("divsDesc")
-    private String divsDesc;
-    /**
      * Subject
      * <p>
      * Lineage reference object : SHRTCKN_SUBJ_CODE, Lookup lineage reference object : stvsubj
@@ -166,14 +132,6 @@ public class CourseMaintenance100PutRequest {
     @JsonProperty("criteria.subjCode")
     @JsonPropertyDescription("Lineage reference object : SHRTCKN_SUBJ_CODE, Lookup lineage reference object : stvsubj")
     private String criteriaSubjCode;
-    /**
-     * Subject Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.subjCodeDesc")
-    private String criteriaSubjCodeDesc;
     /**
      * College
      * <p>
@@ -184,6 +142,15 @@ public class CourseMaintenance100PutRequest {
     @JsonPropertyDescription("Lineage reference object : SHRTCKN_COLL_CODE, Lookup lineage reference object : stvcoll")
     private String criteriaCollCode;
     /**
+     * Change Reason
+     * <p>
+     * Lineage reference object : SHRTCKG_GCHG_CODE, Lookup lineage reference object : stvgchg
+     * 
+     */
+    @JsonProperty("gchgCode")
+    @JsonPropertyDescription("Lineage reference object : SHRTCKG_GCHG_CODE, Lookup lineage reference object : stvgchg")
+    private String gchgCode;
+    /**
      * Start Date
      * <p>
      * Lineage reference object : SHRTCKN_REG_START_DATE
@@ -192,15 +159,6 @@ public class CourseMaintenance100PutRequest {
     @JsonProperty("criteria.regStartDate")
     @JsonPropertyDescription("Lineage reference object : SHRTCKN_REG_START_DATE")
     private Date criteriaRegStartDate;
-    /**
-     * Schedule Type
-     * <p>
-     * Lineage reference object : SHRTCKN_SCHD_CODE, Lookup lineage reference object : stvschd,SELECT,stvschd_desc,NULL,scrschd_activity_date,FROM,stvschd,scrschd
-     * 
-     */
-    @JsonProperty("schdCode")
-    @JsonPropertyDescription("Lineage reference object : SHRTCKN_SCHD_CODE, Lookup lineage reference object : stvschd,SELECT,stvschd_desc,NULL,scrschd_activity_date,FROM,stvschd,scrschd")
-    private String schdCode;
     /**
      * Session
      * <p>
@@ -211,47 +169,14 @@ public class CourseMaintenance100PutRequest {
     @JsonPropertyDescription("Lineage reference object : SHRTCKN_SESS_CODE, Lookup lineage reference object : stvsess")
     private String sessCode;
     /**
-     * System
+     * Incomplete Final Grade
      * <p>
-     * 
+     * Lineage reference object : SHRTCKG_GRDE_CODE_INCMP_FINAL, Lookup lineage reference object : shrgrde,shrgrde
      * 
      */
-    @JsonProperty("criteria.repeatDesc")
-    private String criteriaRepeatDesc;
-    /**
-     * Campus
-     * <p>
-     * Lineage reference object : SHRTCKN_CAMP_CODE, Lookup lineage reference object : stvcamp
-     * 
-     */
-    @JsonProperty("campCode")
-    @JsonPropertyDescription("Lineage reference object : SHRTCKN_CAMP_CODE, Lookup lineage reference object : stvcamp")
-    private String campCode;
-    /**
-     * Campus Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("campCodeDesc")
-    private String campCodeDesc;
-    /**
-     * Extension
-     * <p>
-     * Lineage reference object : SHRTCKN_NUMBER_OF_EXTENSIONS
-     * 
-     */
-    @JsonProperty("numberOfExtensions")
-    @JsonPropertyDescription("Lineage reference object : SHRTCKN_NUMBER_OF_EXTENSIONS")
-    private Double numberOfExtensions;
-    /**
-     * Department Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("deptDesc")
-    private String deptDesc;
+    @JsonProperty("criteria.grdeCodeIncmpFinal")
+    @JsonPropertyDescription("Lineage reference object : SHRTCKG_GRDE_CODE_INCMP_FINAL, Lookup lineage reference object : shrgrde,shrgrde")
+    private String criteriaGrdeCodeIncmpFinal;
     /**
      * ID
      * <p>
@@ -260,7 +185,7 @@ public class CourseMaintenance100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Comment
      * <p>
@@ -271,39 +196,14 @@ public class CourseMaintenance100PutRequest {
     @JsonPropertyDescription("Lineage reference object : SHRTCKN_COURSE_COMMENT")
     private String courseComment;
     /**
-     * Schedule Type Description
+     * Grade
      * <p>
-     * 
+     * Lineage reference object : SHRTCKG_GRDE_CODE_FINAL
      * 
      */
-    @JsonProperty("criteria.schdCodeDesc")
-    private String criteriaSchdCodeDesc;
-    /**
-     * Session Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.sessDesc")
-    private String criteriaSessDesc;
-    /**
-     * Start Date
-     * <p>
-     * Lineage reference object : SHRTCKN_REG_START_DATE
-     * 
-     */
-    @JsonProperty("regStartDate")
-    @JsonPropertyDescription("Lineage reference object : SHRTCKN_REG_START_DATE")
-    private Date regStartDate;
-    /**
-     * System
-     * <p>
-     * Lineage reference object : SHRTCKN_REPEAT_SYS_IND
-     * 
-     */
-    @JsonProperty("criteria.repeatSysInd")
-    @JsonPropertyDescription("Lineage reference object : SHRTCKN_REPEAT_SYS_IND")
-    private String criteriaRepeatSysInd;
+    @JsonProperty("criteria.grdeCodeFinal")
+    @JsonPropertyDescription("Lineage reference object : SHRTCKG_GRDE_CODE_FINAL")
+    private String criteriaGrdeCodeFinal;
     /**
      * Study Path
      * <p>
@@ -314,14 +214,6 @@ public class CourseMaintenance100PutRequest {
     @JsonPropertyDescription("Lineage reference object : SHRTCKN_STSP_KEY_SEQUENCE, Lookup lineage reference object : SGVSTSP,SGRSTSP")
     private Double stspKeySequence;
     /**
-     * Part of Term Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.ptrmCodeDesc")
-    private String criteriaPtrmCodeDesc;
-    /**
      * Part of Term
      * <p>
      * Lineage reference object : SHRTCKN_PTRM_CODE, Lookup lineage reference object : stvptrm
@@ -331,15 +223,6 @@ public class CourseMaintenance100PutRequest {
     @JsonPropertyDescription("Lineage reference object : SHRTCKN_PTRM_CODE, Lookup lineage reference object : stvptrm")
     private String criteriaPtrmCode;
     /**
-     * Subject
-     * <p>
-     * Lineage reference object : SHRTCKN_SUBJ_CODE, Lookup lineage reference object : stvsubj
-     * 
-     */
-    @JsonProperty("subjCode")
-    @JsonPropertyDescription("Lineage reference object : SHRTCKN_SUBJ_CODE, Lookup lineage reference object : stvsubj")
-    private String subjCode;
-    /**
      * Term
      * <p>
      * Lineage reference object : keyblckTermCode, Lookup lineage reference object : stvterm
@@ -347,7 +230,7 @@ public class CourseMaintenance100PutRequest {
      */
     @JsonProperty("keyblckTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblckTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblckTermCode;
+    private String keyblckTermCode;
     /**
      * Division
      * <p>
@@ -367,31 +250,39 @@ public class CourseMaintenance100PutRequest {
     @JsonPropertyDescription("Lineage reference object : SHRTCKN_SCHD_CODE, Lookup lineage reference object : stvschd,SELECT,stvschd_desc,NULL,scrschd_activity_date,FROM,stvschd,scrschd")
     private String criteriaSchdCode;
     /**
-     * Course
+     * Credit Hours
      * <p>
-     * Lineage reference object : SHRTCKN_CRSE_NUMB, Lookup lineage reference object : scbcrky
+     * Lineage reference object : SHRTCKG_CREDIT_HOURS
      * 
      */
-    @JsonProperty("crseNumb")
-    @JsonPropertyDescription("Lineage reference object : SHRTCKN_CRSE_NUMB, Lookup lineage reference object : scbcrky")
-    private String crseNumb;
+    @JsonProperty("criteria.creditHours")
+    @JsonPropertyDescription("Lineage reference object : SHRTCKG_CREDIT_HOURS")
+    private Double criteriaCreditHours;
     /**
-     * Part of Term
-     * <p>
-     * Lineage reference object : SHRTCKN_PTRM_CODE, Lookup lineage reference object : stvptrm
+     * Lineage reference object : SHRTCKL_PRIMARY_LEVL_IND
      * 
      */
-    @JsonProperty("ptrmCode")
-    @JsonPropertyDescription("Lineage reference object : SHRTCKN_PTRM_CODE, Lookup lineage reference object : stvptrm")
-    private String ptrmCode;
+    @JsonProperty("primaryLevlInd")
+    @JsonPropertyDescription("Lineage reference object : SHRTCKL_PRIMARY_LEVL_IND")
+    private String primaryLevlInd;
     /**
-     * Subject Description
+     * Grade Comment
      * <p>
-     * 
+     * Lineage reference object : SHRTCKG_GCMT_CODE, Lookup lineage reference object : stvgcmt
      * 
      */
-    @JsonProperty("subjCodeDesc")
-    private String subjCodeDesc;
+    @JsonProperty("gcmtCode")
+    @JsonPropertyDescription("Lineage reference object : SHRTCKG_GCMT_CODE, Lookup lineage reference object : stvgcmt")
+    private String gcmtCode;
+    /**
+     * Extension Date
+     * <p>
+     * Lineage reference object : SHRTCKG_INCOMPLETE_EXT_DATE
+     * 
+     */
+    @JsonProperty("incompleteExtDate")
+    @JsonPropertyDescription("Lineage reference object : SHRTCKG_INCOMPLETE_EXT_DATE")
+    private Date incompleteExtDate;
     /**
      * Repeat
      * <p>
@@ -411,15 +302,6 @@ public class CourseMaintenance100PutRequest {
     @JsonPropertyDescription("Lineage reference object : SHRTCKN_COURSE_COMMENT")
     private String criteriaCourseComment;
     /**
-     * Section
-     * <p>
-     * Lineage reference object : SHRTCKN_SEQ_NUMB
-     * 
-     */
-    @JsonProperty("seqNumb")
-    @JsonPropertyDescription("Lineage reference object : SHRTCKN_SEQ_NUMB")
-    private String seqNumb;
-    /**
      * Long Course Title
      * <p>
      * Lineage reference object : SHRTCKN_LONG_COURSE_TITLE
@@ -428,22 +310,6 @@ public class CourseMaintenance100PutRequest {
     @JsonProperty("longCourseTitle")
     @JsonPropertyDescription("Lineage reference object : SHRTCKN_LONG_COURSE_TITLE")
     private String longCourseTitle;
-    /**
-     * Continuing Education Units
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("ceuInd")
-    private String ceuInd;
-    /**
-     * Part of Term Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("ptrmCodeDesc")
-    private String ptrmCodeDesc;
     /**
      * Course Title
      * <p>
@@ -480,14 +346,14 @@ public class CourseMaintenance100PutRequest {
     @JsonPropertyDescription("Lineage reference object : SHRTCKN_COLL_CODE, Lookup lineage reference object : stvcoll")
     private String collCode;
     /**
-     * Extension
+     * Grade Comment
      * <p>
-     * Lineage reference object : SHRTCKN_NUMBER_OF_EXTENSIONS
+     * Lineage reference object : SHRTCKG_GCMT_CODE, Lookup lineage reference object : stvgcmt
      * 
      */
-    @JsonProperty("criteria.numberOfExtensions")
-    @JsonPropertyDescription("Lineage reference object : SHRTCKN_NUMBER_OF_EXTENSIONS")
-    private Double criteriaNumberOfExtensions;
+    @JsonProperty("criteria.gcmtCode")
+    @JsonPropertyDescription("Lineage reference object : SHRTCKG_GCMT_CODE, Lookup lineage reference object : stvgcmt")
+    private String criteriaGcmtCode;
     /**
      * Department
      * <p>
@@ -507,6 +373,15 @@ public class CourseMaintenance100PutRequest {
     @JsonPropertyDescription("Lineage reference object : SHRTCKN_PTRM_START_DATE")
     private Date criteriaPtrmStartDate;
     /**
+     * Validation Check
+     * <p>
+     * Lineage reference object : keyblckValidationCheck
+     * 
+     */
+    @JsonProperty("keyblckValidationCheck")
+    @JsonPropertyDescription("Lineage reference object : keyblckValidationCheck")
+    private String keyblckValidationCheck;
+    /**
      * Campus
      * <p>
      * Lineage reference object : SHRTCKN_CAMP_CODE, Lookup lineage reference object : stvcamp
@@ -525,14 +400,6 @@ public class CourseMaintenance100PutRequest {
     @JsonPropertyDescription("Lineage reference object : SHRTCKN_DEPT_CODE, Lookup lineage reference object : stvdept")
     private String criteriaDeptCode;
     /**
-     * Session Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("sessDesc")
-    private String sessDesc;
-    /**
      * End Date
      * <p>
      * Lineage reference object : SHRTCKN_REG_COMPLETION_DATE
@@ -542,48 +409,32 @@ public class CourseMaintenance100PutRequest {
     @JsonPropertyDescription("Lineage reference object : SHRTCKN_REG_COMPLETION_DATE")
     private Date criteriaRegCompletionDate;
     /**
-     * End Date
+     * Change Reason
      * <p>
-     * Lineage reference object : SHRTCKN_REG_COMPLETION_DATE
+     * Lineage reference object : SHRTCKG_GCHG_CODE, Lookup lineage reference object : stvgchg
      * 
      */
-    @JsonProperty("regCompletionDate")
-    @JsonPropertyDescription("Lineage reference object : SHRTCKN_REG_COMPLETION_DATE")
-    private Date regCompletionDate;
+    @JsonProperty("criteria.gchgCode")
+    @JsonPropertyDescription("Lineage reference object : SHRTCKG_GCHG_CODE, Lookup lineage reference object : stvgchg")
+    private String criteriaGchgCode;
     /**
-     * System
+     * Extension Date
      * <p>
-     * Lineage reference object : SHRTCKN_REPEAT_SYS_IND
+     * Lineage reference object : SHRTCKG_INCOMPLETE_EXT_DATE
      * 
      */
-    @JsonProperty("repeatSysInd")
-    @JsonPropertyDescription("Lineage reference object : SHRTCKN_REPEAT_SYS_IND")
-    private String repeatSysInd;
+    @JsonProperty("criteria.incompleteExtDate")
+    @JsonPropertyDescription("Lineage reference object : SHRTCKG_INCOMPLETE_EXT_DATE")
+    private Date criteriaIncompleteExtDate;
     /**
-     * College Description
+     * Grade Date
      * <p>
-     * 
+     * Lineage reference object : SHRTCKG_FINAL_GRDE_CHG_DATE
      * 
      */
-    @JsonProperty("collDesc")
-    private String collDesc;
-    /**
-     * System
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("repeatDesc")
-    private String repeatDesc;
-    /**
-     * CRN
-     * <p>
-     * Lineage reference object : SHRTCKN_CRN
-     * 
-     */
-    @JsonProperty("crn")
-    @JsonPropertyDescription("Lineage reference object : SHRTCKN_CRN")
-    private String crn;
+    @JsonProperty("criteria.finalGrdeChgDate")
+    @JsonPropertyDescription("Lineage reference object : SHRTCKG_FINAL_GRDE_CHG_DATE")
+    private Date criteriaFinalGrdeChgDate;
     /**
      * Part of Term Start Date
      * <p>
@@ -593,6 +444,15 @@ public class CourseMaintenance100PutRequest {
     @JsonProperty("ptrmStartDate")
     @JsonPropertyDescription("Lineage reference object : SHRTCKN_PTRM_START_DATE")
     private Date ptrmStartDate;
+    /**
+     * Attempted Hours
+     * <p>
+     * Lineage reference object : SHRTCKG_HOURS_ATTEMPTED
+     * 
+     */
+    @JsonProperty("criteria.hoursAttempted")
+    @JsonPropertyDescription("Lineage reference object : SHRTCKG_HOURS_ATTEMPTED")
+    private Double criteriaHoursAttempted;
     /**
      * Session
      * <p>
@@ -612,14 +472,6 @@ public class CourseMaintenance100PutRequest {
     @JsonPropertyDescription("Lineage reference object : SHRTCKN_CONT_HR")
     private Double contHr;
     /**
-     * Schedule Type Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("schdCodeDesc")
-    private String schdCodeDesc;
-    /**
      * Study Path
      * <p>
      * Lineage reference object : SHRTCKN_STSP_KEY_SEQUENCE, Lookup lineage reference object : SGVSTSP,SGRSTSP
@@ -628,30 +480,6 @@ public class CourseMaintenance100PutRequest {
     @JsonProperty("criteria.stspKeySequence")
     @JsonPropertyDescription("Lineage reference object : SHRTCKN_STSP_KEY_SEQUENCE, Lookup lineage reference object : SGVSTSP,SGRSTSP")
     private Double criteriaStspKeySequence;
-    /**
-     * College Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.collDesc")
-    private String criteriaCollDesc;
-    /**
-     * Department Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.deptDesc")
-    private String criteriaDeptDesc;
-    /**
-     * Division Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.divsDesc")
-    private String criteriaDivsDesc;
     /**
      * CRN
      * <p>
@@ -679,6 +507,15 @@ public class CourseMaintenance100PutRequest {
     @JsonProperty("ptrmEndDate")
     @JsonPropertyDescription("Lineage reference object : SHRTCKN_PTRM_END_DATE")
     private Date ptrmEndDate;
+    /**
+     * Grade Mode
+     * <p>
+     * Lineage reference object : SHRTCKG_GMOD_CODE
+     * 
+     */
+    @JsonProperty("criteria.gmodCode")
+    @JsonPropertyDescription("Lineage reference object : SHRTCKG_GMOD_CODE")
+    private String criteriaGmodCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -845,60 +682,6 @@ public class CourseMaintenance100PutRequest {
     }
 
     /**
-     * Campus Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.campCodeDesc")
-    public String getCriteriaCampCodeDesc() {
-        return criteriaCampCodeDesc;
-    }
-
-    /**
-     * Campus Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.campCodeDesc")
-    public void setCriteriaCampCodeDesc(String criteriaCampCodeDesc) {
-        this.criteriaCampCodeDesc = criteriaCampCodeDesc;
-    }
-
-    public CourseMaintenance100PutRequest withCriteriaCampCodeDesc(String criteriaCampCodeDesc) {
-        this.criteriaCampCodeDesc = criteriaCampCodeDesc;
-        return this;
-    }
-
-    /**
-     * Division Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("divsDesc")
-    public String getDivsDesc() {
-        return divsDesc;
-    }
-
-    /**
-     * Division Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("divsDesc")
-    public void setDivsDesc(String divsDesc) {
-        this.divsDesc = divsDesc;
-    }
-
-    public CourseMaintenance100PutRequest withDivsDesc(String divsDesc) {
-        this.divsDesc = divsDesc;
-        return this;
-    }
-
-    /**
      * Subject
      * <p>
      * Lineage reference object : SHRTCKN_SUBJ_CODE, Lookup lineage reference object : stvsubj
@@ -922,33 +705,6 @@ public class CourseMaintenance100PutRequest {
 
     public CourseMaintenance100PutRequest withCriteriaSubjCode(String criteriaSubjCode) {
         this.criteriaSubjCode = criteriaSubjCode;
-        return this;
-    }
-
-    /**
-     * Subject Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.subjCodeDesc")
-    public String getCriteriaSubjCodeDesc() {
-        return criteriaSubjCodeDesc;
-    }
-
-    /**
-     * Subject Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.subjCodeDesc")
-    public void setCriteriaSubjCodeDesc(String criteriaSubjCodeDesc) {
-        this.criteriaSubjCodeDesc = criteriaSubjCodeDesc;
-    }
-
-    public CourseMaintenance100PutRequest withCriteriaSubjCodeDesc(String criteriaSubjCodeDesc) {
-        this.criteriaSubjCodeDesc = criteriaSubjCodeDesc;
         return this;
     }
 
@@ -980,6 +736,33 @@ public class CourseMaintenance100PutRequest {
     }
 
     /**
+     * Change Reason
+     * <p>
+     * Lineage reference object : SHRTCKG_GCHG_CODE, Lookup lineage reference object : stvgchg
+     * 
+     */
+    @JsonProperty("gchgCode")
+    public String getGchgCode() {
+        return gchgCode;
+    }
+
+    /**
+     * Change Reason
+     * <p>
+     * Lineage reference object : SHRTCKG_GCHG_CODE, Lookup lineage reference object : stvgchg
+     * 
+     */
+    @JsonProperty("gchgCode")
+    public void setGchgCode(String gchgCode) {
+        this.gchgCode = gchgCode;
+    }
+
+    public CourseMaintenance100PutRequest withGchgCode(String gchgCode) {
+        this.gchgCode = gchgCode;
+        return this;
+    }
+
+    /**
      * Start Date
      * <p>
      * Lineage reference object : SHRTCKN_REG_START_DATE
@@ -1003,33 +786,6 @@ public class CourseMaintenance100PutRequest {
 
     public CourseMaintenance100PutRequest withCriteriaRegStartDate(Date criteriaRegStartDate) {
         this.criteriaRegStartDate = criteriaRegStartDate;
-        return this;
-    }
-
-    /**
-     * Schedule Type
-     * <p>
-     * Lineage reference object : SHRTCKN_SCHD_CODE, Lookup lineage reference object : stvschd,SELECT,stvschd_desc,NULL,scrschd_activity_date,FROM,stvschd,scrschd
-     * 
-     */
-    @JsonProperty("schdCode")
-    public String getSchdCode() {
-        return schdCode;
-    }
-
-    /**
-     * Schedule Type
-     * <p>
-     * Lineage reference object : SHRTCKN_SCHD_CODE, Lookup lineage reference object : stvschd,SELECT,stvschd_desc,NULL,scrschd_activity_date,FROM,stvschd,scrschd
-     * 
-     */
-    @JsonProperty("schdCode")
-    public void setSchdCode(String schdCode) {
-        this.schdCode = schdCode;
-    }
-
-    public CourseMaintenance100PutRequest withSchdCode(String schdCode) {
-        this.schdCode = schdCode;
         return this;
     }
 
@@ -1061,137 +817,29 @@ public class CourseMaintenance100PutRequest {
     }
 
     /**
-     * System
+     * Incomplete Final Grade
      * <p>
-     * 
+     * Lineage reference object : SHRTCKG_GRDE_CODE_INCMP_FINAL, Lookup lineage reference object : shrgrde,shrgrde
      * 
      */
-    @JsonProperty("criteria.repeatDesc")
-    public String getCriteriaRepeatDesc() {
-        return criteriaRepeatDesc;
+    @JsonProperty("criteria.grdeCodeIncmpFinal")
+    public String getCriteriaGrdeCodeIncmpFinal() {
+        return criteriaGrdeCodeIncmpFinal;
     }
 
     /**
-     * System
+     * Incomplete Final Grade
      * <p>
-     * 
+     * Lineage reference object : SHRTCKG_GRDE_CODE_INCMP_FINAL, Lookup lineage reference object : shrgrde,shrgrde
      * 
      */
-    @JsonProperty("criteria.repeatDesc")
-    public void setCriteriaRepeatDesc(String criteriaRepeatDesc) {
-        this.criteriaRepeatDesc = criteriaRepeatDesc;
+    @JsonProperty("criteria.grdeCodeIncmpFinal")
+    public void setCriteriaGrdeCodeIncmpFinal(String criteriaGrdeCodeIncmpFinal) {
+        this.criteriaGrdeCodeIncmpFinal = criteriaGrdeCodeIncmpFinal;
     }
 
-    public CourseMaintenance100PutRequest withCriteriaRepeatDesc(String criteriaRepeatDesc) {
-        this.criteriaRepeatDesc = criteriaRepeatDesc;
-        return this;
-    }
-
-    /**
-     * Campus
-     * <p>
-     * Lineage reference object : SHRTCKN_CAMP_CODE, Lookup lineage reference object : stvcamp
-     * 
-     */
-    @JsonProperty("campCode")
-    public String getCampCode() {
-        return campCode;
-    }
-
-    /**
-     * Campus
-     * <p>
-     * Lineage reference object : SHRTCKN_CAMP_CODE, Lookup lineage reference object : stvcamp
-     * 
-     */
-    @JsonProperty("campCode")
-    public void setCampCode(String campCode) {
-        this.campCode = campCode;
-    }
-
-    public CourseMaintenance100PutRequest withCampCode(String campCode) {
-        this.campCode = campCode;
-        return this;
-    }
-
-    /**
-     * Campus Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("campCodeDesc")
-    public String getCampCodeDesc() {
-        return campCodeDesc;
-    }
-
-    /**
-     * Campus Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("campCodeDesc")
-    public void setCampCodeDesc(String campCodeDesc) {
-        this.campCodeDesc = campCodeDesc;
-    }
-
-    public CourseMaintenance100PutRequest withCampCodeDesc(String campCodeDesc) {
-        this.campCodeDesc = campCodeDesc;
-        return this;
-    }
-
-    /**
-     * Extension
-     * <p>
-     * Lineage reference object : SHRTCKN_NUMBER_OF_EXTENSIONS
-     * 
-     */
-    @JsonProperty("numberOfExtensions")
-    public Double getNumberOfExtensions() {
-        return numberOfExtensions;
-    }
-
-    /**
-     * Extension
-     * <p>
-     * Lineage reference object : SHRTCKN_NUMBER_OF_EXTENSIONS
-     * 
-     */
-    @JsonProperty("numberOfExtensions")
-    public void setNumberOfExtensions(Double numberOfExtensions) {
-        this.numberOfExtensions = numberOfExtensions;
-    }
-
-    public CourseMaintenance100PutRequest withNumberOfExtensions(Double numberOfExtensions) {
-        this.numberOfExtensions = numberOfExtensions;
-        return this;
-    }
-
-    /**
-     * Department Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("deptDesc")
-    public String getDeptDesc() {
-        return deptDesc;
-    }
-
-    /**
-     * Department Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("deptDesc")
-    public void setDeptDesc(String deptDesc) {
-        this.deptDesc = deptDesc;
-    }
-
-    public CourseMaintenance100PutRequest withDeptDesc(String deptDesc) {
-        this.deptDesc = deptDesc;
+    public CourseMaintenance100PutRequest withCriteriaGrdeCodeIncmpFinal(String criteriaGrdeCodeIncmpFinal) {
+        this.criteriaGrdeCodeIncmpFinal = criteriaGrdeCodeIncmpFinal;
         return this;
     }
 
@@ -1202,7 +850,7 @@ public class CourseMaintenance100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -1213,11 +861,11 @@ public class CourseMaintenance100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public CourseMaintenance100PutRequest withId(Object id) {
+    public CourseMaintenance100PutRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -1250,110 +898,29 @@ public class CourseMaintenance100PutRequest {
     }
 
     /**
-     * Schedule Type Description
+     * Grade
      * <p>
-     * 
+     * Lineage reference object : SHRTCKG_GRDE_CODE_FINAL
      * 
      */
-    @JsonProperty("criteria.schdCodeDesc")
-    public String getCriteriaSchdCodeDesc() {
-        return criteriaSchdCodeDesc;
+    @JsonProperty("criteria.grdeCodeFinal")
+    public String getCriteriaGrdeCodeFinal() {
+        return criteriaGrdeCodeFinal;
     }
 
     /**
-     * Schedule Type Description
+     * Grade
      * <p>
-     * 
+     * Lineage reference object : SHRTCKG_GRDE_CODE_FINAL
      * 
      */
-    @JsonProperty("criteria.schdCodeDesc")
-    public void setCriteriaSchdCodeDesc(String criteriaSchdCodeDesc) {
-        this.criteriaSchdCodeDesc = criteriaSchdCodeDesc;
+    @JsonProperty("criteria.grdeCodeFinal")
+    public void setCriteriaGrdeCodeFinal(String criteriaGrdeCodeFinal) {
+        this.criteriaGrdeCodeFinal = criteriaGrdeCodeFinal;
     }
 
-    public CourseMaintenance100PutRequest withCriteriaSchdCodeDesc(String criteriaSchdCodeDesc) {
-        this.criteriaSchdCodeDesc = criteriaSchdCodeDesc;
-        return this;
-    }
-
-    /**
-     * Session Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.sessDesc")
-    public String getCriteriaSessDesc() {
-        return criteriaSessDesc;
-    }
-
-    /**
-     * Session Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.sessDesc")
-    public void setCriteriaSessDesc(String criteriaSessDesc) {
-        this.criteriaSessDesc = criteriaSessDesc;
-    }
-
-    public CourseMaintenance100PutRequest withCriteriaSessDesc(String criteriaSessDesc) {
-        this.criteriaSessDesc = criteriaSessDesc;
-        return this;
-    }
-
-    /**
-     * Start Date
-     * <p>
-     * Lineage reference object : SHRTCKN_REG_START_DATE
-     * 
-     */
-    @JsonProperty("regStartDate")
-    public Date getRegStartDate() {
-        return regStartDate;
-    }
-
-    /**
-     * Start Date
-     * <p>
-     * Lineage reference object : SHRTCKN_REG_START_DATE
-     * 
-     */
-    @JsonProperty("regStartDate")
-    public void setRegStartDate(Date regStartDate) {
-        this.regStartDate = regStartDate;
-    }
-
-    public CourseMaintenance100PutRequest withRegStartDate(Date regStartDate) {
-        this.regStartDate = regStartDate;
-        return this;
-    }
-
-    /**
-     * System
-     * <p>
-     * Lineage reference object : SHRTCKN_REPEAT_SYS_IND
-     * 
-     */
-    @JsonProperty("criteria.repeatSysInd")
-    public String getCriteriaRepeatSysInd() {
-        return criteriaRepeatSysInd;
-    }
-
-    /**
-     * System
-     * <p>
-     * Lineage reference object : SHRTCKN_REPEAT_SYS_IND
-     * 
-     */
-    @JsonProperty("criteria.repeatSysInd")
-    public void setCriteriaRepeatSysInd(String criteriaRepeatSysInd) {
-        this.criteriaRepeatSysInd = criteriaRepeatSysInd;
-    }
-
-    public CourseMaintenance100PutRequest withCriteriaRepeatSysInd(String criteriaRepeatSysInd) {
-        this.criteriaRepeatSysInd = criteriaRepeatSysInd;
+    public CourseMaintenance100PutRequest withCriteriaGrdeCodeFinal(String criteriaGrdeCodeFinal) {
+        this.criteriaGrdeCodeFinal = criteriaGrdeCodeFinal;
         return this;
     }
 
@@ -1385,33 +952,6 @@ public class CourseMaintenance100PutRequest {
     }
 
     /**
-     * Part of Term Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.ptrmCodeDesc")
-    public String getCriteriaPtrmCodeDesc() {
-        return criteriaPtrmCodeDesc;
-    }
-
-    /**
-     * Part of Term Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.ptrmCodeDesc")
-    public void setCriteriaPtrmCodeDesc(String criteriaPtrmCodeDesc) {
-        this.criteriaPtrmCodeDesc = criteriaPtrmCodeDesc;
-    }
-
-    public CourseMaintenance100PutRequest withCriteriaPtrmCodeDesc(String criteriaPtrmCodeDesc) {
-        this.criteriaPtrmCodeDesc = criteriaPtrmCodeDesc;
-        return this;
-    }
-
-    /**
      * Part of Term
      * <p>
      * Lineage reference object : SHRTCKN_PTRM_CODE, Lookup lineage reference object : stvptrm
@@ -1439,40 +979,13 @@ public class CourseMaintenance100PutRequest {
     }
 
     /**
-     * Subject
-     * <p>
-     * Lineage reference object : SHRTCKN_SUBJ_CODE, Lookup lineage reference object : stvsubj
-     * 
-     */
-    @JsonProperty("subjCode")
-    public String getSubjCode() {
-        return subjCode;
-    }
-
-    /**
-     * Subject
-     * <p>
-     * Lineage reference object : SHRTCKN_SUBJ_CODE, Lookup lineage reference object : stvsubj
-     * 
-     */
-    @JsonProperty("subjCode")
-    public void setSubjCode(String subjCode) {
-        this.subjCode = subjCode;
-    }
-
-    public CourseMaintenance100PutRequest withSubjCode(String subjCode) {
-        this.subjCode = subjCode;
-        return this;
-    }
-
-    /**
      * Term
      * <p>
      * Lineage reference object : keyblckTermCode, Lookup lineage reference object : stvterm
      * 
      */
     @JsonProperty("keyblckTermCode")
-    public Object getKeyblckTermCode() {
+    public String getKeyblckTermCode() {
         return keyblckTermCode;
     }
 
@@ -1483,11 +996,11 @@ public class CourseMaintenance100PutRequest {
      * 
      */
     @JsonProperty("keyblckTermCode")
-    public void setKeyblckTermCode(Object keyblckTermCode) {
+    public void setKeyblckTermCode(String keyblckTermCode) {
         this.keyblckTermCode = keyblckTermCode;
     }
 
-    public CourseMaintenance100PutRequest withKeyblckTermCode(Object keyblckTermCode) {
+    public CourseMaintenance100PutRequest withKeyblckTermCode(String keyblckTermCode) {
         this.keyblckTermCode = keyblckTermCode;
         return this;
     }
@@ -1547,83 +1060,106 @@ public class CourseMaintenance100PutRequest {
     }
 
     /**
-     * Course
+     * Credit Hours
      * <p>
-     * Lineage reference object : SHRTCKN_CRSE_NUMB, Lookup lineage reference object : scbcrky
+     * Lineage reference object : SHRTCKG_CREDIT_HOURS
      * 
      */
-    @JsonProperty("crseNumb")
-    public String getCrseNumb() {
-        return crseNumb;
+    @JsonProperty("criteria.creditHours")
+    public Double getCriteriaCreditHours() {
+        return criteriaCreditHours;
     }
 
     /**
-     * Course
+     * Credit Hours
      * <p>
-     * Lineage reference object : SHRTCKN_CRSE_NUMB, Lookup lineage reference object : scbcrky
+     * Lineage reference object : SHRTCKG_CREDIT_HOURS
      * 
      */
-    @JsonProperty("crseNumb")
-    public void setCrseNumb(String crseNumb) {
-        this.crseNumb = crseNumb;
+    @JsonProperty("criteria.creditHours")
+    public void setCriteriaCreditHours(Double criteriaCreditHours) {
+        this.criteriaCreditHours = criteriaCreditHours;
     }
 
-    public CourseMaintenance100PutRequest withCrseNumb(String crseNumb) {
-        this.crseNumb = crseNumb;
+    public CourseMaintenance100PutRequest withCriteriaCreditHours(Double criteriaCreditHours) {
+        this.criteriaCreditHours = criteriaCreditHours;
         return this;
     }
 
     /**
-     * Part of Term
-     * <p>
-     * Lineage reference object : SHRTCKN_PTRM_CODE, Lookup lineage reference object : stvptrm
+     * Lineage reference object : SHRTCKL_PRIMARY_LEVL_IND
      * 
      */
-    @JsonProperty("ptrmCode")
-    public String getPtrmCode() {
-        return ptrmCode;
+    @JsonProperty("primaryLevlInd")
+    public String getPrimaryLevlInd() {
+        return primaryLevlInd;
     }
 
     /**
-     * Part of Term
-     * <p>
-     * Lineage reference object : SHRTCKN_PTRM_CODE, Lookup lineage reference object : stvptrm
+     * Lineage reference object : SHRTCKL_PRIMARY_LEVL_IND
      * 
      */
-    @JsonProperty("ptrmCode")
-    public void setPtrmCode(String ptrmCode) {
-        this.ptrmCode = ptrmCode;
+    @JsonProperty("primaryLevlInd")
+    public void setPrimaryLevlInd(String primaryLevlInd) {
+        this.primaryLevlInd = primaryLevlInd;
     }
 
-    public CourseMaintenance100PutRequest withPtrmCode(String ptrmCode) {
-        this.ptrmCode = ptrmCode;
+    public CourseMaintenance100PutRequest withPrimaryLevlInd(String primaryLevlInd) {
+        this.primaryLevlInd = primaryLevlInd;
         return this;
     }
 
     /**
-     * Subject Description
+     * Grade Comment
      * <p>
-     * 
+     * Lineage reference object : SHRTCKG_GCMT_CODE, Lookup lineage reference object : stvgcmt
      * 
      */
-    @JsonProperty("subjCodeDesc")
-    public String getSubjCodeDesc() {
-        return subjCodeDesc;
+    @JsonProperty("gcmtCode")
+    public String getGcmtCode() {
+        return gcmtCode;
     }
 
     /**
-     * Subject Description
+     * Grade Comment
      * <p>
-     * 
+     * Lineage reference object : SHRTCKG_GCMT_CODE, Lookup lineage reference object : stvgcmt
      * 
      */
-    @JsonProperty("subjCodeDesc")
-    public void setSubjCodeDesc(String subjCodeDesc) {
-        this.subjCodeDesc = subjCodeDesc;
+    @JsonProperty("gcmtCode")
+    public void setGcmtCode(String gcmtCode) {
+        this.gcmtCode = gcmtCode;
     }
 
-    public CourseMaintenance100PutRequest withSubjCodeDesc(String subjCodeDesc) {
-        this.subjCodeDesc = subjCodeDesc;
+    public CourseMaintenance100PutRequest withGcmtCode(String gcmtCode) {
+        this.gcmtCode = gcmtCode;
+        return this;
+    }
+
+    /**
+     * Extension Date
+     * <p>
+     * Lineage reference object : SHRTCKG_INCOMPLETE_EXT_DATE
+     * 
+     */
+    @JsonProperty("incompleteExtDate")
+    public Date getIncompleteExtDate() {
+        return incompleteExtDate;
+    }
+
+    /**
+     * Extension Date
+     * <p>
+     * Lineage reference object : SHRTCKG_INCOMPLETE_EXT_DATE
+     * 
+     */
+    @JsonProperty("incompleteExtDate")
+    public void setIncompleteExtDate(Date incompleteExtDate) {
+        this.incompleteExtDate = incompleteExtDate;
+    }
+
+    public CourseMaintenance100PutRequest withIncompleteExtDate(Date incompleteExtDate) {
+        this.incompleteExtDate = incompleteExtDate;
         return this;
     }
 
@@ -1682,33 +1218,6 @@ public class CourseMaintenance100PutRequest {
     }
 
     /**
-     * Section
-     * <p>
-     * Lineage reference object : SHRTCKN_SEQ_NUMB
-     * 
-     */
-    @JsonProperty("seqNumb")
-    public String getSeqNumb() {
-        return seqNumb;
-    }
-
-    /**
-     * Section
-     * <p>
-     * Lineage reference object : SHRTCKN_SEQ_NUMB
-     * 
-     */
-    @JsonProperty("seqNumb")
-    public void setSeqNumb(String seqNumb) {
-        this.seqNumb = seqNumb;
-    }
-
-    public CourseMaintenance100PutRequest withSeqNumb(String seqNumb) {
-        this.seqNumb = seqNumb;
-        return this;
-    }
-
-    /**
      * Long Course Title
      * <p>
      * Lineage reference object : SHRTCKN_LONG_COURSE_TITLE
@@ -1732,60 +1241,6 @@ public class CourseMaintenance100PutRequest {
 
     public CourseMaintenance100PutRequest withLongCourseTitle(String longCourseTitle) {
         this.longCourseTitle = longCourseTitle;
-        return this;
-    }
-
-    /**
-     * Continuing Education Units
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("ceuInd")
-    public String getCeuInd() {
-        return ceuInd;
-    }
-
-    /**
-     * Continuing Education Units
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("ceuInd")
-    public void setCeuInd(String ceuInd) {
-        this.ceuInd = ceuInd;
-    }
-
-    public CourseMaintenance100PutRequest withCeuInd(String ceuInd) {
-        this.ceuInd = ceuInd;
-        return this;
-    }
-
-    /**
-     * Part of Term Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("ptrmCodeDesc")
-    public String getPtrmCodeDesc() {
-        return ptrmCodeDesc;
-    }
-
-    /**
-     * Part of Term Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("ptrmCodeDesc")
-    public void setPtrmCodeDesc(String ptrmCodeDesc) {
-        this.ptrmCodeDesc = ptrmCodeDesc;
-    }
-
-    public CourseMaintenance100PutRequest withPtrmCodeDesc(String ptrmCodeDesc) {
-        this.ptrmCodeDesc = ptrmCodeDesc;
         return this;
     }
 
@@ -1898,29 +1353,29 @@ public class CourseMaintenance100PutRequest {
     }
 
     /**
-     * Extension
+     * Grade Comment
      * <p>
-     * Lineage reference object : SHRTCKN_NUMBER_OF_EXTENSIONS
+     * Lineage reference object : SHRTCKG_GCMT_CODE, Lookup lineage reference object : stvgcmt
      * 
      */
-    @JsonProperty("criteria.numberOfExtensions")
-    public Double getCriteriaNumberOfExtensions() {
-        return criteriaNumberOfExtensions;
+    @JsonProperty("criteria.gcmtCode")
+    public String getCriteriaGcmtCode() {
+        return criteriaGcmtCode;
     }
 
     /**
-     * Extension
+     * Grade Comment
      * <p>
-     * Lineage reference object : SHRTCKN_NUMBER_OF_EXTENSIONS
+     * Lineage reference object : SHRTCKG_GCMT_CODE, Lookup lineage reference object : stvgcmt
      * 
      */
-    @JsonProperty("criteria.numberOfExtensions")
-    public void setCriteriaNumberOfExtensions(Double criteriaNumberOfExtensions) {
-        this.criteriaNumberOfExtensions = criteriaNumberOfExtensions;
+    @JsonProperty("criteria.gcmtCode")
+    public void setCriteriaGcmtCode(String criteriaGcmtCode) {
+        this.criteriaGcmtCode = criteriaGcmtCode;
     }
 
-    public CourseMaintenance100PutRequest withCriteriaNumberOfExtensions(Double criteriaNumberOfExtensions) {
-        this.criteriaNumberOfExtensions = criteriaNumberOfExtensions;
+    public CourseMaintenance100PutRequest withCriteriaGcmtCode(String criteriaGcmtCode) {
+        this.criteriaGcmtCode = criteriaGcmtCode;
         return this;
     }
 
@@ -1979,6 +1434,33 @@ public class CourseMaintenance100PutRequest {
     }
 
     /**
+     * Validation Check
+     * <p>
+     * Lineage reference object : keyblckValidationCheck
+     * 
+     */
+    @JsonProperty("keyblckValidationCheck")
+    public String getKeyblckValidationCheck() {
+        return keyblckValidationCheck;
+    }
+
+    /**
+     * Validation Check
+     * <p>
+     * Lineage reference object : keyblckValidationCheck
+     * 
+     */
+    @JsonProperty("keyblckValidationCheck")
+    public void setKeyblckValidationCheck(String keyblckValidationCheck) {
+        this.keyblckValidationCheck = keyblckValidationCheck;
+    }
+
+    public CourseMaintenance100PutRequest withKeyblckValidationCheck(String keyblckValidationCheck) {
+        this.keyblckValidationCheck = keyblckValidationCheck;
+        return this;
+    }
+
+    /**
      * Campus
      * <p>
      * Lineage reference object : SHRTCKN_CAMP_CODE, Lookup lineage reference object : stvcamp
@@ -2033,33 +1515,6 @@ public class CourseMaintenance100PutRequest {
     }
 
     /**
-     * Session Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("sessDesc")
-    public String getSessDesc() {
-        return sessDesc;
-    }
-
-    /**
-     * Session Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("sessDesc")
-    public void setSessDesc(String sessDesc) {
-        this.sessDesc = sessDesc;
-    }
-
-    public CourseMaintenance100PutRequest withSessDesc(String sessDesc) {
-        this.sessDesc = sessDesc;
-        return this;
-    }
-
-    /**
      * End Date
      * <p>
      * Lineage reference object : SHRTCKN_REG_COMPLETION_DATE
@@ -2087,137 +1542,83 @@ public class CourseMaintenance100PutRequest {
     }
 
     /**
-     * End Date
+     * Change Reason
      * <p>
-     * Lineage reference object : SHRTCKN_REG_COMPLETION_DATE
+     * Lineage reference object : SHRTCKG_GCHG_CODE, Lookup lineage reference object : stvgchg
      * 
      */
-    @JsonProperty("regCompletionDate")
-    public Date getRegCompletionDate() {
-        return regCompletionDate;
+    @JsonProperty("criteria.gchgCode")
+    public String getCriteriaGchgCode() {
+        return criteriaGchgCode;
     }
 
     /**
-     * End Date
+     * Change Reason
      * <p>
-     * Lineage reference object : SHRTCKN_REG_COMPLETION_DATE
+     * Lineage reference object : SHRTCKG_GCHG_CODE, Lookup lineage reference object : stvgchg
      * 
      */
-    @JsonProperty("regCompletionDate")
-    public void setRegCompletionDate(Date regCompletionDate) {
-        this.regCompletionDate = regCompletionDate;
+    @JsonProperty("criteria.gchgCode")
+    public void setCriteriaGchgCode(String criteriaGchgCode) {
+        this.criteriaGchgCode = criteriaGchgCode;
     }
 
-    public CourseMaintenance100PutRequest withRegCompletionDate(Date regCompletionDate) {
-        this.regCompletionDate = regCompletionDate;
+    public CourseMaintenance100PutRequest withCriteriaGchgCode(String criteriaGchgCode) {
+        this.criteriaGchgCode = criteriaGchgCode;
         return this;
     }
 
     /**
-     * System
+     * Extension Date
      * <p>
-     * Lineage reference object : SHRTCKN_REPEAT_SYS_IND
+     * Lineage reference object : SHRTCKG_INCOMPLETE_EXT_DATE
      * 
      */
-    @JsonProperty("repeatSysInd")
-    public String getRepeatSysInd() {
-        return repeatSysInd;
+    @JsonProperty("criteria.incompleteExtDate")
+    public Date getCriteriaIncompleteExtDate() {
+        return criteriaIncompleteExtDate;
     }
 
     /**
-     * System
+     * Extension Date
      * <p>
-     * Lineage reference object : SHRTCKN_REPEAT_SYS_IND
+     * Lineage reference object : SHRTCKG_INCOMPLETE_EXT_DATE
      * 
      */
-    @JsonProperty("repeatSysInd")
-    public void setRepeatSysInd(String repeatSysInd) {
-        this.repeatSysInd = repeatSysInd;
+    @JsonProperty("criteria.incompleteExtDate")
+    public void setCriteriaIncompleteExtDate(Date criteriaIncompleteExtDate) {
+        this.criteriaIncompleteExtDate = criteriaIncompleteExtDate;
     }
 
-    public CourseMaintenance100PutRequest withRepeatSysInd(String repeatSysInd) {
-        this.repeatSysInd = repeatSysInd;
+    public CourseMaintenance100PutRequest withCriteriaIncompleteExtDate(Date criteriaIncompleteExtDate) {
+        this.criteriaIncompleteExtDate = criteriaIncompleteExtDate;
         return this;
     }
 
     /**
-     * College Description
+     * Grade Date
      * <p>
-     * 
+     * Lineage reference object : SHRTCKG_FINAL_GRDE_CHG_DATE
      * 
      */
-    @JsonProperty("collDesc")
-    public String getCollDesc() {
-        return collDesc;
+    @JsonProperty("criteria.finalGrdeChgDate")
+    public Date getCriteriaFinalGrdeChgDate() {
+        return criteriaFinalGrdeChgDate;
     }
 
     /**
-     * College Description
+     * Grade Date
      * <p>
-     * 
+     * Lineage reference object : SHRTCKG_FINAL_GRDE_CHG_DATE
      * 
      */
-    @JsonProperty("collDesc")
-    public void setCollDesc(String collDesc) {
-        this.collDesc = collDesc;
+    @JsonProperty("criteria.finalGrdeChgDate")
+    public void setCriteriaFinalGrdeChgDate(Date criteriaFinalGrdeChgDate) {
+        this.criteriaFinalGrdeChgDate = criteriaFinalGrdeChgDate;
     }
 
-    public CourseMaintenance100PutRequest withCollDesc(String collDesc) {
-        this.collDesc = collDesc;
-        return this;
-    }
-
-    /**
-     * System
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("repeatDesc")
-    public String getRepeatDesc() {
-        return repeatDesc;
-    }
-
-    /**
-     * System
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("repeatDesc")
-    public void setRepeatDesc(String repeatDesc) {
-        this.repeatDesc = repeatDesc;
-    }
-
-    public CourseMaintenance100PutRequest withRepeatDesc(String repeatDesc) {
-        this.repeatDesc = repeatDesc;
-        return this;
-    }
-
-    /**
-     * CRN
-     * <p>
-     * Lineage reference object : SHRTCKN_CRN
-     * 
-     */
-    @JsonProperty("crn")
-    public String getCrn() {
-        return crn;
-    }
-
-    /**
-     * CRN
-     * <p>
-     * Lineage reference object : SHRTCKN_CRN
-     * 
-     */
-    @JsonProperty("crn")
-    public void setCrn(String crn) {
-        this.crn = crn;
-    }
-
-    public CourseMaintenance100PutRequest withCrn(String crn) {
-        this.crn = crn;
+    public CourseMaintenance100PutRequest withCriteriaFinalGrdeChgDate(Date criteriaFinalGrdeChgDate) {
+        this.criteriaFinalGrdeChgDate = criteriaFinalGrdeChgDate;
         return this;
     }
 
@@ -2245,6 +1646,33 @@ public class CourseMaintenance100PutRequest {
 
     public CourseMaintenance100PutRequest withPtrmStartDate(Date ptrmStartDate) {
         this.ptrmStartDate = ptrmStartDate;
+        return this;
+    }
+
+    /**
+     * Attempted Hours
+     * <p>
+     * Lineage reference object : SHRTCKG_HOURS_ATTEMPTED
+     * 
+     */
+    @JsonProperty("criteria.hoursAttempted")
+    public Double getCriteriaHoursAttempted() {
+        return criteriaHoursAttempted;
+    }
+
+    /**
+     * Attempted Hours
+     * <p>
+     * Lineage reference object : SHRTCKG_HOURS_ATTEMPTED
+     * 
+     */
+    @JsonProperty("criteria.hoursAttempted")
+    public void setCriteriaHoursAttempted(Double criteriaHoursAttempted) {
+        this.criteriaHoursAttempted = criteriaHoursAttempted;
+    }
+
+    public CourseMaintenance100PutRequest withCriteriaHoursAttempted(Double criteriaHoursAttempted) {
+        this.criteriaHoursAttempted = criteriaHoursAttempted;
         return this;
     }
 
@@ -2303,33 +1731,6 @@ public class CourseMaintenance100PutRequest {
     }
 
     /**
-     * Schedule Type Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("schdCodeDesc")
-    public String getSchdCodeDesc() {
-        return schdCodeDesc;
-    }
-
-    /**
-     * Schedule Type Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("schdCodeDesc")
-    public void setSchdCodeDesc(String schdCodeDesc) {
-        this.schdCodeDesc = schdCodeDesc;
-    }
-
-    public CourseMaintenance100PutRequest withSchdCodeDesc(String schdCodeDesc) {
-        this.schdCodeDesc = schdCodeDesc;
-        return this;
-    }
-
-    /**
      * Study Path
      * <p>
      * Lineage reference object : SHRTCKN_STSP_KEY_SEQUENCE, Lookup lineage reference object : SGVSTSP,SGRSTSP
@@ -2353,87 +1754,6 @@ public class CourseMaintenance100PutRequest {
 
     public CourseMaintenance100PutRequest withCriteriaStspKeySequence(Double criteriaStspKeySequence) {
         this.criteriaStspKeySequence = criteriaStspKeySequence;
-        return this;
-    }
-
-    /**
-     * College Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.collDesc")
-    public String getCriteriaCollDesc() {
-        return criteriaCollDesc;
-    }
-
-    /**
-     * College Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.collDesc")
-    public void setCriteriaCollDesc(String criteriaCollDesc) {
-        this.criteriaCollDesc = criteriaCollDesc;
-    }
-
-    public CourseMaintenance100PutRequest withCriteriaCollDesc(String criteriaCollDesc) {
-        this.criteriaCollDesc = criteriaCollDesc;
-        return this;
-    }
-
-    /**
-     * Department Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.deptDesc")
-    public String getCriteriaDeptDesc() {
-        return criteriaDeptDesc;
-    }
-
-    /**
-     * Department Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.deptDesc")
-    public void setCriteriaDeptDesc(String criteriaDeptDesc) {
-        this.criteriaDeptDesc = criteriaDeptDesc;
-    }
-
-    public CourseMaintenance100PutRequest withCriteriaDeptDesc(String criteriaDeptDesc) {
-        this.criteriaDeptDesc = criteriaDeptDesc;
-        return this;
-    }
-
-    /**
-     * Division Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.divsDesc")
-    public String getCriteriaDivsDesc() {
-        return criteriaDivsDesc;
-    }
-
-    /**
-     * Division Description
-     * <p>
-     * 
-     * 
-     */
-    @JsonProperty("criteria.divsDesc")
-    public void setCriteriaDivsDesc(String criteriaDivsDesc) {
-        this.criteriaDivsDesc = criteriaDivsDesc;
-    }
-
-    public CourseMaintenance100PutRequest withCriteriaDivsDesc(String criteriaDivsDesc) {
-        this.criteriaDivsDesc = criteriaDivsDesc;
         return this;
     }
 
@@ -2518,6 +1838,33 @@ public class CourseMaintenance100PutRequest {
         return this;
     }
 
+    /**
+     * Grade Mode
+     * <p>
+     * Lineage reference object : SHRTCKG_GMOD_CODE
+     * 
+     */
+    @JsonProperty("criteria.gmodCode")
+    public String getCriteriaGmodCode() {
+        return criteriaGmodCode;
+    }
+
+    /**
+     * Grade Mode
+     * <p>
+     * Lineage reference object : SHRTCKG_GMOD_CODE
+     * 
+     */
+    @JsonProperty("criteria.gmodCode")
+    public void setCriteriaGmodCode(String criteriaGmodCode) {
+        this.criteriaGmodCode = criteriaGmodCode;
+    }
+
+    public CourseMaintenance100PutRequest withCriteriaGmodCode(String criteriaGmodCode) {
+        this.criteriaGmodCode = criteriaGmodCode;
+        return this;
+    }
+
     @JsonAnyGetter
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;
@@ -2561,57 +1908,29 @@ public class CourseMaintenance100PutRequest {
         sb.append('=');
         sb.append(((this.criteriaCrseNumb == null)?"<null>":this.criteriaCrseNumb));
         sb.append(',');
-        sb.append("criteriaCampCodeDesc");
-        sb.append('=');
-        sb.append(((this.criteriaCampCodeDesc == null)?"<null>":this.criteriaCampCodeDesc));
-        sb.append(',');
-        sb.append("divsDesc");
-        sb.append('=');
-        sb.append(((this.divsDesc == null)?"<null>":this.divsDesc));
-        sb.append(',');
         sb.append("criteriaSubjCode");
         sb.append('=');
         sb.append(((this.criteriaSubjCode == null)?"<null>":this.criteriaSubjCode));
-        sb.append(',');
-        sb.append("criteriaSubjCodeDesc");
-        sb.append('=');
-        sb.append(((this.criteriaSubjCodeDesc == null)?"<null>":this.criteriaSubjCodeDesc));
         sb.append(',');
         sb.append("criteriaCollCode");
         sb.append('=');
         sb.append(((this.criteriaCollCode == null)?"<null>":this.criteriaCollCode));
         sb.append(',');
+        sb.append("gchgCode");
+        sb.append('=');
+        sb.append(((this.gchgCode == null)?"<null>":this.gchgCode));
+        sb.append(',');
         sb.append("criteriaRegStartDate");
         sb.append('=');
         sb.append(((this.criteriaRegStartDate == null)?"<null>":this.criteriaRegStartDate));
-        sb.append(',');
-        sb.append("schdCode");
-        sb.append('=');
-        sb.append(((this.schdCode == null)?"<null>":this.schdCode));
         sb.append(',');
         sb.append("sessCode");
         sb.append('=');
         sb.append(((this.sessCode == null)?"<null>":this.sessCode));
         sb.append(',');
-        sb.append("criteriaRepeatDesc");
+        sb.append("criteriaGrdeCodeIncmpFinal");
         sb.append('=');
-        sb.append(((this.criteriaRepeatDesc == null)?"<null>":this.criteriaRepeatDesc));
-        sb.append(',');
-        sb.append("campCode");
-        sb.append('=');
-        sb.append(((this.campCode == null)?"<null>":this.campCode));
-        sb.append(',');
-        sb.append("campCodeDesc");
-        sb.append('=');
-        sb.append(((this.campCodeDesc == null)?"<null>":this.campCodeDesc));
-        sb.append(',');
-        sb.append("numberOfExtensions");
-        sb.append('=');
-        sb.append(((this.numberOfExtensions == null)?"<null>":this.numberOfExtensions));
-        sb.append(',');
-        sb.append("deptDesc");
-        sb.append('=');
-        sb.append(((this.deptDesc == null)?"<null>":this.deptDesc));
+        sb.append(((this.criteriaGrdeCodeIncmpFinal == null)?"<null>":this.criteriaGrdeCodeIncmpFinal));
         sb.append(',');
         sb.append("id");
         sb.append('=');
@@ -2621,37 +1940,17 @@ public class CourseMaintenance100PutRequest {
         sb.append('=');
         sb.append(((this.courseComment == null)?"<null>":this.courseComment));
         sb.append(',');
-        sb.append("criteriaSchdCodeDesc");
+        sb.append("criteriaGrdeCodeFinal");
         sb.append('=');
-        sb.append(((this.criteriaSchdCodeDesc == null)?"<null>":this.criteriaSchdCodeDesc));
-        sb.append(',');
-        sb.append("criteriaSessDesc");
-        sb.append('=');
-        sb.append(((this.criteriaSessDesc == null)?"<null>":this.criteriaSessDesc));
-        sb.append(',');
-        sb.append("regStartDate");
-        sb.append('=');
-        sb.append(((this.regStartDate == null)?"<null>":this.regStartDate));
-        sb.append(',');
-        sb.append("criteriaRepeatSysInd");
-        sb.append('=');
-        sb.append(((this.criteriaRepeatSysInd == null)?"<null>":this.criteriaRepeatSysInd));
+        sb.append(((this.criteriaGrdeCodeFinal == null)?"<null>":this.criteriaGrdeCodeFinal));
         sb.append(',');
         sb.append("stspKeySequence");
         sb.append('=');
         sb.append(((this.stspKeySequence == null)?"<null>":this.stspKeySequence));
         sb.append(',');
-        sb.append("criteriaPtrmCodeDesc");
-        sb.append('=');
-        sb.append(((this.criteriaPtrmCodeDesc == null)?"<null>":this.criteriaPtrmCodeDesc));
-        sb.append(',');
         sb.append("criteriaPtrmCode");
         sb.append('=');
         sb.append(((this.criteriaPtrmCode == null)?"<null>":this.criteriaPtrmCode));
-        sb.append(',');
-        sb.append("subjCode");
-        sb.append('=');
-        sb.append(((this.subjCode == null)?"<null>":this.subjCode));
         sb.append(',');
         sb.append("keyblckTermCode");
         sb.append('=');
@@ -2665,17 +1964,21 @@ public class CourseMaintenance100PutRequest {
         sb.append('=');
         sb.append(((this.criteriaSchdCode == null)?"<null>":this.criteriaSchdCode));
         sb.append(',');
-        sb.append("crseNumb");
+        sb.append("criteriaCreditHours");
         sb.append('=');
-        sb.append(((this.crseNumb == null)?"<null>":this.crseNumb));
+        sb.append(((this.criteriaCreditHours == null)?"<null>":this.criteriaCreditHours));
         sb.append(',');
-        sb.append("ptrmCode");
+        sb.append("primaryLevlInd");
         sb.append('=');
-        sb.append(((this.ptrmCode == null)?"<null>":this.ptrmCode));
+        sb.append(((this.primaryLevlInd == null)?"<null>":this.primaryLevlInd));
         sb.append(',');
-        sb.append("subjCodeDesc");
+        sb.append("gcmtCode");
         sb.append('=');
-        sb.append(((this.subjCodeDesc == null)?"<null>":this.subjCodeDesc));
+        sb.append(((this.gcmtCode == null)?"<null>":this.gcmtCode));
+        sb.append(',');
+        sb.append("incompleteExtDate");
+        sb.append('=');
+        sb.append(((this.incompleteExtDate == null)?"<null>":this.incompleteExtDate));
         sb.append(',');
         sb.append("repeatCourseInd");
         sb.append('=');
@@ -2685,21 +1988,9 @@ public class CourseMaintenance100PutRequest {
         sb.append('=');
         sb.append(((this.criteriaCourseComment == null)?"<null>":this.criteriaCourseComment));
         sb.append(',');
-        sb.append("seqNumb");
-        sb.append('=');
-        sb.append(((this.seqNumb == null)?"<null>":this.seqNumb));
-        sb.append(',');
         sb.append("longCourseTitle");
         sb.append('=');
         sb.append(((this.longCourseTitle == null)?"<null>":this.longCourseTitle));
-        sb.append(',');
-        sb.append("ceuInd");
-        sb.append('=');
-        sb.append(((this.ceuInd == null)?"<null>":this.ceuInd));
-        sb.append(',');
-        sb.append("ptrmCodeDesc");
-        sb.append('=');
-        sb.append(((this.ptrmCodeDesc == null)?"<null>":this.ptrmCodeDesc));
         sb.append(',');
         sb.append("criteriaCrseTitle");
         sb.append('=');
@@ -2717,9 +2008,9 @@ public class CourseMaintenance100PutRequest {
         sb.append('=');
         sb.append(((this.collCode == null)?"<null>":this.collCode));
         sb.append(',');
-        sb.append("criteriaNumberOfExtensions");
+        sb.append("criteriaGcmtCode");
         sb.append('=');
-        sb.append(((this.criteriaNumberOfExtensions == null)?"<null>":this.criteriaNumberOfExtensions));
+        sb.append(((this.criteriaGcmtCode == null)?"<null>":this.criteriaGcmtCode));
         sb.append(',');
         sb.append("deptCode");
         sb.append('=');
@@ -2729,6 +2020,10 @@ public class CourseMaintenance100PutRequest {
         sb.append('=');
         sb.append(((this.criteriaPtrmStartDate == null)?"<null>":this.criteriaPtrmStartDate));
         sb.append(',');
+        sb.append("keyblckValidationCheck");
+        sb.append('=');
+        sb.append(((this.keyblckValidationCheck == null)?"<null>":this.keyblckValidationCheck));
+        sb.append(',');
         sb.append("criteriaCampCode");
         sb.append('=');
         sb.append(((this.criteriaCampCode == null)?"<null>":this.criteriaCampCode));
@@ -2737,37 +2032,29 @@ public class CourseMaintenance100PutRequest {
         sb.append('=');
         sb.append(((this.criteriaDeptCode == null)?"<null>":this.criteriaDeptCode));
         sb.append(',');
-        sb.append("sessDesc");
-        sb.append('=');
-        sb.append(((this.sessDesc == null)?"<null>":this.sessDesc));
-        sb.append(',');
         sb.append("criteriaRegCompletionDate");
         sb.append('=');
         sb.append(((this.criteriaRegCompletionDate == null)?"<null>":this.criteriaRegCompletionDate));
         sb.append(',');
-        sb.append("regCompletionDate");
+        sb.append("criteriaGchgCode");
         sb.append('=');
-        sb.append(((this.regCompletionDate == null)?"<null>":this.regCompletionDate));
+        sb.append(((this.criteriaGchgCode == null)?"<null>":this.criteriaGchgCode));
         sb.append(',');
-        sb.append("repeatSysInd");
+        sb.append("criteriaIncompleteExtDate");
         sb.append('=');
-        sb.append(((this.repeatSysInd == null)?"<null>":this.repeatSysInd));
+        sb.append(((this.criteriaIncompleteExtDate == null)?"<null>":this.criteriaIncompleteExtDate));
         sb.append(',');
-        sb.append("collDesc");
+        sb.append("criteriaFinalGrdeChgDate");
         sb.append('=');
-        sb.append(((this.collDesc == null)?"<null>":this.collDesc));
-        sb.append(',');
-        sb.append("repeatDesc");
-        sb.append('=');
-        sb.append(((this.repeatDesc == null)?"<null>":this.repeatDesc));
-        sb.append(',');
-        sb.append("crn");
-        sb.append('=');
-        sb.append(((this.crn == null)?"<null>":this.crn));
+        sb.append(((this.criteriaFinalGrdeChgDate == null)?"<null>":this.criteriaFinalGrdeChgDate));
         sb.append(',');
         sb.append("ptrmStartDate");
         sb.append('=');
         sb.append(((this.ptrmStartDate == null)?"<null>":this.ptrmStartDate));
+        sb.append(',');
+        sb.append("criteriaHoursAttempted");
+        sb.append('=');
+        sb.append(((this.criteriaHoursAttempted == null)?"<null>":this.criteriaHoursAttempted));
         sb.append(',');
         sb.append("criteriaSessCode");
         sb.append('=');
@@ -2777,25 +2064,9 @@ public class CourseMaintenance100PutRequest {
         sb.append('=');
         sb.append(((this.contHr == null)?"<null>":this.contHr));
         sb.append(',');
-        sb.append("schdCodeDesc");
-        sb.append('=');
-        sb.append(((this.schdCodeDesc == null)?"<null>":this.schdCodeDesc));
-        sb.append(',');
         sb.append("criteriaStspKeySequence");
         sb.append('=');
         sb.append(((this.criteriaStspKeySequence == null)?"<null>":this.criteriaStspKeySequence));
-        sb.append(',');
-        sb.append("criteriaCollDesc");
-        sb.append('=');
-        sb.append(((this.criteriaCollDesc == null)?"<null>":this.criteriaCollDesc));
-        sb.append(',');
-        sb.append("criteriaDeptDesc");
-        sb.append('=');
-        sb.append(((this.criteriaDeptDesc == null)?"<null>":this.criteriaDeptDesc));
-        sb.append(',');
-        sb.append("criteriaDivsDesc");
-        sb.append('=');
-        sb.append(((this.criteriaDivsDesc == null)?"<null>":this.criteriaDivsDesc));
         sb.append(',');
         sb.append("criteriaCrn");
         sb.append('=');
@@ -2808,6 +2079,10 @@ public class CourseMaintenance100PutRequest {
         sb.append("ptrmEndDate");
         sb.append('=');
         sb.append(((this.ptrmEndDate == null)?"<null>":this.ptrmEndDate));
+        sb.append(',');
+        sb.append("criteriaGmodCode");
+        sb.append('=');
+        sb.append(((this.criteriaGmodCode == null)?"<null>":this.criteriaGmodCode));
         sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');
@@ -2826,72 +2101,54 @@ public class CourseMaintenance100PutRequest {
         int result = 1;
         result = ((result* 31)+((this.criteriaPtrmCode == null)? 0 :this.criteriaPtrmCode.hashCode()));
         result = ((result* 31)+((this.crseTitle == null)? 0 :this.crseTitle.hashCode()));
-        result = ((result* 31)+((this.divsDesc == null)? 0 :this.divsDesc.hashCode()));
         result = ((result* 31)+((this.criteriaRegCompletionDate == null)? 0 :this.criteriaRegCompletionDate.hashCode()));
+        result = ((result* 31)+((this.criteriaHoursAttempted == null)? 0 :this.criteriaHoursAttempted.hashCode()));
         result = ((result* 31)+((this.criteriaCeuInd == null)? 0 :this.criteriaCeuInd.hashCode()));
-        result = ((result* 31)+((this.criteriaCollDesc == null)? 0 :this.criteriaCollDesc.hashCode()));
-        result = ((result* 31)+((this.schdCode == null)? 0 :this.schdCode.hashCode()));
+        result = ((result* 31)+((this.gchgCode == null)? 0 :this.gchgCode.hashCode()));
+        result = ((result* 31)+((this.criteriaFinalGrdeChgDate == null)? 0 :this.criteriaFinalGrdeChgDate.hashCode()));
         result = ((result* 31)+((this.sessCode == null)? 0 :this.sessCode.hashCode()));
         result = ((result* 31)+((this.criteriaCourseComment == null)? 0 :this.criteriaCourseComment.hashCode()));
         result = ((result* 31)+((this.criteriaCrn == null)? 0 :this.criteriaCrn.hashCode()));
-        result = ((result* 31)+((this.campCode == null)? 0 :this.campCode.hashCode()));
-        result = ((result* 31)+((this.campCodeDesc == null)? 0 :this.campCodeDesc.hashCode()));
-        result = ((result* 31)+((this.numberOfExtensions == null)? 0 :this.numberOfExtensions.hashCode()));
-        result = ((result* 31)+((this.deptDesc == null)? 0 :this.deptDesc.hashCode()));
         result = ((result* 31)+((this.id == null)? 0 :this.id.hashCode()));
         result = ((result* 31)+((this.courseComment == null)? 0 :this.courseComment.hashCode()));
-        result = ((result* 31)+((this.criteriaSessDesc == null)? 0 :this.criteriaSessDesc.hashCode()));
-        result = ((result* 31)+((this.criteriaRepeatDesc == null)? 0 :this.criteriaRepeatDesc.hashCode()));
-        result = ((result* 31)+((this.regStartDate == null)? 0 :this.regStartDate.hashCode()));
-        result = ((result* 31)+((this.criteriaNumberOfExtensions == null)? 0 :this.criteriaNumberOfExtensions.hashCode()));
         result = ((result* 31)+((this.stspKeySequence == null)? 0 :this.stspKeySequence.hashCode()));
-        result = ((result* 31)+((this.subjCode == null)? 0 :this.subjCode.hashCode()));
+        result = ((result* 31)+((this.criteriaCreditHours == null)? 0 :this.criteriaCreditHours.hashCode()));
         result = ((result* 31)+((this.keyblckTermCode == null)? 0 :this.keyblckTermCode.hashCode()));
         result = ((result* 31)+((this.criteriaRegStartDate == null)? 0 :this.criteriaRegStartDate.hashCode()));
-        result = ((result* 31)+((this.criteriaCampCodeDesc == null)? 0 :this.criteriaCampCodeDesc.hashCode()));
-        result = ((result* 31)+((this.criteriaSubjCodeDesc == null)? 0 :this.criteriaSubjCodeDesc.hashCode()));
-        result = ((result* 31)+((this.crseNumb == null)? 0 :this.crseNumb.hashCode()));
-        result = ((result* 31)+((this.ptrmCode == null)? 0 :this.ptrmCode.hashCode()));
+        result = ((result* 31)+((this.criteriaGmodCode == null)? 0 :this.criteriaGmodCode.hashCode()));
+        result = ((result* 31)+((this.primaryLevlInd == null)? 0 :this.primaryLevlInd.hashCode()));
+        result = ((result* 31)+((this.gcmtCode == null)? 0 :this.gcmtCode.hashCode()));
         result = ((result* 31)+((this.criteriaSeqNumb == null)? 0 :this.criteriaSeqNumb.hashCode()));
-        result = ((result* 31)+((this.subjCodeDesc == null)? 0 :this.subjCodeDesc.hashCode()));
+        result = ((result* 31)+((this.incompleteExtDate == null)? 0 :this.incompleteExtDate.hashCode()));
         result = ((result* 31)+((this.repeatCourseInd == null)? 0 :this.repeatCourseInd.hashCode()));
-        result = ((result* 31)+((this.seqNumb == null)? 0 :this.seqNumb.hashCode()));
         result = ((result* 31)+((this.longCourseTitle == null)? 0 :this.longCourseTitle.hashCode()));
-        result = ((result* 31)+((this.ceuInd == null)? 0 :this.ceuInd.hashCode()));
-        result = ((result* 31)+((this.ptrmCodeDesc == null)? 0 :this.ptrmCodeDesc.hashCode()));
+        result = ((result* 31)+((this.criteriaIncompleteExtDate == null)? 0 :this.criteriaIncompleteExtDate.hashCode()));
         result = ((result* 31)+((this.divsCode == null)? 0 :this.divsCode.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
         result = ((result* 31)+((this.collCode == null)? 0 :this.collCode.hashCode()));
         result = ((result* 31)+((this.deptCode == null)? 0 :this.deptCode.hashCode()));
         result = ((result* 31)+((this.criteriaStspKeySequence == null)? 0 :this.criteriaStspKeySequence.hashCode()));
-        result = ((result* 31)+((this.criteriaDeptDesc == null)? 0 :this.criteriaDeptDesc.hashCode()));
+        result = ((result* 31)+((this.keyblckValidationCheck == null)? 0 :this.keyblckValidationCheck.hashCode()));
+        result = ((result* 31)+((this.criteriaGrdeCodeFinal == null)? 0 :this.criteriaGrdeCodeFinal.hashCode()));
         result = ((result* 31)+((this.criteriaSessCode == null)? 0 :this.criteriaSessCode.hashCode()));
-        result = ((result* 31)+((this.criteriaRepeatSysInd == null)? 0 :this.criteriaRepeatSysInd.hashCode()));
-        result = ((result* 31)+((this.criteriaPtrmCodeDesc == null)? 0 :this.criteriaPtrmCodeDesc.hashCode()));
         result = ((result* 31)+((this.criteriaSchdCode == null)? 0 :this.criteriaSchdCode.hashCode()));
-        result = ((result* 31)+((this.sessDesc == null)? 0 :this.sessDesc.hashCode()));
-        result = ((result* 31)+((this.criteriaDivsDesc == null)? 0 :this.criteriaDivsDesc.hashCode()));
-        result = ((result* 31)+((this.regCompletionDate == null)? 0 :this.regCompletionDate.hashCode()));
         result = ((result* 31)+((this.criteriaContHr == null)? 0 :this.criteriaContHr.hashCode()));
-        result = ((result* 31)+((this.repeatSysInd == null)? 0 :this.repeatSysInd.hashCode()));
         result = ((result* 31)+((this.criteriaRepeatCourseInd == null)? 0 :this.criteriaRepeatCourseInd.hashCode()));
         result = ((result* 31)+((this.criteriaPtrmStartDate == null)? 0 :this.criteriaPtrmStartDate.hashCode()));
-        result = ((result* 31)+((this.collDesc == null)? 0 :this.collDesc.hashCode()));
+        result = ((result* 31)+((this.criteriaGchgCode == null)? 0 :this.criteriaGchgCode.hashCode()));
         result = ((result* 31)+((this.criteriaLongCourseTitle == null)? 0 :this.criteriaLongCourseTitle.hashCode()));
-        result = ((result* 31)+((this.repeatDesc == null)? 0 :this.repeatDesc.hashCode()));
-        result = ((result* 31)+((this.criteriaSchdCodeDesc == null)? 0 :this.criteriaSchdCodeDesc.hashCode()));
-        result = ((result* 31)+((this.crn == null)? 0 :this.crn.hashCode()));
         result = ((result* 31)+((this.ptrmStartDate == null)? 0 :this.ptrmStartDate.hashCode()));
         result = ((result* 31)+((this.criteriaCrseTitle == null)? 0 :this.criteriaCrseTitle.hashCode()));
+        result = ((result* 31)+((this.criteriaGcmtCode == null)? 0 :this.criteriaGcmtCode.hashCode()));
         result = ((result* 31)+((this.contHr == null)? 0 :this.contHr.hashCode()));
         result = ((result* 31)+((this.criteriaDeptCode == null)? 0 :this.criteriaDeptCode.hashCode()));
         result = ((result* 31)+((this.criteriaCampCode == null)? 0 :this.criteriaCampCode.hashCode()));
         result = ((result* 31)+((this.criteriaCrseNumb == null)? 0 :this.criteriaCrseNumb.hashCode()));
-        result = ((result* 31)+((this.schdCodeDesc == null)? 0 :this.schdCodeDesc.hashCode()));
         result = ((result* 31)+((this.criteriaSubjCode == null)? 0 :this.criteriaSubjCode.hashCode()));
         result = ((result* 31)+((this.criteriaDivsCode == null)? 0 :this.criteriaDivsCode.hashCode()));
         result = ((result* 31)+((this.criteriaPtrmEndDate == null)? 0 :this.criteriaPtrmEndDate.hashCode()));
         result = ((result* 31)+((this.criteriaCollCode == null)? 0 :this.criteriaCollCode.hashCode()));
+        result = ((result* 31)+((this.criteriaGrdeCodeIncmpFinal == null)? 0 :this.criteriaGrdeCodeIncmpFinal.hashCode()));
         result = ((result* 31)+((this.ptrmEndDate == null)? 0 :this.ptrmEndDate.hashCode()));
         return result;
     }
@@ -2905,7 +2162,7 @@ public class CourseMaintenance100PutRequest {
             return false;
         }
         CourseMaintenance100PutRequest rhs = ((CourseMaintenance100PutRequest) other);
-        return ((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((this.criteriaPtrmCode == rhs.criteriaPtrmCode)||((this.criteriaPtrmCode!= null)&&this.criteriaPtrmCode.equals(rhs.criteriaPtrmCode)))&&((this.crseTitle == rhs.crseTitle)||((this.crseTitle!= null)&&this.crseTitle.equals(rhs.crseTitle))))&&((this.divsDesc == rhs.divsDesc)||((this.divsDesc!= null)&&this.divsDesc.equals(rhs.divsDesc))))&&((this.criteriaRegCompletionDate == rhs.criteriaRegCompletionDate)||((this.criteriaRegCompletionDate!= null)&&this.criteriaRegCompletionDate.equals(rhs.criteriaRegCompletionDate))))&&((this.criteriaCeuInd == rhs.criteriaCeuInd)||((this.criteriaCeuInd!= null)&&this.criteriaCeuInd.equals(rhs.criteriaCeuInd))))&&((this.criteriaCollDesc == rhs.criteriaCollDesc)||((this.criteriaCollDesc!= null)&&this.criteriaCollDesc.equals(rhs.criteriaCollDesc))))&&((this.schdCode == rhs.schdCode)||((this.schdCode!= null)&&this.schdCode.equals(rhs.schdCode))))&&((this.sessCode == rhs.sessCode)||((this.sessCode!= null)&&this.sessCode.equals(rhs.sessCode))))&&((this.criteriaCourseComment == rhs.criteriaCourseComment)||((this.criteriaCourseComment!= null)&&this.criteriaCourseComment.equals(rhs.criteriaCourseComment))))&&((this.criteriaCrn == rhs.criteriaCrn)||((this.criteriaCrn!= null)&&this.criteriaCrn.equals(rhs.criteriaCrn))))&&((this.campCode == rhs.campCode)||((this.campCode!= null)&&this.campCode.equals(rhs.campCode))))&&((this.campCodeDesc == rhs.campCodeDesc)||((this.campCodeDesc!= null)&&this.campCodeDesc.equals(rhs.campCodeDesc))))&&((this.numberOfExtensions == rhs.numberOfExtensions)||((this.numberOfExtensions!= null)&&this.numberOfExtensions.equals(rhs.numberOfExtensions))))&&((this.deptDesc == rhs.deptDesc)||((this.deptDesc!= null)&&this.deptDesc.equals(rhs.deptDesc))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.courseComment == rhs.courseComment)||((this.courseComment!= null)&&this.courseComment.equals(rhs.courseComment))))&&((this.criteriaSessDesc == rhs.criteriaSessDesc)||((this.criteriaSessDesc!= null)&&this.criteriaSessDesc.equals(rhs.criteriaSessDesc))))&&((this.criteriaRepeatDesc == rhs.criteriaRepeatDesc)||((this.criteriaRepeatDesc!= null)&&this.criteriaRepeatDesc.equals(rhs.criteriaRepeatDesc))))&&((this.regStartDate == rhs.regStartDate)||((this.regStartDate!= null)&&this.regStartDate.equals(rhs.regStartDate))))&&((this.criteriaNumberOfExtensions == rhs.criteriaNumberOfExtensions)||((this.criteriaNumberOfExtensions!= null)&&this.criteriaNumberOfExtensions.equals(rhs.criteriaNumberOfExtensions))))&&((this.stspKeySequence == rhs.stspKeySequence)||((this.stspKeySequence!= null)&&this.stspKeySequence.equals(rhs.stspKeySequence))))&&((this.subjCode == rhs.subjCode)||((this.subjCode!= null)&&this.subjCode.equals(rhs.subjCode))))&&((this.keyblckTermCode == rhs.keyblckTermCode)||((this.keyblckTermCode!= null)&&this.keyblckTermCode.equals(rhs.keyblckTermCode))))&&((this.criteriaRegStartDate == rhs.criteriaRegStartDate)||((this.criteriaRegStartDate!= null)&&this.criteriaRegStartDate.equals(rhs.criteriaRegStartDate))))&&((this.criteriaCampCodeDesc == rhs.criteriaCampCodeDesc)||((this.criteriaCampCodeDesc!= null)&&this.criteriaCampCodeDesc.equals(rhs.criteriaCampCodeDesc))))&&((this.criteriaSubjCodeDesc == rhs.criteriaSubjCodeDesc)||((this.criteriaSubjCodeDesc!= null)&&this.criteriaSubjCodeDesc.equals(rhs.criteriaSubjCodeDesc))))&&((this.crseNumb == rhs.crseNumb)||((this.crseNumb!= null)&&this.crseNumb.equals(rhs.crseNumb))))&&((this.ptrmCode == rhs.ptrmCode)||((this.ptrmCode!= null)&&this.ptrmCode.equals(rhs.ptrmCode))))&&((this.criteriaSeqNumb == rhs.criteriaSeqNumb)||((this.criteriaSeqNumb!= null)&&this.criteriaSeqNumb.equals(rhs.criteriaSeqNumb))))&&((this.subjCodeDesc == rhs.subjCodeDesc)||((this.subjCodeDesc!= null)&&this.subjCodeDesc.equals(rhs.subjCodeDesc))))&&((this.repeatCourseInd == rhs.repeatCourseInd)||((this.repeatCourseInd!= null)&&this.repeatCourseInd.equals(rhs.repeatCourseInd))))&&((this.seqNumb == rhs.seqNumb)||((this.seqNumb!= null)&&this.seqNumb.equals(rhs.seqNumb))))&&((this.longCourseTitle == rhs.longCourseTitle)||((this.longCourseTitle!= null)&&this.longCourseTitle.equals(rhs.longCourseTitle))))&&((this.ceuInd == rhs.ceuInd)||((this.ceuInd!= null)&&this.ceuInd.equals(rhs.ceuInd))))&&((this.ptrmCodeDesc == rhs.ptrmCodeDesc)||((this.ptrmCodeDesc!= null)&&this.ptrmCodeDesc.equals(rhs.ptrmCodeDesc))))&&((this.divsCode == rhs.divsCode)||((this.divsCode!= null)&&this.divsCode.equals(rhs.divsCode))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.collCode == rhs.collCode)||((this.collCode!= null)&&this.collCode.equals(rhs.collCode))))&&((this.deptCode == rhs.deptCode)||((this.deptCode!= null)&&this.deptCode.equals(rhs.deptCode))))&&((this.criteriaStspKeySequence == rhs.criteriaStspKeySequence)||((this.criteriaStspKeySequence!= null)&&this.criteriaStspKeySequence.equals(rhs.criteriaStspKeySequence))))&&((this.criteriaDeptDesc == rhs.criteriaDeptDesc)||((this.criteriaDeptDesc!= null)&&this.criteriaDeptDesc.equals(rhs.criteriaDeptDesc))))&&((this.criteriaSessCode == rhs.criteriaSessCode)||((this.criteriaSessCode!= null)&&this.criteriaSessCode.equals(rhs.criteriaSessCode))))&&((this.criteriaRepeatSysInd == rhs.criteriaRepeatSysInd)||((this.criteriaRepeatSysInd!= null)&&this.criteriaRepeatSysInd.equals(rhs.criteriaRepeatSysInd))))&&((this.criteriaPtrmCodeDesc == rhs.criteriaPtrmCodeDesc)||((this.criteriaPtrmCodeDesc!= null)&&this.criteriaPtrmCodeDesc.equals(rhs.criteriaPtrmCodeDesc))))&&((this.criteriaSchdCode == rhs.criteriaSchdCode)||((this.criteriaSchdCode!= null)&&this.criteriaSchdCode.equals(rhs.criteriaSchdCode))))&&((this.sessDesc == rhs.sessDesc)||((this.sessDesc!= null)&&this.sessDesc.equals(rhs.sessDesc))))&&((this.criteriaDivsDesc == rhs.criteriaDivsDesc)||((this.criteriaDivsDesc!= null)&&this.criteriaDivsDesc.equals(rhs.criteriaDivsDesc))))&&((this.regCompletionDate == rhs.regCompletionDate)||((this.regCompletionDate!= null)&&this.regCompletionDate.equals(rhs.regCompletionDate))))&&((this.criteriaContHr == rhs.criteriaContHr)||((this.criteriaContHr!= null)&&this.criteriaContHr.equals(rhs.criteriaContHr))))&&((this.repeatSysInd == rhs.repeatSysInd)||((this.repeatSysInd!= null)&&this.repeatSysInd.equals(rhs.repeatSysInd))))&&((this.criteriaRepeatCourseInd == rhs.criteriaRepeatCourseInd)||((this.criteriaRepeatCourseInd!= null)&&this.criteriaRepeatCourseInd.equals(rhs.criteriaRepeatCourseInd))))&&((this.criteriaPtrmStartDate == rhs.criteriaPtrmStartDate)||((this.criteriaPtrmStartDate!= null)&&this.criteriaPtrmStartDate.equals(rhs.criteriaPtrmStartDate))))&&((this.collDesc == rhs.collDesc)||((this.collDesc!= null)&&this.collDesc.equals(rhs.collDesc))))&&((this.criteriaLongCourseTitle == rhs.criteriaLongCourseTitle)||((this.criteriaLongCourseTitle!= null)&&this.criteriaLongCourseTitle.equals(rhs.criteriaLongCourseTitle))))&&((this.repeatDesc == rhs.repeatDesc)||((this.repeatDesc!= null)&&this.repeatDesc.equals(rhs.repeatDesc))))&&((this.criteriaSchdCodeDesc == rhs.criteriaSchdCodeDesc)||((this.criteriaSchdCodeDesc!= null)&&this.criteriaSchdCodeDesc.equals(rhs.criteriaSchdCodeDesc))))&&((this.crn == rhs.crn)||((this.crn!= null)&&this.crn.equals(rhs.crn))))&&((this.ptrmStartDate == rhs.ptrmStartDate)||((this.ptrmStartDate!= null)&&this.ptrmStartDate.equals(rhs.ptrmStartDate))))&&((this.criteriaCrseTitle == rhs.criteriaCrseTitle)||((this.criteriaCrseTitle!= null)&&this.criteriaCrseTitle.equals(rhs.criteriaCrseTitle))))&&((this.contHr == rhs.contHr)||((this.contHr!= null)&&this.contHr.equals(rhs.contHr))))&&((this.criteriaDeptCode == rhs.criteriaDeptCode)||((this.criteriaDeptCode!= null)&&this.criteriaDeptCode.equals(rhs.criteriaDeptCode))))&&((this.criteriaCampCode == rhs.criteriaCampCode)||((this.criteriaCampCode!= null)&&this.criteriaCampCode.equals(rhs.criteriaCampCode))))&&((this.criteriaCrseNumb == rhs.criteriaCrseNumb)||((this.criteriaCrseNumb!= null)&&this.criteriaCrseNumb.equals(rhs.criteriaCrseNumb))))&&((this.schdCodeDesc == rhs.schdCodeDesc)||((this.schdCodeDesc!= null)&&this.schdCodeDesc.equals(rhs.schdCodeDesc))))&&((this.criteriaSubjCode == rhs.criteriaSubjCode)||((this.criteriaSubjCode!= null)&&this.criteriaSubjCode.equals(rhs.criteriaSubjCode))))&&((this.criteriaDivsCode == rhs.criteriaDivsCode)||((this.criteriaDivsCode!= null)&&this.criteriaDivsCode.equals(rhs.criteriaDivsCode))))&&((this.criteriaPtrmEndDate == rhs.criteriaPtrmEndDate)||((this.criteriaPtrmEndDate!= null)&&this.criteriaPtrmEndDate.equals(rhs.criteriaPtrmEndDate))))&&((this.criteriaCollCode == rhs.criteriaCollCode)||((this.criteriaCollCode!= null)&&this.criteriaCollCode.equals(rhs.criteriaCollCode))))&&((this.ptrmEndDate == rhs.ptrmEndDate)||((this.ptrmEndDate!= null)&&this.ptrmEndDate.equals(rhs.ptrmEndDate))));
+        return ((((((((((((((((((((((((((((((((((((((((((((((((((((this.criteriaPtrmCode == rhs.criteriaPtrmCode)||((this.criteriaPtrmCode!= null)&&this.criteriaPtrmCode.equals(rhs.criteriaPtrmCode)))&&((this.crseTitle == rhs.crseTitle)||((this.crseTitle!= null)&&this.crseTitle.equals(rhs.crseTitle))))&&((this.criteriaRegCompletionDate == rhs.criteriaRegCompletionDate)||((this.criteriaRegCompletionDate!= null)&&this.criteriaRegCompletionDate.equals(rhs.criteriaRegCompletionDate))))&&((this.criteriaHoursAttempted == rhs.criteriaHoursAttempted)||((this.criteriaHoursAttempted!= null)&&this.criteriaHoursAttempted.equals(rhs.criteriaHoursAttempted))))&&((this.criteriaCeuInd == rhs.criteriaCeuInd)||((this.criteriaCeuInd!= null)&&this.criteriaCeuInd.equals(rhs.criteriaCeuInd))))&&((this.gchgCode == rhs.gchgCode)||((this.gchgCode!= null)&&this.gchgCode.equals(rhs.gchgCode))))&&((this.criteriaFinalGrdeChgDate == rhs.criteriaFinalGrdeChgDate)||((this.criteriaFinalGrdeChgDate!= null)&&this.criteriaFinalGrdeChgDate.equals(rhs.criteriaFinalGrdeChgDate))))&&((this.sessCode == rhs.sessCode)||((this.sessCode!= null)&&this.sessCode.equals(rhs.sessCode))))&&((this.criteriaCourseComment == rhs.criteriaCourseComment)||((this.criteriaCourseComment!= null)&&this.criteriaCourseComment.equals(rhs.criteriaCourseComment))))&&((this.criteriaCrn == rhs.criteriaCrn)||((this.criteriaCrn!= null)&&this.criteriaCrn.equals(rhs.criteriaCrn))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.courseComment == rhs.courseComment)||((this.courseComment!= null)&&this.courseComment.equals(rhs.courseComment))))&&((this.stspKeySequence == rhs.stspKeySequence)||((this.stspKeySequence!= null)&&this.stspKeySequence.equals(rhs.stspKeySequence))))&&((this.criteriaCreditHours == rhs.criteriaCreditHours)||((this.criteriaCreditHours!= null)&&this.criteriaCreditHours.equals(rhs.criteriaCreditHours))))&&((this.keyblckTermCode == rhs.keyblckTermCode)||((this.keyblckTermCode!= null)&&this.keyblckTermCode.equals(rhs.keyblckTermCode))))&&((this.criteriaRegStartDate == rhs.criteriaRegStartDate)||((this.criteriaRegStartDate!= null)&&this.criteriaRegStartDate.equals(rhs.criteriaRegStartDate))))&&((this.criteriaGmodCode == rhs.criteriaGmodCode)||((this.criteriaGmodCode!= null)&&this.criteriaGmodCode.equals(rhs.criteriaGmodCode))))&&((this.primaryLevlInd == rhs.primaryLevlInd)||((this.primaryLevlInd!= null)&&this.primaryLevlInd.equals(rhs.primaryLevlInd))))&&((this.gcmtCode == rhs.gcmtCode)||((this.gcmtCode!= null)&&this.gcmtCode.equals(rhs.gcmtCode))))&&((this.criteriaSeqNumb == rhs.criteriaSeqNumb)||((this.criteriaSeqNumb!= null)&&this.criteriaSeqNumb.equals(rhs.criteriaSeqNumb))))&&((this.incompleteExtDate == rhs.incompleteExtDate)||((this.incompleteExtDate!= null)&&this.incompleteExtDate.equals(rhs.incompleteExtDate))))&&((this.repeatCourseInd == rhs.repeatCourseInd)||((this.repeatCourseInd!= null)&&this.repeatCourseInd.equals(rhs.repeatCourseInd))))&&((this.longCourseTitle == rhs.longCourseTitle)||((this.longCourseTitle!= null)&&this.longCourseTitle.equals(rhs.longCourseTitle))))&&((this.criteriaIncompleteExtDate == rhs.criteriaIncompleteExtDate)||((this.criteriaIncompleteExtDate!= null)&&this.criteriaIncompleteExtDate.equals(rhs.criteriaIncompleteExtDate))))&&((this.divsCode == rhs.divsCode)||((this.divsCode!= null)&&this.divsCode.equals(rhs.divsCode))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.collCode == rhs.collCode)||((this.collCode!= null)&&this.collCode.equals(rhs.collCode))))&&((this.deptCode == rhs.deptCode)||((this.deptCode!= null)&&this.deptCode.equals(rhs.deptCode))))&&((this.criteriaStspKeySequence == rhs.criteriaStspKeySequence)||((this.criteriaStspKeySequence!= null)&&this.criteriaStspKeySequence.equals(rhs.criteriaStspKeySequence))))&&((this.keyblckValidationCheck == rhs.keyblckValidationCheck)||((this.keyblckValidationCheck!= null)&&this.keyblckValidationCheck.equals(rhs.keyblckValidationCheck))))&&((this.criteriaGrdeCodeFinal == rhs.criteriaGrdeCodeFinal)||((this.criteriaGrdeCodeFinal!= null)&&this.criteriaGrdeCodeFinal.equals(rhs.criteriaGrdeCodeFinal))))&&((this.criteriaSessCode == rhs.criteriaSessCode)||((this.criteriaSessCode!= null)&&this.criteriaSessCode.equals(rhs.criteriaSessCode))))&&((this.criteriaSchdCode == rhs.criteriaSchdCode)||((this.criteriaSchdCode!= null)&&this.criteriaSchdCode.equals(rhs.criteriaSchdCode))))&&((this.criteriaContHr == rhs.criteriaContHr)||((this.criteriaContHr!= null)&&this.criteriaContHr.equals(rhs.criteriaContHr))))&&((this.criteriaRepeatCourseInd == rhs.criteriaRepeatCourseInd)||((this.criteriaRepeatCourseInd!= null)&&this.criteriaRepeatCourseInd.equals(rhs.criteriaRepeatCourseInd))))&&((this.criteriaPtrmStartDate == rhs.criteriaPtrmStartDate)||((this.criteriaPtrmStartDate!= null)&&this.criteriaPtrmStartDate.equals(rhs.criteriaPtrmStartDate))))&&((this.criteriaGchgCode == rhs.criteriaGchgCode)||((this.criteriaGchgCode!= null)&&this.criteriaGchgCode.equals(rhs.criteriaGchgCode))))&&((this.criteriaLongCourseTitle == rhs.criteriaLongCourseTitle)||((this.criteriaLongCourseTitle!= null)&&this.criteriaLongCourseTitle.equals(rhs.criteriaLongCourseTitle))))&&((this.ptrmStartDate == rhs.ptrmStartDate)||((this.ptrmStartDate!= null)&&this.ptrmStartDate.equals(rhs.ptrmStartDate))))&&((this.criteriaCrseTitle == rhs.criteriaCrseTitle)||((this.criteriaCrseTitle!= null)&&this.criteriaCrseTitle.equals(rhs.criteriaCrseTitle))))&&((this.criteriaGcmtCode == rhs.criteriaGcmtCode)||((this.criteriaGcmtCode!= null)&&this.criteriaGcmtCode.equals(rhs.criteriaGcmtCode))))&&((this.contHr == rhs.contHr)||((this.contHr!= null)&&this.contHr.equals(rhs.contHr))))&&((this.criteriaDeptCode == rhs.criteriaDeptCode)||((this.criteriaDeptCode!= null)&&this.criteriaDeptCode.equals(rhs.criteriaDeptCode))))&&((this.criteriaCampCode == rhs.criteriaCampCode)||((this.criteriaCampCode!= null)&&this.criteriaCampCode.equals(rhs.criteriaCampCode))))&&((this.criteriaCrseNumb == rhs.criteriaCrseNumb)||((this.criteriaCrseNumb!= null)&&this.criteriaCrseNumb.equals(rhs.criteriaCrseNumb))))&&((this.criteriaSubjCode == rhs.criteriaSubjCode)||((this.criteriaSubjCode!= null)&&this.criteriaSubjCode.equals(rhs.criteriaSubjCode))))&&((this.criteriaDivsCode == rhs.criteriaDivsCode)||((this.criteriaDivsCode!= null)&&this.criteriaDivsCode.equals(rhs.criteriaDivsCode))))&&((this.criteriaPtrmEndDate == rhs.criteriaPtrmEndDate)||((this.criteriaPtrmEndDate!= null)&&this.criteriaPtrmEndDate.equals(rhs.criteriaPtrmEndDate))))&&((this.criteriaCollCode == rhs.criteriaCollCode)||((this.criteriaCollCode!= null)&&this.criteriaCollCode.equals(rhs.criteriaCollCode))))&&((this.criteriaGrdeCodeIncmpFinal == rhs.criteriaGrdeCodeIncmpFinal)||((this.criteriaGrdeCodeIncmpFinal!= null)&&this.criteriaGrdeCodeIncmpFinal.equals(rhs.criteriaGrdeCodeIncmpFinal))))&&((this.ptrmEndDate == rhs.ptrmEndDate)||((this.ptrmEndDate!= null)&&this.ptrmEndDate.equals(rhs.ptrmEndDate))));
     }
 
 }

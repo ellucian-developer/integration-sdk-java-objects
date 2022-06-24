@@ -47,6 +47,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "criteria.contractPriority",
     "criteria.studentExptRollInd",
     "exemptionPriority",
+    "currentDue",
     "criteria.stspKeySequence",
     "criteria.delInd",
     "delInd",
@@ -196,7 +197,7 @@ public class StudentAccountSummaries100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Lineage reference object : TBBCSTU_STSP_KEY_SEQUENCE
      * 
@@ -353,6 +354,15 @@ public class StudentAccountSummaries100PutRequest {
     @JsonProperty("exemptionPriority")
     @JsonPropertyDescription("Lineage reference object : TBBESTU_EXEMPTION_PRIORITY")
     private Double exemptionPriority;
+    /**
+     * Current Due
+     * <p>
+     * Lineage reference object : currentDue
+     * 
+     */
+    @JsonProperty("currentDue")
+    @JsonPropertyDescription("Lineage reference object : currentDue")
+    private Double currentDue;
     /**
      * Study Path
      * <p>
@@ -857,7 +867,7 @@ public class StudentAccountSummaries100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -868,11 +878,11 @@ public class StudentAccountSummaries100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public StudentAccountSummaries100PutRequest withId(Object id) {
+    public StudentAccountSummaries100PutRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -1345,6 +1355,33 @@ public class StudentAccountSummaries100PutRequest {
     }
 
     /**
+     * Current Due
+     * <p>
+     * Lineage reference object : currentDue
+     * 
+     */
+    @JsonProperty("currentDue")
+    public Double getCurrentDue() {
+        return currentDue;
+    }
+
+    /**
+     * Current Due
+     * <p>
+     * Lineage reference object : currentDue
+     * 
+     */
+    @JsonProperty("currentDue")
+    public void setCurrentDue(Double currentDue) {
+        this.currentDue = currentDue;
+    }
+
+    public StudentAccountSummaries100PutRequest withCurrentDue(Double currentDue) {
+        this.currentDue = currentDue;
+        return this;
+    }
+
+    /**
      * Study Path
      * <p>
      * Lineage reference object : TBBESTU_STSP_KEY_SEQUENCE
@@ -1807,6 +1844,10 @@ public class StudentAccountSummaries100PutRequest {
         sb.append('=');
         sb.append(((this.exemptionPriority == null)?"<null>":this.exemptionPriority));
         sb.append(',');
+        sb.append("currentDue");
+        sb.append('=');
+        sb.append(((this.currentDue == null)?"<null>":this.currentDue));
+        sb.append(',');
         sb.append("criteriaStspKeySequence");
         sb.append('=');
         sb.append(((this.criteriaStspKeySequence == null)?"<null>":this.criteriaStspKeySequence));
@@ -1905,6 +1946,7 @@ public class StudentAccountSummaries100PutRequest {
         result = ((result* 31)+((this.billCode == null)? 0 :this.billCode.hashCode()));
         result = ((result* 31)+((this.criteriaBillCodeDesc == null)? 0 :this.criteriaBillCodeDesc.hashCode()));
         result = ((result* 31)+((this.exemptionPriority == null)? 0 :this.exemptionPriority.hashCode()));
+        result = ((result* 31)+((this.currentDue == null)? 0 :this.currentDue.hashCode()));
         result = ((result* 31)+((this.criteriaStudentExptRollInd == null)? 0 :this.criteriaStudentExptRollInd.hashCode()));
         result = ((result* 31)+((this.delInd == null)? 0 :this.delInd.hashCode()));
         result = ((result* 31)+((this.studentExptRollInd == null)? 0 :this.studentExptRollInd.hashCode()));
@@ -1928,7 +1970,7 @@ public class StudentAccountSummaries100PutRequest {
             return false;
         }
         StudentAccountSummaries100PutRequest rhs = ((StudentAccountSummaries100PutRequest) other);
-        return (((((((((((((((((((((((((((((((((((((((((((((((this.criteriaDeliCode == rhs.criteriaDeliCode)||((this.criteriaDeliCode!= null)&&this.criteriaDeliCode.equals(rhs.criteriaDeliCode)))&&((this.criteriaStspKeySequence == rhs.criteriaStspKeySequence)||((this.criteriaStspKeySequence!= null)&&this.criteriaStspKeySequence.equals(rhs.criteriaStspKeySequence))))&&((this.tbbcstuStspKeySequence == rhs.tbbcstuStspKeySequence)||((this.tbbcstuStspKeySequence!= null)&&this.tbbcstuStspKeySequence.equals(rhs.tbbcstuStspKeySequence))))&&((this.tbbcstuDelInd == rhs.tbbcstuDelInd)||((this.tbbcstuDelInd!= null)&&this.tbbcstuDelInd.equals(rhs.tbbcstuDelInd))))&&((this.criteriaContractPriority == rhs.criteriaContractPriority)||((this.criteriaContractPriority!= null)&&this.criteriaContractPriority.equals(rhs.criteriaContractPriority))))&&((this.criteriaTbbcstuTermCode == rhs.criteriaTbbcstuTermCode)||((this.criteriaTbbcstuTermCode!= null)&&this.criteriaTbbcstuTermCode.equals(rhs.criteriaTbbcstuTermCode))))&&((this.tbbcstuMaxStudentAmount == rhs.tbbcstuMaxStudentAmount)||((this.tbbcstuMaxStudentAmount!= null)&&this.tbbcstuMaxStudentAmount.equals(rhs.tbbcstuMaxStudentAmount))))&&((this.studentContRollInd == rhs.studentContRollInd)||((this.studentContRollInd!= null)&&this.studentContRollInd.equals(rhs.studentContRollInd))))&&((this.criteriaTbbcstuDelInd == rhs.criteriaTbbcstuDelInd)||((this.criteriaTbbcstuDelInd!= null)&&this.criteriaTbbcstuDelInd.equals(rhs.criteriaTbbcstuDelInd))))&&((this.criteriaStudentContRollInd == rhs.criteriaStudentContRollInd)||((this.criteriaStudentContRollInd!= null)&&this.criteriaStudentContRollInd.equals(rhs.criteriaStudentContRollInd))))&&((this.criteriaMaxStudentAmount == rhs.criteriaMaxStudentAmount)||((this.criteriaMaxStudentAmount!= null)&&this.criteriaMaxStudentAmount.equals(rhs.criteriaMaxStudentAmount))))&&((this.contractPriority == rhs.contractPriority)||((this.contractPriority!= null)&&this.contractPriority.equals(rhs.contractPriority))))&&((this.contId == rhs.contId)||((this.contId!= null)&&this.contId.equals(rhs.contId))))&&((this.criteriaContractNumber == rhs.criteriaContractNumber)||((this.criteriaContractNumber!= null)&&this.criteriaContractNumber.equals(rhs.criteriaContractNumber))))&&((this.criteriaColcId == rhs.criteriaColcId)||((this.criteriaColcId!= null)&&this.criteriaColcId.equals(rhs.criteriaColcId))))&&((this.criteriaBillCode == rhs.criteriaBillCode)||((this.criteriaBillCode!= null)&&this.criteriaBillCode.equals(rhs.criteriaBillCode))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.criteriaTbbcstuMaxStudentAmount == rhs.criteriaTbbcstuMaxStudentAmount)||((this.criteriaTbbcstuMaxStudentAmount!= null)&&this.criteriaTbbcstuMaxStudentAmount.equals(rhs.criteriaTbbcstuMaxStudentAmount))))&&((this.criteriaRefundInd == rhs.criteriaRefundInd)||((this.criteriaRefundInd!= null)&&this.criteriaRefundInd.equals(rhs.criteriaRefundInd))))&&((this.exemptionCode == rhs.exemptionCode)||((this.exemptionCode!= null)&&this.exemptionCode.equals(rhs.exemptionCode))))&&((this.colcId == rhs.colcId)||((this.colcId!= null)&&this.colcId.equals(rhs.colcId))))&&((this.authInd == rhs.authInd)||((this.authInd!= null)&&this.authInd.equals(rhs.authInd))))&&((this.criteriaDelInd == rhs.criteriaDelInd)||((this.criteriaDelInd!= null)&&this.criteriaDelInd.equals(rhs.criteriaDelInd))))&&((this.stspKeySequence == rhs.stspKeySequence)||((this.stspKeySequence!= null)&&this.stspKeySequence.equals(rhs.stspKeySequence))))&&((this.criteriaExemptionPriority == rhs.criteriaExemptionPriority)||((this.criteriaExemptionPriority!= null)&&this.criteriaExemptionPriority.equals(rhs.criteriaExemptionPriority))))&&((this.criteriaAuthInd == rhs.criteriaAuthInd)||((this.criteriaAuthInd!= null)&&this.criteriaAuthInd.equals(rhs.criteriaAuthInd))))&&((this.criteriaDeliDesc == rhs.criteriaDeliDesc)||((this.criteriaDeliDesc!= null)&&this.criteriaDeliDesc.equals(rhs.criteriaDeliDesc))))&&((this.criteriaContId == rhs.criteriaContId)||((this.criteriaContId!= null)&&this.criteriaContId.equals(rhs.criteriaContId))))&&((this.tbbcstuTermCode == rhs.tbbcstuTermCode)||((this.tbbcstuTermCode!= null)&&this.tbbcstuTermCode.equals(rhs.tbbcstuTermCode))))&&((this.criteriaTermCode == rhs.criteriaTermCode)||((this.criteriaTermCode!= null)&&this.criteriaTermCode.equals(rhs.criteriaTermCode))))&&((this.refundInd == rhs.refundInd)||((this.refundInd!= null)&&this.refundInd.equals(rhs.refundInd))))&&((this.contractNumber == rhs.contractNumber)||((this.contractNumber!= null)&&this.contractNumber.equals(rhs.contractNumber))))&&((this.billCode == rhs.billCode)||((this.billCode!= null)&&this.billCode.equals(rhs.billCode))))&&((this.criteriaBillCodeDesc == rhs.criteriaBillCodeDesc)||((this.criteriaBillCodeDesc!= null)&&this.criteriaBillCodeDesc.equals(rhs.criteriaBillCodeDesc))))&&((this.exemptionPriority == rhs.exemptionPriority)||((this.exemptionPriority!= null)&&this.exemptionPriority.equals(rhs.exemptionPriority))))&&((this.criteriaStudentExptRollInd == rhs.criteriaStudentExptRollInd)||((this.criteriaStudentExptRollInd!= null)&&this.criteriaStudentExptRollInd.equals(rhs.criteriaStudentExptRollInd))))&&((this.delInd == rhs.delInd)||((this.delInd!= null)&&this.delInd.equals(rhs.delInd))))&&((this.studentExptRollInd == rhs.studentExptRollInd)||((this.studentExptRollInd!= null)&&this.studentExptRollInd.equals(rhs.studentExptRollInd))))&&((this.deliCode == rhs.deliCode)||((this.deliCode!= null)&&this.deliCode.equals(rhs.deliCode))))&&((this.maxStudentAmount == rhs.maxStudentAmount)||((this.maxStudentAmount!= null)&&this.maxStudentAmount.equals(rhs.maxStudentAmount))))&&((this.criteriaAuthNumber == rhs.criteriaAuthNumber)||((this.criteriaAuthNumber!= null)&&this.criteriaAuthNumber.equals(rhs.criteriaAuthNumber))))&&((this.authNumber == rhs.authNumber)||((this.authNumber!= null)&&this.authNumber.equals(rhs.authNumber))))&&((this.criteriaTbbcstuStspKeySequence == rhs.criteriaTbbcstuStspKeySequence)||((this.criteriaTbbcstuStspKeySequence!= null)&&this.criteriaTbbcstuStspKeySequence.equals(rhs.criteriaTbbcstuStspKeySequence))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.criteriaExemptionCode == rhs.criteriaExemptionCode)||((this.criteriaExemptionCode!= null)&&this.criteriaExemptionCode.equals(rhs.criteriaExemptionCode))))&&((this.termCode == rhs.termCode)||((this.termCode!= null)&&this.termCode.equals(rhs.termCode))));
+        return ((((((((((((((((((((((((((((((((((((((((((((((((this.criteriaDeliCode == rhs.criteriaDeliCode)||((this.criteriaDeliCode!= null)&&this.criteriaDeliCode.equals(rhs.criteriaDeliCode)))&&((this.criteriaStspKeySequence == rhs.criteriaStspKeySequence)||((this.criteriaStspKeySequence!= null)&&this.criteriaStspKeySequence.equals(rhs.criteriaStspKeySequence))))&&((this.tbbcstuStspKeySequence == rhs.tbbcstuStspKeySequence)||((this.tbbcstuStspKeySequence!= null)&&this.tbbcstuStspKeySequence.equals(rhs.tbbcstuStspKeySequence))))&&((this.tbbcstuDelInd == rhs.tbbcstuDelInd)||((this.tbbcstuDelInd!= null)&&this.tbbcstuDelInd.equals(rhs.tbbcstuDelInd))))&&((this.criteriaContractPriority == rhs.criteriaContractPriority)||((this.criteriaContractPriority!= null)&&this.criteriaContractPriority.equals(rhs.criteriaContractPriority))))&&((this.criteriaTbbcstuTermCode == rhs.criteriaTbbcstuTermCode)||((this.criteriaTbbcstuTermCode!= null)&&this.criteriaTbbcstuTermCode.equals(rhs.criteriaTbbcstuTermCode))))&&((this.tbbcstuMaxStudentAmount == rhs.tbbcstuMaxStudentAmount)||((this.tbbcstuMaxStudentAmount!= null)&&this.tbbcstuMaxStudentAmount.equals(rhs.tbbcstuMaxStudentAmount))))&&((this.studentContRollInd == rhs.studentContRollInd)||((this.studentContRollInd!= null)&&this.studentContRollInd.equals(rhs.studentContRollInd))))&&((this.criteriaTbbcstuDelInd == rhs.criteriaTbbcstuDelInd)||((this.criteriaTbbcstuDelInd!= null)&&this.criteriaTbbcstuDelInd.equals(rhs.criteriaTbbcstuDelInd))))&&((this.criteriaStudentContRollInd == rhs.criteriaStudentContRollInd)||((this.criteriaStudentContRollInd!= null)&&this.criteriaStudentContRollInd.equals(rhs.criteriaStudentContRollInd))))&&((this.criteriaMaxStudentAmount == rhs.criteriaMaxStudentAmount)||((this.criteriaMaxStudentAmount!= null)&&this.criteriaMaxStudentAmount.equals(rhs.criteriaMaxStudentAmount))))&&((this.contractPriority == rhs.contractPriority)||((this.contractPriority!= null)&&this.contractPriority.equals(rhs.contractPriority))))&&((this.contId == rhs.contId)||((this.contId!= null)&&this.contId.equals(rhs.contId))))&&((this.criteriaContractNumber == rhs.criteriaContractNumber)||((this.criteriaContractNumber!= null)&&this.criteriaContractNumber.equals(rhs.criteriaContractNumber))))&&((this.criteriaColcId == rhs.criteriaColcId)||((this.criteriaColcId!= null)&&this.criteriaColcId.equals(rhs.criteriaColcId))))&&((this.criteriaBillCode == rhs.criteriaBillCode)||((this.criteriaBillCode!= null)&&this.criteriaBillCode.equals(rhs.criteriaBillCode))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.criteriaTbbcstuMaxStudentAmount == rhs.criteriaTbbcstuMaxStudentAmount)||((this.criteriaTbbcstuMaxStudentAmount!= null)&&this.criteriaTbbcstuMaxStudentAmount.equals(rhs.criteriaTbbcstuMaxStudentAmount))))&&((this.criteriaRefundInd == rhs.criteriaRefundInd)||((this.criteriaRefundInd!= null)&&this.criteriaRefundInd.equals(rhs.criteriaRefundInd))))&&((this.exemptionCode == rhs.exemptionCode)||((this.exemptionCode!= null)&&this.exemptionCode.equals(rhs.exemptionCode))))&&((this.colcId == rhs.colcId)||((this.colcId!= null)&&this.colcId.equals(rhs.colcId))))&&((this.authInd == rhs.authInd)||((this.authInd!= null)&&this.authInd.equals(rhs.authInd))))&&((this.criteriaDelInd == rhs.criteriaDelInd)||((this.criteriaDelInd!= null)&&this.criteriaDelInd.equals(rhs.criteriaDelInd))))&&((this.stspKeySequence == rhs.stspKeySequence)||((this.stspKeySequence!= null)&&this.stspKeySequence.equals(rhs.stspKeySequence))))&&((this.criteriaExemptionPriority == rhs.criteriaExemptionPriority)||((this.criteriaExemptionPriority!= null)&&this.criteriaExemptionPriority.equals(rhs.criteriaExemptionPriority))))&&((this.criteriaAuthInd == rhs.criteriaAuthInd)||((this.criteriaAuthInd!= null)&&this.criteriaAuthInd.equals(rhs.criteriaAuthInd))))&&((this.criteriaDeliDesc == rhs.criteriaDeliDesc)||((this.criteriaDeliDesc!= null)&&this.criteriaDeliDesc.equals(rhs.criteriaDeliDesc))))&&((this.criteriaContId == rhs.criteriaContId)||((this.criteriaContId!= null)&&this.criteriaContId.equals(rhs.criteriaContId))))&&((this.tbbcstuTermCode == rhs.tbbcstuTermCode)||((this.tbbcstuTermCode!= null)&&this.tbbcstuTermCode.equals(rhs.tbbcstuTermCode))))&&((this.criteriaTermCode == rhs.criteriaTermCode)||((this.criteriaTermCode!= null)&&this.criteriaTermCode.equals(rhs.criteriaTermCode))))&&((this.refundInd == rhs.refundInd)||((this.refundInd!= null)&&this.refundInd.equals(rhs.refundInd))))&&((this.contractNumber == rhs.contractNumber)||((this.contractNumber!= null)&&this.contractNumber.equals(rhs.contractNumber))))&&((this.billCode == rhs.billCode)||((this.billCode!= null)&&this.billCode.equals(rhs.billCode))))&&((this.criteriaBillCodeDesc == rhs.criteriaBillCodeDesc)||((this.criteriaBillCodeDesc!= null)&&this.criteriaBillCodeDesc.equals(rhs.criteriaBillCodeDesc))))&&((this.exemptionPriority == rhs.exemptionPriority)||((this.exemptionPriority!= null)&&this.exemptionPriority.equals(rhs.exemptionPriority))))&&((this.currentDue == rhs.currentDue)||((this.currentDue!= null)&&this.currentDue.equals(rhs.currentDue))))&&((this.criteriaStudentExptRollInd == rhs.criteriaStudentExptRollInd)||((this.criteriaStudentExptRollInd!= null)&&this.criteriaStudentExptRollInd.equals(rhs.criteriaStudentExptRollInd))))&&((this.delInd == rhs.delInd)||((this.delInd!= null)&&this.delInd.equals(rhs.delInd))))&&((this.studentExptRollInd == rhs.studentExptRollInd)||((this.studentExptRollInd!= null)&&this.studentExptRollInd.equals(rhs.studentExptRollInd))))&&((this.deliCode == rhs.deliCode)||((this.deliCode!= null)&&this.deliCode.equals(rhs.deliCode))))&&((this.maxStudentAmount == rhs.maxStudentAmount)||((this.maxStudentAmount!= null)&&this.maxStudentAmount.equals(rhs.maxStudentAmount))))&&((this.criteriaAuthNumber == rhs.criteriaAuthNumber)||((this.criteriaAuthNumber!= null)&&this.criteriaAuthNumber.equals(rhs.criteriaAuthNumber))))&&((this.authNumber == rhs.authNumber)||((this.authNumber!= null)&&this.authNumber.equals(rhs.authNumber))))&&((this.criteriaTbbcstuStspKeySequence == rhs.criteriaTbbcstuStspKeySequence)||((this.criteriaTbbcstuStspKeySequence!= null)&&this.criteriaTbbcstuStspKeySequence.equals(rhs.criteriaTbbcstuStspKeySequence))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.criteriaExemptionCode == rhs.criteriaExemptionCode)||((this.criteriaExemptionCode!= null)&&this.criteriaExemptionCode.equals(rhs.criteriaExemptionCode))))&&((this.termCode == rhs.termCode)||((this.termCode!= null)&&this.termCode.equals(rhs.termCode))));
     }
 
 }

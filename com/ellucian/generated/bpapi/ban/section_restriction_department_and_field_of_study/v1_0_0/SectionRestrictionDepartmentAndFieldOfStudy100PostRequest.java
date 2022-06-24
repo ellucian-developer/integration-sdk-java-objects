@@ -35,7 +35,7 @@ public class SectionRestrictionDepartmentAndFieldOfStudy100PostRequest {
      */
     @JsonProperty("ssasectTermCode")
     @JsonPropertyDescription("Lineage reference object : ssasectTermCode, Lookup lineage reference object : stvterm")
-    private Object ssasectTermCode;
+    private String ssasectTermCode;
     /**
      * CRN
      * <p>
@@ -44,7 +44,7 @@ public class SectionRestrictionDepartmentAndFieldOfStudy100PostRequest {
      */
     @JsonProperty("ssasectCrn")
     @JsonPropertyDescription("Lineage reference object : ssasectCrn")
-    private Object ssasectCrn;
+    private String ssasectCrn;
     @JsonProperty("fosAll")
     private String fosAll;
     /**
@@ -72,7 +72,7 @@ public class SectionRestrictionDepartmentAndFieldOfStudy100PostRequest {
      */
     @JsonProperty("ssrrdepDeptIeCde")
     @JsonPropertyDescription("Lineage reference object : ssrrdepDeptIeCde")
-    private Object ssrrdepDeptIeCde;
+    private String ssrrdepDeptIeCde;
     /**
      * Code
      * <p>
@@ -102,7 +102,7 @@ public class SectionRestrictionDepartmentAndFieldOfStudy100PostRequest {
      * 
      */
     @JsonProperty("ssasectTermCode")
-    public Object getSsasectTermCode() {
+    public String getSsasectTermCode() {
         return ssasectTermCode;
     }
 
@@ -114,11 +114,11 @@ public class SectionRestrictionDepartmentAndFieldOfStudy100PostRequest {
      * 
      */
     @JsonProperty("ssasectTermCode")
-    public void setSsasectTermCode(Object ssasectTermCode) {
+    public void setSsasectTermCode(String ssasectTermCode) {
         this.ssasectTermCode = ssasectTermCode;
     }
 
-    public SectionRestrictionDepartmentAndFieldOfStudy100PostRequest withSsasectTermCode(Object ssasectTermCode) {
+    public SectionRestrictionDepartmentAndFieldOfStudy100PostRequest withSsasectTermCode(String ssasectTermCode) {
         this.ssasectTermCode = ssasectTermCode;
         return this;
     }
@@ -130,7 +130,7 @@ public class SectionRestrictionDepartmentAndFieldOfStudy100PostRequest {
      * 
      */
     @JsonProperty("ssasectCrn")
-    public Object getSsasectCrn() {
+    public String getSsasectCrn() {
         return ssasectCrn;
     }
 
@@ -141,11 +141,11 @@ public class SectionRestrictionDepartmentAndFieldOfStudy100PostRequest {
      * 
      */
     @JsonProperty("ssasectCrn")
-    public void setSsasectCrn(Object ssasectCrn) {
+    public void setSsasectCrn(String ssasectCrn) {
         this.ssasectCrn = ssasectCrn;
     }
 
-    public SectionRestrictionDepartmentAndFieldOfStudy100PostRequest withSsasectCrn(Object ssasectCrn) {
+    public SectionRestrictionDepartmentAndFieldOfStudy100PostRequest withSsasectCrn(String ssasectCrn) {
         this.ssasectCrn = ssasectCrn;
         return this;
     }
@@ -225,7 +225,7 @@ public class SectionRestrictionDepartmentAndFieldOfStudy100PostRequest {
      * 
      */
     @JsonProperty("ssrrdepDeptIeCde")
-    public Object getSsrrdepDeptIeCde() {
+    public String getSsrrdepDeptIeCde() {
         return ssrrdepDeptIeCde;
     }
 
@@ -237,11 +237,11 @@ public class SectionRestrictionDepartmentAndFieldOfStudy100PostRequest {
      * 
      */
     @JsonProperty("ssrrdepDeptIeCde")
-    public void setSsrrdepDeptIeCde(Object ssrrdepDeptIeCde) {
+    public void setSsrrdepDeptIeCde(String ssrrdepDeptIeCde) {
         this.ssrrdepDeptIeCde = ssrrdepDeptIeCde;
     }
 
-    public SectionRestrictionDepartmentAndFieldOfStudy100PostRequest withSsrrdepDeptIeCde(Object ssrrdepDeptIeCde) {
+    public SectionRestrictionDepartmentAndFieldOfStudy100PostRequest withSsrrdepDeptIeCde(String ssrrdepDeptIeCde) {
         this.ssrrdepDeptIeCde = ssrrdepDeptIeCde;
         return this;
     }

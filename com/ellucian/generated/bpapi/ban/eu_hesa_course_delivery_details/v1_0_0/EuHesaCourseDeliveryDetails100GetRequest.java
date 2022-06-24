@@ -21,24 +21,24 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class EuHesaCourseDeliveryDetails100GetRequest {
 
     /**
-     * Lineage reference object : keyblockCourseId
+     * Lineage reference object : keyblockCourseId, Lookup lineage reference object : sorpcde
      * 
      */
     @JsonProperty("keyblockCourseId")
-    @JsonPropertyDescription("Lineage reference object : keyblockCourseId")
+    @JsonPropertyDescription("Lineage reference object : keyblockCourseId, Lookup lineage reference object : sorpcde")
     private Object keyblockCourseId;
     /**
-     * Lineage reference object : copyCourseId
+     * Lineage reference object : copyCourseId, Lookup lineage reference object : sorpcde
      * 
      */
     @JsonProperty("copyCourseId")
-    @JsonPropertyDescription("Lineage reference object : copyCourseId")
+    @JsonPropertyDescription("Lineage reference object : copyCourseId, Lookup lineage reference object : sorpcde")
     private Object copyCourseId;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
-     * Lineage reference object : keyblockCourseId
+     * Lineage reference object : keyblockCourseId, Lookup lineage reference object : sorpcde
      * 
      */
     @JsonProperty("keyblockCourseId")
@@ -47,7 +47,7 @@ public class EuHesaCourseDeliveryDetails100GetRequest {
     }
 
     /**
-     * Lineage reference object : keyblockCourseId
+     * Lineage reference object : keyblockCourseId, Lookup lineage reference object : sorpcde
      * 
      */
     @JsonProperty("keyblockCourseId")
@@ -61,7 +61,7 @@ public class EuHesaCourseDeliveryDetails100GetRequest {
     }
 
     /**
-     * Lineage reference object : copyCourseId
+     * Lineage reference object : copyCourseId, Lookup lineage reference object : sorpcde
      * 
      */
     @JsonProperty("copyCourseId")
@@ -70,7 +70,7 @@ public class EuHesaCourseDeliveryDetails100GetRequest {
     }
 
     /**
-     * Lineage reference object : copyCourseId
+     * Lineage reference object : copyCourseId, Lookup lineage reference object : sorpcde
      * 
      */
     @JsonProperty("copyCourseId")

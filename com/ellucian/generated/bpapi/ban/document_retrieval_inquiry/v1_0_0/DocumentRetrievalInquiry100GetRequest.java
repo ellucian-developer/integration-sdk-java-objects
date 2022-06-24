@@ -65,7 +65,7 @@ public class DocumentRetrievalInquiry100GetRequest {
      */
     @JsonProperty("keyblckSubmissionNumber")
     @JsonPropertyDescription("Lineage reference object : keyblckSubmissionNumber")
-    private Object keyblckSubmissionNumber;
+    private Double keyblckSubmissionNumber;
     /**
      * Proj
      * <p>
@@ -102,7 +102,7 @@ public class DocumentRetrievalInquiry100GetRequest {
      */
     @JsonProperty("keyblckDocCode")
     @JsonPropertyDescription("Lineage reference object : keyblckDocCode")
-    private Object keyblckDocCode;
+    private String keyblckDocCode;
     /**
      * COA
      * <p>
@@ -130,7 +130,7 @@ public class DocumentRetrievalInquiry100GetRequest {
      */
     @JsonProperty("keyblckDtypCode")
     @JsonPropertyDescription("Lineage reference object : keyblckDtypCode, Lookup lineage reference object : ftvdtyp")
-    private Object keyblckDtypCode;
+    private String keyblckDtypCode;
     /**
      * Orgn
      * <p>
@@ -294,7 +294,7 @@ public class DocumentRetrievalInquiry100GetRequest {
      * 
      */
     @JsonProperty("keyblckSubmissionNumber")
-    public Object getKeyblckSubmissionNumber() {
+    public Double getKeyblckSubmissionNumber() {
         return keyblckSubmissionNumber;
     }
 
@@ -305,11 +305,11 @@ public class DocumentRetrievalInquiry100GetRequest {
      * 
      */
     @JsonProperty("keyblckSubmissionNumber")
-    public void setKeyblckSubmissionNumber(Object keyblckSubmissionNumber) {
+    public void setKeyblckSubmissionNumber(Double keyblckSubmissionNumber) {
         this.keyblckSubmissionNumber = keyblckSubmissionNumber;
     }
 
-    public DocumentRetrievalInquiry100GetRequest withKeyblckSubmissionNumber(Object keyblckSubmissionNumber) {
+    public DocumentRetrievalInquiry100GetRequest withKeyblckSubmissionNumber(Double keyblckSubmissionNumber) {
         this.keyblckSubmissionNumber = keyblckSubmissionNumber;
         return this;
     }
@@ -403,7 +403,7 @@ public class DocumentRetrievalInquiry100GetRequest {
      * 
      */
     @JsonProperty("keyblckDocCode")
-    public Object getKeyblckDocCode() {
+    public String getKeyblckDocCode() {
         return keyblckDocCode;
     }
 
@@ -415,11 +415,11 @@ public class DocumentRetrievalInquiry100GetRequest {
      * 
      */
     @JsonProperty("keyblckDocCode")
-    public void setKeyblckDocCode(Object keyblckDocCode) {
+    public void setKeyblckDocCode(String keyblckDocCode) {
         this.keyblckDocCode = keyblckDocCode;
     }
 
-    public DocumentRetrievalInquiry100GetRequest withKeyblckDocCode(Object keyblckDocCode) {
+    public DocumentRetrievalInquiry100GetRequest withKeyblckDocCode(String keyblckDocCode) {
         this.keyblckDocCode = keyblckDocCode;
         return this;
     }
@@ -486,7 +486,7 @@ public class DocumentRetrievalInquiry100GetRequest {
      * 
      */
     @JsonProperty("keyblckDtypCode")
-    public Object getKeyblckDtypCode() {
+    public String getKeyblckDtypCode() {
         return keyblckDtypCode;
     }
 
@@ -498,11 +498,11 @@ public class DocumentRetrievalInquiry100GetRequest {
      * 
      */
     @JsonProperty("keyblckDtypCode")
-    public void setKeyblckDtypCode(Object keyblckDtypCode) {
+    public void setKeyblckDtypCode(String keyblckDtypCode) {
         this.keyblckDtypCode = keyblckDtypCode;
     }
 
-    public DocumentRetrievalInquiry100GetRequest withKeyblckDtypCode(Object keyblckDtypCode) {
+    public DocumentRetrievalInquiry100GetRequest withKeyblckDtypCode(String keyblckDtypCode) {
         this.keyblckDtypCode = keyblckDtypCode;
         return this;
     }

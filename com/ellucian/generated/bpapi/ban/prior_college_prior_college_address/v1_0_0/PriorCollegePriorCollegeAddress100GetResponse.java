@@ -40,7 +40,7 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      */
     @JsonProperty("sobsbgiStatCode")
     @JsonPropertyDescription("Lineage reference object : sobsbgiStatCode, Lookup lineage reference object : stvstat")
-    private Object sobsbgiStatCode;
+    private String sobsbgiStatCode;
     /**
      * Nation
      * <p>
@@ -49,7 +49,7 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      */
     @JsonProperty("sobsbgiNatnCode")
     @JsonPropertyDescription("Lineage reference object : sobsbgiNatnCode, Lookup lineage reference object : stvnatn")
-    private Object sobsbgiNatnCode;
+    private String sobsbgiNatnCode;
     /**
      * County
      * <p>
@@ -58,7 +58,7 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      */
     @JsonProperty("sobsbgiCntyCode")
     @JsonPropertyDescription("Lineage reference object : sobsbgiCntyCode, Lookup lineage reference object : stvcnty")
-    private Object sobsbgiCntyCode;
+    private String sobsbgiCntyCode;
     /**
      * ZIP or Postal Code
      * <p>
@@ -67,7 +67,7 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      */
     @JsonProperty("sobsbgiZip")
     @JsonPropertyDescription("Lineage reference object : sobsbgiZip")
-    private Object sobsbgiZip;
+    private String sobsbgiZip;
     /**
      * State or Province Description
      * <p>
@@ -76,7 +76,7 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      */
     @JsonProperty("stvstatDesc")
     @JsonPropertyDescription("Lineage reference object : stvstatDesc")
-    private Object stvstatDesc;
+    private String stvstatDesc;
     /**
      * House Number
      * <p>
@@ -85,7 +85,7 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      */
     @JsonProperty("sobsbgiHouseNumber")
     @JsonPropertyDescription("Lineage reference object : sobsbgiHouseNumber")
-    private Object sobsbgiHouseNumber;
+    private String sobsbgiHouseNumber;
     /**
      * City
      * <p>
@@ -94,14 +94,14 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      */
     @JsonProperty("sobsbgiCity")
     @JsonPropertyDescription("Lineage reference object : sobsbgiCity")
-    private Object sobsbgiCity;
+    private String sobsbgiCity;
     /**
      * Lineage reference object : stvcntyDesc
      * 
      */
     @JsonProperty("stvcntyDesc")
     @JsonPropertyDescription("Lineage reference object : stvcntyDesc")
-    private Object stvcntyDesc;
+    private String stvcntyDesc;
     /**
      * Street Line 1
      * <p>
@@ -110,7 +110,7 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      */
     @JsonProperty("sobsbgiStreetLine1")
     @JsonPropertyDescription("Lineage reference object : sobsbgiStreetLine1")
-    private Object sobsbgiStreetLine1;
+    private String sobsbgiStreetLine1;
     /**
      * Street Line 2
      * <p>
@@ -119,7 +119,7 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      */
     @JsonProperty("sobsbgiStreetLine2")
     @JsonPropertyDescription("Lineage reference object : sobsbgiStreetLine2")
-    private Object sobsbgiStreetLine2;
+    private String sobsbgiStreetLine2;
     /**
      * Street Line 3
      * <p>
@@ -128,7 +128,7 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      */
     @JsonProperty("sobsbgiStreetLine3")
     @JsonPropertyDescription("Lineage reference object : sobsbgiStreetLine3")
-    private Object sobsbgiStreetLine3;
+    private String sobsbgiStreetLine3;
     /**
      * Street Line 4
      * <p>
@@ -137,7 +137,7 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      */
     @JsonProperty("sobsbgiStreetLine4")
     @JsonPropertyDescription("Lineage reference object : sobsbgiStreetLine4")
-    private Object sobsbgiStreetLine4;
+    private String sobsbgiStreetLine4;
     /**
      * Nation Description
      * <p>
@@ -146,14 +146,14 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      */
     @JsonProperty("stvnatnDesc")
     @JsonPropertyDescription("Lineage reference object : stvnatnDesc")
-    private Object stvnatnDesc;
+    private String stvnatnDesc;
     /**
      * Lineage reference object : addrDisp
      * 
      */
     @JsonProperty("addrDisp")
     @JsonPropertyDescription("Lineage reference object : addrDisp")
-    private Object addrDisp;
+    private String addrDisp;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -164,7 +164,7 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("sobsbgiStatCode")
-    public Object getSobsbgiStatCode() {
+    public String getSobsbgiStatCode() {
         return sobsbgiStatCode;
     }
 
@@ -175,11 +175,11 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("sobsbgiStatCode")
-    public void setSobsbgiStatCode(Object sobsbgiStatCode) {
+    public void setSobsbgiStatCode(String sobsbgiStatCode) {
         this.sobsbgiStatCode = sobsbgiStatCode;
     }
 
-    public PriorCollegePriorCollegeAddress100GetResponse withSobsbgiStatCode(Object sobsbgiStatCode) {
+    public PriorCollegePriorCollegeAddress100GetResponse withSobsbgiStatCode(String sobsbgiStatCode) {
         this.sobsbgiStatCode = sobsbgiStatCode;
         return this;
     }
@@ -191,7 +191,7 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("sobsbgiNatnCode")
-    public Object getSobsbgiNatnCode() {
+    public String getSobsbgiNatnCode() {
         return sobsbgiNatnCode;
     }
 
@@ -202,11 +202,11 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("sobsbgiNatnCode")
-    public void setSobsbgiNatnCode(Object sobsbgiNatnCode) {
+    public void setSobsbgiNatnCode(String sobsbgiNatnCode) {
         this.sobsbgiNatnCode = sobsbgiNatnCode;
     }
 
-    public PriorCollegePriorCollegeAddress100GetResponse withSobsbgiNatnCode(Object sobsbgiNatnCode) {
+    public PriorCollegePriorCollegeAddress100GetResponse withSobsbgiNatnCode(String sobsbgiNatnCode) {
         this.sobsbgiNatnCode = sobsbgiNatnCode;
         return this;
     }
@@ -218,7 +218,7 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("sobsbgiCntyCode")
-    public Object getSobsbgiCntyCode() {
+    public String getSobsbgiCntyCode() {
         return sobsbgiCntyCode;
     }
 
@@ -229,11 +229,11 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("sobsbgiCntyCode")
-    public void setSobsbgiCntyCode(Object sobsbgiCntyCode) {
+    public void setSobsbgiCntyCode(String sobsbgiCntyCode) {
         this.sobsbgiCntyCode = sobsbgiCntyCode;
     }
 
-    public PriorCollegePriorCollegeAddress100GetResponse withSobsbgiCntyCode(Object sobsbgiCntyCode) {
+    public PriorCollegePriorCollegeAddress100GetResponse withSobsbgiCntyCode(String sobsbgiCntyCode) {
         this.sobsbgiCntyCode = sobsbgiCntyCode;
         return this;
     }
@@ -245,7 +245,7 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("sobsbgiZip")
-    public Object getSobsbgiZip() {
+    public String getSobsbgiZip() {
         return sobsbgiZip;
     }
 
@@ -256,11 +256,11 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("sobsbgiZip")
-    public void setSobsbgiZip(Object sobsbgiZip) {
+    public void setSobsbgiZip(String sobsbgiZip) {
         this.sobsbgiZip = sobsbgiZip;
     }
 
-    public PriorCollegePriorCollegeAddress100GetResponse withSobsbgiZip(Object sobsbgiZip) {
+    public PriorCollegePriorCollegeAddress100GetResponse withSobsbgiZip(String sobsbgiZip) {
         this.sobsbgiZip = sobsbgiZip;
         return this;
     }
@@ -272,7 +272,7 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("stvstatDesc")
-    public Object getStvstatDesc() {
+    public String getStvstatDesc() {
         return stvstatDesc;
     }
 
@@ -283,11 +283,11 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("stvstatDesc")
-    public void setStvstatDesc(Object stvstatDesc) {
+    public void setStvstatDesc(String stvstatDesc) {
         this.stvstatDesc = stvstatDesc;
     }
 
-    public PriorCollegePriorCollegeAddress100GetResponse withStvstatDesc(Object stvstatDesc) {
+    public PriorCollegePriorCollegeAddress100GetResponse withStvstatDesc(String stvstatDesc) {
         this.stvstatDesc = stvstatDesc;
         return this;
     }
@@ -299,7 +299,7 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("sobsbgiHouseNumber")
-    public Object getSobsbgiHouseNumber() {
+    public String getSobsbgiHouseNumber() {
         return sobsbgiHouseNumber;
     }
 
@@ -310,11 +310,11 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("sobsbgiHouseNumber")
-    public void setSobsbgiHouseNumber(Object sobsbgiHouseNumber) {
+    public void setSobsbgiHouseNumber(String sobsbgiHouseNumber) {
         this.sobsbgiHouseNumber = sobsbgiHouseNumber;
     }
 
-    public PriorCollegePriorCollegeAddress100GetResponse withSobsbgiHouseNumber(Object sobsbgiHouseNumber) {
+    public PriorCollegePriorCollegeAddress100GetResponse withSobsbgiHouseNumber(String sobsbgiHouseNumber) {
         this.sobsbgiHouseNumber = sobsbgiHouseNumber;
         return this;
     }
@@ -326,7 +326,7 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("sobsbgiCity")
-    public Object getSobsbgiCity() {
+    public String getSobsbgiCity() {
         return sobsbgiCity;
     }
 
@@ -337,11 +337,11 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("sobsbgiCity")
-    public void setSobsbgiCity(Object sobsbgiCity) {
+    public void setSobsbgiCity(String sobsbgiCity) {
         this.sobsbgiCity = sobsbgiCity;
     }
 
-    public PriorCollegePriorCollegeAddress100GetResponse withSobsbgiCity(Object sobsbgiCity) {
+    public PriorCollegePriorCollegeAddress100GetResponse withSobsbgiCity(String sobsbgiCity) {
         this.sobsbgiCity = sobsbgiCity;
         return this;
     }
@@ -351,7 +351,7 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("stvcntyDesc")
-    public Object getStvcntyDesc() {
+    public String getStvcntyDesc() {
         return stvcntyDesc;
     }
 
@@ -360,11 +360,11 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("stvcntyDesc")
-    public void setStvcntyDesc(Object stvcntyDesc) {
+    public void setStvcntyDesc(String stvcntyDesc) {
         this.stvcntyDesc = stvcntyDesc;
     }
 
-    public PriorCollegePriorCollegeAddress100GetResponse withStvcntyDesc(Object stvcntyDesc) {
+    public PriorCollegePriorCollegeAddress100GetResponse withStvcntyDesc(String stvcntyDesc) {
         this.stvcntyDesc = stvcntyDesc;
         return this;
     }
@@ -376,7 +376,7 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("sobsbgiStreetLine1")
-    public Object getSobsbgiStreetLine1() {
+    public String getSobsbgiStreetLine1() {
         return sobsbgiStreetLine1;
     }
 
@@ -387,11 +387,11 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("sobsbgiStreetLine1")
-    public void setSobsbgiStreetLine1(Object sobsbgiStreetLine1) {
+    public void setSobsbgiStreetLine1(String sobsbgiStreetLine1) {
         this.sobsbgiStreetLine1 = sobsbgiStreetLine1;
     }
 
-    public PriorCollegePriorCollegeAddress100GetResponse withSobsbgiStreetLine1(Object sobsbgiStreetLine1) {
+    public PriorCollegePriorCollegeAddress100GetResponse withSobsbgiStreetLine1(String sobsbgiStreetLine1) {
         this.sobsbgiStreetLine1 = sobsbgiStreetLine1;
         return this;
     }
@@ -403,7 +403,7 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("sobsbgiStreetLine2")
-    public Object getSobsbgiStreetLine2() {
+    public String getSobsbgiStreetLine2() {
         return sobsbgiStreetLine2;
     }
 
@@ -414,11 +414,11 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("sobsbgiStreetLine2")
-    public void setSobsbgiStreetLine2(Object sobsbgiStreetLine2) {
+    public void setSobsbgiStreetLine2(String sobsbgiStreetLine2) {
         this.sobsbgiStreetLine2 = sobsbgiStreetLine2;
     }
 
-    public PriorCollegePriorCollegeAddress100GetResponse withSobsbgiStreetLine2(Object sobsbgiStreetLine2) {
+    public PriorCollegePriorCollegeAddress100GetResponse withSobsbgiStreetLine2(String sobsbgiStreetLine2) {
         this.sobsbgiStreetLine2 = sobsbgiStreetLine2;
         return this;
     }
@@ -430,7 +430,7 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("sobsbgiStreetLine3")
-    public Object getSobsbgiStreetLine3() {
+    public String getSobsbgiStreetLine3() {
         return sobsbgiStreetLine3;
     }
 
@@ -441,11 +441,11 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("sobsbgiStreetLine3")
-    public void setSobsbgiStreetLine3(Object sobsbgiStreetLine3) {
+    public void setSobsbgiStreetLine3(String sobsbgiStreetLine3) {
         this.sobsbgiStreetLine3 = sobsbgiStreetLine3;
     }
 
-    public PriorCollegePriorCollegeAddress100GetResponse withSobsbgiStreetLine3(Object sobsbgiStreetLine3) {
+    public PriorCollegePriorCollegeAddress100GetResponse withSobsbgiStreetLine3(String sobsbgiStreetLine3) {
         this.sobsbgiStreetLine3 = sobsbgiStreetLine3;
         return this;
     }
@@ -457,7 +457,7 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("sobsbgiStreetLine4")
-    public Object getSobsbgiStreetLine4() {
+    public String getSobsbgiStreetLine4() {
         return sobsbgiStreetLine4;
     }
 
@@ -468,11 +468,11 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("sobsbgiStreetLine4")
-    public void setSobsbgiStreetLine4(Object sobsbgiStreetLine4) {
+    public void setSobsbgiStreetLine4(String sobsbgiStreetLine4) {
         this.sobsbgiStreetLine4 = sobsbgiStreetLine4;
     }
 
-    public PriorCollegePriorCollegeAddress100GetResponse withSobsbgiStreetLine4(Object sobsbgiStreetLine4) {
+    public PriorCollegePriorCollegeAddress100GetResponse withSobsbgiStreetLine4(String sobsbgiStreetLine4) {
         this.sobsbgiStreetLine4 = sobsbgiStreetLine4;
         return this;
     }
@@ -484,7 +484,7 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("stvnatnDesc")
-    public Object getStvnatnDesc() {
+    public String getStvnatnDesc() {
         return stvnatnDesc;
     }
 
@@ -495,11 +495,11 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("stvnatnDesc")
-    public void setStvnatnDesc(Object stvnatnDesc) {
+    public void setStvnatnDesc(String stvnatnDesc) {
         this.stvnatnDesc = stvnatnDesc;
     }
 
-    public PriorCollegePriorCollegeAddress100GetResponse withStvnatnDesc(Object stvnatnDesc) {
+    public PriorCollegePriorCollegeAddress100GetResponse withStvnatnDesc(String stvnatnDesc) {
         this.stvnatnDesc = stvnatnDesc;
         return this;
     }
@@ -509,7 +509,7 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("addrDisp")
-    public Object getAddrDisp() {
+    public String getAddrDisp() {
         return addrDisp;
     }
 
@@ -518,11 +518,11 @@ public class PriorCollegePriorCollegeAddress100GetResponse {
      * 
      */
     @JsonProperty("addrDisp")
-    public void setAddrDisp(Object addrDisp) {
+    public void setAddrDisp(String addrDisp) {
         this.addrDisp = addrDisp;
     }
 
-    public PriorCollegePriorCollegeAddress100GetResponse withAddrDisp(Object addrDisp) {
+    public PriorCollegePriorCollegeAddress100GetResponse withAddrDisp(String addrDisp) {
         this.addrDisp = addrDisp;
         return this;
     }

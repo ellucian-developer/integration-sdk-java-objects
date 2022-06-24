@@ -66,7 +66,7 @@ public class EnrollmentStatusControl100PostRequest {
      */
     @JsonProperty("xxxxxxxTermCode")
     @JsonPropertyDescription("Lineage reference object : xxxxxxxTermCode, Lookup lineage reference object : stvterm")
-    private Object xxxxxxxTermCode;
+    private String xxxxxxxTermCode;
     /**
      * End  Date
      * <p>
@@ -95,7 +95,7 @@ public class EnrollmentStatusControl100PostRequest {
      */
     @JsonProperty("xxxxxxxTermCodeDef")
     @JsonPropertyDescription("Lineage reference object : xxxxxxxTermCodeDef, Lookup lineage reference object : stvterm")
-    private Object xxxxxxxTermCodeDef;
+    private String xxxxxxxTermCodeDef;
     /**
      * Percentage Tuition Refund
      * <p>
@@ -213,7 +213,7 @@ public class EnrollmentStatusControl100PostRequest {
      * 
      */
     @JsonProperty("xxxxxxxTermCode")
-    public Object getXxxxxxxTermCode() {
+    public String getXxxxxxxTermCode() {
         return xxxxxxxTermCode;
     }
 
@@ -224,11 +224,11 @@ public class EnrollmentStatusControl100PostRequest {
      * 
      */
     @JsonProperty("xxxxxxxTermCode")
-    public void setXxxxxxxTermCode(Object xxxxxxxTermCode) {
+    public void setXxxxxxxTermCode(String xxxxxxxTermCode) {
         this.xxxxxxxTermCode = xxxxxxxTermCode;
     }
 
-    public EnrollmentStatusControl100PostRequest withXxxxxxxTermCode(Object xxxxxxxTermCode) {
+    public EnrollmentStatusControl100PostRequest withXxxxxxxTermCode(String xxxxxxxTermCode) {
         this.xxxxxxxTermCode = xxxxxxxTermCode;
         return this;
     }
@@ -298,7 +298,7 @@ public class EnrollmentStatusControl100PostRequest {
      * 
      */
     @JsonProperty("xxxxxxxTermCodeDef")
-    public Object getXxxxxxxTermCodeDef() {
+    public String getXxxxxxxTermCodeDef() {
         return xxxxxxxTermCodeDef;
     }
 
@@ -309,11 +309,11 @@ public class EnrollmentStatusControl100PostRequest {
      * 
      */
     @JsonProperty("xxxxxxxTermCodeDef")
-    public void setXxxxxxxTermCodeDef(Object xxxxxxxTermCodeDef) {
+    public void setXxxxxxxTermCodeDef(String xxxxxxxTermCodeDef) {
         this.xxxxxxxTermCodeDef = xxxxxxxTermCodeDef;
     }
 
-    public EnrollmentStatusControl100PostRequest withXxxxxxxTermCodeDef(Object xxxxxxxTermCodeDef) {
+    public EnrollmentStatusControl100PostRequest withXxxxxxxTermCodeDef(String xxxxxxxTermCodeDef) {
         this.xxxxxxxTermCodeDef = xxxxxxxTermCodeDef;
         return this;
     }

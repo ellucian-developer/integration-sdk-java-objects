@@ -31,7 +31,7 @@ public class CollegeAndDepartmentText100PutRequest {
      */
     @JsonProperty("scatextCollCode")
     @JsonPropertyDescription("Lineage reference object : scatextCollCode, Lookup lineage reference object : stvcoll")
-    private Object scatextCollCode;
+    private String scatextCollCode;
     /**
      * Term
      * <p>
@@ -40,7 +40,7 @@ public class CollegeAndDepartmentText100PutRequest {
      */
     @JsonProperty("scatextEffTerm")
     @JsonPropertyDescription("Lineage reference object : scatextEffTerm, Lookup lineage reference object : stvterm")
-    private Object scatextEffTerm;
+    private String scatextEffTerm;
     /**
      * Lineage reference object : SCRCDTX_TEXT
      * 
@@ -56,7 +56,7 @@ public class CollegeAndDepartmentText100PutRequest {
      */
     @JsonProperty("scatextDeptCode")
     @JsonPropertyDescription("Lineage reference object : scatextDeptCode, Lookup lineage reference object : stvdept")
-    private Object scatextDeptCode;
+    private String scatextDeptCode;
     /**
      * Lineage reference object : SCRCDTX_TEXT
      * 
@@ -74,7 +74,7 @@ public class CollegeAndDepartmentText100PutRequest {
      * 
      */
     @JsonProperty("scatextCollCode")
-    public Object getScatextCollCode() {
+    public String getScatextCollCode() {
         return scatextCollCode;
     }
 
@@ -85,11 +85,11 @@ public class CollegeAndDepartmentText100PutRequest {
      * 
      */
     @JsonProperty("scatextCollCode")
-    public void setScatextCollCode(Object scatextCollCode) {
+    public void setScatextCollCode(String scatextCollCode) {
         this.scatextCollCode = scatextCollCode;
     }
 
-    public CollegeAndDepartmentText100PutRequest withScatextCollCode(Object scatextCollCode) {
+    public CollegeAndDepartmentText100PutRequest withScatextCollCode(String scatextCollCode) {
         this.scatextCollCode = scatextCollCode;
         return this;
     }
@@ -101,7 +101,7 @@ public class CollegeAndDepartmentText100PutRequest {
      * 
      */
     @JsonProperty("scatextEffTerm")
-    public Object getScatextEffTerm() {
+    public String getScatextEffTerm() {
         return scatextEffTerm;
     }
 
@@ -112,11 +112,11 @@ public class CollegeAndDepartmentText100PutRequest {
      * 
      */
     @JsonProperty("scatextEffTerm")
-    public void setScatextEffTerm(Object scatextEffTerm) {
+    public void setScatextEffTerm(String scatextEffTerm) {
         this.scatextEffTerm = scatextEffTerm;
     }
 
-    public CollegeAndDepartmentText100PutRequest withScatextEffTerm(Object scatextEffTerm) {
+    public CollegeAndDepartmentText100PutRequest withScatextEffTerm(String scatextEffTerm) {
         this.scatextEffTerm = scatextEffTerm;
         return this;
     }
@@ -151,7 +151,7 @@ public class CollegeAndDepartmentText100PutRequest {
      * 
      */
     @JsonProperty("scatextDeptCode")
-    public Object getScatextDeptCode() {
+    public String getScatextDeptCode() {
         return scatextDeptCode;
     }
 
@@ -162,11 +162,11 @@ public class CollegeAndDepartmentText100PutRequest {
      * 
      */
     @JsonProperty("scatextDeptCode")
-    public void setScatextDeptCode(Object scatextDeptCode) {
+    public void setScatextDeptCode(String scatextDeptCode) {
         this.scatextDeptCode = scatextDeptCode;
     }
 
-    public CollegeAndDepartmentText100PutRequest withScatextDeptCode(Object scatextDeptCode) {
+    public CollegeAndDepartmentText100PutRequest withScatextDeptCode(String scatextDeptCode) {
         this.scatextDeptCode = scatextDeptCode;
         return this;
     }

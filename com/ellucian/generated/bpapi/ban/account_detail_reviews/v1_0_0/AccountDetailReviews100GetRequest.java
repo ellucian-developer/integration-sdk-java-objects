@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.account_detail_reviews.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -14,12 +15,78 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
+    "srceCode",
+    "taxMethod",
+    "documentNumber",
+    "balance",
     "holdPassword",
-    "id"
+    "acctFeedInd",
+    "transDate",
+    "invoiceNumber",
+    "tbraccdUser",
+    "payment",
+    "id",
+    "tranNumberPaid",
+    "receiptNumber",
+    "period",
+    "charge",
+    "stspKeySequence",
+    "currCodeV",
+    "aidyCode",
+    "feedDate",
+    "entryDate",
+    "tranNumber",
+    "cshrEndDate",
+    "invNumberPaid",
+    "detailCode",
+    "origChgInd",
+    "feedDocCode",
+    "sessionNumber",
+    "cpdtInd",
+    "user",
+    "effectiveDate",
+    "desc",
+    "termCode"
 })
 @Generated("jsonschema2pojo")
 public class AccountDetailReviews100GetRequest {
 
+    /**
+     * Source
+     * <p>
+     * Lineage reference object : TBRACCD_SRCE_CODE, Lookup lineage reference object : ttvsrce
+     * (Required)
+     * 
+     */
+    @JsonProperty("srceCode")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_SRCE_CODE, Lookup lineage reference object : ttvsrce")
+    private String srceCode;
+    /**
+     * Tax Method
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("taxMethod")
+    private String taxMethod;
+    /**
+     * Document
+     * <p>
+     * Lineage reference object : TBRACCD_DOCUMENT_NUMBER
+     * 
+     */
+    @JsonProperty("documentNumber")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_DOCUMENT_NUMBER")
+    private String documentNumber;
+    /**
+     * Balance
+     * <p>
+     * Lineage reference object : TBRACCD_BALANCE
+     * 
+     */
+    @JsonProperty("balance")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_BALANCE")
+    private Double balance;
     /**
      * Holds
      * <p>
@@ -28,7 +95,51 @@ public class AccountDetailReviews100GetRequest {
      */
     @JsonProperty("holdPassword")
     @JsonPropertyDescription("Lineage reference object : holdPassword")
-    private Object holdPassword;
+    private String holdPassword;
+    /**
+     * Feed
+     * <p>
+     * Lineage reference object : TBRACCD_ACCT_FEED_IND
+     * 
+     */
+    @JsonProperty("acctFeedInd")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_ACCT_FEED_IND")
+    private String acctFeedInd;
+    /**
+     * Transaction Date
+     * <p>
+     * Lineage reference object : TBRACCD_TRANS_DATE
+     * 
+     */
+    @JsonProperty("transDate")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_TRANS_DATE")
+    private Date transDate;
+    /**
+     * Invoice Number
+     * <p>
+     * Lineage reference object : TBRACCD_INVOICE_NUMBER
+     * 
+     */
+    @JsonProperty("invoiceNumber")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_INVOICE_NUMBER")
+    private String invoiceNumber;
+    /**
+     * User ID
+     * <p>
+     * Lineage reference object : TBRACCD_USER
+     * 
+     */
+    @JsonProperty("tbraccdUser")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_USER")
+    private String tbraccdUser;
+    /**
+     * Payment
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("payment")
+    private Double payment;
     /**
      * ID
      * <p>
@@ -37,9 +148,307 @@ public class AccountDetailReviews100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
+    /**
+     * Trans Paid
+     * <p>
+     * Lineage reference object : TBRACCD_TRAN_NUMBER_PAID
+     * 
+     */
+    @JsonProperty("tranNumberPaid")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_TRAN_NUMBER_PAID")
+    private Double tranNumberPaid;
+    /**
+     * Receipt
+     * <p>
+     * Lineage reference object : TBRACCD_RECEIPT_NUMBER
+     * 
+     */
+    @JsonProperty("receiptNumber")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_RECEIPT_NUMBER")
+    private Double receiptNumber;
+    /**
+     * Period
+     * <p>
+     * Lineage reference object : TBRACCD_PERIOD
+     * 
+     */
+    @JsonProperty("period")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_PERIOD")
+    private String period;
+    /**
+     * Charge
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("charge")
+    private Double charge;
+    /**
+     * Study Path
+     * <p>
+     * Lineage reference object : TBRACCD_STSP_KEY_SEQUENCE, Lookup lineage reference object : TBRACCD
+     * 
+     */
+    @JsonProperty("stspKeySequence")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_STSP_KEY_SEQUENCE, Lookup lineage reference object : TBRACCD")
+    private Double stspKeySequence;
+    /**
+     * Currency
+     * <p>
+     * Lookup lineage reference object : gtvcurr
+     * 
+     */
+    @JsonProperty("currCodeV")
+    @JsonPropertyDescription("Lookup lineage reference object : gtvcurr")
+    private String currCodeV;
+    /**
+     * Aid Year
+     * <p>
+     * Lineage reference object : TBRACCD_AIDY_CODE
+     * 
+     */
+    @JsonProperty("aidyCode")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_AIDY_CODE")
+    private String aidyCode;
+    /**
+     * Feed Date
+     * <p>
+     * Lineage reference object : TBRACCD_FEED_DATE
+     * 
+     */
+    @JsonProperty("feedDate")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_FEED_DATE")
+    private Date feedDate;
+    /**
+     * Entry Date
+     * <p>
+     * Lineage reference object : TBRACCD_ENTRY_DATE
+     * 
+     */
+    @JsonProperty("entryDate")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_ENTRY_DATE")
+    private Date entryDate;
+    /**
+     * Trans Number
+     * <p>
+     * Lineage reference object : TBRACCD_TRAN_NUMBER
+     * 
+     */
+    @JsonProperty("tranNumber")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_TRAN_NUMBER")
+    private Double tranNumber;
+    /**
+     * Session End Date
+     * <p>
+     * Lineage reference object : TBRACCD_CSHR_END_DATE
+     * 
+     */
+    @JsonProperty("cshrEndDate")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_CSHR_END_DATE")
+    private Date cshrEndDate;
+    /**
+     * Invoice Paid
+     * <p>
+     * Lineage reference object : TBRACCD_INV_NUMBER_PAID
+     * 
+     */
+    @JsonProperty("invNumberPaid")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_INV_NUMBER_PAID")
+    private String invNumberPaid;
+    /**
+     * Detail Code
+     * <p>
+     * Lineage reference object : TBRACCD_DETAIL_CODE, Lookup lineage reference object : tbbdetc
+     * (Required)
+     * 
+     */
+    @JsonProperty("detailCode")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_DETAIL_CODE, Lookup lineage reference object : tbbdetc")
+    private String detailCode;
+    /**
+     * Lineage reference object : TBRACCD_ORIG_CHG_IND
+     * 
+     */
+    @JsonProperty("origChgInd")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_ORIG_CHG_IND")
+    private String origChgInd;
+    /**
+     * Feed Doc Num
+     * <p>
+     * Lineage reference object : TBRACCD_FEED_DOC_CODE
+     * 
+     */
+    @JsonProperty("feedDocCode")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_FEED_DOC_CODE")
+    private String feedDocCode;
+    /**
+     * Session Number
+     * <p>
+     * Lineage reference object : TBRACCD_SESSION_NUMBER
+     * 
+     */
+    @JsonProperty("sessionNumber")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_SESSION_NUMBER")
+    private Double sessionNumber;
+    /**
+     * Lineage reference object : TBRACCD_CPDT_IND
+     * 
+     */
+    @JsonProperty("cpdtInd")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_CPDT_IND")
+    private String cpdtInd;
+    /**
+     * User ID
+     * <p>
+     * Lineage reference object : TBRACCD_USER
+     * 
+     */
+    @JsonProperty("user")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_USER")
+    private String user;
+    /**
+     * Effective Date
+     * <p>
+     * Lineage reference object : TBRACCD_EFFECTIVE_DATE
+     * (Required)
+     * 
+     */
+    @JsonProperty("effectiveDate")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_EFFECTIVE_DATE")
+    private Date effectiveDate;
+    /**
+     * Description
+     * <p>
+     * Lineage reference object : TBRACCD_DESC
+     * (Required)
+     * 
+     */
+    @JsonProperty("desc")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_DESC")
+    private String desc;
+    /**
+     * Term
+     * <p>
+     * Lineage reference object : TBRACCD_TERM_CODE, Lookup lineage reference object : stvterm
+     * (Required)
+     * 
+     */
+    @JsonProperty("termCode")
+    @JsonPropertyDescription("Lineage reference object : TBRACCD_TERM_CODE, Lookup lineage reference object : stvterm")
+    private String termCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+    /**
+     * Source
+     * <p>
+     * Lineage reference object : TBRACCD_SRCE_CODE, Lookup lineage reference object : ttvsrce
+     * (Required)
+     * 
+     */
+    @JsonProperty("srceCode")
+    public String getSrceCode() {
+        return srceCode;
+    }
+
+    /**
+     * Source
+     * <p>
+     * Lineage reference object : TBRACCD_SRCE_CODE, Lookup lineage reference object : ttvsrce
+     * (Required)
+     * 
+     */
+    @JsonProperty("srceCode")
+    public void setSrceCode(String srceCode) {
+        this.srceCode = srceCode;
+    }
+
+    public AccountDetailReviews100GetRequest withSrceCode(String srceCode) {
+        this.srceCode = srceCode;
+        return this;
+    }
+
+    /**
+     * Tax Method
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("taxMethod")
+    public String getTaxMethod() {
+        return taxMethod;
+    }
+
+    /**
+     * Tax Method
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("taxMethod")
+    public void setTaxMethod(String taxMethod) {
+        this.taxMethod = taxMethod;
+    }
+
+    public AccountDetailReviews100GetRequest withTaxMethod(String taxMethod) {
+        this.taxMethod = taxMethod;
+        return this;
+    }
+
+    /**
+     * Document
+     * <p>
+     * Lineage reference object : TBRACCD_DOCUMENT_NUMBER
+     * 
+     */
+    @JsonProperty("documentNumber")
+    public String getDocumentNumber() {
+        return documentNumber;
+    }
+
+    /**
+     * Document
+     * <p>
+     * Lineage reference object : TBRACCD_DOCUMENT_NUMBER
+     * 
+     */
+    @JsonProperty("documentNumber")
+    public void setDocumentNumber(String documentNumber) {
+        this.documentNumber = documentNumber;
+    }
+
+    public AccountDetailReviews100GetRequest withDocumentNumber(String documentNumber) {
+        this.documentNumber = documentNumber;
+        return this;
+    }
+
+    /**
+     * Balance
+     * <p>
+     * Lineage reference object : TBRACCD_BALANCE
+     * 
+     */
+    @JsonProperty("balance")
+    public Double getBalance() {
+        return balance;
+    }
+
+    /**
+     * Balance
+     * <p>
+     * Lineage reference object : TBRACCD_BALANCE
+     * 
+     */
+    @JsonProperty("balance")
+    public void setBalance(Double balance) {
+        this.balance = balance;
+    }
+
+    public AccountDetailReviews100GetRequest withBalance(Double balance) {
+        this.balance = balance;
+        return this;
+    }
 
     /**
      * Holds
@@ -48,7 +457,7 @@ public class AccountDetailReviews100GetRequest {
      * 
      */
     @JsonProperty("holdPassword")
-    public Object getHoldPassword() {
+    public String getHoldPassword() {
         return holdPassword;
     }
 
@@ -59,12 +468,147 @@ public class AccountDetailReviews100GetRequest {
      * 
      */
     @JsonProperty("holdPassword")
-    public void setHoldPassword(Object holdPassword) {
+    public void setHoldPassword(String holdPassword) {
         this.holdPassword = holdPassword;
     }
 
-    public AccountDetailReviews100GetRequest withHoldPassword(Object holdPassword) {
+    public AccountDetailReviews100GetRequest withHoldPassword(String holdPassword) {
         this.holdPassword = holdPassword;
+        return this;
+    }
+
+    /**
+     * Feed
+     * <p>
+     * Lineage reference object : TBRACCD_ACCT_FEED_IND
+     * 
+     */
+    @JsonProperty("acctFeedInd")
+    public String getAcctFeedInd() {
+        return acctFeedInd;
+    }
+
+    /**
+     * Feed
+     * <p>
+     * Lineage reference object : TBRACCD_ACCT_FEED_IND
+     * 
+     */
+    @JsonProperty("acctFeedInd")
+    public void setAcctFeedInd(String acctFeedInd) {
+        this.acctFeedInd = acctFeedInd;
+    }
+
+    public AccountDetailReviews100GetRequest withAcctFeedInd(String acctFeedInd) {
+        this.acctFeedInd = acctFeedInd;
+        return this;
+    }
+
+    /**
+     * Transaction Date
+     * <p>
+     * Lineage reference object : TBRACCD_TRANS_DATE
+     * 
+     */
+    @JsonProperty("transDate")
+    public Date getTransDate() {
+        return transDate;
+    }
+
+    /**
+     * Transaction Date
+     * <p>
+     * Lineage reference object : TBRACCD_TRANS_DATE
+     * 
+     */
+    @JsonProperty("transDate")
+    public void setTransDate(Date transDate) {
+        this.transDate = transDate;
+    }
+
+    public AccountDetailReviews100GetRequest withTransDate(Date transDate) {
+        this.transDate = transDate;
+        return this;
+    }
+
+    /**
+     * Invoice Number
+     * <p>
+     * Lineage reference object : TBRACCD_INVOICE_NUMBER
+     * 
+     */
+    @JsonProperty("invoiceNumber")
+    public String getInvoiceNumber() {
+        return invoiceNumber;
+    }
+
+    /**
+     * Invoice Number
+     * <p>
+     * Lineage reference object : TBRACCD_INVOICE_NUMBER
+     * 
+     */
+    @JsonProperty("invoiceNumber")
+    public void setInvoiceNumber(String invoiceNumber) {
+        this.invoiceNumber = invoiceNumber;
+    }
+
+    public AccountDetailReviews100GetRequest withInvoiceNumber(String invoiceNumber) {
+        this.invoiceNumber = invoiceNumber;
+        return this;
+    }
+
+    /**
+     * User ID
+     * <p>
+     * Lineage reference object : TBRACCD_USER
+     * 
+     */
+    @JsonProperty("tbraccdUser")
+    public String getTbraccdUser() {
+        return tbraccdUser;
+    }
+
+    /**
+     * User ID
+     * <p>
+     * Lineage reference object : TBRACCD_USER
+     * 
+     */
+    @JsonProperty("tbraccdUser")
+    public void setTbraccdUser(String tbraccdUser) {
+        this.tbraccdUser = tbraccdUser;
+    }
+
+    public AccountDetailReviews100GetRequest withTbraccdUser(String tbraccdUser) {
+        this.tbraccdUser = tbraccdUser;
+        return this;
+    }
+
+    /**
+     * Payment
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("payment")
+    public Double getPayment() {
+        return payment;
+    }
+
+    /**
+     * Payment
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("payment")
+    public void setPayment(Double payment) {
+        this.payment = payment;
+    }
+
+    public AccountDetailReviews100GetRequest withPayment(Double payment) {
+        this.payment = payment;
         return this;
     }
 
@@ -75,7 +619,7 @@ public class AccountDetailReviews100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -86,12 +630,579 @@ public class AccountDetailReviews100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public AccountDetailReviews100GetRequest withId(Object id) {
+    public AccountDetailReviews100GetRequest withId(String id) {
         this.id = id;
+        return this;
+    }
+
+    /**
+     * Trans Paid
+     * <p>
+     * Lineage reference object : TBRACCD_TRAN_NUMBER_PAID
+     * 
+     */
+    @JsonProperty("tranNumberPaid")
+    public Double getTranNumberPaid() {
+        return tranNumberPaid;
+    }
+
+    /**
+     * Trans Paid
+     * <p>
+     * Lineage reference object : TBRACCD_TRAN_NUMBER_PAID
+     * 
+     */
+    @JsonProperty("tranNumberPaid")
+    public void setTranNumberPaid(Double tranNumberPaid) {
+        this.tranNumberPaid = tranNumberPaid;
+    }
+
+    public AccountDetailReviews100GetRequest withTranNumberPaid(Double tranNumberPaid) {
+        this.tranNumberPaid = tranNumberPaid;
+        return this;
+    }
+
+    /**
+     * Receipt
+     * <p>
+     * Lineage reference object : TBRACCD_RECEIPT_NUMBER
+     * 
+     */
+    @JsonProperty("receiptNumber")
+    public Double getReceiptNumber() {
+        return receiptNumber;
+    }
+
+    /**
+     * Receipt
+     * <p>
+     * Lineage reference object : TBRACCD_RECEIPT_NUMBER
+     * 
+     */
+    @JsonProperty("receiptNumber")
+    public void setReceiptNumber(Double receiptNumber) {
+        this.receiptNumber = receiptNumber;
+    }
+
+    public AccountDetailReviews100GetRequest withReceiptNumber(Double receiptNumber) {
+        this.receiptNumber = receiptNumber;
+        return this;
+    }
+
+    /**
+     * Period
+     * <p>
+     * Lineage reference object : TBRACCD_PERIOD
+     * 
+     */
+    @JsonProperty("period")
+    public String getPeriod() {
+        return period;
+    }
+
+    /**
+     * Period
+     * <p>
+     * Lineage reference object : TBRACCD_PERIOD
+     * 
+     */
+    @JsonProperty("period")
+    public void setPeriod(String period) {
+        this.period = period;
+    }
+
+    public AccountDetailReviews100GetRequest withPeriod(String period) {
+        this.period = period;
+        return this;
+    }
+
+    /**
+     * Charge
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("charge")
+    public Double getCharge() {
+        return charge;
+    }
+
+    /**
+     * Charge
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("charge")
+    public void setCharge(Double charge) {
+        this.charge = charge;
+    }
+
+    public AccountDetailReviews100GetRequest withCharge(Double charge) {
+        this.charge = charge;
+        return this;
+    }
+
+    /**
+     * Study Path
+     * <p>
+     * Lineage reference object : TBRACCD_STSP_KEY_SEQUENCE, Lookup lineage reference object : TBRACCD
+     * 
+     */
+    @JsonProperty("stspKeySequence")
+    public Double getStspKeySequence() {
+        return stspKeySequence;
+    }
+
+    /**
+     * Study Path
+     * <p>
+     * Lineage reference object : TBRACCD_STSP_KEY_SEQUENCE, Lookup lineage reference object : TBRACCD
+     * 
+     */
+    @JsonProperty("stspKeySequence")
+    public void setStspKeySequence(Double stspKeySequence) {
+        this.stspKeySequence = stspKeySequence;
+    }
+
+    public AccountDetailReviews100GetRequest withStspKeySequence(Double stspKeySequence) {
+        this.stspKeySequence = stspKeySequence;
+        return this;
+    }
+
+    /**
+     * Currency
+     * <p>
+     * Lookup lineage reference object : gtvcurr
+     * 
+     */
+    @JsonProperty("currCodeV")
+    public String getCurrCodeV() {
+        return currCodeV;
+    }
+
+    /**
+     * Currency
+     * <p>
+     * Lookup lineage reference object : gtvcurr
+     * 
+     */
+    @JsonProperty("currCodeV")
+    public void setCurrCodeV(String currCodeV) {
+        this.currCodeV = currCodeV;
+    }
+
+    public AccountDetailReviews100GetRequest withCurrCodeV(String currCodeV) {
+        this.currCodeV = currCodeV;
+        return this;
+    }
+
+    /**
+     * Aid Year
+     * <p>
+     * Lineage reference object : TBRACCD_AIDY_CODE
+     * 
+     */
+    @JsonProperty("aidyCode")
+    public String getAidyCode() {
+        return aidyCode;
+    }
+
+    /**
+     * Aid Year
+     * <p>
+     * Lineage reference object : TBRACCD_AIDY_CODE
+     * 
+     */
+    @JsonProperty("aidyCode")
+    public void setAidyCode(String aidyCode) {
+        this.aidyCode = aidyCode;
+    }
+
+    public AccountDetailReviews100GetRequest withAidyCode(String aidyCode) {
+        this.aidyCode = aidyCode;
+        return this;
+    }
+
+    /**
+     * Feed Date
+     * <p>
+     * Lineage reference object : TBRACCD_FEED_DATE
+     * 
+     */
+    @JsonProperty("feedDate")
+    public Date getFeedDate() {
+        return feedDate;
+    }
+
+    /**
+     * Feed Date
+     * <p>
+     * Lineage reference object : TBRACCD_FEED_DATE
+     * 
+     */
+    @JsonProperty("feedDate")
+    public void setFeedDate(Date feedDate) {
+        this.feedDate = feedDate;
+    }
+
+    public AccountDetailReviews100GetRequest withFeedDate(Date feedDate) {
+        this.feedDate = feedDate;
+        return this;
+    }
+
+    /**
+     * Entry Date
+     * <p>
+     * Lineage reference object : TBRACCD_ENTRY_DATE
+     * 
+     */
+    @JsonProperty("entryDate")
+    public Date getEntryDate() {
+        return entryDate;
+    }
+
+    /**
+     * Entry Date
+     * <p>
+     * Lineage reference object : TBRACCD_ENTRY_DATE
+     * 
+     */
+    @JsonProperty("entryDate")
+    public void setEntryDate(Date entryDate) {
+        this.entryDate = entryDate;
+    }
+
+    public AccountDetailReviews100GetRequest withEntryDate(Date entryDate) {
+        this.entryDate = entryDate;
+        return this;
+    }
+
+    /**
+     * Trans Number
+     * <p>
+     * Lineage reference object : TBRACCD_TRAN_NUMBER
+     * 
+     */
+    @JsonProperty("tranNumber")
+    public Double getTranNumber() {
+        return tranNumber;
+    }
+
+    /**
+     * Trans Number
+     * <p>
+     * Lineage reference object : TBRACCD_TRAN_NUMBER
+     * 
+     */
+    @JsonProperty("tranNumber")
+    public void setTranNumber(Double tranNumber) {
+        this.tranNumber = tranNumber;
+    }
+
+    public AccountDetailReviews100GetRequest withTranNumber(Double tranNumber) {
+        this.tranNumber = tranNumber;
+        return this;
+    }
+
+    /**
+     * Session End Date
+     * <p>
+     * Lineage reference object : TBRACCD_CSHR_END_DATE
+     * 
+     */
+    @JsonProperty("cshrEndDate")
+    public Date getCshrEndDate() {
+        return cshrEndDate;
+    }
+
+    /**
+     * Session End Date
+     * <p>
+     * Lineage reference object : TBRACCD_CSHR_END_DATE
+     * 
+     */
+    @JsonProperty("cshrEndDate")
+    public void setCshrEndDate(Date cshrEndDate) {
+        this.cshrEndDate = cshrEndDate;
+    }
+
+    public AccountDetailReviews100GetRequest withCshrEndDate(Date cshrEndDate) {
+        this.cshrEndDate = cshrEndDate;
+        return this;
+    }
+
+    /**
+     * Invoice Paid
+     * <p>
+     * Lineage reference object : TBRACCD_INV_NUMBER_PAID
+     * 
+     */
+    @JsonProperty("invNumberPaid")
+    public String getInvNumberPaid() {
+        return invNumberPaid;
+    }
+
+    /**
+     * Invoice Paid
+     * <p>
+     * Lineage reference object : TBRACCD_INV_NUMBER_PAID
+     * 
+     */
+    @JsonProperty("invNumberPaid")
+    public void setInvNumberPaid(String invNumberPaid) {
+        this.invNumberPaid = invNumberPaid;
+    }
+
+    public AccountDetailReviews100GetRequest withInvNumberPaid(String invNumberPaid) {
+        this.invNumberPaid = invNumberPaid;
+        return this;
+    }
+
+    /**
+     * Detail Code
+     * <p>
+     * Lineage reference object : TBRACCD_DETAIL_CODE, Lookup lineage reference object : tbbdetc
+     * (Required)
+     * 
+     */
+    @JsonProperty("detailCode")
+    public String getDetailCode() {
+        return detailCode;
+    }
+
+    /**
+     * Detail Code
+     * <p>
+     * Lineage reference object : TBRACCD_DETAIL_CODE, Lookup lineage reference object : tbbdetc
+     * (Required)
+     * 
+     */
+    @JsonProperty("detailCode")
+    public void setDetailCode(String detailCode) {
+        this.detailCode = detailCode;
+    }
+
+    public AccountDetailReviews100GetRequest withDetailCode(String detailCode) {
+        this.detailCode = detailCode;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : TBRACCD_ORIG_CHG_IND
+     * 
+     */
+    @JsonProperty("origChgInd")
+    public String getOrigChgInd() {
+        return origChgInd;
+    }
+
+    /**
+     * Lineage reference object : TBRACCD_ORIG_CHG_IND
+     * 
+     */
+    @JsonProperty("origChgInd")
+    public void setOrigChgInd(String origChgInd) {
+        this.origChgInd = origChgInd;
+    }
+
+    public AccountDetailReviews100GetRequest withOrigChgInd(String origChgInd) {
+        this.origChgInd = origChgInd;
+        return this;
+    }
+
+    /**
+     * Feed Doc Num
+     * <p>
+     * Lineage reference object : TBRACCD_FEED_DOC_CODE
+     * 
+     */
+    @JsonProperty("feedDocCode")
+    public String getFeedDocCode() {
+        return feedDocCode;
+    }
+
+    /**
+     * Feed Doc Num
+     * <p>
+     * Lineage reference object : TBRACCD_FEED_DOC_CODE
+     * 
+     */
+    @JsonProperty("feedDocCode")
+    public void setFeedDocCode(String feedDocCode) {
+        this.feedDocCode = feedDocCode;
+    }
+
+    public AccountDetailReviews100GetRequest withFeedDocCode(String feedDocCode) {
+        this.feedDocCode = feedDocCode;
+        return this;
+    }
+
+    /**
+     * Session Number
+     * <p>
+     * Lineage reference object : TBRACCD_SESSION_NUMBER
+     * 
+     */
+    @JsonProperty("sessionNumber")
+    public Double getSessionNumber() {
+        return sessionNumber;
+    }
+
+    /**
+     * Session Number
+     * <p>
+     * Lineage reference object : TBRACCD_SESSION_NUMBER
+     * 
+     */
+    @JsonProperty("sessionNumber")
+    public void setSessionNumber(Double sessionNumber) {
+        this.sessionNumber = sessionNumber;
+    }
+
+    public AccountDetailReviews100GetRequest withSessionNumber(Double sessionNumber) {
+        this.sessionNumber = sessionNumber;
+        return this;
+    }
+
+    /**
+     * Lineage reference object : TBRACCD_CPDT_IND
+     * 
+     */
+    @JsonProperty("cpdtInd")
+    public String getCpdtInd() {
+        return cpdtInd;
+    }
+
+    /**
+     * Lineage reference object : TBRACCD_CPDT_IND
+     * 
+     */
+    @JsonProperty("cpdtInd")
+    public void setCpdtInd(String cpdtInd) {
+        this.cpdtInd = cpdtInd;
+    }
+
+    public AccountDetailReviews100GetRequest withCpdtInd(String cpdtInd) {
+        this.cpdtInd = cpdtInd;
+        return this;
+    }
+
+    /**
+     * User ID
+     * <p>
+     * Lineage reference object : TBRACCD_USER
+     * 
+     */
+    @JsonProperty("user")
+    public String getUser() {
+        return user;
+    }
+
+    /**
+     * User ID
+     * <p>
+     * Lineage reference object : TBRACCD_USER
+     * 
+     */
+    @JsonProperty("user")
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    public AccountDetailReviews100GetRequest withUser(String user) {
+        this.user = user;
+        return this;
+    }
+
+    /**
+     * Effective Date
+     * <p>
+     * Lineage reference object : TBRACCD_EFFECTIVE_DATE
+     * (Required)
+     * 
+     */
+    @JsonProperty("effectiveDate")
+    public Date getEffectiveDate() {
+        return effectiveDate;
+    }
+
+    /**
+     * Effective Date
+     * <p>
+     * Lineage reference object : TBRACCD_EFFECTIVE_DATE
+     * (Required)
+     * 
+     */
+    @JsonProperty("effectiveDate")
+    public void setEffectiveDate(Date effectiveDate) {
+        this.effectiveDate = effectiveDate;
+    }
+
+    public AccountDetailReviews100GetRequest withEffectiveDate(Date effectiveDate) {
+        this.effectiveDate = effectiveDate;
+        return this;
+    }
+
+    /**
+     * Description
+     * <p>
+     * Lineage reference object : TBRACCD_DESC
+     * (Required)
+     * 
+     */
+    @JsonProperty("desc")
+    public String getDesc() {
+        return desc;
+    }
+
+    /**
+     * Description
+     * <p>
+     * Lineage reference object : TBRACCD_DESC
+     * (Required)
+     * 
+     */
+    @JsonProperty("desc")
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public AccountDetailReviews100GetRequest withDesc(String desc) {
+        this.desc = desc;
+        return this;
+    }
+
+    /**
+     * Term
+     * <p>
+     * Lineage reference object : TBRACCD_TERM_CODE, Lookup lineage reference object : stvterm
+     * (Required)
+     * 
+     */
+    @JsonProperty("termCode")
+    public String getTermCode() {
+        return termCode;
+    }
+
+    /**
+     * Term
+     * <p>
+     * Lineage reference object : TBRACCD_TERM_CODE, Lookup lineage reference object : stvterm
+     * (Required)
+     * 
+     */
+    @JsonProperty("termCode")
+    public void setTermCode(String termCode) {
+        this.termCode = termCode;
+    }
+
+    public AccountDetailReviews100GetRequest withTermCode(String termCode) {
+        this.termCode = termCode;
         return this;
     }
 
@@ -114,13 +1225,133 @@ public class AccountDetailReviews100GetRequest {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(AccountDetailReviews100GetRequest.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
+        sb.append("srceCode");
+        sb.append('=');
+        sb.append(((this.srceCode == null)?"<null>":this.srceCode));
+        sb.append(',');
+        sb.append("taxMethod");
+        sb.append('=');
+        sb.append(((this.taxMethod == null)?"<null>":this.taxMethod));
+        sb.append(',');
+        sb.append("documentNumber");
+        sb.append('=');
+        sb.append(((this.documentNumber == null)?"<null>":this.documentNumber));
+        sb.append(',');
+        sb.append("balance");
+        sb.append('=');
+        sb.append(((this.balance == null)?"<null>":this.balance));
+        sb.append(',');
         sb.append("holdPassword");
         sb.append('=');
         sb.append(((this.holdPassword == null)?"<null>":this.holdPassword));
         sb.append(',');
+        sb.append("acctFeedInd");
+        sb.append('=');
+        sb.append(((this.acctFeedInd == null)?"<null>":this.acctFeedInd));
+        sb.append(',');
+        sb.append("transDate");
+        sb.append('=');
+        sb.append(((this.transDate == null)?"<null>":this.transDate));
+        sb.append(',');
+        sb.append("invoiceNumber");
+        sb.append('=');
+        sb.append(((this.invoiceNumber == null)?"<null>":this.invoiceNumber));
+        sb.append(',');
+        sb.append("tbraccdUser");
+        sb.append('=');
+        sb.append(((this.tbraccdUser == null)?"<null>":this.tbraccdUser));
+        sb.append(',');
+        sb.append("payment");
+        sb.append('=');
+        sb.append(((this.payment == null)?"<null>":this.payment));
+        sb.append(',');
         sb.append("id");
         sb.append('=');
         sb.append(((this.id == null)?"<null>":this.id));
+        sb.append(',');
+        sb.append("tranNumberPaid");
+        sb.append('=');
+        sb.append(((this.tranNumberPaid == null)?"<null>":this.tranNumberPaid));
+        sb.append(',');
+        sb.append("receiptNumber");
+        sb.append('=');
+        sb.append(((this.receiptNumber == null)?"<null>":this.receiptNumber));
+        sb.append(',');
+        sb.append("period");
+        sb.append('=');
+        sb.append(((this.period == null)?"<null>":this.period));
+        sb.append(',');
+        sb.append("charge");
+        sb.append('=');
+        sb.append(((this.charge == null)?"<null>":this.charge));
+        sb.append(',');
+        sb.append("stspKeySequence");
+        sb.append('=');
+        sb.append(((this.stspKeySequence == null)?"<null>":this.stspKeySequence));
+        sb.append(',');
+        sb.append("currCodeV");
+        sb.append('=');
+        sb.append(((this.currCodeV == null)?"<null>":this.currCodeV));
+        sb.append(',');
+        sb.append("aidyCode");
+        sb.append('=');
+        sb.append(((this.aidyCode == null)?"<null>":this.aidyCode));
+        sb.append(',');
+        sb.append("feedDate");
+        sb.append('=');
+        sb.append(((this.feedDate == null)?"<null>":this.feedDate));
+        sb.append(',');
+        sb.append("entryDate");
+        sb.append('=');
+        sb.append(((this.entryDate == null)?"<null>":this.entryDate));
+        sb.append(',');
+        sb.append("tranNumber");
+        sb.append('=');
+        sb.append(((this.tranNumber == null)?"<null>":this.tranNumber));
+        sb.append(',');
+        sb.append("cshrEndDate");
+        sb.append('=');
+        sb.append(((this.cshrEndDate == null)?"<null>":this.cshrEndDate));
+        sb.append(',');
+        sb.append("invNumberPaid");
+        sb.append('=');
+        sb.append(((this.invNumberPaid == null)?"<null>":this.invNumberPaid));
+        sb.append(',');
+        sb.append("detailCode");
+        sb.append('=');
+        sb.append(((this.detailCode == null)?"<null>":this.detailCode));
+        sb.append(',');
+        sb.append("origChgInd");
+        sb.append('=');
+        sb.append(((this.origChgInd == null)?"<null>":this.origChgInd));
+        sb.append(',');
+        sb.append("feedDocCode");
+        sb.append('=');
+        sb.append(((this.feedDocCode == null)?"<null>":this.feedDocCode));
+        sb.append(',');
+        sb.append("sessionNumber");
+        sb.append('=');
+        sb.append(((this.sessionNumber == null)?"<null>":this.sessionNumber));
+        sb.append(',');
+        sb.append("cpdtInd");
+        sb.append('=');
+        sb.append(((this.cpdtInd == null)?"<null>":this.cpdtInd));
+        sb.append(',');
+        sb.append("user");
+        sb.append('=');
+        sb.append(((this.user == null)?"<null>":this.user));
+        sb.append(',');
+        sb.append("effectiveDate");
+        sb.append('=');
+        sb.append(((this.effectiveDate == null)?"<null>":this.effectiveDate));
+        sb.append(',');
+        sb.append("desc");
+        sb.append('=');
+        sb.append(((this.desc == null)?"<null>":this.desc));
+        sb.append(',');
+        sb.append("termCode");
+        sb.append('=');
+        sb.append(((this.termCode == null)?"<null>":this.termCode));
         sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');
@@ -137,9 +1368,39 @@ public class AccountDetailReviews100GetRequest {
     @Override
     public int hashCode() {
         int result = 1;
-        result = ((result* 31)+((this.id == null)? 0 :this.id.hashCode()));
-        result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
+        result = ((result* 31)+((this.srceCode == null)? 0 :this.srceCode.hashCode()));
+        result = ((result* 31)+((this.taxMethod == null)? 0 :this.taxMethod.hashCode()));
+        result = ((result* 31)+((this.documentNumber == null)? 0 :this.documentNumber.hashCode()));
+        result = ((result* 31)+((this.balance == null)? 0 :this.balance.hashCode()));
         result = ((result* 31)+((this.holdPassword == null)? 0 :this.holdPassword.hashCode()));
+        result = ((result* 31)+((this.acctFeedInd == null)? 0 :this.acctFeedInd.hashCode()));
+        result = ((result* 31)+((this.transDate == null)? 0 :this.transDate.hashCode()));
+        result = ((result* 31)+((this.invoiceNumber == null)? 0 :this.invoiceNumber.hashCode()));
+        result = ((result* 31)+((this.tbraccdUser == null)? 0 :this.tbraccdUser.hashCode()));
+        result = ((result* 31)+((this.payment == null)? 0 :this.payment.hashCode()));
+        result = ((result* 31)+((this.id == null)? 0 :this.id.hashCode()));
+        result = ((result* 31)+((this.tranNumberPaid == null)? 0 :this.tranNumberPaid.hashCode()));
+        result = ((result* 31)+((this.receiptNumber == null)? 0 :this.receiptNumber.hashCode()));
+        result = ((result* 31)+((this.period == null)? 0 :this.period.hashCode()));
+        result = ((result* 31)+((this.charge == null)? 0 :this.charge.hashCode()));
+        result = ((result* 31)+((this.stspKeySequence == null)? 0 :this.stspKeySequence.hashCode()));
+        result = ((result* 31)+((this.currCodeV == null)? 0 :this.currCodeV.hashCode()));
+        result = ((result* 31)+((this.aidyCode == null)? 0 :this.aidyCode.hashCode()));
+        result = ((result* 31)+((this.feedDate == null)? 0 :this.feedDate.hashCode()));
+        result = ((result* 31)+((this.entryDate == null)? 0 :this.entryDate.hashCode()));
+        result = ((result* 31)+((this.tranNumber == null)? 0 :this.tranNumber.hashCode()));
+        result = ((result* 31)+((this.cshrEndDate == null)? 0 :this.cshrEndDate.hashCode()));
+        result = ((result* 31)+((this.invNumberPaid == null)? 0 :this.invNumberPaid.hashCode()));
+        result = ((result* 31)+((this.detailCode == null)? 0 :this.detailCode.hashCode()));
+        result = ((result* 31)+((this.origChgInd == null)? 0 :this.origChgInd.hashCode()));
+        result = ((result* 31)+((this.feedDocCode == null)? 0 :this.feedDocCode.hashCode()));
+        result = ((result* 31)+((this.sessionNumber == null)? 0 :this.sessionNumber.hashCode()));
+        result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
+        result = ((result* 31)+((this.cpdtInd == null)? 0 :this.cpdtInd.hashCode()));
+        result = ((result* 31)+((this.user == null)? 0 :this.user.hashCode()));
+        result = ((result* 31)+((this.effectiveDate == null)? 0 :this.effectiveDate.hashCode()));
+        result = ((result* 31)+((this.desc == null)? 0 :this.desc.hashCode()));
+        result = ((result* 31)+((this.termCode == null)? 0 :this.termCode.hashCode()));
         return result;
     }
 
@@ -152,7 +1413,7 @@ public class AccountDetailReviews100GetRequest {
             return false;
         }
         AccountDetailReviews100GetRequest rhs = ((AccountDetailReviews100GetRequest) other);
-        return ((((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id)))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.holdPassword == rhs.holdPassword)||((this.holdPassword!= null)&&this.holdPassword.equals(rhs.holdPassword))));
+        return ((((((((((((((((((((((((((((((((((this.srceCode == rhs.srceCode)||((this.srceCode!= null)&&this.srceCode.equals(rhs.srceCode)))&&((this.taxMethod == rhs.taxMethod)||((this.taxMethod!= null)&&this.taxMethod.equals(rhs.taxMethod))))&&((this.documentNumber == rhs.documentNumber)||((this.documentNumber!= null)&&this.documentNumber.equals(rhs.documentNumber))))&&((this.balance == rhs.balance)||((this.balance!= null)&&this.balance.equals(rhs.balance))))&&((this.holdPassword == rhs.holdPassword)||((this.holdPassword!= null)&&this.holdPassword.equals(rhs.holdPassword))))&&((this.acctFeedInd == rhs.acctFeedInd)||((this.acctFeedInd!= null)&&this.acctFeedInd.equals(rhs.acctFeedInd))))&&((this.transDate == rhs.transDate)||((this.transDate!= null)&&this.transDate.equals(rhs.transDate))))&&((this.invoiceNumber == rhs.invoiceNumber)||((this.invoiceNumber!= null)&&this.invoiceNumber.equals(rhs.invoiceNumber))))&&((this.tbraccdUser == rhs.tbraccdUser)||((this.tbraccdUser!= null)&&this.tbraccdUser.equals(rhs.tbraccdUser))))&&((this.payment == rhs.payment)||((this.payment!= null)&&this.payment.equals(rhs.payment))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.tranNumberPaid == rhs.tranNumberPaid)||((this.tranNumberPaid!= null)&&this.tranNumberPaid.equals(rhs.tranNumberPaid))))&&((this.receiptNumber == rhs.receiptNumber)||((this.receiptNumber!= null)&&this.receiptNumber.equals(rhs.receiptNumber))))&&((this.period == rhs.period)||((this.period!= null)&&this.period.equals(rhs.period))))&&((this.charge == rhs.charge)||((this.charge!= null)&&this.charge.equals(rhs.charge))))&&((this.stspKeySequence == rhs.stspKeySequence)||((this.stspKeySequence!= null)&&this.stspKeySequence.equals(rhs.stspKeySequence))))&&((this.currCodeV == rhs.currCodeV)||((this.currCodeV!= null)&&this.currCodeV.equals(rhs.currCodeV))))&&((this.aidyCode == rhs.aidyCode)||((this.aidyCode!= null)&&this.aidyCode.equals(rhs.aidyCode))))&&((this.feedDate == rhs.feedDate)||((this.feedDate!= null)&&this.feedDate.equals(rhs.feedDate))))&&((this.entryDate == rhs.entryDate)||((this.entryDate!= null)&&this.entryDate.equals(rhs.entryDate))))&&((this.tranNumber == rhs.tranNumber)||((this.tranNumber!= null)&&this.tranNumber.equals(rhs.tranNumber))))&&((this.cshrEndDate == rhs.cshrEndDate)||((this.cshrEndDate!= null)&&this.cshrEndDate.equals(rhs.cshrEndDate))))&&((this.invNumberPaid == rhs.invNumberPaid)||((this.invNumberPaid!= null)&&this.invNumberPaid.equals(rhs.invNumberPaid))))&&((this.detailCode == rhs.detailCode)||((this.detailCode!= null)&&this.detailCode.equals(rhs.detailCode))))&&((this.origChgInd == rhs.origChgInd)||((this.origChgInd!= null)&&this.origChgInd.equals(rhs.origChgInd))))&&((this.feedDocCode == rhs.feedDocCode)||((this.feedDocCode!= null)&&this.feedDocCode.equals(rhs.feedDocCode))))&&((this.sessionNumber == rhs.sessionNumber)||((this.sessionNumber!= null)&&this.sessionNumber.equals(rhs.sessionNumber))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.cpdtInd == rhs.cpdtInd)||((this.cpdtInd!= null)&&this.cpdtInd.equals(rhs.cpdtInd))))&&((this.user == rhs.user)||((this.user!= null)&&this.user.equals(rhs.user))))&&((this.effectiveDate == rhs.effectiveDate)||((this.effectiveDate!= null)&&this.effectiveDate.equals(rhs.effectiveDate))))&&((this.desc == rhs.desc)||((this.desc!= null)&&this.desc.equals(rhs.desc))))&&((this.termCode == rhs.termCode)||((this.termCode!= null)&&this.termCode.equals(rhs.termCode))));
     }
 
 }

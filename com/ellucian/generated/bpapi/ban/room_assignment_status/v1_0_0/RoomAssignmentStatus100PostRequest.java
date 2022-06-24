@@ -54,7 +54,7 @@ public class RoomAssignmentStatus100PostRequest {
      */
     @JsonProperty("xxxxxxxTermCode")
     @JsonPropertyDescription("Lineage reference object : xxxxxxxTermCode, Lookup lineage reference object : stvterm")
-    private Object xxxxxxxTermCode;
+    private String xxxxxxxTermCode;
     /**
      * End
      * <p>
@@ -163,7 +163,7 @@ public class RoomAssignmentStatus100PostRequest {
      * 
      */
     @JsonProperty("xxxxxxxTermCode")
-    public Object getXxxxxxxTermCode() {
+    public String getXxxxxxxTermCode() {
         return xxxxxxxTermCode;
     }
 
@@ -174,11 +174,11 @@ public class RoomAssignmentStatus100PostRequest {
      * 
      */
     @JsonProperty("xxxxxxxTermCode")
-    public void setXxxxxxxTermCode(Object xxxxxxxTermCode) {
+    public void setXxxxxxxTermCode(String xxxxxxxTermCode) {
         this.xxxxxxxTermCode = xxxxxxxTermCode;
     }
 
-    public RoomAssignmentStatus100PostRequest withXxxxxxxTermCode(Object xxxxxxxTermCode) {
+    public RoomAssignmentStatus100PostRequest withXxxxxxxTermCode(String xxxxxxxTermCode) {
         this.xxxxxxxTermCode = xxxxxxxTermCode;
         return this;
     }

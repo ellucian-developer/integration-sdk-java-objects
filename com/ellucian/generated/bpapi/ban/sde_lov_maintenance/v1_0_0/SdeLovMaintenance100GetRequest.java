@@ -61,7 +61,7 @@ public class SdeLovMaintenance100GetRequest {
      */
     @JsonProperty("attrName")
     @JsonPropertyDescription("Lineage reference object : attrName, Lookup lineage reference object : gtvsdlv,gorsdam,gtvsdlv")
-    private Object attrName;
+    private String attrName;
     /**
      * SDE Table
      * <p>
@@ -71,7 +71,7 @@ public class SdeLovMaintenance100GetRequest {
      */
     @JsonProperty("tableName")
     @JsonPropertyDescription("Lineage reference object : tableName, Lookup lineage reference object : gobsdtb,all_tab_comments,dual")
-    private Object tableName;
+    private String tableName;
     /**
      * Description
      * <p>
@@ -174,7 +174,7 @@ public class SdeLovMaintenance100GetRequest {
      * 
      */
     @JsonProperty("attrName")
-    public Object getAttrName() {
+    public String getAttrName() {
         return attrName;
     }
 
@@ -185,11 +185,11 @@ public class SdeLovMaintenance100GetRequest {
      * 
      */
     @JsonProperty("attrName")
-    public void setAttrName(Object attrName) {
+    public void setAttrName(String attrName) {
         this.attrName = attrName;
     }
 
-    public SdeLovMaintenance100GetRequest withAttrName(Object attrName) {
+    public SdeLovMaintenance100GetRequest withAttrName(String attrName) {
         this.attrName = attrName;
         return this;
     }
@@ -202,7 +202,7 @@ public class SdeLovMaintenance100GetRequest {
      * 
      */
     @JsonProperty("tableName")
-    public Object getTableName() {
+    public String getTableName() {
         return tableName;
     }
 
@@ -214,11 +214,11 @@ public class SdeLovMaintenance100GetRequest {
      * 
      */
     @JsonProperty("tableName")
-    public void setTableName(Object tableName) {
+    public void setTableName(String tableName) {
         this.tableName = tableName;
     }
 
-    public SdeLovMaintenance100GetRequest withTableName(Object tableName) {
+    public SdeLovMaintenance100GetRequest withTableName(String tableName) {
         this.tableName = tableName;
         return this;
     }

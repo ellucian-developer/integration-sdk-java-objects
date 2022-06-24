@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "bankAcct",
     "transDate",
     "amt",
+    "reconInd",
     "checkDepositInd",
     "desc"
 })
@@ -36,7 +37,7 @@ public class BankTapeReconcilation100GetRequest {
      */
     @JsonProperty("cashAcct")
     @JsonPropertyDescription("Lineage reference object : cashAcct")
-    private Object cashAcct;
+    private String cashAcct;
     /**
      * Internal 
      * Document Code
@@ -55,7 +56,7 @@ public class BankTapeReconcilation100GetRequest {
      */
     @JsonProperty("bankCode")
     @JsonPropertyDescription("Lineage reference object : faabrecBankCode, Lookup lineage reference object : gxvbank")
-    private Object bankCode;
+    private String bankCode;
     /**
      * Document
      * <p>
@@ -74,7 +75,7 @@ public class BankTapeReconcilation100GetRequest {
      */
     @JsonProperty("bankAcct")
     @JsonPropertyDescription("Lineage reference object : bankAcct")
-    private Object bankAcct;
+    private String bankAcct;
     /**
      * Transaction
      *  Date
@@ -96,6 +97,15 @@ public class BankTapeReconcilation100GetRequest {
     @JsonProperty("amt")
     @JsonPropertyDescription("Lineage reference object : FABBKTP_AMT")
     private Double amt;
+    /**
+     * Status Selection
+     * <p>
+     * Lineage reference object : reconInd
+     * 
+     */
+    @JsonProperty("reconInd")
+    @JsonPropertyDescription("Lineage reference object : reconInd")
+    private String reconInd;
     /**
      * Type
      * <p>
@@ -125,7 +135,7 @@ public class BankTapeReconcilation100GetRequest {
      * 
      */
     @JsonProperty("cashAcct")
-    public Object getCashAcct() {
+    public String getCashAcct() {
         return cashAcct;
     }
 
@@ -136,11 +146,11 @@ public class BankTapeReconcilation100GetRequest {
      * 
      */
     @JsonProperty("cashAcct")
-    public void setCashAcct(Object cashAcct) {
+    public void setCashAcct(String cashAcct) {
         this.cashAcct = cashAcct;
     }
 
-    public BankTapeReconcilation100GetRequest withCashAcct(Object cashAcct) {
+    public BankTapeReconcilation100GetRequest withCashAcct(String cashAcct) {
         this.cashAcct = cashAcct;
         return this;
     }
@@ -181,7 +191,7 @@ public class BankTapeReconcilation100GetRequest {
      * 
      */
     @JsonProperty("bankCode")
-    public Object getBankCode() {
+    public String getBankCode() {
         return bankCode;
     }
 
@@ -192,11 +202,11 @@ public class BankTapeReconcilation100GetRequest {
      * 
      */
     @JsonProperty("bankCode")
-    public void setBankCode(Object bankCode) {
+    public void setBankCode(String bankCode) {
         this.bankCode = bankCode;
     }
 
-    public BankTapeReconcilation100GetRequest withBankCode(Object bankCode) {
+    public BankTapeReconcilation100GetRequest withBankCode(String bankCode) {
         this.bankCode = bankCode;
         return this;
     }
@@ -237,7 +247,7 @@ public class BankTapeReconcilation100GetRequest {
      * 
      */
     @JsonProperty("bankAcct")
-    public Object getBankAcct() {
+    public String getBankAcct() {
         return bankAcct;
     }
 
@@ -248,11 +258,11 @@ public class BankTapeReconcilation100GetRequest {
      * 
      */
     @JsonProperty("bankAcct")
-    public void setBankAcct(Object bankAcct) {
+    public void setBankAcct(String bankAcct) {
         this.bankAcct = bankAcct;
     }
 
-    public BankTapeReconcilation100GetRequest withBankAcct(Object bankAcct) {
+    public BankTapeReconcilation100GetRequest withBankAcct(String bankAcct) {
         this.bankAcct = bankAcct;
         return this;
     }
@@ -314,6 +324,33 @@ public class BankTapeReconcilation100GetRequest {
 
     public BankTapeReconcilation100GetRequest withAmt(Double amt) {
         this.amt = amt;
+        return this;
+    }
+
+    /**
+     * Status Selection
+     * <p>
+     * Lineage reference object : reconInd
+     * 
+     */
+    @JsonProperty("reconInd")
+    public String getReconInd() {
+        return reconInd;
+    }
+
+    /**
+     * Status Selection
+     * <p>
+     * Lineage reference object : reconInd
+     * 
+     */
+    @JsonProperty("reconInd")
+    public void setReconInd(String reconInd) {
+        this.reconInd = reconInd;
+    }
+
+    public BankTapeReconcilation100GetRequest withReconInd(String reconInd) {
+        this.reconInd = reconInd;
         return this;
     }
 
@@ -420,6 +457,10 @@ public class BankTapeReconcilation100GetRequest {
         sb.append('=');
         sb.append(((this.amt == null)?"<null>":this.amt));
         sb.append(',');
+        sb.append("reconInd");
+        sb.append('=');
+        sb.append(((this.reconInd == null)?"<null>":this.reconInd));
+        sb.append(',');
         sb.append("checkDepositInd");
         sb.append('=');
         sb.append(((this.checkDepositInd == null)?"<null>":this.checkDepositInd));
@@ -450,6 +491,7 @@ public class BankTapeReconcilation100GetRequest {
         result = ((result* 31)+((this.bankAcct == null)? 0 :this.bankAcct.hashCode()));
         result = ((result* 31)+((this.transDate == null)? 0 :this.transDate.hashCode()));
         result = ((result* 31)+((this.amt == null)? 0 :this.amt.hashCode()));
+        result = ((result* 31)+((this.reconInd == null)? 0 :this.reconInd.hashCode()));
         result = ((result* 31)+((this.checkDepositInd == null)? 0 :this.checkDepositInd.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
         result = ((result* 31)+((this.desc == null)? 0 :this.desc.hashCode()));
@@ -465,7 +507,7 @@ public class BankTapeReconcilation100GetRequest {
             return false;
         }
         BankTapeReconcilation100GetRequest rhs = ((BankTapeReconcilation100GetRequest) other);
-        return (((((((((((this.cashAcct == rhs.cashAcct)||((this.cashAcct!= null)&&this.cashAcct.equals(rhs.cashAcct)))&&((this.internalDocCode == rhs.internalDocCode)||((this.internalDocCode!= null)&&this.internalDocCode.equals(rhs.internalDocCode))))&&((this.bankCode == rhs.bankCode)||((this.bankCode!= null)&&this.bankCode.equals(rhs.bankCode))))&&((this.checkDepositCode == rhs.checkDepositCode)||((this.checkDepositCode!= null)&&this.checkDepositCode.equals(rhs.checkDepositCode))))&&((this.bankAcct == rhs.bankAcct)||((this.bankAcct!= null)&&this.bankAcct.equals(rhs.bankAcct))))&&((this.transDate == rhs.transDate)||((this.transDate!= null)&&this.transDate.equals(rhs.transDate))))&&((this.amt == rhs.amt)||((this.amt!= null)&&this.amt.equals(rhs.amt))))&&((this.checkDepositInd == rhs.checkDepositInd)||((this.checkDepositInd!= null)&&this.checkDepositInd.equals(rhs.checkDepositInd))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.desc == rhs.desc)||((this.desc!= null)&&this.desc.equals(rhs.desc))));
+        return ((((((((((((this.cashAcct == rhs.cashAcct)||((this.cashAcct!= null)&&this.cashAcct.equals(rhs.cashAcct)))&&((this.internalDocCode == rhs.internalDocCode)||((this.internalDocCode!= null)&&this.internalDocCode.equals(rhs.internalDocCode))))&&((this.bankCode == rhs.bankCode)||((this.bankCode!= null)&&this.bankCode.equals(rhs.bankCode))))&&((this.checkDepositCode == rhs.checkDepositCode)||((this.checkDepositCode!= null)&&this.checkDepositCode.equals(rhs.checkDepositCode))))&&((this.bankAcct == rhs.bankAcct)||((this.bankAcct!= null)&&this.bankAcct.equals(rhs.bankAcct))))&&((this.transDate == rhs.transDate)||((this.transDate!= null)&&this.transDate.equals(rhs.transDate))))&&((this.amt == rhs.amt)||((this.amt!= null)&&this.amt.equals(rhs.amt))))&&((this.reconInd == rhs.reconInd)||((this.reconInd!= null)&&this.reconInd.equals(rhs.reconInd))))&&((this.checkDepositInd == rhs.checkDepositInd)||((this.checkDepositInd!= null)&&this.checkDepositInd.equals(rhs.checkDepositInd))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.desc == rhs.desc)||((this.desc!= null)&&this.desc.equals(rhs.desc))));
     }
 
 }

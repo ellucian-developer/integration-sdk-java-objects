@@ -40,7 +40,7 @@ public class ElectronicPersonnelActionRouting100PutRequest {
      */
     @JsonProperty("proxyForUserId")
     @JsonPropertyDescription("Lineage reference object : proxyForUserId")
-    private Object proxyForUserId;
+    private String proxyForUserId;
     /**
      * Approval Category
      * <p>
@@ -49,7 +49,7 @@ public class ElectronicPersonnelActionRouting100PutRequest {
      */
     @JsonProperty("acatCode")
     @JsonPropertyDescription("Lineage reference object : acatCode")
-    private Object acatCode;
+    private String acatCode;
     /**
      * Level Code
      * <p>
@@ -68,7 +68,7 @@ public class ElectronicPersonnelActionRouting100PutRequest {
      */
     @JsonProperty("aptyCode")
     @JsonPropertyDescription("Lineage reference object : aptyCode, Lookup lineage reference object : ntracat,ntvapty")
-    private Object aptyCode;
+    private String aptyCode;
     /**
      * Required Action
      * <p>
@@ -87,7 +87,7 @@ public class ElectronicPersonnelActionRouting100PutRequest {
      */
     @JsonProperty("transNo")
     @JsonPropertyDescription("Lineage reference object : transNo")
-    private Object transNo;
+    private Double transNo;
     /**
      * Lineage reference object : NORROUT_STATUS_DATE_TIME
      * 
@@ -141,7 +141,7 @@ public class ElectronicPersonnelActionRouting100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Query Date
      * <p>
@@ -150,7 +150,7 @@ public class ElectronicPersonnelActionRouting100PutRequest {
      */
     @JsonProperty("effectiveDate")
     @JsonPropertyDescription("Lineage reference object : effectiveDate")
-    private Object effectiveDate;
+    private Date effectiveDate;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -161,7 +161,7 @@ public class ElectronicPersonnelActionRouting100PutRequest {
      * 
      */
     @JsonProperty("proxyForUserId")
-    public Object getProxyForUserId() {
+    public String getProxyForUserId() {
         return proxyForUserId;
     }
 
@@ -172,11 +172,11 @@ public class ElectronicPersonnelActionRouting100PutRequest {
      * 
      */
     @JsonProperty("proxyForUserId")
-    public void setProxyForUserId(Object proxyForUserId) {
+    public void setProxyForUserId(String proxyForUserId) {
         this.proxyForUserId = proxyForUserId;
     }
 
-    public ElectronicPersonnelActionRouting100PutRequest withProxyForUserId(Object proxyForUserId) {
+    public ElectronicPersonnelActionRouting100PutRequest withProxyForUserId(String proxyForUserId) {
         this.proxyForUserId = proxyForUserId;
         return this;
     }
@@ -188,7 +188,7 @@ public class ElectronicPersonnelActionRouting100PutRequest {
      * 
      */
     @JsonProperty("acatCode")
-    public Object getAcatCode() {
+    public String getAcatCode() {
         return acatCode;
     }
 
@@ -199,11 +199,11 @@ public class ElectronicPersonnelActionRouting100PutRequest {
      * 
      */
     @JsonProperty("acatCode")
-    public void setAcatCode(Object acatCode) {
+    public void setAcatCode(String acatCode) {
         this.acatCode = acatCode;
     }
 
-    public ElectronicPersonnelActionRouting100PutRequest withAcatCode(Object acatCode) {
+    public ElectronicPersonnelActionRouting100PutRequest withAcatCode(String acatCode) {
         this.acatCode = acatCode;
         return this;
     }
@@ -244,7 +244,7 @@ public class ElectronicPersonnelActionRouting100PutRequest {
      * 
      */
     @JsonProperty("aptyCode")
-    public Object getAptyCode() {
+    public String getAptyCode() {
         return aptyCode;
     }
 
@@ -255,11 +255,11 @@ public class ElectronicPersonnelActionRouting100PutRequest {
      * 
      */
     @JsonProperty("aptyCode")
-    public void setAptyCode(Object aptyCode) {
+    public void setAptyCode(String aptyCode) {
         this.aptyCode = aptyCode;
     }
 
-    public ElectronicPersonnelActionRouting100PutRequest withAptyCode(Object aptyCode) {
+    public ElectronicPersonnelActionRouting100PutRequest withAptyCode(String aptyCode) {
         this.aptyCode = aptyCode;
         return this;
     }
@@ -300,7 +300,7 @@ public class ElectronicPersonnelActionRouting100PutRequest {
      * 
      */
     @JsonProperty("transNo")
-    public Object getTransNo() {
+    public Double getTransNo() {
         return transNo;
     }
 
@@ -311,11 +311,11 @@ public class ElectronicPersonnelActionRouting100PutRequest {
      * 
      */
     @JsonProperty("transNo")
-    public void setTransNo(Object transNo) {
+    public void setTransNo(Double transNo) {
         this.transNo = transNo;
     }
 
-    public ElectronicPersonnelActionRouting100PutRequest withTransNo(Object transNo) {
+    public ElectronicPersonnelActionRouting100PutRequest withTransNo(Double transNo) {
         this.transNo = transNo;
         return this;
     }
@@ -462,7 +462,7 @@ public class ElectronicPersonnelActionRouting100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -473,11 +473,11 @@ public class ElectronicPersonnelActionRouting100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public ElectronicPersonnelActionRouting100PutRequest withId(Object id) {
+    public ElectronicPersonnelActionRouting100PutRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -489,7 +489,7 @@ public class ElectronicPersonnelActionRouting100PutRequest {
      * 
      */
     @JsonProperty("effectiveDate")
-    public Object getEffectiveDate() {
+    public Date getEffectiveDate() {
         return effectiveDate;
     }
 
@@ -500,11 +500,11 @@ public class ElectronicPersonnelActionRouting100PutRequest {
      * 
      */
     @JsonProperty("effectiveDate")
-    public void setEffectiveDate(Object effectiveDate) {
+    public void setEffectiveDate(Date effectiveDate) {
         this.effectiveDate = effectiveDate;
     }
 
-    public ElectronicPersonnelActionRouting100PutRequest withEffectiveDate(Object effectiveDate) {
+    public ElectronicPersonnelActionRouting100PutRequest withEffectiveDate(Date effectiveDate) {
         this.effectiveDate = effectiveDate;
         return this;
     }

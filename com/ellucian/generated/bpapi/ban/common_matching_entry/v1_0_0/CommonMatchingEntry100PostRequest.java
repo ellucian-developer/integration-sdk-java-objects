@@ -22,6 +22,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "city",
     "streetLine3",
     "ssn",
+    "keyblockId",
     "emailAddress",
     "emalCode",
     "mi",
@@ -114,6 +115,15 @@ public class CommonMatchingEntry100PostRequest {
     @JsonProperty("ssn")
     @JsonPropertyDescription("Lineage reference object : GOTCMME_SSN")
     private String ssn;
+    /**
+     * ID
+     * <p>
+     * Lineage reference object : id
+     * 
+     */
+    @JsonProperty("keyblockId")
+    @JsonPropertyDescription("Lineage reference object : id")
+    private String keyblockId;
     /**
      * E-mail
      * <p>
@@ -228,7 +238,7 @@ public class CommonMatchingEntry100PostRequest {
      */
     @JsonProperty("keyblockSourceCode")
     @JsonPropertyDescription("Lineage reference object : keyblockSourceCode, Lookup lineage reference object : gtvcmsc")
-    private Object keyblockSourceCode;
+    private String keyblockSourceCode;
     /**
      * Lineage reference object : GOTCMME_PHONE_NUMBER
      * 
@@ -479,6 +489,33 @@ public class CommonMatchingEntry100PostRequest {
 
     public CommonMatchingEntry100PostRequest withSsn(String ssn) {
         this.ssn = ssn;
+        return this;
+    }
+
+    /**
+     * ID
+     * <p>
+     * Lineage reference object : id
+     * 
+     */
+    @JsonProperty("keyblockId")
+    public String getKeyblockId() {
+        return keyblockId;
+    }
+
+    /**
+     * ID
+     * <p>
+     * Lineage reference object : id
+     * 
+     */
+    @JsonProperty("keyblockId")
+    public void setKeyblockId(String keyblockId) {
+        this.keyblockId = keyblockId;
+    }
+
+    public CommonMatchingEntry100PostRequest withKeyblockId(String keyblockId) {
+        this.keyblockId = keyblockId;
         return this;
     }
 
@@ -809,7 +846,7 @@ public class CommonMatchingEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblockSourceCode")
-    public Object getKeyblockSourceCode() {
+    public String getKeyblockSourceCode() {
         return keyblockSourceCode;
     }
 
@@ -820,11 +857,11 @@ public class CommonMatchingEntry100PostRequest {
      * 
      */
     @JsonProperty("keyblockSourceCode")
-    public void setKeyblockSourceCode(Object keyblockSourceCode) {
+    public void setKeyblockSourceCode(String keyblockSourceCode) {
         this.keyblockSourceCode = keyblockSourceCode;
     }
 
-    public CommonMatchingEntry100PostRequest withKeyblockSourceCode(Object keyblockSourceCode) {
+    public CommonMatchingEntry100PostRequest withKeyblockSourceCode(String keyblockSourceCode) {
         this.keyblockSourceCode = keyblockSourceCode;
         return this;
     }
@@ -984,6 +1021,10 @@ public class CommonMatchingEntry100PostRequest {
         sb.append('=');
         sb.append(((this.ssn == null)?"<null>":this.ssn));
         sb.append(',');
+        sb.append("keyblockId");
+        sb.append('=');
+        sb.append(((this.keyblockId == null)?"<null>":this.keyblockId));
+        sb.append(',');
         sb.append("emailAddress");
         sb.append('=');
         sb.append(((this.emailAddress == null)?"<null>":this.emailAddress));
@@ -1075,6 +1116,7 @@ public class CommonMatchingEntry100PostRequest {
         result = ((result* 31)+((this.city == null)? 0 :this.city.hashCode()));
         result = ((result* 31)+((this.streetLine3 == null)? 0 :this.streetLine3 .hashCode()));
         result = ((result* 31)+((this.ssn == null)? 0 :this.ssn.hashCode()));
+        result = ((result* 31)+((this.keyblockId == null)? 0 :this.keyblockId.hashCode()));
         result = ((result* 31)+((this.emailAddress == null)? 0 :this.emailAddress.hashCode()));
         result = ((result* 31)+((this.emalCode == null)? 0 :this.emalCode.hashCode()));
         result = ((result* 31)+((this.mi == null)? 0 :this.mi.hashCode()));
@@ -1105,7 +1147,7 @@ public class CommonMatchingEntry100PostRequest {
             return false;
         }
         CommonMatchingEntry100PostRequest rhs = ((CommonMatchingEntry100PostRequest) other);
-        return (((((((((((((((((((((((((((this.streetLine2 == rhs.streetLine2)||((this.streetLine2 != null)&&this.streetLine2 .equals(rhs.streetLine2)))&&((this.cntyCode == rhs.cntyCode)||((this.cntyCode!= null)&&this.cntyCode.equals(rhs.cntyCode))))&&((this.lastName == rhs.lastName)||((this.lastName!= null)&&this.lastName.equals(rhs.lastName))))&&((this.streetLine1 == rhs.streetLine1)||((this.streetLine1 != null)&&this.streetLine1 .equals(rhs.streetLine1))))&&((this.adidCode == rhs.adidCode)||((this.adidCode!= null)&&this.adidCode.equals(rhs.adidCode))))&&((this.city == rhs.city)||((this.city!= null)&&this.city.equals(rhs.city))))&&((this.streetLine3 == rhs.streetLine3)||((this.streetLine3 != null)&&this.streetLine3 .equals(rhs.streetLine3))))&&((this.ssn == rhs.ssn)||((this.ssn!= null)&&this.ssn.equals(rhs.ssn))))&&((this.emailAddress == rhs.emailAddress)||((this.emailAddress!= null)&&this.emailAddress.equals(rhs.emailAddress))))&&((this.emalCode == rhs.emalCode)||((this.emalCode!= null)&&this.emalCode.equals(rhs.emalCode))))&&((this.mi == rhs.mi)||((this.mi!= null)&&this.mi.equals(rhs.mi))))&&((this.zip == rhs.zip)||((this.zip!= null)&&this.zip.equals(rhs.zip))))&&((this.birthDay == rhs.birthDay)||((this.birthDay!= null)&&this.birthDay.equals(rhs.birthDay))))&&((this.phoneExt == rhs.phoneExt)||((this.phoneExt!= null)&&this.phoneExt.equals(rhs.phoneExt))))&&((this.statCode == rhs.statCode)||((this.statCode!= null)&&this.statCode.equals(rhs.statCode))))&&((this.natnCode == rhs.natnCode)||((this.natnCode!= null)&&this.natnCode.equals(rhs.natnCode))))&&((this.sex == rhs.sex)||((this.sex!= null)&&this.sex.equals(rhs.sex))))&&((this.teleCode == rhs.teleCode)||((this.teleCode!= null)&&this.teleCode.equals(rhs.teleCode))))&&((this.birthMon == rhs.birthMon)||((this.birthMon!= null)&&this.birthMon.equals(rhs.birthMon))))&&((this.firstName == rhs.firstName)||((this.firstName!= null)&&this.firstName.equals(rhs.firstName))))&&((this.keyblockSourceCode == rhs.keyblockSourceCode)||((this.keyblockSourceCode!= null)&&this.keyblockSourceCode.equals(rhs.keyblockSourceCode))))&&((this.phoneNumber == rhs.phoneNumber)||((this.phoneNumber!= null)&&this.phoneNumber.equals(rhs.phoneNumber))))&&((this.birthYear == rhs.birthYear)||((this.birthYear!= null)&&this.birthYear.equals(rhs.birthYear))))&&((this.phoneArea == rhs.phoneArea)||((this.phoneArea!= null)&&this.phoneArea.equals(rhs.phoneArea))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.atypCode == rhs.atypCode)||((this.atypCode!= null)&&this.atypCode.equals(rhs.atypCode))));
+        return ((((((((((((((((((((((((((((this.streetLine2 == rhs.streetLine2)||((this.streetLine2 != null)&&this.streetLine2 .equals(rhs.streetLine2)))&&((this.cntyCode == rhs.cntyCode)||((this.cntyCode!= null)&&this.cntyCode.equals(rhs.cntyCode))))&&((this.lastName == rhs.lastName)||((this.lastName!= null)&&this.lastName.equals(rhs.lastName))))&&((this.streetLine1 == rhs.streetLine1)||((this.streetLine1 != null)&&this.streetLine1 .equals(rhs.streetLine1))))&&((this.adidCode == rhs.adidCode)||((this.adidCode!= null)&&this.adidCode.equals(rhs.adidCode))))&&((this.city == rhs.city)||((this.city!= null)&&this.city.equals(rhs.city))))&&((this.streetLine3 == rhs.streetLine3)||((this.streetLine3 != null)&&this.streetLine3 .equals(rhs.streetLine3))))&&((this.ssn == rhs.ssn)||((this.ssn!= null)&&this.ssn.equals(rhs.ssn))))&&((this.keyblockId == rhs.keyblockId)||((this.keyblockId!= null)&&this.keyblockId.equals(rhs.keyblockId))))&&((this.emailAddress == rhs.emailAddress)||((this.emailAddress!= null)&&this.emailAddress.equals(rhs.emailAddress))))&&((this.emalCode == rhs.emalCode)||((this.emalCode!= null)&&this.emalCode.equals(rhs.emalCode))))&&((this.mi == rhs.mi)||((this.mi!= null)&&this.mi.equals(rhs.mi))))&&((this.zip == rhs.zip)||((this.zip!= null)&&this.zip.equals(rhs.zip))))&&((this.birthDay == rhs.birthDay)||((this.birthDay!= null)&&this.birthDay.equals(rhs.birthDay))))&&((this.phoneExt == rhs.phoneExt)||((this.phoneExt!= null)&&this.phoneExt.equals(rhs.phoneExt))))&&((this.statCode == rhs.statCode)||((this.statCode!= null)&&this.statCode.equals(rhs.statCode))))&&((this.natnCode == rhs.natnCode)||((this.natnCode!= null)&&this.natnCode.equals(rhs.natnCode))))&&((this.sex == rhs.sex)||((this.sex!= null)&&this.sex.equals(rhs.sex))))&&((this.teleCode == rhs.teleCode)||((this.teleCode!= null)&&this.teleCode.equals(rhs.teleCode))))&&((this.birthMon == rhs.birthMon)||((this.birthMon!= null)&&this.birthMon.equals(rhs.birthMon))))&&((this.firstName == rhs.firstName)||((this.firstName!= null)&&this.firstName.equals(rhs.firstName))))&&((this.keyblockSourceCode == rhs.keyblockSourceCode)||((this.keyblockSourceCode!= null)&&this.keyblockSourceCode.equals(rhs.keyblockSourceCode))))&&((this.phoneNumber == rhs.phoneNumber)||((this.phoneNumber!= null)&&this.phoneNumber.equals(rhs.phoneNumber))))&&((this.birthYear == rhs.birthYear)||((this.birthYear!= null)&&this.birthYear.equals(rhs.birthYear))))&&((this.phoneArea == rhs.phoneArea)||((this.phoneArea!= null)&&this.phoneArea.equals(rhs.phoneArea))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.atypCode == rhs.atypCode)||((this.atypCode!= null)&&this.atypCode.equals(rhs.atypCode))));
     }
 
 }

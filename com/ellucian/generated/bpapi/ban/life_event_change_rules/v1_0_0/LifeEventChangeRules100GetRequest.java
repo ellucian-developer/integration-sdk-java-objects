@@ -29,7 +29,7 @@ public class LifeEventChangeRules100GetRequest {
      */
     @JsonProperty("breaCode")
     @JsonPropertyDescription("Lineage reference object : breaCode")
-    private Object breaCode;
+    private String breaCode;
     /**
      * Supporting Document Code
      * <p>
@@ -51,7 +51,7 @@ public class LifeEventChangeRules100GetRequest {
      * 
      */
     @JsonProperty("breaCode")
-    public Object getBreaCode() {
+    public String getBreaCode() {
         return breaCode;
     }
 
@@ -63,11 +63,11 @@ public class LifeEventChangeRules100GetRequest {
      * 
      */
     @JsonProperty("breaCode")
-    public void setBreaCode(Object breaCode) {
+    public void setBreaCode(String breaCode) {
         this.breaCode = breaCode;
     }
 
-    public LifeEventChangeRules100GetRequest withBreaCode(Object breaCode) {
+    public LifeEventChangeRules100GetRequest withBreaCode(String breaCode) {
         this.breaCode = breaCode;
         return this;
     }

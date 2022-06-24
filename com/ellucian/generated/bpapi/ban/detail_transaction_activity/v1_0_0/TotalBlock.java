@@ -28,14 +28,14 @@ public class TotalBlock {
      */
     @JsonProperty("dispTotalAmt")
     @JsonPropertyDescription("Lineage reference object : dispTotalAmt")
-    private Object dispTotalAmt;
+    private Double dispTotalAmt;
     /**
      * Lineage reference object : totalDrCrInd
      * 
      */
     @JsonProperty("totalDrCrInd")
     @JsonPropertyDescription("Lineage reference object : totalDrCrInd")
-    private Object totalDrCrInd;
+    private String totalDrCrInd;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -46,7 +46,7 @@ public class TotalBlock {
      * 
      */
     @JsonProperty("dispTotalAmt")
-    public Object getDispTotalAmt() {
+    public Double getDispTotalAmt() {
         return dispTotalAmt;
     }
 
@@ -57,11 +57,11 @@ public class TotalBlock {
      * 
      */
     @JsonProperty("dispTotalAmt")
-    public void setDispTotalAmt(Object dispTotalAmt) {
+    public void setDispTotalAmt(Double dispTotalAmt) {
         this.dispTotalAmt = dispTotalAmt;
     }
 
-    public TotalBlock withDispTotalAmt(Object dispTotalAmt) {
+    public TotalBlock withDispTotalAmt(Double dispTotalAmt) {
         this.dispTotalAmt = dispTotalAmt;
         return this;
     }
@@ -71,7 +71,7 @@ public class TotalBlock {
      * 
      */
     @JsonProperty("totalDrCrInd")
-    public Object getTotalDrCrInd() {
+    public String getTotalDrCrInd() {
         return totalDrCrInd;
     }
 
@@ -80,11 +80,11 @@ public class TotalBlock {
      * 
      */
     @JsonProperty("totalDrCrInd")
-    public void setTotalDrCrInd(Object totalDrCrInd) {
+    public void setTotalDrCrInd(String totalDrCrInd) {
         this.totalDrCrInd = totalDrCrInd;
     }
 
-    public TotalBlock withTotalDrCrInd(Object totalDrCrInd) {
+    public TotalBlock withTotalDrCrInd(String totalDrCrInd) {
         this.totalDrCrInd = totalDrCrInd;
         return this;
     }

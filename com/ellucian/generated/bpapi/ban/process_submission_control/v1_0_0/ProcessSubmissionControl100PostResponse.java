@@ -29,14 +29,14 @@ public class ProcessSubmissionControl100PostResponse {
      */
     @JsonProperty("jprmCode")
     @JsonPropertyDescription("Lineage reference object : jprmCode")
-    private Object jprmCode;
+    private String jprmCode;
     /**
      * Lineage reference object : jobTitle
      * 
      */
     @JsonProperty("jobTitle")
     @JsonPropertyDescription("Lineage reference object : jobTitle")
-    private Object jobTitle;
+    private String jobTitle;
     /**
      * Process
      * <p>
@@ -45,7 +45,7 @@ public class ProcessSubmissionControl100PostResponse {
      */
     @JsonProperty("keyblckJob")
     @JsonPropertyDescription("Lineage reference object : keyblckJob")
-    private Object keyblckJob;
+    private String keyblckJob;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -56,7 +56,7 @@ public class ProcessSubmissionControl100PostResponse {
      * 
      */
     @JsonProperty("jprmCode")
-    public Object getJprmCode() {
+    public String getJprmCode() {
         return jprmCode;
     }
 
@@ -67,11 +67,11 @@ public class ProcessSubmissionControl100PostResponse {
      * 
      */
     @JsonProperty("jprmCode")
-    public void setJprmCode(Object jprmCode) {
+    public void setJprmCode(String jprmCode) {
         this.jprmCode = jprmCode;
     }
 
-    public ProcessSubmissionControl100PostResponse withJprmCode(Object jprmCode) {
+    public ProcessSubmissionControl100PostResponse withJprmCode(String jprmCode) {
         this.jprmCode = jprmCode;
         return this;
     }
@@ -81,7 +81,7 @@ public class ProcessSubmissionControl100PostResponse {
      * 
      */
     @JsonProperty("jobTitle")
-    public Object getJobTitle() {
+    public String getJobTitle() {
         return jobTitle;
     }
 
@@ -90,11 +90,11 @@ public class ProcessSubmissionControl100PostResponse {
      * 
      */
     @JsonProperty("jobTitle")
-    public void setJobTitle(Object jobTitle) {
+    public void setJobTitle(String jobTitle) {
         this.jobTitle = jobTitle;
     }
 
-    public ProcessSubmissionControl100PostResponse withJobTitle(Object jobTitle) {
+    public ProcessSubmissionControl100PostResponse withJobTitle(String jobTitle) {
         this.jobTitle = jobTitle;
         return this;
     }
@@ -106,7 +106,7 @@ public class ProcessSubmissionControl100PostResponse {
      * 
      */
     @JsonProperty("keyblckJob")
-    public Object getKeyblckJob() {
+    public String getKeyblckJob() {
         return keyblckJob;
     }
 
@@ -117,11 +117,11 @@ public class ProcessSubmissionControl100PostResponse {
      * 
      */
     @JsonProperty("keyblckJob")
-    public void setKeyblckJob(Object keyblckJob) {
+    public void setKeyblckJob(String keyblckJob) {
         this.keyblckJob = keyblckJob;
     }
 
-    public ProcessSubmissionControl100PostResponse withKeyblckJob(Object keyblckJob) {
+    public ProcessSubmissionControl100PostResponse withKeyblckJob(String keyblckJob) {
         this.keyblckJob = keyblckJob;
         return this;
     }

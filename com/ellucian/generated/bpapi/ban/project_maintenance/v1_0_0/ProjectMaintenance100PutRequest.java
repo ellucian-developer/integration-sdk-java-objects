@@ -182,7 +182,7 @@ public class ProjectMaintenance100PutRequest {
      */
     @JsonProperty("projDesc")
     @JsonPropertyDescription("Lineage reference object : projDesc")
-    private Object projDesc;
+    private String projDesc;
     /**
      * Fund
      * <p>
@@ -245,7 +245,7 @@ public class ProjectMaintenance100PutRequest {
      */
     @JsonProperty("ftmprojProjCode")
     @JsonPropertyDescription("Lineage reference object : ftmprojProjCode, Lookup lineage reference object : ftvproj")
-    private Object ftmprojProjCode;
+    private String ftmprojProjCode;
     /**
      * Organization
      * <p>
@@ -676,7 +676,7 @@ public class ProjectMaintenance100PutRequest {
      * 
      */
     @JsonProperty("projDesc")
-    public Object getProjDesc() {
+    public String getProjDesc() {
         return projDesc;
     }
 
@@ -687,11 +687,11 @@ public class ProjectMaintenance100PutRequest {
      * 
      */
     @JsonProperty("projDesc")
-    public void setProjDesc(Object projDesc) {
+    public void setProjDesc(String projDesc) {
         this.projDesc = projDesc;
     }
 
-    public ProjectMaintenance100PutRequest withProjDesc(Object projDesc) {
+    public ProjectMaintenance100PutRequest withProjDesc(String projDesc) {
         this.projDesc = projDesc;
         return this;
     }
@@ -865,7 +865,7 @@ public class ProjectMaintenance100PutRequest {
      * 
      */
     @JsonProperty("ftmprojProjCode")
-    public Object getFtmprojProjCode() {
+    public String getFtmprojProjCode() {
         return ftmprojProjCode;
     }
 
@@ -876,11 +876,11 @@ public class ProjectMaintenance100PutRequest {
      * 
      */
     @JsonProperty("ftmprojProjCode")
-    public void setFtmprojProjCode(Object ftmprojProjCode) {
+    public void setFtmprojProjCode(String ftmprojProjCode) {
         this.ftmprojProjCode = ftmprojProjCode;
     }
 
-    public ProjectMaintenance100PutRequest withFtmprojProjCode(Object ftmprojProjCode) {
+    public ProjectMaintenance100PutRequest withFtmprojProjCode(String ftmprojProjCode) {
         this.ftmprojProjCode = ftmprojProjCode;
         return this;
     }

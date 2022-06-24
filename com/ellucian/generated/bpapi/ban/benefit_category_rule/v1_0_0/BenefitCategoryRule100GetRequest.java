@@ -28,7 +28,7 @@ public class BenefitCategoryRule100GetRequest {
      */
     @JsonProperty("bcatCode")
     @JsonPropertyDescription("Lineage reference object : bcatCode, Lookup lineage reference object : ptrbcat")
-    private Object bcatCode;
+    private String bcatCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -40,7 +40,7 @@ public class BenefitCategoryRule100GetRequest {
      * 
      */
     @JsonProperty("bcatCode")
-    public Object getBcatCode() {
+    public String getBcatCode() {
         return bcatCode;
     }
 
@@ -52,11 +52,11 @@ public class BenefitCategoryRule100GetRequest {
      * 
      */
     @JsonProperty("bcatCode")
-    public void setBcatCode(Object bcatCode) {
+    public void setBcatCode(String bcatCode) {
         this.bcatCode = bcatCode;
     }
 
-    public BenefitCategoryRule100GetRequest withBcatCode(Object bcatCode) {
+    public BenefitCategoryRule100GetRequest withBcatCode(String bcatCode) {
         this.bcatCode = bcatCode;
         return this;
     }

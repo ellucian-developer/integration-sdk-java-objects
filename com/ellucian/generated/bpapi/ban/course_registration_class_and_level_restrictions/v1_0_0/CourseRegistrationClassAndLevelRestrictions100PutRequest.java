@@ -42,7 +42,7 @@ public class CourseRegistrationClassAndLevelRestrictions100PutRequest {
      */
     @JsonProperty("scacrseCrseNumb")
     @JsonPropertyDescription("Lineage reference object : scacrseCrseNumb, Lookup lineage reference object : scbcrse,scbcrky")
-    private Object scacrseCrseNumb;
+    private String scacrseCrseNumb;
     /**
      * Subject
      * <p>
@@ -51,7 +51,7 @@ public class CourseRegistrationClassAndLevelRestrictions100PutRequest {
      */
     @JsonProperty("scacrseSubjCode")
     @JsonPropertyDescription("Lineage reference object : scacrseSubjCode, Lookup lineage reference object : stvsubj")
-    private Object scacrseSubjCode;
+    private String scacrseSubjCode;
     /**
      * Class
      * <p>
@@ -78,7 +78,7 @@ public class CourseRegistrationClassAndLevelRestrictions100PutRequest {
      */
     @JsonProperty("scacrseTermCodeEff")
     @JsonPropertyDescription("Lineage reference object : scacrseTermCodeEff, Lookup lineage reference object : stvterm,scbcrky,scbcrky")
-    private Object scacrseTermCodeEff;
+    private String scacrseTermCodeEff;
     /**
      * Level
      * <p>
@@ -125,7 +125,7 @@ public class CourseRegistrationClassAndLevelRestrictions100PutRequest {
      * 
      */
     @JsonProperty("scacrseCrseNumb")
-    public Object getScacrseCrseNumb() {
+    public String getScacrseCrseNumb() {
         return scacrseCrseNumb;
     }
 
@@ -136,11 +136,11 @@ public class CourseRegistrationClassAndLevelRestrictions100PutRequest {
      * 
      */
     @JsonProperty("scacrseCrseNumb")
-    public void setScacrseCrseNumb(Object scacrseCrseNumb) {
+    public void setScacrseCrseNumb(String scacrseCrseNumb) {
         this.scacrseCrseNumb = scacrseCrseNumb;
     }
 
-    public CourseRegistrationClassAndLevelRestrictions100PutRequest withScacrseCrseNumb(Object scacrseCrseNumb) {
+    public CourseRegistrationClassAndLevelRestrictions100PutRequest withScacrseCrseNumb(String scacrseCrseNumb) {
         this.scacrseCrseNumb = scacrseCrseNumb;
         return this;
     }
@@ -152,7 +152,7 @@ public class CourseRegistrationClassAndLevelRestrictions100PutRequest {
      * 
      */
     @JsonProperty("scacrseSubjCode")
-    public Object getScacrseSubjCode() {
+    public String getScacrseSubjCode() {
         return scacrseSubjCode;
     }
 
@@ -163,11 +163,11 @@ public class CourseRegistrationClassAndLevelRestrictions100PutRequest {
      * 
      */
     @JsonProperty("scacrseSubjCode")
-    public void setScacrseSubjCode(Object scacrseSubjCode) {
+    public void setScacrseSubjCode(String scacrseSubjCode) {
         this.scacrseSubjCode = scacrseSubjCode;
     }
 
-    public CourseRegistrationClassAndLevelRestrictions100PutRequest withScacrseSubjCode(Object scacrseSubjCode) {
+    public CourseRegistrationClassAndLevelRestrictions100PutRequest withScacrseSubjCode(String scacrseSubjCode) {
         this.scacrseSubjCode = scacrseSubjCode;
         return this;
     }
@@ -233,7 +233,7 @@ public class CourseRegistrationClassAndLevelRestrictions100PutRequest {
      * 
      */
     @JsonProperty("scacrseTermCodeEff")
-    public Object getScacrseTermCodeEff() {
+    public String getScacrseTermCodeEff() {
         return scacrseTermCodeEff;
     }
 
@@ -244,11 +244,11 @@ public class CourseRegistrationClassAndLevelRestrictions100PutRequest {
      * 
      */
     @JsonProperty("scacrseTermCodeEff")
-    public void setScacrseTermCodeEff(Object scacrseTermCodeEff) {
+    public void setScacrseTermCodeEff(String scacrseTermCodeEff) {
         this.scacrseTermCodeEff = scacrseTermCodeEff;
     }
 
-    public CourseRegistrationClassAndLevelRestrictions100PutRequest withScacrseTermCodeEff(Object scacrseTermCodeEff) {
+    public CourseRegistrationClassAndLevelRestrictions100PutRequest withScacrseTermCodeEff(String scacrseTermCodeEff) {
         this.scacrseTermCodeEff = scacrseTermCodeEff;
         return this;
     }

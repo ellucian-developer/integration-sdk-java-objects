@@ -53,7 +53,7 @@ public class StudentRegistrationPermitOverride100GetRequest {
      */
     @JsonProperty("keyblocTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCode;
+    private String keyblocTermCode;
     /**
      * Subject
      * <p>
@@ -90,7 +90,7 @@ public class StudentRegistrationPermitOverride100GetRequest {
      */
     @JsonProperty("keyblocId")
     @JsonPropertyDescription("Lineage reference object : keyblocId")
-    private Object keyblocId;
+    private String keyblocId;
     /**
      * CRN
      * <p>
@@ -164,7 +164,7 @@ public class StudentRegistrationPermitOverride100GetRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public Object getKeyblocTermCode() {
+    public String getKeyblocTermCode() {
         return keyblocTermCode;
     }
 
@@ -175,11 +175,11 @@ public class StudentRegistrationPermitOverride100GetRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public void setKeyblocTermCode(Object keyblocTermCode) {
+    public void setKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
     }
 
-    public StudentRegistrationPermitOverride100GetRequest withKeyblocTermCode(Object keyblocTermCode) {
+    public StudentRegistrationPermitOverride100GetRequest withKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
         return this;
     }
@@ -274,7 +274,7 @@ public class StudentRegistrationPermitOverride100GetRequest {
      * 
      */
     @JsonProperty("keyblocId")
-    public Object getKeyblocId() {
+    public String getKeyblocId() {
         return keyblocId;
     }
 
@@ -285,11 +285,11 @@ public class StudentRegistrationPermitOverride100GetRequest {
      * 
      */
     @JsonProperty("keyblocId")
-    public void setKeyblocId(Object keyblocId) {
+    public void setKeyblocId(String keyblocId) {
         this.keyblocId = keyblocId;
     }
 
-    public StudentRegistrationPermitOverride100GetRequest withKeyblocId(Object keyblocId) {
+    public StudentRegistrationPermitOverride100GetRequest withKeyblocId(String keyblocId) {
         this.keyblocId = keyblocId;
         return this;
     }

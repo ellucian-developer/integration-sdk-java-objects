@@ -21,7 +21,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "detailCode",
     "billingInd",
     "termCode",
-    "expirationDate"
+    "expirationDate",
+    "desc"
 })
 @Generated("jsonschema2pojo")
 public class StudentAccountDetailMemos100PostRequest {
@@ -44,7 +45,7 @@ public class StudentAccountDetailMemos100PostRequest {
      */
     @JsonProperty("holdPassword")
     @JsonPropertyDescription("Lineage reference object : holdPassword")
-    private Object holdPassword;
+    private String holdPassword;
     /**
      * ID
      * <p>
@@ -53,7 +54,7 @@ public class StudentAccountDetailMemos100PostRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Detail Code
      * <p>
@@ -93,6 +94,16 @@ public class StudentAccountDetailMemos100PostRequest {
     @JsonProperty("expirationDate")
     @JsonPropertyDescription("Lineage reference object : TBRMEMO_EXPIRATION_DATE")
     private Date expirationDate;
+    /**
+     * Memo Description
+     * <p>
+     * Lineage reference object : TBRMEMO_DESC
+     * (Required)
+     * 
+     */
+    @JsonProperty("desc")
+    @JsonPropertyDescription("Lineage reference object : TBRMEMO_DESC")
+    private String desc;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -132,7 +143,7 @@ public class StudentAccountDetailMemos100PostRequest {
      * 
      */
     @JsonProperty("holdPassword")
-    public Object getHoldPassword() {
+    public String getHoldPassword() {
         return holdPassword;
     }
 
@@ -143,11 +154,11 @@ public class StudentAccountDetailMemos100PostRequest {
      * 
      */
     @JsonProperty("holdPassword")
-    public void setHoldPassword(Object holdPassword) {
+    public void setHoldPassword(String holdPassword) {
         this.holdPassword = holdPassword;
     }
 
-    public StudentAccountDetailMemos100PostRequest withHoldPassword(Object holdPassword) {
+    public StudentAccountDetailMemos100PostRequest withHoldPassword(String holdPassword) {
         this.holdPassword = holdPassword;
         return this;
     }
@@ -159,7 +170,7 @@ public class StudentAccountDetailMemos100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -170,11 +181,11 @@ public class StudentAccountDetailMemos100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public StudentAccountDetailMemos100PostRequest withId(Object id) {
+    public StudentAccountDetailMemos100PostRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -293,6 +304,35 @@ public class StudentAccountDetailMemos100PostRequest {
         return this;
     }
 
+    /**
+     * Memo Description
+     * <p>
+     * Lineage reference object : TBRMEMO_DESC
+     * (Required)
+     * 
+     */
+    @JsonProperty("desc")
+    public String getDesc() {
+        return desc;
+    }
+
+    /**
+     * Memo Description
+     * <p>
+     * Lineage reference object : TBRMEMO_DESC
+     * (Required)
+     * 
+     */
+    @JsonProperty("desc")
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public StudentAccountDetailMemos100PostRequest withDesc(String desc) {
+        this.desc = desc;
+        return this;
+    }
+
     @JsonAnyGetter
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;
@@ -340,6 +380,10 @@ public class StudentAccountDetailMemos100PostRequest {
         sb.append('=');
         sb.append(((this.expirationDate == null)?"<null>":this.expirationDate));
         sb.append(',');
+        sb.append("desc");
+        sb.append('=');
+        sb.append(((this.desc == null)?"<null>":this.desc));
+        sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');
         sb.append(((this.additionalProperties == null)?"<null>":this.additionalProperties));
@@ -363,6 +407,7 @@ public class StudentAccountDetailMemos100PostRequest {
         result = ((result* 31)+((this.billingInd == null)? 0 :this.billingInd.hashCode()));
         result = ((result* 31)+((this.termCode == null)? 0 :this.termCode.hashCode()));
         result = ((result* 31)+((this.expirationDate == null)? 0 :this.expirationDate.hashCode()));
+        result = ((result* 31)+((this.desc == null)? 0 :this.desc.hashCode()));
         return result;
     }
 
@@ -375,7 +420,7 @@ public class StudentAccountDetailMemos100PostRequest {
             return false;
         }
         StudentAccountDetailMemos100PostRequest rhs = ((StudentAccountDetailMemos100PostRequest) other);
-        return (((((((((this.amount == rhs.amount)||((this.amount!= null)&&this.amount.equals(rhs.amount)))&&((this.holdPassword == rhs.holdPassword)||((this.holdPassword!= null)&&this.holdPassword.equals(rhs.holdPassword))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.detailCode == rhs.detailCode)||((this.detailCode!= null)&&this.detailCode.equals(rhs.detailCode))))&&((this.billingInd == rhs.billingInd)||((this.billingInd!= null)&&this.billingInd.equals(rhs.billingInd))))&&((this.termCode == rhs.termCode)||((this.termCode!= null)&&this.termCode.equals(rhs.termCode))))&&((this.expirationDate == rhs.expirationDate)||((this.expirationDate!= null)&&this.expirationDate.equals(rhs.expirationDate))));
+        return ((((((((((this.amount == rhs.amount)||((this.amount!= null)&&this.amount.equals(rhs.amount)))&&((this.holdPassword == rhs.holdPassword)||((this.holdPassword!= null)&&this.holdPassword.equals(rhs.holdPassword))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.detailCode == rhs.detailCode)||((this.detailCode!= null)&&this.detailCode.equals(rhs.detailCode))))&&((this.billingInd == rhs.billingInd)||((this.billingInd!= null)&&this.billingInd.equals(rhs.billingInd))))&&((this.termCode == rhs.termCode)||((this.termCode!= null)&&this.termCode.equals(rhs.termCode))))&&((this.expirationDate == rhs.expirationDate)||((this.expirationDate!= null)&&this.expirationDate.equals(rhs.expirationDate))))&&((this.desc == rhs.desc)||((this.desc!= null)&&this.desc.equals(rhs.desc))));
     }
 
 }

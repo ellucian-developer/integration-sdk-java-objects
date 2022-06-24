@@ -16,18 +16,18 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "tbbdetc",
-    "tbbeact2",
-    "tbracct_ctrl"
+    "tbbeact",
+    "tbracct"
 })
 @Generated("jsonschema2pojo")
 public class FinanceDetailCodes100GetResponse {
 
     @JsonProperty("tbbdetc")
     private List<Tbbdetc> tbbdetc = new ArrayList<Tbbdetc>();
-    @JsonProperty("tbbeact2")
-    private List<Tbbeact2> tbbeact2 = new ArrayList<Tbbeact2>();
-    @JsonProperty("tbracct_ctrl")
-    private List<TbracctCtrl> tbracctCtrl = new ArrayList<TbracctCtrl>();
+    @JsonProperty("tbbeact")
+    private List<Tbbeact> tbbeact = new ArrayList<Tbbeact>();
+    @JsonProperty("tbracct")
+    private List<Tbracct> tbracct = new ArrayList<Tbracct>();
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -46,33 +46,33 @@ public class FinanceDetailCodes100GetResponse {
         return this;
     }
 
-    @JsonProperty("tbbeact2")
-    public List<Tbbeact2> getTbbeact2() {
-        return tbbeact2;
+    @JsonProperty("tbbeact")
+    public List<Tbbeact> getTbbeact() {
+        return tbbeact;
     }
 
-    @JsonProperty("tbbeact2")
-    public void setTbbeact2(List<Tbbeact2> tbbeact2) {
-        this.tbbeact2 = tbbeact2;
+    @JsonProperty("tbbeact")
+    public void setTbbeact(List<Tbbeact> tbbeact) {
+        this.tbbeact = tbbeact;
     }
 
-    public FinanceDetailCodes100GetResponse withTbbeact2(List<Tbbeact2> tbbeact2) {
-        this.tbbeact2 = tbbeact2;
+    public FinanceDetailCodes100GetResponse withTbbeact(List<Tbbeact> tbbeact) {
+        this.tbbeact = tbbeact;
         return this;
     }
 
-    @JsonProperty("tbracct_ctrl")
-    public List<TbracctCtrl> getTbracctCtrl() {
-        return tbracctCtrl;
+    @JsonProperty("tbracct")
+    public List<Tbracct> getTbracct() {
+        return tbracct;
     }
 
-    @JsonProperty("tbracct_ctrl")
-    public void setTbracctCtrl(List<TbracctCtrl> tbracctCtrl) {
-        this.tbracctCtrl = tbracctCtrl;
+    @JsonProperty("tbracct")
+    public void setTbracct(List<Tbracct> tbracct) {
+        this.tbracct = tbracct;
     }
 
-    public FinanceDetailCodes100GetResponse withTbracctCtrl(List<TbracctCtrl> tbracctCtrl) {
-        this.tbracctCtrl = tbracctCtrl;
+    public FinanceDetailCodes100GetResponse withTbracct(List<Tbracct> tbracct) {
+        this.tbracct = tbracct;
         return this;
     }
 
@@ -99,13 +99,13 @@ public class FinanceDetailCodes100GetResponse {
         sb.append('=');
         sb.append(((this.tbbdetc == null)?"<null>":this.tbbdetc));
         sb.append(',');
-        sb.append("tbbeact2");
+        sb.append("tbbeact");
         sb.append('=');
-        sb.append(((this.tbbeact2 == null)?"<null>":this.tbbeact2));
+        sb.append(((this.tbbeact == null)?"<null>":this.tbbeact));
         sb.append(',');
-        sb.append("tbracctCtrl");
+        sb.append("tbracct");
         sb.append('=');
-        sb.append(((this.tbracctCtrl == null)?"<null>":this.tbracctCtrl));
+        sb.append(((this.tbracct == null)?"<null>":this.tbracct));
         sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');
@@ -122,10 +122,10 @@ public class FinanceDetailCodes100GetResponse {
     @Override
     public int hashCode() {
         int result = 1;
-        result = ((result* 31)+((this.tbbeact2 == null)? 0 :this.tbbeact2 .hashCode()));
+        result = ((result* 31)+((this.tbbeact == null)? 0 :this.tbbeact.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
         result = ((result* 31)+((this.tbbdetc == null)? 0 :this.tbbdetc.hashCode()));
-        result = ((result* 31)+((this.tbracctCtrl == null)? 0 :this.tbracctCtrl.hashCode()));
+        result = ((result* 31)+((this.tbracct == null)? 0 :this.tbracct.hashCode()));
         return result;
     }
 
@@ -138,7 +138,7 @@ public class FinanceDetailCodes100GetResponse {
             return false;
         }
         FinanceDetailCodes100GetResponse rhs = ((FinanceDetailCodes100GetResponse) other);
-        return (((((this.tbbeact2 == rhs.tbbeact2)||((this.tbbeact2 != null)&&this.tbbeact2 .equals(rhs.tbbeact2)))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.tbbdetc == rhs.tbbdetc)||((this.tbbdetc!= null)&&this.tbbdetc.equals(rhs.tbbdetc))))&&((this.tbracctCtrl == rhs.tbracctCtrl)||((this.tbracctCtrl!= null)&&this.tbracctCtrl.equals(rhs.tbracctCtrl))));
+        return (((((this.tbbeact == rhs.tbbeact)||((this.tbbeact!= null)&&this.tbbeact.equals(rhs.tbbeact)))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.tbbdetc == rhs.tbbdetc)||((this.tbbdetc!= null)&&this.tbbdetc.equals(rhs.tbbdetc))))&&((this.tbracct == rhs.tbracct)||((this.tbracct!= null)&&this.tbracct.equals(rhs.tbracct))));
     }
 
 }

@@ -204,7 +204,7 @@ public class AdmissionsApplicationFeesMailSubmissionWithdrawal100PostRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Recruiter
      * <p>
@@ -251,7 +251,7 @@ public class AdmissionsApplicationFeesMailSubmissionWithdrawal100PostRequest {
      */
     @JsonProperty("kbentryTermCode")
     @JsonPropertyDescription("Lineage reference object : kbentryTermCode, Lookup lineage reference object : stvterm")
-    private Object kbentryTermCode;
+    private String kbentryTermCode;
     /**
      * Application Status
      * <p>
@@ -884,7 +884,7 @@ public class AdmissionsApplicationFeesMailSubmissionWithdrawal100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -895,11 +895,11 @@ public class AdmissionsApplicationFeesMailSubmissionWithdrawal100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public AdmissionsApplicationFeesMailSubmissionWithdrawal100PostRequest withId(Object id) {
+    public AdmissionsApplicationFeesMailSubmissionWithdrawal100PostRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -1034,7 +1034,7 @@ public class AdmissionsApplicationFeesMailSubmissionWithdrawal100PostRequest {
      * 
      */
     @JsonProperty("kbentryTermCode")
-    public Object getKbentryTermCode() {
+    public String getKbentryTermCode() {
         return kbentryTermCode;
     }
 
@@ -1045,11 +1045,11 @@ public class AdmissionsApplicationFeesMailSubmissionWithdrawal100PostRequest {
      * 
      */
     @JsonProperty("kbentryTermCode")
-    public void setKbentryTermCode(Object kbentryTermCode) {
+    public void setKbentryTermCode(String kbentryTermCode) {
         this.kbentryTermCode = kbentryTermCode;
     }
 
-    public AdmissionsApplicationFeesMailSubmissionWithdrawal100PostRequest withKbentryTermCode(Object kbentryTermCode) {
+    public AdmissionsApplicationFeesMailSubmissionWithdrawal100PostRequest withKbentryTermCode(String kbentryTermCode) {
         this.kbentryTermCode = kbentryTermCode;
         return this;
     }

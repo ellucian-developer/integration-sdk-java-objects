@@ -47,7 +47,7 @@ public class GlobalInstitutionFinancialAidOptionsAidYearDefinition100PutRequest 
      */
     @JsonProperty("keyblckAidyCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAidyCode, Lookup lineage reference object : robinst")
-    private Object keyblckAidyCode;
+    private String keyblckAidyCode;
     /**
      * Retention Expired
      * <p>
@@ -164,7 +164,7 @@ public class GlobalInstitutionFinancialAidOptionsAidYearDefinition100PutRequest 
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public Object getKeyblckAidyCode() {
+    public String getKeyblckAidyCode() {
         return keyblckAidyCode;
     }
 
@@ -175,11 +175,11 @@ public class GlobalInstitutionFinancialAidOptionsAidYearDefinition100PutRequest 
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public void setKeyblckAidyCode(Object keyblckAidyCode) {
+    public void setKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
     }
 
-    public GlobalInstitutionFinancialAidOptionsAidYearDefinition100PutRequest withKeyblckAidyCode(Object keyblckAidyCode) {
+    public GlobalInstitutionFinancialAidOptionsAidYearDefinition100PutRequest withKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
         return this;
     }

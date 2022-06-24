@@ -36,7 +36,7 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      */
     @JsonProperty("addressCode")
     @JsonPropertyDescription("Lineage reference object : addressCode")
-    private Object addressCode;
+    private String addressCode;
     /**
      * Amount
      * <p>
@@ -45,7 +45,7 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      */
     @JsonProperty("amount")
     @JsonPropertyDescription("Lineage reference object : amount")
-    private Object amount;
+    private Double amount;
     /**
      * Holds
      * <p>
@@ -54,7 +54,7 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      */
     @JsonProperty("holdPassword")
     @JsonPropertyDescription("Lineage reference object : holdPassword")
-    private Object holdPassword;
+    private String holdPassword;
     /**
      * Payment Number
      * <p>
@@ -63,7 +63,7 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      */
     @JsonProperty("paymentId")
     @JsonPropertyDescription("Lineage reference object : paymentId")
-    private Object paymentId;
+    private String paymentId;
     /**
      * Document
      * <p>
@@ -72,14 +72,14 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      */
     @JsonProperty("documentNumber")
     @JsonPropertyDescription("Lineage reference object : documentNumber")
-    private Object documentNumber;
+    private String documentNumber;
     /**
      * Lineage reference object : tagOption
      * 
      */
     @JsonProperty("tagOption")
     @JsonPropertyDescription("Lineage reference object : tagOption")
-    private Object tagOption;
+    private Double tagOption;
     /**
      * Invoice Paid Number
      * <p>
@@ -88,7 +88,7 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      */
     @JsonProperty("invNumberPaid")
     @JsonPropertyDescription("Lineage reference object : invNumberPaid")
-    private Object invNumberPaid;
+    private String invNumberPaid;
     /**
      * ID
      * <p>
@@ -97,7 +97,7 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Sequence
      * <p>
@@ -106,7 +106,7 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      */
     @JsonProperty("addressSeqno")
     @JsonPropertyDescription("Lineage reference object : addressSeqno")
-    private Object addressSeqno;
+    private Double addressSeqno;
     /**
      * Detail Code
      * <p>
@@ -115,7 +115,7 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      */
     @JsonProperty("detailCode")
     @JsonPropertyDescription("Lineage reference object : detailCode, Lookup lineage reference object : tbbdetc")
-    private Object detailCode;
+    private String detailCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -126,7 +126,7 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      * 
      */
     @JsonProperty("addressCode")
-    public Object getAddressCode() {
+    public String getAddressCode() {
         return addressCode;
     }
 
@@ -137,11 +137,11 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      * 
      */
     @JsonProperty("addressCode")
-    public void setAddressCode(Object addressCode) {
+    public void setAddressCode(String addressCode) {
         this.addressCode = addressCode;
     }
 
-    public FinanceApplicationDistributionSinglePayment100GetRequest withAddressCode(Object addressCode) {
+    public FinanceApplicationDistributionSinglePayment100GetRequest withAddressCode(String addressCode) {
         this.addressCode = addressCode;
         return this;
     }
@@ -153,7 +153,7 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      * 
      */
     @JsonProperty("amount")
-    public Object getAmount() {
+    public Double getAmount() {
         return amount;
     }
 
@@ -164,11 +164,11 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      * 
      */
     @JsonProperty("amount")
-    public void setAmount(Object amount) {
+    public void setAmount(Double amount) {
         this.amount = amount;
     }
 
-    public FinanceApplicationDistributionSinglePayment100GetRequest withAmount(Object amount) {
+    public FinanceApplicationDistributionSinglePayment100GetRequest withAmount(Double amount) {
         this.amount = amount;
         return this;
     }
@@ -180,7 +180,7 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      * 
      */
     @JsonProperty("holdPassword")
-    public Object getHoldPassword() {
+    public String getHoldPassword() {
         return holdPassword;
     }
 
@@ -191,11 +191,11 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      * 
      */
     @JsonProperty("holdPassword")
-    public void setHoldPassword(Object holdPassword) {
+    public void setHoldPassword(String holdPassword) {
         this.holdPassword = holdPassword;
     }
 
-    public FinanceApplicationDistributionSinglePayment100GetRequest withHoldPassword(Object holdPassword) {
+    public FinanceApplicationDistributionSinglePayment100GetRequest withHoldPassword(String holdPassword) {
         this.holdPassword = holdPassword;
         return this;
     }
@@ -207,7 +207,7 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      * 
      */
     @JsonProperty("paymentId")
-    public Object getPaymentId() {
+    public String getPaymentId() {
         return paymentId;
     }
 
@@ -218,11 +218,11 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      * 
      */
     @JsonProperty("paymentId")
-    public void setPaymentId(Object paymentId) {
+    public void setPaymentId(String paymentId) {
         this.paymentId = paymentId;
     }
 
-    public FinanceApplicationDistributionSinglePayment100GetRequest withPaymentId(Object paymentId) {
+    public FinanceApplicationDistributionSinglePayment100GetRequest withPaymentId(String paymentId) {
         this.paymentId = paymentId;
         return this;
     }
@@ -234,7 +234,7 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      * 
      */
     @JsonProperty("documentNumber")
-    public Object getDocumentNumber() {
+    public String getDocumentNumber() {
         return documentNumber;
     }
 
@@ -245,11 +245,11 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      * 
      */
     @JsonProperty("documentNumber")
-    public void setDocumentNumber(Object documentNumber) {
+    public void setDocumentNumber(String documentNumber) {
         this.documentNumber = documentNumber;
     }
 
-    public FinanceApplicationDistributionSinglePayment100GetRequest withDocumentNumber(Object documentNumber) {
+    public FinanceApplicationDistributionSinglePayment100GetRequest withDocumentNumber(String documentNumber) {
         this.documentNumber = documentNumber;
         return this;
     }
@@ -259,7 +259,7 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      * 
      */
     @JsonProperty("tagOption")
-    public Object getTagOption() {
+    public Double getTagOption() {
         return tagOption;
     }
 
@@ -268,11 +268,11 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      * 
      */
     @JsonProperty("tagOption")
-    public void setTagOption(Object tagOption) {
+    public void setTagOption(Double tagOption) {
         this.tagOption = tagOption;
     }
 
-    public FinanceApplicationDistributionSinglePayment100GetRequest withTagOption(Object tagOption) {
+    public FinanceApplicationDistributionSinglePayment100GetRequest withTagOption(Double tagOption) {
         this.tagOption = tagOption;
         return this;
     }
@@ -284,7 +284,7 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      * 
      */
     @JsonProperty("invNumberPaid")
-    public Object getInvNumberPaid() {
+    public String getInvNumberPaid() {
         return invNumberPaid;
     }
 
@@ -295,11 +295,11 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      * 
      */
     @JsonProperty("invNumberPaid")
-    public void setInvNumberPaid(Object invNumberPaid) {
+    public void setInvNumberPaid(String invNumberPaid) {
         this.invNumberPaid = invNumberPaid;
     }
 
-    public FinanceApplicationDistributionSinglePayment100GetRequest withInvNumberPaid(Object invNumberPaid) {
+    public FinanceApplicationDistributionSinglePayment100GetRequest withInvNumberPaid(String invNumberPaid) {
         this.invNumberPaid = invNumberPaid;
         return this;
     }
@@ -311,7 +311,7 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -322,11 +322,11 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public FinanceApplicationDistributionSinglePayment100GetRequest withId(Object id) {
+    public FinanceApplicationDistributionSinglePayment100GetRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -338,7 +338,7 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      * 
      */
     @JsonProperty("addressSeqno")
-    public Object getAddressSeqno() {
+    public Double getAddressSeqno() {
         return addressSeqno;
     }
 
@@ -349,11 +349,11 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      * 
      */
     @JsonProperty("addressSeqno")
-    public void setAddressSeqno(Object addressSeqno) {
+    public void setAddressSeqno(Double addressSeqno) {
         this.addressSeqno = addressSeqno;
     }
 
-    public FinanceApplicationDistributionSinglePayment100GetRequest withAddressSeqno(Object addressSeqno) {
+    public FinanceApplicationDistributionSinglePayment100GetRequest withAddressSeqno(Double addressSeqno) {
         this.addressSeqno = addressSeqno;
         return this;
     }
@@ -365,7 +365,7 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      * 
      */
     @JsonProperty("detailCode")
-    public Object getDetailCode() {
+    public String getDetailCode() {
         return detailCode;
     }
 
@@ -376,11 +376,11 @@ public class FinanceApplicationDistributionSinglePayment100GetRequest {
      * 
      */
     @JsonProperty("detailCode")
-    public void setDetailCode(Object detailCode) {
+    public void setDetailCode(String detailCode) {
         this.detailCode = detailCode;
     }
 
-    public FinanceApplicationDistributionSinglePayment100GetRequest withDetailCode(Object detailCode) {
+    public FinanceApplicationDistributionSinglePayment100GetRequest withDetailCode(String detailCode) {
         this.detailCode = detailCode;
         return this;
     }

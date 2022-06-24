@@ -21,6 +21,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "bankAcct",
     "transDate",
     "amt",
+    "reconInd",
+    "checkDepositInd",
     "depCode",
     "desc"
 })
@@ -35,7 +37,7 @@ public class BankTapeReconcilation100PostRequest {
      */
     @JsonProperty("cashAcct")
     @JsonPropertyDescription("Lineage reference object : cashAcct")
-    private Object cashAcct;
+    private String cashAcct;
     /**
      * Bank
      * <p>
@@ -44,7 +46,7 @@ public class BankTapeReconcilation100PostRequest {
      */
     @JsonProperty("bankCode")
     @JsonPropertyDescription("Lineage reference object : faabrecBankCode, Lookup lineage reference object : gxvbank")
-    private Object bankCode;
+    private String bankCode;
     /**
      * Internal 
      * Document Code
@@ -63,7 +65,7 @@ public class BankTapeReconcilation100PostRequest {
      */
     @JsonProperty("bankAcct")
     @JsonPropertyDescription("Lineage reference object : bankAcct")
-    private Object bankAcct;
+    private String bankAcct;
     /**
      * Transaction
      *  Date
@@ -85,6 +87,25 @@ public class BankTapeReconcilation100PostRequest {
     @JsonProperty("amt")
     @JsonPropertyDescription("Lineage reference object : FABBKTP_AMT")
     private Double amt;
+    /**
+     * Status Selection
+     * <p>
+     * Lineage reference object : reconInd
+     * 
+     */
+    @JsonProperty("reconInd")
+    @JsonPropertyDescription("Lineage reference object : reconInd")
+    private String reconInd;
+    /**
+     * Type
+     * <p>
+     * Lineage reference object : FABBKTP_CHECK_DEPOSIT_IND
+     * (Required)
+     * 
+     */
+    @JsonProperty("checkDepositInd")
+    @JsonPropertyDescription("Lineage reference object : FABBKTP_CHECK_DEPOSIT_IND")
+    private String checkDepositInd;
     /**
      * Document
      * <p>
@@ -114,7 +135,7 @@ public class BankTapeReconcilation100PostRequest {
      * 
      */
     @JsonProperty("cashAcct")
-    public Object getCashAcct() {
+    public String getCashAcct() {
         return cashAcct;
     }
 
@@ -125,11 +146,11 @@ public class BankTapeReconcilation100PostRequest {
      * 
      */
     @JsonProperty("cashAcct")
-    public void setCashAcct(Object cashAcct) {
+    public void setCashAcct(String cashAcct) {
         this.cashAcct = cashAcct;
     }
 
-    public BankTapeReconcilation100PostRequest withCashAcct(Object cashAcct) {
+    public BankTapeReconcilation100PostRequest withCashAcct(String cashAcct) {
         this.cashAcct = cashAcct;
         return this;
     }
@@ -141,7 +162,7 @@ public class BankTapeReconcilation100PostRequest {
      * 
      */
     @JsonProperty("bankCode")
-    public Object getBankCode() {
+    public String getBankCode() {
         return bankCode;
     }
 
@@ -152,11 +173,11 @@ public class BankTapeReconcilation100PostRequest {
      * 
      */
     @JsonProperty("bankCode")
-    public void setBankCode(Object bankCode) {
+    public void setBankCode(String bankCode) {
         this.bankCode = bankCode;
     }
 
-    public BankTapeReconcilation100PostRequest withBankCode(Object bankCode) {
+    public BankTapeReconcilation100PostRequest withBankCode(String bankCode) {
         this.bankCode = bankCode;
         return this;
     }
@@ -197,7 +218,7 @@ public class BankTapeReconcilation100PostRequest {
      * 
      */
     @JsonProperty("bankAcct")
-    public Object getBankAcct() {
+    public String getBankAcct() {
         return bankAcct;
     }
 
@@ -208,11 +229,11 @@ public class BankTapeReconcilation100PostRequest {
      * 
      */
     @JsonProperty("bankAcct")
-    public void setBankAcct(Object bankAcct) {
+    public void setBankAcct(String bankAcct) {
         this.bankAcct = bankAcct;
     }
 
-    public BankTapeReconcilation100PostRequest withBankAcct(Object bankAcct) {
+    public BankTapeReconcilation100PostRequest withBankAcct(String bankAcct) {
         this.bankAcct = bankAcct;
         return this;
     }
@@ -274,6 +295,62 @@ public class BankTapeReconcilation100PostRequest {
 
     public BankTapeReconcilation100PostRequest withAmt(Double amt) {
         this.amt = amt;
+        return this;
+    }
+
+    /**
+     * Status Selection
+     * <p>
+     * Lineage reference object : reconInd
+     * 
+     */
+    @JsonProperty("reconInd")
+    public String getReconInd() {
+        return reconInd;
+    }
+
+    /**
+     * Status Selection
+     * <p>
+     * Lineage reference object : reconInd
+     * 
+     */
+    @JsonProperty("reconInd")
+    public void setReconInd(String reconInd) {
+        this.reconInd = reconInd;
+    }
+
+    public BankTapeReconcilation100PostRequest withReconInd(String reconInd) {
+        this.reconInd = reconInd;
+        return this;
+    }
+
+    /**
+     * Type
+     * <p>
+     * Lineage reference object : FABBKTP_CHECK_DEPOSIT_IND
+     * (Required)
+     * 
+     */
+    @JsonProperty("checkDepositInd")
+    public String getCheckDepositInd() {
+        return checkDepositInd;
+    }
+
+    /**
+     * Type
+     * <p>
+     * Lineage reference object : FABBKTP_CHECK_DEPOSIT_IND
+     * (Required)
+     * 
+     */
+    @JsonProperty("checkDepositInd")
+    public void setCheckDepositInd(String checkDepositInd) {
+        this.checkDepositInd = checkDepositInd;
+    }
+
+    public BankTapeReconcilation100PostRequest withCheckDepositInd(String checkDepositInd) {
+        this.checkDepositInd = checkDepositInd;
         return this;
     }
 
@@ -376,6 +453,14 @@ public class BankTapeReconcilation100PostRequest {
         sb.append('=');
         sb.append(((this.amt == null)?"<null>":this.amt));
         sb.append(',');
+        sb.append("reconInd");
+        sb.append('=');
+        sb.append(((this.reconInd == null)?"<null>":this.reconInd));
+        sb.append(',');
+        sb.append("checkDepositInd");
+        sb.append('=');
+        sb.append(((this.checkDepositInd == null)?"<null>":this.checkDepositInd));
+        sb.append(',');
         sb.append("depCode");
         sb.append('=');
         sb.append(((this.depCode == null)?"<null>":this.depCode));
@@ -405,6 +490,8 @@ public class BankTapeReconcilation100PostRequest {
         result = ((result* 31)+((this.bankAcct == null)? 0 :this.bankAcct.hashCode()));
         result = ((result* 31)+((this.transDate == null)? 0 :this.transDate.hashCode()));
         result = ((result* 31)+((this.amt == null)? 0 :this.amt.hashCode()));
+        result = ((result* 31)+((this.reconInd == null)? 0 :this.reconInd.hashCode()));
+        result = ((result* 31)+((this.checkDepositInd == null)? 0 :this.checkDepositInd.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
         result = ((result* 31)+((this.depCode == null)? 0 :this.depCode.hashCode()));
         result = ((result* 31)+((this.desc == null)? 0 :this.desc.hashCode()));
@@ -420,7 +507,7 @@ public class BankTapeReconcilation100PostRequest {
             return false;
         }
         BankTapeReconcilation100PostRequest rhs = ((BankTapeReconcilation100PostRequest) other);
-        return ((((((((((this.cashAcct == rhs.cashAcct)||((this.cashAcct!= null)&&this.cashAcct.equals(rhs.cashAcct)))&&((this.bankCode == rhs.bankCode)||((this.bankCode!= null)&&this.bankCode.equals(rhs.bankCode))))&&((this.fabbktpInternalDocCode == rhs.fabbktpInternalDocCode)||((this.fabbktpInternalDocCode!= null)&&this.fabbktpInternalDocCode.equals(rhs.fabbktpInternalDocCode))))&&((this.bankAcct == rhs.bankAcct)||((this.bankAcct!= null)&&this.bankAcct.equals(rhs.bankAcct))))&&((this.transDate == rhs.transDate)||((this.transDate!= null)&&this.transDate.equals(rhs.transDate))))&&((this.amt == rhs.amt)||((this.amt!= null)&&this.amt.equals(rhs.amt))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.depCode == rhs.depCode)||((this.depCode!= null)&&this.depCode.equals(rhs.depCode))))&&((this.desc == rhs.desc)||((this.desc!= null)&&this.desc.equals(rhs.desc))));
+        return ((((((((((((this.cashAcct == rhs.cashAcct)||((this.cashAcct!= null)&&this.cashAcct.equals(rhs.cashAcct)))&&((this.bankCode == rhs.bankCode)||((this.bankCode!= null)&&this.bankCode.equals(rhs.bankCode))))&&((this.fabbktpInternalDocCode == rhs.fabbktpInternalDocCode)||((this.fabbktpInternalDocCode!= null)&&this.fabbktpInternalDocCode.equals(rhs.fabbktpInternalDocCode))))&&((this.bankAcct == rhs.bankAcct)||((this.bankAcct!= null)&&this.bankAcct.equals(rhs.bankAcct))))&&((this.transDate == rhs.transDate)||((this.transDate!= null)&&this.transDate.equals(rhs.transDate))))&&((this.amt == rhs.amt)||((this.amt!= null)&&this.amt.equals(rhs.amt))))&&((this.reconInd == rhs.reconInd)||((this.reconInd!= null)&&this.reconInd.equals(rhs.reconInd))))&&((this.checkDepositInd == rhs.checkDepositInd)||((this.checkDepositInd!= null)&&this.checkDepositInd.equals(rhs.checkDepositInd))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.depCode == rhs.depCode)||((this.depCode!= null)&&this.depCode.equals(rhs.depCode))))&&((this.desc == rhs.desc)||((this.desc!= null)&&this.desc.equals(rhs.desc))));
     }
 
 }

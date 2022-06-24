@@ -27,7 +27,7 @@ public class GrantSummaryQuery100GetRequest {
      */
     @JsonProperty("keyblckGrntCode")
     @JsonPropertyDescription("Lineage reference object : keyblckGrntCode")
-    private Object keyblckGrntCode;
+    private String keyblckGrntCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -38,7 +38,7 @@ public class GrantSummaryQuery100GetRequest {
      * 
      */
     @JsonProperty("keyblckGrntCode")
-    public Object getKeyblckGrntCode() {
+    public String getKeyblckGrntCode() {
         return keyblckGrntCode;
     }
 
@@ -49,11 +49,11 @@ public class GrantSummaryQuery100GetRequest {
      * 
      */
     @JsonProperty("keyblckGrntCode")
-    public void setKeyblckGrntCode(Object keyblckGrntCode) {
+    public void setKeyblckGrntCode(String keyblckGrntCode) {
         this.keyblckGrntCode = keyblckGrntCode;
     }
 
-    public GrantSummaryQuery100GetRequest withKeyblckGrntCode(Object keyblckGrntCode) {
+    public GrantSummaryQuery100GetRequest withKeyblckGrntCode(String keyblckGrntCode) {
         this.keyblckGrntCode = keyblckGrntCode;
         return this;
     }

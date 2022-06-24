@@ -28,7 +28,7 @@ public class RprgCtrlBlock {
      */
     @JsonProperty("ssrrprgProgramInd")
     @JsonPropertyDescription("Lineage reference object : ssrrprgProgramInd")
-    private Object ssrrprgProgramInd;
+    private String ssrrprgProgramInd;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -40,7 +40,7 @@ public class RprgCtrlBlock {
      * 
      */
     @JsonProperty("ssrrprgProgramInd")
-    public Object getSsrrprgProgramInd() {
+    public String getSsrrprgProgramInd() {
         return ssrrprgProgramInd;
     }
 
@@ -52,11 +52,11 @@ public class RprgCtrlBlock {
      * 
      */
     @JsonProperty("ssrrprgProgramInd")
-    public void setSsrrprgProgramInd(Object ssrrprgProgramInd) {
+    public void setSsrrprgProgramInd(String ssrrprgProgramInd) {
         this.ssrrprgProgramInd = ssrrprgProgramInd;
     }
 
-    public RprgCtrlBlock withSsrrprgProgramInd(Object ssrrprgProgramInd) {
+    public RprgCtrlBlock withSsrrprgProgramInd(String ssrrprgProgramInd) {
         this.ssrrprgProgramInd = ssrrprgProgramInd;
         return this;
     }

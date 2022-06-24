@@ -33,7 +33,7 @@ public class TrialBalanceSummary100GetRequest {
      */
     @JsonProperty("keyblocCoasCode")
     @JsonPropertyDescription("Lineage reference object : keyblocCoasCode, Lookup lineage reference object : ftvcoas")
-    private Object keyblocCoasCode;
+    private String keyblocCoasCode;
     /**
      * OR Fund Type
      * <p>
@@ -42,7 +42,7 @@ public class TrialBalanceSummary100GetRequest {
      */
     @JsonProperty("keyblocFtypCode")
     @JsonPropertyDescription("Lineage reference object : keyblocFtypCode, Lookup lineage reference object : ftvftyp")
-    private Object keyblocFtypCode;
+    private String keyblocFtypCode;
     /**
      * OR Acct Type
      * <p>
@@ -51,7 +51,7 @@ public class TrialBalanceSummary100GetRequest {
      */
     @JsonProperty("keyblocAtypCode")
     @JsonPropertyDescription("Lineage reference object : keyblocAtypCode, Lookup lineage reference object : ftvatyp")
-    private Object keyblocAtypCode;
+    private String keyblocAtypCode;
     /**
      * Account
      * <p>
@@ -60,7 +60,7 @@ public class TrialBalanceSummary100GetRequest {
      */
     @JsonProperty("keyblocAcctCode")
     @JsonPropertyDescription("Lineage reference object : keyblocAcctCode")
-    private Object keyblocAcctCode;
+    private String keyblocAcctCode;
     /**
      * Fund
      * <p>
@@ -69,7 +69,7 @@ public class TrialBalanceSummary100GetRequest {
      */
     @JsonProperty("keyblocFundCode")
     @JsonPropertyDescription("Lineage reference object : keyblocFundCode")
-    private Object keyblocFundCode;
+    private String keyblocFundCode;
     /**
      * Fiscal Year
      * <p>
@@ -79,7 +79,7 @@ public class TrialBalanceSummary100GetRequest {
      */
     @JsonProperty("keyblocFsyrCode")
     @JsonPropertyDescription("Lineage reference object : keyblocFsyrCode, Lookup lineage reference object : ftvfspd,ftvfsyr,ftvfspd")
-    private Object keyblocFsyrCode;
+    private String keyblocFsyrCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -91,7 +91,7 @@ public class TrialBalanceSummary100GetRequest {
      * 
      */
     @JsonProperty("keyblocCoasCode")
-    public Object getKeyblocCoasCode() {
+    public String getKeyblocCoasCode() {
         return keyblocCoasCode;
     }
 
@@ -103,11 +103,11 @@ public class TrialBalanceSummary100GetRequest {
      * 
      */
     @JsonProperty("keyblocCoasCode")
-    public void setKeyblocCoasCode(Object keyblocCoasCode) {
+    public void setKeyblocCoasCode(String keyblocCoasCode) {
         this.keyblocCoasCode = keyblocCoasCode;
     }
 
-    public TrialBalanceSummary100GetRequest withKeyblocCoasCode(Object keyblocCoasCode) {
+    public TrialBalanceSummary100GetRequest withKeyblocCoasCode(String keyblocCoasCode) {
         this.keyblocCoasCode = keyblocCoasCode;
         return this;
     }
@@ -119,7 +119,7 @@ public class TrialBalanceSummary100GetRequest {
      * 
      */
     @JsonProperty("keyblocFtypCode")
-    public Object getKeyblocFtypCode() {
+    public String getKeyblocFtypCode() {
         return keyblocFtypCode;
     }
 
@@ -130,11 +130,11 @@ public class TrialBalanceSummary100GetRequest {
      * 
      */
     @JsonProperty("keyblocFtypCode")
-    public void setKeyblocFtypCode(Object keyblocFtypCode) {
+    public void setKeyblocFtypCode(String keyblocFtypCode) {
         this.keyblocFtypCode = keyblocFtypCode;
     }
 
-    public TrialBalanceSummary100GetRequest withKeyblocFtypCode(Object keyblocFtypCode) {
+    public TrialBalanceSummary100GetRequest withKeyblocFtypCode(String keyblocFtypCode) {
         this.keyblocFtypCode = keyblocFtypCode;
         return this;
     }
@@ -146,7 +146,7 @@ public class TrialBalanceSummary100GetRequest {
      * 
      */
     @JsonProperty("keyblocAtypCode")
-    public Object getKeyblocAtypCode() {
+    public String getKeyblocAtypCode() {
         return keyblocAtypCode;
     }
 
@@ -157,11 +157,11 @@ public class TrialBalanceSummary100GetRequest {
      * 
      */
     @JsonProperty("keyblocAtypCode")
-    public void setKeyblocAtypCode(Object keyblocAtypCode) {
+    public void setKeyblocAtypCode(String keyblocAtypCode) {
         this.keyblocAtypCode = keyblocAtypCode;
     }
 
-    public TrialBalanceSummary100GetRequest withKeyblocAtypCode(Object keyblocAtypCode) {
+    public TrialBalanceSummary100GetRequest withKeyblocAtypCode(String keyblocAtypCode) {
         this.keyblocAtypCode = keyblocAtypCode;
         return this;
     }
@@ -173,7 +173,7 @@ public class TrialBalanceSummary100GetRequest {
      * 
      */
     @JsonProperty("keyblocAcctCode")
-    public Object getKeyblocAcctCode() {
+    public String getKeyblocAcctCode() {
         return keyblocAcctCode;
     }
 
@@ -184,11 +184,11 @@ public class TrialBalanceSummary100GetRequest {
      * 
      */
     @JsonProperty("keyblocAcctCode")
-    public void setKeyblocAcctCode(Object keyblocAcctCode) {
+    public void setKeyblocAcctCode(String keyblocAcctCode) {
         this.keyblocAcctCode = keyblocAcctCode;
     }
 
-    public TrialBalanceSummary100GetRequest withKeyblocAcctCode(Object keyblocAcctCode) {
+    public TrialBalanceSummary100GetRequest withKeyblocAcctCode(String keyblocAcctCode) {
         this.keyblocAcctCode = keyblocAcctCode;
         return this;
     }
@@ -200,7 +200,7 @@ public class TrialBalanceSummary100GetRequest {
      * 
      */
     @JsonProperty("keyblocFundCode")
-    public Object getKeyblocFundCode() {
+    public String getKeyblocFundCode() {
         return keyblocFundCode;
     }
 
@@ -211,11 +211,11 @@ public class TrialBalanceSummary100GetRequest {
      * 
      */
     @JsonProperty("keyblocFundCode")
-    public void setKeyblocFundCode(Object keyblocFundCode) {
+    public void setKeyblocFundCode(String keyblocFundCode) {
         this.keyblocFundCode = keyblocFundCode;
     }
 
-    public TrialBalanceSummary100GetRequest withKeyblocFundCode(Object keyblocFundCode) {
+    public TrialBalanceSummary100GetRequest withKeyblocFundCode(String keyblocFundCode) {
         this.keyblocFundCode = keyblocFundCode;
         return this;
     }
@@ -228,7 +228,7 @@ public class TrialBalanceSummary100GetRequest {
      * 
      */
     @JsonProperty("keyblocFsyrCode")
-    public Object getKeyblocFsyrCode() {
+    public String getKeyblocFsyrCode() {
         return keyblocFsyrCode;
     }
 
@@ -240,11 +240,11 @@ public class TrialBalanceSummary100GetRequest {
      * 
      */
     @JsonProperty("keyblocFsyrCode")
-    public void setKeyblocFsyrCode(Object keyblocFsyrCode) {
+    public void setKeyblocFsyrCode(String keyblocFsyrCode) {
         this.keyblocFsyrCode = keyblocFsyrCode;
     }
 
-    public TrialBalanceSummary100GetRequest withKeyblocFsyrCode(Object keyblocFsyrCode) {
+    public TrialBalanceSummary100GetRequest withKeyblocFsyrCode(String keyblocFsyrCode) {
         this.keyblocFsyrCode = keyblocFsyrCode;
         return this;
     }

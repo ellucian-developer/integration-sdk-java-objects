@@ -29,7 +29,7 @@ public class RchrCtrlBlock {
      */
     @JsonProperty("scrrchrTermCodeTo")
     @JsonPropertyDescription("Lineage reference object : scrrchrTermCodeTo, Lookup lineage reference object : stvterm")
-    private Object scrrchrTermCodeTo;
+    private String scrrchrTermCodeTo;
     /**
      * Include/Exclude (I/E)
      * <p>
@@ -38,7 +38,7 @@ public class RchrCtrlBlock {
      */
     @JsonProperty("scrrchrChrtIeCde")
     @JsonPropertyDescription("Lineage reference object : scrrchrChrtIeCde")
-    private Object scrrchrChrtIeCde;
+    private String scrrchrChrtIeCde;
     /**
      * From Term
      * <p>
@@ -47,7 +47,7 @@ public class RchrCtrlBlock {
      */
     @JsonProperty("scrrchrTermCodeFrom")
     @JsonPropertyDescription("Lineage reference object : scrrchrTermCodeFrom, Lookup lineage reference object : stvterm")
-    private Object scrrchrTermCodeFrom;
+    private String scrrchrTermCodeFrom;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -58,7 +58,7 @@ public class RchrCtrlBlock {
      * 
      */
     @JsonProperty("scrrchrTermCodeTo")
-    public Object getScrrchrTermCodeTo() {
+    public String getScrrchrTermCodeTo() {
         return scrrchrTermCodeTo;
     }
 
@@ -69,11 +69,11 @@ public class RchrCtrlBlock {
      * 
      */
     @JsonProperty("scrrchrTermCodeTo")
-    public void setScrrchrTermCodeTo(Object scrrchrTermCodeTo) {
+    public void setScrrchrTermCodeTo(String scrrchrTermCodeTo) {
         this.scrrchrTermCodeTo = scrrchrTermCodeTo;
     }
 
-    public RchrCtrlBlock withScrrchrTermCodeTo(Object scrrchrTermCodeTo) {
+    public RchrCtrlBlock withScrrchrTermCodeTo(String scrrchrTermCodeTo) {
         this.scrrchrTermCodeTo = scrrchrTermCodeTo;
         return this;
     }
@@ -85,7 +85,7 @@ public class RchrCtrlBlock {
      * 
      */
     @JsonProperty("scrrchrChrtIeCde")
-    public Object getScrrchrChrtIeCde() {
+    public String getScrrchrChrtIeCde() {
         return scrrchrChrtIeCde;
     }
 
@@ -96,11 +96,11 @@ public class RchrCtrlBlock {
      * 
      */
     @JsonProperty("scrrchrChrtIeCde")
-    public void setScrrchrChrtIeCde(Object scrrchrChrtIeCde) {
+    public void setScrrchrChrtIeCde(String scrrchrChrtIeCde) {
         this.scrrchrChrtIeCde = scrrchrChrtIeCde;
     }
 
-    public RchrCtrlBlock withScrrchrChrtIeCde(Object scrrchrChrtIeCde) {
+    public RchrCtrlBlock withScrrchrChrtIeCde(String scrrchrChrtIeCde) {
         this.scrrchrChrtIeCde = scrrchrChrtIeCde;
         return this;
     }
@@ -112,7 +112,7 @@ public class RchrCtrlBlock {
      * 
      */
     @JsonProperty("scrrchrTermCodeFrom")
-    public Object getScrrchrTermCodeFrom() {
+    public String getScrrchrTermCodeFrom() {
         return scrrchrTermCodeFrom;
     }
 
@@ -123,11 +123,11 @@ public class RchrCtrlBlock {
      * 
      */
     @JsonProperty("scrrchrTermCodeFrom")
-    public void setScrrchrTermCodeFrom(Object scrrchrTermCodeFrom) {
+    public void setScrrchrTermCodeFrom(String scrrchrTermCodeFrom) {
         this.scrrchrTermCodeFrom = scrrchrTermCodeFrom;
     }
 
-    public RchrCtrlBlock withScrrchrTermCodeFrom(Object scrrchrTermCodeFrom) {
+    public RchrCtrlBlock withScrrchrTermCodeFrom(String scrrchrTermCodeFrom) {
         this.scrrchrTermCodeFrom = scrrchrTermCodeFrom;
         return this;
     }

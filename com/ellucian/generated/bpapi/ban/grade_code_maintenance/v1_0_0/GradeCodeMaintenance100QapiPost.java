@@ -1,7 +1,6 @@
 
 package com.ellucian.generated.bpapi.ban.grade_code_maintenance.v1_0_0;
 
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -10,7 +9,6 @@ import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -37,170 +35,50 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @Generated("jsonschema2pojo")
 public class GradeCodeMaintenance100QapiPost {
 
-    /**
-     * Grade Code
-     * <p>
-     * Lineage reference object : SHRGRDE_CODE
-     * 
-     */
     @JsonProperty("code")
-    @JsonPropertyDescription("Lineage reference object : SHRGRDE_CODE")
     private String code;
-    /**
-     * Level
-     * <p>
-     * Lineage reference object : SHRGRDE_LEVL_CODE, Lookup lineage reference object : stvlevl
-     * 
-     */
     @JsonProperty("levlCode")
-    @JsonPropertyDescription("Lineage reference object : SHRGRDE_LEVL_CODE, Lookup lineage reference object : stvlevl")
     private String levlCode;
-    /**
-     * Abbreviation
-     * <p>
-     * Lineage reference object : SHRGRDE_ABBREV
-     * 
-     */
     @JsonProperty("abbrev")
-    @JsonPropertyDescription("Lineage reference object : SHRGRDE_ABBREV")
     private String abbrev;
-    /**
-     * Term
-     * <p>
-     * Lineage reference object : SHRGRDE_TERM_CODE_EFFECTIVE, Lookup lineage reference object : stvterm
-     * 
-     */
     @JsonProperty("termCodeEffective")
-    @JsonPropertyDescription("Lineage reference object : SHRGRDE_TERM_CODE_EFFECTIVE, Lookup lineage reference object : stvterm")
     private String termCodeEffective;
-    /**
-     * Status Ind
-     * <p>
-     * Lineage reference object : SHRGRDE_GRDE_STATUS_IND
-     * 
-     */
     @JsonProperty("grdeStatusInd")
-    @JsonPropertyDescription("Lineage reference object : SHRGRDE_GRDE_STATUS_IND")
     private String grdeStatusInd;
-    /**
-     * Quality Points
-     * <p>
-     * Lineage reference object : SHRGRDE_QUALITY_POINTS
-     * 
-     */
     @JsonProperty("qualityPoints")
-    @JsonPropertyDescription("Lineage reference object : SHRGRDE_QUALITY_POINTS")
-    private Double qualityPoints;
-    /**
-     * Lineage reference object : SHRGRDE_ATTEMPTED_IND
-     * 
-     */
+    private String qualityPoints;
     @JsonProperty("attemptedInd")
-    @JsonPropertyDescription("Lineage reference object : SHRGRDE_ATTEMPTED_IND")
     private String attemptedInd;
-    /**
-     * Lineage reference object : SHRGRDE_PASSED_IND
-     * 
-     */
     @JsonProperty("passedInd")
-    @JsonPropertyDescription("Lineage reference object : SHRGRDE_PASSED_IND")
     private String passedInd;
-    /**
-     * Lineage reference object : SHRGRDE_COMPLETED_IND
-     * 
-     */
     @JsonProperty("completedInd")
-    @JsonPropertyDescription("Lineage reference object : SHRGRDE_COMPLETED_IND")
     private String completedInd;
-    /**
-     * Lineage reference object : SHRGRDE_GPA_IND
-     * 
-     */
     @JsonProperty("gpaInd")
-    @JsonPropertyDescription("Lineage reference object : SHRGRDE_GPA_IND")
     private String gpaInd;
-    /**
-     * Lineage reference object : SHRGRDE_TRADITIONAL_IND
-     * 
-     */
     @JsonProperty("traditionalInd")
-    @JsonPropertyDescription("Lineage reference object : SHRGRDE_TRADITIONAL_IND")
     private String traditionalInd;
-    /**
-     * Lineage reference object : SHRGRDE_IMPCMP_IND
-     * 
-     */
     @JsonProperty("impcmpInd")
-    @JsonPropertyDescription("Lineage reference object : SHRGRDE_IMPCMP_IND")
     private String impcmpInd;
-    /**
-     * Incomplete Grade Default
-     * <p>
-     * Lineage reference object : SHRGRDE_GRDE_CODE_INCMP_FINAL, Lookup lineage reference object : shrgrde,shrgrde
-     * 
-     */
     @JsonProperty("grdeCodeIncmpFinal")
-    @JsonPropertyDescription("Lineage reference object : SHRGRDE_GRDE_CODE_INCMP_FINAL, Lookup lineage reference object : shrgrde,shrgrde")
     private String grdeCodeIncmpFinal;
-    /**
-     * Lineage reference object : SHRGRDE_WEB_ENTRY_IND
-     * 
-     */
     @JsonProperty("webEntryInd")
-    @JsonPropertyDescription("Lineage reference object : SHRGRDE_WEB_ENTRY_IND")
     private String webEntryInd;
-    /**
-     * Numeric Value
-     * <p>
-     * Lineage reference object : SHRGRDE_NUMERIC_VALUE
-     * 
-     */
     @JsonProperty("numericValue")
-    @JsonPropertyDescription("Lineage reference object : SHRGRDE_NUMERIC_VALUE")
-    private Double numericValue;
-    /**
-     * Lineage reference object : SHRGRDE_REPEAT_INCLUDE_IND
-     * 
-     */
+    private String numericValue;
     @JsonProperty("repeatIncludeInd")
-    @JsonPropertyDescription("Lineage reference object : SHRGRDE_REPEAT_INCLUDE_IND")
     private String repeatIncludeInd;
-    /**
-     * Lineage reference object : SHRGRDE_LAST_DATE_ATTEND_IND
-     * 
-     */
     @JsonProperty("lastDateAttendInd")
-    @JsonPropertyDescription("Lineage reference object : SHRGRDE_LAST_DATE_ATTEND_IND")
     private String lastDateAttendInd;
-    /**
-     * Activity Date
-     * <p>
-     * Lineage reference object : SHRGRDE_ACTIVITY_DATE
-     * 
-     */
     @JsonProperty("activityDate")
-    @JsonPropertyDescription("Lineage reference object : SHRGRDE_ACTIVITY_DATE")
-    private Date activityDate;
+    private String activityDate;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    /**
-     * Grade Code
-     * <p>
-     * Lineage reference object : SHRGRDE_CODE
-     * 
-     */
     @JsonProperty("code")
     public String getCode() {
         return code;
     }
 
-    /**
-     * Grade Code
-     * <p>
-     * Lineage reference object : SHRGRDE_CODE
-     * 
-     */
     @JsonProperty("code")
     public void setCode(String code) {
         this.code = code;
@@ -211,23 +89,11 @@ public class GradeCodeMaintenance100QapiPost {
         return this;
     }
 
-    /**
-     * Level
-     * <p>
-     * Lineage reference object : SHRGRDE_LEVL_CODE, Lookup lineage reference object : stvlevl
-     * 
-     */
     @JsonProperty("levlCode")
     public String getLevlCode() {
         return levlCode;
     }
 
-    /**
-     * Level
-     * <p>
-     * Lineage reference object : SHRGRDE_LEVL_CODE, Lookup lineage reference object : stvlevl
-     * 
-     */
     @JsonProperty("levlCode")
     public void setLevlCode(String levlCode) {
         this.levlCode = levlCode;
@@ -238,23 +104,11 @@ public class GradeCodeMaintenance100QapiPost {
         return this;
     }
 
-    /**
-     * Abbreviation
-     * <p>
-     * Lineage reference object : SHRGRDE_ABBREV
-     * 
-     */
     @JsonProperty("abbrev")
     public String getAbbrev() {
         return abbrev;
     }
 
-    /**
-     * Abbreviation
-     * <p>
-     * Lineage reference object : SHRGRDE_ABBREV
-     * 
-     */
     @JsonProperty("abbrev")
     public void setAbbrev(String abbrev) {
         this.abbrev = abbrev;
@@ -265,23 +119,11 @@ public class GradeCodeMaintenance100QapiPost {
         return this;
     }
 
-    /**
-     * Term
-     * <p>
-     * Lineage reference object : SHRGRDE_TERM_CODE_EFFECTIVE, Lookup lineage reference object : stvterm
-     * 
-     */
     @JsonProperty("termCodeEffective")
     public String getTermCodeEffective() {
         return termCodeEffective;
     }
 
-    /**
-     * Term
-     * <p>
-     * Lineage reference object : SHRGRDE_TERM_CODE_EFFECTIVE, Lookup lineage reference object : stvterm
-     * 
-     */
     @JsonProperty("termCodeEffective")
     public void setTermCodeEffective(String termCodeEffective) {
         this.termCodeEffective = termCodeEffective;
@@ -292,23 +134,11 @@ public class GradeCodeMaintenance100QapiPost {
         return this;
     }
 
-    /**
-     * Status Ind
-     * <p>
-     * Lineage reference object : SHRGRDE_GRDE_STATUS_IND
-     * 
-     */
     @JsonProperty("grdeStatusInd")
     public String getGrdeStatusInd() {
         return grdeStatusInd;
     }
 
-    /**
-     * Status Ind
-     * <p>
-     * Lineage reference object : SHRGRDE_GRDE_STATUS_IND
-     * 
-     */
     @JsonProperty("grdeStatusInd")
     public void setGrdeStatusInd(String grdeStatusInd) {
         this.grdeStatusInd = grdeStatusInd;
@@ -319,46 +149,26 @@ public class GradeCodeMaintenance100QapiPost {
         return this;
     }
 
-    /**
-     * Quality Points
-     * <p>
-     * Lineage reference object : SHRGRDE_QUALITY_POINTS
-     * 
-     */
     @JsonProperty("qualityPoints")
-    public Double getQualityPoints() {
+    public String getQualityPoints() {
         return qualityPoints;
     }
 
-    /**
-     * Quality Points
-     * <p>
-     * Lineage reference object : SHRGRDE_QUALITY_POINTS
-     * 
-     */
     @JsonProperty("qualityPoints")
-    public void setQualityPoints(Double qualityPoints) {
+    public void setQualityPoints(String qualityPoints) {
         this.qualityPoints = qualityPoints;
     }
 
-    public GradeCodeMaintenance100QapiPost withQualityPoints(Double qualityPoints) {
+    public GradeCodeMaintenance100QapiPost withQualityPoints(String qualityPoints) {
         this.qualityPoints = qualityPoints;
         return this;
     }
 
-    /**
-     * Lineage reference object : SHRGRDE_ATTEMPTED_IND
-     * 
-     */
     @JsonProperty("attemptedInd")
     public String getAttemptedInd() {
         return attemptedInd;
     }
 
-    /**
-     * Lineage reference object : SHRGRDE_ATTEMPTED_IND
-     * 
-     */
     @JsonProperty("attemptedInd")
     public void setAttemptedInd(String attemptedInd) {
         this.attemptedInd = attemptedInd;
@@ -369,19 +179,11 @@ public class GradeCodeMaintenance100QapiPost {
         return this;
     }
 
-    /**
-     * Lineage reference object : SHRGRDE_PASSED_IND
-     * 
-     */
     @JsonProperty("passedInd")
     public String getPassedInd() {
         return passedInd;
     }
 
-    /**
-     * Lineage reference object : SHRGRDE_PASSED_IND
-     * 
-     */
     @JsonProperty("passedInd")
     public void setPassedInd(String passedInd) {
         this.passedInd = passedInd;
@@ -392,19 +194,11 @@ public class GradeCodeMaintenance100QapiPost {
         return this;
     }
 
-    /**
-     * Lineage reference object : SHRGRDE_COMPLETED_IND
-     * 
-     */
     @JsonProperty("completedInd")
     public String getCompletedInd() {
         return completedInd;
     }
 
-    /**
-     * Lineage reference object : SHRGRDE_COMPLETED_IND
-     * 
-     */
     @JsonProperty("completedInd")
     public void setCompletedInd(String completedInd) {
         this.completedInd = completedInd;
@@ -415,19 +209,11 @@ public class GradeCodeMaintenance100QapiPost {
         return this;
     }
 
-    /**
-     * Lineage reference object : SHRGRDE_GPA_IND
-     * 
-     */
     @JsonProperty("gpaInd")
     public String getGpaInd() {
         return gpaInd;
     }
 
-    /**
-     * Lineage reference object : SHRGRDE_GPA_IND
-     * 
-     */
     @JsonProperty("gpaInd")
     public void setGpaInd(String gpaInd) {
         this.gpaInd = gpaInd;
@@ -438,19 +224,11 @@ public class GradeCodeMaintenance100QapiPost {
         return this;
     }
 
-    /**
-     * Lineage reference object : SHRGRDE_TRADITIONAL_IND
-     * 
-     */
     @JsonProperty("traditionalInd")
     public String getTraditionalInd() {
         return traditionalInd;
     }
 
-    /**
-     * Lineage reference object : SHRGRDE_TRADITIONAL_IND
-     * 
-     */
     @JsonProperty("traditionalInd")
     public void setTraditionalInd(String traditionalInd) {
         this.traditionalInd = traditionalInd;
@@ -461,19 +239,11 @@ public class GradeCodeMaintenance100QapiPost {
         return this;
     }
 
-    /**
-     * Lineage reference object : SHRGRDE_IMPCMP_IND
-     * 
-     */
     @JsonProperty("impcmpInd")
     public String getImpcmpInd() {
         return impcmpInd;
     }
 
-    /**
-     * Lineage reference object : SHRGRDE_IMPCMP_IND
-     * 
-     */
     @JsonProperty("impcmpInd")
     public void setImpcmpInd(String impcmpInd) {
         this.impcmpInd = impcmpInd;
@@ -484,23 +254,11 @@ public class GradeCodeMaintenance100QapiPost {
         return this;
     }
 
-    /**
-     * Incomplete Grade Default
-     * <p>
-     * Lineage reference object : SHRGRDE_GRDE_CODE_INCMP_FINAL, Lookup lineage reference object : shrgrde,shrgrde
-     * 
-     */
     @JsonProperty("grdeCodeIncmpFinal")
     public String getGrdeCodeIncmpFinal() {
         return grdeCodeIncmpFinal;
     }
 
-    /**
-     * Incomplete Grade Default
-     * <p>
-     * Lineage reference object : SHRGRDE_GRDE_CODE_INCMP_FINAL, Lookup lineage reference object : shrgrde,shrgrde
-     * 
-     */
     @JsonProperty("grdeCodeIncmpFinal")
     public void setGrdeCodeIncmpFinal(String grdeCodeIncmpFinal) {
         this.grdeCodeIncmpFinal = grdeCodeIncmpFinal;
@@ -511,19 +269,11 @@ public class GradeCodeMaintenance100QapiPost {
         return this;
     }
 
-    /**
-     * Lineage reference object : SHRGRDE_WEB_ENTRY_IND
-     * 
-     */
     @JsonProperty("webEntryInd")
     public String getWebEntryInd() {
         return webEntryInd;
     }
 
-    /**
-     * Lineage reference object : SHRGRDE_WEB_ENTRY_IND
-     * 
-     */
     @JsonProperty("webEntryInd")
     public void setWebEntryInd(String webEntryInd) {
         this.webEntryInd = webEntryInd;
@@ -534,46 +284,26 @@ public class GradeCodeMaintenance100QapiPost {
         return this;
     }
 
-    /**
-     * Numeric Value
-     * <p>
-     * Lineage reference object : SHRGRDE_NUMERIC_VALUE
-     * 
-     */
     @JsonProperty("numericValue")
-    public Double getNumericValue() {
+    public String getNumericValue() {
         return numericValue;
     }
 
-    /**
-     * Numeric Value
-     * <p>
-     * Lineage reference object : SHRGRDE_NUMERIC_VALUE
-     * 
-     */
     @JsonProperty("numericValue")
-    public void setNumericValue(Double numericValue) {
+    public void setNumericValue(String numericValue) {
         this.numericValue = numericValue;
     }
 
-    public GradeCodeMaintenance100QapiPost withNumericValue(Double numericValue) {
+    public GradeCodeMaintenance100QapiPost withNumericValue(String numericValue) {
         this.numericValue = numericValue;
         return this;
     }
 
-    /**
-     * Lineage reference object : SHRGRDE_REPEAT_INCLUDE_IND
-     * 
-     */
     @JsonProperty("repeatIncludeInd")
     public String getRepeatIncludeInd() {
         return repeatIncludeInd;
     }
 
-    /**
-     * Lineage reference object : SHRGRDE_REPEAT_INCLUDE_IND
-     * 
-     */
     @JsonProperty("repeatIncludeInd")
     public void setRepeatIncludeInd(String repeatIncludeInd) {
         this.repeatIncludeInd = repeatIncludeInd;
@@ -584,19 +314,11 @@ public class GradeCodeMaintenance100QapiPost {
         return this;
     }
 
-    /**
-     * Lineage reference object : SHRGRDE_LAST_DATE_ATTEND_IND
-     * 
-     */
     @JsonProperty("lastDateAttendInd")
     public String getLastDateAttendInd() {
         return lastDateAttendInd;
     }
 
-    /**
-     * Lineage reference object : SHRGRDE_LAST_DATE_ATTEND_IND
-     * 
-     */
     @JsonProperty("lastDateAttendInd")
     public void setLastDateAttendInd(String lastDateAttendInd) {
         this.lastDateAttendInd = lastDateAttendInd;
@@ -607,29 +329,17 @@ public class GradeCodeMaintenance100QapiPost {
         return this;
     }
 
-    /**
-     * Activity Date
-     * <p>
-     * Lineage reference object : SHRGRDE_ACTIVITY_DATE
-     * 
-     */
     @JsonProperty("activityDate")
-    public Date getActivityDate() {
+    public String getActivityDate() {
         return activityDate;
     }
 
-    /**
-     * Activity Date
-     * <p>
-     * Lineage reference object : SHRGRDE_ACTIVITY_DATE
-     * 
-     */
     @JsonProperty("activityDate")
-    public void setActivityDate(Date activityDate) {
+    public void setActivityDate(String activityDate) {
         this.activityDate = activityDate;
     }
 
-    public GradeCodeMaintenance100QapiPost withActivityDate(Date activityDate) {
+    public GradeCodeMaintenance100QapiPost withActivityDate(String activityDate) {
         this.activityDate = activityDate;
         return this;
     }

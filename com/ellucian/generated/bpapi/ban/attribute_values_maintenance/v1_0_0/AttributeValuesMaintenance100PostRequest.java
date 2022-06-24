@@ -67,7 +67,7 @@ public class AttributeValuesMaintenance100PostRequest {
      */
     @JsonProperty("coasCode")
     @JsonPropertyDescription("Lineage reference object : coasCode, Lookup lineage reference object : ftvcoas")
-    private Object coasCode;
+    private String coasCode;
     /**
      * Lineage reference object : FTRATTV_VALID_ACCT_IND
      * 
@@ -107,7 +107,7 @@ public class AttributeValuesMaintenance100PostRequest {
      */
     @JsonProperty("atttCode")
     @JsonPropertyDescription("Lineage reference object : atttCode, Lookup lineage reference object : ftvattt")
-    private Object atttCode;
+    private String atttCode;
     /**
      * Lineage reference object : FTRATTV_VALID_ORGN_IND
      * 
@@ -235,7 +235,7 @@ public class AttributeValuesMaintenance100PostRequest {
      * 
      */
     @JsonProperty("coasCode")
-    public Object getCoasCode() {
+    public String getCoasCode() {
         return coasCode;
     }
 
@@ -246,11 +246,11 @@ public class AttributeValuesMaintenance100PostRequest {
      * 
      */
     @JsonProperty("coasCode")
-    public void setCoasCode(Object coasCode) {
+    public void setCoasCode(String coasCode) {
         this.coasCode = coasCode;
     }
 
-    public AttributeValuesMaintenance100PostRequest withCoasCode(Object coasCode) {
+    public AttributeValuesMaintenance100PostRequest withCoasCode(String coasCode) {
         this.coasCode = coasCode;
         return this;
     }
@@ -360,7 +360,7 @@ public class AttributeValuesMaintenance100PostRequest {
      * 
      */
     @JsonProperty("atttCode")
-    public Object getAtttCode() {
+    public String getAtttCode() {
         return atttCode;
     }
 
@@ -371,11 +371,11 @@ public class AttributeValuesMaintenance100PostRequest {
      * 
      */
     @JsonProperty("atttCode")
-    public void setAtttCode(Object atttCode) {
+    public void setAtttCode(String atttCode) {
         this.atttCode = atttCode;
     }
 
-    public AttributeValuesMaintenance100PostRequest withAtttCode(Object atttCode) {
+    public AttributeValuesMaintenance100PostRequest withAtttCode(String atttCode) {
         this.atttCode = atttCode;
         return this;
     }

@@ -28,7 +28,7 @@ public class RchrCtrlBlock {
      */
     @JsonProperty("ssrrchrChrtIeCde")
     @JsonPropertyDescription("Lineage reference object : ssrrchrChrtIeCde")
-    private Object ssrrchrChrtIeCde;
+    private String ssrrchrChrtIeCde;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -40,7 +40,7 @@ public class RchrCtrlBlock {
      * 
      */
     @JsonProperty("ssrrchrChrtIeCde")
-    public Object getSsrrchrChrtIeCde() {
+    public String getSsrrchrChrtIeCde() {
         return ssrrchrChrtIeCde;
     }
 
@@ -52,11 +52,11 @@ public class RchrCtrlBlock {
      * 
      */
     @JsonProperty("ssrrchrChrtIeCde")
-    public void setSsrrchrChrtIeCde(Object ssrrchrChrtIeCde) {
+    public void setSsrrchrChrtIeCde(String ssrrchrChrtIeCde) {
         this.ssrrchrChrtIeCde = ssrrchrChrtIeCde;
     }
 
-    public RchrCtrlBlock withSsrrchrChrtIeCde(Object ssrrchrChrtIeCde) {
+    public RchrCtrlBlock withSsrrchrChrtIeCde(String ssrrchrChrtIeCde) {
         this.ssrrchrChrtIeCde = ssrrchrChrtIeCde;
         return this;
     }

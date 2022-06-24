@@ -35,7 +35,7 @@ public class AwardMaintenanceDisbursementSchedule100GetRequest {
      */
     @JsonProperty("keyblckAidyCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAidyCode, Lookup lineage reference object : robinst")
-    private Object keyblckAidyCode;
+    private String keyblckAidyCode;
     /**
      * Period
      * <p>
@@ -92,7 +92,7 @@ public class AwardMaintenanceDisbursementSchedule100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Schedule Amount
      * <p>
@@ -111,7 +111,7 @@ public class AwardMaintenanceDisbursementSchedule100GetRequest {
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public Object getKeyblckAidyCode() {
+    public String getKeyblckAidyCode() {
         return keyblckAidyCode;
     }
 
@@ -122,11 +122,11 @@ public class AwardMaintenanceDisbursementSchedule100GetRequest {
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public void setKeyblckAidyCode(Object keyblckAidyCode) {
+    public void setKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
     }
 
-    public AwardMaintenanceDisbursementSchedule100GetRequest withKeyblckAidyCode(Object keyblckAidyCode) {
+    public AwardMaintenanceDisbursementSchedule100GetRequest withKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
         return this;
     }
@@ -279,7 +279,7 @@ public class AwardMaintenanceDisbursementSchedule100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -290,11 +290,11 @@ public class AwardMaintenanceDisbursementSchedule100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public AwardMaintenanceDisbursementSchedule100GetRequest withId(Object id) {
+    public AwardMaintenanceDisbursementSchedule100GetRequest withId(String id) {
         this.id = id;
         return this;
     }

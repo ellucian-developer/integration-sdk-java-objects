@@ -28,7 +28,7 @@ public class RcmpCtrlBlock {
      */
     @JsonProperty("ssrrcmpCampInd")
     @JsonPropertyDescription("Lineage reference object : ssrrcmpCampInd")
-    private Object ssrrcmpCampInd;
+    private String ssrrcmpCampInd;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -40,7 +40,7 @@ public class RcmpCtrlBlock {
      * 
      */
     @JsonProperty("ssrrcmpCampInd")
-    public Object getSsrrcmpCampInd() {
+    public String getSsrrcmpCampInd() {
         return ssrrcmpCampInd;
     }
 
@@ -52,11 +52,11 @@ public class RcmpCtrlBlock {
      * 
      */
     @JsonProperty("ssrrcmpCampInd")
-    public void setSsrrcmpCampInd(Object ssrrcmpCampInd) {
+    public void setSsrrcmpCampInd(String ssrrcmpCampInd) {
         this.ssrrcmpCampInd = ssrrcmpCampInd;
     }
 
-    public RcmpCtrlBlock withSsrrcmpCampInd(Object ssrrcmpCampInd) {
+    public RcmpCtrlBlock withSsrrcmpCampInd(String ssrrcmpCampInd) {
         this.ssrrcmpCampInd = ssrrcmpCampInd;
         return this;
     }

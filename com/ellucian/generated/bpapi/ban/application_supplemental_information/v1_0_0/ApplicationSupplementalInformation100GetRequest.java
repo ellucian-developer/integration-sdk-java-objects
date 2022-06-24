@@ -29,7 +29,7 @@ public class ApplicationSupplementalInformation100GetRequest {
      */
     @JsonProperty("keyblockApplNo")
     @JsonPropertyDescription("Lineage reference object : keyblockApplNo, Lookup lineage reference object : sabsupl")
-    private Object keyblockApplNo;
+    private Double keyblockApplNo;
     /**
      * ID
      * <p>
@@ -38,7 +38,7 @@ public class ApplicationSupplementalInformation100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Sabsupl Term Code Entry
      * <p>
@@ -47,7 +47,7 @@ public class ApplicationSupplementalInformation100GetRequest {
      */
     @JsonProperty("keyblockTerm")
     @JsonPropertyDescription("Lineage reference object : keyblockTerm, Lookup lineage reference object : stvterm")
-    private Object keyblockTerm;
+    private String keyblockTerm;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -58,7 +58,7 @@ public class ApplicationSupplementalInformation100GetRequest {
      * 
      */
     @JsonProperty("keyblockApplNo")
-    public Object getKeyblockApplNo() {
+    public Double getKeyblockApplNo() {
         return keyblockApplNo;
     }
 
@@ -69,11 +69,11 @@ public class ApplicationSupplementalInformation100GetRequest {
      * 
      */
     @JsonProperty("keyblockApplNo")
-    public void setKeyblockApplNo(Object keyblockApplNo) {
+    public void setKeyblockApplNo(Double keyblockApplNo) {
         this.keyblockApplNo = keyblockApplNo;
     }
 
-    public ApplicationSupplementalInformation100GetRequest withKeyblockApplNo(Object keyblockApplNo) {
+    public ApplicationSupplementalInformation100GetRequest withKeyblockApplNo(Double keyblockApplNo) {
         this.keyblockApplNo = keyblockApplNo;
         return this;
     }
@@ -85,7 +85,7 @@ public class ApplicationSupplementalInformation100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -96,11 +96,11 @@ public class ApplicationSupplementalInformation100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public ApplicationSupplementalInformation100GetRequest withId(Object id) {
+    public ApplicationSupplementalInformation100GetRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -112,7 +112,7 @@ public class ApplicationSupplementalInformation100GetRequest {
      * 
      */
     @JsonProperty("keyblockTerm")
-    public Object getKeyblockTerm() {
+    public String getKeyblockTerm() {
         return keyblockTerm;
     }
 
@@ -123,11 +123,11 @@ public class ApplicationSupplementalInformation100GetRequest {
      * 
      */
     @JsonProperty("keyblockTerm")
-    public void setKeyblockTerm(Object keyblockTerm) {
+    public void setKeyblockTerm(String keyblockTerm) {
         this.keyblockTerm = keyblockTerm;
     }
 
-    public ApplicationSupplementalInformation100GetRequest withKeyblockTerm(Object keyblockTerm) {
+    public ApplicationSupplementalInformation100GetRequest withKeyblockTerm(String keyblockTerm) {
         this.keyblockTerm = keyblockTerm;
         return this;
     }

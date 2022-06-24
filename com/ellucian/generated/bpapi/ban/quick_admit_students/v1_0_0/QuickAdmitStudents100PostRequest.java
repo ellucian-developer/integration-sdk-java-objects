@@ -213,7 +213,7 @@ public class QuickAdmitStudents100PostRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Level
      * <p>
@@ -399,7 +399,7 @@ public class QuickAdmitStudents100PostRequest {
      */
     @JsonProperty("levlCode")
     @JsonPropertyDescription("Lineage reference object : keyblocLevlCode, Lookup lineage reference object : stvlevl")
-    private Object levlCode;
+    private String levlCode;
     /**
      * Deceased Date
      * <p>
@@ -704,7 +704,7 @@ public class QuickAdmitStudents100PostRequest {
      */
     @JsonProperty("termCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCode, Lookup lineage reference object : stvterm")
-    private Object termCode;
+    private String termCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -1066,7 +1066,7 @@ public class QuickAdmitStudents100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -1077,11 +1077,11 @@ public class QuickAdmitStudents100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public QuickAdmitStudents100PostRequest withId(Object id) {
+    public QuickAdmitStudents100PostRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -1635,7 +1635,7 @@ public class QuickAdmitStudents100PostRequest {
      * 
      */
     @JsonProperty("levlCode")
-    public Object getLevlCode() {
+    public String getLevlCode() {
         return levlCode;
     }
 
@@ -1646,11 +1646,11 @@ public class QuickAdmitStudents100PostRequest {
      * 
      */
     @JsonProperty("levlCode")
-    public void setLevlCode(Object levlCode) {
+    public void setLevlCode(String levlCode) {
         this.levlCode = levlCode;
     }
 
-    public QuickAdmitStudents100PostRequest withLevlCode(Object levlCode) {
+    public QuickAdmitStudents100PostRequest withLevlCode(String levlCode) {
         this.levlCode = levlCode;
         return this;
     }
@@ -2555,7 +2555,7 @@ public class QuickAdmitStudents100PostRequest {
      * 
      */
     @JsonProperty("termCode")
-    public Object getTermCode() {
+    public String getTermCode() {
         return termCode;
     }
 
@@ -2566,11 +2566,11 @@ public class QuickAdmitStudents100PostRequest {
      * 
      */
     @JsonProperty("termCode")
-    public void setTermCode(Object termCode) {
+    public void setTermCode(String termCode) {
         this.termCode = termCode;
     }
 
-    public QuickAdmitStudents100PostRequest withTermCode(Object termCode) {
+    public QuickAdmitStudents100PostRequest withTermCode(String termCode) {
         this.termCode = termCode;
         return this;
     }

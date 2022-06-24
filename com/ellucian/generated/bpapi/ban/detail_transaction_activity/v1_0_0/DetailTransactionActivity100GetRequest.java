@@ -50,7 +50,7 @@ public class DetailTransactionActivity100GetRequest {
      */
     @JsonProperty("keyblckFundCode")
     @JsonPropertyDescription("Lineage reference object : keyblckFundCode")
-    private Object keyblckFundCode;
+    private String keyblckFundCode;
     /**
      * Location
      * <p>
@@ -59,7 +59,7 @@ public class DetailTransactionActivity100GetRequest {
      */
     @JsonProperty("keyblckLocnCode")
     @JsonPropertyDescription("Lineage reference object : keyblckLocnCode")
-    private Object keyblckLocnCode;
+    private String keyblckLocnCode;
     /**
      * COA
      * <p>
@@ -68,7 +68,7 @@ public class DetailTransactionActivity100GetRequest {
      */
     @JsonProperty("keyblckCoasCode")
     @JsonPropertyDescription("Lineage reference object : keyblckCoasCode, Lookup lineage reference object : ftvcoas")
-    private Object keyblckCoasCode;
+    private String keyblckCoasCode;
     /**
      * Program
      * <p>
@@ -77,7 +77,7 @@ public class DetailTransactionActivity100GetRequest {
      */
     @JsonProperty("keyblckProgCode")
     @JsonPropertyDescription("Lineage reference object : keyblckProgCode")
-    private Object keyblckProgCode;
+    private String keyblckProgCode;
     /**
      * Fiscal Year
      * <p>
@@ -86,7 +86,7 @@ public class DetailTransactionActivity100GetRequest {
      */
     @JsonProperty("keyblckFsyrCode")
     @JsonPropertyDescription("Lineage reference object : keyblckFsyrCode, Lookup lineage reference object : ftvfspd,ftvfsyr,ftvfspd")
-    private Object keyblckFsyrCode;
+    private String keyblckFsyrCode;
     /**
      * Index
      * <p>
@@ -95,7 +95,7 @@ public class DetailTransactionActivity100GetRequest {
      */
     @JsonProperty("keyblckAcciCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAcciCode, Lookup lineage reference object : ftvacci")
-    private Object keyblckAcciCode;
+    private String keyblckAcciCode;
     /**
      * Field
      * <p>
@@ -123,7 +123,7 @@ public class DetailTransactionActivity100GetRequest {
      */
     @JsonProperty("keyblckActvCode")
     @JsonPropertyDescription("Lineage reference object : keyblckActvCode")
-    private Object keyblckActvCode;
+    private String keyblckActvCode;
     /**
      * Program
      * <p>
@@ -167,7 +167,7 @@ public class DetailTransactionActivity100GetRequest {
      */
     @JsonProperty("keyblckPeriod")
     @JsonPropertyDescription("Lineage reference object : keyblckPeriod")
-    private Object keyblckPeriod;
+    private String keyblckPeriod;
     /**
      * Fund
      * <p>
@@ -186,7 +186,7 @@ public class DetailTransactionActivity100GetRequest {
      */
     @JsonProperty("keyblckCmtType")
     @JsonPropertyDescription("Lineage reference object : keyblckCmtType")
-    private Object keyblckCmtType;
+    private String keyblckCmtType;
     /**
      * Description
      * <p>
@@ -204,7 +204,7 @@ public class DetailTransactionActivity100GetRequest {
      */
     @JsonProperty("keyblckAcctCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAcctCode")
-    private Object keyblckAcctCode;
+    private String keyblckAcctCode;
     /**
      * Amount
      * <p>
@@ -241,7 +241,7 @@ public class DetailTransactionActivity100GetRequest {
      */
     @JsonProperty("keyblckOrgnCode")
     @JsonPropertyDescription("Lineage reference object : keyblckOrgnCode")
-    private Object keyblckOrgnCode;
+    private String keyblckOrgnCode;
     /**
      * Increase (+) or Decrease (-)
      * <p>
@@ -261,7 +261,7 @@ public class DetailTransactionActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckFundCode")
-    public Object getKeyblckFundCode() {
+    public String getKeyblckFundCode() {
         return keyblckFundCode;
     }
 
@@ -272,11 +272,11 @@ public class DetailTransactionActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckFundCode")
-    public void setKeyblckFundCode(Object keyblckFundCode) {
+    public void setKeyblckFundCode(String keyblckFundCode) {
         this.keyblckFundCode = keyblckFundCode;
     }
 
-    public DetailTransactionActivity100GetRequest withKeyblckFundCode(Object keyblckFundCode) {
+    public DetailTransactionActivity100GetRequest withKeyblckFundCode(String keyblckFundCode) {
         this.keyblckFundCode = keyblckFundCode;
         return this;
     }
@@ -288,7 +288,7 @@ public class DetailTransactionActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckLocnCode")
-    public Object getKeyblckLocnCode() {
+    public String getKeyblckLocnCode() {
         return keyblckLocnCode;
     }
 
@@ -299,11 +299,11 @@ public class DetailTransactionActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckLocnCode")
-    public void setKeyblckLocnCode(Object keyblckLocnCode) {
+    public void setKeyblckLocnCode(String keyblckLocnCode) {
         this.keyblckLocnCode = keyblckLocnCode;
     }
 
-    public DetailTransactionActivity100GetRequest withKeyblckLocnCode(Object keyblckLocnCode) {
+    public DetailTransactionActivity100GetRequest withKeyblckLocnCode(String keyblckLocnCode) {
         this.keyblckLocnCode = keyblckLocnCode;
         return this;
     }
@@ -315,7 +315,7 @@ public class DetailTransactionActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckCoasCode")
-    public Object getKeyblckCoasCode() {
+    public String getKeyblckCoasCode() {
         return keyblckCoasCode;
     }
 
@@ -326,11 +326,11 @@ public class DetailTransactionActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckCoasCode")
-    public void setKeyblckCoasCode(Object keyblckCoasCode) {
+    public void setKeyblckCoasCode(String keyblckCoasCode) {
         this.keyblckCoasCode = keyblckCoasCode;
     }
 
-    public DetailTransactionActivity100GetRequest withKeyblckCoasCode(Object keyblckCoasCode) {
+    public DetailTransactionActivity100GetRequest withKeyblckCoasCode(String keyblckCoasCode) {
         this.keyblckCoasCode = keyblckCoasCode;
         return this;
     }
@@ -342,7 +342,7 @@ public class DetailTransactionActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckProgCode")
-    public Object getKeyblckProgCode() {
+    public String getKeyblckProgCode() {
         return keyblckProgCode;
     }
 
@@ -353,11 +353,11 @@ public class DetailTransactionActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckProgCode")
-    public void setKeyblckProgCode(Object keyblckProgCode) {
+    public void setKeyblckProgCode(String keyblckProgCode) {
         this.keyblckProgCode = keyblckProgCode;
     }
 
-    public DetailTransactionActivity100GetRequest withKeyblckProgCode(Object keyblckProgCode) {
+    public DetailTransactionActivity100GetRequest withKeyblckProgCode(String keyblckProgCode) {
         this.keyblckProgCode = keyblckProgCode;
         return this;
     }
@@ -369,7 +369,7 @@ public class DetailTransactionActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckFsyrCode")
-    public Object getKeyblckFsyrCode() {
+    public String getKeyblckFsyrCode() {
         return keyblckFsyrCode;
     }
 
@@ -380,11 +380,11 @@ public class DetailTransactionActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckFsyrCode")
-    public void setKeyblckFsyrCode(Object keyblckFsyrCode) {
+    public void setKeyblckFsyrCode(String keyblckFsyrCode) {
         this.keyblckFsyrCode = keyblckFsyrCode;
     }
 
-    public DetailTransactionActivity100GetRequest withKeyblckFsyrCode(Object keyblckFsyrCode) {
+    public DetailTransactionActivity100GetRequest withKeyblckFsyrCode(String keyblckFsyrCode) {
         this.keyblckFsyrCode = keyblckFsyrCode;
         return this;
     }
@@ -396,7 +396,7 @@ public class DetailTransactionActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckAcciCode")
-    public Object getKeyblckAcciCode() {
+    public String getKeyblckAcciCode() {
         return keyblckAcciCode;
     }
 
@@ -407,11 +407,11 @@ public class DetailTransactionActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckAcciCode")
-    public void setKeyblckAcciCode(Object keyblckAcciCode) {
+    public void setKeyblckAcciCode(String keyblckAcciCode) {
         this.keyblckAcciCode = keyblckAcciCode;
     }
 
-    public DetailTransactionActivity100GetRequest withKeyblckAcciCode(Object keyblckAcciCode) {
+    public DetailTransactionActivity100GetRequest withKeyblckAcciCode(String keyblckAcciCode) {
         this.keyblckAcciCode = keyblckAcciCode;
         return this;
     }
@@ -479,7 +479,7 @@ public class DetailTransactionActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckActvCode")
-    public Object getKeyblckActvCode() {
+    public String getKeyblckActvCode() {
         return keyblckActvCode;
     }
 
@@ -490,11 +490,11 @@ public class DetailTransactionActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckActvCode")
-    public void setKeyblckActvCode(Object keyblckActvCode) {
+    public void setKeyblckActvCode(String keyblckActvCode) {
         this.keyblckActvCode = keyblckActvCode;
     }
 
-    public DetailTransactionActivity100GetRequest withKeyblckActvCode(Object keyblckActvCode) {
+    public DetailTransactionActivity100GetRequest withKeyblckActvCode(String keyblckActvCode) {
         this.keyblckActvCode = keyblckActvCode;
         return this;
     }
@@ -616,7 +616,7 @@ public class DetailTransactionActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckPeriod")
-    public Object getKeyblckPeriod() {
+    public String getKeyblckPeriod() {
         return keyblckPeriod;
     }
 
@@ -627,11 +627,11 @@ public class DetailTransactionActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckPeriod")
-    public void setKeyblckPeriod(Object keyblckPeriod) {
+    public void setKeyblckPeriod(String keyblckPeriod) {
         this.keyblckPeriod = keyblckPeriod;
     }
 
-    public DetailTransactionActivity100GetRequest withKeyblckPeriod(Object keyblckPeriod) {
+    public DetailTransactionActivity100GetRequest withKeyblckPeriod(String keyblckPeriod) {
         this.keyblckPeriod = keyblckPeriod;
         return this;
     }
@@ -672,7 +672,7 @@ public class DetailTransactionActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckCmtType")
-    public Object getKeyblckCmtType() {
+    public String getKeyblckCmtType() {
         return keyblckCmtType;
     }
 
@@ -683,11 +683,11 @@ public class DetailTransactionActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckCmtType")
-    public void setKeyblckCmtType(Object keyblckCmtType) {
+    public void setKeyblckCmtType(String keyblckCmtType) {
         this.keyblckCmtType = keyblckCmtType;
     }
 
-    public DetailTransactionActivity100GetRequest withKeyblckCmtType(Object keyblckCmtType) {
+    public DetailTransactionActivity100GetRequest withKeyblckCmtType(String keyblckCmtType) {
         this.keyblckCmtType = keyblckCmtType;
         return this;
     }
@@ -726,7 +726,7 @@ public class DetailTransactionActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckAcctCode")
-    public Object getKeyblckAcctCode() {
+    public String getKeyblckAcctCode() {
         return keyblckAcctCode;
     }
 
@@ -737,11 +737,11 @@ public class DetailTransactionActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckAcctCode")
-    public void setKeyblckAcctCode(Object keyblckAcctCode) {
+    public void setKeyblckAcctCode(String keyblckAcctCode) {
         this.keyblckAcctCode = keyblckAcctCode;
     }
 
-    public DetailTransactionActivity100GetRequest withKeyblckAcctCode(Object keyblckAcctCode) {
+    public DetailTransactionActivity100GetRequest withKeyblckAcctCode(String keyblckAcctCode) {
         this.keyblckAcctCode = keyblckAcctCode;
         return this;
     }
@@ -836,7 +836,7 @@ public class DetailTransactionActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckOrgnCode")
-    public Object getKeyblckOrgnCode() {
+    public String getKeyblckOrgnCode() {
         return keyblckOrgnCode;
     }
 
@@ -847,11 +847,11 @@ public class DetailTransactionActivity100GetRequest {
      * 
      */
     @JsonProperty("keyblckOrgnCode")
-    public void setKeyblckOrgnCode(Object keyblckOrgnCode) {
+    public void setKeyblckOrgnCode(String keyblckOrgnCode) {
         this.keyblckOrgnCode = keyblckOrgnCode;
     }
 
-    public DetailTransactionActivity100GetRequest withKeyblckOrgnCode(Object keyblckOrgnCode) {
+    public DetailTransactionActivity100GetRequest withKeyblckOrgnCode(String keyblckOrgnCode) {
         this.keyblckOrgnCode = keyblckOrgnCode;
         return this;
     }

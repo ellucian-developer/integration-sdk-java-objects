@@ -27,7 +27,7 @@ public class CommodityMaintenance100GetRequest {
      */
     @JsonProperty("displayCommCode")
     @JsonPropertyDescription("Lineage reference object : displayCommCode")
-    private Object displayCommCode;
+    private String displayCommCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -38,7 +38,7 @@ public class CommodityMaintenance100GetRequest {
      * 
      */
     @JsonProperty("displayCommCode")
-    public Object getDisplayCommCode() {
+    public String getDisplayCommCode() {
         return displayCommCode;
     }
 
@@ -49,11 +49,11 @@ public class CommodityMaintenance100GetRequest {
      * 
      */
     @JsonProperty("displayCommCode")
-    public void setDisplayCommCode(Object displayCommCode) {
+    public void setDisplayCommCode(String displayCommCode) {
         this.displayCommCode = displayCommCode;
     }
 
-    public CommodityMaintenance100GetRequest withDisplayCommCode(Object displayCommCode) {
+    public CommodityMaintenance100GetRequest withDisplayCommCode(String displayCommCode) {
         this.displayCommCode = displayCommCode;
         return this;
     }

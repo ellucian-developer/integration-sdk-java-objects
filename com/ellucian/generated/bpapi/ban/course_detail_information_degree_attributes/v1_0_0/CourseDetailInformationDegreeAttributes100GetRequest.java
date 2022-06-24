@@ -14,6 +14,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
+    "attrCode",
     "scacrseCrseNumb",
     "scacrseSubjCode",
     "scacrseTermCodeEff"
@@ -22,6 +23,16 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class CourseDetailInformationDegreeAttributes100GetRequest {
 
     /**
+     * Attribute
+     * <p>
+     * Lineage reference object : SCRATTR_ATTR_CODE, Lookup lineage reference object : stvattr
+     * (Required)
+     * 
+     */
+    @JsonProperty("attrCode")
+    @JsonPropertyDescription("Lineage reference object : SCRATTR_ATTR_CODE, Lookup lineage reference object : stvattr")
+    private String attrCode;
+    /**
      * Course
      * <p>
      * Lineage reference object : scacrseCrseNumb, Lookup lineage reference object : scbcrse,scbcrky
@@ -29,7 +40,7 @@ public class CourseDetailInformationDegreeAttributes100GetRequest {
      */
     @JsonProperty("scacrseCrseNumb")
     @JsonPropertyDescription("Lineage reference object : scacrseCrseNumb, Lookup lineage reference object : scbcrse,scbcrky")
-    private Object scacrseCrseNumb;
+    private String scacrseCrseNumb;
     /**
      * Subject
      * <p>
@@ -38,7 +49,7 @@ public class CourseDetailInformationDegreeAttributes100GetRequest {
      */
     @JsonProperty("scacrseSubjCode")
     @JsonPropertyDescription("Lineage reference object : scacrseSubjCode, Lookup lineage reference object : stvsubj")
-    private Object scacrseSubjCode;
+    private String scacrseSubjCode;
     /**
      * Term
      * <p>
@@ -47,9 +58,38 @@ public class CourseDetailInformationDegreeAttributes100GetRequest {
      */
     @JsonProperty("scacrseTermCodeEff")
     @JsonPropertyDescription("Lineage reference object : scacrseTermCodeEff, Lookup lineage reference object : stvterm,scbcrky,scbcrky")
-    private Object scacrseTermCodeEff;
+    private String scacrseTermCodeEff;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+    /**
+     * Attribute
+     * <p>
+     * Lineage reference object : SCRATTR_ATTR_CODE, Lookup lineage reference object : stvattr
+     * (Required)
+     * 
+     */
+    @JsonProperty("attrCode")
+    public String getAttrCode() {
+        return attrCode;
+    }
+
+    /**
+     * Attribute
+     * <p>
+     * Lineage reference object : SCRATTR_ATTR_CODE, Lookup lineage reference object : stvattr
+     * (Required)
+     * 
+     */
+    @JsonProperty("attrCode")
+    public void setAttrCode(String attrCode) {
+        this.attrCode = attrCode;
+    }
+
+    public CourseDetailInformationDegreeAttributes100GetRequest withAttrCode(String attrCode) {
+        this.attrCode = attrCode;
+        return this;
+    }
 
     /**
      * Course
@@ -58,7 +98,7 @@ public class CourseDetailInformationDegreeAttributes100GetRequest {
      * 
      */
     @JsonProperty("scacrseCrseNumb")
-    public Object getScacrseCrseNumb() {
+    public String getScacrseCrseNumb() {
         return scacrseCrseNumb;
     }
 
@@ -69,11 +109,11 @@ public class CourseDetailInformationDegreeAttributes100GetRequest {
      * 
      */
     @JsonProperty("scacrseCrseNumb")
-    public void setScacrseCrseNumb(Object scacrseCrseNumb) {
+    public void setScacrseCrseNumb(String scacrseCrseNumb) {
         this.scacrseCrseNumb = scacrseCrseNumb;
     }
 
-    public CourseDetailInformationDegreeAttributes100GetRequest withScacrseCrseNumb(Object scacrseCrseNumb) {
+    public CourseDetailInformationDegreeAttributes100GetRequest withScacrseCrseNumb(String scacrseCrseNumb) {
         this.scacrseCrseNumb = scacrseCrseNumb;
         return this;
     }
@@ -85,7 +125,7 @@ public class CourseDetailInformationDegreeAttributes100GetRequest {
      * 
      */
     @JsonProperty("scacrseSubjCode")
-    public Object getScacrseSubjCode() {
+    public String getScacrseSubjCode() {
         return scacrseSubjCode;
     }
 
@@ -96,11 +136,11 @@ public class CourseDetailInformationDegreeAttributes100GetRequest {
      * 
      */
     @JsonProperty("scacrseSubjCode")
-    public void setScacrseSubjCode(Object scacrseSubjCode) {
+    public void setScacrseSubjCode(String scacrseSubjCode) {
         this.scacrseSubjCode = scacrseSubjCode;
     }
 
-    public CourseDetailInformationDegreeAttributes100GetRequest withScacrseSubjCode(Object scacrseSubjCode) {
+    public CourseDetailInformationDegreeAttributes100GetRequest withScacrseSubjCode(String scacrseSubjCode) {
         this.scacrseSubjCode = scacrseSubjCode;
         return this;
     }
@@ -112,7 +152,7 @@ public class CourseDetailInformationDegreeAttributes100GetRequest {
      * 
      */
     @JsonProperty("scacrseTermCodeEff")
-    public Object getScacrseTermCodeEff() {
+    public String getScacrseTermCodeEff() {
         return scacrseTermCodeEff;
     }
 
@@ -123,11 +163,11 @@ public class CourseDetailInformationDegreeAttributes100GetRequest {
      * 
      */
     @JsonProperty("scacrseTermCodeEff")
-    public void setScacrseTermCodeEff(Object scacrseTermCodeEff) {
+    public void setScacrseTermCodeEff(String scacrseTermCodeEff) {
         this.scacrseTermCodeEff = scacrseTermCodeEff;
     }
 
-    public CourseDetailInformationDegreeAttributes100GetRequest withScacrseTermCodeEff(Object scacrseTermCodeEff) {
+    public CourseDetailInformationDegreeAttributes100GetRequest withScacrseTermCodeEff(String scacrseTermCodeEff) {
         this.scacrseTermCodeEff = scacrseTermCodeEff;
         return this;
     }
@@ -151,6 +191,10 @@ public class CourseDetailInformationDegreeAttributes100GetRequest {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(CourseDetailInformationDegreeAttributes100GetRequest.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
+        sb.append("attrCode");
+        sb.append('=');
+        sb.append(((this.attrCode == null)?"<null>":this.attrCode));
+        sb.append(',');
         sb.append("scacrseCrseNumb");
         sb.append('=');
         sb.append(((this.scacrseCrseNumb == null)?"<null>":this.scacrseCrseNumb));
@@ -178,6 +222,7 @@ public class CourseDetailInformationDegreeAttributes100GetRequest {
     @Override
     public int hashCode() {
         int result = 1;
+        result = ((result* 31)+((this.attrCode == null)? 0 :this.attrCode.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
         result = ((result* 31)+((this.scacrseCrseNumb == null)? 0 :this.scacrseCrseNumb.hashCode()));
         result = ((result* 31)+((this.scacrseTermCodeEff == null)? 0 :this.scacrseTermCodeEff.hashCode()));
@@ -194,7 +239,7 @@ public class CourseDetailInformationDegreeAttributes100GetRequest {
             return false;
         }
         CourseDetailInformationDegreeAttributes100GetRequest rhs = ((CourseDetailInformationDegreeAttributes100GetRequest) other);
-        return (((((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties)))&&((this.scacrseCrseNumb == rhs.scacrseCrseNumb)||((this.scacrseCrseNumb!= null)&&this.scacrseCrseNumb.equals(rhs.scacrseCrseNumb))))&&((this.scacrseTermCodeEff == rhs.scacrseTermCodeEff)||((this.scacrseTermCodeEff!= null)&&this.scacrseTermCodeEff.equals(rhs.scacrseTermCodeEff))))&&((this.scacrseSubjCode == rhs.scacrseSubjCode)||((this.scacrseSubjCode!= null)&&this.scacrseSubjCode.equals(rhs.scacrseSubjCode))));
+        return ((((((this.attrCode == rhs.attrCode)||((this.attrCode!= null)&&this.attrCode.equals(rhs.attrCode)))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.scacrseCrseNumb == rhs.scacrseCrseNumb)||((this.scacrseCrseNumb!= null)&&this.scacrseCrseNumb.equals(rhs.scacrseCrseNumb))))&&((this.scacrseTermCodeEff == rhs.scacrseTermCodeEff)||((this.scacrseTermCodeEff!= null)&&this.scacrseTermCodeEff.equals(rhs.scacrseTermCodeEff))))&&((this.scacrseSubjCode == rhs.scacrseSubjCode)||((this.scacrseSubjCode!= null)&&this.scacrseSubjCode.equals(rhs.scacrseSubjCode))));
     }
 
 }

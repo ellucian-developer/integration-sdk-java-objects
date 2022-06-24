@@ -71,7 +71,7 @@ public class TransferArticulationEvaluation100GetRequest {
      */
     @JsonProperty("keyblocSbgiCode")
     @JsonPropertyDescription("Lineage reference object : keyblocSbgiCode")
-    private Object keyblocSbgiCode;
+    private String keyblocSbgiCode;
     /**
      * Equivalent Grade
      * <p>
@@ -107,7 +107,7 @@ public class TransferArticulationEvaluation100GetRequest {
      */
     @JsonProperty("keyblocProgram")
     @JsonPropertyDescription("Lineage reference object : keyblocProgram")
-    private Object keyblocProgram;
+    private String keyblocProgram;
     /**
      * Transfer Duplicate
      * <p>
@@ -177,7 +177,7 @@ public class TransferArticulationEvaluation100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Level
      * <p>
@@ -295,7 +295,7 @@ public class TransferArticulationEvaluation100GetRequest {
      * 
      */
     @JsonProperty("keyblocSbgiCode")
-    public Object getKeyblocSbgiCode() {
+    public String getKeyblocSbgiCode() {
         return keyblocSbgiCode;
     }
 
@@ -306,11 +306,11 @@ public class TransferArticulationEvaluation100GetRequest {
      * 
      */
     @JsonProperty("keyblocSbgiCode")
-    public void setKeyblocSbgiCode(Object keyblocSbgiCode) {
+    public void setKeyblocSbgiCode(String keyblocSbgiCode) {
         this.keyblocSbgiCode = keyblocSbgiCode;
     }
 
-    public TransferArticulationEvaluation100GetRequest withKeyblocSbgiCode(Object keyblocSbgiCode) {
+    public TransferArticulationEvaluation100GetRequest withKeyblocSbgiCode(String keyblocSbgiCode) {
         this.keyblocSbgiCode = keyblocSbgiCode;
         return this;
     }
@@ -403,7 +403,7 @@ public class TransferArticulationEvaluation100GetRequest {
      * 
      */
     @JsonProperty("keyblocProgram")
-    public Object getKeyblocProgram() {
+    public String getKeyblocProgram() {
         return keyblocProgram;
     }
 
@@ -414,11 +414,11 @@ public class TransferArticulationEvaluation100GetRequest {
      * 
      */
     @JsonProperty("keyblocProgram")
-    public void setKeyblocProgram(Object keyblocProgram) {
+    public void setKeyblocProgram(String keyblocProgram) {
         this.keyblocProgram = keyblocProgram;
     }
 
-    public TransferArticulationEvaluation100GetRequest withKeyblocProgram(Object keyblocProgram) {
+    public TransferArticulationEvaluation100GetRequest withKeyblocProgram(String keyblocProgram) {
         this.keyblocProgram = keyblocProgram;
         return this;
     }
@@ -619,7 +619,7 @@ public class TransferArticulationEvaluation100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -630,11 +630,11 @@ public class TransferArticulationEvaluation100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public TransferArticulationEvaluation100GetRequest withId(Object id) {
+    public TransferArticulationEvaluation100GetRequest withId(String id) {
         this.id = id;
         return this;
     }

@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.student_billing_mass_data_entry_deposits.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -36,7 +37,7 @@ public class KeyBlock2 {
      */
     @JsonProperty("keybloc2DetailCode")
     @JsonPropertyDescription("Lineage reference object : keybloc2DetailCode")
-    private Object keybloc2DetailCode;
+    private String keybloc2DetailCode;
     /**
      * Amount
      * <p>
@@ -45,7 +46,7 @@ public class KeyBlock2 {
      */
     @JsonProperty("keybloc2Amount")
     @JsonPropertyDescription("Lineage reference object : keybloc2Amount")
-    private Object keybloc2Amount;
+    private Double keybloc2Amount;
     /**
      * Auto Release
      * <p>
@@ -54,7 +55,7 @@ public class KeyBlock2 {
      */
     @JsonProperty("keybloc2AutoReleaseInd")
     @JsonPropertyDescription("Lineage reference object : keybloc2AutoReleaseInd")
-    private Object keybloc2AutoReleaseInd;
+    private String keybloc2AutoReleaseInd;
     /**
      * Payment Code
      * <p>
@@ -63,7 +64,7 @@ public class KeyBlock2 {
      */
     @JsonProperty("keybloc2DetailCodePay")
     @JsonPropertyDescription("Lineage reference object : keybloc2DetailCodePay, Lookup lineage reference object : tbbdetc")
-    private Object keybloc2DetailCodePay;
+    private String keybloc2DetailCodePay;
     /**
      * Expiration Date
      * <p>
@@ -72,7 +73,7 @@ public class KeyBlock2 {
      */
     @JsonProperty("keybloc2ExpirationDate")
     @JsonPropertyDescription("Lineage reference object : keybloc2ExpirationDate")
-    private Object keybloc2ExpirationDate;
+    private Date keybloc2ExpirationDate;
     /**
      * Release Date
      * <p>
@@ -81,7 +82,7 @@ public class KeyBlock2 {
      */
     @JsonProperty("keybloc2ReleaseDate")
     @JsonPropertyDescription("Lineage reference object : keybloc2ReleaseDate")
-    private Object keybloc2ReleaseDate;
+    private Date keybloc2ReleaseDate;
     /**
      * Minimum
      * <p>
@@ -90,7 +91,7 @@ public class KeyBlock2 {
      */
     @JsonProperty("keybloc2MinAmount")
     @JsonPropertyDescription("Lineage reference object : keybloc2MinAmount")
-    private Object keybloc2MinAmount;
+    private Double keybloc2MinAmount;
     /**
      * Effective Date
      * <p>
@@ -99,7 +100,7 @@ public class KeyBlock2 {
      */
     @JsonProperty("keybloc2EffDate")
     @JsonPropertyDescription("Lineage reference object : keybloc2EffDate")
-    private Object keybloc2EffDate;
+    private Date keybloc2EffDate;
     /**
      * Term
      * <p>
@@ -108,7 +109,7 @@ public class KeyBlock2 {
      */
     @JsonProperty("keybloc2TermCode")
     @JsonPropertyDescription("Lineage reference object : keybloc2TermCode, Lookup lineage reference object : stvterm")
-    private Object keybloc2TermCode;
+    private String keybloc2TermCode;
     /**
      * Document
      * <p>
@@ -117,7 +118,7 @@ public class KeyBlock2 {
      */
     @JsonProperty("keybloc2DocumentNumber")
     @JsonPropertyDescription("Lineage reference object : keybloc2DocumentNumber")
-    private Object keybloc2DocumentNumber;
+    private String keybloc2DocumentNumber;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -128,7 +129,7 @@ public class KeyBlock2 {
      * 
      */
     @JsonProperty("keybloc2DetailCode")
-    public Object getKeybloc2DetailCode() {
+    public String getKeybloc2DetailCode() {
         return keybloc2DetailCode;
     }
 
@@ -139,11 +140,11 @@ public class KeyBlock2 {
      * 
      */
     @JsonProperty("keybloc2DetailCode")
-    public void setKeybloc2DetailCode(Object keybloc2DetailCode) {
+    public void setKeybloc2DetailCode(String keybloc2DetailCode) {
         this.keybloc2DetailCode = keybloc2DetailCode;
     }
 
-    public KeyBlock2 withKeybloc2DetailCode(Object keybloc2DetailCode) {
+    public KeyBlock2 withKeybloc2DetailCode(String keybloc2DetailCode) {
         this.keybloc2DetailCode = keybloc2DetailCode;
         return this;
     }
@@ -155,7 +156,7 @@ public class KeyBlock2 {
      * 
      */
     @JsonProperty("keybloc2Amount")
-    public Object getKeybloc2Amount() {
+    public Double getKeybloc2Amount() {
         return keybloc2Amount;
     }
 
@@ -166,11 +167,11 @@ public class KeyBlock2 {
      * 
      */
     @JsonProperty("keybloc2Amount")
-    public void setKeybloc2Amount(Object keybloc2Amount) {
+    public void setKeybloc2Amount(Double keybloc2Amount) {
         this.keybloc2Amount = keybloc2Amount;
     }
 
-    public KeyBlock2 withKeybloc2Amount(Object keybloc2Amount) {
+    public KeyBlock2 withKeybloc2Amount(Double keybloc2Amount) {
         this.keybloc2Amount = keybloc2Amount;
         return this;
     }
@@ -182,7 +183,7 @@ public class KeyBlock2 {
      * 
      */
     @JsonProperty("keybloc2AutoReleaseInd")
-    public Object getKeybloc2AutoReleaseInd() {
+    public String getKeybloc2AutoReleaseInd() {
         return keybloc2AutoReleaseInd;
     }
 
@@ -193,11 +194,11 @@ public class KeyBlock2 {
      * 
      */
     @JsonProperty("keybloc2AutoReleaseInd")
-    public void setKeybloc2AutoReleaseInd(Object keybloc2AutoReleaseInd) {
+    public void setKeybloc2AutoReleaseInd(String keybloc2AutoReleaseInd) {
         this.keybloc2AutoReleaseInd = keybloc2AutoReleaseInd;
     }
 
-    public KeyBlock2 withKeybloc2AutoReleaseInd(Object keybloc2AutoReleaseInd) {
+    public KeyBlock2 withKeybloc2AutoReleaseInd(String keybloc2AutoReleaseInd) {
         this.keybloc2AutoReleaseInd = keybloc2AutoReleaseInd;
         return this;
     }
@@ -209,7 +210,7 @@ public class KeyBlock2 {
      * 
      */
     @JsonProperty("keybloc2DetailCodePay")
-    public Object getKeybloc2DetailCodePay() {
+    public String getKeybloc2DetailCodePay() {
         return keybloc2DetailCodePay;
     }
 
@@ -220,11 +221,11 @@ public class KeyBlock2 {
      * 
      */
     @JsonProperty("keybloc2DetailCodePay")
-    public void setKeybloc2DetailCodePay(Object keybloc2DetailCodePay) {
+    public void setKeybloc2DetailCodePay(String keybloc2DetailCodePay) {
         this.keybloc2DetailCodePay = keybloc2DetailCodePay;
     }
 
-    public KeyBlock2 withKeybloc2DetailCodePay(Object keybloc2DetailCodePay) {
+    public KeyBlock2 withKeybloc2DetailCodePay(String keybloc2DetailCodePay) {
         this.keybloc2DetailCodePay = keybloc2DetailCodePay;
         return this;
     }
@@ -236,7 +237,7 @@ public class KeyBlock2 {
      * 
      */
     @JsonProperty("keybloc2ExpirationDate")
-    public Object getKeybloc2ExpirationDate() {
+    public Date getKeybloc2ExpirationDate() {
         return keybloc2ExpirationDate;
     }
 
@@ -247,11 +248,11 @@ public class KeyBlock2 {
      * 
      */
     @JsonProperty("keybloc2ExpirationDate")
-    public void setKeybloc2ExpirationDate(Object keybloc2ExpirationDate) {
+    public void setKeybloc2ExpirationDate(Date keybloc2ExpirationDate) {
         this.keybloc2ExpirationDate = keybloc2ExpirationDate;
     }
 
-    public KeyBlock2 withKeybloc2ExpirationDate(Object keybloc2ExpirationDate) {
+    public KeyBlock2 withKeybloc2ExpirationDate(Date keybloc2ExpirationDate) {
         this.keybloc2ExpirationDate = keybloc2ExpirationDate;
         return this;
     }
@@ -263,7 +264,7 @@ public class KeyBlock2 {
      * 
      */
     @JsonProperty("keybloc2ReleaseDate")
-    public Object getKeybloc2ReleaseDate() {
+    public Date getKeybloc2ReleaseDate() {
         return keybloc2ReleaseDate;
     }
 
@@ -274,11 +275,11 @@ public class KeyBlock2 {
      * 
      */
     @JsonProperty("keybloc2ReleaseDate")
-    public void setKeybloc2ReleaseDate(Object keybloc2ReleaseDate) {
+    public void setKeybloc2ReleaseDate(Date keybloc2ReleaseDate) {
         this.keybloc2ReleaseDate = keybloc2ReleaseDate;
     }
 
-    public KeyBlock2 withKeybloc2ReleaseDate(Object keybloc2ReleaseDate) {
+    public KeyBlock2 withKeybloc2ReleaseDate(Date keybloc2ReleaseDate) {
         this.keybloc2ReleaseDate = keybloc2ReleaseDate;
         return this;
     }
@@ -290,7 +291,7 @@ public class KeyBlock2 {
      * 
      */
     @JsonProperty("keybloc2MinAmount")
-    public Object getKeybloc2MinAmount() {
+    public Double getKeybloc2MinAmount() {
         return keybloc2MinAmount;
     }
 
@@ -301,11 +302,11 @@ public class KeyBlock2 {
      * 
      */
     @JsonProperty("keybloc2MinAmount")
-    public void setKeybloc2MinAmount(Object keybloc2MinAmount) {
+    public void setKeybloc2MinAmount(Double keybloc2MinAmount) {
         this.keybloc2MinAmount = keybloc2MinAmount;
     }
 
-    public KeyBlock2 withKeybloc2MinAmount(Object keybloc2MinAmount) {
+    public KeyBlock2 withKeybloc2MinAmount(Double keybloc2MinAmount) {
         this.keybloc2MinAmount = keybloc2MinAmount;
         return this;
     }
@@ -317,7 +318,7 @@ public class KeyBlock2 {
      * 
      */
     @JsonProperty("keybloc2EffDate")
-    public Object getKeybloc2EffDate() {
+    public Date getKeybloc2EffDate() {
         return keybloc2EffDate;
     }
 
@@ -328,11 +329,11 @@ public class KeyBlock2 {
      * 
      */
     @JsonProperty("keybloc2EffDate")
-    public void setKeybloc2EffDate(Object keybloc2EffDate) {
+    public void setKeybloc2EffDate(Date keybloc2EffDate) {
         this.keybloc2EffDate = keybloc2EffDate;
     }
 
-    public KeyBlock2 withKeybloc2EffDate(Object keybloc2EffDate) {
+    public KeyBlock2 withKeybloc2EffDate(Date keybloc2EffDate) {
         this.keybloc2EffDate = keybloc2EffDate;
         return this;
     }
@@ -344,7 +345,7 @@ public class KeyBlock2 {
      * 
      */
     @JsonProperty("keybloc2TermCode")
-    public Object getKeybloc2TermCode() {
+    public String getKeybloc2TermCode() {
         return keybloc2TermCode;
     }
 
@@ -355,11 +356,11 @@ public class KeyBlock2 {
      * 
      */
     @JsonProperty("keybloc2TermCode")
-    public void setKeybloc2TermCode(Object keybloc2TermCode) {
+    public void setKeybloc2TermCode(String keybloc2TermCode) {
         this.keybloc2TermCode = keybloc2TermCode;
     }
 
-    public KeyBlock2 withKeybloc2TermCode(Object keybloc2TermCode) {
+    public KeyBlock2 withKeybloc2TermCode(String keybloc2TermCode) {
         this.keybloc2TermCode = keybloc2TermCode;
         return this;
     }
@@ -371,7 +372,7 @@ public class KeyBlock2 {
      * 
      */
     @JsonProperty("keybloc2DocumentNumber")
-    public Object getKeybloc2DocumentNumber() {
+    public String getKeybloc2DocumentNumber() {
         return keybloc2DocumentNumber;
     }
 
@@ -382,11 +383,11 @@ public class KeyBlock2 {
      * 
      */
     @JsonProperty("keybloc2DocumentNumber")
-    public void setKeybloc2DocumentNumber(Object keybloc2DocumentNumber) {
+    public void setKeybloc2DocumentNumber(String keybloc2DocumentNumber) {
         this.keybloc2DocumentNumber = keybloc2DocumentNumber;
     }
 
-    public KeyBlock2 withKeybloc2DocumentNumber(Object keybloc2DocumentNumber) {
+    public KeyBlock2 withKeybloc2DocumentNumber(String keybloc2DocumentNumber) {
         this.keybloc2DocumentNumber = keybloc2DocumentNumber;
         return this;
     }

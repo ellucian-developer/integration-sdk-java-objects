@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.saved_output_review.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -30,7 +31,7 @@ public class SavedOutputReview100GetRequest {
      */
     @JsonProperty("keyblckOneUpNo")
     @JsonPropertyDescription("Lineage reference object : keyblckOneUpNo")
-    private Object keyblckOneUpNo;
+    private String keyblckOneUpNo;
     /**
      * Beginning Date Saved
      * <p>
@@ -39,7 +40,7 @@ public class SavedOutputReview100GetRequest {
      */
     @JsonProperty("keyblckStartDate")
     @JsonPropertyDescription("Lineage reference object : keyblckStartDate")
-    private Object keyblckStartDate;
+    private Date keyblckStartDate;
     /**
      * File Name
      * <p>
@@ -48,7 +49,7 @@ public class SavedOutputReview100GetRequest {
      */
     @JsonProperty("keyblckFileName")
     @JsonPropertyDescription("Lineage reference object : keyblckFileName")
-    private Object keyblckFileName;
+    private String keyblckFileName;
     /**
      * Process
      * <p>
@@ -57,7 +58,7 @@ public class SavedOutputReview100GetRequest {
      */
     @JsonProperty("keyblckJob")
     @JsonPropertyDescription("Lineage reference object : keyblckJob")
-    private Object keyblckJob;
+    private String keyblckJob;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -68,7 +69,7 @@ public class SavedOutputReview100GetRequest {
      * 
      */
     @JsonProperty("keyblckOneUpNo")
-    public Object getKeyblckOneUpNo() {
+    public String getKeyblckOneUpNo() {
         return keyblckOneUpNo;
     }
 
@@ -79,11 +80,11 @@ public class SavedOutputReview100GetRequest {
      * 
      */
     @JsonProperty("keyblckOneUpNo")
-    public void setKeyblckOneUpNo(Object keyblckOneUpNo) {
+    public void setKeyblckOneUpNo(String keyblckOneUpNo) {
         this.keyblckOneUpNo = keyblckOneUpNo;
     }
 
-    public SavedOutputReview100GetRequest withKeyblckOneUpNo(Object keyblckOneUpNo) {
+    public SavedOutputReview100GetRequest withKeyblckOneUpNo(String keyblckOneUpNo) {
         this.keyblckOneUpNo = keyblckOneUpNo;
         return this;
     }
@@ -95,7 +96,7 @@ public class SavedOutputReview100GetRequest {
      * 
      */
     @JsonProperty("keyblckStartDate")
-    public Object getKeyblckStartDate() {
+    public Date getKeyblckStartDate() {
         return keyblckStartDate;
     }
 
@@ -106,11 +107,11 @@ public class SavedOutputReview100GetRequest {
      * 
      */
     @JsonProperty("keyblckStartDate")
-    public void setKeyblckStartDate(Object keyblckStartDate) {
+    public void setKeyblckStartDate(Date keyblckStartDate) {
         this.keyblckStartDate = keyblckStartDate;
     }
 
-    public SavedOutputReview100GetRequest withKeyblckStartDate(Object keyblckStartDate) {
+    public SavedOutputReview100GetRequest withKeyblckStartDate(Date keyblckStartDate) {
         this.keyblckStartDate = keyblckStartDate;
         return this;
     }
@@ -122,7 +123,7 @@ public class SavedOutputReview100GetRequest {
      * 
      */
     @JsonProperty("keyblckFileName")
-    public Object getKeyblckFileName() {
+    public String getKeyblckFileName() {
         return keyblckFileName;
     }
 
@@ -133,11 +134,11 @@ public class SavedOutputReview100GetRequest {
      * 
      */
     @JsonProperty("keyblckFileName")
-    public void setKeyblckFileName(Object keyblckFileName) {
+    public void setKeyblckFileName(String keyblckFileName) {
         this.keyblckFileName = keyblckFileName;
     }
 
-    public SavedOutputReview100GetRequest withKeyblckFileName(Object keyblckFileName) {
+    public SavedOutputReview100GetRequest withKeyblckFileName(String keyblckFileName) {
         this.keyblckFileName = keyblckFileName;
         return this;
     }
@@ -149,7 +150,7 @@ public class SavedOutputReview100GetRequest {
      * 
      */
     @JsonProperty("keyblckJob")
-    public Object getKeyblckJob() {
+    public String getKeyblckJob() {
         return keyblckJob;
     }
 
@@ -160,11 +161,11 @@ public class SavedOutputReview100GetRequest {
      * 
      */
     @JsonProperty("keyblckJob")
-    public void setKeyblckJob(Object keyblckJob) {
+    public void setKeyblckJob(String keyblckJob) {
         this.keyblckJob = keyblckJob;
     }
 
-    public SavedOutputReview100GetRequest withKeyblckJob(Object keyblckJob) {
+    public SavedOutputReview100GetRequest withKeyblckJob(String keyblckJob) {
         this.keyblckJob = keyblckJob;
         return this;
     }

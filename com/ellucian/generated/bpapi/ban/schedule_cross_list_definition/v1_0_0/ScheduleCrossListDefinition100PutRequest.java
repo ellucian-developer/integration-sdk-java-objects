@@ -29,7 +29,7 @@ public class ScheduleCrossListDefinition100PutRequest {
      */
     @JsonProperty("keyblocXlstGroup")
     @JsonPropertyDescription("Lineage reference object : keyblocXlstGroup")
-    private Object keyblocXlstGroup;
+    private String keyblocXlstGroup;
     /**
      * Term
      * <p>
@@ -38,7 +38,7 @@ public class ScheduleCrossListDefinition100PutRequest {
      */
     @JsonProperty("keyblocTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCode;
+    private String keyblocTermCode;
     /**
      * Maximum Enrollment:
      * <p>
@@ -58,7 +58,7 @@ public class ScheduleCrossListDefinition100PutRequest {
      * 
      */
     @JsonProperty("keyblocXlstGroup")
-    public Object getKeyblocXlstGroup() {
+    public String getKeyblocXlstGroup() {
         return keyblocXlstGroup;
     }
 
@@ -69,11 +69,11 @@ public class ScheduleCrossListDefinition100PutRequest {
      * 
      */
     @JsonProperty("keyblocXlstGroup")
-    public void setKeyblocXlstGroup(Object keyblocXlstGroup) {
+    public void setKeyblocXlstGroup(String keyblocXlstGroup) {
         this.keyblocXlstGroup = keyblocXlstGroup;
     }
 
-    public ScheduleCrossListDefinition100PutRequest withKeyblocXlstGroup(Object keyblocXlstGroup) {
+    public ScheduleCrossListDefinition100PutRequest withKeyblocXlstGroup(String keyblocXlstGroup) {
         this.keyblocXlstGroup = keyblocXlstGroup;
         return this;
     }
@@ -85,7 +85,7 @@ public class ScheduleCrossListDefinition100PutRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public Object getKeyblocTermCode() {
+    public String getKeyblocTermCode() {
         return keyblocTermCode;
     }
 
@@ -96,11 +96,11 @@ public class ScheduleCrossListDefinition100PutRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public void setKeyblocTermCode(Object keyblocTermCode) {
+    public void setKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
     }
 
-    public ScheduleCrossListDefinition100PutRequest withKeyblocTermCode(Object keyblocTermCode) {
+    public ScheduleCrossListDefinition100PutRequest withKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
         return this;
     }

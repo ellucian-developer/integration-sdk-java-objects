@@ -28,7 +28,7 @@ public class AlternatePersonalIdentificationNumbers100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * From Term
      * <p>
@@ -37,7 +37,7 @@ public class AlternatePersonalIdentificationNumbers100GetRequest {
      */
     @JsonProperty("termCode")
     @JsonPropertyDescription("Lineage reference object : termCode, Lookup lineage reference object : stvterm")
-    private Object termCode;
+    private String termCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -48,7 +48,7 @@ public class AlternatePersonalIdentificationNumbers100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -59,11 +59,11 @@ public class AlternatePersonalIdentificationNumbers100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public AlternatePersonalIdentificationNumbers100GetRequest withId(Object id) {
+    public AlternatePersonalIdentificationNumbers100GetRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -75,7 +75,7 @@ public class AlternatePersonalIdentificationNumbers100GetRequest {
      * 
      */
     @JsonProperty("termCode")
-    public Object getTermCode() {
+    public String getTermCode() {
         return termCode;
     }
 
@@ -86,11 +86,11 @@ public class AlternatePersonalIdentificationNumbers100GetRequest {
      * 
      */
     @JsonProperty("termCode")
-    public void setTermCode(Object termCode) {
+    public void setTermCode(String termCode) {
         this.termCode = termCode;
     }
 
-    public AlternatePersonalIdentificationNumbers100GetRequest withTermCode(Object termCode) {
+    public AlternatePersonalIdentificationNumbers100GetRequest withTermCode(String termCode) {
         this.termCode = termCode;
         return this;
     }

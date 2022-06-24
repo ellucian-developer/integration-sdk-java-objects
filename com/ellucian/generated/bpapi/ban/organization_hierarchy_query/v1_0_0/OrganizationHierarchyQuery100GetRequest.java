@@ -28,7 +28,7 @@ public class OrganizationHierarchyQuery100GetRequest {
      */
     @JsonProperty("ftxorghCoasCode")
     @JsonPropertyDescription("Lineage reference object : ftxorghCoasCode, Lookup lineage reference object : ftvcoas")
-    private Object ftxorghCoasCode;
+    private String ftxorghCoasCode;
     /**
      * Organization
      * <p>
@@ -37,7 +37,7 @@ public class OrganizationHierarchyQuery100GetRequest {
      */
     @JsonProperty("ftxorghOrgnCode")
     @JsonPropertyDescription("Lineage reference object : ftxorghOrgnCode")
-    private Object ftxorghOrgnCode;
+    private String ftxorghOrgnCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -48,7 +48,7 @@ public class OrganizationHierarchyQuery100GetRequest {
      * 
      */
     @JsonProperty("ftxorghCoasCode")
-    public Object getFtxorghCoasCode() {
+    public String getFtxorghCoasCode() {
         return ftxorghCoasCode;
     }
 
@@ -59,11 +59,11 @@ public class OrganizationHierarchyQuery100GetRequest {
      * 
      */
     @JsonProperty("ftxorghCoasCode")
-    public void setFtxorghCoasCode(Object ftxorghCoasCode) {
+    public void setFtxorghCoasCode(String ftxorghCoasCode) {
         this.ftxorghCoasCode = ftxorghCoasCode;
     }
 
-    public OrganizationHierarchyQuery100GetRequest withFtxorghCoasCode(Object ftxorghCoasCode) {
+    public OrganizationHierarchyQuery100GetRequest withFtxorghCoasCode(String ftxorghCoasCode) {
         this.ftxorghCoasCode = ftxorghCoasCode;
         return this;
     }
@@ -75,7 +75,7 @@ public class OrganizationHierarchyQuery100GetRequest {
      * 
      */
     @JsonProperty("ftxorghOrgnCode")
-    public Object getFtxorghOrgnCode() {
+    public String getFtxorghOrgnCode() {
         return ftxorghOrgnCode;
     }
 
@@ -86,11 +86,11 @@ public class OrganizationHierarchyQuery100GetRequest {
      * 
      */
     @JsonProperty("ftxorghOrgnCode")
-    public void setFtxorghOrgnCode(Object ftxorghOrgnCode) {
+    public void setFtxorghOrgnCode(String ftxorghOrgnCode) {
         this.ftxorghOrgnCode = ftxorghOrgnCode;
     }
 
-    public OrganizationHierarchyQuery100GetRequest withFtxorghOrgnCode(Object ftxorghOrgnCode) {
+    public OrganizationHierarchyQuery100GetRequest withFtxorghOrgnCode(String ftxorghOrgnCode) {
         this.ftxorghOrgnCode = ftxorghOrgnCode;
         return this;
     }

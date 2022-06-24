@@ -206,7 +206,7 @@ public class PositionDefinitionComments100PutRequest {
      */
     @JsonProperty("posn")
     @JsonPropertyDescription("Lineage reference object : posn")
-    private Object posn;
+    private String posn;
     /**
      * Salary Step
      * <p>
@@ -869,7 +869,7 @@ public class PositionDefinitionComments100PutRequest {
      * 
      */
     @JsonProperty("posn")
-    public Object getPosn() {
+    public String getPosn() {
         return posn;
     }
 
@@ -881,11 +881,11 @@ public class PositionDefinitionComments100PutRequest {
      * 
      */
     @JsonProperty("posn")
-    public void setPosn(Object posn) {
+    public void setPosn(String posn) {
         this.posn = posn;
     }
 
-    public PositionDefinitionComments100PutRequest withPosn(Object posn) {
+    public PositionDefinitionComments100PutRequest withPosn(String posn) {
         this.posn = posn;
         return this;
     }

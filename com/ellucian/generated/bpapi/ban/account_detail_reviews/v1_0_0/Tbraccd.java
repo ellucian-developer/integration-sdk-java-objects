@@ -16,6 +16,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "srceCode",
+    "taxMethod",
     "documentNumber",
     "paymentAmount",
     "balance",
@@ -28,7 +29,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "period",
     "stspKeySequence",
     "aidyCode",
-    "currCodeV",
     "feedDate",
     "entryDate",
     "cshrEndDate",
@@ -38,6 +38,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "origChgInd",
     "feedDocCode",
     "sessionNumber",
+    "taxAmount",
     "cpdtInd",
     "user",
     "effectiveDate",
@@ -57,6 +58,14 @@ public class Tbraccd {
     @JsonProperty("srceCode")
     @JsonPropertyDescription("Lineage reference object : TBRACCD_SRCE_CODE, Lookup lineage reference object : ttvsrce")
     private String srceCode;
+    /**
+     * Tax Method
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("taxMethod")
+    private String taxMethod;
     /**
      * Document
      * <p>
@@ -164,16 +173,6 @@ public class Tbraccd {
     @JsonPropertyDescription("Lineage reference object : TBRACCD_AIDY_CODE")
     private String aidyCode;
     /**
-     * Currency
-     * <p>
-     * Lookup lineage reference object : gtvcurr
-     * (Required)
-     * 
-     */
-    @JsonProperty("currCodeV")
-    @JsonPropertyDescription("Lookup lineage reference object : gtvcurr")
-    private String currCodeV;
-    /**
      * Feed Date
      * <p>
      * Lineage reference object : TBRACCD_FEED_DATE
@@ -254,6 +253,14 @@ public class Tbraccd {
     @JsonPropertyDescription("Lineage reference object : TBRACCD_SESSION_NUMBER")
     private Double sessionNumber;
     /**
+     * Tax
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("taxAmount")
+    private Double taxAmount;
+    /**
      * Lineage reference object : TBRACCD_CPDT_IND
      * 
      */
@@ -328,6 +335,33 @@ public class Tbraccd {
 
     public Tbraccd withSrceCode(String srceCode) {
         this.srceCode = srceCode;
+        return this;
+    }
+
+    /**
+     * Tax Method
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("taxMethod")
+    public String getTaxMethod() {
+        return taxMethod;
+    }
+
+    /**
+     * Tax Method
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("taxMethod")
+    public void setTaxMethod(String taxMethod) {
+        this.taxMethod = taxMethod;
+    }
+
+    public Tbraccd withTaxMethod(String taxMethod) {
+        this.taxMethod = taxMethod;
         return this;
     }
 
@@ -656,35 +690,6 @@ public class Tbraccd {
     }
 
     /**
-     * Currency
-     * <p>
-     * Lookup lineage reference object : gtvcurr
-     * (Required)
-     * 
-     */
-    @JsonProperty("currCodeV")
-    public String getCurrCodeV() {
-        return currCodeV;
-    }
-
-    /**
-     * Currency
-     * <p>
-     * Lookup lineage reference object : gtvcurr
-     * (Required)
-     * 
-     */
-    @JsonProperty("currCodeV")
-    public void setCurrCodeV(String currCodeV) {
-        this.currCodeV = currCodeV;
-    }
-
-    public Tbraccd withCurrCodeV(String currCodeV) {
-        this.currCodeV = currCodeV;
-        return this;
-    }
-
-    /**
      * Feed Date
      * <p>
      * Lineage reference object : TBRACCD_FEED_DATE
@@ -926,6 +931,33 @@ public class Tbraccd {
     }
 
     /**
+     * Tax
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("taxAmount")
+    public Double getTaxAmount() {
+        return taxAmount;
+    }
+
+    /**
+     * Tax
+     * <p>
+     * 
+     * 
+     */
+    @JsonProperty("taxAmount")
+    public void setTaxAmount(Double taxAmount) {
+        this.taxAmount = taxAmount;
+    }
+
+    public Tbraccd withTaxAmount(Double taxAmount) {
+        this.taxAmount = taxAmount;
+        return this;
+    }
+
+    /**
      * Lineage reference object : TBRACCD_CPDT_IND
      * 
      */
@@ -1085,6 +1117,10 @@ public class Tbraccd {
         sb.append('=');
         sb.append(((this.srceCode == null)?"<null>":this.srceCode));
         sb.append(',');
+        sb.append("taxMethod");
+        sb.append('=');
+        sb.append(((this.taxMethod == null)?"<null>":this.taxMethod));
+        sb.append(',');
         sb.append("documentNumber");
         sb.append('=');
         sb.append(((this.documentNumber == null)?"<null>":this.documentNumber));
@@ -1133,10 +1169,6 @@ public class Tbraccd {
         sb.append('=');
         sb.append(((this.aidyCode == null)?"<null>":this.aidyCode));
         sb.append(',');
-        sb.append("currCodeV");
-        sb.append('=');
-        sb.append(((this.currCodeV == null)?"<null>":this.currCodeV));
-        sb.append(',');
         sb.append("feedDate");
         sb.append('=');
         sb.append(((this.feedDate == null)?"<null>":this.feedDate));
@@ -1172,6 +1204,10 @@ public class Tbraccd {
         sb.append("sessionNumber");
         sb.append('=');
         sb.append(((this.sessionNumber == null)?"<null>":this.sessionNumber));
+        sb.append(',');
+        sb.append("taxAmount");
+        sb.append('=');
+        sb.append(((this.taxAmount == null)?"<null>":this.taxAmount));
         sb.append(',');
         sb.append("cpdtInd");
         sb.append('=');
@@ -1209,6 +1245,7 @@ public class Tbraccd {
     public int hashCode() {
         int result = 1;
         result = ((result* 31)+((this.srceCode == null)? 0 :this.srceCode.hashCode()));
+        result = ((result* 31)+((this.taxMethod == null)? 0 :this.taxMethod.hashCode()));
         result = ((result* 31)+((this.documentNumber == null)? 0 :this.documentNumber.hashCode()));
         result = ((result* 31)+((this.paymentAmount == null)? 0 :this.paymentAmount.hashCode()));
         result = ((result* 31)+((this.balance == null)? 0 :this.balance.hashCode()));
@@ -1221,7 +1258,6 @@ public class Tbraccd {
         result = ((result* 31)+((this.period == null)? 0 :this.period.hashCode()));
         result = ((result* 31)+((this.stspKeySequence == null)? 0 :this.stspKeySequence.hashCode()));
         result = ((result* 31)+((this.aidyCode == null)? 0 :this.aidyCode.hashCode()));
-        result = ((result* 31)+((this.currCodeV == null)? 0 :this.currCodeV.hashCode()));
         result = ((result* 31)+((this.feedDate == null)? 0 :this.feedDate.hashCode()));
         result = ((result* 31)+((this.entryDate == null)? 0 :this.entryDate.hashCode()));
         result = ((result* 31)+((this.cshrEndDate == null)? 0 :this.cshrEndDate.hashCode()));
@@ -1232,6 +1268,7 @@ public class Tbraccd {
         result = ((result* 31)+((this.feedDocCode == null)? 0 :this.feedDocCode.hashCode()));
         result = ((result* 31)+((this.sessionNumber == null)? 0 :this.sessionNumber.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
+        result = ((result* 31)+((this.taxAmount == null)? 0 :this.taxAmount.hashCode()));
         result = ((result* 31)+((this.cpdtInd == null)? 0 :this.cpdtInd.hashCode()));
         result = ((result* 31)+((this.user == null)? 0 :this.user.hashCode()));
         result = ((result* 31)+((this.effectiveDate == null)? 0 :this.effectiveDate.hashCode()));
@@ -1249,7 +1286,7 @@ public class Tbraccd {
             return false;
         }
         Tbraccd rhs = ((Tbraccd) other);
-        return ((((((((((((((((((((((((((((((this.srceCode == rhs.srceCode)||((this.srceCode!= null)&&this.srceCode.equals(rhs.srceCode)))&&((this.documentNumber == rhs.documentNumber)||((this.documentNumber!= null)&&this.documentNumber.equals(rhs.documentNumber))))&&((this.paymentAmount == rhs.paymentAmount)||((this.paymentAmount!= null)&&this.paymentAmount.equals(rhs.paymentAmount))))&&((this.balance == rhs.balance)||((this.balance!= null)&&this.balance.equals(rhs.balance))))&&((this.acctFeedInd == rhs.acctFeedInd)||((this.acctFeedInd!= null)&&this.acctFeedInd.equals(rhs.acctFeedInd))))&&((this.invoiceNumber == rhs.invoiceNumber)||((this.invoiceNumber!= null)&&this.invoiceNumber.equals(rhs.invoiceNumber))))&&((this.transDate == rhs.transDate)||((this.transDate!= null)&&this.transDate.equals(rhs.transDate))))&&((this.chargeAmount == rhs.chargeAmount)||((this.chargeAmount!= null)&&this.chargeAmount.equals(rhs.chargeAmount))))&&((this.tranNumberPaid == rhs.tranNumberPaid)||((this.tranNumberPaid!= null)&&this.tranNumberPaid.equals(rhs.tranNumberPaid))))&&((this.receiptNumber == rhs.receiptNumber)||((this.receiptNumber!= null)&&this.receiptNumber.equals(rhs.receiptNumber))))&&((this.period == rhs.period)||((this.period!= null)&&this.period.equals(rhs.period))))&&((this.stspKeySequence == rhs.stspKeySequence)||((this.stspKeySequence!= null)&&this.stspKeySequence.equals(rhs.stspKeySequence))))&&((this.aidyCode == rhs.aidyCode)||((this.aidyCode!= null)&&this.aidyCode.equals(rhs.aidyCode))))&&((this.currCodeV == rhs.currCodeV)||((this.currCodeV!= null)&&this.currCodeV.equals(rhs.currCodeV))))&&((this.feedDate == rhs.feedDate)||((this.feedDate!= null)&&this.feedDate.equals(rhs.feedDate))))&&((this.entryDate == rhs.entryDate)||((this.entryDate!= null)&&this.entryDate.equals(rhs.entryDate))))&&((this.cshrEndDate == rhs.cshrEndDate)||((this.cshrEndDate!= null)&&this.cshrEndDate.equals(rhs.cshrEndDate))))&&((this.tranNumber == rhs.tranNumber)||((this.tranNumber!= null)&&this.tranNumber.equals(rhs.tranNumber))))&&((this.invNumberPaid == rhs.invNumberPaid)||((this.invNumberPaid!= null)&&this.invNumberPaid.equals(rhs.invNumberPaid))))&&((this.detailCode == rhs.detailCode)||((this.detailCode!= null)&&this.detailCode.equals(rhs.detailCode))))&&((this.origChgInd == rhs.origChgInd)||((this.origChgInd!= null)&&this.origChgInd.equals(rhs.origChgInd))))&&((this.feedDocCode == rhs.feedDocCode)||((this.feedDocCode!= null)&&this.feedDocCode.equals(rhs.feedDocCode))))&&((this.sessionNumber == rhs.sessionNumber)||((this.sessionNumber!= null)&&this.sessionNumber.equals(rhs.sessionNumber))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.cpdtInd == rhs.cpdtInd)||((this.cpdtInd!= null)&&this.cpdtInd.equals(rhs.cpdtInd))))&&((this.user == rhs.user)||((this.user!= null)&&this.user.equals(rhs.user))))&&((this.effectiveDate == rhs.effectiveDate)||((this.effectiveDate!= null)&&this.effectiveDate.equals(rhs.effectiveDate))))&&((this.desc == rhs.desc)||((this.desc!= null)&&this.desc.equals(rhs.desc))))&&((this.termCode == rhs.termCode)||((this.termCode!= null)&&this.termCode.equals(rhs.termCode))));
+        return (((((((((((((((((((((((((((((((this.srceCode == rhs.srceCode)||((this.srceCode!= null)&&this.srceCode.equals(rhs.srceCode)))&&((this.taxMethod == rhs.taxMethod)||((this.taxMethod!= null)&&this.taxMethod.equals(rhs.taxMethod))))&&((this.documentNumber == rhs.documentNumber)||((this.documentNumber!= null)&&this.documentNumber.equals(rhs.documentNumber))))&&((this.paymentAmount == rhs.paymentAmount)||((this.paymentAmount!= null)&&this.paymentAmount.equals(rhs.paymentAmount))))&&((this.balance == rhs.balance)||((this.balance!= null)&&this.balance.equals(rhs.balance))))&&((this.acctFeedInd == rhs.acctFeedInd)||((this.acctFeedInd!= null)&&this.acctFeedInd.equals(rhs.acctFeedInd))))&&((this.invoiceNumber == rhs.invoiceNumber)||((this.invoiceNumber!= null)&&this.invoiceNumber.equals(rhs.invoiceNumber))))&&((this.transDate == rhs.transDate)||((this.transDate!= null)&&this.transDate.equals(rhs.transDate))))&&((this.chargeAmount == rhs.chargeAmount)||((this.chargeAmount!= null)&&this.chargeAmount.equals(rhs.chargeAmount))))&&((this.tranNumberPaid == rhs.tranNumberPaid)||((this.tranNumberPaid!= null)&&this.tranNumberPaid.equals(rhs.tranNumberPaid))))&&((this.receiptNumber == rhs.receiptNumber)||((this.receiptNumber!= null)&&this.receiptNumber.equals(rhs.receiptNumber))))&&((this.period == rhs.period)||((this.period!= null)&&this.period.equals(rhs.period))))&&((this.stspKeySequence == rhs.stspKeySequence)||((this.stspKeySequence!= null)&&this.stspKeySequence.equals(rhs.stspKeySequence))))&&((this.aidyCode == rhs.aidyCode)||((this.aidyCode!= null)&&this.aidyCode.equals(rhs.aidyCode))))&&((this.feedDate == rhs.feedDate)||((this.feedDate!= null)&&this.feedDate.equals(rhs.feedDate))))&&((this.entryDate == rhs.entryDate)||((this.entryDate!= null)&&this.entryDate.equals(rhs.entryDate))))&&((this.cshrEndDate == rhs.cshrEndDate)||((this.cshrEndDate!= null)&&this.cshrEndDate.equals(rhs.cshrEndDate))))&&((this.tranNumber == rhs.tranNumber)||((this.tranNumber!= null)&&this.tranNumber.equals(rhs.tranNumber))))&&((this.invNumberPaid == rhs.invNumberPaid)||((this.invNumberPaid!= null)&&this.invNumberPaid.equals(rhs.invNumberPaid))))&&((this.detailCode == rhs.detailCode)||((this.detailCode!= null)&&this.detailCode.equals(rhs.detailCode))))&&((this.origChgInd == rhs.origChgInd)||((this.origChgInd!= null)&&this.origChgInd.equals(rhs.origChgInd))))&&((this.feedDocCode == rhs.feedDocCode)||((this.feedDocCode!= null)&&this.feedDocCode.equals(rhs.feedDocCode))))&&((this.sessionNumber == rhs.sessionNumber)||((this.sessionNumber!= null)&&this.sessionNumber.equals(rhs.sessionNumber))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.taxAmount == rhs.taxAmount)||((this.taxAmount!= null)&&this.taxAmount.equals(rhs.taxAmount))))&&((this.cpdtInd == rhs.cpdtInd)||((this.cpdtInd!= null)&&this.cpdtInd.equals(rhs.cpdtInd))))&&((this.user == rhs.user)||((this.user!= null)&&this.user.equals(rhs.user))))&&((this.effectiveDate == rhs.effectiveDate)||((this.effectiveDate!= null)&&this.effectiveDate.equals(rhs.effectiveDate))))&&((this.desc == rhs.desc)||((this.desc!= null)&&this.desc.equals(rhs.desc))))&&((this.termCode == rhs.termCode)||((this.termCode!= null)&&this.termCode.equals(rhs.termCode))));
     }
 
 }

@@ -29,7 +29,7 @@ public class SorcmjrCtrl {
      */
     @JsonProperty("majrTotermDisp")
     @JsonPropertyDescription("Lineage reference object : majrTotermDisp")
-    private Object majrTotermDisp;
+    private String majrTotermDisp;
     /**
      * From Term
      * <p>
@@ -38,14 +38,14 @@ public class SorcmjrCtrl {
      */
     @JsonProperty("majrFrtermDisp")
     @JsonPropertyDescription("Lineage reference object : majrFrtermDisp, Lookup lineage reference object : sorcmjr,stvterm")
-    private Object majrFrtermDisp;
+    private String majrFrtermDisp;
     /**
      * Lineage reference object : cmjrMultipleMsg
      * 
      */
     @JsonProperty("cmjrMultipleMsg")
     @JsonPropertyDescription("Lineage reference object : cmjrMultipleMsg")
-    private Object cmjrMultipleMsg;
+    private String cmjrMultipleMsg;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -56,7 +56,7 @@ public class SorcmjrCtrl {
      * 
      */
     @JsonProperty("majrTotermDisp")
-    public Object getMajrTotermDisp() {
+    public String getMajrTotermDisp() {
         return majrTotermDisp;
     }
 
@@ -67,11 +67,11 @@ public class SorcmjrCtrl {
      * 
      */
     @JsonProperty("majrTotermDisp")
-    public void setMajrTotermDisp(Object majrTotermDisp) {
+    public void setMajrTotermDisp(String majrTotermDisp) {
         this.majrTotermDisp = majrTotermDisp;
     }
 
-    public SorcmjrCtrl withMajrTotermDisp(Object majrTotermDisp) {
+    public SorcmjrCtrl withMajrTotermDisp(String majrTotermDisp) {
         this.majrTotermDisp = majrTotermDisp;
         return this;
     }
@@ -83,7 +83,7 @@ public class SorcmjrCtrl {
      * 
      */
     @JsonProperty("majrFrtermDisp")
-    public Object getMajrFrtermDisp() {
+    public String getMajrFrtermDisp() {
         return majrFrtermDisp;
     }
 
@@ -94,11 +94,11 @@ public class SorcmjrCtrl {
      * 
      */
     @JsonProperty("majrFrtermDisp")
-    public void setMajrFrtermDisp(Object majrFrtermDisp) {
+    public void setMajrFrtermDisp(String majrFrtermDisp) {
         this.majrFrtermDisp = majrFrtermDisp;
     }
 
-    public SorcmjrCtrl withMajrFrtermDisp(Object majrFrtermDisp) {
+    public SorcmjrCtrl withMajrFrtermDisp(String majrFrtermDisp) {
         this.majrFrtermDisp = majrFrtermDisp;
         return this;
     }
@@ -108,7 +108,7 @@ public class SorcmjrCtrl {
      * 
      */
     @JsonProperty("cmjrMultipleMsg")
-    public Object getCmjrMultipleMsg() {
+    public String getCmjrMultipleMsg() {
         return cmjrMultipleMsg;
     }
 
@@ -117,11 +117,11 @@ public class SorcmjrCtrl {
      * 
      */
     @JsonProperty("cmjrMultipleMsg")
-    public void setCmjrMultipleMsg(Object cmjrMultipleMsg) {
+    public void setCmjrMultipleMsg(String cmjrMultipleMsg) {
         this.cmjrMultipleMsg = cmjrMultipleMsg;
     }
 
-    public SorcmjrCtrl withCmjrMultipleMsg(Object cmjrMultipleMsg) {
+    public SorcmjrCtrl withCmjrMultipleMsg(String cmjrMultipleMsg) {
         this.cmjrMultipleMsg = cmjrMultipleMsg;
         return this;
     }

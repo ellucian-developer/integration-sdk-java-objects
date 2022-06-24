@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.electronic_personnel_action_transaction.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -32,7 +33,7 @@ public class ElectronicPersonnelActionTransaction100GetRequest {
      */
     @JsonProperty("proxyForUserId")
     @JsonPropertyDescription("Lineage reference object : proxyForUserId")
-    private Object proxyForUserId;
+    private String proxyForUserId;
     /**
      * Approval Category
      * <p>
@@ -41,7 +42,7 @@ public class ElectronicPersonnelActionTransaction100GetRequest {
      */
     @JsonProperty("acatCode")
     @JsonPropertyDescription("Lineage reference object : acatCode")
-    private Object acatCode;
+    private String acatCode;
     /**
      * Approval Type
      * <p>
@@ -50,7 +51,7 @@ public class ElectronicPersonnelActionTransaction100GetRequest {
      */
     @JsonProperty("aptyCode")
     @JsonPropertyDescription("Lineage reference object : aptyCode, Lookup lineage reference object : ntracat,ntvapty")
-    private Object aptyCode;
+    private String aptyCode;
     /**
      * ID
      * <p>
@@ -59,7 +60,7 @@ public class ElectronicPersonnelActionTransaction100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Transaction
      * <p>
@@ -68,7 +69,7 @@ public class ElectronicPersonnelActionTransaction100GetRequest {
      */
     @JsonProperty("transNo")
     @JsonPropertyDescription("Lineage reference object : transNo")
-    private Object transNo;
+    private Double transNo;
     /**
      * Query Date
      * <p>
@@ -77,7 +78,7 @@ public class ElectronicPersonnelActionTransaction100GetRequest {
      */
     @JsonProperty("effectiveDate")
     @JsonPropertyDescription("Lineage reference object : effectiveDate")
-    private Object effectiveDate;
+    private Date effectiveDate;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -88,7 +89,7 @@ public class ElectronicPersonnelActionTransaction100GetRequest {
      * 
      */
     @JsonProperty("proxyForUserId")
-    public Object getProxyForUserId() {
+    public String getProxyForUserId() {
         return proxyForUserId;
     }
 
@@ -99,11 +100,11 @@ public class ElectronicPersonnelActionTransaction100GetRequest {
      * 
      */
     @JsonProperty("proxyForUserId")
-    public void setProxyForUserId(Object proxyForUserId) {
+    public void setProxyForUserId(String proxyForUserId) {
         this.proxyForUserId = proxyForUserId;
     }
 
-    public ElectronicPersonnelActionTransaction100GetRequest withProxyForUserId(Object proxyForUserId) {
+    public ElectronicPersonnelActionTransaction100GetRequest withProxyForUserId(String proxyForUserId) {
         this.proxyForUserId = proxyForUserId;
         return this;
     }
@@ -115,7 +116,7 @@ public class ElectronicPersonnelActionTransaction100GetRequest {
      * 
      */
     @JsonProperty("acatCode")
-    public Object getAcatCode() {
+    public String getAcatCode() {
         return acatCode;
     }
 
@@ -126,11 +127,11 @@ public class ElectronicPersonnelActionTransaction100GetRequest {
      * 
      */
     @JsonProperty("acatCode")
-    public void setAcatCode(Object acatCode) {
+    public void setAcatCode(String acatCode) {
         this.acatCode = acatCode;
     }
 
-    public ElectronicPersonnelActionTransaction100GetRequest withAcatCode(Object acatCode) {
+    public ElectronicPersonnelActionTransaction100GetRequest withAcatCode(String acatCode) {
         this.acatCode = acatCode;
         return this;
     }
@@ -142,7 +143,7 @@ public class ElectronicPersonnelActionTransaction100GetRequest {
      * 
      */
     @JsonProperty("aptyCode")
-    public Object getAptyCode() {
+    public String getAptyCode() {
         return aptyCode;
     }
 
@@ -153,11 +154,11 @@ public class ElectronicPersonnelActionTransaction100GetRequest {
      * 
      */
     @JsonProperty("aptyCode")
-    public void setAptyCode(Object aptyCode) {
+    public void setAptyCode(String aptyCode) {
         this.aptyCode = aptyCode;
     }
 
-    public ElectronicPersonnelActionTransaction100GetRequest withAptyCode(Object aptyCode) {
+    public ElectronicPersonnelActionTransaction100GetRequest withAptyCode(String aptyCode) {
         this.aptyCode = aptyCode;
         return this;
     }
@@ -169,7 +170,7 @@ public class ElectronicPersonnelActionTransaction100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -180,11 +181,11 @@ public class ElectronicPersonnelActionTransaction100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public ElectronicPersonnelActionTransaction100GetRequest withId(Object id) {
+    public ElectronicPersonnelActionTransaction100GetRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -196,7 +197,7 @@ public class ElectronicPersonnelActionTransaction100GetRequest {
      * 
      */
     @JsonProperty("transNo")
-    public Object getTransNo() {
+    public Double getTransNo() {
         return transNo;
     }
 
@@ -207,11 +208,11 @@ public class ElectronicPersonnelActionTransaction100GetRequest {
      * 
      */
     @JsonProperty("transNo")
-    public void setTransNo(Object transNo) {
+    public void setTransNo(Double transNo) {
         this.transNo = transNo;
     }
 
-    public ElectronicPersonnelActionTransaction100GetRequest withTransNo(Object transNo) {
+    public ElectronicPersonnelActionTransaction100GetRequest withTransNo(Double transNo) {
         this.transNo = transNo;
         return this;
     }
@@ -223,7 +224,7 @@ public class ElectronicPersonnelActionTransaction100GetRequest {
      * 
      */
     @JsonProperty("effectiveDate")
-    public Object getEffectiveDate() {
+    public Date getEffectiveDate() {
         return effectiveDate;
     }
 
@@ -234,11 +235,11 @@ public class ElectronicPersonnelActionTransaction100GetRequest {
      * 
      */
     @JsonProperty("effectiveDate")
-    public void setEffectiveDate(Object effectiveDate) {
+    public void setEffectiveDate(Date effectiveDate) {
         this.effectiveDate = effectiveDate;
     }
 
-    public ElectronicPersonnelActionTransaction100GetRequest withEffectiveDate(Object effectiveDate) {
+    public ElectronicPersonnelActionTransaction100GetRequest withEffectiveDate(Date effectiveDate) {
         this.effectiveDate = effectiveDate;
         return this;
     }

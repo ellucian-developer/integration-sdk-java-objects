@@ -57,7 +57,7 @@ public class GrantTransactionDetail100GetRequest {
      */
     @JsonProperty("keyblckFundCode")
     @JsonPropertyDescription("Lineage reference object : keyblckFundCode")
-    private Object keyblckFundCode;
+    private String keyblckFundCode;
     /**
      * Location
      * <p>
@@ -66,7 +66,7 @@ public class GrantTransactionDetail100GetRequest {
      */
     @JsonProperty("keyblckLocnCode")
     @JsonPropertyDescription("Lineage reference object : keyblckLocnCode")
-    private Object keyblckLocnCode;
+    private String keyblckLocnCode;
     /**
      * COA
      * <p>
@@ -76,7 +76,7 @@ public class GrantTransactionDetail100GetRequest {
      */
     @JsonProperty("keyblckCoasCode")
     @JsonPropertyDescription("Lineage reference object : keyblckCoasCode, Lookup lineage reference object : ftvcoas")
-    private Object keyblckCoasCode;
+    private String keyblckCoasCode;
     /**
      * Year
      * <p>
@@ -85,7 +85,7 @@ public class GrantTransactionDetail100GetRequest {
      */
     @JsonProperty("keyblckGrntYr")
     @JsonPropertyDescription("Lineage reference object : keyblckGrntYr")
-    private Object keyblckGrntYr;
+    private String keyblckGrntYr;
     /**
      * Field
      * <p>
@@ -103,7 +103,7 @@ public class GrantTransactionDetail100GetRequest {
      */
     @JsonProperty("keyblckActvCode")
     @JsonPropertyDescription("Lineage reference object : keyblckActvCode")
-    private Object keyblckActvCode;
+    private String keyblckActvCode;
     /**
      * Location
      * <p>
@@ -148,7 +148,7 @@ public class GrantTransactionDetail100GetRequest {
      */
     @JsonProperty("keyblckCmtType")
     @JsonPropertyDescription("Lineage reference object : keyblckCmtType")
-    private Object keyblckCmtType;
+    private String keyblckCmtType;
     /**
      * Account
      * <p>
@@ -157,7 +157,7 @@ public class GrantTransactionDetail100GetRequest {
      */
     @JsonProperty("keyblckAcctCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAcctCode")
-    private Object keyblckAcctCode;
+    private String keyblckAcctCode;
     /**
      * Program
      * <p>
@@ -202,7 +202,7 @@ public class GrantTransactionDetail100GetRequest {
      */
     @JsonProperty("keyblckOrgnCode")
     @JsonPropertyDescription("Lineage reference object : keyblckOrgnCode")
-    private Object keyblckOrgnCode;
+    private String keyblckOrgnCode;
     /**
      * Increase(+) or Decrease(-)
      * <p>
@@ -220,7 +220,7 @@ public class GrantTransactionDetail100GetRequest {
      */
     @JsonProperty("keyblckProgCode")
     @JsonPropertyDescription("Lineage reference object : keyblckProgCode")
-    private Object keyblckProgCode;
+    private String keyblckProgCode;
     /**
      * Index
      * <p>
@@ -229,7 +229,7 @@ public class GrantTransactionDetail100GetRequest {
      */
     @JsonProperty("keyblckAcciCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAcciCode, Lookup lineage reference object : ftvacci")
-    private Object keyblckAcciCode;
+    private String keyblckAcciCode;
     /**
      * Document
      * <p>
@@ -256,14 +256,14 @@ public class GrantTransactionDetail100GetRequest {
      */
     @JsonProperty("keyblckDateTo")
     @JsonPropertyDescription("Lineage reference object : keyblckDateTo")
-    private Object keyblckDateTo;
+    private Date keyblckDateTo;
     /**
      * Lineage reference object : poolCheckbox
      * 
      */
     @JsonProperty("poolCheckbox")
     @JsonPropertyDescription("Lineage reference object : poolCheckbox")
-    private Object poolCheckbox;
+    private String poolCheckbox;
     /**
      * Period
      * <p>
@@ -272,7 +272,7 @@ public class GrantTransactionDetail100GetRequest {
      */
     @JsonProperty("keyblckPeriod")
     @JsonPropertyDescription("Lineage reference object : keyblckPeriod")
-    private Object keyblckPeriod;
+    private String keyblckPeriod;
     /**
      * Description
      * <p>
@@ -299,7 +299,7 @@ public class GrantTransactionDetail100GetRequest {
      */
     @JsonProperty("keyblckDateFrom")
     @JsonPropertyDescription("Lineage reference object : keyblckDateFrom")
-    private Object keyblckDateFrom;
+    private Date keyblckDateFrom;
     /**
      * Type
      * <p>
@@ -317,7 +317,7 @@ public class GrantTransactionDetail100GetRequest {
      */
     @JsonProperty("keyblckGrntCode")
     @JsonPropertyDescription("Lineage reference object : keyblckGrntCode")
-    private Object keyblckGrntCode;
+    private String keyblckGrntCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -328,7 +328,7 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckFundCode")
-    public Object getKeyblckFundCode() {
+    public String getKeyblckFundCode() {
         return keyblckFundCode;
     }
 
@@ -339,11 +339,11 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckFundCode")
-    public void setKeyblckFundCode(Object keyblckFundCode) {
+    public void setKeyblckFundCode(String keyblckFundCode) {
         this.keyblckFundCode = keyblckFundCode;
     }
 
-    public GrantTransactionDetail100GetRequest withKeyblckFundCode(Object keyblckFundCode) {
+    public GrantTransactionDetail100GetRequest withKeyblckFundCode(String keyblckFundCode) {
         this.keyblckFundCode = keyblckFundCode;
         return this;
     }
@@ -355,7 +355,7 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckLocnCode")
-    public Object getKeyblckLocnCode() {
+    public String getKeyblckLocnCode() {
         return keyblckLocnCode;
     }
 
@@ -366,11 +366,11 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckLocnCode")
-    public void setKeyblckLocnCode(Object keyblckLocnCode) {
+    public void setKeyblckLocnCode(String keyblckLocnCode) {
         this.keyblckLocnCode = keyblckLocnCode;
     }
 
-    public GrantTransactionDetail100GetRequest withKeyblckLocnCode(Object keyblckLocnCode) {
+    public GrantTransactionDetail100GetRequest withKeyblckLocnCode(String keyblckLocnCode) {
         this.keyblckLocnCode = keyblckLocnCode;
         return this;
     }
@@ -383,7 +383,7 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckCoasCode")
-    public Object getKeyblckCoasCode() {
+    public String getKeyblckCoasCode() {
         return keyblckCoasCode;
     }
 
@@ -395,11 +395,11 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckCoasCode")
-    public void setKeyblckCoasCode(Object keyblckCoasCode) {
+    public void setKeyblckCoasCode(String keyblckCoasCode) {
         this.keyblckCoasCode = keyblckCoasCode;
     }
 
-    public GrantTransactionDetail100GetRequest withKeyblckCoasCode(Object keyblckCoasCode) {
+    public GrantTransactionDetail100GetRequest withKeyblckCoasCode(String keyblckCoasCode) {
         this.keyblckCoasCode = keyblckCoasCode;
         return this;
     }
@@ -411,7 +411,7 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckGrntYr")
-    public Object getKeyblckGrntYr() {
+    public String getKeyblckGrntYr() {
         return keyblckGrntYr;
     }
 
@@ -422,11 +422,11 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckGrntYr")
-    public void setKeyblckGrntYr(Object keyblckGrntYr) {
+    public void setKeyblckGrntYr(String keyblckGrntYr) {
         this.keyblckGrntYr = keyblckGrntYr;
     }
 
-    public GrantTransactionDetail100GetRequest withKeyblckGrntYr(Object keyblckGrntYr) {
+    public GrantTransactionDetail100GetRequest withKeyblckGrntYr(String keyblckGrntYr) {
         this.keyblckGrntYr = keyblckGrntYr;
         return this;
     }
@@ -465,7 +465,7 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckActvCode")
-    public Object getKeyblckActvCode() {
+    public String getKeyblckActvCode() {
         return keyblckActvCode;
     }
 
@@ -476,11 +476,11 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckActvCode")
-    public void setKeyblckActvCode(Object keyblckActvCode) {
+    public void setKeyblckActvCode(String keyblckActvCode) {
         this.keyblckActvCode = keyblckActvCode;
     }
 
-    public GrantTransactionDetail100GetRequest withKeyblckActvCode(Object keyblckActvCode) {
+    public GrantTransactionDetail100GetRequest withKeyblckActvCode(String keyblckActvCode) {
         this.keyblckActvCode = keyblckActvCode;
         return this;
     }
@@ -600,7 +600,7 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckCmtType")
-    public Object getKeyblckCmtType() {
+    public String getKeyblckCmtType() {
         return keyblckCmtType;
     }
 
@@ -611,11 +611,11 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckCmtType")
-    public void setKeyblckCmtType(Object keyblckCmtType) {
+    public void setKeyblckCmtType(String keyblckCmtType) {
         this.keyblckCmtType = keyblckCmtType;
     }
 
-    public GrantTransactionDetail100GetRequest withKeyblckCmtType(Object keyblckCmtType) {
+    public GrantTransactionDetail100GetRequest withKeyblckCmtType(String keyblckCmtType) {
         this.keyblckCmtType = keyblckCmtType;
         return this;
     }
@@ -627,7 +627,7 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckAcctCode")
-    public Object getKeyblckAcctCode() {
+    public String getKeyblckAcctCode() {
         return keyblckAcctCode;
     }
 
@@ -638,11 +638,11 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckAcctCode")
-    public void setKeyblckAcctCode(Object keyblckAcctCode) {
+    public void setKeyblckAcctCode(String keyblckAcctCode) {
         this.keyblckAcctCode = keyblckAcctCode;
     }
 
-    public GrantTransactionDetail100GetRequest withKeyblckAcctCode(Object keyblckAcctCode) {
+    public GrantTransactionDetail100GetRequest withKeyblckAcctCode(String keyblckAcctCode) {
         this.keyblckAcctCode = keyblckAcctCode;
         return this;
     }
@@ -762,7 +762,7 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckOrgnCode")
-    public Object getKeyblckOrgnCode() {
+    public String getKeyblckOrgnCode() {
         return keyblckOrgnCode;
     }
 
@@ -773,11 +773,11 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckOrgnCode")
-    public void setKeyblckOrgnCode(Object keyblckOrgnCode) {
+    public void setKeyblckOrgnCode(String keyblckOrgnCode) {
         this.keyblckOrgnCode = keyblckOrgnCode;
     }
 
-    public GrantTransactionDetail100GetRequest withKeyblckOrgnCode(Object keyblckOrgnCode) {
+    public GrantTransactionDetail100GetRequest withKeyblckOrgnCode(String keyblckOrgnCode) {
         this.keyblckOrgnCode = keyblckOrgnCode;
         return this;
     }
@@ -816,7 +816,7 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckProgCode")
-    public Object getKeyblckProgCode() {
+    public String getKeyblckProgCode() {
         return keyblckProgCode;
     }
 
@@ -827,11 +827,11 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckProgCode")
-    public void setKeyblckProgCode(Object keyblckProgCode) {
+    public void setKeyblckProgCode(String keyblckProgCode) {
         this.keyblckProgCode = keyblckProgCode;
     }
 
-    public GrantTransactionDetail100GetRequest withKeyblckProgCode(Object keyblckProgCode) {
+    public GrantTransactionDetail100GetRequest withKeyblckProgCode(String keyblckProgCode) {
         this.keyblckProgCode = keyblckProgCode;
         return this;
     }
@@ -843,7 +843,7 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckAcciCode")
-    public Object getKeyblckAcciCode() {
+    public String getKeyblckAcciCode() {
         return keyblckAcciCode;
     }
 
@@ -854,11 +854,11 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckAcciCode")
-    public void setKeyblckAcciCode(Object keyblckAcciCode) {
+    public void setKeyblckAcciCode(String keyblckAcciCode) {
         this.keyblckAcciCode = keyblckAcciCode;
     }
 
-    public GrantTransactionDetail100GetRequest withKeyblckAcciCode(Object keyblckAcciCode) {
+    public GrantTransactionDetail100GetRequest withKeyblckAcciCode(String keyblckAcciCode) {
         this.keyblckAcciCode = keyblckAcciCode;
         return this;
     }
@@ -924,7 +924,7 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckDateTo")
-    public Object getKeyblckDateTo() {
+    public Date getKeyblckDateTo() {
         return keyblckDateTo;
     }
 
@@ -935,11 +935,11 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckDateTo")
-    public void setKeyblckDateTo(Object keyblckDateTo) {
+    public void setKeyblckDateTo(Date keyblckDateTo) {
         this.keyblckDateTo = keyblckDateTo;
     }
 
-    public GrantTransactionDetail100GetRequest withKeyblckDateTo(Object keyblckDateTo) {
+    public GrantTransactionDetail100GetRequest withKeyblckDateTo(Date keyblckDateTo) {
         this.keyblckDateTo = keyblckDateTo;
         return this;
     }
@@ -949,7 +949,7 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("poolCheckbox")
-    public Object getPoolCheckbox() {
+    public String getPoolCheckbox() {
         return poolCheckbox;
     }
 
@@ -958,11 +958,11 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("poolCheckbox")
-    public void setPoolCheckbox(Object poolCheckbox) {
+    public void setPoolCheckbox(String poolCheckbox) {
         this.poolCheckbox = poolCheckbox;
     }
 
-    public GrantTransactionDetail100GetRequest withPoolCheckbox(Object poolCheckbox) {
+    public GrantTransactionDetail100GetRequest withPoolCheckbox(String poolCheckbox) {
         this.poolCheckbox = poolCheckbox;
         return this;
     }
@@ -974,7 +974,7 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckPeriod")
-    public Object getKeyblckPeriod() {
+    public String getKeyblckPeriod() {
         return keyblckPeriod;
     }
 
@@ -985,11 +985,11 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckPeriod")
-    public void setKeyblckPeriod(Object keyblckPeriod) {
+    public void setKeyblckPeriod(String keyblckPeriod) {
         this.keyblckPeriod = keyblckPeriod;
     }
 
-    public GrantTransactionDetail100GetRequest withKeyblckPeriod(Object keyblckPeriod) {
+    public GrantTransactionDetail100GetRequest withKeyblckPeriod(String keyblckPeriod) {
         this.keyblckPeriod = keyblckPeriod;
         return this;
     }
@@ -1055,7 +1055,7 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckDateFrom")
-    public Object getKeyblckDateFrom() {
+    public Date getKeyblckDateFrom() {
         return keyblckDateFrom;
     }
 
@@ -1066,11 +1066,11 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckDateFrom")
-    public void setKeyblckDateFrom(Object keyblckDateFrom) {
+    public void setKeyblckDateFrom(Date keyblckDateFrom) {
         this.keyblckDateFrom = keyblckDateFrom;
     }
 
-    public GrantTransactionDetail100GetRequest withKeyblckDateFrom(Object keyblckDateFrom) {
+    public GrantTransactionDetail100GetRequest withKeyblckDateFrom(Date keyblckDateFrom) {
         this.keyblckDateFrom = keyblckDateFrom;
         return this;
     }
@@ -1109,7 +1109,7 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckGrntCode")
-    public Object getKeyblckGrntCode() {
+    public String getKeyblckGrntCode() {
         return keyblckGrntCode;
     }
 
@@ -1120,11 +1120,11 @@ public class GrantTransactionDetail100GetRequest {
      * 
      */
     @JsonProperty("keyblckGrntCode")
-    public void setKeyblckGrntCode(Object keyblckGrntCode) {
+    public void setKeyblckGrntCode(String keyblckGrntCode) {
         this.keyblckGrntCode = keyblckGrntCode;
     }
 
-    public GrantTransactionDetail100GetRequest withKeyblckGrntCode(Object keyblckGrntCode) {
+    public GrantTransactionDetail100GetRequest withKeyblckGrntCode(String keyblckGrntCode) {
         this.keyblckGrntCode = keyblckGrntCode;
         return this;
     }

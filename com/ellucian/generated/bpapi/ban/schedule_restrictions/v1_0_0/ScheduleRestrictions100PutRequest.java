@@ -41,7 +41,7 @@ public class ScheduleRestrictions100PutRequest {
      */
     @JsonProperty("scacrseCrseNumb")
     @JsonPropertyDescription("Lineage reference object : scacrseCrseNumb, Lookup lineage reference object : scbcrse,scbcrky")
-    private Object scacrseCrseNumb;
+    private String scacrseCrseNumb;
     /**
      * Term
      * <p>
@@ -60,7 +60,7 @@ public class ScheduleRestrictions100PutRequest {
      */
     @JsonProperty("scacrseSubjCode")
     @JsonPropertyDescription("Lineage reference object : scacrseSubjCode, Lookup lineage reference object : stvsubj")
-    private Object scacrseSubjCode;
+    private String scacrseSubjCode;
     /**
      * Include/Exclude (I/E)
      * <p>
@@ -70,7 +70,7 @@ public class ScheduleRestrictions100PutRequest {
      */
     @JsonProperty("scrrtrmTermInd")
     @JsonPropertyDescription("Lineage reference object : scrrtrmTermInd")
-    private Object scrrtrmTermInd;
+    private String scrrtrmTermInd;
     /**
      * Term
      * <p>
@@ -89,7 +89,7 @@ public class ScheduleRestrictions100PutRequest {
      */
     @JsonProperty("scacrseTermCodeEff")
     @JsonPropertyDescription("Lineage reference object : scacrseTermCodeEff, Lookup lineage reference object : stvterm,scbcrky,scbcrky")
-    private Object scacrseTermCodeEff;
+    private String scacrseTermCodeEff;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -127,7 +127,7 @@ public class ScheduleRestrictions100PutRequest {
      * 
      */
     @JsonProperty("scacrseCrseNumb")
-    public Object getScacrseCrseNumb() {
+    public String getScacrseCrseNumb() {
         return scacrseCrseNumb;
     }
 
@@ -138,11 +138,11 @@ public class ScheduleRestrictions100PutRequest {
      * 
      */
     @JsonProperty("scacrseCrseNumb")
-    public void setScacrseCrseNumb(Object scacrseCrseNumb) {
+    public void setScacrseCrseNumb(String scacrseCrseNumb) {
         this.scacrseCrseNumb = scacrseCrseNumb;
     }
 
-    public ScheduleRestrictions100PutRequest withScacrseCrseNumb(Object scacrseCrseNumb) {
+    public ScheduleRestrictions100PutRequest withScacrseCrseNumb(String scacrseCrseNumb) {
         this.scacrseCrseNumb = scacrseCrseNumb;
         return this;
     }
@@ -183,7 +183,7 @@ public class ScheduleRestrictions100PutRequest {
      * 
      */
     @JsonProperty("scacrseSubjCode")
-    public Object getScacrseSubjCode() {
+    public String getScacrseSubjCode() {
         return scacrseSubjCode;
     }
 
@@ -194,11 +194,11 @@ public class ScheduleRestrictions100PutRequest {
      * 
      */
     @JsonProperty("scacrseSubjCode")
-    public void setScacrseSubjCode(Object scacrseSubjCode) {
+    public void setScacrseSubjCode(String scacrseSubjCode) {
         this.scacrseSubjCode = scacrseSubjCode;
     }
 
-    public ScheduleRestrictions100PutRequest withScacrseSubjCode(Object scacrseSubjCode) {
+    public ScheduleRestrictions100PutRequest withScacrseSubjCode(String scacrseSubjCode) {
         this.scacrseSubjCode = scacrseSubjCode;
         return this;
     }
@@ -211,7 +211,7 @@ public class ScheduleRestrictions100PutRequest {
      * 
      */
     @JsonProperty("scrrtrmTermInd")
-    public Object getScrrtrmTermInd() {
+    public String getScrrtrmTermInd() {
         return scrrtrmTermInd;
     }
 
@@ -223,11 +223,11 @@ public class ScheduleRestrictions100PutRequest {
      * 
      */
     @JsonProperty("scrrtrmTermInd")
-    public void setScrrtrmTermInd(Object scrrtrmTermInd) {
+    public void setScrrtrmTermInd(String scrrtrmTermInd) {
         this.scrrtrmTermInd = scrrtrmTermInd;
     }
 
-    public ScheduleRestrictions100PutRequest withScrrtrmTermInd(Object scrrtrmTermInd) {
+    public ScheduleRestrictions100PutRequest withScrrtrmTermInd(String scrrtrmTermInd) {
         this.scrrtrmTermInd = scrrtrmTermInd;
         return this;
     }
@@ -268,7 +268,7 @@ public class ScheduleRestrictions100PutRequest {
      * 
      */
     @JsonProperty("scacrseTermCodeEff")
-    public Object getScacrseTermCodeEff() {
+    public String getScacrseTermCodeEff() {
         return scacrseTermCodeEff;
     }
 
@@ -279,11 +279,11 @@ public class ScheduleRestrictions100PutRequest {
      * 
      */
     @JsonProperty("scacrseTermCodeEff")
-    public void setScacrseTermCodeEff(Object scacrseTermCodeEff) {
+    public void setScacrseTermCodeEff(String scacrseTermCodeEff) {
         this.scacrseTermCodeEff = scacrseTermCodeEff;
     }
 
-    public ScheduleRestrictions100PutRequest withScacrseTermCodeEff(Object scacrseTermCodeEff) {
+    public ScheduleRestrictions100PutRequest withScacrseTermCodeEff(String scacrseTermCodeEff) {
         this.scacrseTermCodeEff = scacrseTermCodeEff;
         return this;
     }

@@ -28,7 +28,7 @@ public class KeyBlock {
      */
     @JsonProperty("ssasectTermCode")
     @JsonPropertyDescription("Lineage reference object : ssasectTermCode, Lookup lineage reference object : stvterm")
-    private Object ssasectTermCode;
+    private String ssasectTermCode;
     /**
      * CRN
      * <p>
@@ -37,7 +37,7 @@ public class KeyBlock {
      */
     @JsonProperty("ssasectCrn")
     @JsonPropertyDescription("Lineage reference object : ssasectCrn")
-    private Object ssasectCrn;
+    private String ssasectCrn;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -48,7 +48,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("ssasectTermCode")
-    public Object getSsasectTermCode() {
+    public String getSsasectTermCode() {
         return ssasectTermCode;
     }
 
@@ -59,11 +59,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("ssasectTermCode")
-    public void setSsasectTermCode(Object ssasectTermCode) {
+    public void setSsasectTermCode(String ssasectTermCode) {
         this.ssasectTermCode = ssasectTermCode;
     }
 
-    public KeyBlock withSsasectTermCode(Object ssasectTermCode) {
+    public KeyBlock withSsasectTermCode(String ssasectTermCode) {
         this.ssasectTermCode = ssasectTermCode;
         return this;
     }
@@ -75,7 +75,7 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("ssasectCrn")
-    public Object getSsasectCrn() {
+    public String getSsasectCrn() {
         return ssasectCrn;
     }
 
@@ -86,11 +86,11 @@ public class KeyBlock {
      * 
      */
     @JsonProperty("ssasectCrn")
-    public void setSsasectCrn(Object ssasectCrn) {
+    public void setSsasectCrn(String ssasectCrn) {
         this.ssasectCrn = ssasectCrn;
     }
 
-    public KeyBlock withSsasectCrn(Object ssasectCrn) {
+    public KeyBlock withSsasectCrn(String ssasectCrn) {
         this.ssasectCrn = ssasectCrn;
         return this;
     }

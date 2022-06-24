@@ -71,35 +71,35 @@ public class EntityNameIdSearch100GetRequest {
      */
     @JsonProperty("queryAgency")
     @JsonPropertyDescription("Lineage reference object : queryAgency")
-    private Object queryAgency;
+    private String queryAgency;
     /**
      * Lineage reference object : queryAll
      * 
      */
     @JsonProperty("queryAll")
     @JsonPropertyDescription("Lineage reference object : queryAll")
-    private Object queryAll;
+    private String queryAll;
     /**
      * Lineage reference object : queryVendor
      * 
      */
     @JsonProperty("queryVendor")
     @JsonPropertyDescription("Lineage reference object : queryVendor")
-    private Object queryVendor;
+    private String queryVendor;
     /**
      * Lineage reference object : queryGrntPersonnel
      * 
      */
     @JsonProperty("queryGrntPersonnel")
     @JsonPropertyDescription("Lineage reference object : queryGrntPersonnel")
-    private Object queryGrntPersonnel;
+    private String queryGrntPersonnel;
     /**
      * Lineage reference object : queryTermFinMgr
      * 
      */
     @JsonProperty("queryTermFinMgr")
     @JsonPropertyDescription("Lineage reference object : queryTermFinMgr")
-    private Object queryTermFinMgr;
+    private String queryTermFinMgr;
     /**
      * First Name
      * <p>
@@ -135,14 +135,14 @@ public class EntityNameIdSearch100GetRequest {
      */
     @JsonProperty("queryPropPersonnel")
     @JsonPropertyDescription("Lineage reference object : queryPropPersonnel")
-    private Object queryPropPersonnel;
+    private String queryPropPersonnel;
     /**
      * Lineage reference object : queryTermVendor
      * 
      */
     @JsonProperty("queryTermVendor")
     @JsonPropertyDescription("Lineage reference object : queryTermVendor")
-    private Object queryTermVendor;
+    private String queryTermVendor;
     /**
      * ID
      * <p>
@@ -158,7 +158,7 @@ public class EntityNameIdSearch100GetRequest {
      */
     @JsonProperty("queryFinMgr")
     @JsonPropertyDescription("Lineage reference object : queryFinMgr")
-    private Object queryFinMgr;
+    private String queryFinMgr;
     /**
      * Middle Name
      * <p>
@@ -272,7 +272,7 @@ public class EntityNameIdSearch100GetRequest {
      * 
      */
     @JsonProperty("queryAgency")
-    public Object getQueryAgency() {
+    public String getQueryAgency() {
         return queryAgency;
     }
 
@@ -281,11 +281,11 @@ public class EntityNameIdSearch100GetRequest {
      * 
      */
     @JsonProperty("queryAgency")
-    public void setQueryAgency(Object queryAgency) {
+    public void setQueryAgency(String queryAgency) {
         this.queryAgency = queryAgency;
     }
 
-    public EntityNameIdSearch100GetRequest withQueryAgency(Object queryAgency) {
+    public EntityNameIdSearch100GetRequest withQueryAgency(String queryAgency) {
         this.queryAgency = queryAgency;
         return this;
     }
@@ -295,7 +295,7 @@ public class EntityNameIdSearch100GetRequest {
      * 
      */
     @JsonProperty("queryAll")
-    public Object getQueryAll() {
+    public String getQueryAll() {
         return queryAll;
     }
 
@@ -304,11 +304,11 @@ public class EntityNameIdSearch100GetRequest {
      * 
      */
     @JsonProperty("queryAll")
-    public void setQueryAll(Object queryAll) {
+    public void setQueryAll(String queryAll) {
         this.queryAll = queryAll;
     }
 
-    public EntityNameIdSearch100GetRequest withQueryAll(Object queryAll) {
+    public EntityNameIdSearch100GetRequest withQueryAll(String queryAll) {
         this.queryAll = queryAll;
         return this;
     }
@@ -318,7 +318,7 @@ public class EntityNameIdSearch100GetRequest {
      * 
      */
     @JsonProperty("queryVendor")
-    public Object getQueryVendor() {
+    public String getQueryVendor() {
         return queryVendor;
     }
 
@@ -327,11 +327,11 @@ public class EntityNameIdSearch100GetRequest {
      * 
      */
     @JsonProperty("queryVendor")
-    public void setQueryVendor(Object queryVendor) {
+    public void setQueryVendor(String queryVendor) {
         this.queryVendor = queryVendor;
     }
 
-    public EntityNameIdSearch100GetRequest withQueryVendor(Object queryVendor) {
+    public EntityNameIdSearch100GetRequest withQueryVendor(String queryVendor) {
         this.queryVendor = queryVendor;
         return this;
     }
@@ -341,7 +341,7 @@ public class EntityNameIdSearch100GetRequest {
      * 
      */
     @JsonProperty("queryGrntPersonnel")
-    public Object getQueryGrntPersonnel() {
+    public String getQueryGrntPersonnel() {
         return queryGrntPersonnel;
     }
 
@@ -350,11 +350,11 @@ public class EntityNameIdSearch100GetRequest {
      * 
      */
     @JsonProperty("queryGrntPersonnel")
-    public void setQueryGrntPersonnel(Object queryGrntPersonnel) {
+    public void setQueryGrntPersonnel(String queryGrntPersonnel) {
         this.queryGrntPersonnel = queryGrntPersonnel;
     }
 
-    public EntityNameIdSearch100GetRequest withQueryGrntPersonnel(Object queryGrntPersonnel) {
+    public EntityNameIdSearch100GetRequest withQueryGrntPersonnel(String queryGrntPersonnel) {
         this.queryGrntPersonnel = queryGrntPersonnel;
         return this;
     }
@@ -364,7 +364,7 @@ public class EntityNameIdSearch100GetRequest {
      * 
      */
     @JsonProperty("queryTermFinMgr")
-    public Object getQueryTermFinMgr() {
+    public String getQueryTermFinMgr() {
         return queryTermFinMgr;
     }
 
@@ -373,11 +373,11 @@ public class EntityNameIdSearch100GetRequest {
      * 
      */
     @JsonProperty("queryTermFinMgr")
-    public void setQueryTermFinMgr(Object queryTermFinMgr) {
+    public void setQueryTermFinMgr(String queryTermFinMgr) {
         this.queryTermFinMgr = queryTermFinMgr;
     }
 
-    public EntityNameIdSearch100GetRequest withQueryTermFinMgr(Object queryTermFinMgr) {
+    public EntityNameIdSearch100GetRequest withQueryTermFinMgr(String queryTermFinMgr) {
         this.queryTermFinMgr = queryTermFinMgr;
         return this;
     }
@@ -483,7 +483,7 @@ public class EntityNameIdSearch100GetRequest {
      * 
      */
     @JsonProperty("queryPropPersonnel")
-    public Object getQueryPropPersonnel() {
+    public String getQueryPropPersonnel() {
         return queryPropPersonnel;
     }
 
@@ -492,11 +492,11 @@ public class EntityNameIdSearch100GetRequest {
      * 
      */
     @JsonProperty("queryPropPersonnel")
-    public void setQueryPropPersonnel(Object queryPropPersonnel) {
+    public void setQueryPropPersonnel(String queryPropPersonnel) {
         this.queryPropPersonnel = queryPropPersonnel;
     }
 
-    public EntityNameIdSearch100GetRequest withQueryPropPersonnel(Object queryPropPersonnel) {
+    public EntityNameIdSearch100GetRequest withQueryPropPersonnel(String queryPropPersonnel) {
         this.queryPropPersonnel = queryPropPersonnel;
         return this;
     }
@@ -506,7 +506,7 @@ public class EntityNameIdSearch100GetRequest {
      * 
      */
     @JsonProperty("queryTermVendor")
-    public Object getQueryTermVendor() {
+    public String getQueryTermVendor() {
         return queryTermVendor;
     }
 
@@ -515,11 +515,11 @@ public class EntityNameIdSearch100GetRequest {
      * 
      */
     @JsonProperty("queryTermVendor")
-    public void setQueryTermVendor(Object queryTermVendor) {
+    public void setQueryTermVendor(String queryTermVendor) {
         this.queryTermVendor = queryTermVendor;
     }
 
-    public EntityNameIdSearch100GetRequest withQueryTermVendor(Object queryTermVendor) {
+    public EntityNameIdSearch100GetRequest withQueryTermVendor(String queryTermVendor) {
         this.queryTermVendor = queryTermVendor;
         return this;
     }
@@ -556,7 +556,7 @@ public class EntityNameIdSearch100GetRequest {
      * 
      */
     @JsonProperty("queryFinMgr")
-    public Object getQueryFinMgr() {
+    public String getQueryFinMgr() {
         return queryFinMgr;
     }
 
@@ -565,11 +565,11 @@ public class EntityNameIdSearch100GetRequest {
      * 
      */
     @JsonProperty("queryFinMgr")
-    public void setQueryFinMgr(Object queryFinMgr) {
+    public void setQueryFinMgr(String queryFinMgr) {
         this.queryFinMgr = queryFinMgr;
     }
 
-    public EntityNameIdSearch100GetRequest withQueryFinMgr(Object queryFinMgr) {
+    public EntityNameIdSearch100GetRequest withQueryFinMgr(String queryFinMgr) {
         this.queryFinMgr = queryFinMgr;
         return this;
     }

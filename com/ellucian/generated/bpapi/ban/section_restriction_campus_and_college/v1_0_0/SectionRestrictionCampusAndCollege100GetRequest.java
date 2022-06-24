@@ -29,7 +29,7 @@ public class SectionRestrictionCampusAndCollege100GetRequest {
      */
     @JsonProperty("ssasectTermCode")
     @JsonPropertyDescription("Lineage reference object : ssasectTermCode, Lookup lineage reference object : stvterm")
-    private Object ssasectTermCode;
+    private String ssasectTermCode;
     /**
      * CRN
      * <p>
@@ -38,7 +38,7 @@ public class SectionRestrictionCampusAndCollege100GetRequest {
      */
     @JsonProperty("ssasectCrn")
     @JsonPropertyDescription("Lineage reference object : ssasectCrn")
-    private Object ssasectCrn;
+    private String ssasectCrn;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -50,7 +50,7 @@ public class SectionRestrictionCampusAndCollege100GetRequest {
      * 
      */
     @JsonProperty("ssasectTermCode")
-    public Object getSsasectTermCode() {
+    public String getSsasectTermCode() {
         return ssasectTermCode;
     }
 
@@ -62,11 +62,11 @@ public class SectionRestrictionCampusAndCollege100GetRequest {
      * 
      */
     @JsonProperty("ssasectTermCode")
-    public void setSsasectTermCode(Object ssasectTermCode) {
+    public void setSsasectTermCode(String ssasectTermCode) {
         this.ssasectTermCode = ssasectTermCode;
     }
 
-    public SectionRestrictionCampusAndCollege100GetRequest withSsasectTermCode(Object ssasectTermCode) {
+    public SectionRestrictionCampusAndCollege100GetRequest withSsasectTermCode(String ssasectTermCode) {
         this.ssasectTermCode = ssasectTermCode;
         return this;
     }
@@ -78,7 +78,7 @@ public class SectionRestrictionCampusAndCollege100GetRequest {
      * 
      */
     @JsonProperty("ssasectCrn")
-    public Object getSsasectCrn() {
+    public String getSsasectCrn() {
         return ssasectCrn;
     }
 
@@ -89,11 +89,11 @@ public class SectionRestrictionCampusAndCollege100GetRequest {
      * 
      */
     @JsonProperty("ssasectCrn")
-    public void setSsasectCrn(Object ssasectCrn) {
+    public void setSsasectCrn(String ssasectCrn) {
         this.ssasectCrn = ssasectCrn;
     }
 
-    public SectionRestrictionCampusAndCollege100GetRequest withSsasectCrn(Object ssasectCrn) {
+    public SectionRestrictionCampusAndCollege100GetRequest withSsasectCrn(String ssasectCrn) {
         this.ssasectCrn = ssasectCrn;
         return this;
     }

@@ -180,7 +180,7 @@ public class FacultyAssignment100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Position Number
      * <p>
@@ -409,7 +409,7 @@ public class FacultyAssignment100PutRequest {
      */
     @JsonProperty("keyblocTermCodeEff")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCodeEff, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCodeEff;
+    private String keyblocTermCodeEff;
     /**
      * Weekly Contact
      * <p>
@@ -891,7 +891,7 @@ public class FacultyAssignment100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -902,11 +902,11 @@ public class FacultyAssignment100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public FacultyAssignment100PutRequest withId(Object id) {
+    public FacultyAssignment100PutRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -1589,7 +1589,7 @@ public class FacultyAssignment100PutRequest {
      * 
      */
     @JsonProperty("keyblocTermCodeEff")
-    public Object getKeyblocTermCodeEff() {
+    public String getKeyblocTermCodeEff() {
         return keyblocTermCodeEff;
     }
 
@@ -1600,11 +1600,11 @@ public class FacultyAssignment100PutRequest {
      * 
      */
     @JsonProperty("keyblocTermCodeEff")
-    public void setKeyblocTermCodeEff(Object keyblocTermCodeEff) {
+    public void setKeyblocTermCodeEff(String keyblocTermCodeEff) {
         this.keyblocTermCodeEff = keyblocTermCodeEff;
     }
 
-    public FacultyAssignment100PutRequest withKeyblocTermCodeEff(Object keyblocTermCodeEff) {
+    public FacultyAssignment100PutRequest withKeyblocTermCodeEff(String keyblocTermCodeEff) {
         this.keyblocTermCodeEff = keyblocTermCodeEff;
         return this;
     }

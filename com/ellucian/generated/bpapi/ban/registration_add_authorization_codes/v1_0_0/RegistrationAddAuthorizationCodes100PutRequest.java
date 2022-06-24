@@ -43,7 +43,7 @@ public class RegistrationAddAuthorizationCodes100PutRequest {
      */
     @JsonProperty("keyTermCode")
     @JsonPropertyDescription("Lineage reference object : keyTermCode, Lookup lineage reference object : stvterm")
-    private Object keyTermCode;
+    private String keyTermCode;
     /**
      * Authorization Code
      * <p>
@@ -86,7 +86,7 @@ public class RegistrationAddAuthorizationCodes100PutRequest {
      */
     @JsonProperty("keyCrn")
     @JsonPropertyDescription("Lineage reference object : keyCrn")
-    private Object keyCrn;
+    private String keyCrn;
     /**
      * First Assigned Date
      * <p>
@@ -133,7 +133,7 @@ public class RegistrationAddAuthorizationCodes100PutRequest {
      * 
      */
     @JsonProperty("keyTermCode")
-    public Object getKeyTermCode() {
+    public String getKeyTermCode() {
         return keyTermCode;
     }
 
@@ -144,11 +144,11 @@ public class RegistrationAddAuthorizationCodes100PutRequest {
      * 
      */
     @JsonProperty("keyTermCode")
-    public void setKeyTermCode(Object keyTermCode) {
+    public void setKeyTermCode(String keyTermCode) {
         this.keyTermCode = keyTermCode;
     }
 
-    public RegistrationAddAuthorizationCodes100PutRequest withKeyTermCode(Object keyTermCode) {
+    public RegistrationAddAuthorizationCodes100PutRequest withKeyTermCode(String keyTermCode) {
         this.keyTermCode = keyTermCode;
         return this;
     }
@@ -266,7 +266,7 @@ public class RegistrationAddAuthorizationCodes100PutRequest {
      * 
      */
     @JsonProperty("keyCrn")
-    public Object getKeyCrn() {
+    public String getKeyCrn() {
         return keyCrn;
     }
 
@@ -277,11 +277,11 @@ public class RegistrationAddAuthorizationCodes100PutRequest {
      * 
      */
     @JsonProperty("keyCrn")
-    public void setKeyCrn(Object keyCrn) {
+    public void setKeyCrn(String keyCrn) {
         this.keyCrn = keyCrn;
     }
 
-    public RegistrationAddAuthorizationCodes100PutRequest withKeyCrn(Object keyCrn) {
+    public RegistrationAddAuthorizationCodes100PutRequest withKeyCrn(String keyCrn) {
         this.keyCrn = keyCrn;
         return this;
     }

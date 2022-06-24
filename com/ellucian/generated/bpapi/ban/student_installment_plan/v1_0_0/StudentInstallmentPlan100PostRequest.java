@@ -16,16 +16,20 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "numberOfPayments",
+    "intRate",
     "autoCalcActiveInd",
     "servDetailCode",
+    "paymentDueInd",
     "prinDetailCode",
     "planDetailCode",
     "svcChgPct",
+    "intDetailCode",
     "servCharge",
     "payPeriod",
     "firstInstallDate",
     "installmentPlan",
     "id",
+    "planAmount",
     "desc",
     "termCode"
 })
@@ -42,6 +46,15 @@ public class StudentInstallmentPlan100PostRequest {
     @JsonProperty("numberOfPayments")
     @JsonPropertyDescription("Lineage reference object : TBRISTL_NUMBER_OF_PAYMENTS")
     private Double numberOfPayments;
+    /**
+     * Interest Rate
+     * <p>
+     * Lineage reference object : TBRISTL_INT_RATE
+     * 
+     */
+    @JsonProperty("intRate")
+    @JsonPropertyDescription("Lineage reference object : TBRISTL_INT_RATE")
+    private Double intRate;
     /**
      * Active
      * <p>
@@ -60,6 +73,15 @@ public class StudentInstallmentPlan100PostRequest {
     @JsonProperty("servDetailCode")
     @JsonPropertyDescription("Lineage reference object : TBRISTL_SERV_DETAIL_CODE, Lookup lineage reference object : tbbdetc")
     private String servDetailCode;
+    /**
+     * Installment Due
+     * <p>
+     * 
+     * (Required)
+     * 
+     */
+    @JsonProperty("paymentDueInd")
+    private String paymentDueInd;
     /**
      * Principal Detail Code
      * <p>
@@ -89,6 +111,15 @@ public class StudentInstallmentPlan100PostRequest {
     @JsonProperty("svcChgPct")
     @JsonPropertyDescription("Lineage reference object : TBRISTL_SVC_CHG_PCT")
     private Double svcChgPct;
+    /**
+     * Interest Detail Code
+     * <p>
+     * Lineage reference object : TBRISTL_INT_DETAIL_CODE, Lookup lineage reference object : tbbdetc
+     * 
+     */
+    @JsonProperty("intDetailCode")
+    @JsonPropertyDescription("Lineage reference object : TBRISTL_INT_DETAIL_CODE, Lookup lineage reference object : tbbdetc")
+    private String intDetailCode;
     /**
      * Service Charge Amount
      * <p>
@@ -136,7 +167,17 @@ public class StudentInstallmentPlan100PostRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
+    /**
+     * Plan Amount
+     * <p>
+     * Lineage reference object : TBRISTL_PLAN_AMOUNT
+     * (Required)
+     * 
+     */
+    @JsonProperty("planAmount")
+    @JsonPropertyDescription("Lineage reference object : TBRISTL_PLAN_AMOUNT")
+    private Double planAmount;
     /**
      * Installment Plan Description
      * <p>
@@ -186,6 +227,33 @@ public class StudentInstallmentPlan100PostRequest {
 
     public StudentInstallmentPlan100PostRequest withNumberOfPayments(Double numberOfPayments) {
         this.numberOfPayments = numberOfPayments;
+        return this;
+    }
+
+    /**
+     * Interest Rate
+     * <p>
+     * Lineage reference object : TBRISTL_INT_RATE
+     * 
+     */
+    @JsonProperty("intRate")
+    public Double getIntRate() {
+        return intRate;
+    }
+
+    /**
+     * Interest Rate
+     * <p>
+     * Lineage reference object : TBRISTL_INT_RATE
+     * 
+     */
+    @JsonProperty("intRate")
+    public void setIntRate(Double intRate) {
+        this.intRate = intRate;
+    }
+
+    public StudentInstallmentPlan100PostRequest withIntRate(Double intRate) {
+        this.intRate = intRate;
         return this;
     }
 
@@ -240,6 +308,35 @@ public class StudentInstallmentPlan100PostRequest {
 
     public StudentInstallmentPlan100PostRequest withServDetailCode(String servDetailCode) {
         this.servDetailCode = servDetailCode;
+        return this;
+    }
+
+    /**
+     * Installment Due
+     * <p>
+     * 
+     * (Required)
+     * 
+     */
+    @JsonProperty("paymentDueInd")
+    public String getPaymentDueInd() {
+        return paymentDueInd;
+    }
+
+    /**
+     * Installment Due
+     * <p>
+     * 
+     * (Required)
+     * 
+     */
+    @JsonProperty("paymentDueInd")
+    public void setPaymentDueInd(String paymentDueInd) {
+        this.paymentDueInd = paymentDueInd;
+    }
+
+    public StudentInstallmentPlan100PostRequest withPaymentDueInd(String paymentDueInd) {
+        this.paymentDueInd = paymentDueInd;
         return this;
     }
 
@@ -325,6 +422,33 @@ public class StudentInstallmentPlan100PostRequest {
 
     public StudentInstallmentPlan100PostRequest withSvcChgPct(Double svcChgPct) {
         this.svcChgPct = svcChgPct;
+        return this;
+    }
+
+    /**
+     * Interest Detail Code
+     * <p>
+     * Lineage reference object : TBRISTL_INT_DETAIL_CODE, Lookup lineage reference object : tbbdetc
+     * 
+     */
+    @JsonProperty("intDetailCode")
+    public String getIntDetailCode() {
+        return intDetailCode;
+    }
+
+    /**
+     * Interest Detail Code
+     * <p>
+     * Lineage reference object : TBRISTL_INT_DETAIL_CODE, Lookup lineage reference object : tbbdetc
+     * 
+     */
+    @JsonProperty("intDetailCode")
+    public void setIntDetailCode(String intDetailCode) {
+        this.intDetailCode = intDetailCode;
+    }
+
+    public StudentInstallmentPlan100PostRequest withIntDetailCode(String intDetailCode) {
+        this.intDetailCode = intDetailCode;
         return this;
     }
 
@@ -449,7 +573,7 @@ public class StudentInstallmentPlan100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -460,12 +584,41 @@ public class StudentInstallmentPlan100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public StudentInstallmentPlan100PostRequest withId(Object id) {
+    public StudentInstallmentPlan100PostRequest withId(String id) {
         this.id = id;
+        return this;
+    }
+
+    /**
+     * Plan Amount
+     * <p>
+     * Lineage reference object : TBRISTL_PLAN_AMOUNT
+     * (Required)
+     * 
+     */
+    @JsonProperty("planAmount")
+    public Double getPlanAmount() {
+        return planAmount;
+    }
+
+    /**
+     * Plan Amount
+     * <p>
+     * Lineage reference object : TBRISTL_PLAN_AMOUNT
+     * (Required)
+     * 
+     */
+    @JsonProperty("planAmount")
+    public void setPlanAmount(Double planAmount) {
+        this.planAmount = planAmount;
+    }
+
+    public StudentInstallmentPlan100PostRequest withPlanAmount(Double planAmount) {
+        this.planAmount = planAmount;
         return this;
     }
 
@@ -550,6 +703,10 @@ public class StudentInstallmentPlan100PostRequest {
         sb.append('=');
         sb.append(((this.numberOfPayments == null)?"<null>":this.numberOfPayments));
         sb.append(',');
+        sb.append("intRate");
+        sb.append('=');
+        sb.append(((this.intRate == null)?"<null>":this.intRate));
+        sb.append(',');
         sb.append("autoCalcActiveInd");
         sb.append('=');
         sb.append(((this.autoCalcActiveInd == null)?"<null>":this.autoCalcActiveInd));
@@ -557,6 +714,10 @@ public class StudentInstallmentPlan100PostRequest {
         sb.append("servDetailCode");
         sb.append('=');
         sb.append(((this.servDetailCode == null)?"<null>":this.servDetailCode));
+        sb.append(',');
+        sb.append("paymentDueInd");
+        sb.append('=');
+        sb.append(((this.paymentDueInd == null)?"<null>":this.paymentDueInd));
         sb.append(',');
         sb.append("prinDetailCode");
         sb.append('=');
@@ -569,6 +730,10 @@ public class StudentInstallmentPlan100PostRequest {
         sb.append("svcChgPct");
         sb.append('=');
         sb.append(((this.svcChgPct == null)?"<null>":this.svcChgPct));
+        sb.append(',');
+        sb.append("intDetailCode");
+        sb.append('=');
+        sb.append(((this.intDetailCode == null)?"<null>":this.intDetailCode));
         sb.append(',');
         sb.append("servCharge");
         sb.append('=');
@@ -589,6 +754,10 @@ public class StudentInstallmentPlan100PostRequest {
         sb.append("id");
         sb.append('=');
         sb.append(((this.id == null)?"<null>":this.id));
+        sb.append(',');
+        sb.append("planAmount");
+        sb.append('=');
+        sb.append(((this.planAmount == null)?"<null>":this.planAmount));
         sb.append(',');
         sb.append("desc");
         sb.append('=');
@@ -614,17 +783,21 @@ public class StudentInstallmentPlan100PostRequest {
     public int hashCode() {
         int result = 1;
         result = ((result* 31)+((this.numberOfPayments == null)? 0 :this.numberOfPayments.hashCode()));
+        result = ((result* 31)+((this.intRate == null)? 0 :this.intRate.hashCode()));
         result = ((result* 31)+((this.autoCalcActiveInd == null)? 0 :this.autoCalcActiveInd.hashCode()));
         result = ((result* 31)+((this.servDetailCode == null)? 0 :this.servDetailCode.hashCode()));
+        result = ((result* 31)+((this.paymentDueInd == null)? 0 :this.paymentDueInd.hashCode()));
         result = ((result* 31)+((this.prinDetailCode == null)? 0 :this.prinDetailCode.hashCode()));
         result = ((result* 31)+((this.planDetailCode == null)? 0 :this.planDetailCode.hashCode()));
         result = ((result* 31)+((this.svcChgPct == null)? 0 :this.svcChgPct.hashCode()));
+        result = ((result* 31)+((this.intDetailCode == null)? 0 :this.intDetailCode.hashCode()));
         result = ((result* 31)+((this.servCharge == null)? 0 :this.servCharge.hashCode()));
         result = ((result* 31)+((this.payPeriod == null)? 0 :this.payPeriod.hashCode()));
         result = ((result* 31)+((this.firstInstallDate == null)? 0 :this.firstInstallDate.hashCode()));
         result = ((result* 31)+((this.installmentPlan == null)? 0 :this.installmentPlan.hashCode()));
         result = ((result* 31)+((this.id == null)? 0 :this.id.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
+        result = ((result* 31)+((this.planAmount == null)? 0 :this.planAmount.hashCode()));
         result = ((result* 31)+((this.desc == null)? 0 :this.desc.hashCode()));
         result = ((result* 31)+((this.termCode == null)? 0 :this.termCode.hashCode()));
         return result;
@@ -639,7 +812,7 @@ public class StudentInstallmentPlan100PostRequest {
             return false;
         }
         StudentInstallmentPlan100PostRequest rhs = ((StudentInstallmentPlan100PostRequest) other);
-        return (((((((((((((((this.numberOfPayments == rhs.numberOfPayments)||((this.numberOfPayments!= null)&&this.numberOfPayments.equals(rhs.numberOfPayments)))&&((this.autoCalcActiveInd == rhs.autoCalcActiveInd)||((this.autoCalcActiveInd!= null)&&this.autoCalcActiveInd.equals(rhs.autoCalcActiveInd))))&&((this.servDetailCode == rhs.servDetailCode)||((this.servDetailCode!= null)&&this.servDetailCode.equals(rhs.servDetailCode))))&&((this.prinDetailCode == rhs.prinDetailCode)||((this.prinDetailCode!= null)&&this.prinDetailCode.equals(rhs.prinDetailCode))))&&((this.planDetailCode == rhs.planDetailCode)||((this.planDetailCode!= null)&&this.planDetailCode.equals(rhs.planDetailCode))))&&((this.svcChgPct == rhs.svcChgPct)||((this.svcChgPct!= null)&&this.svcChgPct.equals(rhs.svcChgPct))))&&((this.servCharge == rhs.servCharge)||((this.servCharge!= null)&&this.servCharge.equals(rhs.servCharge))))&&((this.payPeriod == rhs.payPeriod)||((this.payPeriod!= null)&&this.payPeriod.equals(rhs.payPeriod))))&&((this.firstInstallDate == rhs.firstInstallDate)||((this.firstInstallDate!= null)&&this.firstInstallDate.equals(rhs.firstInstallDate))))&&((this.installmentPlan == rhs.installmentPlan)||((this.installmentPlan!= null)&&this.installmentPlan.equals(rhs.installmentPlan))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.desc == rhs.desc)||((this.desc!= null)&&this.desc.equals(rhs.desc))))&&((this.termCode == rhs.termCode)||((this.termCode!= null)&&this.termCode.equals(rhs.termCode))));
+        return (((((((((((((((((((this.numberOfPayments == rhs.numberOfPayments)||((this.numberOfPayments!= null)&&this.numberOfPayments.equals(rhs.numberOfPayments)))&&((this.intRate == rhs.intRate)||((this.intRate!= null)&&this.intRate.equals(rhs.intRate))))&&((this.autoCalcActiveInd == rhs.autoCalcActiveInd)||((this.autoCalcActiveInd!= null)&&this.autoCalcActiveInd.equals(rhs.autoCalcActiveInd))))&&((this.servDetailCode == rhs.servDetailCode)||((this.servDetailCode!= null)&&this.servDetailCode.equals(rhs.servDetailCode))))&&((this.paymentDueInd == rhs.paymentDueInd)||((this.paymentDueInd!= null)&&this.paymentDueInd.equals(rhs.paymentDueInd))))&&((this.prinDetailCode == rhs.prinDetailCode)||((this.prinDetailCode!= null)&&this.prinDetailCode.equals(rhs.prinDetailCode))))&&((this.planDetailCode == rhs.planDetailCode)||((this.planDetailCode!= null)&&this.planDetailCode.equals(rhs.planDetailCode))))&&((this.svcChgPct == rhs.svcChgPct)||((this.svcChgPct!= null)&&this.svcChgPct.equals(rhs.svcChgPct))))&&((this.intDetailCode == rhs.intDetailCode)||((this.intDetailCode!= null)&&this.intDetailCode.equals(rhs.intDetailCode))))&&((this.servCharge == rhs.servCharge)||((this.servCharge!= null)&&this.servCharge.equals(rhs.servCharge))))&&((this.payPeriod == rhs.payPeriod)||((this.payPeriod!= null)&&this.payPeriod.equals(rhs.payPeriod))))&&((this.firstInstallDate == rhs.firstInstallDate)||((this.firstInstallDate!= null)&&this.firstInstallDate.equals(rhs.firstInstallDate))))&&((this.installmentPlan == rhs.installmentPlan)||((this.installmentPlan!= null)&&this.installmentPlan.equals(rhs.installmentPlan))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.planAmount == rhs.planAmount)||((this.planAmount!= null)&&this.planAmount.equals(rhs.planAmount))))&&((this.desc == rhs.desc)||((this.desc!= null)&&this.desc.equals(rhs.desc))))&&((this.termCode == rhs.termCode)||((this.termCode!= null)&&this.termCode.equals(rhs.termCode))));
     }
 
 }

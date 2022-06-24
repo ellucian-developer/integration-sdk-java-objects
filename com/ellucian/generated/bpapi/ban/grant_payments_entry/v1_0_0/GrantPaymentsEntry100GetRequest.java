@@ -59,7 +59,7 @@ public class GrantPaymentsEntry100GetRequest {
      */
     @JsonProperty("keyblckAgencyCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAgencyCode")
-    private Object keyblckAgencyCode;
+    private String keyblckAgencyCode;
     /**
      * Trraccd Tran Number
      * <p>
@@ -150,7 +150,7 @@ public class GrantPaymentsEntry100GetRequest {
      */
     @JsonProperty("keyblckGrntCode")
     @JsonPropertyDescription("Lineage reference object : keyblckGrntCode")
-    private Object keyblckGrntCode;
+    private String keyblckGrntCode;
     /**
      * Trraccd Tran Number Paid
      * <p>
@@ -238,7 +238,7 @@ public class GrantPaymentsEntry100GetRequest {
      * 
      */
     @JsonProperty("keyblckAgencyCode")
-    public Object getKeyblckAgencyCode() {
+    public String getKeyblckAgencyCode() {
         return keyblckAgencyCode;
     }
 
@@ -249,11 +249,11 @@ public class GrantPaymentsEntry100GetRequest {
      * 
      */
     @JsonProperty("keyblckAgencyCode")
-    public void setKeyblckAgencyCode(Object keyblckAgencyCode) {
+    public void setKeyblckAgencyCode(String keyblckAgencyCode) {
         this.keyblckAgencyCode = keyblckAgencyCode;
     }
 
-    public GrantPaymentsEntry100GetRequest withKeyblckAgencyCode(Object keyblckAgencyCode) {
+    public GrantPaymentsEntry100GetRequest withKeyblckAgencyCode(String keyblckAgencyCode) {
         this.keyblckAgencyCode = keyblckAgencyCode;
         return this;
     }
@@ -510,7 +510,7 @@ public class GrantPaymentsEntry100GetRequest {
      * 
      */
     @JsonProperty("keyblckGrntCode")
-    public Object getKeyblckGrntCode() {
+    public String getKeyblckGrntCode() {
         return keyblckGrntCode;
     }
 
@@ -521,11 +521,11 @@ public class GrantPaymentsEntry100GetRequest {
      * 
      */
     @JsonProperty("keyblckGrntCode")
-    public void setKeyblckGrntCode(Object keyblckGrntCode) {
+    public void setKeyblckGrntCode(String keyblckGrntCode) {
         this.keyblckGrntCode = keyblckGrntCode;
     }
 
-    public GrantPaymentsEntry100GetRequest withKeyblckGrntCode(Object keyblckGrntCode) {
+    public GrantPaymentsEntry100GetRequest withKeyblckGrntCode(String keyblckGrntCode) {
         this.keyblckGrntCode = keyblckGrntCode;
         return this;
     }

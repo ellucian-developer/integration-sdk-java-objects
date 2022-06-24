@@ -28,7 +28,7 @@ public class AdditionalStudentInformationCohort100GetRequest {
      */
     @JsonProperty("sgastdnId")
     @JsonPropertyDescription("Lineage reference object : sgastdnId")
-    private Object sgastdnId;
+    private String sgastdnId;
     /**
      * Term
      * <p>
@@ -37,7 +37,7 @@ public class AdditionalStudentInformationCohort100GetRequest {
      */
     @JsonProperty("sgastdnTermCodeEff")
     @JsonPropertyDescription("Lineage reference object : sgastdnTermCodeEff, Lookup lineage reference object : stvterm")
-    private Object sgastdnTermCodeEff;
+    private String sgastdnTermCodeEff;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -48,7 +48,7 @@ public class AdditionalStudentInformationCohort100GetRequest {
      * 
      */
     @JsonProperty("sgastdnId")
-    public Object getSgastdnId() {
+    public String getSgastdnId() {
         return sgastdnId;
     }
 
@@ -59,11 +59,11 @@ public class AdditionalStudentInformationCohort100GetRequest {
      * 
      */
     @JsonProperty("sgastdnId")
-    public void setSgastdnId(Object sgastdnId) {
+    public void setSgastdnId(String sgastdnId) {
         this.sgastdnId = sgastdnId;
     }
 
-    public AdditionalStudentInformationCohort100GetRequest withSgastdnId(Object sgastdnId) {
+    public AdditionalStudentInformationCohort100GetRequest withSgastdnId(String sgastdnId) {
         this.sgastdnId = sgastdnId;
         return this;
     }
@@ -75,7 +75,7 @@ public class AdditionalStudentInformationCohort100GetRequest {
      * 
      */
     @JsonProperty("sgastdnTermCodeEff")
-    public Object getSgastdnTermCodeEff() {
+    public String getSgastdnTermCodeEff() {
         return sgastdnTermCodeEff;
     }
 
@@ -86,11 +86,11 @@ public class AdditionalStudentInformationCohort100GetRequest {
      * 
      */
     @JsonProperty("sgastdnTermCodeEff")
-    public void setSgastdnTermCodeEff(Object sgastdnTermCodeEff) {
+    public void setSgastdnTermCodeEff(String sgastdnTermCodeEff) {
         this.sgastdnTermCodeEff = sgastdnTermCodeEff;
     }
 
-    public AdditionalStudentInformationCohort100GetRequest withSgastdnTermCodeEff(Object sgastdnTermCodeEff) {
+    public AdditionalStudentInformationCohort100GetRequest withSgastdnTermCodeEff(String sgastdnTermCodeEff) {
         this.sgastdnTermCodeEff = sgastdnTermCodeEff;
         return this;
     }

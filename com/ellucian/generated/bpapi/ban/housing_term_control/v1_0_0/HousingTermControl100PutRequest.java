@@ -50,7 +50,7 @@ public class HousingTermControl100PutRequest {
      */
     @JsonProperty("xxxxxxxTermCode")
     @JsonPropertyDescription("Lineage reference object : xxxxxxxTermCode, Lookup lineage reference object : stvterm")
-    private Object xxxxxxxTermCode;
+    private String xxxxxxxTermCode;
     /**
      * Fee Assessment Effective Date
      * <p>
@@ -134,7 +134,7 @@ public class HousingTermControl100PutRequest {
      * 
      */
     @JsonProperty("xxxxxxxTermCode")
-    public Object getXxxxxxxTermCode() {
+    public String getXxxxxxxTermCode() {
         return xxxxxxxTermCode;
     }
 
@@ -145,11 +145,11 @@ public class HousingTermControl100PutRequest {
      * 
      */
     @JsonProperty("xxxxxxxTermCode")
-    public void setXxxxxxxTermCode(Object xxxxxxxTermCode) {
+    public void setXxxxxxxTermCode(String xxxxxxxTermCode) {
         this.xxxxxxxTermCode = xxxxxxxTermCode;
     }
 
-    public HousingTermControl100PutRequest withXxxxxxxTermCode(Object xxxxxxxTermCode) {
+    public HousingTermControl100PutRequest withXxxxxxxTermCode(String xxxxxxxTermCode) {
         this.xxxxxxxTermCode = xxxxxxxTermCode;
         return this;
     }

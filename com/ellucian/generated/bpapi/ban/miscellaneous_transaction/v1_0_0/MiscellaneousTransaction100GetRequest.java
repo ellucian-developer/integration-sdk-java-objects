@@ -29,7 +29,7 @@ public class MiscellaneousTransaction100GetRequest {
      */
     @JsonProperty("documentNumber")
     @JsonPropertyDescription("Lineage reference object : documentNumber, Lookup lineage reference object : tbrmisd")
-    private Object documentNumber;
+    private String documentNumber;
     /**
      * ID
      * <p>
@@ -38,7 +38,7 @@ public class MiscellaneousTransaction100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Receipt Number
      * <p>
@@ -47,7 +47,7 @@ public class MiscellaneousTransaction100GetRequest {
      */
     @JsonProperty("receiptNumber")
     @JsonPropertyDescription("Lineage reference object : receiptNumber")
-    private Object receiptNumber;
+    private Double receiptNumber;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -58,7 +58,7 @@ public class MiscellaneousTransaction100GetRequest {
      * 
      */
     @JsonProperty("documentNumber")
-    public Object getDocumentNumber() {
+    public String getDocumentNumber() {
         return documentNumber;
     }
 
@@ -69,11 +69,11 @@ public class MiscellaneousTransaction100GetRequest {
      * 
      */
     @JsonProperty("documentNumber")
-    public void setDocumentNumber(Object documentNumber) {
+    public void setDocumentNumber(String documentNumber) {
         this.documentNumber = documentNumber;
     }
 
-    public MiscellaneousTransaction100GetRequest withDocumentNumber(Object documentNumber) {
+    public MiscellaneousTransaction100GetRequest withDocumentNumber(String documentNumber) {
         this.documentNumber = documentNumber;
         return this;
     }
@@ -85,7 +85,7 @@ public class MiscellaneousTransaction100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -96,11 +96,11 @@ public class MiscellaneousTransaction100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public MiscellaneousTransaction100GetRequest withId(Object id) {
+    public MiscellaneousTransaction100GetRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -112,7 +112,7 @@ public class MiscellaneousTransaction100GetRequest {
      * 
      */
     @JsonProperty("receiptNumber")
-    public Object getReceiptNumber() {
+    public Double getReceiptNumber() {
         return receiptNumber;
     }
 
@@ -123,11 +123,11 @@ public class MiscellaneousTransaction100GetRequest {
      * 
      */
     @JsonProperty("receiptNumber")
-    public void setReceiptNumber(Object receiptNumber) {
+    public void setReceiptNumber(Double receiptNumber) {
         this.receiptNumber = receiptNumber;
     }
 
-    public MiscellaneousTransaction100GetRequest withReceiptNumber(Object receiptNumber) {
+    public MiscellaneousTransaction100GetRequest withReceiptNumber(Double receiptNumber) {
         this.receiptNumber = receiptNumber;
         return this;
     }

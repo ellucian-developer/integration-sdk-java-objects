@@ -9,13 +9,15 @@ import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "scacrseSubjCode",
     "scacrseCrseNumb",
-    "scacrseTermCodeEff"
+    "scacrseTermCodeEff",
+    "text"
 })
 @Generated("jsonschema2pojo")
 public class CourseDetailInformationCourseText100QapiPost {
@@ -26,6 +28,15 @@ public class CourseDetailInformationCourseText100QapiPost {
     private String scacrseCrseNumb;
     @JsonProperty("scacrseTermCodeEff")
     private String scacrseTermCodeEff;
+    /**
+     * Course Text
+     * <p>
+     * Lineage reference object : SCRTEXT_TEXT
+     * 
+     */
+    @JsonProperty("text")
+    @JsonPropertyDescription("Lineage reference object : SCRTEXT_TEXT")
+    private String text;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -74,6 +85,33 @@ public class CourseDetailInformationCourseText100QapiPost {
         return this;
     }
 
+    /**
+     * Course Text
+     * <p>
+     * Lineage reference object : SCRTEXT_TEXT
+     * 
+     */
+    @JsonProperty("text")
+    public String getText() {
+        return text;
+    }
+
+    /**
+     * Course Text
+     * <p>
+     * Lineage reference object : SCRTEXT_TEXT
+     * 
+     */
+    @JsonProperty("text")
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public CourseDetailInformationCourseText100QapiPost withText(String text) {
+        this.text = text;
+        return this;
+    }
+
     @JsonAnyGetter
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;
@@ -105,6 +143,10 @@ public class CourseDetailInformationCourseText100QapiPost {
         sb.append('=');
         sb.append(((this.scacrseTermCodeEff == null)?"<null>":this.scacrseTermCodeEff));
         sb.append(',');
+        sb.append("text");
+        sb.append('=');
+        sb.append(((this.text == null)?"<null>":this.text));
+        sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');
         sb.append(((this.additionalProperties == null)?"<null>":this.additionalProperties));
@@ -120,6 +162,7 @@ public class CourseDetailInformationCourseText100QapiPost {
     @Override
     public int hashCode() {
         int result = 1;
+        result = ((result* 31)+((this.text == null)? 0 :this.text.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
         result = ((result* 31)+((this.scacrseCrseNumb == null)? 0 :this.scacrseCrseNumb.hashCode()));
         result = ((result* 31)+((this.scacrseTermCodeEff == null)? 0 :this.scacrseTermCodeEff.hashCode()));
@@ -136,7 +179,7 @@ public class CourseDetailInformationCourseText100QapiPost {
             return false;
         }
         CourseDetailInformationCourseText100QapiPost rhs = ((CourseDetailInformationCourseText100QapiPost) other);
-        return (((((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties)))&&((this.scacrseCrseNumb == rhs.scacrseCrseNumb)||((this.scacrseCrseNumb!= null)&&this.scacrseCrseNumb.equals(rhs.scacrseCrseNumb))))&&((this.scacrseTermCodeEff == rhs.scacrseTermCodeEff)||((this.scacrseTermCodeEff!= null)&&this.scacrseTermCodeEff.equals(rhs.scacrseTermCodeEff))))&&((this.scacrseSubjCode == rhs.scacrseSubjCode)||((this.scacrseSubjCode!= null)&&this.scacrseSubjCode.equals(rhs.scacrseSubjCode))));
+        return ((((((this.text == rhs.text)||((this.text!= null)&&this.text.equals(rhs.text)))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.scacrseCrseNumb == rhs.scacrseCrseNumb)||((this.scacrseCrseNumb!= null)&&this.scacrseCrseNumb.equals(rhs.scacrseCrseNumb))))&&((this.scacrseTermCodeEff == rhs.scacrseTermCodeEff)||((this.scacrseTermCodeEff!= null)&&this.scacrseTermCodeEff.equals(rhs.scacrseTermCodeEff))))&&((this.scacrseSubjCode == rhs.scacrseSubjCode)||((this.scacrseSubjCode!= null)&&this.scacrseSubjCode.equals(rhs.scacrseSubjCode))));
     }
 
 }

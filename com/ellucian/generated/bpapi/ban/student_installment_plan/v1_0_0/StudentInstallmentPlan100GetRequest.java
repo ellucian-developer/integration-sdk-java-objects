@@ -140,7 +140,7 @@ public class StudentInstallmentPlan100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Number of Payments
      * <p>
@@ -527,7 +527,7 @@ public class StudentInstallmentPlan100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -538,11 +538,11 @@ public class StudentInstallmentPlan100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public StudentInstallmentPlan100GetRequest withId(Object id) {
+    public StudentInstallmentPlan100GetRequest withId(String id) {
         this.id = id;
         return this;
     }

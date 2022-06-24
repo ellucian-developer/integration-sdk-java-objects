@@ -25,18 +25,22 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "taxFormDate",
     "1099AtypCode",
     "ctryCodePhone",
+    "persMi",
     "effDate",
     "ftvvendName",
     "collectTax",
     "stWholdPct",
     "carrierInd",
     "discCode",
+    "ftvvendVendCode",
     "contact",
     "fedWholdPct",
+    "persFirstName",
     "poHoldRsnCode",
     "phoneExt",
     "vendCheckAtypCode",
     "1099RptId",
+    "persLastName",
     "groupingInd",
     "addrSeqno",
     "inStInd",
@@ -142,6 +146,15 @@ public class VendorMaintenance100PostRequest {
     @JsonPropertyDescription("Lineage reference object : FTVVEND_CTRY_CODE_PHONE")
     private String ctryCodePhone;
     /**
+     * Middle Name
+     * <p>
+     * Lineage reference object : persMi
+     * 
+     */
+    @JsonProperty("persMi")
+    @JsonPropertyDescription("Lineage reference object : persMi")
+    private String persMi;
+    /**
      * Start Date
      * <p>
      * Lineage reference object : FTVVEND_EFF_DATE
@@ -159,7 +172,7 @@ public class VendorMaintenance100PostRequest {
      */
     @JsonProperty("ftvvendName")
     @JsonPropertyDescription("Lineage reference object : ftvvendName")
-    private Object ftvvendName;
+    private String ftvvendName;
     /**
      * Collects Taxes
      * <p>
@@ -198,6 +211,16 @@ public class VendorMaintenance100PostRequest {
     @JsonPropertyDescription("Lineage reference object : FTVVEND_DISC_CODE, Lookup lineage reference object : ftvdisc")
     private String discCode;
     /**
+     * Vendor
+     * <p>
+     * Lineage reference object : ftvvendVendCode, Lookup lineage reference object : ftvvend
+     * (Required)
+     * 
+     */
+    @JsonProperty("ftvvendVendCode")
+    @JsonPropertyDescription("Lineage reference object : ftvvendVendCode, Lookup lineage reference object : ftvvend")
+    private String ftvvendVendCode;
+    /**
      * Contact
      * <p>
      * Lineage reference object : FTVVEND_CONTACT
@@ -215,6 +238,15 @@ public class VendorMaintenance100PostRequest {
     @JsonProperty("fedWholdPct")
     @JsonPropertyDescription("Lineage reference object : FTVVEND_FED_WHOLD_PCT")
     private Double fedWholdPct;
+    /**
+     * First Name
+     * <p>
+     * Lineage reference object : persFirstName
+     * 
+     */
+    @JsonProperty("persFirstName")
+    @JsonPropertyDescription("Lineage reference object : persFirstName")
+    private String persFirstName;
     /**
      * Order Hold Code
      * <p>
@@ -251,6 +283,15 @@ public class VendorMaintenance100PostRequest {
     @JsonProperty("1099RptId")
     @JsonPropertyDescription("Lineage reference object : FTVVEND_1099_RPT_ID")
     private String _1099RptId;
+    /**
+     * Last Name
+     * <p>
+     * Lineage reference object : persLastName
+     * 
+     */
+    @JsonProperty("persLastName")
+    @JsonPropertyDescription("Lineage reference object : persLastName")
+    private String persLastName;
     /**
      * Invoice Grouping
      * <p>
@@ -618,6 +659,33 @@ public class VendorMaintenance100PostRequest {
     }
 
     /**
+     * Middle Name
+     * <p>
+     * Lineage reference object : persMi
+     * 
+     */
+    @JsonProperty("persMi")
+    public String getPersMi() {
+        return persMi;
+    }
+
+    /**
+     * Middle Name
+     * <p>
+     * Lineage reference object : persMi
+     * 
+     */
+    @JsonProperty("persMi")
+    public void setPersMi(String persMi) {
+        this.persMi = persMi;
+    }
+
+    public VendorMaintenance100PostRequest withPersMi(String persMi) {
+        this.persMi = persMi;
+        return this;
+    }
+
+    /**
      * Start Date
      * <p>
      * Lineage reference object : FTVVEND_EFF_DATE
@@ -653,7 +721,7 @@ public class VendorMaintenance100PostRequest {
      * 
      */
     @JsonProperty("ftvvendName")
-    public Object getFtvvendName() {
+    public String getFtvvendName() {
         return ftvvendName;
     }
 
@@ -664,11 +732,11 @@ public class VendorMaintenance100PostRequest {
      * 
      */
     @JsonProperty("ftvvendName")
-    public void setFtvvendName(Object ftvvendName) {
+    public void setFtvvendName(String ftvvendName) {
         this.ftvvendName = ftvvendName;
     }
 
-    public VendorMaintenance100PostRequest withFtvvendName(Object ftvvendName) {
+    public VendorMaintenance100PostRequest withFtvvendName(String ftvvendName) {
         this.ftvvendName = ftvvendName;
         return this;
     }
@@ -784,6 +852,35 @@ public class VendorMaintenance100PostRequest {
     }
 
     /**
+     * Vendor
+     * <p>
+     * Lineage reference object : ftvvendVendCode, Lookup lineage reference object : ftvvend
+     * (Required)
+     * 
+     */
+    @JsonProperty("ftvvendVendCode")
+    public String getFtvvendVendCode() {
+        return ftvvendVendCode;
+    }
+
+    /**
+     * Vendor
+     * <p>
+     * Lineage reference object : ftvvendVendCode, Lookup lineage reference object : ftvvend
+     * (Required)
+     * 
+     */
+    @JsonProperty("ftvvendVendCode")
+    public void setFtvvendVendCode(String ftvvendVendCode) {
+        this.ftvvendVendCode = ftvvendVendCode;
+    }
+
+    public VendorMaintenance100PostRequest withFtvvendVendCode(String ftvvendVendCode) {
+        this.ftvvendVendCode = ftvvendVendCode;
+        return this;
+    }
+
+    /**
      * Contact
      * <p>
      * Lineage reference object : FTVVEND_CONTACT
@@ -834,6 +931,33 @@ public class VendorMaintenance100PostRequest {
 
     public VendorMaintenance100PostRequest withFedWholdPct(Double fedWholdPct) {
         this.fedWholdPct = fedWholdPct;
+        return this;
+    }
+
+    /**
+     * First Name
+     * <p>
+     * Lineage reference object : persFirstName
+     * 
+     */
+    @JsonProperty("persFirstName")
+    public String getPersFirstName() {
+        return persFirstName;
+    }
+
+    /**
+     * First Name
+     * <p>
+     * Lineage reference object : persFirstName
+     * 
+     */
+    @JsonProperty("persFirstName")
+    public void setPersFirstName(String persFirstName) {
+        this.persFirstName = persFirstName;
+    }
+
+    public VendorMaintenance100PostRequest withPersFirstName(String persFirstName) {
+        this.persFirstName = persFirstName;
         return this;
     }
 
@@ -942,6 +1066,33 @@ public class VendorMaintenance100PostRequest {
 
     public VendorMaintenance100PostRequest with1099RptId(String _1099RptId) {
         this._1099RptId = _1099RptId;
+        return this;
+    }
+
+    /**
+     * Last Name
+     * <p>
+     * Lineage reference object : persLastName
+     * 
+     */
+    @JsonProperty("persLastName")
+    public String getPersLastName() {
+        return persLastName;
+    }
+
+    /**
+     * Last Name
+     * <p>
+     * Lineage reference object : persLastName
+     * 
+     */
+    @JsonProperty("persLastName")
+    public void setPersLastName(String persLastName) {
+        this.persLastName = persLastName;
+    }
+
+    public VendorMaintenance100PostRequest withPersLastName(String persLastName) {
+        this.persLastName = persLastName;
         return this;
     }
 
@@ -1276,6 +1427,10 @@ public class VendorMaintenance100PostRequest {
         sb.append('=');
         sb.append(((this.ctryCodePhone == null)?"<null>":this.ctryCodePhone));
         sb.append(',');
+        sb.append("persMi");
+        sb.append('=');
+        sb.append(((this.persMi == null)?"<null>":this.persMi));
+        sb.append(',');
         sb.append("effDate");
         sb.append('=');
         sb.append(((this.effDate == null)?"<null>":this.effDate));
@@ -1300,6 +1455,10 @@ public class VendorMaintenance100PostRequest {
         sb.append('=');
         sb.append(((this.discCode == null)?"<null>":this.discCode));
         sb.append(',');
+        sb.append("ftvvendVendCode");
+        sb.append('=');
+        sb.append(((this.ftvvendVendCode == null)?"<null>":this.ftvvendVendCode));
+        sb.append(',');
         sb.append("contact");
         sb.append('=');
         sb.append(((this.contact == null)?"<null>":this.contact));
@@ -1307,6 +1466,10 @@ public class VendorMaintenance100PostRequest {
         sb.append("fedWholdPct");
         sb.append('=');
         sb.append(((this.fedWholdPct == null)?"<null>":this.fedWholdPct));
+        sb.append(',');
+        sb.append("persFirstName");
+        sb.append('=');
+        sb.append(((this.persFirstName == null)?"<null>":this.persFirstName));
         sb.append(',');
         sb.append("poHoldRsnCode");
         sb.append('=');
@@ -1323,6 +1486,10 @@ public class VendorMaintenance100PostRequest {
         sb.append("_1099RptId");
         sb.append('=');
         sb.append(((this._1099RptId == null)?"<null>":this._1099RptId));
+        sb.append(',');
+        sb.append("persLastName");
+        sb.append('=');
+        sb.append(((this.persLastName == null)?"<null>":this.persLastName));
         sb.append(',');
         sb.append("groupingInd");
         sb.append('=');
@@ -1388,18 +1555,22 @@ public class VendorMaintenance100PostRequest {
         result = ((result* 31)+((this.phoneNum == null)? 0 :this.phoneNum.hashCode()));
         result = ((result* 31)+((this.taxFormDate == null)? 0 :this.taxFormDate.hashCode()));
         result = ((result* 31)+((this.ctryCodePhone == null)? 0 :this.ctryCodePhone.hashCode()));
+        result = ((result* 31)+((this.persMi == null)? 0 :this.persMi.hashCode()));
         result = ((result* 31)+((this.effDate == null)? 0 :this.effDate.hashCode()));
         result = ((result* 31)+((this.ftvvendName == null)? 0 :this.ftvvendName.hashCode()));
         result = ((result* 31)+((this.collectTax == null)? 0 :this.collectTax.hashCode()));
         result = ((result* 31)+((this.stWholdPct == null)? 0 :this.stWholdPct.hashCode()));
         result = ((result* 31)+((this.carrierInd == null)? 0 :this.carrierInd.hashCode()));
         result = ((result* 31)+((this.discCode == null)? 0 :this.discCode.hashCode()));
+        result = ((result* 31)+((this.ftvvendVendCode == null)? 0 :this.ftvvendVendCode.hashCode()));
         result = ((result* 31)+((this.contact == null)? 0 :this.contact.hashCode()));
         result = ((result* 31)+((this.fedWholdPct == null)? 0 :this.fedWholdPct.hashCode()));
+        result = ((result* 31)+((this.persFirstName == null)? 0 :this.persFirstName.hashCode()));
         result = ((result* 31)+((this.poHoldRsnCode == null)? 0 :this.poHoldRsnCode.hashCode()));
         result = ((result* 31)+((this.phoneExt == null)? 0 :this.phoneExt.hashCode()));
         result = ((result* 31)+((this._1099RptId == null)? 0 :this._1099RptId.hashCode()));
         result = ((result* 31)+((this.vendCheckAtypCode == null)? 0 :this.vendCheckAtypCode.hashCode()));
+        result = ((result* 31)+((this.persLastName == null)? 0 :this.persLastName.hashCode()));
         result = ((result* 31)+((this.groupingInd == null)? 0 :this.groupingInd.hashCode()));
         result = ((result* 31)+((this.addrSeqno == null)? 0 :this.addrSeqno.hashCode()));
         result = ((result* 31)+((this.inStInd == null)? 0 :this.inStInd.hashCode()));
@@ -1424,7 +1595,7 @@ public class VendorMaintenance100PostRequest {
             return false;
         }
         VendorMaintenance100PostRequest rhs = ((VendorMaintenance100PostRequest) other);
-        return ((((((((((((((((((((((((((((((((((this.ftmvendVendCheckCode == rhs.ftmvendVendCheckCode)||((this.ftmvendVendCheckCode!= null)&&this.ftmvendVendCheckCode.equals(rhs.ftmvendVendCheckCode)))&&((this.taxFormStatus == rhs.taxFormStatus)||((this.taxFormStatus!= null)&&this.taxFormStatus.equals(rhs.taxFormStatus))))&&((this.currCode == rhs.currCode)||((this.currCode!= null)&&this.currCode.equals(rhs.currCode))))&&((this.eprocInd == rhs.eprocInd)||((this.eprocInd!= null)&&this.eprocInd.equals(rhs.eprocInd))))&&((this._1099AtypCode == rhs._1099AtypCode)||((this._1099AtypCode!= null)&&this._1099AtypCode.equals(rhs._1099AtypCode))))&&((this.vendOwner == rhs.vendOwner)||((this.vendOwner!= null)&&this.vendOwner.equals(rhs.vendOwner))))&&((this.phoneNum == rhs.phoneNum)||((this.phoneNum!= null)&&this.phoneNum.equals(rhs.phoneNum))))&&((this.taxFormDate == rhs.taxFormDate)||((this.taxFormDate!= null)&&this.taxFormDate.equals(rhs.taxFormDate))))&&((this.ctryCodePhone == rhs.ctryCodePhone)||((this.ctryCodePhone!= null)&&this.ctryCodePhone.equals(rhs.ctryCodePhone))))&&((this.effDate == rhs.effDate)||((this.effDate!= null)&&this.effDate.equals(rhs.effDate))))&&((this.ftvvendName == rhs.ftvvendName)||((this.ftvvendName!= null)&&this.ftvvendName.equals(rhs.ftvvendName))))&&((this.collectTax == rhs.collectTax)||((this.collectTax!= null)&&this.collectTax.equals(rhs.collectTax))))&&((this.stWholdPct == rhs.stWholdPct)||((this.stWholdPct!= null)&&this.stWholdPct.equals(rhs.stWholdPct))))&&((this.carrierInd == rhs.carrierInd)||((this.carrierInd!= null)&&this.carrierInd.equals(rhs.carrierInd))))&&((this.discCode == rhs.discCode)||((this.discCode!= null)&&this.discCode.equals(rhs.discCode))))&&((this.contact == rhs.contact)||((this.contact!= null)&&this.contact.equals(rhs.contact))))&&((this.fedWholdPct == rhs.fedWholdPct)||((this.fedWholdPct!= null)&&this.fedWholdPct.equals(rhs.fedWholdPct))))&&((this.poHoldRsnCode == rhs.poHoldRsnCode)||((this.poHoldRsnCode!= null)&&this.poHoldRsnCode.equals(rhs.poHoldRsnCode))))&&((this.phoneExt == rhs.phoneExt)||((this.phoneExt!= null)&&this.phoneExt.equals(rhs.phoneExt))))&&((this._1099RptId == rhs._1099RptId)||((this._1099RptId!= null)&&this._1099RptId.equals(rhs._1099RptId))))&&((this.vendCheckAtypCode == rhs.vendCheckAtypCode)||((this.vendCheckAtypCode!= null)&&this.vendCheckAtypCode.equals(rhs.vendCheckAtypCode))))&&((this.groupingInd == rhs.groupingInd)||((this.groupingInd!= null)&&this.groupingInd.equals(rhs.groupingInd))))&&((this.addrSeqno == rhs.addrSeqno)||((this.addrSeqno!= null)&&this.addrSeqno.equals(rhs.addrSeqno))))&&((this.inStInd == rhs.inStInd)||((this.inStInd!= null)&&this.inStInd.equals(rhs.inStInd))))&&((this._1099AddrSeqno == rhs._1099AddrSeqno)||((this._1099AddrSeqno!= null)&&this._1099AddrSeqno.equals(rhs._1099AddrSeqno))))&&((this.vendCheckAddrSeqno == rhs.vendCheckAddrSeqno)||((this.vendCheckAddrSeqno!= null)&&this.vendCheckAddrSeqno.equals(rhs.vendCheckAddrSeqno))))&&((this.phoneArea == rhs.phoneArea)||((this.phoneArea!= null)&&this.phoneArea.equals(rhs.phoneArea))))&&((this.spridenNtypCode == rhs.spridenNtypCode)||((this.spridenNtypCode!= null)&&this.spridenNtypCode.equals(rhs.spridenNtypCode))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.termDate == rhs.termDate)||((this.termDate!= null)&&this.termDate.equals(rhs.termDate))))&&((this.itypCode == rhs.itypCode)||((this.itypCode!= null)&&this.itypCode.equals(rhs.itypCode))))&&((this.atypCode == rhs.atypCode)||((this.atypCode!= null)&&this.atypCode.equals(rhs.atypCode))))&&((this.pmtHoldRsnCode == rhs.pmtHoldRsnCode)||((this.pmtHoldRsnCode!= null)&&this.pmtHoldRsnCode.equals(rhs.pmtHoldRsnCode))));
+        return ((((((((((((((((((((((((((((((((((((((this.ftmvendVendCheckCode == rhs.ftmvendVendCheckCode)||((this.ftmvendVendCheckCode!= null)&&this.ftmvendVendCheckCode.equals(rhs.ftmvendVendCheckCode)))&&((this.taxFormStatus == rhs.taxFormStatus)||((this.taxFormStatus!= null)&&this.taxFormStatus.equals(rhs.taxFormStatus))))&&((this.currCode == rhs.currCode)||((this.currCode!= null)&&this.currCode.equals(rhs.currCode))))&&((this.eprocInd == rhs.eprocInd)||((this.eprocInd!= null)&&this.eprocInd.equals(rhs.eprocInd))))&&((this._1099AtypCode == rhs._1099AtypCode)||((this._1099AtypCode!= null)&&this._1099AtypCode.equals(rhs._1099AtypCode))))&&((this.vendOwner == rhs.vendOwner)||((this.vendOwner!= null)&&this.vendOwner.equals(rhs.vendOwner))))&&((this.phoneNum == rhs.phoneNum)||((this.phoneNum!= null)&&this.phoneNum.equals(rhs.phoneNum))))&&((this.taxFormDate == rhs.taxFormDate)||((this.taxFormDate!= null)&&this.taxFormDate.equals(rhs.taxFormDate))))&&((this.ctryCodePhone == rhs.ctryCodePhone)||((this.ctryCodePhone!= null)&&this.ctryCodePhone.equals(rhs.ctryCodePhone))))&&((this.persMi == rhs.persMi)||((this.persMi!= null)&&this.persMi.equals(rhs.persMi))))&&((this.effDate == rhs.effDate)||((this.effDate!= null)&&this.effDate.equals(rhs.effDate))))&&((this.ftvvendName == rhs.ftvvendName)||((this.ftvvendName!= null)&&this.ftvvendName.equals(rhs.ftvvendName))))&&((this.collectTax == rhs.collectTax)||((this.collectTax!= null)&&this.collectTax.equals(rhs.collectTax))))&&((this.stWholdPct == rhs.stWholdPct)||((this.stWholdPct!= null)&&this.stWholdPct.equals(rhs.stWholdPct))))&&((this.carrierInd == rhs.carrierInd)||((this.carrierInd!= null)&&this.carrierInd.equals(rhs.carrierInd))))&&((this.discCode == rhs.discCode)||((this.discCode!= null)&&this.discCode.equals(rhs.discCode))))&&((this.ftvvendVendCode == rhs.ftvvendVendCode)||((this.ftvvendVendCode!= null)&&this.ftvvendVendCode.equals(rhs.ftvvendVendCode))))&&((this.contact == rhs.contact)||((this.contact!= null)&&this.contact.equals(rhs.contact))))&&((this.fedWholdPct == rhs.fedWholdPct)||((this.fedWholdPct!= null)&&this.fedWholdPct.equals(rhs.fedWholdPct))))&&((this.persFirstName == rhs.persFirstName)||((this.persFirstName!= null)&&this.persFirstName.equals(rhs.persFirstName))))&&((this.poHoldRsnCode == rhs.poHoldRsnCode)||((this.poHoldRsnCode!= null)&&this.poHoldRsnCode.equals(rhs.poHoldRsnCode))))&&((this.phoneExt == rhs.phoneExt)||((this.phoneExt!= null)&&this.phoneExt.equals(rhs.phoneExt))))&&((this._1099RptId == rhs._1099RptId)||((this._1099RptId!= null)&&this._1099RptId.equals(rhs._1099RptId))))&&((this.vendCheckAtypCode == rhs.vendCheckAtypCode)||((this.vendCheckAtypCode!= null)&&this.vendCheckAtypCode.equals(rhs.vendCheckAtypCode))))&&((this.persLastName == rhs.persLastName)||((this.persLastName!= null)&&this.persLastName.equals(rhs.persLastName))))&&((this.groupingInd == rhs.groupingInd)||((this.groupingInd!= null)&&this.groupingInd.equals(rhs.groupingInd))))&&((this.addrSeqno == rhs.addrSeqno)||((this.addrSeqno!= null)&&this.addrSeqno.equals(rhs.addrSeqno))))&&((this.inStInd == rhs.inStInd)||((this.inStInd!= null)&&this.inStInd.equals(rhs.inStInd))))&&((this._1099AddrSeqno == rhs._1099AddrSeqno)||((this._1099AddrSeqno!= null)&&this._1099AddrSeqno.equals(rhs._1099AddrSeqno))))&&((this.vendCheckAddrSeqno == rhs.vendCheckAddrSeqno)||((this.vendCheckAddrSeqno!= null)&&this.vendCheckAddrSeqno.equals(rhs.vendCheckAddrSeqno))))&&((this.phoneArea == rhs.phoneArea)||((this.phoneArea!= null)&&this.phoneArea.equals(rhs.phoneArea))))&&((this.spridenNtypCode == rhs.spridenNtypCode)||((this.spridenNtypCode!= null)&&this.spridenNtypCode.equals(rhs.spridenNtypCode))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.termDate == rhs.termDate)||((this.termDate!= null)&&this.termDate.equals(rhs.termDate))))&&((this.itypCode == rhs.itypCode)||((this.itypCode!= null)&&this.itypCode.equals(rhs.itypCode))))&&((this.atypCode == rhs.atypCode)||((this.atypCode!= null)&&this.atypCode.equals(rhs.atypCode))))&&((this.pmtHoldRsnCode == rhs.pmtHoldRsnCode)||((this.pmtHoldRsnCode!= null)&&this.pmtHoldRsnCode.equals(rhs.pmtHoldRsnCode))));
     }
 
 }

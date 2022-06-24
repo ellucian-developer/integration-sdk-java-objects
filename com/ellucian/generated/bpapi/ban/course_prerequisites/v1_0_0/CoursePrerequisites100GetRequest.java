@@ -39,7 +39,7 @@ public class CoursePrerequisites100GetRequest {
      */
     @JsonProperty("crseNumb")
     @JsonPropertyDescription("Lineage reference object : scapreqCrseNumb, Lookup lineage reference object : scbcrse,scbcrky")
-    private Object crseNumb;
+    private String crseNumb;
     /**
      * Term
      * <p>
@@ -48,7 +48,7 @@ public class CoursePrerequisites100GetRequest {
      */
     @JsonProperty("termCodeEff")
     @JsonPropertyDescription("Lineage reference object : scapreqTermCodeEff, Lookup lineage reference object : stvterm,scbcrky,scbcrky")
-    private Object termCodeEff;
+    private String termCodeEff;
     /**
      * Subject
      * <p>
@@ -57,7 +57,7 @@ public class CoursePrerequisites100GetRequest {
      */
     @JsonProperty("subjCode")
     @JsonPropertyDescription("Lineage reference object : scapreqSubjCode, Lookup lineage reference object : stvsubj")
-    private Object subjCode;
+    private String subjCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -95,7 +95,7 @@ public class CoursePrerequisites100GetRequest {
      * 
      */
     @JsonProperty("crseNumb")
-    public Object getCrseNumb() {
+    public String getCrseNumb() {
         return crseNumb;
     }
 
@@ -106,11 +106,11 @@ public class CoursePrerequisites100GetRequest {
      * 
      */
     @JsonProperty("crseNumb")
-    public void setCrseNumb(Object crseNumb) {
+    public void setCrseNumb(String crseNumb) {
         this.crseNumb = crseNumb;
     }
 
-    public CoursePrerequisites100GetRequest withCrseNumb(Object crseNumb) {
+    public CoursePrerequisites100GetRequest withCrseNumb(String crseNumb) {
         this.crseNumb = crseNumb;
         return this;
     }
@@ -122,7 +122,7 @@ public class CoursePrerequisites100GetRequest {
      * 
      */
     @JsonProperty("termCodeEff")
-    public Object getTermCodeEff() {
+    public String getTermCodeEff() {
         return termCodeEff;
     }
 
@@ -133,11 +133,11 @@ public class CoursePrerequisites100GetRequest {
      * 
      */
     @JsonProperty("termCodeEff")
-    public void setTermCodeEff(Object termCodeEff) {
+    public void setTermCodeEff(String termCodeEff) {
         this.termCodeEff = termCodeEff;
     }
 
-    public CoursePrerequisites100GetRequest withTermCodeEff(Object termCodeEff) {
+    public CoursePrerequisites100GetRequest withTermCodeEff(String termCodeEff) {
         this.termCodeEff = termCodeEff;
         return this;
     }
@@ -149,7 +149,7 @@ public class CoursePrerequisites100GetRequest {
      * 
      */
     @JsonProperty("subjCode")
-    public Object getSubjCode() {
+    public String getSubjCode() {
         return subjCode;
     }
 
@@ -160,11 +160,11 @@ public class CoursePrerequisites100GetRequest {
      * 
      */
     @JsonProperty("subjCode")
-    public void setSubjCode(Object subjCode) {
+    public void setSubjCode(String subjCode) {
         this.subjCode = subjCode;
     }
 
-    public CoursePrerequisites100GetRequest withSubjCode(Object subjCode) {
+    public CoursePrerequisites100GetRequest withSubjCode(String subjCode) {
         this.subjCode = subjCode;
         return this;
     }

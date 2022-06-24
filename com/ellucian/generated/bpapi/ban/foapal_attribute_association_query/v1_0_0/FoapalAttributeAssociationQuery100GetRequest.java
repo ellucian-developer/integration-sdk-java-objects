@@ -51,7 +51,7 @@ public class FoapalAttributeAssociationQuery100GetRequest {
      */
     @JsonProperty("queryBy")
     @JsonPropertyDescription("Lineage reference object : queryBy")
-    private Object queryBy;
+    private String queryBy;
     /**
      * Ftvsatv Attt Code
      * <p>
@@ -75,7 +75,7 @@ public class FoapalAttributeAssociationQuery100GetRequest {
      */
     @JsonProperty("foapalType")
     @JsonPropertyDescription("Lineage reference object : foapalType")
-    private Object foapalType;
+    private String foapalType;
     /**
      * Ftvsatv Foapal Title
      * <p>
@@ -103,7 +103,7 @@ public class FoapalAttributeAssociationQuery100GetRequest {
      */
     @JsonProperty("coasCode")
     @JsonPropertyDescription("Lineage reference object : coasCode, Lookup lineage reference object : ftvcoas")
-    private Object coasCode;
+    private String coasCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -166,7 +166,7 @@ public class FoapalAttributeAssociationQuery100GetRequest {
      * 
      */
     @JsonProperty("queryBy")
-    public Object getQueryBy() {
+    public String getQueryBy() {
         return queryBy;
     }
 
@@ -175,11 +175,11 @@ public class FoapalAttributeAssociationQuery100GetRequest {
      * 
      */
     @JsonProperty("queryBy")
-    public void setQueryBy(Object queryBy) {
+    public void setQueryBy(String queryBy) {
         this.queryBy = queryBy;
     }
 
-    public FoapalAttributeAssociationQuery100GetRequest withQueryBy(Object queryBy) {
+    public FoapalAttributeAssociationQuery100GetRequest withQueryBy(String queryBy) {
         this.queryBy = queryBy;
         return this;
     }
@@ -243,7 +243,7 @@ public class FoapalAttributeAssociationQuery100GetRequest {
      * 
      */
     @JsonProperty("foapalType")
-    public Object getFoapalType() {
+    public String getFoapalType() {
         return foapalType;
     }
 
@@ -252,11 +252,11 @@ public class FoapalAttributeAssociationQuery100GetRequest {
      * 
      */
     @JsonProperty("foapalType")
-    public void setFoapalType(Object foapalType) {
+    public void setFoapalType(String foapalType) {
         this.foapalType = foapalType;
     }
 
-    public FoapalAttributeAssociationQuery100GetRequest withFoapalType(Object foapalType) {
+    public FoapalAttributeAssociationQuery100GetRequest withFoapalType(String foapalType) {
         this.foapalType = foapalType;
         return this;
     }
@@ -323,7 +323,7 @@ public class FoapalAttributeAssociationQuery100GetRequest {
      * 
      */
     @JsonProperty("coasCode")
-    public Object getCoasCode() {
+    public String getCoasCode() {
         return coasCode;
     }
 
@@ -335,11 +335,11 @@ public class FoapalAttributeAssociationQuery100GetRequest {
      * 
      */
     @JsonProperty("coasCode")
-    public void setCoasCode(Object coasCode) {
+    public void setCoasCode(String coasCode) {
         this.coasCode = coasCode;
     }
 
-    public FoapalAttributeAssociationQuery100GetRequest withCoasCode(Object coasCode) {
+    public FoapalAttributeAssociationQuery100GetRequest withCoasCode(String coasCode) {
         this.coasCode = coasCode;
         return this;
     }

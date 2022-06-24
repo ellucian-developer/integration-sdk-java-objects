@@ -128,7 +128,7 @@ public class CurriculumMapping100PostRequest {
      */
     @JsonProperty("academicYear")
     @JsonPropertyDescription("Lineage reference object : academicYear, Lookup lineage reference object : STVACYR")
-    private Object academicYear;
+    private String academicYear;
     /**
      * Admit Curriculum
      * <p>
@@ -519,7 +519,7 @@ public class CurriculumMapping100PostRequest {
      * 
      */
     @JsonProperty("academicYear")
-    public Object getAcademicYear() {
+    public String getAcademicYear() {
         return academicYear;
     }
 
@@ -530,11 +530,11 @@ public class CurriculumMapping100PostRequest {
      * 
      */
     @JsonProperty("academicYear")
-    public void setAcademicYear(Object academicYear) {
+    public void setAcademicYear(String academicYear) {
         this.academicYear = academicYear;
     }
 
-    public CurriculumMapping100PostRequest withAcademicYear(Object academicYear) {
+    public CurriculumMapping100PostRequest withAcademicYear(String academicYear) {
         this.academicYear = academicYear;
         return this;
     }

@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.electronic_personnel_action_other_information_and_comments.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -33,7 +34,7 @@ public class ElectronicPersonnelActionOtherInformationAndComments100PostRequest 
      */
     @JsonProperty("proxyForUserId")
     @JsonPropertyDescription("Lineage reference object : proxyForUserId")
-    private Object proxyForUserId;
+    private String proxyForUserId;
     /**
      * Approval Category
      * <p>
@@ -42,7 +43,7 @@ public class ElectronicPersonnelActionOtherInformationAndComments100PostRequest 
      */
     @JsonProperty("acatCode")
     @JsonPropertyDescription("Lineage reference object : acatCode")
-    private Object acatCode;
+    private String acatCode;
     /**
      * Comments
      * <p>
@@ -60,7 +61,7 @@ public class ElectronicPersonnelActionOtherInformationAndComments100PostRequest 
      */
     @JsonProperty("aptyCode")
     @JsonPropertyDescription("Lineage reference object : aptyCode, Lookup lineage reference object : ntracat,ntvapty")
-    private Object aptyCode;
+    private String aptyCode;
     /**
      * ID
      * <p>
@@ -69,7 +70,7 @@ public class ElectronicPersonnelActionOtherInformationAndComments100PostRequest 
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Transaction
      * <p>
@@ -78,7 +79,7 @@ public class ElectronicPersonnelActionOtherInformationAndComments100PostRequest 
      */
     @JsonProperty("transNo")
     @JsonPropertyDescription("Lineage reference object : transNo")
-    private Object transNo;
+    private Double transNo;
     /**
      * Query Date
      * <p>
@@ -87,7 +88,7 @@ public class ElectronicPersonnelActionOtherInformationAndComments100PostRequest 
      */
     @JsonProperty("effectiveDate")
     @JsonPropertyDescription("Lineage reference object : effectiveDate")
-    private Object effectiveDate;
+    private Date effectiveDate;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -98,7 +99,7 @@ public class ElectronicPersonnelActionOtherInformationAndComments100PostRequest 
      * 
      */
     @JsonProperty("proxyForUserId")
-    public Object getProxyForUserId() {
+    public String getProxyForUserId() {
         return proxyForUserId;
     }
 
@@ -109,11 +110,11 @@ public class ElectronicPersonnelActionOtherInformationAndComments100PostRequest 
      * 
      */
     @JsonProperty("proxyForUserId")
-    public void setProxyForUserId(Object proxyForUserId) {
+    public void setProxyForUserId(String proxyForUserId) {
         this.proxyForUserId = proxyForUserId;
     }
 
-    public ElectronicPersonnelActionOtherInformationAndComments100PostRequest withProxyForUserId(Object proxyForUserId) {
+    public ElectronicPersonnelActionOtherInformationAndComments100PostRequest withProxyForUserId(String proxyForUserId) {
         this.proxyForUserId = proxyForUserId;
         return this;
     }
@@ -125,7 +126,7 @@ public class ElectronicPersonnelActionOtherInformationAndComments100PostRequest 
      * 
      */
     @JsonProperty("acatCode")
-    public Object getAcatCode() {
+    public String getAcatCode() {
         return acatCode;
     }
 
@@ -136,11 +137,11 @@ public class ElectronicPersonnelActionOtherInformationAndComments100PostRequest 
      * 
      */
     @JsonProperty("acatCode")
-    public void setAcatCode(Object acatCode) {
+    public void setAcatCode(String acatCode) {
         this.acatCode = acatCode;
     }
 
-    public ElectronicPersonnelActionOtherInformationAndComments100PostRequest withAcatCode(Object acatCode) {
+    public ElectronicPersonnelActionOtherInformationAndComments100PostRequest withAcatCode(String acatCode) {
         this.acatCode = acatCode;
         return this;
     }
@@ -179,7 +180,7 @@ public class ElectronicPersonnelActionOtherInformationAndComments100PostRequest 
      * 
      */
     @JsonProperty("aptyCode")
-    public Object getAptyCode() {
+    public String getAptyCode() {
         return aptyCode;
     }
 
@@ -190,11 +191,11 @@ public class ElectronicPersonnelActionOtherInformationAndComments100PostRequest 
      * 
      */
     @JsonProperty("aptyCode")
-    public void setAptyCode(Object aptyCode) {
+    public void setAptyCode(String aptyCode) {
         this.aptyCode = aptyCode;
     }
 
-    public ElectronicPersonnelActionOtherInformationAndComments100PostRequest withAptyCode(Object aptyCode) {
+    public ElectronicPersonnelActionOtherInformationAndComments100PostRequest withAptyCode(String aptyCode) {
         this.aptyCode = aptyCode;
         return this;
     }
@@ -206,7 +207,7 @@ public class ElectronicPersonnelActionOtherInformationAndComments100PostRequest 
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -217,11 +218,11 @@ public class ElectronicPersonnelActionOtherInformationAndComments100PostRequest 
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public ElectronicPersonnelActionOtherInformationAndComments100PostRequest withId(Object id) {
+    public ElectronicPersonnelActionOtherInformationAndComments100PostRequest withId(String id) {
         this.id = id;
         return this;
     }
@@ -233,7 +234,7 @@ public class ElectronicPersonnelActionOtherInformationAndComments100PostRequest 
      * 
      */
     @JsonProperty("transNo")
-    public Object getTransNo() {
+    public Double getTransNo() {
         return transNo;
     }
 
@@ -244,11 +245,11 @@ public class ElectronicPersonnelActionOtherInformationAndComments100PostRequest 
      * 
      */
     @JsonProperty("transNo")
-    public void setTransNo(Object transNo) {
+    public void setTransNo(Double transNo) {
         this.transNo = transNo;
     }
 
-    public ElectronicPersonnelActionOtherInformationAndComments100PostRequest withTransNo(Object transNo) {
+    public ElectronicPersonnelActionOtherInformationAndComments100PostRequest withTransNo(Double transNo) {
         this.transNo = transNo;
         return this;
     }
@@ -260,7 +261,7 @@ public class ElectronicPersonnelActionOtherInformationAndComments100PostRequest 
      * 
      */
     @JsonProperty("effectiveDate")
-    public Object getEffectiveDate() {
+    public Date getEffectiveDate() {
         return effectiveDate;
     }
 
@@ -271,11 +272,11 @@ public class ElectronicPersonnelActionOtherInformationAndComments100PostRequest 
      * 
      */
     @JsonProperty("effectiveDate")
-    public void setEffectiveDate(Object effectiveDate) {
+    public void setEffectiveDate(Date effectiveDate) {
         this.effectiveDate = effectiveDate;
     }
 
-    public ElectronicPersonnelActionOtherInformationAndComments100PostRequest withEffectiveDate(Object effectiveDate) {
+    public ElectronicPersonnelActionOtherInformationAndComments100PostRequest withEffectiveDate(Date effectiveDate) {
         this.effectiveDate = effectiveDate;
         return this;
     }

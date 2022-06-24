@@ -28,14 +28,14 @@ public class SectionDetailsReadOnly100GetRequest {
      */
     @JsonProperty("keyblocTermCodeEff")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCodeEff, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCodeEff;
+    private String keyblocTermCodeEff;
     /**
      * Lineage reference object : keyblocCrn, Lookup lineage reference object : _date,ssbsect_reg_to_date,ssbsect_ssts_code,ssbsect_camp_code,course_title,ssbsect_schd_code,ssbsect_insm_code,ssbsect_dunt_code,ssbsect_number_of_units,block_indicator,ssbsect_link_ident,cross_list,ssbsect_reserved_ind,long_course_title,syllabus_indicator,section_comments_indicator,ssbsect_max_enrl,ssbsect_enrl,ssbsect_seats_avail,ssbsect_wait_capacity,ssbsect_wait_count,ssbsect_wait_avail,svq_ssasecq
      * 
      */
     @JsonProperty("keyblckCrn")
     @JsonPropertyDescription("Lineage reference object : keyblocCrn, Lookup lineage reference object : _date,ssbsect_reg_to_date,ssbsect_ssts_code,ssbsect_camp_code,course_title,ssbsect_schd_code,ssbsect_insm_code,ssbsect_dunt_code,ssbsect_number_of_units,block_indicator,ssbsect_link_ident,cross_list,ssbsect_reserved_ind,long_course_title,syllabus_indicator,section_comments_indicator,ssbsect_max_enrl,ssbsect_enrl,ssbsect_seats_avail,ssbsect_wait_capacity,ssbsect_wait_count,ssbsect_wait_avail,svq_ssasecq")
-    private Object keyblckCrn;
+    private String keyblckCrn;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -46,7 +46,7 @@ public class SectionDetailsReadOnly100GetRequest {
      * 
      */
     @JsonProperty("keyblocTermCodeEff")
-    public Object getKeyblocTermCodeEff() {
+    public String getKeyblocTermCodeEff() {
         return keyblocTermCodeEff;
     }
 
@@ -57,11 +57,11 @@ public class SectionDetailsReadOnly100GetRequest {
      * 
      */
     @JsonProperty("keyblocTermCodeEff")
-    public void setKeyblocTermCodeEff(Object keyblocTermCodeEff) {
+    public void setKeyblocTermCodeEff(String keyblocTermCodeEff) {
         this.keyblocTermCodeEff = keyblocTermCodeEff;
     }
 
-    public SectionDetailsReadOnly100GetRequest withKeyblocTermCodeEff(Object keyblocTermCodeEff) {
+    public SectionDetailsReadOnly100GetRequest withKeyblocTermCodeEff(String keyblocTermCodeEff) {
         this.keyblocTermCodeEff = keyblocTermCodeEff;
         return this;
     }
@@ -71,7 +71,7 @@ public class SectionDetailsReadOnly100GetRequest {
      * 
      */
     @JsonProperty("keyblckCrn")
-    public Object getKeyblckCrn() {
+    public String getKeyblckCrn() {
         return keyblckCrn;
     }
 
@@ -80,11 +80,11 @@ public class SectionDetailsReadOnly100GetRequest {
      * 
      */
     @JsonProperty("keyblckCrn")
-    public void setKeyblckCrn(Object keyblckCrn) {
+    public void setKeyblckCrn(String keyblckCrn) {
         this.keyblckCrn = keyblckCrn;
     }
 
-    public SectionDetailsReadOnly100GetRequest withKeyblckCrn(Object keyblckCrn) {
+    public SectionDetailsReadOnly100GetRequest withKeyblckCrn(String keyblckCrn) {
         this.keyblckCrn = keyblckCrn;
         return this;
     }

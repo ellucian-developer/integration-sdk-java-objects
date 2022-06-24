@@ -56,14 +56,7 @@ public class AccountDetail100QapiPost {
     private String id;
     @JsonProperty("holdPassword")
     private String holdPassword;
-    /**
-     * Currency
-     * <p>
-     * Lookup lineage reference object : gtvcurr
-     * 
-     */
     @JsonProperty("currCodeV")
-    @JsonPropertyDescription("Lookup lineage reference object : gtvcurr")
     private String currCodeV;
     /**
      * Detail Code
@@ -330,23 +323,11 @@ public class AccountDetail100QapiPost {
         return this;
     }
 
-    /**
-     * Currency
-     * <p>
-     * Lookup lineage reference object : gtvcurr
-     * 
-     */
     @JsonProperty("currCodeV")
     public String getCurrCodeV() {
         return currCodeV;
     }
 
-    /**
-     * Currency
-     * <p>
-     * Lookup lineage reference object : gtvcurr
-     * 
-     */
     @JsonProperty("currCodeV")
     public void setCurrCodeV(String currCodeV) {
         this.currCodeV = currCodeV;

@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.position_history.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -106,7 +107,7 @@ public class PositionHistory100GetRequest {
      */
     @JsonProperty("posn")
     @JsonPropertyDescription("Lineage reference object : posn")
-    private Object posn;
+    private String posn;
     /**
      * Standard Occupational Category
      * <p>
@@ -125,7 +126,7 @@ public class PositionHistory100GetRequest {
      */
     @JsonProperty("queryDate")
     @JsonPropertyDescription("Lineage reference object : queryDate")
-    private Object queryDate;
+    private Date queryDate;
     /**
      * Appointment Percentage
      * <p>
@@ -394,7 +395,7 @@ public class PositionHistory100GetRequest {
      * 
      */
     @JsonProperty("posn")
-    public Object getPosn() {
+    public String getPosn() {
         return posn;
     }
 
@@ -406,11 +407,11 @@ public class PositionHistory100GetRequest {
      * 
      */
     @JsonProperty("posn")
-    public void setPosn(Object posn) {
+    public void setPosn(String posn) {
         this.posn = posn;
     }
 
-    public PositionHistory100GetRequest withPosn(Object posn) {
+    public PositionHistory100GetRequest withPosn(String posn) {
         this.posn = posn;
         return this;
     }
@@ -450,7 +451,7 @@ public class PositionHistory100GetRequest {
      * 
      */
     @JsonProperty("queryDate")
-    public Object getQueryDate() {
+    public Date getQueryDate() {
         return queryDate;
     }
 
@@ -462,11 +463,11 @@ public class PositionHistory100GetRequest {
      * 
      */
     @JsonProperty("queryDate")
-    public void setQueryDate(Object queryDate) {
+    public void setQueryDate(Date queryDate) {
         this.queryDate = queryDate;
     }
 
-    public PositionHistory100GetRequest withQueryDate(Object queryDate) {
+    public PositionHistory100GetRequest withQueryDate(Date queryDate) {
         this.queryDate = queryDate;
         return this;
     }

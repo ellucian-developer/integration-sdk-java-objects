@@ -54,7 +54,7 @@ public class VendorDetailHistory100GetRequest {
      */
     @JsonProperty("faavndhVendCode")
     @JsonPropertyDescription("Lineage reference object : faavndhVendCode, Lookup lineage reference object : ftvvend")
-    private Object faavndhVendCode;
+    private String faavndhVendCode;
     /**
      * Invoice Date To
      * <p>
@@ -63,7 +63,7 @@ public class VendorDetailHistory100GetRequest {
      */
     @JsonProperty("endDate")
     @JsonPropertyDescription("Lineage reference object : endDate")
-    private Object endDate;
+    private Date endDate;
     /**
      * Approval
      * <p>
@@ -88,7 +88,7 @@ public class VendorDetailHistory100GetRequest {
      */
     @JsonProperty("faavndhVendName")
     @JsonPropertyDescription("Lineage reference object : faavndhVendName")
-    private Object faavndhVendName;
+    private String faavndhVendName;
     /**
      * Vendor Invoice Amount
      * <p>
@@ -106,7 +106,7 @@ public class VendorDetailHistory100GetRequest {
      */
     @JsonProperty("faavndhSelInd")
     @JsonPropertyDescription("Lineage reference object : faavndhSelInd")
-    private Object faavndhSelInd;
+    private String faavndhSelInd;
     /**
      * Cancel
      * <p>
@@ -187,7 +187,7 @@ public class VendorDetailHistory100GetRequest {
      */
     @JsonProperty("displayFsyrCode")
     @JsonPropertyDescription("Lineage reference object : displayFsyrCode, Lookup lineage reference object : ftvfspd,ftvfsyr,ftvfspd")
-    private Object displayFsyrCode;
+    private String displayFsyrCode;
     /**
      * Invoice  Date From
      * <p>
@@ -196,7 +196,7 @@ public class VendorDetailHistory100GetRequest {
      */
     @JsonProperty("startDate")
     @JsonPropertyDescription("Lineage reference object : startDate")
-    private Object startDate;
+    private Date startDate;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -234,7 +234,7 @@ public class VendorDetailHistory100GetRequest {
      * 
      */
     @JsonProperty("faavndhVendCode")
-    public Object getFaavndhVendCode() {
+    public String getFaavndhVendCode() {
         return faavndhVendCode;
     }
 
@@ -245,11 +245,11 @@ public class VendorDetailHistory100GetRequest {
      * 
      */
     @JsonProperty("faavndhVendCode")
-    public void setFaavndhVendCode(Object faavndhVendCode) {
+    public void setFaavndhVendCode(String faavndhVendCode) {
         this.faavndhVendCode = faavndhVendCode;
     }
 
-    public VendorDetailHistory100GetRequest withFaavndhVendCode(Object faavndhVendCode) {
+    public VendorDetailHistory100GetRequest withFaavndhVendCode(String faavndhVendCode) {
         this.faavndhVendCode = faavndhVendCode;
         return this;
     }
@@ -261,7 +261,7 @@ public class VendorDetailHistory100GetRequest {
      * 
      */
     @JsonProperty("endDate")
-    public Object getEndDate() {
+    public Date getEndDate() {
         return endDate;
     }
 
@@ -272,11 +272,11 @@ public class VendorDetailHistory100GetRequest {
      * 
      */
     @JsonProperty("endDate")
-    public void setEndDate(Object endDate) {
+    public void setEndDate(Date endDate) {
         this.endDate = endDate;
     }
 
-    public VendorDetailHistory100GetRequest withEndDate(Object endDate) {
+    public VendorDetailHistory100GetRequest withEndDate(Date endDate) {
         this.endDate = endDate;
         return this;
     }
@@ -340,7 +340,7 @@ public class VendorDetailHistory100GetRequest {
      * 
      */
     @JsonProperty("faavndhVendName")
-    public Object getFaavndhVendName() {
+    public String getFaavndhVendName() {
         return faavndhVendName;
     }
 
@@ -349,11 +349,11 @@ public class VendorDetailHistory100GetRequest {
      * 
      */
     @JsonProperty("faavndhVendName")
-    public void setFaavndhVendName(Object faavndhVendName) {
+    public void setFaavndhVendName(String faavndhVendName) {
         this.faavndhVendName = faavndhVendName;
     }
 
-    public VendorDetailHistory100GetRequest withFaavndhVendName(Object faavndhVendName) {
+    public VendorDetailHistory100GetRequest withFaavndhVendName(String faavndhVendName) {
         this.faavndhVendName = faavndhVendName;
         return this;
     }
@@ -392,7 +392,7 @@ public class VendorDetailHistory100GetRequest {
      * 
      */
     @JsonProperty("faavndhSelInd")
-    public Object getFaavndhSelInd() {
+    public String getFaavndhSelInd() {
         return faavndhSelInd;
     }
 
@@ -403,11 +403,11 @@ public class VendorDetailHistory100GetRequest {
      * 
      */
     @JsonProperty("faavndhSelInd")
-    public void setFaavndhSelInd(Object faavndhSelInd) {
+    public void setFaavndhSelInd(String faavndhSelInd) {
         this.faavndhSelInd = faavndhSelInd;
     }
 
-    public VendorDetailHistory100GetRequest withFaavndhSelInd(Object faavndhSelInd) {
+    public VendorDetailHistory100GetRequest withFaavndhSelInd(String faavndhSelInd) {
         this.faavndhSelInd = faavndhSelInd;
         return this;
     }
@@ -635,7 +635,7 @@ public class VendorDetailHistory100GetRequest {
      * 
      */
     @JsonProperty("displayFsyrCode")
-    public Object getDisplayFsyrCode() {
+    public String getDisplayFsyrCode() {
         return displayFsyrCode;
     }
 
@@ -646,11 +646,11 @@ public class VendorDetailHistory100GetRequest {
      * 
      */
     @JsonProperty("displayFsyrCode")
-    public void setDisplayFsyrCode(Object displayFsyrCode) {
+    public void setDisplayFsyrCode(String displayFsyrCode) {
         this.displayFsyrCode = displayFsyrCode;
     }
 
-    public VendorDetailHistory100GetRequest withDisplayFsyrCode(Object displayFsyrCode) {
+    public VendorDetailHistory100GetRequest withDisplayFsyrCode(String displayFsyrCode) {
         this.displayFsyrCode = displayFsyrCode;
         return this;
     }
@@ -662,7 +662,7 @@ public class VendorDetailHistory100GetRequest {
      * 
      */
     @JsonProperty("startDate")
-    public Object getStartDate() {
+    public Date getStartDate() {
         return startDate;
     }
 
@@ -673,11 +673,11 @@ public class VendorDetailHistory100GetRequest {
      * 
      */
     @JsonProperty("startDate")
-    public void setStartDate(Object startDate) {
+    public void setStartDate(Date startDate) {
         this.startDate = startDate;
     }
 
-    public VendorDetailHistory100GetRequest withStartDate(Object startDate) {
+    public VendorDetailHistory100GetRequest withStartDate(Date startDate) {
         this.startDate = startDate;
         return this;
     }

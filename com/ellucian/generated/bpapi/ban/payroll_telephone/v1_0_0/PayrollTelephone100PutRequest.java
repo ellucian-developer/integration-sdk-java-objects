@@ -176,7 +176,7 @@ public class PayrollTelephone100PutRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Comment
      * <p>
@@ -675,7 +675,7 @@ public class PayrollTelephone100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -686,11 +686,11 @@ public class PayrollTelephone100PutRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public PayrollTelephone100PutRequest withId(Object id) {
+    public PayrollTelephone100PutRequest withId(String id) {
         this.id = id;
         return this;
     }

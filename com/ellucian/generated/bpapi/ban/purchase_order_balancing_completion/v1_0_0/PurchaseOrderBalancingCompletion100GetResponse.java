@@ -46,7 +46,7 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      */
     @JsonProperty("displayCurrCode")
     @JsonPropertyDescription("Lineage reference object : displayCurrCode, Lookup lineage reference object : gtvcurr")
-    private Object displayCurrCode;
+    private String displayCurrCode;
     /**
      * Status
      * <p>
@@ -55,7 +55,7 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      */
     @JsonProperty("apprStatus")
     @JsonPropertyDescription("Lineage reference object : apprStatus")
-    private Object apprStatus;
+    private String apprStatus;
     /**
      * Discount Amounts
      * <p>
@@ -64,35 +64,35 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      */
     @JsonProperty("headDisc")
     @JsonPropertyDescription("Lineage reference object : headDisc")
-    private Object headDisc;
+    private Double headDisc;
     /**
      * Lineage reference object : discStatus
      * 
      */
     @JsonProperty("discStatus")
     @JsonPropertyDescription("Lineage reference object : discStatus")
-    private Object discStatus;
+    private String discStatus;
     /**
      * Lineage reference object : acctDisc
      * 
      */
     @JsonProperty("acctDisc")
     @JsonPropertyDescription("Lineage reference object : acctDisc")
-    private Object acctDisc;
+    private Double acctDisc;
     /**
      * Lineage reference object : addlStatus
      * 
      */
     @JsonProperty("addlStatus")
     @JsonPropertyDescription("Lineage reference object : addlStatus")
-    private Object addlStatus;
+    private String addlStatus;
     /**
      * Lineage reference object : displayCurrDesc
      * 
      */
     @JsonProperty("displayCurrDesc")
     @JsonPropertyDescription("Lineage reference object : displayCurrDesc")
-    private Object displayCurrDesc;
+    private String displayCurrDesc;
     /**
      * Approved Amounts
      * <p>
@@ -101,7 +101,7 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      */
     @JsonProperty("headAppr")
     @JsonPropertyDescription("Lineage reference object : headAppr")
-    private Object headAppr;
+    private Double headAppr;
     /**
      * Accounting
      * <p>
@@ -110,14 +110,14 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      */
     @JsonProperty("acctAppr")
     @JsonPropertyDescription("Lineage reference object : acctAppr")
-    private Object acctAppr;
+    private Double acctAppr;
     /**
      * Lineage reference object : commDisc
      * 
      */
     @JsonProperty("commDisc")
     @JsonPropertyDescription("Lineage reference object : commDisc")
-    private Object commDisc;
+    private Double commDisc;
     /**
      * Tax Amounts
      * <p>
@@ -126,28 +126,28 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      */
     @JsonProperty("headTax")
     @JsonPropertyDescription("Lineage reference object : headTax")
-    private Object headTax;
+    private Double headTax;
     /**
      * Lineage reference object : acctTax
      * 
      */
     @JsonProperty("acctTax")
     @JsonPropertyDescription("Lineage reference object : acctTax")
-    private Object acctTax;
+    private Double acctTax;
     /**
      * Lineage reference object : taxStatus
      * 
      */
     @JsonProperty("taxStatus")
     @JsonPropertyDescription("Lineage reference object : taxStatus")
-    private Object taxStatus;
+    private String taxStatus;
     /**
      * Lineage reference object : commAddl
      * 
      */
     @JsonProperty("commAddl")
     @JsonPropertyDescription("Lineage reference object : commAddl")
-    private Object commAddl;
+    private Double commAddl;
     /**
      * Exchange Rate
      * <p>
@@ -156,14 +156,14 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      */
     @JsonProperty("displayConvRate")
     @JsonPropertyDescription("Lineage reference object : displayConvRate")
-    private Object displayConvRate;
+    private Double displayConvRate;
     /**
      * Lineage reference object : acctAddl
      * 
      */
     @JsonProperty("acctAddl")
     @JsonPropertyDescription("Lineage reference object : acctAddl")
-    private Object acctAddl;
+    private Double acctAddl;
     /**
      * Commodity
      * <p>
@@ -172,14 +172,14 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      */
     @JsonProperty("commAppr")
     @JsonPropertyDescription("Lineage reference object : commAppr")
-    private Object commAppr;
+    private Double commAppr;
     /**
      * Lineage reference object : commTax
      * 
      */
     @JsonProperty("commTax")
     @JsonPropertyDescription("Lineage reference object : commTax")
-    private Object commTax;
+    private Double commTax;
     /**
      * Lineage reference object : fpbpohdMatchBlkRequired
      * (Required)
@@ -187,7 +187,7 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      */
     @JsonProperty("fpbpohdMatchBlkRequired")
     @JsonPropertyDescription("Lineage reference object : fpbpohdMatchBlkRequired")
-    private Object fpbpohdMatchBlkRequired;
+    private String fpbpohdMatchBlkRequired;
     /**
      * Additional Amounts
      * <p>
@@ -196,7 +196,7 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      */
     @JsonProperty("headAddl")
     @JsonPropertyDescription("Lineage reference object : headAddl")
-    private Object headAddl;
+    private Double headAddl;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -207,7 +207,7 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("displayCurrCode")
-    public Object getDisplayCurrCode() {
+    public String getDisplayCurrCode() {
         return displayCurrCode;
     }
 
@@ -218,11 +218,11 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("displayCurrCode")
-    public void setDisplayCurrCode(Object displayCurrCode) {
+    public void setDisplayCurrCode(String displayCurrCode) {
         this.displayCurrCode = displayCurrCode;
     }
 
-    public PurchaseOrderBalancingCompletion100GetResponse withDisplayCurrCode(Object displayCurrCode) {
+    public PurchaseOrderBalancingCompletion100GetResponse withDisplayCurrCode(String displayCurrCode) {
         this.displayCurrCode = displayCurrCode;
         return this;
     }
@@ -234,7 +234,7 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("apprStatus")
-    public Object getApprStatus() {
+    public String getApprStatus() {
         return apprStatus;
     }
 
@@ -245,11 +245,11 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("apprStatus")
-    public void setApprStatus(Object apprStatus) {
+    public void setApprStatus(String apprStatus) {
         this.apprStatus = apprStatus;
     }
 
-    public PurchaseOrderBalancingCompletion100GetResponse withApprStatus(Object apprStatus) {
+    public PurchaseOrderBalancingCompletion100GetResponse withApprStatus(String apprStatus) {
         this.apprStatus = apprStatus;
         return this;
     }
@@ -261,7 +261,7 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("headDisc")
-    public Object getHeadDisc() {
+    public Double getHeadDisc() {
         return headDisc;
     }
 
@@ -272,11 +272,11 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("headDisc")
-    public void setHeadDisc(Object headDisc) {
+    public void setHeadDisc(Double headDisc) {
         this.headDisc = headDisc;
     }
 
-    public PurchaseOrderBalancingCompletion100GetResponse withHeadDisc(Object headDisc) {
+    public PurchaseOrderBalancingCompletion100GetResponse withHeadDisc(Double headDisc) {
         this.headDisc = headDisc;
         return this;
     }
@@ -286,7 +286,7 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("discStatus")
-    public Object getDiscStatus() {
+    public String getDiscStatus() {
         return discStatus;
     }
 
@@ -295,11 +295,11 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("discStatus")
-    public void setDiscStatus(Object discStatus) {
+    public void setDiscStatus(String discStatus) {
         this.discStatus = discStatus;
     }
 
-    public PurchaseOrderBalancingCompletion100GetResponse withDiscStatus(Object discStatus) {
+    public PurchaseOrderBalancingCompletion100GetResponse withDiscStatus(String discStatus) {
         this.discStatus = discStatus;
         return this;
     }
@@ -309,7 +309,7 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("acctDisc")
-    public Object getAcctDisc() {
+    public Double getAcctDisc() {
         return acctDisc;
     }
 
@@ -318,11 +318,11 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("acctDisc")
-    public void setAcctDisc(Object acctDisc) {
+    public void setAcctDisc(Double acctDisc) {
         this.acctDisc = acctDisc;
     }
 
-    public PurchaseOrderBalancingCompletion100GetResponse withAcctDisc(Object acctDisc) {
+    public PurchaseOrderBalancingCompletion100GetResponse withAcctDisc(Double acctDisc) {
         this.acctDisc = acctDisc;
         return this;
     }
@@ -332,7 +332,7 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("addlStatus")
-    public Object getAddlStatus() {
+    public String getAddlStatus() {
         return addlStatus;
     }
 
@@ -341,11 +341,11 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("addlStatus")
-    public void setAddlStatus(Object addlStatus) {
+    public void setAddlStatus(String addlStatus) {
         this.addlStatus = addlStatus;
     }
 
-    public PurchaseOrderBalancingCompletion100GetResponse withAddlStatus(Object addlStatus) {
+    public PurchaseOrderBalancingCompletion100GetResponse withAddlStatus(String addlStatus) {
         this.addlStatus = addlStatus;
         return this;
     }
@@ -355,7 +355,7 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("displayCurrDesc")
-    public Object getDisplayCurrDesc() {
+    public String getDisplayCurrDesc() {
         return displayCurrDesc;
     }
 
@@ -364,11 +364,11 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("displayCurrDesc")
-    public void setDisplayCurrDesc(Object displayCurrDesc) {
+    public void setDisplayCurrDesc(String displayCurrDesc) {
         this.displayCurrDesc = displayCurrDesc;
     }
 
-    public PurchaseOrderBalancingCompletion100GetResponse withDisplayCurrDesc(Object displayCurrDesc) {
+    public PurchaseOrderBalancingCompletion100GetResponse withDisplayCurrDesc(String displayCurrDesc) {
         this.displayCurrDesc = displayCurrDesc;
         return this;
     }
@@ -380,7 +380,7 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("headAppr")
-    public Object getHeadAppr() {
+    public Double getHeadAppr() {
         return headAppr;
     }
 
@@ -391,11 +391,11 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("headAppr")
-    public void setHeadAppr(Object headAppr) {
+    public void setHeadAppr(Double headAppr) {
         this.headAppr = headAppr;
     }
 
-    public PurchaseOrderBalancingCompletion100GetResponse withHeadAppr(Object headAppr) {
+    public PurchaseOrderBalancingCompletion100GetResponse withHeadAppr(Double headAppr) {
         this.headAppr = headAppr;
         return this;
     }
@@ -407,7 +407,7 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("acctAppr")
-    public Object getAcctAppr() {
+    public Double getAcctAppr() {
         return acctAppr;
     }
 
@@ -418,11 +418,11 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("acctAppr")
-    public void setAcctAppr(Object acctAppr) {
+    public void setAcctAppr(Double acctAppr) {
         this.acctAppr = acctAppr;
     }
 
-    public PurchaseOrderBalancingCompletion100GetResponse withAcctAppr(Object acctAppr) {
+    public PurchaseOrderBalancingCompletion100GetResponse withAcctAppr(Double acctAppr) {
         this.acctAppr = acctAppr;
         return this;
     }
@@ -432,7 +432,7 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("commDisc")
-    public Object getCommDisc() {
+    public Double getCommDisc() {
         return commDisc;
     }
 
@@ -441,11 +441,11 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("commDisc")
-    public void setCommDisc(Object commDisc) {
+    public void setCommDisc(Double commDisc) {
         this.commDisc = commDisc;
     }
 
-    public PurchaseOrderBalancingCompletion100GetResponse withCommDisc(Object commDisc) {
+    public PurchaseOrderBalancingCompletion100GetResponse withCommDisc(Double commDisc) {
         this.commDisc = commDisc;
         return this;
     }
@@ -457,7 +457,7 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("headTax")
-    public Object getHeadTax() {
+    public Double getHeadTax() {
         return headTax;
     }
 
@@ -468,11 +468,11 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("headTax")
-    public void setHeadTax(Object headTax) {
+    public void setHeadTax(Double headTax) {
         this.headTax = headTax;
     }
 
-    public PurchaseOrderBalancingCompletion100GetResponse withHeadTax(Object headTax) {
+    public PurchaseOrderBalancingCompletion100GetResponse withHeadTax(Double headTax) {
         this.headTax = headTax;
         return this;
     }
@@ -482,7 +482,7 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("acctTax")
-    public Object getAcctTax() {
+    public Double getAcctTax() {
         return acctTax;
     }
 
@@ -491,11 +491,11 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("acctTax")
-    public void setAcctTax(Object acctTax) {
+    public void setAcctTax(Double acctTax) {
         this.acctTax = acctTax;
     }
 
-    public PurchaseOrderBalancingCompletion100GetResponse withAcctTax(Object acctTax) {
+    public PurchaseOrderBalancingCompletion100GetResponse withAcctTax(Double acctTax) {
         this.acctTax = acctTax;
         return this;
     }
@@ -505,7 +505,7 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("taxStatus")
-    public Object getTaxStatus() {
+    public String getTaxStatus() {
         return taxStatus;
     }
 
@@ -514,11 +514,11 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("taxStatus")
-    public void setTaxStatus(Object taxStatus) {
+    public void setTaxStatus(String taxStatus) {
         this.taxStatus = taxStatus;
     }
 
-    public PurchaseOrderBalancingCompletion100GetResponse withTaxStatus(Object taxStatus) {
+    public PurchaseOrderBalancingCompletion100GetResponse withTaxStatus(String taxStatus) {
         this.taxStatus = taxStatus;
         return this;
     }
@@ -528,7 +528,7 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("commAddl")
-    public Object getCommAddl() {
+    public Double getCommAddl() {
         return commAddl;
     }
 
@@ -537,11 +537,11 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("commAddl")
-    public void setCommAddl(Object commAddl) {
+    public void setCommAddl(Double commAddl) {
         this.commAddl = commAddl;
     }
 
-    public PurchaseOrderBalancingCompletion100GetResponse withCommAddl(Object commAddl) {
+    public PurchaseOrderBalancingCompletion100GetResponse withCommAddl(Double commAddl) {
         this.commAddl = commAddl;
         return this;
     }
@@ -553,7 +553,7 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("displayConvRate")
-    public Object getDisplayConvRate() {
+    public Double getDisplayConvRate() {
         return displayConvRate;
     }
 
@@ -564,11 +564,11 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("displayConvRate")
-    public void setDisplayConvRate(Object displayConvRate) {
+    public void setDisplayConvRate(Double displayConvRate) {
         this.displayConvRate = displayConvRate;
     }
 
-    public PurchaseOrderBalancingCompletion100GetResponse withDisplayConvRate(Object displayConvRate) {
+    public PurchaseOrderBalancingCompletion100GetResponse withDisplayConvRate(Double displayConvRate) {
         this.displayConvRate = displayConvRate;
         return this;
     }
@@ -578,7 +578,7 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("acctAddl")
-    public Object getAcctAddl() {
+    public Double getAcctAddl() {
         return acctAddl;
     }
 
@@ -587,11 +587,11 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("acctAddl")
-    public void setAcctAddl(Object acctAddl) {
+    public void setAcctAddl(Double acctAddl) {
         this.acctAddl = acctAddl;
     }
 
-    public PurchaseOrderBalancingCompletion100GetResponse withAcctAddl(Object acctAddl) {
+    public PurchaseOrderBalancingCompletion100GetResponse withAcctAddl(Double acctAddl) {
         this.acctAddl = acctAddl;
         return this;
     }
@@ -603,7 +603,7 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("commAppr")
-    public Object getCommAppr() {
+    public Double getCommAppr() {
         return commAppr;
     }
 
@@ -614,11 +614,11 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("commAppr")
-    public void setCommAppr(Object commAppr) {
+    public void setCommAppr(Double commAppr) {
         this.commAppr = commAppr;
     }
 
-    public PurchaseOrderBalancingCompletion100GetResponse withCommAppr(Object commAppr) {
+    public PurchaseOrderBalancingCompletion100GetResponse withCommAppr(Double commAppr) {
         this.commAppr = commAppr;
         return this;
     }
@@ -628,7 +628,7 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("commTax")
-    public Object getCommTax() {
+    public Double getCommTax() {
         return commTax;
     }
 
@@ -637,11 +637,11 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("commTax")
-    public void setCommTax(Object commTax) {
+    public void setCommTax(Double commTax) {
         this.commTax = commTax;
     }
 
-    public PurchaseOrderBalancingCompletion100GetResponse withCommTax(Object commTax) {
+    public PurchaseOrderBalancingCompletion100GetResponse withCommTax(Double commTax) {
         this.commTax = commTax;
         return this;
     }
@@ -652,7 +652,7 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("fpbpohdMatchBlkRequired")
-    public Object getFpbpohdMatchBlkRequired() {
+    public String getFpbpohdMatchBlkRequired() {
         return fpbpohdMatchBlkRequired;
     }
 
@@ -662,11 +662,11 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("fpbpohdMatchBlkRequired")
-    public void setFpbpohdMatchBlkRequired(Object fpbpohdMatchBlkRequired) {
+    public void setFpbpohdMatchBlkRequired(String fpbpohdMatchBlkRequired) {
         this.fpbpohdMatchBlkRequired = fpbpohdMatchBlkRequired;
     }
 
-    public PurchaseOrderBalancingCompletion100GetResponse withFpbpohdMatchBlkRequired(Object fpbpohdMatchBlkRequired) {
+    public PurchaseOrderBalancingCompletion100GetResponse withFpbpohdMatchBlkRequired(String fpbpohdMatchBlkRequired) {
         this.fpbpohdMatchBlkRequired = fpbpohdMatchBlkRequired;
         return this;
     }
@@ -678,7 +678,7 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("headAddl")
-    public Object getHeadAddl() {
+    public Double getHeadAddl() {
         return headAddl;
     }
 
@@ -689,11 +689,11 @@ public class PurchaseOrderBalancingCompletion100GetResponse {
      * 
      */
     @JsonProperty("headAddl")
-    public void setHeadAddl(Object headAddl) {
+    public void setHeadAddl(Double headAddl) {
         this.headAddl = headAddl;
     }
 
-    public PurchaseOrderBalancingCompletion100GetResponse withHeadAddl(Object headAddl) {
+    public PurchaseOrderBalancingCompletion100GetResponse withHeadAddl(Double headAddl) {
         this.headAddl = headAddl;
         return this;
     }

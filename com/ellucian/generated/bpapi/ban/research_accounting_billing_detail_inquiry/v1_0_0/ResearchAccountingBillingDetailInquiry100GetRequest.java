@@ -31,7 +31,7 @@ public class ResearchAccountingBillingDetailInquiry100GetRequest {
      */
     @JsonProperty("keyblckFundCode")
     @JsonPropertyDescription("Lineage reference object : keyblckFundCode")
-    private Object keyblckFundCode;
+    private String keyblckFundCode;
     /**
      * COA
      * <p>
@@ -41,7 +41,7 @@ public class ResearchAccountingBillingDetailInquiry100GetRequest {
      */
     @JsonProperty("keyblckCoasCode")
     @JsonPropertyDescription("Lineage reference object : keyblckCoasCode")
-    private Object keyblckCoasCode;
+    private String keyblckCoasCode;
     /**
      * Frbgrnt Code
      * <p>
@@ -60,7 +60,7 @@ public class ResearchAccountingBillingDetailInquiry100GetRequest {
      */
     @JsonProperty("keyblckGrntCode")
     @JsonPropertyDescription("Lineage reference object : keyblckGrntCode")
-    private Object keyblckGrntCode;
+    private String keyblckGrntCode;
     /**
      * Frbgrnt Title
      * <p>
@@ -80,7 +80,7 @@ public class ResearchAccountingBillingDetailInquiry100GetRequest {
      * 
      */
     @JsonProperty("keyblckFundCode")
-    public Object getKeyblckFundCode() {
+    public String getKeyblckFundCode() {
         return keyblckFundCode;
     }
 
@@ -91,11 +91,11 @@ public class ResearchAccountingBillingDetailInquiry100GetRequest {
      * 
      */
     @JsonProperty("keyblckFundCode")
-    public void setKeyblckFundCode(Object keyblckFundCode) {
+    public void setKeyblckFundCode(String keyblckFundCode) {
         this.keyblckFundCode = keyblckFundCode;
     }
 
-    public ResearchAccountingBillingDetailInquiry100GetRequest withKeyblckFundCode(Object keyblckFundCode) {
+    public ResearchAccountingBillingDetailInquiry100GetRequest withKeyblckFundCode(String keyblckFundCode) {
         this.keyblckFundCode = keyblckFundCode;
         return this;
     }
@@ -108,7 +108,7 @@ public class ResearchAccountingBillingDetailInquiry100GetRequest {
      * 
      */
     @JsonProperty("keyblckCoasCode")
-    public Object getKeyblckCoasCode() {
+    public String getKeyblckCoasCode() {
         return keyblckCoasCode;
     }
 
@@ -120,11 +120,11 @@ public class ResearchAccountingBillingDetailInquiry100GetRequest {
      * 
      */
     @JsonProperty("keyblckCoasCode")
-    public void setKeyblckCoasCode(Object keyblckCoasCode) {
+    public void setKeyblckCoasCode(String keyblckCoasCode) {
         this.keyblckCoasCode = keyblckCoasCode;
     }
 
-    public ResearchAccountingBillingDetailInquiry100GetRequest withKeyblckCoasCode(Object keyblckCoasCode) {
+    public ResearchAccountingBillingDetailInquiry100GetRequest withKeyblckCoasCode(String keyblckCoasCode) {
         this.keyblckCoasCode = keyblckCoasCode;
         return this;
     }
@@ -165,7 +165,7 @@ public class ResearchAccountingBillingDetailInquiry100GetRequest {
      * 
      */
     @JsonProperty("keyblckGrntCode")
-    public Object getKeyblckGrntCode() {
+    public String getKeyblckGrntCode() {
         return keyblckGrntCode;
     }
 
@@ -176,11 +176,11 @@ public class ResearchAccountingBillingDetailInquiry100GetRequest {
      * 
      */
     @JsonProperty("keyblckGrntCode")
-    public void setKeyblckGrntCode(Object keyblckGrntCode) {
+    public void setKeyblckGrntCode(String keyblckGrntCode) {
         this.keyblckGrntCode = keyblckGrntCode;
     }
 
-    public ResearchAccountingBillingDetailInquiry100GetRequest withKeyblckGrntCode(Object keyblckGrntCode) {
+    public ResearchAccountingBillingDetailInquiry100GetRequest withKeyblckGrntCode(String keyblckGrntCode) {
         this.keyblckGrntCode = keyblckGrntCode;
         return this;
     }

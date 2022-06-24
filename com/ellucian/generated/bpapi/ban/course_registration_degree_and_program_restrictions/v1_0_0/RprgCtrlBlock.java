@@ -30,7 +30,7 @@ public class RprgCtrlBlock {
      */
     @JsonProperty("scrrprgTermCodeTo")
     @JsonPropertyDescription("Lineage reference object : scrrprgTermCodeTo, Lookup lineage reference object : stvterm")
-    private Object scrrprgTermCodeTo;
+    private String scrrprgTermCodeTo;
     /**
      * From Term
      * <p>
@@ -39,7 +39,7 @@ public class RprgCtrlBlock {
      */
     @JsonProperty("scrrprgTermCodeFrom")
     @JsonPropertyDescription("Lineage reference object : scrrprgTermCodeFrom, Lookup lineage reference object : stvterm")
-    private Object scrrprgTermCodeFrom;
+    private String scrrprgTermCodeFrom;
     /**
      * Include/Exclude (I/E)
      * <p>
@@ -49,14 +49,14 @@ public class RprgCtrlBlock {
      */
     @JsonProperty("scrrprgProgramInd")
     @JsonPropertyDescription("Lineage reference object : scrrprgProgramInd")
-    private Object scrrprgProgramInd;
+    private String scrrprgProgramInd;
     /**
      * Lineage reference object : rprgCtrlEndcopy
      * 
      */
     @JsonProperty("rprgCtrlEndcopy")
     @JsonPropertyDescription("Lineage reference object : rprgCtrlEndcopy")
-    private Object rprgCtrlEndcopy;
+    private String rprgCtrlEndcopy;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -67,7 +67,7 @@ public class RprgCtrlBlock {
      * 
      */
     @JsonProperty("scrrprgTermCodeTo")
-    public Object getScrrprgTermCodeTo() {
+    public String getScrrprgTermCodeTo() {
         return scrrprgTermCodeTo;
     }
 
@@ -78,11 +78,11 @@ public class RprgCtrlBlock {
      * 
      */
     @JsonProperty("scrrprgTermCodeTo")
-    public void setScrrprgTermCodeTo(Object scrrprgTermCodeTo) {
+    public void setScrrprgTermCodeTo(String scrrprgTermCodeTo) {
         this.scrrprgTermCodeTo = scrrprgTermCodeTo;
     }
 
-    public RprgCtrlBlock withScrrprgTermCodeTo(Object scrrprgTermCodeTo) {
+    public RprgCtrlBlock withScrrprgTermCodeTo(String scrrprgTermCodeTo) {
         this.scrrprgTermCodeTo = scrrprgTermCodeTo;
         return this;
     }
@@ -94,7 +94,7 @@ public class RprgCtrlBlock {
      * 
      */
     @JsonProperty("scrrprgTermCodeFrom")
-    public Object getScrrprgTermCodeFrom() {
+    public String getScrrprgTermCodeFrom() {
         return scrrprgTermCodeFrom;
     }
 
@@ -105,11 +105,11 @@ public class RprgCtrlBlock {
      * 
      */
     @JsonProperty("scrrprgTermCodeFrom")
-    public void setScrrprgTermCodeFrom(Object scrrprgTermCodeFrom) {
+    public void setScrrprgTermCodeFrom(String scrrprgTermCodeFrom) {
         this.scrrprgTermCodeFrom = scrrprgTermCodeFrom;
     }
 
-    public RprgCtrlBlock withScrrprgTermCodeFrom(Object scrrprgTermCodeFrom) {
+    public RprgCtrlBlock withScrrprgTermCodeFrom(String scrrprgTermCodeFrom) {
         this.scrrprgTermCodeFrom = scrrprgTermCodeFrom;
         return this;
     }
@@ -122,7 +122,7 @@ public class RprgCtrlBlock {
      * 
      */
     @JsonProperty("scrrprgProgramInd")
-    public Object getScrrprgProgramInd() {
+    public String getScrrprgProgramInd() {
         return scrrprgProgramInd;
     }
 
@@ -134,11 +134,11 @@ public class RprgCtrlBlock {
      * 
      */
     @JsonProperty("scrrprgProgramInd")
-    public void setScrrprgProgramInd(Object scrrprgProgramInd) {
+    public void setScrrprgProgramInd(String scrrprgProgramInd) {
         this.scrrprgProgramInd = scrrprgProgramInd;
     }
 
-    public RprgCtrlBlock withScrrprgProgramInd(Object scrrprgProgramInd) {
+    public RprgCtrlBlock withScrrprgProgramInd(String scrrprgProgramInd) {
         this.scrrprgProgramInd = scrrprgProgramInd;
         return this;
     }
@@ -148,7 +148,7 @@ public class RprgCtrlBlock {
      * 
      */
     @JsonProperty("rprgCtrlEndcopy")
-    public Object getRprgCtrlEndcopy() {
+    public String getRprgCtrlEndcopy() {
         return rprgCtrlEndcopy;
     }
 
@@ -157,11 +157,11 @@ public class RprgCtrlBlock {
      * 
      */
     @JsonProperty("rprgCtrlEndcopy")
-    public void setRprgCtrlEndcopy(Object rprgCtrlEndcopy) {
+    public void setRprgCtrlEndcopy(String rprgCtrlEndcopy) {
         this.rprgCtrlEndcopy = rprgCtrlEndcopy;
     }
 
-    public RprgCtrlBlock withRprgCtrlEndcopy(Object rprgCtrlEndcopy) {
+    public RprgCtrlBlock withRprgCtrlEndcopy(String rprgCtrlEndcopy) {
         this.rprgCtrlEndcopy = rprgCtrlEndcopy;
         return this;
     }

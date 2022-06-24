@@ -76,7 +76,7 @@ public class EnrollmentStatusControl100PutRequest {
      */
     @JsonProperty("xxxxxxxTermCode")
     @JsonPropertyDescription("Lineage reference object : xxxxxxxTermCode, Lookup lineage reference object : stvterm")
-    private Object xxxxxxxTermCode;
+    private String xxxxxxxTermCode;
     /**
      * End  Date
      * <p>
@@ -95,7 +95,7 @@ public class EnrollmentStatusControl100PutRequest {
      */
     @JsonProperty("xxxxxxxTermCodeDef")
     @JsonPropertyDescription("Lineage reference object : xxxxxxxTermCodeDef, Lookup lineage reference object : stvterm")
-    private Object xxxxxxxTermCodeDef;
+    private String xxxxxxxTermCodeDef;
     /**
      * End Date
      * <p>
@@ -284,7 +284,7 @@ public class EnrollmentStatusControl100PutRequest {
      * 
      */
     @JsonProperty("xxxxxxxTermCode")
-    public Object getXxxxxxxTermCode() {
+    public String getXxxxxxxTermCode() {
         return xxxxxxxTermCode;
     }
 
@@ -295,11 +295,11 @@ public class EnrollmentStatusControl100PutRequest {
      * 
      */
     @JsonProperty("xxxxxxxTermCode")
-    public void setXxxxxxxTermCode(Object xxxxxxxTermCode) {
+    public void setXxxxxxxTermCode(String xxxxxxxTermCode) {
         this.xxxxxxxTermCode = xxxxxxxTermCode;
     }
 
-    public EnrollmentStatusControl100PutRequest withXxxxxxxTermCode(Object xxxxxxxTermCode) {
+    public EnrollmentStatusControl100PutRequest withXxxxxxxTermCode(String xxxxxxxTermCode) {
         this.xxxxxxxTermCode = xxxxxxxTermCode;
         return this;
     }
@@ -340,7 +340,7 @@ public class EnrollmentStatusControl100PutRequest {
      * 
      */
     @JsonProperty("xxxxxxxTermCodeDef")
-    public Object getXxxxxxxTermCodeDef() {
+    public String getXxxxxxxTermCodeDef() {
         return xxxxxxxTermCodeDef;
     }
 
@@ -351,11 +351,11 @@ public class EnrollmentStatusControl100PutRequest {
      * 
      */
     @JsonProperty("xxxxxxxTermCodeDef")
-    public void setXxxxxxxTermCodeDef(Object xxxxxxxTermCodeDef) {
+    public void setXxxxxxxTermCodeDef(String xxxxxxxTermCodeDef) {
         this.xxxxxxxTermCodeDef = xxxxxxxTermCodeDef;
     }
 
-    public EnrollmentStatusControl100PutRequest withXxxxxxxTermCodeDef(Object xxxxxxxTermCodeDef) {
+    public EnrollmentStatusControl100PutRequest withXxxxxxxTermCodeDef(String xxxxxxxTermCodeDef) {
         this.xxxxxxxTermCodeDef = xxxxxxxTermCodeDef;
         return this;
     }

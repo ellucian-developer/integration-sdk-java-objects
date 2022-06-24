@@ -38,7 +38,7 @@ public class FundsManagement100GetRequest {
      */
     @JsonProperty("yearCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAidyCode, Lookup lineage reference object : robinst")
-    private Object yearCode;
+    private String yearCode;
     /**
      * Sort
      * <p>
@@ -47,7 +47,7 @@ public class FundsManagement100GetRequest {
      */
     @JsonProperty("sort")
     @JsonPropertyDescription("Lineage reference object : keyblckSort")
-    private Object sort;
+    private String sort;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -85,7 +85,7 @@ public class FundsManagement100GetRequest {
      * 
      */
     @JsonProperty("yearCode")
-    public Object getYearCode() {
+    public String getYearCode() {
         return yearCode;
     }
 
@@ -96,11 +96,11 @@ public class FundsManagement100GetRequest {
      * 
      */
     @JsonProperty("yearCode")
-    public void setYearCode(Object yearCode) {
+    public void setYearCode(String yearCode) {
         this.yearCode = yearCode;
     }
 
-    public FundsManagement100GetRequest withYearCode(Object yearCode) {
+    public FundsManagement100GetRequest withYearCode(String yearCode) {
         this.yearCode = yearCode;
         return this;
     }
@@ -112,7 +112,7 @@ public class FundsManagement100GetRequest {
      * 
      */
     @JsonProperty("sort")
-    public Object getSort() {
+    public String getSort() {
         return sort;
     }
 
@@ -123,11 +123,11 @@ public class FundsManagement100GetRequest {
      * 
      */
     @JsonProperty("sort")
-    public void setSort(Object sort) {
+    public void setSort(String sort) {
         this.sort = sort;
     }
 
-    public FundsManagement100GetRequest withSort(Object sort) {
+    public FundsManagement100GetRequest withSort(String sort) {
         this.sort = sort;
         return this;
     }

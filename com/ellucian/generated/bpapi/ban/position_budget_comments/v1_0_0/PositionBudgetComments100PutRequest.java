@@ -74,7 +74,7 @@ public class PositionBudgetComments100PutRequest {
      */
     @JsonProperty("posn")
     @JsonPropertyDescription("Lineage reference object : posn")
-    private Object posn;
+    private String posn;
     /**
      * Position Annual Basis
      * <p>
@@ -113,7 +113,7 @@ public class PositionBudgetComments100PutRequest {
      */
     @JsonProperty("fiscCode")
     @JsonPropertyDescription("Lineage reference object : fiscCode")
-    private Object fiscCode;
+    private String fiscCode;
     /**
      * Salary Group
      * <p>
@@ -289,7 +289,7 @@ public class PositionBudgetComments100PutRequest {
      * 
      */
     @JsonProperty("posn")
-    public Object getPosn() {
+    public String getPosn() {
         return posn;
     }
 
@@ -301,11 +301,11 @@ public class PositionBudgetComments100PutRequest {
      * 
      */
     @JsonProperty("posn")
-    public void setPosn(Object posn) {
+    public void setPosn(String posn) {
         this.posn = posn;
     }
 
-    public PositionBudgetComments100PutRequest withPosn(Object posn) {
+    public PositionBudgetComments100PutRequest withPosn(String posn) {
         this.posn = posn;
         return this;
     }
@@ -403,7 +403,7 @@ public class PositionBudgetComments100PutRequest {
      * 
      */
     @JsonProperty("fiscCode")
-    public Object getFiscCode() {
+    public String getFiscCode() {
         return fiscCode;
     }
 
@@ -415,11 +415,11 @@ public class PositionBudgetComments100PutRequest {
      * 
      */
     @JsonProperty("fiscCode")
-    public void setFiscCode(Object fiscCode) {
+    public void setFiscCode(String fiscCode) {
         this.fiscCode = fiscCode;
     }
 
-    public PositionBudgetComments100PutRequest withFiscCode(Object fiscCode) {
+    public PositionBudgetComments100PutRequest withFiscCode(String fiscCode) {
         this.fiscCode = fiscCode;
         return this;
     }

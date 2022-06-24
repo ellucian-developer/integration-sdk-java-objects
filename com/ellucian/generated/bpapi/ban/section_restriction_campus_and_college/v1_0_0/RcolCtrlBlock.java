@@ -28,7 +28,7 @@ public class RcolCtrlBlock {
      */
     @JsonProperty("ssrrcolCollInd")
     @JsonPropertyDescription("Lineage reference object : ssrrcolCollInd")
-    private Object ssrrcolCollInd;
+    private String ssrrcolCollInd;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -40,7 +40,7 @@ public class RcolCtrlBlock {
      * 
      */
     @JsonProperty("ssrrcolCollInd")
-    public Object getSsrrcolCollInd() {
+    public String getSsrrcolCollInd() {
         return ssrrcolCollInd;
     }
 
@@ -52,11 +52,11 @@ public class RcolCtrlBlock {
      * 
      */
     @JsonProperty("ssrrcolCollInd")
-    public void setSsrrcolCollInd(Object ssrrcolCollInd) {
+    public void setSsrrcolCollInd(String ssrrcolCollInd) {
         this.ssrrcolCollInd = ssrrcolCollInd;
     }
 
-    public RcolCtrlBlock withSsrrcolCollInd(Object ssrrcolCollInd) {
+    public RcolCtrlBlock withSsrrcolCollInd(String ssrrcolCollInd) {
         this.ssrrcolCollInd = ssrrcolCollInd;
         return this;
     }

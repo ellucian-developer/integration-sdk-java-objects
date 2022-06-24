@@ -42,7 +42,7 @@ public class BankTapeReconcilation100PutRequest {
      */
     @JsonProperty("cashAcct")
     @JsonPropertyDescription("Lineage reference object : cashAcct")
-    private Object cashAcct;
+    private String cashAcct;
     /**
      * Bank
      * <p>
@@ -51,7 +51,7 @@ public class BankTapeReconcilation100PutRequest {
      */
     @JsonProperty("bankCode")
     @JsonPropertyDescription("Lineage reference object : faabrecBankCode, Lookup lineage reference object : gxvbank")
-    private Object bankCode;
+    private String bankCode;
     /**
      * Document
      * <p>
@@ -80,7 +80,7 @@ public class BankTapeReconcilation100PutRequest {
      */
     @JsonProperty("bankAcct")
     @JsonPropertyDescription("Lineage reference object : bankAcct")
-    private Object bankAcct;
+    private String bankAcct;
     /**
      * Transaction
      *  Date
@@ -110,7 +110,7 @@ public class BankTapeReconcilation100PutRequest {
      */
     @JsonProperty("reconInd")
     @JsonPropertyDescription("Lineage reference object : reconInd")
-    private Object reconInd;
+    private String reconInd;
     /**
      * Internal 
      * Document Code
@@ -190,7 +190,7 @@ public class BankTapeReconcilation100PutRequest {
      * 
      */
     @JsonProperty("cashAcct")
-    public Object getCashAcct() {
+    public String getCashAcct() {
         return cashAcct;
     }
 
@@ -201,11 +201,11 @@ public class BankTapeReconcilation100PutRequest {
      * 
      */
     @JsonProperty("cashAcct")
-    public void setCashAcct(Object cashAcct) {
+    public void setCashAcct(String cashAcct) {
         this.cashAcct = cashAcct;
     }
 
-    public BankTapeReconcilation100PutRequest withCashAcct(Object cashAcct) {
+    public BankTapeReconcilation100PutRequest withCashAcct(String cashAcct) {
         this.cashAcct = cashAcct;
         return this;
     }
@@ -217,7 +217,7 @@ public class BankTapeReconcilation100PutRequest {
      * 
      */
     @JsonProperty("bankCode")
-    public Object getBankCode() {
+    public String getBankCode() {
         return bankCode;
     }
 
@@ -228,11 +228,11 @@ public class BankTapeReconcilation100PutRequest {
      * 
      */
     @JsonProperty("bankCode")
-    public void setBankCode(Object bankCode) {
+    public void setBankCode(String bankCode) {
         this.bankCode = bankCode;
     }
 
-    public BankTapeReconcilation100PutRequest withBankCode(Object bankCode) {
+    public BankTapeReconcilation100PutRequest withBankCode(String bankCode) {
         this.bankCode = bankCode;
         return this;
     }
@@ -302,7 +302,7 @@ public class BankTapeReconcilation100PutRequest {
      * 
      */
     @JsonProperty("bankAcct")
-    public Object getBankAcct() {
+    public String getBankAcct() {
         return bankAcct;
     }
 
@@ -313,11 +313,11 @@ public class BankTapeReconcilation100PutRequest {
      * 
      */
     @JsonProperty("bankAcct")
-    public void setBankAcct(Object bankAcct) {
+    public void setBankAcct(String bankAcct) {
         this.bankAcct = bankAcct;
     }
 
-    public BankTapeReconcilation100PutRequest withBankAcct(Object bankAcct) {
+    public BankTapeReconcilation100PutRequest withBankAcct(String bankAcct) {
         this.bankAcct = bankAcct;
         return this;
     }
@@ -389,7 +389,7 @@ public class BankTapeReconcilation100PutRequest {
      * 
      */
     @JsonProperty("reconInd")
-    public Object getReconInd() {
+    public String getReconInd() {
         return reconInd;
     }
 
@@ -400,11 +400,11 @@ public class BankTapeReconcilation100PutRequest {
      * 
      */
     @JsonProperty("reconInd")
-    public void setReconInd(Object reconInd) {
+    public void setReconInd(String reconInd) {
         this.reconInd = reconInd;
     }
 
-    public BankTapeReconcilation100PutRequest withReconInd(Object reconInd) {
+    public BankTapeReconcilation100PutRequest withReconInd(String reconInd) {
         this.reconInd = reconInd;
         return this;
     }

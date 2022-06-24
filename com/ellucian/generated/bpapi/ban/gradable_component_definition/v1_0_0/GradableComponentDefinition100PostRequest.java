@@ -156,7 +156,7 @@ public class GradableComponentDefinition100PostRequest {
      */
     @JsonProperty("componentSort")
     @JsonPropertyDescription("Lineage reference object : componentSort")
-    private Object componentSort;
+    private String componentSort;
     /**
      * Grade Scale
      * <p>
@@ -240,7 +240,7 @@ public class GradableComponentDefinition100PostRequest {
      */
     @JsonProperty("crn")
     @JsonPropertyDescription("Lineage reference object : crn")
-    private Object crn;
+    private String crn;
     /**
      * Term
      * <p>
@@ -249,7 +249,7 @@ public class GradableComponentDefinition100PostRequest {
      */
     @JsonProperty("termCode")
     @JsonPropertyDescription("Lineage reference object : termCode, Lookup lineage reference object : stvterm")
-    private Object termCode;
+    private String termCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -580,7 +580,7 @@ public class GradableComponentDefinition100PostRequest {
      * 
      */
     @JsonProperty("componentSort")
-    public Object getComponentSort() {
+    public String getComponentSort() {
         return componentSort;
     }
 
@@ -591,11 +591,11 @@ public class GradableComponentDefinition100PostRequest {
      * 
      */
     @JsonProperty("componentSort")
-    public void setComponentSort(Object componentSort) {
+    public void setComponentSort(String componentSort) {
         this.componentSort = componentSort;
     }
 
-    public GradableComponentDefinition100PostRequest withComponentSort(Object componentSort) {
+    public GradableComponentDefinition100PostRequest withComponentSort(String componentSort) {
         this.componentSort = componentSort;
         return this;
     }
@@ -829,7 +829,7 @@ public class GradableComponentDefinition100PostRequest {
      * 
      */
     @JsonProperty("crn")
-    public Object getCrn() {
+    public String getCrn() {
         return crn;
     }
 
@@ -840,11 +840,11 @@ public class GradableComponentDefinition100PostRequest {
      * 
      */
     @JsonProperty("crn")
-    public void setCrn(Object crn) {
+    public void setCrn(String crn) {
         this.crn = crn;
     }
 
-    public GradableComponentDefinition100PostRequest withCrn(Object crn) {
+    public GradableComponentDefinition100PostRequest withCrn(String crn) {
         this.crn = crn;
         return this;
     }
@@ -856,7 +856,7 @@ public class GradableComponentDefinition100PostRequest {
      * 
      */
     @JsonProperty("termCode")
-    public Object getTermCode() {
+    public String getTermCode() {
         return termCode;
     }
 
@@ -867,11 +867,11 @@ public class GradableComponentDefinition100PostRequest {
      * 
      */
     @JsonProperty("termCode")
-    public void setTermCode(Object termCode) {
+    public void setTermCode(String termCode) {
         this.termCode = termCode;
     }
 
-    public GradableComponentDefinition100PostRequest withTermCode(Object termCode) {
+    public GradableComponentDefinition100PostRequest withTermCode(String termCode) {
         this.termCode = termCode;
         return this;
     }

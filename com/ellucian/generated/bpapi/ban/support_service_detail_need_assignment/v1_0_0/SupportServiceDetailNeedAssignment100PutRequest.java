@@ -17,13 +17,13 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "ndrfCode",
     "criteria.ndrfCode",
     "needCode",
+    "termCodeEff",
     "selfInd",
-    "seadetlTermCodeEff",
     "ssgpCode",
-    "seadetlId",
-    "seadetlSsgpCode",
     "criteria.selfInd",
+    "serdtndSsgpCode",
     "criteria.ssgpCode",
+    "id",
     "criteria.needCode"
 })
 @Generated("jsonschema2pojo")
@@ -58,6 +58,15 @@ public class SupportServiceDetailNeedAssignment100PutRequest {
     @JsonPropertyDescription("Lineage reference object : SERDTND_NEED_CODE, Lookup lineage reference object : stvneed")
     private String needCode;
     /**
+     * Term
+     * <p>
+     * Lineage reference object : seadetlTermCodeEff, Lookup lineage reference object : stvterm
+     * 
+     */
+    @JsonProperty("termCodeEff")
+    @JsonPropertyDescription("Lineage reference object : seadetlTermCodeEff, Lookup lineage reference object : stvterm")
+    private String termCodeEff;
+    /**
      * Lineage reference object : SERDTND_SELF_IND
      * 
      */
@@ -65,41 +74,14 @@ public class SupportServiceDetailNeedAssignment100PutRequest {
     @JsonPropertyDescription("Lineage reference object : SERDTND_SELF_IND")
     private String selfInd;
     /**
-     * Term
-     * <p>
-     * Lineage reference object : seadetlTermCodeEff, Lookup lineage reference object : stvterm
-     * 
-     */
-    @JsonProperty("seadetlTermCodeEff")
-    @JsonPropertyDescription("Lineage reference object : seadetlTermCodeEff, Lookup lineage reference object : stvterm")
-    private Object seadetlTermCodeEff;
-    /**
-     * Group
-     * <p>
-     * Lineage reference object : SERDTND_SSGP_CODE, Lookup lineage reference object : stvssgp
-     * 
-     */
-    @JsonProperty("ssgpCode")
-    @JsonPropertyDescription("Lineage reference object : SERDTND_SSGP_CODE, Lookup lineage reference object : stvssgp")
-    private String ssgpCode;
-    /**
-     * ID
-     * <p>
-     * Lineage reference object : seadetlId
-     * 
-     */
-    @JsonProperty("seadetlId")
-    @JsonPropertyDescription("Lineage reference object : seadetlId")
-    private Object seadetlId;
-    /**
      * Service Group
      * <p>
      * Lineage reference object : seadetlSsgpCode, Lookup lineage reference object : stvssgp
      * 
      */
-    @JsonProperty("seadetlSsgpCode")
+    @JsonProperty("ssgpCode")
     @JsonPropertyDescription("Lineage reference object : seadetlSsgpCode, Lookup lineage reference object : stvssgp")
-    private Object seadetlSsgpCode;
+    private String ssgpCode;
     /**
      * Lineage reference object : SERDTND_SELF_IND
      * 
@@ -113,9 +95,27 @@ public class SupportServiceDetailNeedAssignment100PutRequest {
      * Lineage reference object : SERDTND_SSGP_CODE, Lookup lineage reference object : stvssgp
      * 
      */
+    @JsonProperty("serdtndSsgpCode")
+    @JsonPropertyDescription("Lineage reference object : SERDTND_SSGP_CODE, Lookup lineage reference object : stvssgp")
+    private String serdtndSsgpCode;
+    /**
+     * Group
+     * <p>
+     * Lineage reference object : SERDTND_SSGP_CODE, Lookup lineage reference object : stvssgp
+     * 
+     */
     @JsonProperty("criteria.ssgpCode")
     @JsonPropertyDescription("Lineage reference object : SERDTND_SSGP_CODE, Lookup lineage reference object : stvssgp")
     private String criteriaSsgpCode;
+    /**
+     * ID
+     * <p>
+     * Lineage reference object : seadetlId
+     * 
+     */
+    @JsonProperty("id")
+    @JsonPropertyDescription("Lineage reference object : seadetlId")
+    private String id;
     /**
      * Need
      * <p>
@@ -213,6 +213,33 @@ public class SupportServiceDetailNeedAssignment100PutRequest {
     }
 
     /**
+     * Term
+     * <p>
+     * Lineage reference object : seadetlTermCodeEff, Lookup lineage reference object : stvterm
+     * 
+     */
+    @JsonProperty("termCodeEff")
+    public String getTermCodeEff() {
+        return termCodeEff;
+    }
+
+    /**
+     * Term
+     * <p>
+     * Lineage reference object : seadetlTermCodeEff, Lookup lineage reference object : stvterm
+     * 
+     */
+    @JsonProperty("termCodeEff")
+    public void setTermCodeEff(String termCodeEff) {
+        this.termCodeEff = termCodeEff;
+    }
+
+    public SupportServiceDetailNeedAssignment100PutRequest withTermCodeEff(String termCodeEff) {
+        this.termCodeEff = termCodeEff;
+        return this;
+    }
+
+    /**
      * Lineage reference object : SERDTND_SELF_IND
      * 
      */
@@ -236,36 +263,9 @@ public class SupportServiceDetailNeedAssignment100PutRequest {
     }
 
     /**
-     * Term
+     * Service Group
      * <p>
-     * Lineage reference object : seadetlTermCodeEff, Lookup lineage reference object : stvterm
-     * 
-     */
-    @JsonProperty("seadetlTermCodeEff")
-    public Object getSeadetlTermCodeEff() {
-        return seadetlTermCodeEff;
-    }
-
-    /**
-     * Term
-     * <p>
-     * Lineage reference object : seadetlTermCodeEff, Lookup lineage reference object : stvterm
-     * 
-     */
-    @JsonProperty("seadetlTermCodeEff")
-    public void setSeadetlTermCodeEff(Object seadetlTermCodeEff) {
-        this.seadetlTermCodeEff = seadetlTermCodeEff;
-    }
-
-    public SupportServiceDetailNeedAssignment100PutRequest withSeadetlTermCodeEff(Object seadetlTermCodeEff) {
-        this.seadetlTermCodeEff = seadetlTermCodeEff;
-        return this;
-    }
-
-    /**
-     * Group
-     * <p>
-     * Lineage reference object : SERDTND_SSGP_CODE, Lookup lineage reference object : stvssgp
+     * Lineage reference object : seadetlSsgpCode, Lookup lineage reference object : stvssgp
      * 
      */
     @JsonProperty("ssgpCode")
@@ -274,9 +274,9 @@ public class SupportServiceDetailNeedAssignment100PutRequest {
     }
 
     /**
-     * Group
+     * Service Group
      * <p>
-     * Lineage reference object : SERDTND_SSGP_CODE, Lookup lineage reference object : stvssgp
+     * Lineage reference object : seadetlSsgpCode, Lookup lineage reference object : stvssgp
      * 
      */
     @JsonProperty("ssgpCode")
@@ -286,60 +286,6 @@ public class SupportServiceDetailNeedAssignment100PutRequest {
 
     public SupportServiceDetailNeedAssignment100PutRequest withSsgpCode(String ssgpCode) {
         this.ssgpCode = ssgpCode;
-        return this;
-    }
-
-    /**
-     * ID
-     * <p>
-     * Lineage reference object : seadetlId
-     * 
-     */
-    @JsonProperty("seadetlId")
-    public Object getSeadetlId() {
-        return seadetlId;
-    }
-
-    /**
-     * ID
-     * <p>
-     * Lineage reference object : seadetlId
-     * 
-     */
-    @JsonProperty("seadetlId")
-    public void setSeadetlId(Object seadetlId) {
-        this.seadetlId = seadetlId;
-    }
-
-    public SupportServiceDetailNeedAssignment100PutRequest withSeadetlId(Object seadetlId) {
-        this.seadetlId = seadetlId;
-        return this;
-    }
-
-    /**
-     * Service Group
-     * <p>
-     * Lineage reference object : seadetlSsgpCode, Lookup lineage reference object : stvssgp
-     * 
-     */
-    @JsonProperty("seadetlSsgpCode")
-    public Object getSeadetlSsgpCode() {
-        return seadetlSsgpCode;
-    }
-
-    /**
-     * Service Group
-     * <p>
-     * Lineage reference object : seadetlSsgpCode, Lookup lineage reference object : stvssgp
-     * 
-     */
-    @JsonProperty("seadetlSsgpCode")
-    public void setSeadetlSsgpCode(Object seadetlSsgpCode) {
-        this.seadetlSsgpCode = seadetlSsgpCode;
-    }
-
-    public SupportServiceDetailNeedAssignment100PutRequest withSeadetlSsgpCode(Object seadetlSsgpCode) {
-        this.seadetlSsgpCode = seadetlSsgpCode;
         return this;
     }
 
@@ -372,6 +318,33 @@ public class SupportServiceDetailNeedAssignment100PutRequest {
      * Lineage reference object : SERDTND_SSGP_CODE, Lookup lineage reference object : stvssgp
      * 
      */
+    @JsonProperty("serdtndSsgpCode")
+    public String getSerdtndSsgpCode() {
+        return serdtndSsgpCode;
+    }
+
+    /**
+     * Group
+     * <p>
+     * Lineage reference object : SERDTND_SSGP_CODE, Lookup lineage reference object : stvssgp
+     * 
+     */
+    @JsonProperty("serdtndSsgpCode")
+    public void setSerdtndSsgpCode(String serdtndSsgpCode) {
+        this.serdtndSsgpCode = serdtndSsgpCode;
+    }
+
+    public SupportServiceDetailNeedAssignment100PutRequest withSerdtndSsgpCode(String serdtndSsgpCode) {
+        this.serdtndSsgpCode = serdtndSsgpCode;
+        return this;
+    }
+
+    /**
+     * Group
+     * <p>
+     * Lineage reference object : SERDTND_SSGP_CODE, Lookup lineage reference object : stvssgp
+     * 
+     */
     @JsonProperty("criteria.ssgpCode")
     public String getCriteriaSsgpCode() {
         return criteriaSsgpCode;
@@ -390,6 +363,33 @@ public class SupportServiceDetailNeedAssignment100PutRequest {
 
     public SupportServiceDetailNeedAssignment100PutRequest withCriteriaSsgpCode(String criteriaSsgpCode) {
         this.criteriaSsgpCode = criteriaSsgpCode;
+        return this;
+    }
+
+    /**
+     * ID
+     * <p>
+     * Lineage reference object : seadetlId
+     * 
+     */
+    @JsonProperty("id")
+    public String getId() {
+        return id;
+    }
+
+    /**
+     * ID
+     * <p>
+     * Lineage reference object : seadetlId
+     * 
+     */
+    @JsonProperty("id")
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public SupportServiceDetailNeedAssignment100PutRequest withId(String id) {
+        this.id = id;
         return this;
     }
 
@@ -453,33 +453,33 @@ public class SupportServiceDetailNeedAssignment100PutRequest {
         sb.append('=');
         sb.append(((this.needCode == null)?"<null>":this.needCode));
         sb.append(',');
+        sb.append("termCodeEff");
+        sb.append('=');
+        sb.append(((this.termCodeEff == null)?"<null>":this.termCodeEff));
+        sb.append(',');
         sb.append("selfInd");
         sb.append('=');
         sb.append(((this.selfInd == null)?"<null>":this.selfInd));
-        sb.append(',');
-        sb.append("seadetlTermCodeEff");
-        sb.append('=');
-        sb.append(((this.seadetlTermCodeEff == null)?"<null>":this.seadetlTermCodeEff));
         sb.append(',');
         sb.append("ssgpCode");
         sb.append('=');
         sb.append(((this.ssgpCode == null)?"<null>":this.ssgpCode));
         sb.append(',');
-        sb.append("seadetlId");
-        sb.append('=');
-        sb.append(((this.seadetlId == null)?"<null>":this.seadetlId));
-        sb.append(',');
-        sb.append("seadetlSsgpCode");
-        sb.append('=');
-        sb.append(((this.seadetlSsgpCode == null)?"<null>":this.seadetlSsgpCode));
-        sb.append(',');
         sb.append("criteriaSelfInd");
         sb.append('=');
         sb.append(((this.criteriaSelfInd == null)?"<null>":this.criteriaSelfInd));
         sb.append(',');
+        sb.append("serdtndSsgpCode");
+        sb.append('=');
+        sb.append(((this.serdtndSsgpCode == null)?"<null>":this.serdtndSsgpCode));
+        sb.append(',');
         sb.append("criteriaSsgpCode");
         sb.append('=');
         sb.append(((this.criteriaSsgpCode == null)?"<null>":this.criteriaSsgpCode));
+        sb.append(',');
+        sb.append("id");
+        sb.append('=');
+        sb.append(((this.id == null)?"<null>":this.id));
         sb.append(',');
         sb.append("criteriaNeedCode");
         sb.append('=');
@@ -501,15 +501,15 @@ public class SupportServiceDetailNeedAssignment100PutRequest {
     public int hashCode() {
         int result = 1;
         result = ((result* 31)+((this.ndrfCode == null)? 0 :this.ndrfCode.hashCode()));
-        result = ((result* 31)+((this.seadetlSsgpCode == null)? 0 :this.seadetlSsgpCode.hashCode()));
+        result = ((result* 31)+((this.termCodeEff == null)? 0 :this.termCodeEff.hashCode()));
+        result = ((result* 31)+((this.serdtndSsgpCode == null)? 0 :this.serdtndSsgpCode.hashCode()));
         result = ((result* 31)+((this.needCode == null)? 0 :this.needCode.hashCode()));
         result = ((result* 31)+((this.selfInd == null)? 0 :this.selfInd.hashCode()));
         result = ((result* 31)+((this.criteriaNdrfCode == null)? 0 :this.criteriaNdrfCode.hashCode()));
-        result = ((result* 31)+((this.seadetlTermCodeEff == null)? 0 :this.seadetlTermCodeEff.hashCode()));
         result = ((result* 31)+((this.ssgpCode == null)? 0 :this.ssgpCode.hashCode()));
-        result = ((result* 31)+((this.seadetlId == null)? 0 :this.seadetlId.hashCode()));
         result = ((result* 31)+((this.criteriaSelfInd == null)? 0 :this.criteriaSelfInd.hashCode()));
         result = ((result* 31)+((this.criteriaNeedCode == null)? 0 :this.criteriaNeedCode.hashCode()));
+        result = ((result* 31)+((this.id == null)? 0 :this.id.hashCode()));
         result = ((result* 31)+((this.additionalProperties == null)? 0 :this.additionalProperties.hashCode()));
         result = ((result* 31)+((this.criteriaSsgpCode == null)? 0 :this.criteriaSsgpCode.hashCode()));
         return result;
@@ -524,7 +524,7 @@ public class SupportServiceDetailNeedAssignment100PutRequest {
             return false;
         }
         SupportServiceDetailNeedAssignment100PutRequest rhs = ((SupportServiceDetailNeedAssignment100PutRequest) other);
-        return (((((((((((((this.ndrfCode == rhs.ndrfCode)||((this.ndrfCode!= null)&&this.ndrfCode.equals(rhs.ndrfCode)))&&((this.seadetlSsgpCode == rhs.seadetlSsgpCode)||((this.seadetlSsgpCode!= null)&&this.seadetlSsgpCode.equals(rhs.seadetlSsgpCode))))&&((this.needCode == rhs.needCode)||((this.needCode!= null)&&this.needCode.equals(rhs.needCode))))&&((this.selfInd == rhs.selfInd)||((this.selfInd!= null)&&this.selfInd.equals(rhs.selfInd))))&&((this.criteriaNdrfCode == rhs.criteriaNdrfCode)||((this.criteriaNdrfCode!= null)&&this.criteriaNdrfCode.equals(rhs.criteriaNdrfCode))))&&((this.seadetlTermCodeEff == rhs.seadetlTermCodeEff)||((this.seadetlTermCodeEff!= null)&&this.seadetlTermCodeEff.equals(rhs.seadetlTermCodeEff))))&&((this.ssgpCode == rhs.ssgpCode)||((this.ssgpCode!= null)&&this.ssgpCode.equals(rhs.ssgpCode))))&&((this.seadetlId == rhs.seadetlId)||((this.seadetlId!= null)&&this.seadetlId.equals(rhs.seadetlId))))&&((this.criteriaSelfInd == rhs.criteriaSelfInd)||((this.criteriaSelfInd!= null)&&this.criteriaSelfInd.equals(rhs.criteriaSelfInd))))&&((this.criteriaNeedCode == rhs.criteriaNeedCode)||((this.criteriaNeedCode!= null)&&this.criteriaNeedCode.equals(rhs.criteriaNeedCode))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.criteriaSsgpCode == rhs.criteriaSsgpCode)||((this.criteriaSsgpCode!= null)&&this.criteriaSsgpCode.equals(rhs.criteriaSsgpCode))));
+        return (((((((((((((this.ndrfCode == rhs.ndrfCode)||((this.ndrfCode!= null)&&this.ndrfCode.equals(rhs.ndrfCode)))&&((this.termCodeEff == rhs.termCodeEff)||((this.termCodeEff!= null)&&this.termCodeEff.equals(rhs.termCodeEff))))&&((this.serdtndSsgpCode == rhs.serdtndSsgpCode)||((this.serdtndSsgpCode!= null)&&this.serdtndSsgpCode.equals(rhs.serdtndSsgpCode))))&&((this.needCode == rhs.needCode)||((this.needCode!= null)&&this.needCode.equals(rhs.needCode))))&&((this.selfInd == rhs.selfInd)||((this.selfInd!= null)&&this.selfInd.equals(rhs.selfInd))))&&((this.criteriaNdrfCode == rhs.criteriaNdrfCode)||((this.criteriaNdrfCode!= null)&&this.criteriaNdrfCode.equals(rhs.criteriaNdrfCode))))&&((this.ssgpCode == rhs.ssgpCode)||((this.ssgpCode!= null)&&this.ssgpCode.equals(rhs.ssgpCode))))&&((this.criteriaSelfInd == rhs.criteriaSelfInd)||((this.criteriaSelfInd!= null)&&this.criteriaSelfInd.equals(rhs.criteriaSelfInd))))&&((this.criteriaNeedCode == rhs.criteriaNeedCode)||((this.criteriaNeedCode!= null)&&this.criteriaNeedCode.equals(rhs.criteriaNeedCode))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.criteriaSsgpCode == rhs.criteriaSsgpCode)||((this.criteriaSsgpCode!= null)&&this.criteriaSsgpCode.equals(rhs.criteriaSsgpCode))));
     }
 
 }

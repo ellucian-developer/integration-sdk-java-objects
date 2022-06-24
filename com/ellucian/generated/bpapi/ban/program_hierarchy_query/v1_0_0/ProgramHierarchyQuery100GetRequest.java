@@ -28,7 +28,7 @@ public class ProgramHierarchyQuery100GetRequest {
      */
     @JsonProperty("ftxprghCoasCode")
     @JsonPropertyDescription("Lineage reference object : ftxprghCoasCode, Lookup lineage reference object : ftvcoas")
-    private Object ftxprghCoasCode;
+    private String ftxprghCoasCode;
     /**
      * Program
      * <p>
@@ -37,7 +37,7 @@ public class ProgramHierarchyQuery100GetRequest {
      */
     @JsonProperty("ftxprghProgCode")
     @JsonPropertyDescription("Lineage reference object : ftxprghProgCode")
-    private Object ftxprghProgCode;
+    private String ftxprghProgCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -48,7 +48,7 @@ public class ProgramHierarchyQuery100GetRequest {
      * 
      */
     @JsonProperty("ftxprghCoasCode")
-    public Object getFtxprghCoasCode() {
+    public String getFtxprghCoasCode() {
         return ftxprghCoasCode;
     }
 
@@ -59,11 +59,11 @@ public class ProgramHierarchyQuery100GetRequest {
      * 
      */
     @JsonProperty("ftxprghCoasCode")
-    public void setFtxprghCoasCode(Object ftxprghCoasCode) {
+    public void setFtxprghCoasCode(String ftxprghCoasCode) {
         this.ftxprghCoasCode = ftxprghCoasCode;
     }
 
-    public ProgramHierarchyQuery100GetRequest withFtxprghCoasCode(Object ftxprghCoasCode) {
+    public ProgramHierarchyQuery100GetRequest withFtxprghCoasCode(String ftxprghCoasCode) {
         this.ftxprghCoasCode = ftxprghCoasCode;
         return this;
     }
@@ -75,7 +75,7 @@ public class ProgramHierarchyQuery100GetRequest {
      * 
      */
     @JsonProperty("ftxprghProgCode")
-    public Object getFtxprghProgCode() {
+    public String getFtxprghProgCode() {
         return ftxprghProgCode;
     }
 
@@ -86,11 +86,11 @@ public class ProgramHierarchyQuery100GetRequest {
      * 
      */
     @JsonProperty("ftxprghProgCode")
-    public void setFtxprghProgCode(Object ftxprghProgCode) {
+    public void setFtxprghProgCode(String ftxprghProgCode) {
         this.ftxprghProgCode = ftxprghProgCode;
     }
 
-    public ProgramHierarchyQuery100GetRequest withFtxprghProgCode(Object ftxprghProgCode) {
+    public ProgramHierarchyQuery100GetRequest withFtxprghProgCode(String ftxprghProgCode) {
         this.ftxprghProgCode = ftxprghProgCode;
         return this;
     }

@@ -49,7 +49,7 @@ public class BeneficiaryCoverage100GetRequest {
      */
     @JsonProperty("queryDate")
     @JsonPropertyDescription("Lineage reference object : queryDate")
-    private Object queryDate;
+    private Date queryDate;
     /**
      * Lineage reference object : PDRBCOV_ACTIVITY_DATE
      * (Required)
@@ -66,7 +66,7 @@ public class BeneficiaryCoverage100GetRequest {
      */
     @JsonProperty("bdcaCode")
     @JsonPropertyDescription("Lineage reference object : bdcaCode")
-    private Object bdcaCode;
+    private String bdcaCode;
     /**
      * Coverage End Date
      * <p>
@@ -101,7 +101,7 @@ public class BeneficiaryCoverage100GetRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Termination Reason
      * <p>
@@ -173,7 +173,7 @@ public class BeneficiaryCoverage100GetRequest {
      * 
      */
     @JsonProperty("queryDate")
-    public Object getQueryDate() {
+    public Date getQueryDate() {
         return queryDate;
     }
 
@@ -184,11 +184,11 @@ public class BeneficiaryCoverage100GetRequest {
      * 
      */
     @JsonProperty("queryDate")
-    public void setQueryDate(Object queryDate) {
+    public void setQueryDate(Date queryDate) {
         this.queryDate = queryDate;
     }
 
-    public BeneficiaryCoverage100GetRequest withQueryDate(Object queryDate) {
+    public BeneficiaryCoverage100GetRequest withQueryDate(Date queryDate) {
         this.queryDate = queryDate;
         return this;
     }
@@ -225,7 +225,7 @@ public class BeneficiaryCoverage100GetRequest {
      * 
      */
     @JsonProperty("bdcaCode")
-    public Object getBdcaCode() {
+    public String getBdcaCode() {
         return bdcaCode;
     }
 
@@ -236,11 +236,11 @@ public class BeneficiaryCoverage100GetRequest {
      * 
      */
     @JsonProperty("bdcaCode")
-    public void setBdcaCode(Object bdcaCode) {
+    public void setBdcaCode(String bdcaCode) {
         this.bdcaCode = bdcaCode;
     }
 
-    public BeneficiaryCoverage100GetRequest withBdcaCode(Object bdcaCode) {
+    public BeneficiaryCoverage100GetRequest withBdcaCode(String bdcaCode) {
         this.bdcaCode = bdcaCode;
         return this;
     }
@@ -331,7 +331,7 @@ public class BeneficiaryCoverage100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -342,11 +342,11 @@ public class BeneficiaryCoverage100GetRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public BeneficiaryCoverage100GetRequest withId(Object id) {
+    public BeneficiaryCoverage100GetRequest withId(String id) {
         this.id = id;
         return this;
     }

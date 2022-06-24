@@ -29,7 +29,7 @@ public class RattCtrlBlock {
      */
     @JsonProperty("scrrattAttsIeCde")
     @JsonPropertyDescription("Lineage reference object : scrrattAttsIeCde")
-    private Object scrrattAttsIeCde;
+    private String scrrattAttsIeCde;
     /**
      * From Term
      * <p>
@@ -38,7 +38,7 @@ public class RattCtrlBlock {
      */
     @JsonProperty("scrrattTermCodeFrom")
     @JsonPropertyDescription("Lineage reference object : scrrattTermCodeFrom, Lookup lineage reference object : stvterm")
-    private Object scrrattTermCodeFrom;
+    private String scrrattTermCodeFrom;
     /**
      * To Term
      * <p>
@@ -47,7 +47,7 @@ public class RattCtrlBlock {
      */
     @JsonProperty("scrrattTermCodeTo")
     @JsonPropertyDescription("Lineage reference object : scrrattTermCodeTo, Lookup lineage reference object : stvterm")
-    private Object scrrattTermCodeTo;
+    private String scrrattTermCodeTo;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -58,7 +58,7 @@ public class RattCtrlBlock {
      * 
      */
     @JsonProperty("scrrattAttsIeCde")
-    public Object getScrrattAttsIeCde() {
+    public String getScrrattAttsIeCde() {
         return scrrattAttsIeCde;
     }
 
@@ -69,11 +69,11 @@ public class RattCtrlBlock {
      * 
      */
     @JsonProperty("scrrattAttsIeCde")
-    public void setScrrattAttsIeCde(Object scrrattAttsIeCde) {
+    public void setScrrattAttsIeCde(String scrrattAttsIeCde) {
         this.scrrattAttsIeCde = scrrattAttsIeCde;
     }
 
-    public RattCtrlBlock withScrrattAttsIeCde(Object scrrattAttsIeCde) {
+    public RattCtrlBlock withScrrattAttsIeCde(String scrrattAttsIeCde) {
         this.scrrattAttsIeCde = scrrattAttsIeCde;
         return this;
     }
@@ -85,7 +85,7 @@ public class RattCtrlBlock {
      * 
      */
     @JsonProperty("scrrattTermCodeFrom")
-    public Object getScrrattTermCodeFrom() {
+    public String getScrrattTermCodeFrom() {
         return scrrattTermCodeFrom;
     }
 
@@ -96,11 +96,11 @@ public class RattCtrlBlock {
      * 
      */
     @JsonProperty("scrrattTermCodeFrom")
-    public void setScrrattTermCodeFrom(Object scrrattTermCodeFrom) {
+    public void setScrrattTermCodeFrom(String scrrattTermCodeFrom) {
         this.scrrattTermCodeFrom = scrrattTermCodeFrom;
     }
 
-    public RattCtrlBlock withScrrattTermCodeFrom(Object scrrattTermCodeFrom) {
+    public RattCtrlBlock withScrrattTermCodeFrom(String scrrattTermCodeFrom) {
         this.scrrattTermCodeFrom = scrrattTermCodeFrom;
         return this;
     }
@@ -112,7 +112,7 @@ public class RattCtrlBlock {
      * 
      */
     @JsonProperty("scrrattTermCodeTo")
-    public Object getScrrattTermCodeTo() {
+    public String getScrrattTermCodeTo() {
         return scrrattTermCodeTo;
     }
 
@@ -123,11 +123,11 @@ public class RattCtrlBlock {
      * 
      */
     @JsonProperty("scrrattTermCodeTo")
-    public void setScrrattTermCodeTo(Object scrrattTermCodeTo) {
+    public void setScrrattTermCodeTo(String scrrattTermCodeTo) {
         this.scrrattTermCodeTo = scrrattTermCodeTo;
     }
 
-    public RattCtrlBlock withScrrattTermCodeTo(Object scrrattTermCodeTo) {
+    public RattCtrlBlock withScrrattTermCodeTo(String scrrattTermCodeTo) {
         this.scrrattTermCodeTo = scrrattTermCodeTo;
         return this;
     }

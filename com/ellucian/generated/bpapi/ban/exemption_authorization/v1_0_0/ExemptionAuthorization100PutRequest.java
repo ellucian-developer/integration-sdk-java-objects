@@ -39,7 +39,7 @@ public class ExemptionAuthorization100PutRequest {
      */
     @JsonProperty("exemptionCode")
     @JsonPropertyDescription("Lineage reference object : exemptionCode")
-    private Object exemptionCode;
+    private String exemptionCode;
     /**
      * Detail Payment Code
      * <p>
@@ -67,7 +67,7 @@ public class ExemptionAuthorization100PutRequest {
      */
     @JsonProperty("keyblocTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCode;
+    private String keyblocTermCode;
     /**
      * Roll Expiration Term
      * <p>
@@ -147,7 +147,7 @@ public class ExemptionAuthorization100PutRequest {
      * 
      */
     @JsonProperty("exemptionCode")
-    public Object getExemptionCode() {
+    public String getExemptionCode() {
         return exemptionCode;
     }
 
@@ -158,11 +158,11 @@ public class ExemptionAuthorization100PutRequest {
      * 
      */
     @JsonProperty("exemptionCode")
-    public void setExemptionCode(Object exemptionCode) {
+    public void setExemptionCode(String exemptionCode) {
         this.exemptionCode = exemptionCode;
     }
 
-    public ExemptionAuthorization100PutRequest withExemptionCode(Object exemptionCode) {
+    public ExemptionAuthorization100PutRequest withExemptionCode(String exemptionCode) {
         this.exemptionCode = exemptionCode;
         return this;
     }
@@ -230,7 +230,7 @@ public class ExemptionAuthorization100PutRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public Object getKeyblocTermCode() {
+    public String getKeyblocTermCode() {
         return keyblocTermCode;
     }
 
@@ -241,11 +241,11 @@ public class ExemptionAuthorization100PutRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public void setKeyblocTermCode(Object keyblocTermCode) {
+    public void setKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
     }
 
-    public ExemptionAuthorization100PutRequest withKeyblocTermCode(Object keyblocTermCode) {
+    public ExemptionAuthorization100PutRequest withKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
         return this;
     }

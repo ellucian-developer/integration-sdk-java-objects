@@ -34,7 +34,7 @@ public class BillingMessage100PutRequest {
      */
     @JsonProperty("accountId")
     @JsonPropertyDescription("Lineage reference object : accountId")
-    private Object accountId;
+    private String accountId;
     /**
      * Activity Date
      * <p>
@@ -52,7 +52,7 @@ public class BillingMessage100PutRequest {
      */
     @JsonProperty("keyblckDeliCode")
     @JsonPropertyDescription("Lineage reference object : keyblckDeliCode, Lookup lineage reference object : ttvdeli")
-    private Object keyblckDeliCode;
+    private String keyblckDeliCode;
     /**
      * Billing Message
      * <p>
@@ -70,7 +70,7 @@ public class BillingMessage100PutRequest {
      */
     @JsonProperty("installmentPlan")
     @JsonPropertyDescription("Lineage reference object : installmentPlan")
-    private Object installmentPlan;
+    private String installmentPlan;
     /**
      * Collection Agency
      * <p>
@@ -79,7 +79,7 @@ public class BillingMessage100PutRequest {
      */
     @JsonProperty("collectionAgency")
     @JsonPropertyDescription("Lineage reference object : collectionAgency")
-    private Object collectionAgency;
+    private String collectionAgency;
     /**
      * Billing Message
      * <p>
@@ -99,7 +99,7 @@ public class BillingMessage100PutRequest {
      * 
      */
     @JsonProperty("accountId")
-    public Object getAccountId() {
+    public String getAccountId() {
         return accountId;
     }
 
@@ -110,11 +110,11 @@ public class BillingMessage100PutRequest {
      * 
      */
     @JsonProperty("accountId")
-    public void setAccountId(Object accountId) {
+    public void setAccountId(String accountId) {
         this.accountId = accountId;
     }
 
-    public BillingMessage100PutRequest withAccountId(Object accountId) {
+    public BillingMessage100PutRequest withAccountId(String accountId) {
         this.accountId = accountId;
         return this;
     }
@@ -153,7 +153,7 @@ public class BillingMessage100PutRequest {
      * 
      */
     @JsonProperty("keyblckDeliCode")
-    public Object getKeyblckDeliCode() {
+    public String getKeyblckDeliCode() {
         return keyblckDeliCode;
     }
 
@@ -164,11 +164,11 @@ public class BillingMessage100PutRequest {
      * 
      */
     @JsonProperty("keyblckDeliCode")
-    public void setKeyblckDeliCode(Object keyblckDeliCode) {
+    public void setKeyblckDeliCode(String keyblckDeliCode) {
         this.keyblckDeliCode = keyblckDeliCode;
     }
 
-    public BillingMessage100PutRequest withKeyblckDeliCode(Object keyblckDeliCode) {
+    public BillingMessage100PutRequest withKeyblckDeliCode(String keyblckDeliCode) {
         this.keyblckDeliCode = keyblckDeliCode;
         return this;
     }
@@ -207,7 +207,7 @@ public class BillingMessage100PutRequest {
      * 
      */
     @JsonProperty("installmentPlan")
-    public Object getInstallmentPlan() {
+    public String getInstallmentPlan() {
         return installmentPlan;
     }
 
@@ -218,11 +218,11 @@ public class BillingMessage100PutRequest {
      * 
      */
     @JsonProperty("installmentPlan")
-    public void setInstallmentPlan(Object installmentPlan) {
+    public void setInstallmentPlan(String installmentPlan) {
         this.installmentPlan = installmentPlan;
     }
 
-    public BillingMessage100PutRequest withInstallmentPlan(Object installmentPlan) {
+    public BillingMessage100PutRequest withInstallmentPlan(String installmentPlan) {
         this.installmentPlan = installmentPlan;
         return this;
     }
@@ -234,7 +234,7 @@ public class BillingMessage100PutRequest {
      * 
      */
     @JsonProperty("collectionAgency")
-    public Object getCollectionAgency() {
+    public String getCollectionAgency() {
         return collectionAgency;
     }
 
@@ -245,11 +245,11 @@ public class BillingMessage100PutRequest {
      * 
      */
     @JsonProperty("collectionAgency")
-    public void setCollectionAgency(Object collectionAgency) {
+    public void setCollectionAgency(String collectionAgency) {
         this.collectionAgency = collectionAgency;
     }
 
-    public BillingMessage100PutRequest withCollectionAgency(Object collectionAgency) {
+    public BillingMessage100PutRequest withCollectionAgency(String collectionAgency) {
         this.collectionAgency = collectionAgency;
         return this;
     }

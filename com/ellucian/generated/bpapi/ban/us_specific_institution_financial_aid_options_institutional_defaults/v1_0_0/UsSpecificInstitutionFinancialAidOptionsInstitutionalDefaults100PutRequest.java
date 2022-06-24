@@ -45,7 +45,7 @@ public class UsSpecificInstitutionFinancialAidOptionsInstitutionalDefaults100Put
      */
     @JsonProperty("keyblckAidyCode")
     @JsonPropertyDescription("Lineage reference object : keyblckAidyCode, Lookup lineage reference object : robinst")
-    private Object keyblckAidyCode;
+    private String keyblckAidyCode;
     /**
      * Rounding Indicator
      * <p>
@@ -155,7 +155,7 @@ public class UsSpecificInstitutionFinancialAidOptionsInstitutionalDefaults100Put
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public Object getKeyblckAidyCode() {
+    public String getKeyblckAidyCode() {
         return keyblckAidyCode;
     }
 
@@ -166,11 +166,11 @@ public class UsSpecificInstitutionFinancialAidOptionsInstitutionalDefaults100Put
      * 
      */
     @JsonProperty("keyblckAidyCode")
-    public void setKeyblckAidyCode(Object keyblckAidyCode) {
+    public void setKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
     }
 
-    public UsSpecificInstitutionFinancialAidOptionsInstitutionalDefaults100PutRequest withKeyblckAidyCode(Object keyblckAidyCode) {
+    public UsSpecificInstitutionFinancialAidOptionsInstitutionalDefaults100PutRequest withKeyblckAidyCode(String keyblckAidyCode) {
         this.keyblckAidyCode = keyblckAidyCode;
         return this;
     }

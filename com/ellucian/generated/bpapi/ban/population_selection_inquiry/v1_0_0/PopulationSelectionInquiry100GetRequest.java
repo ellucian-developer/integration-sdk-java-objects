@@ -59,7 +59,7 @@ public class PopulationSelectionInquiry100GetRequest {
      */
     @JsonProperty("keyblckApplication")
     @JsonPropertyDescription("Lineage reference object : keyblckApplication, Lookup lineage reference object : glbappl")
-    private Object keyblckApplication;
+    private String keyblckApplication;
     /**
      * Creator
      * <p>
@@ -172,7 +172,7 @@ public class PopulationSelectionInquiry100GetRequest {
      * 
      */
     @JsonProperty("keyblckApplication")
-    public Object getKeyblckApplication() {
+    public String getKeyblckApplication() {
         return keyblckApplication;
     }
 
@@ -183,11 +183,11 @@ public class PopulationSelectionInquiry100GetRequest {
      * 
      */
     @JsonProperty("keyblckApplication")
-    public void setKeyblckApplication(Object keyblckApplication) {
+    public void setKeyblckApplication(String keyblckApplication) {
         this.keyblckApplication = keyblckApplication;
     }
 
-    public PopulationSelectionInquiry100GetRequest withKeyblckApplication(Object keyblckApplication) {
+    public PopulationSelectionInquiry100GetRequest withKeyblckApplication(String keyblckApplication) {
         this.keyblckApplication = keyblckApplication;
         return this;
     }

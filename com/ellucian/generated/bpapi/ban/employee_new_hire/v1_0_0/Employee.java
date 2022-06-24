@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.employee_new_hire.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -35,7 +36,7 @@ public class Employee {
      */
     @JsonProperty("bcatDesc")
     @JsonPropertyDescription("Lineage reference object : bcatDesc")
-    private Object bcatDesc;
+    private String bcatDesc;
     /**
      * Original Hire
      * <p>
@@ -45,14 +46,14 @@ public class Employee {
      */
     @JsonProperty("pebemplFirstHireDate")
     @JsonPropertyDescription("Lineage reference object : pebemplFirstHireDate")
-    private Object pebemplFirstHireDate;
+    private Date pebemplFirstHireDate;
     /**
      * Lineage reference object : pebemplUserId
      * 
      */
     @JsonProperty("pebemplUserId")
     @JsonPropertyDescription("Lineage reference object : pebemplUserId")
-    private Object pebemplUserId;
+    private String pebemplUserId;
     /**
      * Home Department COA
      * <p>
@@ -62,7 +63,7 @@ public class Employee {
      */
     @JsonProperty("pebemplCoasCodeHome")
     @JsonPropertyDescription("Lineage reference object : pebemplCoasCodeHome")
-    private Object pebemplCoasCodeHome;
+    private String pebemplCoasCodeHome;
     /**
      * Allow New Hire Benefits Enrollment
      * <p>
@@ -71,21 +72,21 @@ public class Employee {
      */
     @JsonProperty("pebemplNewHireInd")
     @JsonPropertyDescription("Lineage reference object : pebemplNewHireInd")
-    private Object pebemplNewHireInd;
+    private String pebemplNewHireInd;
     /**
      * Lineage reference object : eclsDesc
      * 
      */
     @JsonProperty("eclsDesc")
     @JsonPropertyDescription("Lineage reference object : eclsDesc")
-    private Object eclsDesc;
+    private String eclsDesc;
     /**
      * Lineage reference object : homeTitle
      * 
      */
     @JsonProperty("homeTitle")
     @JsonPropertyDescription("Lineage reference object : homeTitle")
-    private Object homeTitle;
+    private String homeTitle;
     /**
      * Organization
      * <p>
@@ -95,7 +96,7 @@ public class Employee {
      */
     @JsonProperty("pebemplOrgnCodeHome")
     @JsonPropertyDescription("Lineage reference object : pebemplOrgnCodeHome")
-    private Object pebemplOrgnCodeHome;
+    private String pebemplOrgnCodeHome;
     /**
      * Employee Class
      * <p>
@@ -105,14 +106,14 @@ public class Employee {
      */
     @JsonProperty("pebemplEclsCode")
     @JsonPropertyDescription("Lineage reference object : pebemplEclsCode")
-    private Object pebemplEclsCode;
+    private String pebemplEclsCode;
     /**
      * Lineage reference object : pebemplActivityDate
      * 
      */
     @JsonProperty("pebemplActivityDate")
     @JsonPropertyDescription("Lineage reference object : pebemplActivityDate")
-    private Object pebemplActivityDate;
+    private Date pebemplActivityDate;
     /**
      * Benefit Category
      * <p>
@@ -122,7 +123,7 @@ public class Employee {
      */
     @JsonProperty("pebemplBcatCode")
     @JsonPropertyDescription("Lineage reference object : pebemplBcatCode, Lookup lineage reference object : ptrecbc,ptrbcat")
-    private Object pebemplBcatCode;
+    private String pebemplBcatCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -131,7 +132,7 @@ public class Employee {
      * 
      */
     @JsonProperty("bcatDesc")
-    public Object getBcatDesc() {
+    public String getBcatDesc() {
         return bcatDesc;
     }
 
@@ -140,11 +141,11 @@ public class Employee {
      * 
      */
     @JsonProperty("bcatDesc")
-    public void setBcatDesc(Object bcatDesc) {
+    public void setBcatDesc(String bcatDesc) {
         this.bcatDesc = bcatDesc;
     }
 
-    public Employee withBcatDesc(Object bcatDesc) {
+    public Employee withBcatDesc(String bcatDesc) {
         this.bcatDesc = bcatDesc;
         return this;
     }
@@ -157,7 +158,7 @@ public class Employee {
      * 
      */
     @JsonProperty("pebemplFirstHireDate")
-    public Object getPebemplFirstHireDate() {
+    public Date getPebemplFirstHireDate() {
         return pebemplFirstHireDate;
     }
 
@@ -169,11 +170,11 @@ public class Employee {
      * 
      */
     @JsonProperty("pebemplFirstHireDate")
-    public void setPebemplFirstHireDate(Object pebemplFirstHireDate) {
+    public void setPebemplFirstHireDate(Date pebemplFirstHireDate) {
         this.pebemplFirstHireDate = pebemplFirstHireDate;
     }
 
-    public Employee withPebemplFirstHireDate(Object pebemplFirstHireDate) {
+    public Employee withPebemplFirstHireDate(Date pebemplFirstHireDate) {
         this.pebemplFirstHireDate = pebemplFirstHireDate;
         return this;
     }
@@ -183,7 +184,7 @@ public class Employee {
      * 
      */
     @JsonProperty("pebemplUserId")
-    public Object getPebemplUserId() {
+    public String getPebemplUserId() {
         return pebemplUserId;
     }
 
@@ -192,11 +193,11 @@ public class Employee {
      * 
      */
     @JsonProperty("pebemplUserId")
-    public void setPebemplUserId(Object pebemplUserId) {
+    public void setPebemplUserId(String pebemplUserId) {
         this.pebemplUserId = pebemplUserId;
     }
 
-    public Employee withPebemplUserId(Object pebemplUserId) {
+    public Employee withPebemplUserId(String pebemplUserId) {
         this.pebemplUserId = pebemplUserId;
         return this;
     }
@@ -209,7 +210,7 @@ public class Employee {
      * 
      */
     @JsonProperty("pebemplCoasCodeHome")
-    public Object getPebemplCoasCodeHome() {
+    public String getPebemplCoasCodeHome() {
         return pebemplCoasCodeHome;
     }
 
@@ -221,11 +222,11 @@ public class Employee {
      * 
      */
     @JsonProperty("pebemplCoasCodeHome")
-    public void setPebemplCoasCodeHome(Object pebemplCoasCodeHome) {
+    public void setPebemplCoasCodeHome(String pebemplCoasCodeHome) {
         this.pebemplCoasCodeHome = pebemplCoasCodeHome;
     }
 
-    public Employee withPebemplCoasCodeHome(Object pebemplCoasCodeHome) {
+    public Employee withPebemplCoasCodeHome(String pebemplCoasCodeHome) {
         this.pebemplCoasCodeHome = pebemplCoasCodeHome;
         return this;
     }
@@ -237,7 +238,7 @@ public class Employee {
      * 
      */
     @JsonProperty("pebemplNewHireInd")
-    public Object getPebemplNewHireInd() {
+    public String getPebemplNewHireInd() {
         return pebemplNewHireInd;
     }
 
@@ -248,11 +249,11 @@ public class Employee {
      * 
      */
     @JsonProperty("pebemplNewHireInd")
-    public void setPebemplNewHireInd(Object pebemplNewHireInd) {
+    public void setPebemplNewHireInd(String pebemplNewHireInd) {
         this.pebemplNewHireInd = pebemplNewHireInd;
     }
 
-    public Employee withPebemplNewHireInd(Object pebemplNewHireInd) {
+    public Employee withPebemplNewHireInd(String pebemplNewHireInd) {
         this.pebemplNewHireInd = pebemplNewHireInd;
         return this;
     }
@@ -262,7 +263,7 @@ public class Employee {
      * 
      */
     @JsonProperty("eclsDesc")
-    public Object getEclsDesc() {
+    public String getEclsDesc() {
         return eclsDesc;
     }
 
@@ -271,11 +272,11 @@ public class Employee {
      * 
      */
     @JsonProperty("eclsDesc")
-    public void setEclsDesc(Object eclsDesc) {
+    public void setEclsDesc(String eclsDesc) {
         this.eclsDesc = eclsDesc;
     }
 
-    public Employee withEclsDesc(Object eclsDesc) {
+    public Employee withEclsDesc(String eclsDesc) {
         this.eclsDesc = eclsDesc;
         return this;
     }
@@ -285,7 +286,7 @@ public class Employee {
      * 
      */
     @JsonProperty("homeTitle")
-    public Object getHomeTitle() {
+    public String getHomeTitle() {
         return homeTitle;
     }
 
@@ -294,11 +295,11 @@ public class Employee {
      * 
      */
     @JsonProperty("homeTitle")
-    public void setHomeTitle(Object homeTitle) {
+    public void setHomeTitle(String homeTitle) {
         this.homeTitle = homeTitle;
     }
 
-    public Employee withHomeTitle(Object homeTitle) {
+    public Employee withHomeTitle(String homeTitle) {
         this.homeTitle = homeTitle;
         return this;
     }
@@ -311,7 +312,7 @@ public class Employee {
      * 
      */
     @JsonProperty("pebemplOrgnCodeHome")
-    public Object getPebemplOrgnCodeHome() {
+    public String getPebemplOrgnCodeHome() {
         return pebemplOrgnCodeHome;
     }
 
@@ -323,11 +324,11 @@ public class Employee {
      * 
      */
     @JsonProperty("pebemplOrgnCodeHome")
-    public void setPebemplOrgnCodeHome(Object pebemplOrgnCodeHome) {
+    public void setPebemplOrgnCodeHome(String pebemplOrgnCodeHome) {
         this.pebemplOrgnCodeHome = pebemplOrgnCodeHome;
     }
 
-    public Employee withPebemplOrgnCodeHome(Object pebemplOrgnCodeHome) {
+    public Employee withPebemplOrgnCodeHome(String pebemplOrgnCodeHome) {
         this.pebemplOrgnCodeHome = pebemplOrgnCodeHome;
         return this;
     }
@@ -340,7 +341,7 @@ public class Employee {
      * 
      */
     @JsonProperty("pebemplEclsCode")
-    public Object getPebemplEclsCode() {
+    public String getPebemplEclsCode() {
         return pebemplEclsCode;
     }
 
@@ -352,11 +353,11 @@ public class Employee {
      * 
      */
     @JsonProperty("pebemplEclsCode")
-    public void setPebemplEclsCode(Object pebemplEclsCode) {
+    public void setPebemplEclsCode(String pebemplEclsCode) {
         this.pebemplEclsCode = pebemplEclsCode;
     }
 
-    public Employee withPebemplEclsCode(Object pebemplEclsCode) {
+    public Employee withPebemplEclsCode(String pebemplEclsCode) {
         this.pebemplEclsCode = pebemplEclsCode;
         return this;
     }
@@ -366,7 +367,7 @@ public class Employee {
      * 
      */
     @JsonProperty("pebemplActivityDate")
-    public Object getPebemplActivityDate() {
+    public Date getPebemplActivityDate() {
         return pebemplActivityDate;
     }
 
@@ -375,11 +376,11 @@ public class Employee {
      * 
      */
     @JsonProperty("pebemplActivityDate")
-    public void setPebemplActivityDate(Object pebemplActivityDate) {
+    public void setPebemplActivityDate(Date pebemplActivityDate) {
         this.pebemplActivityDate = pebemplActivityDate;
     }
 
-    public Employee withPebemplActivityDate(Object pebemplActivityDate) {
+    public Employee withPebemplActivityDate(Date pebemplActivityDate) {
         this.pebemplActivityDate = pebemplActivityDate;
         return this;
     }
@@ -392,7 +393,7 @@ public class Employee {
      * 
      */
     @JsonProperty("pebemplBcatCode")
-    public Object getPebemplBcatCode() {
+    public String getPebemplBcatCode() {
         return pebemplBcatCode;
     }
 
@@ -404,11 +405,11 @@ public class Employee {
      * 
      */
     @JsonProperty("pebemplBcatCode")
-    public void setPebemplBcatCode(Object pebemplBcatCode) {
+    public void setPebemplBcatCode(String pebemplBcatCode) {
         this.pebemplBcatCode = pebemplBcatCode;
     }
 
-    public Employee withPebemplBcatCode(Object pebemplBcatCode) {
+    public Employee withPebemplBcatCode(String pebemplBcatCode) {
         this.pebemplBcatCode = pebemplBcatCode;
         return this;
     }

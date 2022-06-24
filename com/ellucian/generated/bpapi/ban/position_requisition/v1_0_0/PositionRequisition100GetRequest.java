@@ -27,7 +27,7 @@ public class PositionRequisition100GetRequest {
      */
     @JsonProperty("reqNo")
     @JsonPropertyDescription("Lineage reference object : reqNo")
-    private Object reqNo;
+    private String reqNo;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -38,7 +38,7 @@ public class PositionRequisition100GetRequest {
      * 
      */
     @JsonProperty("reqNo")
-    public Object getReqNo() {
+    public String getReqNo() {
         return reqNo;
     }
 
@@ -49,11 +49,11 @@ public class PositionRequisition100GetRequest {
      * 
      */
     @JsonProperty("reqNo")
-    public void setReqNo(Object reqNo) {
+    public void setReqNo(String reqNo) {
         this.reqNo = reqNo;
     }
 
-    public PositionRequisition100GetRequest withReqNo(Object reqNo) {
+    public PositionRequisition100GetRequest withReqNo(String reqNo) {
         this.reqNo = reqNo;
         return this;
     }

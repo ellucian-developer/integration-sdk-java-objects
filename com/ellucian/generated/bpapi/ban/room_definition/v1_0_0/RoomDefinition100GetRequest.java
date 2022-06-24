@@ -125,7 +125,7 @@ public class RoomDefinition100GetRequest {
      */
     @JsonProperty("stvtermTermCode")
     @JsonPropertyDescription("Lineage reference object : stvtermTermCode, Lookup lineage reference object : stvterm")
-    private Object stvtermTermCode;
+    private String stvtermTermCode;
     /**
      * Room Type
      * <p>
@@ -144,7 +144,7 @@ public class RoomDefinition100GetRequest {
      */
     @JsonProperty("slardefBldgCode")
     @JsonPropertyDescription("Lineage reference object : slardefBldgCode, Lookup lineage reference object : stvbldg")
-    private Object slardefBldgCode;
+    private String slardefBldgCode;
     /**
      * Area(Square Feet)
      * <p>
@@ -224,7 +224,7 @@ public class RoomDefinition100GetRequest {
      */
     @JsonProperty("room")
     @JsonPropertyDescription("Lineage reference object : room")
-    private Object room;
+    private String room;
     /**
      * Room Rate
      * <p>
@@ -512,7 +512,7 @@ public class RoomDefinition100GetRequest {
      * 
      */
     @JsonProperty("stvtermTermCode")
-    public Object getStvtermTermCode() {
+    public String getStvtermTermCode() {
         return stvtermTermCode;
     }
 
@@ -523,11 +523,11 @@ public class RoomDefinition100GetRequest {
      * 
      */
     @JsonProperty("stvtermTermCode")
-    public void setStvtermTermCode(Object stvtermTermCode) {
+    public void setStvtermTermCode(String stvtermTermCode) {
         this.stvtermTermCode = stvtermTermCode;
     }
 
-    public RoomDefinition100GetRequest withStvtermTermCode(Object stvtermTermCode) {
+    public RoomDefinition100GetRequest withStvtermTermCode(String stvtermTermCode) {
         this.stvtermTermCode = stvtermTermCode;
         return this;
     }
@@ -568,7 +568,7 @@ public class RoomDefinition100GetRequest {
      * 
      */
     @JsonProperty("slardefBldgCode")
-    public Object getSlardefBldgCode() {
+    public String getSlardefBldgCode() {
         return slardefBldgCode;
     }
 
@@ -579,11 +579,11 @@ public class RoomDefinition100GetRequest {
      * 
      */
     @JsonProperty("slardefBldgCode")
-    public void setSlardefBldgCode(Object slardefBldgCode) {
+    public void setSlardefBldgCode(String slardefBldgCode) {
         this.slardefBldgCode = slardefBldgCode;
     }
 
-    public RoomDefinition100GetRequest withSlardefBldgCode(Object slardefBldgCode) {
+    public RoomDefinition100GetRequest withSlardefBldgCode(String slardefBldgCode) {
         this.slardefBldgCode = slardefBldgCode;
         return this;
     }
@@ -809,7 +809,7 @@ public class RoomDefinition100GetRequest {
      * 
      */
     @JsonProperty("room")
-    public Object getRoom() {
+    public String getRoom() {
         return room;
     }
 
@@ -820,11 +820,11 @@ public class RoomDefinition100GetRequest {
      * 
      */
     @JsonProperty("room")
-    public void setRoom(Object room) {
+    public void setRoom(String room) {
         this.room = room;
     }
 
-    public RoomDefinition100GetRequest withRoom(Object room) {
+    public RoomDefinition100GetRequest withRoom(String room) {
         this.room = room;
         return this;
     }

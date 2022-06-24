@@ -97,7 +97,7 @@ public class InvoiceCreditMemoList100GetRequest {
      */
     @JsonProperty("status")
     @JsonPropertyDescription("Lineage reference object : invoiceStatus")
-    private Object status;
+    private String status;
     /**
      * Credit Memo
      * <p>
@@ -313,7 +313,7 @@ public class InvoiceCreditMemoList100GetRequest {
      * 
      */
     @JsonProperty("status")
-    public Object getStatus() {
+    public String getStatus() {
         return status;
     }
 
@@ -322,11 +322,11 @@ public class InvoiceCreditMemoList100GetRequest {
      * 
      */
     @JsonProperty("status")
-    public void setStatus(Object status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 
-    public InvoiceCreditMemoList100GetRequest withStatus(Object status) {
+    public InvoiceCreditMemoList100GetRequest withStatus(String status) {
         this.status = status;
         return this;
     }

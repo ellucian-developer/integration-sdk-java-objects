@@ -27,7 +27,7 @@ public class SourceOrBackgroundInstitution100GetRequest {
      */
     @JsonProperty("keyblocSbgiCode")
     @JsonPropertyDescription("Lineage reference object : keyblocSbgiCode, Lookup lineage reference object : stvsbgi")
-    private Object keyblocSbgiCode;
+    private String keyblocSbgiCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -38,7 +38,7 @@ public class SourceOrBackgroundInstitution100GetRequest {
      * 
      */
     @JsonProperty("keyblocSbgiCode")
-    public Object getKeyblocSbgiCode() {
+    public String getKeyblocSbgiCode() {
         return keyblocSbgiCode;
     }
 
@@ -49,11 +49,11 @@ public class SourceOrBackgroundInstitution100GetRequest {
      * 
      */
     @JsonProperty("keyblocSbgiCode")
-    public void setKeyblocSbgiCode(Object keyblocSbgiCode) {
+    public void setKeyblocSbgiCode(String keyblocSbgiCode) {
         this.keyblocSbgiCode = keyblocSbgiCode;
     }
 
-    public SourceOrBackgroundInstitution100GetRequest withKeyblocSbgiCode(Object keyblocSbgiCode) {
+    public SourceOrBackgroundInstitution100GetRequest withKeyblocSbgiCode(String keyblocSbgiCode) {
         this.keyblocSbgiCode = keyblocSbgiCode;
         return this;
     }

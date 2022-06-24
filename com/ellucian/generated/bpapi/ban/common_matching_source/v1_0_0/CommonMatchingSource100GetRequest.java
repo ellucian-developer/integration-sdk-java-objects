@@ -61,7 +61,7 @@ public class CommonMatchingSource100GetRequest {
      */
     @JsonProperty("columnCode")
     @JsonPropertyDescription("Lineage reference object : columnCode, Lookup lineage reference object : gorcmdd")
-    private Object columnCode;
+    private String columnCode;
     /**
      * Source
      * <p>
@@ -181,7 +181,7 @@ public class CommonMatchingSource100GetRequest {
      * 
      */
     @JsonProperty("columnCode")
-    public Object getColumnCode() {
+    public String getColumnCode() {
         return columnCode;
     }
 
@@ -192,11 +192,11 @@ public class CommonMatchingSource100GetRequest {
      * 
      */
     @JsonProperty("columnCode")
-    public void setColumnCode(Object columnCode) {
+    public void setColumnCode(String columnCode) {
         this.columnCode = columnCode;
     }
 
-    public CommonMatchingSource100GetRequest withColumnCode(Object columnCode) {
+    public CommonMatchingSource100GetRequest withColumnCode(String columnCode) {
         this.columnCode = columnCode;
         return this;
     }

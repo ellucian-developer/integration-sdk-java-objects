@@ -135,7 +135,7 @@ public class AttendanceTrackingRule100PutRequest {
      */
     @JsonProperty("keyblckTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblckTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblckTermCode;
+    private String keyblckTermCode;
     /**
      * Subject
      * <p>
@@ -510,7 +510,7 @@ public class AttendanceTrackingRule100PutRequest {
      * 
      */
     @JsonProperty("keyblckTermCode")
-    public Object getKeyblckTermCode() {
+    public String getKeyblckTermCode() {
         return keyblckTermCode;
     }
 
@@ -521,11 +521,11 @@ public class AttendanceTrackingRule100PutRequest {
      * 
      */
     @JsonProperty("keyblckTermCode")
-    public void setKeyblckTermCode(Object keyblckTermCode) {
+    public void setKeyblckTermCode(String keyblckTermCode) {
         this.keyblckTermCode = keyblckTermCode;
     }
 
-    public AttendanceTrackingRule100PutRequest withKeyblckTermCode(Object keyblckTermCode) {
+    public AttendanceTrackingRule100PutRequest withKeyblckTermCode(String keyblckTermCode) {
         this.keyblckTermCode = keyblckTermCode;
         return this;
     }

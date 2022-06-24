@@ -44,7 +44,7 @@ public class SectionSyllabusRequiredMaterialsAndTechnicalRequirements100PutReque
      */
     @JsonProperty("crn")
     @JsonPropertyDescription("Lineage reference object : crn")
-    private Object crn;
+    private String crn;
     /**
      * Term
      * <p>
@@ -53,7 +53,7 @@ public class SectionSyllabusRequiredMaterialsAndTechnicalRequirements100PutReque
      */
     @JsonProperty("termCode")
     @JsonPropertyDescription("Lineage reference object : termCode, Lookup lineage reference object : stvterm")
-    private Object termCode;
+    private String termCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -110,7 +110,7 @@ public class SectionSyllabusRequiredMaterialsAndTechnicalRequirements100PutReque
      * 
      */
     @JsonProperty("crn")
-    public Object getCrn() {
+    public String getCrn() {
         return crn;
     }
 
@@ -121,11 +121,11 @@ public class SectionSyllabusRequiredMaterialsAndTechnicalRequirements100PutReque
      * 
      */
     @JsonProperty("crn")
-    public void setCrn(Object crn) {
+    public void setCrn(String crn) {
         this.crn = crn;
     }
 
-    public SectionSyllabusRequiredMaterialsAndTechnicalRequirements100PutRequest withCrn(Object crn) {
+    public SectionSyllabusRequiredMaterialsAndTechnicalRequirements100PutRequest withCrn(String crn) {
         this.crn = crn;
         return this;
     }
@@ -137,7 +137,7 @@ public class SectionSyllabusRequiredMaterialsAndTechnicalRequirements100PutReque
      * 
      */
     @JsonProperty("termCode")
-    public Object getTermCode() {
+    public String getTermCode() {
         return termCode;
     }
 
@@ -148,11 +148,11 @@ public class SectionSyllabusRequiredMaterialsAndTechnicalRequirements100PutReque
      * 
      */
     @JsonProperty("termCode")
-    public void setTermCode(Object termCode) {
+    public void setTermCode(String termCode) {
         this.termCode = termCode;
     }
 
-    public SectionSyllabusRequiredMaterialsAndTechnicalRequirements100PutRequest withTermCode(Object termCode) {
+    public SectionSyllabusRequiredMaterialsAndTechnicalRequirements100PutRequest withTermCode(String termCode) {
         this.termCode = termCode;
         return this;
     }

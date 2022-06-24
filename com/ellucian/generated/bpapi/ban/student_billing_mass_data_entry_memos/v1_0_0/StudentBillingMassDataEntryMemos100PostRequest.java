@@ -1,6 +1,7 @@
 
 package com.ellucian.generated.bpapi.ban.student_billing_mass_data_entry_memos.v1_0_0;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.processing.Generated;
@@ -47,7 +48,7 @@ public class StudentBillingMassDataEntryMemos100PostRequest {
      */
     @JsonProperty("keybloc3DetailCode")
     @JsonPropertyDescription("Lineage reference object : keybloc3DetailCode, Lookup lineage reference object : tbbdetc")
-    private Object keybloc3DetailCode;
+    private String keybloc3DetailCode;
     /**
      * Term
      * <p>
@@ -56,7 +57,7 @@ public class StudentBillingMassDataEntryMemos100PostRequest {
      */
     @JsonProperty("keybloc3TermCode")
     @JsonPropertyDescription("Lineage reference object : keybloc3TermCode, Lookup lineage reference object : stvterm")
-    private Object keybloc3TermCode;
+    private String keybloc3TermCode;
     /**
      * Bill Indicator
      * <p>
@@ -65,7 +66,7 @@ public class StudentBillingMassDataEntryMemos100PostRequest {
      */
     @JsonProperty("keybloc3BillingInd")
     @JsonPropertyDescription("Lineage reference object : keybloc3BillingInd")
-    private Object keybloc3BillingInd;
+    private String keybloc3BillingInd;
     /**
      * ID
      * <p>
@@ -82,7 +83,7 @@ public class StudentBillingMassDataEntryMemos100PostRequest {
      */
     @JsonProperty("keybloc3ExpDate")
     @JsonPropertyDescription("Lineage reference object : keybloc3ExpDate")
-    private Object keybloc3ExpDate;
+    private Date keybloc3ExpDate;
     /**
      * Detail Code
      * <p>
@@ -111,7 +112,7 @@ public class StudentBillingMassDataEntryMemos100PostRequest {
      */
     @JsonProperty("keybloc3Amount")
     @JsonPropertyDescription("Lineage reference object : keybloc3Amount")
-    private Object keybloc3Amount;
+    private Double keybloc3Amount;
     /**
      * Description
      * <p>
@@ -170,7 +171,7 @@ public class StudentBillingMassDataEntryMemos100PostRequest {
      * 
      */
     @JsonProperty("keybloc3DetailCode")
-    public Object getKeybloc3DetailCode() {
+    public String getKeybloc3DetailCode() {
         return keybloc3DetailCode;
     }
 
@@ -181,11 +182,11 @@ public class StudentBillingMassDataEntryMemos100PostRequest {
      * 
      */
     @JsonProperty("keybloc3DetailCode")
-    public void setKeybloc3DetailCode(Object keybloc3DetailCode) {
+    public void setKeybloc3DetailCode(String keybloc3DetailCode) {
         this.keybloc3DetailCode = keybloc3DetailCode;
     }
 
-    public StudentBillingMassDataEntryMemos100PostRequest withKeybloc3DetailCode(Object keybloc3DetailCode) {
+    public StudentBillingMassDataEntryMemos100PostRequest withKeybloc3DetailCode(String keybloc3DetailCode) {
         this.keybloc3DetailCode = keybloc3DetailCode;
         return this;
     }
@@ -197,7 +198,7 @@ public class StudentBillingMassDataEntryMemos100PostRequest {
      * 
      */
     @JsonProperty("keybloc3TermCode")
-    public Object getKeybloc3TermCode() {
+    public String getKeybloc3TermCode() {
         return keybloc3TermCode;
     }
 
@@ -208,11 +209,11 @@ public class StudentBillingMassDataEntryMemos100PostRequest {
      * 
      */
     @JsonProperty("keybloc3TermCode")
-    public void setKeybloc3TermCode(Object keybloc3TermCode) {
+    public void setKeybloc3TermCode(String keybloc3TermCode) {
         this.keybloc3TermCode = keybloc3TermCode;
     }
 
-    public StudentBillingMassDataEntryMemos100PostRequest withKeybloc3TermCode(Object keybloc3TermCode) {
+    public StudentBillingMassDataEntryMemos100PostRequest withKeybloc3TermCode(String keybloc3TermCode) {
         this.keybloc3TermCode = keybloc3TermCode;
         return this;
     }
@@ -224,7 +225,7 @@ public class StudentBillingMassDataEntryMemos100PostRequest {
      * 
      */
     @JsonProperty("keybloc3BillingInd")
-    public Object getKeybloc3BillingInd() {
+    public String getKeybloc3BillingInd() {
         return keybloc3BillingInd;
     }
 
@@ -235,11 +236,11 @@ public class StudentBillingMassDataEntryMemos100PostRequest {
      * 
      */
     @JsonProperty("keybloc3BillingInd")
-    public void setKeybloc3BillingInd(Object keybloc3BillingInd) {
+    public void setKeybloc3BillingInd(String keybloc3BillingInd) {
         this.keybloc3BillingInd = keybloc3BillingInd;
     }
 
-    public StudentBillingMassDataEntryMemos100PostRequest withKeybloc3BillingInd(Object keybloc3BillingInd) {
+    public StudentBillingMassDataEntryMemos100PostRequest withKeybloc3BillingInd(String keybloc3BillingInd) {
         this.keybloc3BillingInd = keybloc3BillingInd;
         return this;
     }
@@ -278,7 +279,7 @@ public class StudentBillingMassDataEntryMemos100PostRequest {
      * 
      */
     @JsonProperty("keybloc3ExpDate")
-    public Object getKeybloc3ExpDate() {
+    public Date getKeybloc3ExpDate() {
         return keybloc3ExpDate;
     }
 
@@ -289,11 +290,11 @@ public class StudentBillingMassDataEntryMemos100PostRequest {
      * 
      */
     @JsonProperty("keybloc3ExpDate")
-    public void setKeybloc3ExpDate(Object keybloc3ExpDate) {
+    public void setKeybloc3ExpDate(Date keybloc3ExpDate) {
         this.keybloc3ExpDate = keybloc3ExpDate;
     }
 
-    public StudentBillingMassDataEntryMemos100PostRequest withKeybloc3ExpDate(Object keybloc3ExpDate) {
+    public StudentBillingMassDataEntryMemos100PostRequest withKeybloc3ExpDate(Date keybloc3ExpDate) {
         this.keybloc3ExpDate = keybloc3ExpDate;
         return this;
     }
@@ -363,7 +364,7 @@ public class StudentBillingMassDataEntryMemos100PostRequest {
      * 
      */
     @JsonProperty("keybloc3Amount")
-    public Object getKeybloc3Amount() {
+    public Double getKeybloc3Amount() {
         return keybloc3Amount;
     }
 
@@ -374,11 +375,11 @@ public class StudentBillingMassDataEntryMemos100PostRequest {
      * 
      */
     @JsonProperty("keybloc3Amount")
-    public void setKeybloc3Amount(Object keybloc3Amount) {
+    public void setKeybloc3Amount(Double keybloc3Amount) {
         this.keybloc3Amount = keybloc3Amount;
     }
 
-    public StudentBillingMassDataEntryMemos100PostRequest withKeybloc3Amount(Object keybloc3Amount) {
+    public StudentBillingMassDataEntryMemos100PostRequest withKeybloc3Amount(Double keybloc3Amount) {
         this.keybloc3Amount = keybloc3Amount;
         return this;
     }

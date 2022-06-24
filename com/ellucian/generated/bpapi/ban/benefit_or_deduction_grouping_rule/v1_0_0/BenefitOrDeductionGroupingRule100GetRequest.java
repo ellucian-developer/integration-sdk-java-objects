@@ -28,7 +28,7 @@ public class BenefitOrDeductionGroupingRule100GetRequest {
      */
     @JsonProperty("bdpgCode")
     @JsonPropertyDescription("Lineage reference object : bdpgCode")
-    private Object bdpgCode;
+    private String bdpgCode;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -40,7 +40,7 @@ public class BenefitOrDeductionGroupingRule100GetRequest {
      * 
      */
     @JsonProperty("bdpgCode")
-    public Object getBdpgCode() {
+    public String getBdpgCode() {
         return bdpgCode;
     }
 
@@ -52,11 +52,11 @@ public class BenefitOrDeductionGroupingRule100GetRequest {
      * 
      */
     @JsonProperty("bdpgCode")
-    public void setBdpgCode(Object bdpgCode) {
+    public void setBdpgCode(String bdpgCode) {
         this.bdpgCode = bdpgCode;
     }
 
-    public BenefitOrDeductionGroupingRule100GetRequest withBdpgCode(Object bdpgCode) {
+    public BenefitOrDeductionGroupingRule100GetRequest withBdpgCode(String bdpgCode) {
         this.bdpgCode = bdpgCode;
         return this;
     }

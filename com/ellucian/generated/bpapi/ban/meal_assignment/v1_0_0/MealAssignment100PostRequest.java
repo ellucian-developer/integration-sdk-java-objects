@@ -40,7 +40,7 @@ public class MealAssignment100PostRequest {
      */
     @JsonProperty("statusDate")
     @JsonPropertyDescription("Lineage reference object : statusDate")
-    private Object statusDate;
+    private Date statusDate;
     /**
      * Meal Plan
      * <p>
@@ -59,7 +59,7 @@ public class MealAssignment100PostRequest {
      */
     @JsonProperty("keyblocTermCode")
     @JsonPropertyDescription("Lineage reference object : keyblocTermCode, Lookup lineage reference object : stvterm")
-    private Object keyblocTermCode;
+    private String keyblocTermCode;
     /**
      * Status
      * <p>
@@ -145,7 +145,7 @@ public class MealAssignment100PostRequest {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("Lineage reference object : id")
-    private Object id;
+    private String id;
     /**
      * Term
      * <p>
@@ -166,7 +166,7 @@ public class MealAssignment100PostRequest {
      * 
      */
     @JsonProperty("statusDate")
-    public Object getStatusDate() {
+    public Date getStatusDate() {
         return statusDate;
     }
 
@@ -177,11 +177,11 @@ public class MealAssignment100PostRequest {
      * 
      */
     @JsonProperty("statusDate")
-    public void setStatusDate(Object statusDate) {
+    public void setStatusDate(Date statusDate) {
         this.statusDate = statusDate;
     }
 
-    public MealAssignment100PostRequest withStatusDate(Object statusDate) {
+    public MealAssignment100PostRequest withStatusDate(Date statusDate) {
         this.statusDate = statusDate;
         return this;
     }
@@ -222,7 +222,7 @@ public class MealAssignment100PostRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public Object getKeyblocTermCode() {
+    public String getKeyblocTermCode() {
         return keyblocTermCode;
     }
 
@@ -233,11 +233,11 @@ public class MealAssignment100PostRequest {
      * 
      */
     @JsonProperty("keyblocTermCode")
-    public void setKeyblocTermCode(Object keyblocTermCode) {
+    public void setKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
     }
 
-    public MealAssignment100PostRequest withKeyblocTermCode(Object keyblocTermCode) {
+    public MealAssignment100PostRequest withKeyblocTermCode(String keyblocTermCode) {
         this.keyblocTermCode = keyblocTermCode;
         return this;
     }
@@ -479,7 +479,7 @@ public class MealAssignment100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
@@ -490,11 +490,11 @@ public class MealAssignment100PostRequest {
      * 
      */
     @JsonProperty("id")
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public MealAssignment100PostRequest withId(Object id) {
+    public MealAssignment100PostRequest withId(String id) {
         this.id = id;
         return this;
     }

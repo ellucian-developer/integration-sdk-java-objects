@@ -28,7 +28,7 @@ public class NetTotal {
      */
     @JsonProperty("netSumYtdActv")
     @JsonPropertyDescription("Lineage reference object : netSumYtdActv")
-    private Object netSumYtdActv;
+    private Double netSumYtdActv;
     /**
      * Net Total
      * <p>
@@ -37,21 +37,21 @@ public class NetTotal {
      */
     @JsonProperty("netSumAdjt")
     @JsonPropertyDescription("Lineage reference object : netSumAdjt")
-    private Object netSumAdjt;
+    private Double netSumAdjt;
     /**
      * Lineage reference object : netSumRsrv
      * 
      */
     @JsonProperty("netSumRsrv")
     @JsonPropertyDescription("Lineage reference object : netSumRsrv")
-    private Object netSumRsrv;
+    private Double netSumRsrv;
     /**
      * Lineage reference object : netSumAbal
      * 
      */
     @JsonProperty("netSumAbal")
     @JsonPropertyDescription("Lineage reference object : netSumAbal")
-    private Object netSumAbal;
+    private Double netSumAbal;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -60,7 +60,7 @@ public class NetTotal {
      * 
      */
     @JsonProperty("netSumYtdActv")
-    public Object getNetSumYtdActv() {
+    public Double getNetSumYtdActv() {
         return netSumYtdActv;
     }
 
@@ -69,11 +69,11 @@ public class NetTotal {
      * 
      */
     @JsonProperty("netSumYtdActv")
-    public void setNetSumYtdActv(Object netSumYtdActv) {
+    public void setNetSumYtdActv(Double netSumYtdActv) {
         this.netSumYtdActv = netSumYtdActv;
     }
 
-    public NetTotal withNetSumYtdActv(Object netSumYtdActv) {
+    public NetTotal withNetSumYtdActv(Double netSumYtdActv) {
         this.netSumYtdActv = netSumYtdActv;
         return this;
     }
@@ -85,7 +85,7 @@ public class NetTotal {
      * 
      */
     @JsonProperty("netSumAdjt")
-    public Object getNetSumAdjt() {
+    public Double getNetSumAdjt() {
         return netSumAdjt;
     }
 
@@ -96,11 +96,11 @@ public class NetTotal {
      * 
      */
     @JsonProperty("netSumAdjt")
-    public void setNetSumAdjt(Object netSumAdjt) {
+    public void setNetSumAdjt(Double netSumAdjt) {
         this.netSumAdjt = netSumAdjt;
     }
 
-    public NetTotal withNetSumAdjt(Object netSumAdjt) {
+    public NetTotal withNetSumAdjt(Double netSumAdjt) {
         this.netSumAdjt = netSumAdjt;
         return this;
     }
@@ -110,7 +110,7 @@ public class NetTotal {
      * 
      */
     @JsonProperty("netSumRsrv")
-    public Object getNetSumRsrv() {
+    public Double getNetSumRsrv() {
         return netSumRsrv;
     }
 
@@ -119,11 +119,11 @@ public class NetTotal {
      * 
      */
     @JsonProperty("netSumRsrv")
-    public void setNetSumRsrv(Object netSumRsrv) {
+    public void setNetSumRsrv(Double netSumRsrv) {
         this.netSumRsrv = netSumRsrv;
     }
 
-    public NetTotal withNetSumRsrv(Object netSumRsrv) {
+    public NetTotal withNetSumRsrv(Double netSumRsrv) {
         this.netSumRsrv = netSumRsrv;
         return this;
     }
@@ -133,7 +133,7 @@ public class NetTotal {
      * 
      */
     @JsonProperty("netSumAbal")
-    public Object getNetSumAbal() {
+    public Double getNetSumAbal() {
         return netSumAbal;
     }
 
@@ -142,11 +142,11 @@ public class NetTotal {
      * 
      */
     @JsonProperty("netSumAbal")
-    public void setNetSumAbal(Object netSumAbal) {
+    public void setNetSumAbal(Double netSumAbal) {
         this.netSumAbal = netSumAbal;
     }
 
-    public NetTotal withNetSumAbal(Object netSumAbal) {
+    public NetTotal withNetSumAbal(Double netSumAbal) {
         this.netSumAbal = netSumAbal;
         return this;
     }

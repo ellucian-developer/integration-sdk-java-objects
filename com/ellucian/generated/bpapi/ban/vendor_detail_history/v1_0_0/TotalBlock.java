@@ -27,7 +27,7 @@ public class TotalBlock {
      */
     @JsonProperty("total")
     @JsonPropertyDescription("Lineage reference object : total")
-    private Object total;
+    private Double total;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -38,7 +38,7 @@ public class TotalBlock {
      * 
      */
     @JsonProperty("total")
-    public Object getTotal() {
+    public Double getTotal() {
         return total;
     }
 
@@ -49,11 +49,11 @@ public class TotalBlock {
      * 
      */
     @JsonProperty("total")
-    public void setTotal(Object total) {
+    public void setTotal(Double total) {
         this.total = total;
     }
 
-    public TotalBlock withTotal(Object total) {
+    public TotalBlock withTotal(Double total) {
         this.total = total;
         return this;
     }

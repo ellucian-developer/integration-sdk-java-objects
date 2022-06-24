@@ -43,7 +43,7 @@ public class GrantSummaryQuery100GetResponse {
      */
     @JsonProperty("unbilledChargesAmt")
     @JsonPropertyDescription("Lineage reference object : unbilledChargesAmt")
-    private Object unbilledChargesAmt;
+    private Double unbilledChargesAmt;
     /**
      * Gross Billing
      * <p>
@@ -52,7 +52,7 @@ public class GrantSummaryQuery100GetResponse {
      */
     @JsonProperty("grossBillingAmt")
     @JsonPropertyDescription("Lineage reference object : grossBillingAmt")
-    private Object grossBillingAmt;
+    private Double grossBillingAmt;
     /**
      * +  Refunds
      * <p>
@@ -61,7 +61,7 @@ public class GrantSummaryQuery100GetResponse {
      */
     @JsonProperty("refundTotalAmt")
     @JsonPropertyDescription("Lineage reference object : refundTotalAmt")
-    private Object refundTotalAmt;
+    private Double refundTotalAmt;
     /**
      * -  Retainage Withholding
      * <p>
@@ -70,7 +70,7 @@ public class GrantSummaryQuery100GetResponse {
      */
     @JsonProperty("witholdChrgTotalAmt")
     @JsonPropertyDescription("Lineage reference object : witholdChrgTotalAmt")
-    private Object witholdChrgTotalAmt;
+    private Double witholdChrgTotalAmt;
     /**
      *  31 - 60
      * <p>
@@ -79,7 +79,7 @@ public class GrantSummaryQuery100GetResponse {
      */
     @JsonProperty("billedTotalAmt3160")
     @JsonPropertyDescription("Lineage reference object : billedTotalAmt3160")
-    private Object billedTotalAmt3160;
+    private Double billedTotalAmt3160;
     /**
      * Payment Withholding
      * <p>
@@ -88,7 +88,7 @@ public class GrantSummaryQuery100GetResponse {
      */
     @JsonProperty("witholdPmtTotalAmt")
     @JsonPropertyDescription("Lineage reference object : witholdPmtTotalAmt")
-    private Object witholdPmtTotalAmt;
+    private Double witholdPmtTotalAmt;
     /**
      *  =  Net Billing
      * <p>
@@ -97,7 +97,7 @@ public class GrantSummaryQuery100GetResponse {
      */
     @JsonProperty("netBillingAmt")
     @JsonPropertyDescription("Lineage reference object : netBillingAmt")
-    private Object netBillingAmt;
+    private Double netBillingAmt;
     /**
      *  0 - 30
      * <p>
@@ -106,7 +106,7 @@ public class GrantSummaryQuery100GetResponse {
      */
     @JsonProperty("billedTotalAmt030")
     @JsonPropertyDescription("Lineage reference object : billedTotalAmt030")
-    private Object billedTotalAmt030;
+    private Double billedTotalAmt030;
     /**
      * Unbilled or Held
      * <p>
@@ -115,7 +115,7 @@ public class GrantSummaryQuery100GetResponse {
      */
     @JsonProperty("unbilledTotalAmt")
     @JsonPropertyDescription("Lineage reference object : unbilledTotalAmt")
-    private Object unbilledTotalAmt;
+    private Double unbilledTotalAmt;
     /**
      *  =  Net Due
      * <p>
@@ -124,7 +124,7 @@ public class GrantSummaryQuery100GetResponse {
      */
     @JsonProperty("netDueAmt")
     @JsonPropertyDescription("Lineage reference object : netDueAmt")
-    private Object netDueAmt;
+    private Double netDueAmt;
     /**
      *  =  Total Outstanding
      * <p>
@@ -133,7 +133,7 @@ public class GrantSummaryQuery100GetResponse {
      */
     @JsonProperty("totalOutstandingAmt")
     @JsonPropertyDescription("Lineage reference object : totalOutstandingAmt")
-    private Object totalOutstandingAmt;
+    private Double totalOutstandingAmt;
     /**
      * -  Payments and Transfers
      * <p>
@@ -142,7 +142,7 @@ public class GrantSummaryQuery100GetResponse {
      */
     @JsonProperty("paymentsTotalAmt")
     @JsonPropertyDescription("Lineage reference object : paymentsTotalAmt")
-    private Object paymentsTotalAmt;
+    private Double paymentsTotalAmt;
     /**
      * Over 90
      * <p>
@@ -151,7 +151,7 @@ public class GrantSummaryQuery100GetResponse {
      */
     @JsonProperty("billedTotalAmt90")
     @JsonPropertyDescription("Lineage reference object : billedTotalAmt90")
-    private Object billedTotalAmt90;
+    private Double billedTotalAmt90;
     /**
      *  61 - 90
      * <p>
@@ -160,7 +160,7 @@ public class GrantSummaryQuery100GetResponse {
      */
     @JsonProperty("billedTotalAmt6190")
     @JsonPropertyDescription("Lineage reference object : billedTotalAmt6190")
-    private Object billedTotalAmt6190;
+    private Double billedTotalAmt6190;
     /**
      * Total Billed
      * <p>
@@ -169,7 +169,7 @@ public class GrantSummaryQuery100GetResponse {
      */
     @JsonProperty("billedTotalAmtSt")
     @JsonPropertyDescription("Lineage reference object : billedTotalAmtSt")
-    private Object billedTotalAmtSt;
+    private Double billedTotalAmtSt;
     /**
      *  =  Grand Total
      * <p>
@@ -178,7 +178,7 @@ public class GrantSummaryQuery100GetResponse {
      */
     @JsonProperty("grantTotalAmt")
     @JsonPropertyDescription("Lineage reference object : grantTotalAmt")
-    private Object grantTotalAmt;
+    private Double grantTotalAmt;
     /**
      * +  Held Charges
      * <p>
@@ -187,7 +187,7 @@ public class GrantSummaryQuery100GetResponse {
      */
     @JsonProperty("holdChargesAmt")
     @JsonPropertyDescription("Lineage reference object : holdChargesAmt")
-    private Object holdChargesAmt;
+    private Double holdChargesAmt;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -198,7 +198,7 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("unbilledChargesAmt")
-    public Object getUnbilledChargesAmt() {
+    public Double getUnbilledChargesAmt() {
         return unbilledChargesAmt;
     }
 
@@ -209,11 +209,11 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("unbilledChargesAmt")
-    public void setUnbilledChargesAmt(Object unbilledChargesAmt) {
+    public void setUnbilledChargesAmt(Double unbilledChargesAmt) {
         this.unbilledChargesAmt = unbilledChargesAmt;
     }
 
-    public GrantSummaryQuery100GetResponse withUnbilledChargesAmt(Object unbilledChargesAmt) {
+    public GrantSummaryQuery100GetResponse withUnbilledChargesAmt(Double unbilledChargesAmt) {
         this.unbilledChargesAmt = unbilledChargesAmt;
         return this;
     }
@@ -225,7 +225,7 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("grossBillingAmt")
-    public Object getGrossBillingAmt() {
+    public Double getGrossBillingAmt() {
         return grossBillingAmt;
     }
 
@@ -236,11 +236,11 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("grossBillingAmt")
-    public void setGrossBillingAmt(Object grossBillingAmt) {
+    public void setGrossBillingAmt(Double grossBillingAmt) {
         this.grossBillingAmt = grossBillingAmt;
     }
 
-    public GrantSummaryQuery100GetResponse withGrossBillingAmt(Object grossBillingAmt) {
+    public GrantSummaryQuery100GetResponse withGrossBillingAmt(Double grossBillingAmt) {
         this.grossBillingAmt = grossBillingAmt;
         return this;
     }
@@ -252,7 +252,7 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("refundTotalAmt")
-    public Object getRefundTotalAmt() {
+    public Double getRefundTotalAmt() {
         return refundTotalAmt;
     }
 
@@ -263,11 +263,11 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("refundTotalAmt")
-    public void setRefundTotalAmt(Object refundTotalAmt) {
+    public void setRefundTotalAmt(Double refundTotalAmt) {
         this.refundTotalAmt = refundTotalAmt;
     }
 
-    public GrantSummaryQuery100GetResponse withRefundTotalAmt(Object refundTotalAmt) {
+    public GrantSummaryQuery100GetResponse withRefundTotalAmt(Double refundTotalAmt) {
         this.refundTotalAmt = refundTotalAmt;
         return this;
     }
@@ -279,7 +279,7 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("witholdChrgTotalAmt")
-    public Object getWitholdChrgTotalAmt() {
+    public Double getWitholdChrgTotalAmt() {
         return witholdChrgTotalAmt;
     }
 
@@ -290,11 +290,11 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("witholdChrgTotalAmt")
-    public void setWitholdChrgTotalAmt(Object witholdChrgTotalAmt) {
+    public void setWitholdChrgTotalAmt(Double witholdChrgTotalAmt) {
         this.witholdChrgTotalAmt = witholdChrgTotalAmt;
     }
 
-    public GrantSummaryQuery100GetResponse withWitholdChrgTotalAmt(Object witholdChrgTotalAmt) {
+    public GrantSummaryQuery100GetResponse withWitholdChrgTotalAmt(Double witholdChrgTotalAmt) {
         this.witholdChrgTotalAmt = witholdChrgTotalAmt;
         return this;
     }
@@ -306,7 +306,7 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("billedTotalAmt3160")
-    public Object getBilledTotalAmt3160() {
+    public Double getBilledTotalAmt3160() {
         return billedTotalAmt3160;
     }
 
@@ -317,11 +317,11 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("billedTotalAmt3160")
-    public void setBilledTotalAmt3160(Object billedTotalAmt3160) {
+    public void setBilledTotalAmt3160(Double billedTotalAmt3160) {
         this.billedTotalAmt3160 = billedTotalAmt3160;
     }
 
-    public GrantSummaryQuery100GetResponse withBilledTotalAmt3160(Object billedTotalAmt3160) {
+    public GrantSummaryQuery100GetResponse withBilledTotalAmt3160(Double billedTotalAmt3160) {
         this.billedTotalAmt3160 = billedTotalAmt3160;
         return this;
     }
@@ -333,7 +333,7 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("witholdPmtTotalAmt")
-    public Object getWitholdPmtTotalAmt() {
+    public Double getWitholdPmtTotalAmt() {
         return witholdPmtTotalAmt;
     }
 
@@ -344,11 +344,11 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("witholdPmtTotalAmt")
-    public void setWitholdPmtTotalAmt(Object witholdPmtTotalAmt) {
+    public void setWitholdPmtTotalAmt(Double witholdPmtTotalAmt) {
         this.witholdPmtTotalAmt = witholdPmtTotalAmt;
     }
 
-    public GrantSummaryQuery100GetResponse withWitholdPmtTotalAmt(Object witholdPmtTotalAmt) {
+    public GrantSummaryQuery100GetResponse withWitholdPmtTotalAmt(Double witholdPmtTotalAmt) {
         this.witholdPmtTotalAmt = witholdPmtTotalAmt;
         return this;
     }
@@ -360,7 +360,7 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("netBillingAmt")
-    public Object getNetBillingAmt() {
+    public Double getNetBillingAmt() {
         return netBillingAmt;
     }
 
@@ -371,11 +371,11 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("netBillingAmt")
-    public void setNetBillingAmt(Object netBillingAmt) {
+    public void setNetBillingAmt(Double netBillingAmt) {
         this.netBillingAmt = netBillingAmt;
     }
 
-    public GrantSummaryQuery100GetResponse withNetBillingAmt(Object netBillingAmt) {
+    public GrantSummaryQuery100GetResponse withNetBillingAmt(Double netBillingAmt) {
         this.netBillingAmt = netBillingAmt;
         return this;
     }
@@ -387,7 +387,7 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("billedTotalAmt030")
-    public Object getBilledTotalAmt030() {
+    public Double getBilledTotalAmt030() {
         return billedTotalAmt030;
     }
 
@@ -398,11 +398,11 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("billedTotalAmt030")
-    public void setBilledTotalAmt030(Object billedTotalAmt030) {
+    public void setBilledTotalAmt030(Double billedTotalAmt030) {
         this.billedTotalAmt030 = billedTotalAmt030;
     }
 
-    public GrantSummaryQuery100GetResponse withBilledTotalAmt030(Object billedTotalAmt030) {
+    public GrantSummaryQuery100GetResponse withBilledTotalAmt030(Double billedTotalAmt030) {
         this.billedTotalAmt030 = billedTotalAmt030;
         return this;
     }
@@ -414,7 +414,7 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("unbilledTotalAmt")
-    public Object getUnbilledTotalAmt() {
+    public Double getUnbilledTotalAmt() {
         return unbilledTotalAmt;
     }
 
@@ -425,11 +425,11 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("unbilledTotalAmt")
-    public void setUnbilledTotalAmt(Object unbilledTotalAmt) {
+    public void setUnbilledTotalAmt(Double unbilledTotalAmt) {
         this.unbilledTotalAmt = unbilledTotalAmt;
     }
 
-    public GrantSummaryQuery100GetResponse withUnbilledTotalAmt(Object unbilledTotalAmt) {
+    public GrantSummaryQuery100GetResponse withUnbilledTotalAmt(Double unbilledTotalAmt) {
         this.unbilledTotalAmt = unbilledTotalAmt;
         return this;
     }
@@ -441,7 +441,7 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("netDueAmt")
-    public Object getNetDueAmt() {
+    public Double getNetDueAmt() {
         return netDueAmt;
     }
 
@@ -452,11 +452,11 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("netDueAmt")
-    public void setNetDueAmt(Object netDueAmt) {
+    public void setNetDueAmt(Double netDueAmt) {
         this.netDueAmt = netDueAmt;
     }
 
-    public GrantSummaryQuery100GetResponse withNetDueAmt(Object netDueAmt) {
+    public GrantSummaryQuery100GetResponse withNetDueAmt(Double netDueAmt) {
         this.netDueAmt = netDueAmt;
         return this;
     }
@@ -468,7 +468,7 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("totalOutstandingAmt")
-    public Object getTotalOutstandingAmt() {
+    public Double getTotalOutstandingAmt() {
         return totalOutstandingAmt;
     }
 
@@ -479,11 +479,11 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("totalOutstandingAmt")
-    public void setTotalOutstandingAmt(Object totalOutstandingAmt) {
+    public void setTotalOutstandingAmt(Double totalOutstandingAmt) {
         this.totalOutstandingAmt = totalOutstandingAmt;
     }
 
-    public GrantSummaryQuery100GetResponse withTotalOutstandingAmt(Object totalOutstandingAmt) {
+    public GrantSummaryQuery100GetResponse withTotalOutstandingAmt(Double totalOutstandingAmt) {
         this.totalOutstandingAmt = totalOutstandingAmt;
         return this;
     }
@@ -495,7 +495,7 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("paymentsTotalAmt")
-    public Object getPaymentsTotalAmt() {
+    public Double getPaymentsTotalAmt() {
         return paymentsTotalAmt;
     }
 
@@ -506,11 +506,11 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("paymentsTotalAmt")
-    public void setPaymentsTotalAmt(Object paymentsTotalAmt) {
+    public void setPaymentsTotalAmt(Double paymentsTotalAmt) {
         this.paymentsTotalAmt = paymentsTotalAmt;
     }
 
-    public GrantSummaryQuery100GetResponse withPaymentsTotalAmt(Object paymentsTotalAmt) {
+    public GrantSummaryQuery100GetResponse withPaymentsTotalAmt(Double paymentsTotalAmt) {
         this.paymentsTotalAmt = paymentsTotalAmt;
         return this;
     }
@@ -522,7 +522,7 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("billedTotalAmt90")
-    public Object getBilledTotalAmt90() {
+    public Double getBilledTotalAmt90() {
         return billedTotalAmt90;
     }
 
@@ -533,11 +533,11 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("billedTotalAmt90")
-    public void setBilledTotalAmt90(Object billedTotalAmt90) {
+    public void setBilledTotalAmt90(Double billedTotalAmt90) {
         this.billedTotalAmt90 = billedTotalAmt90;
     }
 
-    public GrantSummaryQuery100GetResponse withBilledTotalAmt90(Object billedTotalAmt90) {
+    public GrantSummaryQuery100GetResponse withBilledTotalAmt90(Double billedTotalAmt90) {
         this.billedTotalAmt90 = billedTotalAmt90;
         return this;
     }
@@ -549,7 +549,7 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("billedTotalAmt6190")
-    public Object getBilledTotalAmt6190() {
+    public Double getBilledTotalAmt6190() {
         return billedTotalAmt6190;
     }
 
@@ -560,11 +560,11 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("billedTotalAmt6190")
-    public void setBilledTotalAmt6190(Object billedTotalAmt6190) {
+    public void setBilledTotalAmt6190(Double billedTotalAmt6190) {
         this.billedTotalAmt6190 = billedTotalAmt6190;
     }
 
-    public GrantSummaryQuery100GetResponse withBilledTotalAmt6190(Object billedTotalAmt6190) {
+    public GrantSummaryQuery100GetResponse withBilledTotalAmt6190(Double billedTotalAmt6190) {
         this.billedTotalAmt6190 = billedTotalAmt6190;
         return this;
     }
@@ -576,7 +576,7 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("billedTotalAmtSt")
-    public Object getBilledTotalAmtSt() {
+    public Double getBilledTotalAmtSt() {
         return billedTotalAmtSt;
     }
 
@@ -587,11 +587,11 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("billedTotalAmtSt")
-    public void setBilledTotalAmtSt(Object billedTotalAmtSt) {
+    public void setBilledTotalAmtSt(Double billedTotalAmtSt) {
         this.billedTotalAmtSt = billedTotalAmtSt;
     }
 
-    public GrantSummaryQuery100GetResponse withBilledTotalAmtSt(Object billedTotalAmtSt) {
+    public GrantSummaryQuery100GetResponse withBilledTotalAmtSt(Double billedTotalAmtSt) {
         this.billedTotalAmtSt = billedTotalAmtSt;
         return this;
     }
@@ -603,7 +603,7 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("grantTotalAmt")
-    public Object getGrantTotalAmt() {
+    public Double getGrantTotalAmt() {
         return grantTotalAmt;
     }
 
@@ -614,11 +614,11 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("grantTotalAmt")
-    public void setGrantTotalAmt(Object grantTotalAmt) {
+    public void setGrantTotalAmt(Double grantTotalAmt) {
         this.grantTotalAmt = grantTotalAmt;
     }
 
-    public GrantSummaryQuery100GetResponse withGrantTotalAmt(Object grantTotalAmt) {
+    public GrantSummaryQuery100GetResponse withGrantTotalAmt(Double grantTotalAmt) {
         this.grantTotalAmt = grantTotalAmt;
         return this;
     }
@@ -630,7 +630,7 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("holdChargesAmt")
-    public Object getHoldChargesAmt() {
+    public Double getHoldChargesAmt() {
         return holdChargesAmt;
     }
 
@@ -641,11 +641,11 @@ public class GrantSummaryQuery100GetResponse {
      * 
      */
     @JsonProperty("holdChargesAmt")
-    public void setHoldChargesAmt(Object holdChargesAmt) {
+    public void setHoldChargesAmt(Double holdChargesAmt) {
         this.holdChargesAmt = holdChargesAmt;
     }
 
-    public GrantSummaryQuery100GetResponse withHoldChargesAmt(Object holdChargesAmt) {
+    public GrantSummaryQuery100GetResponse withHoldChargesAmt(Double holdChargesAmt) {
         this.holdChargesAmt = holdChargesAmt;
         return this;
     }
