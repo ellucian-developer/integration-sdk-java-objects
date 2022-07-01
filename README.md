@@ -11,7 +11,7 @@ EEDM Object Library:
 <dependency>
     <groupId>com.ellucian</groupId>
     <artifactId>integration-sdk-java-objects-EEDM</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 
@@ -20,6 +20,6 @@ BPAPI Object Library:
 <dependency>
     <groupId>com.ellucian</groupId>
     <artifactId>integration-sdk-java-objects-BPAPIBAN</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
