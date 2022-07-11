@@ -23,3 +23,9 @@ BPAPI Object Library:
     <version>1.0.1</version>
 </dependency>
 ```
+
+Javadoc sites for the EISDK Java object libraries:
+
+[Java EISDK Object Library Javadoc for BPAPIs](https://ellucian-developer.github.io/integration-sdk-objects-java-doc/bpapi/ban/)
+
+[Java EISDK Object Library Javadoc for EEDM APIs](https://ellucian-developer.github.io/integration-sdk-objects-java-doc/eedm/)
